@@ -1,4 +1,4 @@
-import {nextui} from '@nextui-org/theme'
+import {colors, nextui} from '@nextui-org/theme'
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -15,6 +15,11 @@ module.exports = {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
       },
+      colors:{
+        primary: "#1C4741",
+        secondary: "#BACCE6",
+        accent: "#E8B516"
+      }
     },
   },
   darkMode: "class",

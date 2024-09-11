@@ -50,8 +50,8 @@ export const Navbar = () => {
   );
 
   return (
-    <NextUINavbar maxWidth="xl"  classNames={{ base:  "bg-[#D9D9D9] transition duration-[600ms] text-white top-[0px]" }} position="sticky">
-      <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
+    <NextUINavbar maxWidth="xl" isBlurred={false} classNames={{ base:  "mt-[20px] bg-transparent transition duration-[600ms] text-white top-[0px]" }} position="sticky">
+      <NavbarContent className=" sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <LogoRepower />
