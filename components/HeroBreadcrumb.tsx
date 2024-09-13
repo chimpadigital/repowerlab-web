@@ -19,7 +19,7 @@ export default function HeroBreadcrumb({ img, breadcrumbs, position = "right", c
                 <div className="relative z-10 w-full h-full grid grid-cols-2">
                     <div className='lg:col-span-1 col-span-2'>
 
-                        <Breadcrumbs 
+                        <Breadcrumbs
                             itemClasses={{
                                 item: "text-white font-bold text-[18px] data-[current=true]:text-accent",
                                 separator: "text-white/40",
