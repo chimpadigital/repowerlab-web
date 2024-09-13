@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/breadcrumbs";
+import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
 
 interface HeroBreadcrumbI {
     img: string,
