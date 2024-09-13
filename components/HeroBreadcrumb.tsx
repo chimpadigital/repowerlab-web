@@ -12,7 +12,7 @@ interface HeroBreadcrumbI {
 
 export default function HeroBreadcrumb({ img, breadcrumbs, position = "right", children }: HeroBreadcrumbI) {
     return (
-        <div className='w-full px-8 flex justify-center relative top-[-80px]'>
+        <div className='w-full flex justify-center relative top-[-80px]'>
             <div className='w-full container relative overflow-hidden h-[80vh] px-6 rounded-[20px] pt-[100px]'>
 
                 <Image src={img} fill className='object-cover absolute z-0' alt='bg-hero' />
