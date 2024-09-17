@@ -4,7 +4,7 @@
     "browser": false,
     "es2021": true,
     "node": true
-  },
+  },  
   "extends": [
     "plugin:react/recommended",
     "plugin:prettier/recommended",
@@ -37,6 +37,7 @@
     "no-unused-vars": "off",
     "unused-imports/no-unused-vars": "off",
     "unused-imports/no-unused-imports": "warn",
+    "endOfLone": "auto",
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {
