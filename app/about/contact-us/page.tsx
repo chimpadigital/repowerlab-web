@@ -2,7 +2,7 @@
 import Button from "@/atoms/Button";
 import HeroBreadcrumb from "@/components/HeroBreadcrumb";
 import { Input, RadioButton, TextArea } from "@/components/Inputs";
-import { Select, SelectItem, SelectSection } from "@nextui-org/react";
+import { Select, SelectItem } from "@nextui-org/react";
 import React from "react";
 import { Controller, useForm } from "react-hook-form";
 
@@ -19,7 +19,6 @@ const ContactUs = () => {
   const {
     handleSubmit,
     control,
-    watch,
     formState: { errors },
   } = useForm<FormValues>({
     defaultValues: {
@@ -119,9 +118,8 @@ const ContactUs = () => {
                     trigger:
                       "bg-[#C5C5C5]/15 py-4 px-8 backdrop-blur-2xl border-white  transition-all border-2 rounded-full px-8 font-sans h-[60px] data-[hover=true]:bg-[#C5C5C5]/15 data-[open=true]:border-accent",
                     value: "text-white font-medium text-[16px]",
-                    popoverContent: "bg-white text-[#777] p-0 rounded-[10px]",
+                    popoverContent: "bg-white text-[#777] p-0 rounded-[10px] text-base",
                     listbox: "p-0",
-                    label: "border border-4 border-solid border-red-100",
                   }}
                   listboxProps={{
                     itemClasses: {
@@ -130,6 +128,7 @@ const ContactUs = () => {
                         "data-[selectable=true]:focus:bg-primary",
                         "data-[selectable=true]:py-5",
                         "data-[selectable=true]:px-8",
+                        "data-[selectable=true]:!text-base",
                       ],
                     },
                   }}
@@ -143,37 +142,6 @@ const ContactUs = () => {
                 </Select>
               )}
             />
-            {/* <Select
-              aria-label="subject"
-              placeholder="Select subject"
-              className="w-full"
-              scrollShadowProps={{
-                isEnabled: false,
-              }}
-              classNames={{
-                trigger:
-                  "bg-[#C5C5C5]/15 py-4 px-8 backdrop-blur-2xl border-white  transition-all border-2 rounded-full px-8 font-sans h-[60px] data-[hover=true]:bg-[#C5C5C5]/15 data-[open=true]:border-accent",
-                value: "text-white font-medium text-[16px]",
-                popoverContent: "bg-white text-[#777] p-0 rounded-[10px]",
-                listbox: "p-0",
-                label: "border border-4 border-solid border-red-100",
-              }}
-              listboxProps={{
-                itemClasses: {
-                  base: [
-                    "data-[hover=true]:bg-primary",
-                    "data-[selectable=true]:focus:bg-primary",
-                    "data-[selectable=true]:py-5",
-                    "data-[selectable=true]:px-8",
-                  ],
-                },
-              }}
-            >
-              <SelectItem key="Product">Product</SelectItem>
-              <SelectItem key="Service">Service</SelectItem>
-              <SelectItem key="Circular-economy">Circular economy</SelectItem>
-              <SelectItem key="Other">Other</SelectItem>
-            </Select> */}
 
             <TextArea
               placeholder="Message"

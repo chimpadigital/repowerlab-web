@@ -53,7 +53,7 @@ export const TextArea = (props: textAreaProps) => {
   );
 };
 
-interface radioButtonProps  extends UseControllerProps<FormValues>  {
+interface radioButtonProps extends UseControllerProps<FormValues> {
   label: string;
   value: "partner" | "client" | "talent";
 }
@@ -62,7 +62,12 @@ export const RadioButton = (props: radioButtonProps) => {
 
   return (
     <label className="w-fit items-center flex gap-[10px] cursor-pointer">
-      <input {...field} type="radio" className="hidden peer" value={props.value}/>
+      <input
+        {...field}
+        type="radio"
+        className="hidden peer"
+        value={props.value}
+      />
       <div className="grid  place-items-center h-5 w-5 rounded-full border-2 border-white border-solid peer-checked:before:scale-100 before:w-3 before:absolute before:h-3 before:rounded-full before:bg-white before:scale-0 before:transition-all"></div>
       <span className="text-white font-light">{props.label}</span>
     </label>
