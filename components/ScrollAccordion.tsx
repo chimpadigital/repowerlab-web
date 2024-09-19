@@ -21,15 +21,6 @@ export default function ScrollAccordion({ items, imgPosition = "left" }: ScrollA
   const yOfTitle = useTransform(y, [1, 1.8], [0, -50])
 
 
-  useEffect(() => {
-    return (
-      y.destroy(),
-      opacityOfTitle.destroy(),
-      scaleOfTitle.destroy(),
-      yOfTitle.destroy()
-    )
-  }, [])
-
   return (
     <section ref={ref} className='mt-4 text-[#000] flex justify-center w-full h-full relative ' style={{ height: `${(items.length * 1.5) * 100}vh` }}>
       <div className="container">
@@ -66,11 +57,7 @@ export default function ScrollAccordion({ items, imgPosition = "left" }: ScrollA
 
 const ImageMotion = ({ index, src, y }: any) => {
   const opacity = useTransform(y, [index, index + 1], [0, 1])
-  useEffect(() => {
-    return (
-      opacity.destroy()
-    )
-  }, [])
+
   return (
     <motion.div key={'image' + index} className='w-full h-full' style={{ zIndex: index, opacity: index == 0 ? 1 : opacity }}>
       <Image src={src} alt="img-bg" fill className='w-full h-full absolute rounded-[20px] object-cover' />
@@ -84,10 +71,9 @@ const AccordionMotion = ({ index, el, y }: any) => {
   useEffect(() => {
     opacity.on("change", () => {
       if(opacity.get() > 0)  setHidden(false)
+      if(opacity.get() == 0)  setHidden(true)
     })
-    return (
-      opacity.destroy()
-    )
+ 
   }, [])
 
   return (
