@@ -41,6 +41,7 @@ export default function page() {
         </HeroBreadcrumb>
       </section>
       <ScrollAccordion  items={array1}/>
+      <ScrollAccordion  items={array1} imgPosition='right'/>
     </>
   )
 }
