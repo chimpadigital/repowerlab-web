@@ -21,6 +21,28 @@ export default function ScrollAccordion({ items, imgPosition = "left" }: ScrollA
   const yOfTitle = useTransform(y, [1, 1.8], [0, -50])
 
 
+  //Calcular distancia del desplazamiento 
+  const elementoRef = useRef<any>(null);
+  const [distancia, setDistancia] = useState(0);
+
+  useEffect(() => {
+    if (elementoRef.current && ref.current) {
+      let actual = elementoRef.current;
+      let distanciaTotal = 0;
+
+      // Calcular la distancia acumulada de los elementos padres
+      if (actual) {
+        distanciaTotal += actual.offsetTop;
+        actual = actual.offsetParent;
+      }
+
+      // Restar la distancia del contenedor al cuerpo
+      const distanciaContenedor = ref.current.offsetTop;
+      setDistancia(distanciaTotal );
+    }
+  }, []);
+
+
   return (
     <section ref={ref} className='mt-4 text-[#000] flex justify-center w-full h-full relative ' style={{ height: `${(items.length * 1.5) * 100}vh` }}>
       <div className="container">
@@ -34,16 +56,16 @@ export default function ScrollAccordion({ items, imgPosition = "left" }: ScrollA
               ))
             }
           </div>
-          <div className={`col-span-1 max-h-[700px] p-12  h-full flex flex-col justify-between`}>
+          <div className={`col-span-1 max-h-[700px] p-12  h-full flex flex-col relative justify-between`}>
             <motion.div style={{ opacity: opacityOfTitle, scale: scaleOfTitle, y: yOfTitle }}>
               <div className="text-[24px] font-bold text-primary">{items[0].title}</div>
               <div className="text-grey-600 pt-6">{items[0].description}</div>
             </motion.div>
 
-            <div>
+            <div ref={elementoRef}>
               {
                 items2.map((el, index) => (
-                  <AccordionMotion el={el} y={y} index={index} key={index + 'Accoridon'} />
+                  <AccordionMotion distancia={distancia} el={el} y={y} index={index} key={index + 'Accoridon'} />
                 ))
               }
             </div>
@@ -64,26 +86,28 @@ const ImageMotion = ({ index, src, y }: any) => {
     </motion.div>
   )
 }
-const AccordionMotion = ({ index, el, y }: any) => {
+const AccordionMotion = ({ index, el, y, distancia }: any) => {
   const [hidden, setHidden] = useState(true)
-  const opacity = useTransform(y, [index + 1, index + 2], [0, 1])
+  const opacity = useTransform(y, [index + 1, index + 2, index + 2, index + 3], [0, 1, 1, 0])
+  const top = useTransform(y, [index + 1, index + 2], [0, -distancia])
+
 
   useEffect(() => {
     opacity.on("change", () => {
-      if(opacity.get() > 0)  setHidden(false)
-      if(opacity.get() == 0)  setHidden(true)
+      if (opacity.get() > 0) setHidden(false)
+      if (opacity.get() == 0) setHidden(true)
     })
- 
+
   }, [])
 
   return (
-    <div key={index}>
+    <motion.div key={index} className='relative' style={{ y: top }}>
       <div className='py-2'>
         <div className='rounded-full w-full p-[20px] bg-grey-100 text-primary font-bold'>
           {el.title}
         </div>
       </div>
-      <motion.div style={{ opacity, }} className={`pt-2 text-grey-600 px-[20px] ${hidden && "hidden"}`} >{el.description}</motion.div>
-    </div>
+      <motion.div style={{ opacity, }} className={`pt-2 absolute top-[80px] text-grey-600 px-[20px] ${hidden && "hidden"}`} >{el.description}</motion.div>
+    </motion.div>
   )
 }
