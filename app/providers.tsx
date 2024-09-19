@@ -19,9 +19,7 @@ export function Providers({ children, themeProps }: ProvidersProps) {
   React.useEffect(() => {
     const lenis = new Lenis()
 
-    lenis.on('scroll', (e) => {
-      console.log(e)
-    })
+  
 
     function raf(time: any) {
       lenis.raf(time)
