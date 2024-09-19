@@ -1,7 +1,7 @@
 "use client";
-import { FormValues } from "@/app/about/contact-us/page";
 import React from "react";
 import { useController, UseControllerProps } from "react-hook-form";
+import { FormValues } from "./pages/about/contact-us/Formulario";
 
 interface InputProps extends UseControllerProps<FormValues> {
   placeholder: string;
