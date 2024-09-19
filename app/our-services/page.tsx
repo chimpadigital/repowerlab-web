@@ -5,6 +5,29 @@ import ScrollAccordion from '@/components/ScrollAccordion'
 
 export default function page() {
   const breadcrumbs = ["Home", "Our services"]
+
+  const array1 = [
+    {
+      title:"Wind Farm Decommissioning", 
+      description:"Repowerlab specializes in the safe and efficient dismantling, relocation, and reassembly of onshore and offshore wind turbines. The company ensures strict adherence to environmental protection, safety standards, and local guidelines, with turbines being reinstalled, used for spare parts, or recycled.",
+      img:"/images/our-services/1.jpg"
+    },
+    {
+      title:"Disassembly of Wind Turbines", 
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos molestiae, nostrum expedita laudantium necessitatibus earum deserunt fuga rerum delectus cumque aliquid eaque animi nesciunt illo fugit tempora pariatur, voluptatem voluptatum.",
+      img:"/images/our-services/e2.jpg"
+    },
+    {
+      title:"Onshore & Offshore Decommissioning", 
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos molestiae, nostrum expedita laudantium necessitatibus earum deserunt fuga rerum delectus cumque aliquid eaque animi nesciunt illo fugit tempora pariatur, voluptatem voluptatum.",
+      img:"/images/our-services/e3.webp"
+    },
+    {
+      title:"Planning & Technical Studies", 
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos molestiae, nostrum expedita laudantium necessitatibus earum deserunt fuga rerum delectus cumque aliquid eaque animi nesciunt illo fugit tempora pariatur, voluptatem voluptatum.",
+      img:"/images/our-services/1.jpg"
+    },
+  ]
   return (
     <>
       <section className='w-full'>
@@ -16,9 +39,8 @@ export default function page() {
             </div>
           </div>
         </HeroBreadcrumb>
-
       </section>
-      <ScrollAccordion></ScrollAccordion>
+      <ScrollAccordion  items={array1}/>
     </>
   )
 }
