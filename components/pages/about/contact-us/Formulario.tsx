@@ -115,12 +115,15 @@ const Formulario = () => {
                 popoverContent:
                   "bg-white text-[#777] p-0 rounded-[10px] text-base",
                 listbox: "p-0",
+                selectorIcon: "text-white h-7 w-7",
               }}
               listboxProps={{
                 itemClasses: {
                   base: [
                     "data-[hover=true]:bg-primary",
+                    "data-[selectable=true]:hover:text-white",
                     "data-[selectable=true]:focus:bg-primary",
+                    "data-[selectable=true]:focus:text-white",
                     "data-[selectable=true]:py-5",
                     "data-[selectable=true]:px-8",
                     "data-[selectable=true]:!text-base",
@@ -179,9 +182,11 @@ const Formulario = () => {
           We will get back to you within 2 business days.
         </p>
         <div className="mx-auto">
-          <button className={button({
-            whiteLine: true,
-          })}>
+          <button
+            className={button({
+              whiteLine: true,
+            })}
+          >
             Send message
           </button>
         </div>

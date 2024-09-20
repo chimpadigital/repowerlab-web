@@ -11,7 +11,7 @@ const ConnectToday = () => {
   return (
     <div className="flex text-left flex-col lg:flex-row container gap-10 mx-auto pb-20 lg:items-center pt-20">
       <article className="flex-1 flex flex-col md:flex-row lg:flex-col w-full justify-between lg:justify-normal">
-        <div>
+        <div >
           <h3 className={`${title()} text-primary mb-3 !block`}>
             Connect Today
           </h3>
@@ -21,10 +21,10 @@ const ConnectToday = () => {
           </p>
         </div>
         <div>
-          <Link href={"#contact-us-form"} className={button()}>
+          <Link href={"contact-us#contact-us-form"} className={button()}>
             Connect now
           </Link>
-          <div className="mt-8 flex gap-3 items-center text-primary">
+          <div className="mt-10 flex gap-3 items-center fill-primary text-primary">
             <Mail />
             <span>info@repowerlab.com</span>
           </div>
