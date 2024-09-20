@@ -41,8 +41,18 @@ export const title = tv({
 });
 
 export const subtitle = tv({
-  base: "w-full md:w-1/2 my-2 text-lg lg:text-xl text-default-600 block max-w-full",
+  base: "w-full md:w-1/2 my-2 font-[600] text-white text-lg lg:text-[26px] block max-w-full",
   variants: {
+    colors: {
+      primary: "#1C4741",
+      secondary: "#BACCE6",
+      accent: "#E8B516",
+      white: "#fff",
+      grey: {
+        100: "#F4F4F4",
+        600: "#9B9B9B"
+      },
+    },
     fullWidth: {
       true: "!w-full",
     },
