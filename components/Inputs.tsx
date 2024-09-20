@@ -17,7 +17,7 @@ export const Input = (props: InputProps) => {
         placeholder={props.placeholder}
         {...field}
         type={props.type}
-        className="rounded-full focus-within:outline-2 border-white border-2 border-transparent focus:outline-none focus:border-accent placeholder-gray-400 transition-all duration-300  bg-[#C5C5C5]/15 py-4 px-8 backdrop-blur-2xl placeholder:text-white placeholder:font-medium"
+        className="rounded-full text-white focus-within:outline-2 border-white border-2 border-transparent focus:outline-none focus:border-accent placeholder-gray-400 transition-all duration-300  bg-[#C5C5C5]/15 py-4 px-8 backdrop-blur-2xl placeholder:text-white placeholder:font-medium"
       />
       <span
         className={`text-red-500 mt-1 transition-all ${props.error ? " opacity-100 translate-x-0" : " opacity-0 -translate-x-2"}`}
@@ -42,7 +42,7 @@ export const TextArea = (props: textAreaProps) => {
         {...field}
         placeholder={props.placeholder}
         rows={6}
-        className="rounded-3xl focus-within:outline-2 border-white border-2 border-transparent focus:outline-none focus:border-accent placeholder-gray-400 transition-all duration-300  bg-[#C5C5C5]/15 py-4 px-8 backdrop-blur-2xl placeholder:text-white placeholder:font-medium"
+        className="rounded-3xl text-white focus-within:outline-2 border-white border-2 border-transparent focus:outline-none focus:border-accent placeholder-gray-400 transition-all duration-300  bg-[#C5C5C5]/15 py-4 px-8 backdrop-blur-2xl placeholder:text-white placeholder:font-medium"
       />
       <span
         className={`text-red-500 mt-1 transition-all ${props.error ? " opacity-100 translate-x-0" : " opacity-0 -translate-x-2"}`}
@@ -68,7 +68,7 @@ export const RadioButton = (props: radioButtonProps) => {
         className="hidden peer"
         value={props.value}
       />
-      <div className="grid  place-items-center h-5 w-5 rounded-full border-2 border-white border-solid peer-checked:before:scale-100 before:w-3 before:absolute before:h-3 before:rounded-full before:bg-white before:scale-0 before:transition-all"></div>
+      <div className="grid place-items-center h-5 w-5 rounded-full border-2 border-white border-solid peer-checked:before:scale-100 before:w-3 before:absolute before:h-3 before:rounded-full before:bg-white before:scale-0 before:transition-all"></div>
       <span className="text-white font-light">{props.label}</span>
     </label>
   );
