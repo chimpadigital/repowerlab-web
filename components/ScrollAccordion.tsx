@@ -8,6 +8,7 @@ interface ScrollAcordionI {
   items: { title: string, description: string, img: string }[]
 }
 
+const fixFirst = 0.3
 
 export default function ScrollAccordion({ items, imgPosition = "left" }: ScrollAcordionI) {
   const ref = useRef<any>()
@@ -16,9 +17,9 @@ export default function ScrollAccordion({ items, imgPosition = "left" }: ScrollA
     target: ref,
   })
   const y = useTransform(scrollYProgress, [0, 1], [0, (items.length)])
-  const opacityOfTitle = useTransform(y, [1, 1.8], [1, 0])
-  const scaleOfTitle = useTransform(y, [1, 1.8], [1, .8])
-  const yOfTitle = useTransform(y, [1, 1.8], [0, -50])
+  const opacityOfTitle = useTransform(y, [.8, 1.8], [1, 0])
+  const scaleOfTitle = useTransform(y, [.8, 1.8], [1, .8])
+  const yOfTitle = useTransform(y, [.8, 1.8], [0, -50])
 
 
   //Calcular distancia del desplazamiento 
@@ -38,7 +39,7 @@ export default function ScrollAccordion({ items, imgPosition = "left" }: ScrollA
 
       // Restar la distancia del contenedor al cuerpo
       const distanciaContenedor = ref.current.offsetTop;
-      setDistancia(distanciaTotal );
+      setDistancia(distanciaTotal);
     }
   }, []);
 
@@ -78,7 +79,7 @@ export default function ScrollAccordion({ items, imgPosition = "left" }: ScrollA
 }
 
 const ImageMotion = ({ index, src, y }: any) => {
-  const opacity = useTransform(y, [index, index + 1], [0, 1])
+  const opacity = useTransform(y, [index - fixFirst, index + 1 - fixFirst], [0, 1])
 
   return (
     <motion.div key={'image' + index} className='w-full h-full' style={{ zIndex: index, opacity: index == 0 ? 1 : opacity }}>
@@ -88,8 +89,8 @@ const ImageMotion = ({ index, src, y }: any) => {
 }
 const AccordionMotion = ({ index, el, y, distancia }: any) => {
   const [hidden, setHidden] = useState(true)
-  const opacity = useTransform(y, [index + 1, index + 2, index + 2, index + 3], [0, 1, 1, 0])
-  const top = useTransform(y, [index + 1, index + 2], [0, -distancia])
+  const opacity = useTransform(y, [index + 1 - fixFirst, index + 2 - fixFirst, index + 2 - fixFirst, index + 3 - fixFirst], [0, 1, 1, 0])
+  const top = useTransform(y, [index + 1 - fixFirst, index + 2 - fixFirst], [0, -distancia])
 
 
   useEffect(() => {
