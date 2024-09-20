@@ -10,7 +10,7 @@ export default function page() {
     {
       title:"Wind Farm Decommissioning", 
       description:"Repowerlab specializes in the safe and efficient dismantling, relocation, and reassembly of onshore and offshore wind turbines. The company ensures strict adherence to environmental protection, safety standards, and local guidelines, with turbines being reinstalled, used for spare parts, or recycled.",
-      img:"/images/our-services/1.jpg"
+      img:"/images/our-services/e1.jpg"
     },
     {
       title:"Disassembly of Wind Turbines", 
@@ -20,12 +20,12 @@ export default function page() {
     {
       title:"Onshore & Offshore Decommissioning", 
       description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos molestiae, nostrum expedita laudantium necessitatibus earum deserunt fuga rerum delectus cumque aliquid eaque animi nesciunt illo fugit tempora pariatur, voluptatem voluptatum.",
-      img:"/images/our-services/e3.webp"
+      img:"/images/our-services/e3.jpg"
     },
     {
       title:"Planning & Technical Studies", 
       description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos molestiae, nostrum expedita laudantium necessitatibus earum deserunt fuga rerum delectus cumque aliquid eaque animi nesciunt illo fugit tempora pariatur, voluptatem voluptatum.",
-      img:"/images/our-services/1.jpg"
+      img:"/images/our-services/e4.jpg"
     },
   ]
   return (
