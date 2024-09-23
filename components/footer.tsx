@@ -4,6 +4,7 @@ import { Link } from '@nextui-org/link'
 import Image from 'next/image'
 import Logo from '@/atoms/Logo'
 import { subtitle } from './primitives'
+import { FacebookIcon, LinkedInIcon, TwitterIcon } from './icons'
 
 export default function Footer() {
 
@@ -49,7 +50,7 @@ export default function Footer() {
                                     <div className="flex flex-col gap-[30px]">
                                         {
                                             linksProducts.map((el, i) => (
-                                                <Link key={i+"pro2"} className='text-white' href={el.url}>{el.label}</Link>
+                                                <Link key={i + "pro2"} className='text-white' href={el.url}>{el.label}</Link>
                                             ))
                                         }
                                     </div>
@@ -58,15 +59,23 @@ export default function Footer() {
                             <div className="md:grid-cols-1 grid-cols-3">
                                 <h5 className={subtitle({ colors: 'white' })}>Follow</h5>
                                 <div className="pt-[30px]">
-                                    <div className="flex flex-col gap-[30px]">
-
+                                    <div className="flex flex-col gap-[30px] ps-6">
+                                        <Link className='text-white' href="">
+                                            <LinkedInIcon width={22} height={22} />
+                                        </Link>
+                                        <Link className='text-white' href="">
+                                            <TwitterIcon  width={22} height={22}/>
+                                        </Link>
+                                        <Link className='text-white' href="">
+                                            <FacebookIcon width={22} height={22} />
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <Image fill src={'/images/shared/Footer.png'} alt='footer' className='rounded-[20px] object-cover mx-auto h-full'></Image>
+                <Image quality={100} fill src={'/images/shared/Footer.png'} alt='footer' className='rounded-[20px] object-cover mx-auto h-full'></Image>
             </div>
         </footer>
     )
