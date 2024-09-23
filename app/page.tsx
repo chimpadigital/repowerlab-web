@@ -12,11 +12,10 @@ export default function Home() {
   };
   return (
     <>
-      <div className="h-screen"></div>
-      <FeatureProducts />
       <div className="min-h-screen w-full" style={backgroundStyle}>
         <ThreeContainer />
       </div>
+      <FeatureProducts />
     </>
   );
 }
