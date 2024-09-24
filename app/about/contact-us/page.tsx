@@ -7,21 +7,21 @@ import Formulario from "@/components/pages/about/contact-us/Formulario";
 import { button, title } from "@/components/primitives";
 import { BreadcrumbItem, Breadcrumbs } from "@nextui-org/react";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const ContactUs = () => {
   return (
-    <section className="contact-us w-full">
+    <section className="contact-us w-full px-6">
       <div className="w-full  relative top-[-80px]">
-        <div className="w-full relative flex justify-center overflow-hidden min-h-[80vh] px-6 rounded-[20px] pt-[100px] ">
+        <div className="w-full relative flex justify-center overflow-hidden h-full min-h-[80vh] px-6 rounded-[20px] pt-[100px]">
           <Image
-            src="/images/contact-us/wind-fans.webp"
+            src="/images/contact-us/headerImgContactUs.webp"
             fill
             className="object-cover absolute z-0 object-bottom"
             alt="bg-hero"
+            quality={100}
           />
-          <div className="container">
+          <div className="container px-6">
             <div className="relative z-10 w-full h-full grid grid-cols-2">
               <div className="lg:col-span-1 col-span-2">
                 <Breadcrumbs

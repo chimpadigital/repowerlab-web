@@ -25,6 +25,7 @@
 		"@react-aria/visually-hidden": "3.8.12",
 		"@react-three/fiber": "^8.17.6",
 		"@types/three": "^0.168.0",
+		"@vis.gl/react-google-maps": "^1.2.0",
 		"clsx": "2.1.1",
 		"framer-motion": "~11.1.1",
 		"intl-messageformat": "^10.5.0",
@@ -34,6 +35,8 @@
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
 		"react-hook-form": "^7.53.0",
+		"react-leaflet": "^4.2.1",
+		"react-tooltip": "^5.28.0",
 		"three": "^0.168.0"
 	},
 	"devDependencies": {

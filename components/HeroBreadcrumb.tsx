@@ -15,7 +15,7 @@ export default function HeroBreadcrumb({ img, breadcrumbs, position = "right", c
         <div className='w-full  relative top-[-80px]'>
             <div className='w-full relative flex justify-center overflow-hidden h-full min-h-[80vh] px-6 rounded-[20px] pt-[100px]'>
 
-                <Image src={img} fill className='object-cover absolute z-0' alt='bg-hero' />
+                <Image src={img} fill className='object-cover absolute z-0' alt='bg-hero' quality={100}/>
                 <div className="container px-6">
                     <div className="relative z-10 w-full h-full grid grid-cols-2">
                         <div className='lg:col-span-1 col-span-2'>
