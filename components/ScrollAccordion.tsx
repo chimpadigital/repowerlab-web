@@ -48,7 +48,7 @@ export default function ScrollAccordion({ items, imgPosition = "left" }: ScrollA
     <section ref={ref} className='mt-4 text-[#000] flex justify-center w-full h-full relative ' style={{ height: `${(items.length * 1.5) * 100}vh` }}>
       <div className="container">
 
-        <div className="grid grid-cols-2 min-h-screen items-center sticky top-0 ">
+        <div className="grid grid-cols-2 min-h-screen items-center sticky top-0 gap-[20px]">
           <div className={`col-span-1 relative max-h-[700px] h-full ${imgPosition == "right" && "order-last"}`}>
             {
               y &&
@@ -57,7 +57,7 @@ export default function ScrollAccordion({ items, imgPosition = "left" }: ScrollA
               ))
             }
           </div>
-          <div className={`col-span-1 max-h-[700px] p-12  h-full flex flex-col relative justify-between`}>
+          <div className={`col-span-1 max-h-[700px] p-12 shadow-lg rounded-[20px] h-full flex flex-col relative justify-between`}>
             <motion.div style={{ opacity: opacityOfTitle, scale: scaleOfTitle, y: yOfTitle }}>
               <div className="text-[24px] font-bold text-primary">{items[0].title}</div>
               <div className="text-grey-600 pt-6">{items[0].description}</div>
@@ -78,12 +78,12 @@ export default function ScrollAccordion({ items, imgPosition = "left" }: ScrollA
   )
 }
 
-const ImageMotion = ({ index, src, y }: any) => {
+const ImageMotion = ({ index, src, y, rounded = true }: any) => {
   const opacity = useTransform(y, [index - fixFirst, index + 1 - fixFirst], [0, 1])
 
   return (
     <motion.div key={'image' + index} className='w-full h-full' style={{ zIndex: index, opacity: index == 0 ? 1 : opacity }}>
-      <Image src={src} alt="img-bg" fill className='w-full h-full absolute rounded-[20px] object-cover' />
+      <Image src={src} alt="img-bg" fill className={`w-full h-full absolute object-cover ${rounded && "rounded-[20px]"}`} />
     </motion.div>
   )
 }
