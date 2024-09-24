@@ -1,6 +1,7 @@
 "use client";
 import HeroBreadcrumb from "@/components/HeroBreadcrumb";
 import CompanyDescription from "@/components/pages/about/CompanyDescription";
+import MapaMundial from "@/components/pages/about/MapaMundial";
 import MisionVisionHistory from "@/components/pages/about/MisionVisionHistory";
 import { title } from "@/components/primitives";
 
@@ -20,6 +21,7 @@ export default function AboutPage() {
       </HeroBreadcrumb>
       <CompanyDescription/>
       <MisionVisionHistory/>
+      <MapaMundial/>
     </section>
   );
 }
