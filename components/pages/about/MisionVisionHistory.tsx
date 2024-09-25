@@ -43,7 +43,7 @@ const MisionVisionHistory = () => {
           style={{ width: "min(100%, 374px)" }}
         >
           <h4 className={title()}>Our Vision</h4>
-          <p className="mt-6">
+          <p className="mt-6 text-[#7E7E7E]">
             To lead the global transition to a sustainable energy future by
             being the foremost provider of repowering and recycling solutions
             for wind turbines, fostering environmental stewardship, economic
