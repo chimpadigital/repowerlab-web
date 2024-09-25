@@ -20,6 +20,10 @@ const MapaMundial = () => {
           mapId={process.env.NEXT_PUBLIC_MAP_DESIGN_ID as string}
           gestureHandling={"greedy"}
           disableDefaultUI={true}
+          zoomControl
+          scrollwheel={false}
+          maxZoom={10}
+          minZoom={2}
         >
           {locations.map((poi, index) => (
             <AdvancedMarker

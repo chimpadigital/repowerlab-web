@@ -2,12 +2,14 @@
 import HeroBreadcrumb from "@/components/HeroBreadcrumb";
 import CompanyDescription from "@/components/pages/about/CompanyDescription";
 import MapaMundial from "@/components/pages/about/MapaMundial";
+import MeetOurTeam from "@/components/pages/about/MeetOurTeam";
 import MisionVisionHistory from "@/components/pages/about/MisionVisionHistory";
+import WhyChooseRepowerlab from "@/components/pages/about/WhyChooseRepowerlab";
 import { title } from "@/components/primitives";
 
 export default function AboutPage() {
   return (
-    <section>
+    <section className="overflow-x-clip">
       <div className="px-6">
         <HeroBreadcrumb
           breadcrumbs={["Home", "About Us"]}
@@ -24,6 +26,8 @@ export default function AboutPage() {
       <CompanyDescription />
       <MisionVisionHistory />
       <MapaMundial />
+      <WhyChooseRepowerlab/>
+      <MeetOurTeam/>
     </section>
   );
 }
