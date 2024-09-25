@@ -5,13 +5,6 @@ import {
 } from "@nextui-org/navbar";
 
 import NextLink from "next/link";
-
-import {
-  TwitterIcon,
-  DiscordIcon,
-  SearchIcon,
-  Logo,
-} from "@/components/icons";
 import LogoRepower from "@/atoms/Logo";
 
 export const Navbar = () => {

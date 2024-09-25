@@ -23,6 +23,7 @@ module.exports = {
         grey:{
           100: "#F4F4F4",
           600: "#9B9B9B",
+          700: "#4F4F4F",
           background: "#9B9494E5"
         }
       }
