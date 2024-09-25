@@ -44,6 +44,7 @@ const MeetOurTeam = () => {
               position="Co-Founder & Managing Director of LATAM"
             />
           </div>
+          <h4>Partners</h4>
         </div>
       </section>
     </>
