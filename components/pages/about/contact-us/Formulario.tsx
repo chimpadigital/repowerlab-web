@@ -157,7 +157,7 @@ const Formulario = () => {
           }}
         />
 
-        <div className="flex gap-10 justify-center">
+        <div className="flex gap-10 justify-center flex-wrap">
           <RadioButton
             label="Partner"
             name="userType"
