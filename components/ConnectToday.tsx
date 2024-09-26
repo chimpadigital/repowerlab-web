@@ -1,4 +1,3 @@
-import CountryContactData from "@/components/CountryContactData";
 import { Mail } from "@/components/icons";
 import { button, subtitle, title } from "@/components/primitives";
 import Link from "next/link";
@@ -6,6 +5,7 @@ import React from "react";
 import flagUSA from "@/public/images/contact-us/flagUSA.png";
 import flagColombia from "@/public/images/contact-us/flagColombia.png";
 import flagSpain from "@/public/images/contact-us/flagSpain.png";
+import CountryContactData from "./CountryContactData";
 
 const ConnectToday = () => {
   return (
@@ -21,7 +21,7 @@ const ConnectToday = () => {
           </p>
         </div>
         <div>
-          <Link href={"contact-us#contact-us-form"} className={button()}>
+          <Link href={"/about/contact-us#contact-us-form"} className={button()}>
             Connect now
           </Link>
           <div className="mt-10 flex gap-3 items-center fill-primary text-primary">

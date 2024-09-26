@@ -22,7 +22,7 @@ const MapaMundial = () => {
           disableDefaultUI={true}
           zoomControl
           scrollwheel={false}
-          maxZoom={10}
+          maxZoom={5}
           minZoom={2}
         >
           {locations.map((poi, index) => (
