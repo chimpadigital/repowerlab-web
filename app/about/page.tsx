@@ -1,7 +1,7 @@
 "use client";
 import GreenBanner from "@/components/GreenBanner";
 import HeroBreadcrumb from "@/components/HeroBreadcrumb";
-import CompanyDescription from "@/components/pages/about/CompanyDescription";
+import IntroText from "@/components/pages/about/IntroText";
 import MapaMundial from "@/components/pages/about/MapaMundial";
 import MeetOurTeam from "@/components/pages/about/MeetOurTeam";
 import MisionVisionHistory from "@/components/pages/about/MisionVisionHistory";
@@ -25,12 +25,12 @@ export default function AboutPage() {
           </div>
         </HeroBreadcrumb>
       </div>
-      <CompanyDescription />
+      <IntroText />
       <MisionVisionHistory />
       <MapaMundial />
       <WhyChooseRepowerlab />
       <MeetOurTeam />
-      <div className=" px-6 ">
+      <div className="px-6 relative lg:-top-10">
         <GreenBanner>
           <div className="flex w-full flex-col lg:flex-row md:items-center gap-10">
             <div className="flex-1 gap-10 text-start flex items-center justify-between">
