@@ -2,6 +2,7 @@ import { title } from "@/components/primitives";
 import React from "react";
 import image from "@/public/images/about/recursoOurTeam.webp";
 import TeamMemberCard from "./TeamMemberCard";
+import Partners from "./Partners";
 
 const MeetOurTeam = () => {
   return (
@@ -44,7 +45,7 @@ const MeetOurTeam = () => {
               position="Co-Founder & Managing Director of LATAM"
             />
           </div>
-          <h4>Partners</h4>
+          <Partners/>
         </div>
       </section>
     </>
