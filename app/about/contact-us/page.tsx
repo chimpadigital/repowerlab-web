@@ -1,8 +1,8 @@
 "use client";
+import ConnectToday from "@/components/ConnectToday";
 import GreenBanner from "@/components/GreenBanner";
 import HeroBreadcrumb from "@/components/HeroBreadcrumb";
 import { Mail } from "@/components/icons";
-import ConnectToday from "@/components/pages/about/contact-us/ConnectToday";
 import Formulario from "@/components/pages/about/contact-us/Formulario";
 import { button, title } from "@/components/primitives";
 import { BreadcrumbItem, Breadcrumbs } from "@nextui-org/react";
