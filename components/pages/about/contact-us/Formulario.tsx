@@ -2,19 +2,23 @@
 import { Input, RadioButton, TextArea } from "@/components/Inputs";
 import { button } from "@/components/primitives";
 import { Select, SelectItem } from "@nextui-org/react";
+import { useReCaptcha } from "next-recaptcha-v3";
 import React from "react";
 import { Controller, useForm } from "react-hook-form";
+import axios from "axios";
 
 export type FormValues = {
   name: string;
   phone: string;
   email: string;
-  subject: "Product" | "Service" | "Circular-economy" | "Other" | "";
-  message: string;
-  userType: "Partner" | "Client" | "Talen" | "";
+  asunto: "Product" | "Service" | "Circular-economy" | "Other" | "";
+  msg: string;
+  tipo: "Partner" | "Client" | "Talen" | "";
 };
 
 const Formulario = () => {
+  const { executeRecaptcha } = useReCaptcha();
+
   const {
     handleSubmit,
     control,
@@ -24,13 +28,34 @@ const Formulario = () => {
       email: "",
       name: "",
       phone: "",
-      subject: "",
-      message: "",
-      userType: "",
+      asunto: "",
+      msg: "",
+      tipo: "",
     },
   });
 
-  const onSubmit = (data: FormValues) => console.log("data", data);
+  const onSubmit = async (data: FormValues) => {
+    const token = await executeRecaptcha("form_submit");
+
+    if (token) {
+      try {
+        const response = await axios.post(
+          "api.repowerlab.chimpance.digital/api/form/contact",
+          {
+            data: {
+              ...data,
+              token,
+            },
+          }
+        );
+        console.log(response);
+      } catch (error) {
+        console.error(error);
+      }
+    } else {
+      console.log("no hay token");
+    }
+  };
   return (
     <div className="w-full flex justify-end pb-24 pt-28 scroll-smooth	">
       <form
@@ -95,14 +120,14 @@ const Formulario = () => {
 
         <Controller
           control={control}
-          name="subject"
+          name="asunto"
           render={({ field: { onChange, onBlur, value, ref } }) => (
             <Select
               selectedKeys={[value]}
               onChange={onChange}
               onBlur={onBlur}
               ref={ref}
-              aria-label="subject"
+              aria-label="asunto"
               placeholder="Select subject"
               className="w-full"
               scrollShadowProps={{
@@ -111,7 +136,8 @@ const Formulario = () => {
               classNames={{
                 trigger:
                   "bg-[#C5C5C5]/15 py-4 px-8 backdrop-blur-2xl border-white  transition-all border-2 rounded-full px-8 font-sans h-[60px] data-[hover=true]:bg-[#C5C5C5]/15 data-[open=true]:border-accent",
-                value: "text-white font-medium text-[16px]",
+                value:
+                  "font-medium text-[16px] text-white group-data-[has-value=true]:text-white",
                 popoverContent:
                   "bg-white text-[#777] p-0 rounded-[10px] text-base",
                 listbox: "p-0",
@@ -141,8 +167,8 @@ const Formulario = () => {
 
         <TextArea
           placeholder="Message"
-          error={errors.message && errors.message.message}
-          name="message"
+          error={errors.msg && errors.msg.message}
+          name="msg"
           control={control}
           rules={{
             required: "Message is required",
@@ -160,19 +186,19 @@ const Formulario = () => {
         <div className="flex gap-10 justify-center flex-wrap">
           <RadioButton
             label="Partner"
-            name="userType"
+            name="tipo"
             control={control}
             value="partner"
           />
           <RadioButton
             label="Client"
-            name="userType"
+            name="tipo"
             control={control}
             value="client"
           />
           <RadioButton
             label="Talent"
-            name="userType"
+            name="tipo"
             control={control}
             value="talent"
           />
