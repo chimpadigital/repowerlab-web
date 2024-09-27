@@ -11,7 +11,7 @@ const MapaMundial = () => {
   const [indexLocation, setIndexLocation] = useState<number>(0);
 
   return (
-    <div className="h-[420px] w-full relative grid place-items-center">
+    <div className="h-[600px] w-full relative grid place-items-center">
       <div className="absolute h-full w-[99vw]">
         <Map
           style={{ width: "100%", height: "100%" }}

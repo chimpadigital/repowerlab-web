@@ -5,7 +5,7 @@ import { title } from "@/components/primitives";
 
 const WhyChooseRepowerlab = () => {
   return (
-    <section className="container mx-auto flex items-center text-start relative lg:-top-24 px-6 lg:px-0">
+    <section className="container mx-auto flex items-center text-start relative lg:-top-6 px-6 lg:px-0">
       <article className="flex-[2] pt-14">
         <h4 className={`text-primary ${title()}`}>WHY CHOOSE REPOWERLAB?</h4>
         <p className="text-grey-700 pt-6 border-t border-s-secondary mt-6 max-w-[80ch]">
