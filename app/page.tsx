@@ -2,6 +2,7 @@
 import ThreeContainer from "@/three/ThreeContainer";
 import FeatureProducts from "@/components/pages/home/FeatureProducts";
 import SetApart from "@/components/pages/home/SetApart";
+import ConnectToday from "@/components/ConnectToday";
 
 export default function Home() {
   const backgroundStyle = {
@@ -21,6 +22,7 @@ export default function Home() {
         </div>
       </section>
       <FeatureProducts />
+      <ConnectToday />,
     </>
   );
 }
