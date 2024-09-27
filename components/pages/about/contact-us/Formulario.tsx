@@ -42,10 +42,8 @@ const Formulario = () => {
         const response = await axios.post(
           "https://api.repowerlab.chimpance.digital/api/form/contact",
           {
-            data: {
-              ...data,
-              "g-recaptcha-response": token,
-            },
+            ...data,
+            "g-recaptcha-response": token,
           }
         );
         console.log(response);
@@ -56,6 +54,7 @@ const Formulario = () => {
       console.log("no hay token");
     }
   };
+
   return (
     <div className="w-full flex justify-end pb-24 pt-28 scroll-smooth	">
       <form
