@@ -2,6 +2,7 @@ import { title } from "@/components/primitives";
 import React from "react";
 import image from "@/public/images/about/recursoOurTeam.webp";
 import TeamMemberCard from "./TeamMemberCard";
+import Partners from "./Partners";
 
 const MeetOurTeam = () => {
   return (
@@ -19,7 +20,7 @@ const MeetOurTeam = () => {
           />
         </clipPath>
       </svg>
-      <section className="our-team lg:-top-24 relative px-6 ">
+      <section className="our-team lg:-top-6 relative px-6 ">
         <div className="rounded-[20px] bg-grey-100 py-40 bg-[url(/images/about/recursoOurTeam.webp)] bg-no-repeat bg-left">
           <h4 className={`${title()} text-primary`}>Meet our Team</h4>
           <div className="flex gap-10 justify-center flex-wrap pt-40">
@@ -44,7 +45,7 @@ const MeetOurTeam = () => {
               position="Co-Founder & Managing Director of LATAM"
             />
           </div>
-          <h4>Partners</h4>
+          <Partners/>
         </div>
       </section>
     </>
