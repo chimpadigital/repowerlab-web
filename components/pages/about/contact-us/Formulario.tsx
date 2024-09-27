@@ -40,11 +40,11 @@ const Formulario = () => {
     if (token) {
       try {
         const response = await axios.post(
-          "api.repowerlab.chimpance.digital/api/form/contact",
+          "https://api.repowerlab.chimpance.digital/api/form/contact",
           {
             data: {
               ...data,
-              token,
+              "g-recaptcha-response": token,
             },
           }
         );
