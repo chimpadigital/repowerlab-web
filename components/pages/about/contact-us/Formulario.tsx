@@ -3,9 +3,10 @@ import { Input, RadioButton, TextArea } from "@/components/Inputs";
 import { button } from "@/components/primitives";
 import { Select, SelectItem } from "@nextui-org/react";
 import { useReCaptcha } from "next-recaptcha-v3";
-import React from "react";
+import React, { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import axios from "axios";
+import { IsotipoRepowerlab } from "@/components/icons";
 
 export type FormValues = {
   name: string;
@@ -22,7 +23,8 @@ const Formulario = () => {
   const {
     handleSubmit,
     control,
-    formState: { errors },
+    formState: { errors, isSubmitting },
+    reset,
   } = useForm<FormValues>({
     defaultValues: {
       email: "",
@@ -33,6 +35,9 @@ const Formulario = () => {
       tipo: "",
     },
   });
+
+  const [messageSent, setMessageSent] = useState(false);
+  const [messageFailed, setMessageFailed] = useState(false);
 
   const onSubmit = async (data: FormValues) => {
     const token = await executeRecaptcha("form_submit");
@@ -47,8 +52,16 @@ const Formulario = () => {
           }
         );
         console.log(response);
+
+        if (response?.status === 200) {
+          reset();
+          setMessageSent(true);
+        } else {
+          setMessageFailed(true);
+        }
       } catch (error) {
         console.error(error);
+        setMessageFailed(true);
       }
     } else {
       console.log("no hay token");
@@ -206,14 +219,37 @@ const Formulario = () => {
         <p className="text-white font-medium text-sm">
           We will get back to you within 2 business days.
         </p>
-        <div className="mx-auto">
+        <div className="mx-auto relative grid place-items-center">
           <button
-            className={button({
+            className={`${button({
               whiteLine: true,
-            })}
+            })} mx-auto`}
           >
-            Send message
+            {!isSubmitting ? (
+              "Send message"
+            ) : (
+              <span className="flex gap-3  fill-white group-hover:fill-primary">
+                Sending...
+                <span className="animate-spin transition-all">
+                  <IsotipoRepowerlab />
+                </span>
+              </span>
+            )}
           </button>
+          {messageSent && (
+            <span
+              className={`absolute w-max -bottom-8 text-center transition-all mt-3 inline-block text-white  ${messageSent ? "opacity-100  translate-y-0" : "opacity-0  translate-y-3"}`}
+            >
+              Message sent successfully
+            </span>
+          )}
+          {messageFailed && (
+            <span
+              className={`absolute w-max -bottom-8 text-center transition-all mt-3 inline-block text-red-400  ${messageFailed ? "opacity-100  translate-y-0" : "opacity-0  translate-y-3"}`}
+            >
+              An error occurred, please try again later.
+            </span>
+          )}
         </div>
       </form>
     </div>
