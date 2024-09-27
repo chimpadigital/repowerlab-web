@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import SwiperCore from "swiper";
-import { Swiper, SwiperSlide, SwiperProps } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -20,11 +19,11 @@ const Partners = () => {
           modules={[Autoplay]}
           speed={3000}
           autoplay={{
-            delay: 5,
+            delay: 0,
+            disableOnInteraction: false,
           }}
           loop={true}
           slidesPerView={"auto"}
-          watchSlidesProgress={true}
           spaceBetween={100}
           grabCursor={true}
         >

@@ -33,21 +33,18 @@ const ConnectToday = () => {
       <section className="flex-[2]">
         <CountryContactData
           address="2623 Fairfax Drive, Arlington, VA 22201(USA)"
-          conutryImage={flagUSA}
-          countryName="Usa"
+          countryName="United States"
           phone="(+1) 202-2715608"
         />
-        <hr className="mt-6 mb-2 border border-[#BACCE6]" />
+        <hr className="my-6 border border-b-[#BACCE6]" />
         <CountryContactData
           address="Balcon 98, 19192 Trijueque, Guadalajara, España"
-          conutryImage={flagSpain}
           countryName="Spain"
           phone="+34 61 8680986"
         />
-        <hr className="mt-6 mb-2 border border-[#BACCE6]" />
+        <hr className="my-6 border border-b-[#BACCE6]" />
         <CountryContactData
           address="Avenida 4 Norte nº 6n-67 oficina 603 Edificio Siglo XXI, Cali, Colombia"
-          conutryImage={flagColombia}
           countryName="Colombia"
           phone="57 310 6279422"
         />

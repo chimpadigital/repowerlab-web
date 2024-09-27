@@ -30,7 +30,7 @@ export default function AboutPage() {
       <MapaMundial />
       <WhyChooseRepowerlab />
       <MeetOurTeam />
-      <div className="px-6 relative lg:-top-10">
+      <div className="px-6 relative lg:-top-1">
         <GreenBanner>
           <div className="flex w-full flex-col lg:flex-row md:items-center gap-10">
             <div className="flex-1 gap-10 text-start flex items-center justify-between">

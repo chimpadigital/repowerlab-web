@@ -5,28 +5,19 @@ import { Location, Phone } from "./icons";
 
 interface CountryContactDataProps {
   countryName: string;
-  conutryImage: StaticImageData;
   phone: string;
   address: string;
 }
 
 const CountryContactData = ({
   countryName,
-  conutryImage,
   phone,
   address,
 }: CountryContactDataProps) => {
   return (
-    <div>
-      <div className="flex items-center gap-3">
-        <Image
-          alt={`Bandera de ${countryName}`}
-          src={conutryImage}
-          className="mt-2"
-        />
-        <h4 className="text-primary text-[3.5rem] font-light">{countryName}</h4>
-      </div>
-      <div className="flex items-center gap-3 text-grey-600 mb-3">
+    <div className="">
+      <h4 className="text-primary text-2xl font-normal mb-2">{countryName}</h4>
+      <div className="flex items-center gap-3 text-grey-600 mb-5">
         <div className="w-[18px]">
           <Phone />
         </div>
