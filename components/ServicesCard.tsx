@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { GruaIcono } from "./icons";
+import { Arrow, GruaIcono } from "./icons";
 import Link from "next/link";
 
 interface ServicesCardProps {
@@ -22,12 +22,18 @@ const ServicesCard = ({ titulo, svgIcono, texto, link }: ServicesCardProps) => {
         <div className="bg-[#B3C5DF] h-[78px] aspect-square rounded-full grid place-items-center w-fit">
           {svgIcono}
         </div>
-        <h4 className="max-w-[16ch] text-xl font-light">{titulo}</h4>
+        <h4 className="max-w-[12ch] text-xl font-light">{titulo}</h4>
       </div>
       <div className="absolute p-[26px] inset-0 translate-y-[100%] transition-all group-hover:translate-y-0 bg-[#F4F4F4] h-full w-full flex flex-col justify-between">
         <p className="text-sm">{texto}</p>
-        <Link href={link} className="ml-auto font-semibold">
-          Read More {">"}
+        <Link
+          href={link}
+          className=" flex items-center gap-2 ml-auto font-semibold"
+        >
+          <span>Read More</span>
+          <span className="relative top-0.5">
+            <Arrow />
+          </span>
         </Link>
       </div>
     </div>
