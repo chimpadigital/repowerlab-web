@@ -1,43 +1,29 @@
 import HeroBreadcrumb from "@/components/HeroBreadcrumb";
-import { title } from "@/components/primitives";
+import { button, title } from "@/components/primitives";
 import React from "react";
 import ScrollAccordion from "@/components/ScrollAccordion";
 import ServicesList from "@/components/ServicesList";
+import {
+  bladeRecycling,
+  decommissioning,
+  inspection,
+  repowering,
+  resaleMaterials,
+  resaleParts,
+  retrofitting,
+  warehousing,
+} from "@/utils/ourServicesAccordeons";
+import GreenBanner from "@/components/GreenBanner";
+import Link from "next/link";
 
 export default function page() {
   const breadcrumbs = ["Home", "Our services"];
 
-  const array1 = [
-    {
-      title: "Wind Farm Decommissioning",
-      description:
-        "Repowerlab specializes in the safe and efficient dismantling, relocation, and reassembly of onshore and offshore wind turbines. The company ensures strict adherence to environmental protection, safety standards, and local guidelines, with turbines being reinstalled, used for spare parts, or recycled.",
-      img: "/images/our-services/e1.jpg",
-    },
-    {
-      title: "Disassembly of Wind Turbines",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos molestiae, nostrum expedita laudantium necessitatibus earum deserunt fuga rerum delectus cumque aliquid eaque animi nesciunt illo fugit tempora pariatur, voluptatem voluptatum.",
-      img: "/images/our-services/e2.jpg",
-    },
-    {
-      title: "Onshore & Offshore Decommissioning",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos molestiae, nostrum expedita laudantium necessitatibus earum deserunt fuga rerum delectus cumque aliquid eaque animi nesciunt illo fugit tempora pariatur, voluptatem voluptatum.",
-      img: "/images/our-services/e3.jpg",
-    },
-    {
-      title: "Planning & Technical Studies",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos molestiae, nostrum expedita laudantium necessitatibus earum deserunt fuga rerum delectus cumque aliquid eaque animi nesciunt illo fugit tempora pariatur, voluptatem voluptatum.",
-      img: "/images/our-services/e4.jpg",
-    },
-  ];
   return (
     <>
-      <section className="w-full">
+      <section className="w-full px-6">
         <HeroBreadcrumb
-          img="/images/our-services/bg-hero.png"
+          img="/images/our-services/bg-hero.webp"
           breadcrumbs={breadcrumbs}
         >
           <div className="flex justify-end text-white w-full">
@@ -55,14 +41,62 @@ export default function page() {
         </HeroBreadcrumb>
       </section>
       <ServicesList />
-      <ScrollAccordion items={array1} id="decommissioning" />
-      <ScrollAccordion items={array1} id="repowering" />
-      <ScrollAccordion items={array1} id="retrofitting" imgPosition="right" />
-      <ScrollAccordion items={array1} id="blade-recycling" imgPosition="right"/>
-      <ScrollAccordion items={array1} id="inspection" />
-      <ScrollAccordion items={array1} id="resale-parts" />
-      <ScrollAccordion items={array1} id="resale-materials" imgPosition="right" />
-      <ScrollAccordion items={array1} id="warehousing" imgPosition="right"/>
+      <ScrollAccordion items={decommissioning} id="decommissioning" />
+      <ScrollAccordion items={repowering} id="repowering" />
+      <ScrollAccordion
+        items={retrofitting}
+        id="retrofitting"
+        imgPosition="right"
+      />
+      <ScrollAccordion
+        items={bladeRecycling}
+        id="blade-recycling"
+        imgPosition="right"
+      />
+      <ScrollAccordion items={inspection} id="inspection" />
+      <ScrollAccordion items={resaleParts} id="resale-parts" />
+      <ScrollAccordion
+        items={resaleMaterials}
+        id="resale-materials"
+        imgPosition="right"
+      />
+      <ScrollAccordion
+        items={warehousing}
+        id="warehousing"
+        imgPosition="right"
+      />
+
+      <div className="px-6 relative lg:-top-1">
+        <GreenBanner>
+          <div className="flex w-full flex-col lg:flex-row md:items-center gap-10">
+            <div className="flex-1 gap-10 text-start flex items-center justify-between">
+              <div className="flex-1">
+                <h4 className={`${title()} !block mb-3 max-w-[50ch]`}>
+                  Join us on this journey to{" "}
+                  <span className={`${title()} text-secondary`}>
+                    transform wind energy assets and create a cleaner, greener
+                    world.
+                  </span>
+                </h4>
+                <p className="max-w-[40ch] font-light mt-14">
+                  Together, we can achieve sustainable growth and make a lasting
+                  impact on our planet.
+                </p>
+              </div>
+            </div>
+            <div className="flex relative left-3">
+              <Link
+                href="/about/contact-us"
+                className={`scroll-smooth ${button({
+                  whiteLine: true,
+                })}`}
+              >
+                Connect
+              </Link>
+            </div>
+          </div>
+        </GreenBanner>
+      </div>
     </>
   );
 }
