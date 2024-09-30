@@ -51,7 +51,6 @@ const Formulario = () => {
             "g-recaptcha-response": token,
           }
         );
-        console.log(response);
 
         if (response?.status === 200) {
           reset();
