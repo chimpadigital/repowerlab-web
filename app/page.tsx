@@ -1,6 +1,8 @@
 
 import ThreeContainer from "@/three/ThreeContainer";
 import FeatureProducts from "@/components/pages/home/FeatureProducts";
+import SetApart from "@/components/pages/home/SetApart";
+import ConnectToday from "@/components/ConnectToday";
 
 export default function Home() {
   const backgroundStyle = {
@@ -12,10 +14,15 @@ export default function Home() {
   };
   return (
     <>
-      <div className="min-h-screen w-full" style={backgroundStyle}>
-        <ThreeContainer />
-      </div>
+      <SetApart />
+      <section className="flex justify-center px-6">
+
+        <div className="min-h-screen w-full rounded-[20px]" style={backgroundStyle}>
+          <ThreeContainer />
+        </div>
+      </section>
       <FeatureProducts />
+      <ConnectToday />,
     </>
   );
 }
