@@ -5,10 +5,13 @@ import { title } from "@/components/primitives";
 
 const WhyChooseRepowerlab = () => {
   return (
-    <section className="container mx-auto flex items-center text-start relative lg:-top-6 px-6 lg:px-0">
-      <article className="flex-[2] pt-14">
+    <section className="mx-auto flex items-center text-start relative lg:-top-6 px-6 lg:px-0 mb-10 lg:mb-0"
+    style={{
+      width: "min(100%, 1200px)"
+    }}>
+      <article className="flex-[2] pt-14  pl-6">
         <h4 className={`text-primary ${title()}`}>WHY CHOOSE REPOWERLAB?</h4>
-        <p className="text-grey-700 pt-6 border-t border-s-secondary mt-6 max-w-[80ch]">
+        <p className="text-grey-700 pt-6 border-t border-s-secondary mt-6 max-w-[80ch] font-thin">
           At RepowerLab, we believe in the power of circular economy solutions.
           Our comprehensive approach focuses on recouping the economic value of
           wind farms, managing every stage of a turbine’s lifecycle—from initial

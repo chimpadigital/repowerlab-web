@@ -6,11 +6,12 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 interface ScrollAcordionI {
   imgPosition?: 'right' | 'left'
   items: { title: string, description: string, img: string }[]
+  id: string
 }
 
 const fixFirst = 0.3
 
-export default function ScrollAccordion({ items, imgPosition = "left" }: ScrollAcordionI) {
+export default function ScrollAccordion({ items, imgPosition = "left", id }: ScrollAcordionI) {
   const ref = useRef<any>()
   const items2 = items.slice(1)
   const { scrollYProgress } = useScroll({
@@ -45,7 +46,7 @@ export default function ScrollAccordion({ items, imgPosition = "left" }: ScrollA
 
 
   return (
-    <section ref={ref} className='mt-4 text-[#000] flex justify-center w-full h-full relative ' style={{ height: `${(items.length * 1.5) * 100}vh` }}>
+    <section id={id} ref={ref} className='mt-4 text-[#000] flex justify-center w-full h-full relative ' style={{ height: `${(items.length * 1.5) * 100}vh` }}>
       <div className="container">
 
         <div className="grid grid-cols-2 min-h-screen items-center sticky top-0 gap-[20px]">
