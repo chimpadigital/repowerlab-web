@@ -66,7 +66,7 @@ export const repowering = [
 
 export const retrofitting = [
     {
-        title: "Winf turbine retrofitting & refurbishing",
+        title: "Wind turbine retrofitting & refurbishing",
         description:
             "RepowerLab enhances the performance and extends the lifespan of existing wind turbines through comprehensive retrofitting and refurbishing services, ensuring turbines operate at peak efficiency and durability.",
         img: "/images/our-services/e1.jpg",
@@ -85,8 +85,11 @@ export const retrofitting = [
     },
     {
         title: "Comprehensive Overhaul and Upgrades",
-        description:
-            "Gearbox & Generator Upgrades: We overhaul critical components like gearboxes and generators to match the performance of new turbines. Structural & Component Overhaul: We ensure robust performance hrough comprehensive inspections, structural repairs, and component refinishing. Electrical Upgrades: Our services include cleaning, inspecting, and upgrading electrical systems to optimize turbine operation and ensure long-term reliability.",
+        description: [
+            "Gearbox & Generator Upgrades: We overhaul critical components like gearboxes and generators to match the performance of new turbines.",
+            "Structural & Component Overhaul: We ensure robust performance through comprehensive inspections, structural repairs, and component refinishing.",
+            "Electrical Upgrades: Our services include cleaning, inspecting, and upgrading electrical systems to optimize turbine operation and ensure long-term reliability."
+        ],
         img: "/images/our-services/e4.jpg",
     },
 ];

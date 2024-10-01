@@ -17,7 +17,7 @@ import GreenBanner from "@/components/GreenBanner";
 import Link from "next/link";
 
 export default function page() {
-  const breadcrumbs = ["Home", "Our services"];
+  const breadcrumbs = ["Home", "Services"];
 
   return (
     <>
@@ -28,7 +28,7 @@ export default function page() {
         >
           <div className="flex justify-end text-white w-full">
             <div className="max-w-[500px]">
-              <h4 className={title({ size: "md" })}>Our services</h4>
+              <h4 className={title({ size: "md" })}>Services</h4>
               <p className="mt-6 font-light">
                 RepowerLab offers a full range of services to maximize the value
                 of your energy assets. From wind farm decommissioning and
@@ -71,7 +71,7 @@ export default function page() {
           <div className="flex w-full flex-col lg:flex-row md:items-center gap-10">
             <div className="flex-1 gap-10 text-start flex items-center justify-between">
               <div className="flex-1">
-                <h4 className={`${title()} !block mb-3 max-w-[50ch]`}>
+                <h4 className={`${title()} !block mb-3 max-w-[40ch]`}>
                   Join us on this journey to{" "}
                   <span className={`${title()} text-secondary`}>
                     transform wind energy assets and create a cleaner, greener

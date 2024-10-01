@@ -20,7 +20,7 @@ export default function AboutPage() {
         >
           <div className="flex mt-10">
             <h4 className={`text-white mr-auto text-left ${title()}`}>
-              Our company
+              Company
             </h4>
           </div>
         </HeroBreadcrumb>
