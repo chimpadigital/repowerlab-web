@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import ServicesCard from "./ServicesCard";
 import {
@@ -11,10 +12,28 @@ import {
   Transporte,
   TurbinaeolicaIcono,
 } from "./icons";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
 
 const ServicesList = () => {
   return (
-    <div className="container mx-auto flex gap-5 flex-wrap justify-center">
+    <motion.div
+      variants={container}
+      initial="hidden"
+      animate="visible"
+      className="container mx-auto flex gap-5 flex-wrap justify-center"
+    >
       <ServicesCard
         link="/our-services#decommissioning"
         svgIcono={<GruaIcono />}
@@ -63,7 +82,7 @@ const ServicesList = () => {
         texto="Repowerlab offers secure warehousing solutions and specialized logistics to ensure the safe and efficient handling, storage, and transportation of wind turbine components."
         titulo="Warehousing & transportation"
       />
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,7 +1,8 @@
-import Image from "next/image";
+"use client"
 import React from "react";
 import { Arrow, GruaIcono } from "./icons";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface ServicesCardProps {
   titulo: string;
@@ -10,9 +11,18 @@ interface ServicesCardProps {
   link: string;
 }
 
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
 const ServicesCard = ({ titulo, svgIcono, texto, link }: ServicesCardProps) => {
   return (
-    <div
+    <motion.div
+      variants={item}
       className="relative overflow-hidden group shadow-[5px_5px_4px_0px_#0000001A] rounded-[10px] bg-[#F4F4F4] w-fit text-primary min-h-[280px] px-6"
       style={{
         width: "min(100%, 307px)",
@@ -36,7 +46,7 @@ const ServicesCard = ({ titulo, svgIcono, texto, link }: ServicesCardProps) => {
           </span>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
