@@ -14,7 +14,11 @@ export default function AboutPage() {
     <section className="overflow-x-clip">
       <div className="px-6">
         <HeroBreadcrumb
-          breadcrumbs={["Home", "About Us"]}
+          breadcrumbs={[{
+            label: "Home", href: "/"
+            }, {
+            label: "Company", href: "/about"
+          }]}
           img="/images/about/headerImgAbout.webp"
           position="left"
         >

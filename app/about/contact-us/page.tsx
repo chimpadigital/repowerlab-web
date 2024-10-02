@@ -30,8 +30,17 @@ const ContactUs = () => {
                       separator: "text-white/40",
                     }}
                   >
-                    {["Home", "About Us", " Contact us"].map((el, index) => (
-                      <BreadcrumbItem key={index}>{el}</BreadcrumbItem>
+                    {[{
+                      label: "Home",
+                      href: "/",
+                    }, {
+                      label: "Company",
+                      href: "/about",
+                      }, {
+                      label: "Contact us",
+                      href: "/about/contact-us",
+                    }].map((el, index) => (
+                      <BreadcrumbItem key={index} href={el.href}>{el.label}</BreadcrumbItem>
                     ))}
                   </Breadcrumbs>
                   <div className="text-start text-white mt-10">

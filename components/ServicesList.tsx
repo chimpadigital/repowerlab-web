@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import ServicesCard from "./ServicesCard";
 import {
@@ -32,7 +32,8 @@ const ServicesList = () => {
       variants={container}
       initial="hidden"
       animate="visible"
-      className="container mx-auto flex gap-5 flex-wrap justify-center"
+      className="mx-auto flex gap-[18px] flex-wrap justify-center px-3"
+      style={{ width: "min(100%, 1320px)" }}
     >
       <ServicesCard
         link="/our-services#decommissioning"

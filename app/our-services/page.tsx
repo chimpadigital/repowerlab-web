@@ -17,7 +17,10 @@ import GreenBanner from "@/components/GreenBanner";
 import Link from "next/link";
 
 export default function page() {
-  const breadcrumbs = ["Home", "Services"];
+  const breadcrumbs = [
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/our-services" },
+  ];
 
   return (
     <>
