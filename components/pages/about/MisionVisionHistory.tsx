@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 const MisionVisionHistory = () => {
   return (
-    <div className="MisionVisionHistory flex container flex-wrap  gap-24 mx-auto justify-center my-20">
+    <div
+      className="MisionVisionHistory flex flex-wrap  gap-24 mx-auto justify-center my-20 px-6"
+      style={{ width: "min(100%, 1500px)" }}
+    >
       <motion.div
         className="relative group"
         style={{ width: "min(100%, 374px)" }}
