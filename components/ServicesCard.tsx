@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { Arrow, GruaIcono } from "./icons";
 import Link from "next/link";
