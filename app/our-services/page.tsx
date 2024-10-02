@@ -40,31 +40,35 @@ export default function page() {
           </div>
         </HeroBreadcrumb>
       </section>
-      <ServicesList />
-      <ScrollAccordion items={decommissioning} id="decommissioning" />
-      <ScrollAccordion items={repowering} id="repowering" />
-      <ScrollAccordion
-        items={retrofitting}
-        id="retrofitting"
-        imgPosition="right"
-      />
-      <ScrollAccordion
-        items={bladeRecycling}
-        id="blade-recycling"
-        imgPosition="right"
-      />
-      <ScrollAccordion items={inspection} id="inspection" />
-      <ScrollAccordion items={resaleParts} id="resale-parts" />
-      <ScrollAccordion
-        items={resaleMaterials}
-        id="resale-materials"
-        imgPosition="right"
-      />
-      <ScrollAccordion
-        items={warehousing}
-        id="warehousing"
-        imgPosition="right"
-      />
+      <div className="mb-10">
+        <ServicesList />
+      </div>
+      <section className="px-2 md:px-6 mb-14">
+        <ScrollAccordion items={decommissioning} id="decommissioning" />
+        <ScrollAccordion items={repowering} id="repowering" />
+        <ScrollAccordion
+          items={retrofitting}
+          id="retrofitting"
+          imgPosition="right"
+        />
+        <ScrollAccordion
+          items={bladeRecycling}
+          id="blade-recycling"
+          imgPosition="right"
+        />
+        <ScrollAccordion items={inspection} id="inspection" />
+        <ScrollAccordion items={resaleParts} id="resale-parts" />
+        <ScrollAccordion
+          items={resaleMaterials}
+          id="resale-materials"
+          imgPosition="right"
+        />
+        <ScrollAccordion
+          items={warehousing}
+          id="warehousing"
+          imgPosition="right"
+        />
+      </section>
 
       <div className="px-6 relative lg:-top-1">
         <GreenBanner>

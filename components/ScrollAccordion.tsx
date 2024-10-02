@@ -159,7 +159,7 @@ const AccordionMotion = ({ index, el, y, distancia }: any) => {
       </div>
       <motion.div
         style={{ opacity }}
-        className={`pt-2 absolute top-[80px] text-grey-600 px-[20px] ${hidden && "hidden"}  ${el.description.length < 210 && "max-w-[60ch]"}`}
+        className={`pt-2 absolute top-[80px] text-grey-600 px-[20px] ${hidden && "hidden"}  ${el.description.length < 210 && !Array.isArray(el.description) && "max-w-[60ch]"}`}
       >
         {Array.isArray(el.description) ? (
           <ul>
