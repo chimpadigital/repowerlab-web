@@ -22,7 +22,7 @@ export default function HeroBreadcrumb({
 }: HeroBreadcrumbI) {
   return (
     <div className="w-full  relative top-[-80px]">
-      <div className="w-full relative flex justify-center overflow-hidden h-full min-h-[620px] px-14 rounded-[20px] pt-[100px]">
+      <div className="w-full relative flex justify-center overflow-hidden h-full min-h-[620px] px-10 rounded-[20px] pt-[100px]">
         <Image
           src={img}
           fill
