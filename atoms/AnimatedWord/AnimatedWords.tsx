@@ -34,7 +34,7 @@ const AnimatedWords = ({ children }: { children: React.ReactNode }) => {
         animate={{
           backgroundSize: backgroundSize,
           transition: {
-            duration: 1,
+            duration: 3,
             ease: "easeInOut",
           },
         }}
