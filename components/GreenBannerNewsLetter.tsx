@@ -3,20 +3,23 @@ import GreenBanner from "./GreenBanner";
 import { button, title } from "./primitives";
 import { useReCaptcha } from "next-recaptcha-v3";
 import axios from "axios";
+import { IsotipoRepowerlab } from "./icons";
 
 const GreenBannerNewsLetter = () => {
-  const [errorSubstribe, setErrorSubstribe] = useState("");
+  const [errorSubstribe, setErrorSubscribe] = useState("");
   const [subscriptionSuccess, setSubscriptionSuccess] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   const { executeRecaptcha } = useReCaptcha();
 
   const handleOnSubmitSubscribe = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsSending(true);
     const formData = new FormData(e.currentTarget);
     const email = formData.get("email");
 
     if (!email) {
-      return setErrorSubstribe("Please enter a valid email.");
+      return setErrorSubscribe("Please enter a valid email.");
     }
 
     const token = await executeRecaptcha("form_submit");
@@ -31,12 +34,11 @@ const GreenBannerNewsLetter = () => {
           }
         );
 
-        if (response?.status === 200 || response?.status.toString() === "200") {
-          e.currentTarget.reset();
+        if (response?.status === 200) {
           setSubscriptionSuccess(true);
-          setErrorSubstribe("");
+          setErrorSubscribe("");
         } else {
-          setErrorSubstribe("Error, try again later.");
+          setErrorSubscribe("Error, try again later.");
         }
       } catch (error) {
         console.error(error);
@@ -44,6 +46,7 @@ const GreenBannerNewsLetter = () => {
     } else {
       console.log("no hay token");
     }
+    setIsSending(false);
   };
 
   return (
@@ -75,14 +78,14 @@ const GreenBannerNewsLetter = () => {
               className="md:ml-auto rounded-full focus-within:outline-2 border-white border-2  focus:outline-none focus:border-accent  placeholder-gray-400 transition-all duration-300  bg-[#C5C5C5]/15 py-[10px] px-8 backdrop-blur-sm placeholder:text-white placeholder:font-light w-full"
             />
             {errorSubstribe && (
-              <span className="absolute text-red-400 -bottom-8 left-0">
+              <span className="absolute text-red-400 -bottom-8 left-8">
                 {errorSubstribe}
               </span>
             )}
 
             {subscriptionSuccess && (
-              <span className="absolute text-green-400 -bottom-8 left-0">
-                subscription successful
+              <span className="absolute text-green-400 -bottom-8 left-8">
+                Subscription successful
               </span>
             )}
           </div>
@@ -92,7 +95,16 @@ const GreenBannerNewsLetter = () => {
               whiteLine: true,
             })}`}
           >
-            Subscribe
+            {isSending ? (
+              <span className="flex gap-3  fill-white group-hover:fill-primary">
+                Sending...
+                <span className="animate-spin transition-all">
+                  <IsotipoRepowerlab />
+                </span>
+              </span>
+            ) : (
+              "Subscribe"
+            )}
           </button>
         </form>
       </div>
