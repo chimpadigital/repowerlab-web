@@ -3,6 +3,8 @@ import ThreeContainer from "@/three/ThreeContainer";
 import FeatureProducts from "@/components/pages/home/FeatureProducts";
 import SetApart from "@/components/pages/home/SetApart";
 import ConnectToday from "@/components/ConnectToday";
+import RepowerlabImpact from "@/components/pages/home/RepowerlabImpact";
+import Services from "@/components/pages/home/Services";
 
 export default function Home() {
   const backgroundStyle = {
@@ -15,14 +17,10 @@ export default function Home() {
   return (
     <>
       <SetApart />
-      <section className="flex justify-center px-6">
-
-        <div className="min-h-screen w-full rounded-[20px]" style={backgroundStyle}>
-          <ThreeContainer />
-        </div>
-      </section>
+      <RepowerlabImpact />
+      <Services />
       <FeatureProducts />
-      <ConnectToday />,
+      <ConnectToday />
     </>
   );
 }

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function FeatureProducts() {
     return (
-        <div>
+        <div className='py-[100px]'>
             <div className='flex justify-center items-center flex-col pt-8 pb-[80px]'>
                 <h3 className={`${title()} text-primary mb-3 !block`}>
                     Feature Products
