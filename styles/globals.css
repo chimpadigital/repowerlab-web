@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: "Ubuntu", system-ui;
     scroll-behavior: smooth;
@@ -37,4 +41,3 @@
 .swiper-slide {
     width: auto !important;
 }
-

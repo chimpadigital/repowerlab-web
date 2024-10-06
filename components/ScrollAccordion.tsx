@@ -77,11 +77,7 @@ export default function ScrollAccordion({
               <div className="text-[24px] font-bold text-primary">
                 {items[0].title}
               </div>
-              <div
-                className={`text-grey-600 pt-6 ${items[0].description.length < 210 && "max-w-[60ch]"}`}
-              >
-                {items[0].description}
-              </div>
+              <div className={`text-grey-600 pt-6`}>{items[0].description}</div>
             </motion.div>
 
             <div ref={elementoRef}>
@@ -159,7 +155,7 @@ const AccordionMotion = ({ index, el, y, distancia }: any) => {
       </div>
       <motion.div
         style={{ opacity }}
-        className={`pt-2 absolute top-[80px] text-grey-600 px-[20px] ${hidden && "hidden"}  ${el.description.length < 210 && "max-w-[60ch]"}`}
+        className={`pt-2 absolute top-[80px] text-grey-600 px-[20px] ${hidden && "hidden"}`}
       >
         {Array.isArray(el.description) ? (
           <ul>
