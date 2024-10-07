@@ -5,6 +5,7 @@ import iconoLight from "@/public/images/circular-economy/icon-light.png";
 import iconoCiruclarEconomy from "@/public/images/circular-economy/icon-circular-economy.png";
 import iconoRefurbishment from "@/public/images/circular-economy/icon-refurbishment.png";
 import iconoRecycling from "@/public/images/circular-economy/icon-recicle.png";
+import Link from "next/link";
 
 const SolutionsCards = () => {
   return (
@@ -13,7 +14,8 @@ const SolutionsCards = () => {
         Circular Economy Solutions
       </h4>
       <div className="flex gap-5 justify-center mt-24 flex-wrap">
-        <div
+        <Link
+          href={"#repowering-solutions"}
           className="w-fit px-8 py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-[10px] text-left"
           style={{ width: "min(100%, 309px)" }}
         >
@@ -23,9 +25,10 @@ const SolutionsCards = () => {
           <h5 className="max-w-[10ch] inline-block text-2xl mt-7">
             Repowering Solutions
           </h5>
-        </div>
+        </Link>
 
-        <div
+        <Link
+          href={"#circular-economy-solution"}
           className="w-fit px-8 py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-[10px] text-left"
           style={{ width: "min(100%, 309px)" }}
         >
@@ -40,9 +43,10 @@ const SolutionsCards = () => {
           <h5 className="max-w-[20ch] inline-block text-2xl mt-7">
             Circular Economy Solutions
           </h5>
-        </div>
+        </Link>
 
-        <div
+        <Link
+          href={"#refurbishment"}
           className="w-fit px-8 py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-[10px] text-left"
           style={{ width: "min(100%, 309px)" }}
         >
@@ -57,9 +61,10 @@ const SolutionsCards = () => {
           <h5 className="max-w-[10ch] inline-block text-2xl mt-7">
             Refurbishment Solutions
           </h5>
-        </div>
+        </Link>
 
-        <div
+        <Link
+          href={"#recycling-solution"}
           className="w-fit px-8 py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-[10px] text-left"
           style={{ width: "min(100%, 309px)" }}
         >
@@ -75,7 +80,7 @@ const SolutionsCards = () => {
           <h5 className="max-w-[10ch] inline-block text-2xl mt-7">
             Recycling Solutions
           </h5>
-        </div>
+        </Link>
       </div>
     </section>
   );

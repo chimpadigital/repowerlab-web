@@ -6,6 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 interface ScrollAcordionI {
   imgPosition?: "right" | "left";
   items: { title: string; description: string | string[]; img: string }[];
+  titleItems?: string;
   id: string;
 }
 
@@ -14,6 +15,7 @@ const fixFirst = 0.3;
 export default function ScrollAccordion({
   items,
   imgPosition = "left",
+  titleItems,
   id,
 }: ScrollAcordionI) {
   const ref = useRef<any>();
@@ -78,9 +80,10 @@ export default function ScrollAccordion({
                 {items[0].title}
               </div>
               <div className={`text-grey-600 pt-6`}>{items[0].description}</div>
+              {titleItems && <p className="mt-4 text-primary">{titleItems}</p>}
             </motion.div>
 
-            <div ref={elementoRef}>
+            <div ref={elementoRef} className="relative">
               {items2.map((el, index) => (
                 <AccordionMotion
                   distancia={distancia}
@@ -88,6 +91,7 @@ export default function ScrollAccordion({
                   y={y}
                   index={index}
                   key={index + "Accoridon"}
+                  titleItems={titleItems || "fdsfdsf"}
                 />
               ))}
             </div>
@@ -147,7 +151,7 @@ const AccordionMotion = ({ index, el, y, distancia }: any) => {
   }, []);
 
   return (
-    <motion.div key={index} className="relative" style={{ y: top }}>
+    <motion.div key={index} className={`relative`} style={{ y: top }}>
       <div className="py-2">
         <div className="rounded-full w-full p-[20px] bg-grey-100 text-primary font-bold">
           {el.title}
@@ -155,7 +159,7 @@ const AccordionMotion = ({ index, el, y, distancia }: any) => {
       </div>
       <motion.div
         style={{ opacity }}
-        className={`pt-2 absolute top-[80px] text-grey-600 px-[20px] ${hidden && "hidden"}`}
+        className={`pt-2 absolute top-[80px] bg-white text-grey-600 px-[20px] ${hidden && "hidden"}`}
       >
         {Array.isArray(el.description) ? (
           <ul>
