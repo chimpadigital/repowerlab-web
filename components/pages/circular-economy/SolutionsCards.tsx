@@ -9,13 +9,13 @@ import Link from "next/link";
 
 const SolutionsCards = () => {
   return (
-    <section className="px-8 mx-6 bg-primary bg-[url(/images/circular-economy/bg-solutions-cards.webp)] bg-no-repeat bg-cover rounded-[20px] pt-32 pb-32 text-center">
+    <section className="px-8 mx-6 bg-primary bg-[url(/images/circular-economy/bg-solutions-cards.webp)] bg-fixed bg-no-repeat bg-cover rounded-[20px] pt-32 pb-32 text-center">
       <h4 className={`${title({ size: "md" })} text-white`}>
         Circular Economy Solutions
       </h4>
       <div className="flex gap-5 justify-center mt-24 flex-wrap">
         <Link
-          href={"#repowering-solutions"}
+          href={"/circular-economy#repowering-solutions"}
           className="w-fit px-8 py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-[10px] text-left"
           style={{ width: "min(100%, 309px)" }}
         >
@@ -27,8 +27,8 @@ const SolutionsCards = () => {
           </h5>
         </Link>
 
-        <Link
-          href={"#circular-economy-solution"}
+        <a
+          href={"/circular-economy#circular-economy-solution"}
           className="w-fit px-8 py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-[10px] text-left"
           style={{ width: "min(100%, 309px)" }}
         >
@@ -43,10 +43,10 @@ const SolutionsCards = () => {
           <h5 className="max-w-[20ch] inline-block text-2xl mt-7">
             Circular Economy Solutions
           </h5>
-        </Link>
+        </a>
 
         <Link
-          href={"#refurbishment"}
+          href={"/circular-economy#refurbishment"}
           className="w-fit px-8 py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-[10px] text-left"
           style={{ width: "min(100%, 309px)" }}
         >
@@ -64,7 +64,7 @@ const SolutionsCards = () => {
         </Link>
 
         <Link
-          href={"#recycling-solution"}
+          href={"/circular-economy#recycling-solution"}
           className="w-fit px-8 py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-[10px] text-left"
           style={{ width: "min(100%, 309px)" }}
         >
