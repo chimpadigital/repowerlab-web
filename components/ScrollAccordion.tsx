@@ -2,12 +2,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
+import { button } from "./primitives";
 
 interface ScrollAcordionI {
   imgPosition?: "right" | "left";
   items: { title: string; description: string | string[]; img: string }[];
   titleItems?: string;
   id: string;
+  imgText?: string;
 }
 
 const fixFirst = 0.3;
@@ -17,14 +20,17 @@ export default function ScrollAccordion({
   imgPosition = "left",
   titleItems,
   id,
+  imgText,
 }: ScrollAcordionI) {
   const ref = useRef<any>();
   const items2 = items.slice(1);
   const { scrollYProgress } = useScroll({
     target: ref,
   });
+
   const y = useTransform(scrollYProgress, [0, 1], [0, items.length]);
   const opacityOfTitle = useTransform(y, [0.8, 1.8], [1, 0]);
+  const opacityOfTitleSecondary = useTransform(y, [0.8, 1], [1, 0]);
   const scaleOfTitle = useTransform(y, [0.8, 1.8], [1, 0.8]);
   const yOfTitle = useTransform(y, [0.8, 1.8], [0, -50]);
 
@@ -65,6 +71,19 @@ export default function ScrollAccordion({
               items.map((el, index) => (
                 <ImageMotion src={el.img} key={index} y={y} index={index} />
               ))}
+            {imgText && (
+              <div className="absolute left-0 right-0 rounded-[20px] bottom-0 py-10 px-12 bg-black/35 backdrop-blur-sm text-white flex gap-5 items-center justify-between">
+                <p className="max-w-[48ch]">{imgText}</p>
+                <Link
+                  href="/about/contact-us"
+                  className={`scroll-smooth h-fit ${button({
+                    whiteLine: true,
+                  })} w-fit`}
+                >
+                  Connect
+                </Link>
+              </div>
+            )}
           </div>
           <div
             className={`col-span-1 max-h-[700px] p-12 shadow-lg rounded-[20px] h-full flex flex-col relative justify-between`}
@@ -75,12 +94,26 @@ export default function ScrollAccordion({
                 scale: scaleOfTitle,
                 y: yOfTitle,
               }}
+              className="flex flex-col justify-between h-full"
             >
-              <div className="text-[24px] font-bold text-primary">
-                {items[0].title}
+              <div className="">
+                <div className="text-[24px] font-bold text-primary">
+                  {items[0].title}
+                </div>
+                <div className={`text-grey-600 pt-6`}>
+                  {items[0].description}
+                </div>
               </div>
-              <div className={`text-grey-600 pt-6`}>{items[0].description}</div>
-              {titleItems && <p className="mt-4 text-primary">{titleItems}</p>}
+              {titleItems && (
+                <motion.p
+                  style={{
+                    opacity: opacityOfTitleSecondary,
+                  }}
+                  className="mt-4 text-primary pb-5"
+                >
+                  {titleItems}
+                </motion.p>
+              )}
             </motion.div>
 
             <div ref={elementoRef} className="relative">
