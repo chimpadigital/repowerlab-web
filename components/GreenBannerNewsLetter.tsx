@@ -1,3 +1,4 @@
+"use client"
 import React, { FormEvent, useState } from "react";
 import GreenBanner from "./GreenBanner";
 import { button, title } from "./primitives";

@@ -4,6 +4,7 @@ export const title = tv({
   base: "tracking-tight inline font-semibold",
   variants: {
     color: {
+      white: "text-white",
       primary: "text-primary",
       violet: "from-[#FF1CF7] to-[#b249f8]",
       yellow: "from-[#FF705B] to-[#FFB457]",
@@ -45,14 +46,14 @@ export const subtitle = tv({
   base: "w-full md:w-1/2 my-2 font-[600] text-white text-lg lg:text-[26px] block max-w-full",
   variants: {
     colors: {
-      primary: "#1C4741",
-      secondary: "#BACCE6",
-      accent: "#E8B516",
-      white: "#fff",
-      grey: {
-        100: "#F4F4F4",
-        600: "#9B9B9B"
-      },
+      primary: "text-primary",
+      secondary: "text-secondary",
+      accent: "text-accent",
+      white: "text-white",
+      grey: "text-grey-600"
+    },
+    size: {
+      md: "text-[24px]"
     },
     fullWidth: {
       true: "!w-full",

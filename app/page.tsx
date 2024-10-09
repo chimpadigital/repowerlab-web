@@ -5,6 +5,8 @@ import SetApart from "@/components/pages/home/SetApart";
 import ConnectToday from "@/components/ConnectToday";
 import RepowerlabImpact from "@/components/pages/home/RepowerlabImpact";
 import Services from "@/components/pages/home/Services";
+import SuccesCases from "@/components/pages/home/SuccesCases";
+import GreenBannerNewsLetter from "@/components/GreenBannerNewsLetter";
 
 export default function Home() {
   const backgroundStyle = {
@@ -20,7 +22,11 @@ export default function Home() {
       <RepowerlabImpact />
       <Services />
       <FeatureProducts />
+      <SuccesCases />
       <ConnectToday />
+      <div className="flex w-full justify-center py-4 px-6">
+          <GreenBannerNewsLetter />
+      </div>
     </>
   );
 }
