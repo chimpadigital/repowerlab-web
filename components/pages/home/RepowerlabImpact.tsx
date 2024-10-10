@@ -1,13 +1,17 @@
 "use client"
+import { IconHowWeWork } from '@/components/icons'
 import { subtitle, title } from '@/components/primitives'
+import RotateScroll from '@/components/RotateScroll'
 import WordAnimated from '@/components/WordAnimated'
+import { extendVariants } from '@nextui-org/system'
+import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 
 export default function RepowerlabImpact() {
     return (
         <div className='px-8'>
             <div className="rounded-[10px] bg-primary py-[100px] flex justify-center">
-                <div className="container">
+                <div className="container px-6">
                     <div className="flex justify-between">
                         <h5 className={`${title({ color: "white", size: "md" })} max-w-[300px]`}>RepowerLab's Impact</h5>
                         <div className="max-w-[1000px]">
@@ -16,6 +20,7 @@ export default function RepowerlabImpact() {
                     </div>
                     <div className="pt-[200px]">
                         <div className="grid grid-cols-4 gap-8 mb-[200px]">
+
                             <Card title='Waste reduction' percent='85-90%' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aliquam a sapiente, officia at in, culpa odit suscipit eius eos accusantium error vero quasi quidem minus ad cumque ducimus rerum?' />
                             <Card title='Waste avoided' percent='60%' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aliquam a sapiente, officia at in, culpa odit suscipit eius eos accusantium error vero quasi quidem minus ad cumque ducimus rerum?' />
                             <Card title='Increased power output' percent='25-30%' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aliquam a sapiente, officia at in, culpa odit suscipit eius eos accusantium error vero quasi quidem minus ad cumque ducimus rerum?' />
@@ -51,6 +56,15 @@ export default function RepowerlabImpact() {
                                 </div>
                             </div>
                         </div>
+                        <div className="col-span-1">
+                            <Single title='A single point of contact' url='' description='We provide a single point of contact for all services, ensuring seamless communication and coordination' />
+                            <div className='pt-8'>
+                                <Single title='Global Presence' url='' description='Our services span two continents, delivering and servicing anywhere in the world.' />
+                            </div>
+                            <div className='pt-8'>
+                                <Single title='Expertise' url='' description='With over 12 years of experience, we bring unmatched expertise to every project.' />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,16 +80,43 @@ interface CardI {
 
 const Card = ({ title, percent, description }: CardI) => {
     const [open, setOpen] = useState<boolean>(false)
+
+    const variants = {
+        open: { opacity: 1, y: 0 },
+        closed: { opacity: 0, y: 450 },
+    }
     return (
-        <article className='border relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6'>
-            <h5 className="font-light uppercase text-[20px] w-[200px]">{title}</h5>
-            <h5 className="text-bold text-[32px]">{percent}</h5>
+        <motion.article onClick={() => { setOpen(!open) }} style={{ height: open ? "320px" : "150px" }} className={`border overflow-hidden cursor-pointer h-full transition-all duration-600 relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6`}>
+            <div className=' relative z-10'>
+                <h5 className="font-light uppercase text-[20px] w-[200px]">{title}</h5>
+                <h5 className="text-bold text-[32px]">{percent}</h5>
+            </div>
             <svg className='absolute bottom-2 right-2' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 18V5M18 18L2 2M18 18H5" stroke="white" stroke-width="3" />
             </svg>
+            <motion.p variants={variants} animate={open ? "open" : "closed"} transition={{ duration: .6 }} className={` absolute bottom-2 w-[250px]`}>{description}</motion.p>
+        </motion.article>
+    )
+}
 
+interface SingleI {
+    title: string,
+    url: string,
+    description: string
+}
 
-            <p className='hidden'>{description}</p>
+const Single = ({ title, url, description }: SingleI) => {
+
+    return (
+        <article className=' flex justify-between items-center gap-4 pb-6 border-b border-grey-100/50'>
+            <div className='max-w-[480px]'>
+                <h5 className={`${subtitle({ colors: "white", size: "md" })}`}>{title}</h5>
+                <p className="text-white">{description}</p>
+            </div>
+            <RotateScroll>
+                <IconHowWeWork />
+            </RotateScroll>
+            
         </article>
     )
 }

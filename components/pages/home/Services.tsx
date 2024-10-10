@@ -6,7 +6,9 @@ export default function Services() {
     return (
         <div className='py-[100px] w-full flex justify-center'>
             <div className="container w-full px-8">
-                <h2 className={`${title({color:"primary"})} text-center`}>Services</h2>
+                <div className="w-full flex justify-center">
+                    <h2 className={`${title({ color: "primary" })} text-center`}>Services</h2>
+                </div>
                 <div className="pt-[60px]">
                     <ServicesList />
                 </div>

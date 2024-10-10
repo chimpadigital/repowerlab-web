@@ -25,11 +25,7 @@ export default function ScrollProducts() {
         "/images/our-services/e3.jpg",
         "/images/our-services/e4.jpg"
     ]
-    useEffect(() => {
-        y.on('change', (e: any) => {
-            console.log(e)
-        })
-    }, [])
+
 
     return (
         <div className='relative h-[300vh]' ref={ref}>

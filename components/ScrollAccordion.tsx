@@ -62,7 +62,7 @@ export default function ScrollAccordion({
       className="mt-4 text-[#000] flex justify-center w-full h-full relative "
       style={{ height: `${items.length * 1.5 * 100}vh` }}
     >
-      <div className="container">
+      <div className="container px-6">
         <div className="grid grid-cols-2 min-h-screen items-center sticky top-0 gap-[20px]">
           <div
             className={`col-span-1 relative max-h-[700px] h-full ${imgPosition == "right" && "order-last"}`}

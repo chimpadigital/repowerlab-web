@@ -7,6 +7,7 @@ import RepowerlabImpact from "@/components/pages/home/RepowerlabImpact";
 import Services from "@/components/pages/home/Services";
 import SuccesCases from "@/components/pages/home/SuccesCases";
 import GreenBannerNewsLetter from "@/components/GreenBannerNewsLetter";
+import Products from "@/components/pages/home/Products";
 
 export default function Home() {
   const backgroundStyle = {
@@ -21,6 +22,7 @@ export default function Home() {
       <SetApart />
       <RepowerlabImpact />
       <Services />
+      <Products />
       <FeatureProducts />
       <SuccesCases />
       <ConnectToday />
