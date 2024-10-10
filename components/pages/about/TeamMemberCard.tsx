@@ -20,23 +20,31 @@ const TeamMemberCard = ({
         style={{
           clipPath: "url(#clip-shape)",
           backgroundImage: `url(${image})`,
+          transitionBehavior: "allow-discrete",
         }}
       ></div>
       <div
         style={{
           clipPath: "url(#clip-shape)",
         }}
-        className="absolute z-20 group text-white text-start h-full w-full inset-0 origin-center hover:h-full hover:w-full bg-[#0e0e0e80]   hover:bg-[#70707080] hover:backdrop-blur-[9px] flex flex-col px-6 pt-16 pb-10 transition-all justify-end hover:justify-normal hover:pb-32"
+        className="absolute z-20 group text-white text-start h-full w-full inset-0 origin-center hover:h-full hover:w-full bg-[#0e0e0e80]   hover:bg-[#70707080] hover:backdrop-blur-[9px] flex flex-col px-6 pt-44 transition-all  hover:justify-normal "
       >
-        <div className="transition-all  text-xl md:text-2xl ">
+        <div className="transition-all absolute bottom-8  group-hover:bottom-[70%] text-xl md:text-2xl ">
           <h4 className="font-extrabold text-2xl mb-3 font-[Mulish]">{name}</h4>
           <p className="font-[Mulish] text-2xl">{position}</p>
         </div>
         <div
-          className="opacity-0 hidden group-hover:block scale-y-0 mt-3 group-hover:opacity-100 group-hover:scale-y-100 "
-          style={{ transition: "display 200ms, padding 200ms" }}
+          className="
+           opacity-0 transition-all
+         mt-3 group-hover:opacity-100  "
+          // style={{ transition: "display 200ms, padding 200ms" }}
         >
-          <p className="font-[Mulish] text-base font-extralight cursor-default">
+          <p
+            className="font-[Mulish] text-base font-extralight cursor-default"
+            style={{
+              transitionBehavior: "allow-discrete",
+            }}
+          >
             {description}
           </p>
         </div>

@@ -1,4 +1,9 @@
-import { Mail } from "@/components/icons";
+import {
+  FacebookIcon,
+  LinkedInIcon,
+  Mail,
+  TwitterIcon,
+} from "@/components/icons";
 import { button, subtitle, title } from "@/components/primitives";
 import Link from "next/link";
 import React from "react";
@@ -27,6 +32,17 @@ const ConnectToday = () => {
           <div className="mt-10 flex gap-3 items-center fill-primary text-primary">
             <Mail />
             <span>info@repowerlab.com</span>
+          </div>
+          <div className="mt-10 flex gap-3 items-center">
+            <Link className="fill-primary" href="">
+              <LinkedInIcon width={22} height={22} />
+            </Link>
+            <Link className="fill-primary" href="">
+              <TwitterIcon width={22} height={22} />
+            </Link>
+            <Link className="fill-primary" href="">
+              <FacebookIcon width={22} height={22} />
+            </Link>
           </div>
         </div>
       </article>
