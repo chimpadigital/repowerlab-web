@@ -27,7 +27,23 @@ const SuccessCases = () => {
           </div>
         </HeroBreadcrumb>
       </section>
-      <CasedSection/>
+      <CasedSection />
+      <article
+        className="grid place-items-center px-6 py-44 my-10 bg-[url(/images/success-cases/bg-resourse.png)] bg-no-repeat"
+        style={{
+          backgroundSize: "200px",
+        }}
+      >
+        <p className="max-w-[73ch] text-center font-light text-2xl text-[#7e7e7e]">
+          We have dismantled, refurbished, and resold over 200 wind turbines
+          through our marketplace. By 2025, we will have over 4,000 wind
+          turbines ready for installation,{" "}
+          <span className="text-secondary font-medium">
+            showcasing our commitment to sustainable energy and circular economy
+            solutions
+          </span>
+        </p>
+      </article>
     </>
   );
 };

@@ -14,8 +14,8 @@ export default function RepowerlabImpact() {
                 <div className="container px-6">
                     <div className="flex justify-between">
                         <h5 className={`${title({ color: "white", size: "md" })} max-w-[300px]`}>RepowerLab's Impact</h5>
-                        <div className="max-w-[1000px]">
-                            <WordAnimated text={"Our commitment to the circular economy and innovative energy solutions delivers measurable results in waste reduction, efficiency, and cost savings."} />
+                        <div className="max-w-[1000px] text-grey-100" >
+                            <WordAnimated accentColor='text-secondary' text={"Our commitment to the circular economy and innovative energy solutions --delivers --measurable --results --in --waste --reduction, --efficiency, --and --cost --savings."} />
                         </div>
                     </div>
                     <div className="pt-[200px]">
