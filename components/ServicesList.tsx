@@ -7,7 +7,7 @@ import {
   RasaleMaterial,
   RasaleParts,
   RecicladoCuchillasIcono,
-  RecocladoIcono,
+  RecicladoIcono,
   SearchIcon,
   Transporte,
   TurbinaeolicaIcono,
@@ -49,7 +49,7 @@ const ServicesList = () => {
       />
       <ServicesCard
         link="/our-services#retrofitting"
-        svgIcono={<RecocladoIcono />}
+        svgIcono={<RecicladoIcono />}
         texto="RepowerLab enhances the performance and extends the lifespan of existing wind turbines through comprehensive retrofitting and refurbishing services, ensuring turbines operate at peak efficiency and durability."
         titulo="Wind turbine retrofitting & refurbishing"
       />
