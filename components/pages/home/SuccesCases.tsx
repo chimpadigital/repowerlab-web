@@ -10,7 +10,7 @@ const prueba: BlogI = {
         name: "Victoria Galeano",
         img: null
     },
-    img: "/images/our-services/e2.jpg"
+    images: []
 }
 
 export default function SuccesCases() {

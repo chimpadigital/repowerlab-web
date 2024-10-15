@@ -1,4 +1,6 @@
+import CardBlog, { BlogI } from "@/components/CardBlog";
 import HeroBreadcrumb from "@/components/HeroBreadcrumb";
+import BlogList from "@/components/pages/success-cases/BlogList";
 import CasedSection from "@/components/pages/success-cases/CasedSection";
 import { title } from "@/components/primitives";
 import React from "react";
@@ -7,6 +9,7 @@ const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Success cases", href: "/success-cases" },
 ];
+
 
 const SuccessCases = () => {
   return (
@@ -29,9 +32,12 @@ const SuccessCases = () => {
       </section>
       <CasedSection />
       <article
-        className="grid place-items-center px-6 py-44 my-10 bg-[url(/images/success-cases/bg-resourse.png)] bg-no-repeat"
+        className="grid place-items-center px-6 py-44 mt-10 bg-[url(/images/success-cases/bg-resourse.png)] bg-no-repeat"
         style={{
-          backgroundSize: "200px",
+          backgroundSize: "200px, 150px",
+          backgroundImage:
+            "url(/images/success-cases/bg-resourse.png), url(/images/success-cases/bg-resourse2.png)",
+          backgroundPosition: "top left, bottom right",
         }}
       >
         <p className="max-w-[73ch] text-center font-light text-2xl text-[#7e7e7e]">
@@ -44,6 +50,7 @@ const SuccessCases = () => {
           </span>
         </p>
       </article>
+     <BlogList/>
     </>
   );
 };
