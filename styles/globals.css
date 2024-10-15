@@ -41,3 +41,10 @@ html {
 .swiper-slide {
     width: auto !important;
 }
+
+.bg-home {
+    border-radius: 20px;
+    opacity: 0.3;
+    background: rgba(19, 19, 19, 0.28);
+    mix-blend-mode: multiply;
+}
