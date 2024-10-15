@@ -91,7 +91,7 @@ const BlogList = () => {
           className="gap-2 text-primary font-bold"
           classNames={{
             item: "data-[active=true]:bg-secondary data-[active=true]:border-none !text-primary border-2 border-secondary",
-            prev: "border-2 border-secondary !text-primary data-[disabled=true]:border-gray-200",
+            prev: "border-2 border-secondary text-primary data-[disabled=true]:border-gray-200",
             next: "border-2 border-secondary text-primary data-[disabled=true]:border-gray-200",
           }}
           radius="full"
