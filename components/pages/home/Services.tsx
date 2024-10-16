@@ -10,7 +10,7 @@ export default function Services() {
                     <h2 className={`${title({ color: "primary" })} text-center`}>Services</h2>
                 </div>
                 <div className="pt-[60px]">
-                    <ServicesList />
+                    {/* <ServicesList /> */}
                 </div>
             </div>
         </div>

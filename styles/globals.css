@@ -48,3 +48,9 @@ html {
     background: rgba(19, 19, 19, 0.28);
     mix-blend-mode: multiply;
 }
+.bg-home {
+    border-radius: 20px;
+    opacity: 0.5;
+    background: rgba(19, 19, 19, 0.28);
+    mix-blend-mode: multiply;
+}

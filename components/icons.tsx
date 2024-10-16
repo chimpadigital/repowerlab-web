@@ -626,7 +626,7 @@ export const ArrowMenu = () => {
   )
 }
 
-export const IconHowWeWork = () => {
+export const IconHowWeWork = (props:any) => {
   return (
     <svg
       width="49"
