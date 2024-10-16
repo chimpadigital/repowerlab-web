@@ -9,6 +9,7 @@ import GreenBannerNewsLetter from "@/components/GreenBannerNewsLetter";
 import Products from "@/components/pages/home/Products";
 import Hero from "@/components/pages/home/Hero";
 import RepowerLabFocus from "@/components/pages/home/RepowerLabFocus";
+import MapHome from "@/components/pages/home/MapHome";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Products />
       <FeatureProducts />
       <SuccesCases />
+      <MapHome />
       <ConnectToday />
       <div className="flex w-full justify-center py-4 px-6">
         <GreenBannerNewsLetter />

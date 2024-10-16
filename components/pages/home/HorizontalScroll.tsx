@@ -39,10 +39,6 @@ export default function HorizontalScroll() {
   )
   const x = useTransform(scrollYProgress, [0, 1], [0, array.length])
 
-
-
-
-
   return (
     <div ref={ref} className='w-full relative' style={{ height: `${array.length * 2 * 100}vh` }}>
       <div className="sticky top-0 h-screen w-full">

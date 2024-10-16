@@ -5,14 +5,14 @@ import React, { useEffect, useRef } from 'react'
 
 
 
-export default function RotateScroll({ children }: any) {
+export default function RotateScroll({ children, rotateNumber = 360 }: any) {
     const ref = useRef<any>()
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ['start .85', 'start .35']
     })
 
-    const rotate = useTransform(scrollYProgress, [0, 1], [0, 360])
+    const rotate = useTransform(scrollYProgress, [0, 1], [0, rotateNumber])
 
     useEffect(() => {
         rotate.on('change', (e) => {
