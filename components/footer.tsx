@@ -41,7 +41,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full flex items-center justify-center text-white mt-4 px-6 min-h-[400px]  mb-8">
-      <div className="relative flex justify-center flex-col items-center w-full h-full py-[40px] min-h-[400px] px-6">
+      <div className="relative flex justify-center flex-col items-center w-full h-full py-[40px] min-h-[400px] px-14">
         <div className="relative w-full flex justify-between pt-6 z-10">
           <div>
             <Logo />
