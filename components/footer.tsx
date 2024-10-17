@@ -40,7 +40,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full flex items-center justify-center text-primary mt-4 px-6 min-h-[400px]  mb-8">
+    <footer className="w-full flex items-center justify-center text-white mt-4 px-6 min-h-[400px]  mb-8">
       <div className="relative flex justify-center flex-col items-center w-full h-full py-[40px] min-h-[400px] px-6">
         <div className="relative w-full flex justify-between pt-6 z-10">
           <div>
@@ -50,7 +50,7 @@ export default function Footer() {
 
             <div className="grid grid-cols-3 gap-12 ">
               <div className="md:grid-cols-1 grid-cols-3">
-                <h5 className={subtitle({ colors: "primary" })}>Menu</h5>
+                <h5 className={subtitle({ colors: "white" })}>Menu</h5>
                 <div className="pt-[30px]">
                   <div className="flex flex-col ">
                     {linksMenu.map((el, i) => (
@@ -58,11 +58,11 @@ export default function Footer() {
                         {
                           el.child ?
                             <>
-                              <div className="text-primary pt-[25px] text-[18px]">{el.label}</div>
+                              <div className="text-white pt-[25px] text-[18px]">{el.label}</div>
                               <div className="flex flex-col pt-[10px] gap-[15px]">
                                 {
                                   el.child.map((el2, j) => (
-                                    <Link key={j} className="text-primary  text-[14px]" href={el2.url}>
+                                    <Link key={j} className="text-white  text-[14px]" href={el2.url}>
                                       {el2.label}
                                     </Link>
 
@@ -71,7 +71,7 @@ export default function Footer() {
                               </div>
                             </>
                             :
-                            <Link key={i} className="text-primary pt-[25px] text-[18px]" href={el.url}>
+                            <Link key={i} className="text-white pt-[25px] text-[18px]" href={el.url}>
                               {el.label}
                             </Link>
 
@@ -82,13 +82,13 @@ export default function Footer() {
                 </div>
               </div>
               <div className="md:grid-cols-1 grid-cols-3">
-                <h5 className={subtitle({ colors: "primary" })}>Products</h5>
+                <h5 className={subtitle({ colors: "white" })}>Products</h5>
                 <div className="pt-[30px]">
                   <div className="flex flex-col">
                     {linksProducts.map((el, i) => (
                       <Link
                         key={i + "pro2"}
-                        className="text-primary pt-[25px] text-[18px]"
+                        className="text-white pt-[25px] text-[18px]"
                         href={el.url}
                       >
                         {el.label}
@@ -98,16 +98,16 @@ export default function Footer() {
                 </div>
               </div>
               <div className="md:grid-cols-1 grid-cols-3">
-                <h5 className={subtitle({ colors: "primary" })}>Follow</h5>
+                <h5 className={subtitle({ colors: "white" })}>Follow</h5>
                 <div className="pt-[60px]">
                   <div className="flex flex-col gap-[30px] ps-6">
-                    <Link className="text-primary fill-primary" href="">
+                    <Link className="text-white fill-white" href="">
                       <LinkedInIcon width={22} height={22} />
                     </Link>
-                    <Link className="text-primary fill-primary" href="">
+                    <Link className="text-white fill-white" href="">
                       <TwitterIcon width={22} height={22} />
                     </Link>
-                    <Link className="text-primary fill-primary" href="">
+                    <Link className="text-white fill-white" href="">
                       <FacebookIcon width={22} height={22} />
                     </Link>
                   </div>
@@ -119,7 +119,7 @@ export default function Footer() {
         <div className="w-full relative container z-10 flex justify-end">
           <Link
             href="mailto:info@repowerlab.com"
-            className="text-[36px] font-light "
+            className="text-[36px] text-white font-light "
           >
             {" "}
             info@repowerlab.com
