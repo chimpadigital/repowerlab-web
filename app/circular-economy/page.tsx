@@ -9,7 +9,7 @@ import React from "react";
 const CircularEconomy = () => {
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "circular Economy", href: "circular-economy" },
+    { label: "Circular Economy", href: "circular-economy" },
   ];
 
   return (

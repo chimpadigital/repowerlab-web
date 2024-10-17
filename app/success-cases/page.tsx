@@ -1,4 +1,3 @@
-import CardBlog, { BlogI } from "@/components/CardBlog";
 import HeroBreadcrumb from "@/components/HeroBreadcrumb";
 import BlogList from "@/components/pages/success-cases/BlogList";
 import CasedSection from "@/components/pages/success-cases/CasedSection";
