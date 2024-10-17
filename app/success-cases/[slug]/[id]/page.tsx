@@ -30,7 +30,6 @@ const CaseDateail = async ({
 }: {
   params: { slug: string; id: string };
 }) => {
-
   const blog = await getBlog(params.id);
 
   return (
@@ -48,11 +47,14 @@ const CaseDateail = async ({
           </div>
         </HeroBreadcrumb>
       </section>
-      <article className="px-14 blog-container"  dangerouslySetInnerHTML={{
+      <article
+        className="px-14 blog-container"
+        dangerouslySetInnerHTML={{
           __html: sanitizeHtml(blog?.data?.content, {
             allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
           }),
-        }}/>
+        }}
+      />
       <RelatedPosts />
     </>
   );
