@@ -99,7 +99,7 @@ const GreenBannerNewsLetter = () => {
             {isSending ? (
               <span className="flex gap-3  fill-white group-hover:fill-primary">
                 Sending...
-                <span className="animate-spin transition-all">
+                <span className="animate-spin transition-all h-[21px]">
                   <IsotipoRepowerlab />
                 </span>
               </span>

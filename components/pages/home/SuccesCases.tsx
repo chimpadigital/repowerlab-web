@@ -6,6 +6,7 @@ const prueba: BlogI = {
     published_at: "October 22, 2024",
     description: "Lorem ipsum",
     slug: "nuevo-blog",
+    id: "1",
     writer: {
         name: "Victoria Galeano",
         img: null

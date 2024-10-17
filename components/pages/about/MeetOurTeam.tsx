@@ -44,8 +44,16 @@ const MeetOurTeam = () => {
               name="Fernando Garces "
               position="Co-Founder & Managing Director of LATAM"
             />
+
+            <TeamMemberCard
+              image="/images/about/borrarFotoTeam.webp"
+              description="Operating from Cali, Colombia, Fernando has over 40 years of experience in business planning, management, and renewable energy development. As a founding partner in multiple ventures, Fernando has promoted over 4 GW of renewable energy projects. His dedication to environmental preservation and community engagement is evident in his active participation in social welfare initiatives, particularly through Rotary."
+              name="Fernando Garces "
+              position="Co-Founder & Managing Director of LATAM"
+            />
           </div>
-          <Partners/>
+
+          <Partners />
         </div>
       </section>
     </>

@@ -30,7 +30,7 @@ export default function HeroBreadcrumb({
           alt="bg-hero"
           quality={100}
         />
-        <div className="w-full px-4">
+        <div className="w-full px-4 container">
           <div className="relative z-10 w-full h-full grid grid-cols-2">
             <div className="lg:col-span-1 col-span-2">
               <Breadcrumbs

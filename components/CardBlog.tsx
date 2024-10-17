@@ -7,6 +7,7 @@ export interface BlogI {
   title: string;
   published_at: string;
   slug: string;
+  id: string
   writer: {
     name: string;
     img: string | null
@@ -35,7 +36,7 @@ export default function CardBlog({ blog, }: { blog: BlogI }) {
         </div>
 
         <div className="w-full flex justify-end">
-          <Link href={`blog/${blog?.slug}`} className='font-bold flex gap-2 items-center text-primary cursor-pointer'>
+          <Link href={`/success-cases/${blog?.slug}/${blog?.id}`} className='font-bold flex gap-2 items-center text-primary cursor-pointer'>
             Read More
             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
               <path d="M1 12L7 6.5L1 1" stroke="#1C4741" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
