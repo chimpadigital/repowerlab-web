@@ -19,7 +19,6 @@ const getBlog = async () => {
 
 const RelatedPosts = async () => {
   const blogs = await getBlog();
-  console.log("lista de blogs", blogs);
 
   return (
     <section
