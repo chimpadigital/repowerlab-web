@@ -92,7 +92,7 @@ const Card = ({ title, percent, description }: CardI) => {
                 <h5 className="text-bold text-[32px]">{percent}</h5>
             </div>
             <svg className='absolute bottom-2 right-2' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 18V5M18 18L2 2M18 18H5" stroke="white" stroke-width="3" />
+                <path d="M18 18V5M18 18L2 2M18 18H5" stroke="white" strokeWidth="3" />
             </svg>
             <motion.p variants={variants} animate={open ? "open" : "closed"} transition={{ duration: .6 }} className={` absolute bottom-2 w-[250px]`}>{description}</motion.p>
         </motion.article>

@@ -4,7 +4,7 @@ import React from "react";
 import axios from "axios";
 import sanitizeHtml from "sanitize-html";
 import RelatedPosts from "@/components/pages/success-cases/case/RelatedPosts";
-
+ 
 const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Success cases", href: "/success-cases" },
