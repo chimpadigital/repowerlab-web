@@ -28,62 +28,62 @@ const Partners = () => {
           grabCursor={true}
         >
           <SwiperSlide>
-            <div>
+            <div className="h-24 w-24 bg-gray-500">
               <img src="https://via.placeholder.com/150" alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div className="h-24 w-24 bg-gray-500">
               <img src="https://via.placeholder.com/150" alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div className="h-24 w-24 bg-gray-500">
               <img src="https://via.placeholder.com/150" alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div className="h-24 w-24 bg-gray-500">
               <img src="https://via.placeholder.com/150" alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div className="h-24 w-24 bg-gray-500">
               <img src="https://via.placeholder.com/150" alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div className="h-24 w-24 bg-gray-500">
               <img src="https://via.placeholder.com/150" alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div className="h-24 w-24 bg-gray-500">
               <img src="https://via.placeholder.com/150" alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div className="h-24 w-24 bg-gray-500">
               <img src="https://via.placeholder.com/150" alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div className="h-24 w-24 bg-gray-500">
               <img src="https://via.placeholder.com/150" alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div className="h-24 w-24 bg-gray-500">
               <img src="https://via.placeholder.com/150" alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div className="h-24 w-24 bg-gray-500">
               <img src="https://via.placeholder.com/150" alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div className="h-24 w-24 bg-gray-500">
               <img src="https://via.placeholder.com/150" alt="" />
             </div>
           </SwiperSlide>
