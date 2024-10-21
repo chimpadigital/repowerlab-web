@@ -20,14 +20,14 @@ export default function Footer() {
     {
       label: "Resources",
       child: [
-        { label: "Success cases", url: "success-cases" },
+        { label: "Success cases", url: "/success-cases" },
       ]
     },
     {
       label: "About us",
       child: [
-        { label: "Our company", url: "our-company" },
-        { label: "Contact us", url: "about/contact-us" },
+        { label: "Our company", url: "/about" },
+        { label: "Contact us", url: "/about/contact-us" },
       ]
     },
   ];

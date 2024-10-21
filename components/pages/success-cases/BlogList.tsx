@@ -27,9 +27,7 @@ const BlogList = () => {
 
     getBlogs();
   }, [currentPage]);
-  console.log("cusses list cases");
-  
-
+ 
   return (
     <div>
       <div

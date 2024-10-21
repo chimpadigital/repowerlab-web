@@ -22,7 +22,7 @@ export default function HeroBreadcrumb({
 }: HeroBreadcrumbI) {
   return (
     <div className="w-full  relative top-[-80px]">
-      <div className="w-full relative flex justify-center overflow-hidden h-full min-h-[620px] px-10 rounded-[20px] pt-[100px]">
+      <div className="w-full relative flex justify-center overflow-hidden h-full min-h-[620px] px-10 rounded-[20px] pt-[150px]">
         <Image
           src={img}
           fill
@@ -35,7 +35,7 @@ export default function HeroBreadcrumb({
             <div className="lg:col-span-1 col-span-2">
               <Breadcrumbs
                 itemClasses={{
-                  item: "text-white font-bold text-[18px] data-[current=true]:text-accent",
+                  item: "text-white font-bold text-[18px] data-[current=true]:underline data-[current=true]:underline-offset-[6px]",
                   separator: "text-white/40",
                 }}
               >

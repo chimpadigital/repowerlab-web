@@ -1,4 +1,3 @@
-
 import FeatureProducts from "@/components/pages/home/FeatureProducts";
 import SetApart from "@/components/pages/home/SetApart";
 import ConnectToday from "@/components/ConnectToday";
@@ -23,7 +22,9 @@ export default function Home() {
       <FeatureProducts />
       <SuccesCases />
       <MapHome />
-      <ConnectToday />
+      <div className="px-6">
+        <ConnectToday />
+      </div>
       <div className="flex w-full justify-center py-4 px-6">
         <GreenBannerNewsLetter />
       </div>
