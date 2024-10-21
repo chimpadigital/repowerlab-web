@@ -8,6 +8,7 @@ import { ThemeProviderProps } from "next-themes/dist/types";
 import Lenis from "lenis";
 import "lenis/dist/lenis.css";
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
+import { ReCaptchaProvider } from "next-recaptcha-v3";
 
 export interface ProvidersProps {
   children: React.ReactNode;
@@ -40,6 +41,7 @@ export function Providers({ children, themeProps }: ProvidersProps) {
   }, []);
 
   return (
+    <ReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_CLAVE_WEB_CAPTCHA}>
       <APIProvider
         apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string}
       >
@@ -54,5 +56,6 @@ export function Providers({ children, themeProps }: ProvidersProps) {
         </span>
       </button>
       </APIProvider>
+    </ReCaptchaProvider>
   );
 }
