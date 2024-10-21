@@ -80,6 +80,22 @@ function Word({
       </span>
     );
   }
+
+  if (word.startsWith("-*")) {
+    word = word.replace("-*", "");
+    return (
+      <span className="word font-light ">
+        <strong className={"shadow font-medium text-inherit ${"}>{word}</strong>
+        <motion.strong
+          style={{ opacity }}
+          className={`text-inherit font-medium ${accentColor && accentColor}`}
+        >
+          {word}
+        </motion.strong>
+      </span>
+    );
+  }
+
   return (
     <span className="word font-light ">
       <span className="shadow font-light text-inherit">{word}</span>

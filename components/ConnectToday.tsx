@@ -14,7 +14,7 @@ import CountryContactData from "./CountryContactData";
 
 const ConnectToday = () => {
   return (
-    <div className="flex text-left flex-col lg:flex-row px-14 gap-10 mx-auto pb-20 lg:items-center pt-20">
+    <div className="flex text-left flex-col lg:flex-row px-16 gap-10 mx-auto pb-20 lg:items-center pt-20">
       <article className="flex flex-[2] flex-col md:flex-row lg:flex-col w-full justify-between lg:justify-normal">
         <div className="">
           <h3 className={`${title()} text-primary mb-3 !block`}>
