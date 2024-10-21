@@ -1,29 +1,32 @@
 import CardBlog from "@/components/CardBlog";
 import { title } from "@/components/primitives";
 import axios from "axios";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-const getBlog = async () => {
-  try {
-    const response = await axios.get(
-      `https://api.repowerlab.chimpance.digital/api/entries?page=1&per_page=3`
-    );
+const RelatedPosts = () => {
+  // const blogs = await getBlog();
 
-    if (response?.status === 200) {
-      return response.data;
-    }
-  } catch (error) {
-    console.log(error);
-  }
-};
+  const [blogs, setBlogs] = useState<any>();
 
-const RelatedPosts = async () => {
-  const blogs = await getBlog();
+  useEffect(() => {
+    const getBlogs = async () => {
+      try {
+        const response = await axios.get(
+          `https://api.repowerlab.chimpance.digital/api/entries?page=1&per_page=3`
+        );
+
+        if (response?.status === 200) {
+          setBlogs(response.data);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getBlogs()
+  }, []);
 
   return (
-    <section
-      className="mt-20 py-9 mx-6 rounded-[20px] bg-grey-100 text-primary"
-    >
+    <section className="mt-20 py-9 mx-6 rounded-[20px] bg-grey-100 text-primary">
       <header className="px-8">
         <p className="mb-6 text-xl font-light">Related posts</p>
         <h4 className={` ${title()}`}>You may also like</h4>
