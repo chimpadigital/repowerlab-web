@@ -72,7 +72,7 @@ export default function ScrollAccordion({
                 <ImageMotion src={el.img} key={index} y={y} index={index} />
               ))}
             {imgText && (
-              <div className="absolute left-0 right-0 rounded-[20px] bottom-0 py-10 px-12 bg-black/35 backdrop-blur-sm text-white flex gap-5 items-center justify-between">
+              <div className="absolute left-0 right-0 rounded-[20px] bottom-0 py-10 px-12 bg-black/35 backdrop-blur-sm text-white flex gap-5 items-center justify-between font-medium">
                 <p className="max-w-[48ch]">{imgText}</p>
                 <Link
                   href="/about/contact-us"
@@ -100,7 +100,7 @@ export default function ScrollAccordion({
                 <div className="text-[24px] font-bold text-primary">
                   {items[0].title}
                 </div>
-                <div className={`text-grey-600 pt-6`}>
+                <div className={`text-[#444444] pt-6`}>
                   {items[0].description}
                 </div>
               </div>
@@ -192,7 +192,7 @@ const AccordionMotion = ({ index, el, y, distancia }: any) => {
       </div>
       <motion.div
         style={{ opacity }}
-        className={`pt-2 absolute top-[80px] bg-white text-grey-600 px-[20px] ${hidden && "hidden"}`}
+        className={`pt-2 absolute top-[80px] bg-white text-[#444444] px-[20px] ${hidden && "hidden"}`}
       >
         {Array.isArray(el.description) ? (
           <ul>
