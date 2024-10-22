@@ -17,13 +17,13 @@ const CountryContactData = ({
   return (
     <div className="">
       <h4 className="text-primary text-2xl font-normal mb-2">{countryName}</h4>
-      <div className="flex items-center gap-3 text-grey-600 mb-5">
+      <div className="flex items-center gap-3 text-[#444444] mb-5">
         <div className="w-[18px]">
           <Phone />
         </div>
         <span>{phone}</span>
       </div>
-      <div className="flex items-center gap-3 text-grey-600">
+      <div className="flex items-center gap-3 text-[#444444]">
         <div className="w-[18px]">
           <Location />
         </div>

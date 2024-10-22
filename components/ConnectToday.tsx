@@ -20,7 +20,7 @@ const ConnectToday = () => {
           <h3 className={`${title()} text-primary mb-3 !block`}>
             Connect Today
           </h3>
-          <p className={`text-grey-600 max-w-[40ch] mb-8 font-light`}>
+          <p className={`text-[#444444] max-w-[40ch] mb-8 font-light`}>
             Contact RepowerLab to explore our circular economy solutions and
             maximize the value of your energy assets.
           </p>

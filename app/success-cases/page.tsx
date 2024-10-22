@@ -39,11 +39,11 @@ const SuccessCases = () => {
           backgroundPosition: "top left, bottom right",
         }}
       >
-        <p className="max-w-[73ch] text-center font-light text-2xl text-[#7e7e7e]">
+        <p className="max-w-[73ch] text-center font-normal text-2xl text-primary">
           We have dismantled, refurbished, and resold over 200 wind turbines
           through our marketplace. By 2025, we will have over 4,000 wind
           turbines ready for installation,{" "}
-          <span className="text-secondary font-medium">
+          <span className="text-accent font-medium">
             showcasing our commitment to sustainable energy and circular economy
             solutions
           </span>
