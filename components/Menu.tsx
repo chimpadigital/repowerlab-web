@@ -12,7 +12,6 @@ import { RepowerIcon } from './navicons'
 export default function Menu({ active, setMenu }: { active: boolean, setMenu?: any }) {
   const [linkActve, setActive] = useState(0)
   const [isActive, setIsActive] = useState(false)
-  const locale = "es"
 
   return (
     <div className='w-full h-[calc(100dvh)] fixed lg:block hidden bg-menu bg-secondary left-0 top-0 z-40'
@@ -75,7 +74,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                                       <div className="flex flex-col gap-2">
                                         {
                                           item2.child.map((item3, index) => (
-                                            <Link key={`link-${index}`} className='cursor-pointer py-2  select-none text-primary text-[14px]' href={item3.url?.includes("http") ? item3.url : `/${locale}/${item3.url}` || "#"}>
+                                            <Link key={`link-${index}`} className='cursor-pointer py-2  select-none text-primary text-[14px]' href={item3.url?.includes("http") ? item3.url : `/${item3.url}` || "#"}>
                                               {(item3.title)}
                                             </Link>
                                           ))}
@@ -85,7 +84,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
 
                                 ) : (
 
-                                  <Link key={`link-${index}`} className='cursor-pointer py-2  select-none text-primary text-[20px] xl:text-[22px]' href={item2.url?.includes("http") ? item2.url : `/${locale}/${item2.url}` || "#"}>
+                                  <Link key={`link-${index}`} className='cursor-pointer py-2  select-none text-primary text-[20px] xl:text-[22px]' href={item2.url?.includes("http") ? item2.url : `/${item2.url}` || "#"}>
                                     {(item2.title)}
                                   </Link>
                                 )
@@ -94,7 +93,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                           </AccordionItem>
                         </Accordion>
                       ) : (
-                        <Link key={`link-${index}`} className='cursor-pointer inline-block	 pt-2 select-none text-primary xl:text-[36px] text-[28px]' href={item.url?.includes("http") ? item.url : `/${locale}/${item.url}` || "#"}>
+                        <Link key={`link-${index}`} className='cursor-pointer inline-block	 pt-2 select-none text-primary xl:text-[36px] text-[28px]' href={item.url?.includes("http") ? item.url : `/${item.url}` || "#"}>
                           {(item.title)}
                         </Link>
                       )}
