@@ -11,7 +11,7 @@ const WhyChooseRepowerlab = () => {
     }}>
       <article className="flex-[2] pt-14  pl-6">
         <h4 className={`text-primary ${title()}`}>WHY CHOOSE REPOWERLAB?</h4>
-        <p className="text-grey-700 pt-6 border-t border-s-secondary mt-6 max-w-[80ch] font-thin">
+        <p className="text-grey-700 pt-6 border-t border-s-secondary mt-6 max-w-[80ch] font-thin text-xl">
           At RepowerLab, we believe in the power of circular economy solutions.
           Our comprehensive approach focuses on recouping the economic value of
           wind farms, managing every stage of a turbine’s lifecycle—from initial

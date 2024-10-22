@@ -74,6 +74,7 @@ const CaseDateail = () => {
     allowedAttributes: {
       oembed: ["url"],
       img: ["src"],
+      a: ["href"],
       "*": ["class"],
     },
   });
@@ -97,7 +98,7 @@ const CaseDateail = () => {
       </section>
 
       <article
-        className="px-14 blog-container"
+        className="px-14 blog-container container mx-auto"
         dangerouslySetInnerHTML={{ __html: transformedContent }}
       ></article>
 
