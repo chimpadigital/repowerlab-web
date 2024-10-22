@@ -32,11 +32,11 @@ export const globalRoutes: Partial<RoutesWithChildI>[] = [
         child: [
             {
                 title: "Our Bussines Model",
-                url: ""
+                url: "circular-economy"
             },
             {
                 title: "This is how we work",
-                url: "https://www.aapresid.org.ar/rem"
+                url: "how-we-work"
             },
          
         ]
