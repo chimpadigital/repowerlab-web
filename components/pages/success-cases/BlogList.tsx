@@ -15,7 +15,6 @@ const BlogList = () => {
         const response = await axios.get(
           `https://api.repowerlab.chimpance.digital/api/entries?page=${currentPage}&per_page=6`
         );
-        console.log(response);
 
         if (response?.status === 200) {
           setBlogList(response?.data?.data);
@@ -28,7 +27,7 @@ const BlogList = () => {
 
     getBlogs();
   }, [currentPage]);
-
+ 
   return (
     <div>
       <div

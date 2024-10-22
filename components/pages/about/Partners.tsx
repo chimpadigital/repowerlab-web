@@ -6,6 +6,34 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { title } from "@/components/primitives";
+import Image from "next/image";
+
+const partners = [
+  {
+    path: "/images/about/partner-cleaner-power.png",
+    alt: "Clean power logo",
+  },
+  {
+    path: "/images/about/partner-epm.png",
+    alt: "EPM logo",
+  },
+  {
+    path: "/images/about/partner-erg.png",
+    alt: "ERG logo",
+  },
+  {
+    path: "/images/about/partner-naturgy.png",
+    alt: "Naturgy logo",
+  },
+  {
+    path: "/images/about/partner-vientos-metodicos.png",
+    alt: "Ventos Metodicos logo",
+  },
+  {
+    path: "/images/about/partner-wind-europe.png",
+    alt: "WindEurope logo",
+  },
+];
 
 const Partners = () => {
   return (
@@ -24,69 +52,44 @@ const Partners = () => {
           }}
           loop={true}
           slidesPerView={"auto"}
-          spaceBetween={100}
+          spaceBetween={27}
           grabCursor={true}
         >
-          <SwiperSlide>
-            <div className="h-24 w-24 bg-gray-500">
-              <img src="https://via.placeholder.com/150" alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-24 w-24 bg-gray-500">
-              <img src="https://via.placeholder.com/150" alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-24 w-24 bg-gray-500">
-              <img src="https://via.placeholder.com/150" alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-24 w-24 bg-gray-500">
-              <img src="https://via.placeholder.com/150" alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-24 w-24 bg-gray-500">
-              <img src="https://via.placeholder.com/150" alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-24 w-24 bg-gray-500">
-              <img src="https://via.placeholder.com/150" alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-24 w-24 bg-gray-500">
-              <img src="https://via.placeholder.com/150" alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-24 w-24 bg-gray-500">
-              <img src="https://via.placeholder.com/150" alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-24 w-24 bg-gray-500">
-              <img src="https://via.placeholder.com/150" alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-24 w-24 bg-gray-500">
-              <img src="https://via.placeholder.com/150" alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-24 w-24 bg-gray-500">
-              <img src="https://via.placeholder.com/150" alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-24 w-24 bg-gray-500">
-              <img src="https://via.placeholder.com/150" alt="" />
-            </div>
-          </SwiperSlide>
+          {partners.map((partner, index) => {
+            return (
+              <SwiperSlide key={partner + index.toString()}>
+                <div
+                  className="h-[91px] rounded-md bg-white  overflow-hidden relative"
+                  style={{ aspectRatio: "242/91" }}
+                >
+                  <Image
+                    src={partner.path}
+                    alt={partner.alt}
+                    fill
+                    className="py-2 px-4 grayscale h-full w-full object-contain"
+                  />
+                </div>
+              </SwiperSlide>
+            );
+          })}
+
+          {partners.map((partner, index) => {
+            return (
+              <SwiperSlide key={index.toString() + partner}>
+                <div
+                  className="h-[91px] rounded-md bg-white  overflow-hidden relative"
+                  style={{ aspectRatio: "242/91" }}
+                >
+                  <Image
+                    src={partner.path}
+                    alt={partner.alt}
+                    fill
+                    className="py-2 px-4 grayscale h-full w-full object-contain"
+                  />
+                </div>
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
     </div>

@@ -14,9 +14,9 @@ const TeamMemberCard = ({
   image,
 }: TeamMemberCardProps) => {
   return (
-    <div className="card-miembro relative w-[376px] font-[Mulish] overflow-hidden">
+    <div className="card-miembro relative  w-[376px] font-[Mulish] overflow-hidden">
       <div
-        className="aspect-[376/554] bg-no-repeat bg-cover  after:absolute after:inset-0 after:bg-[#61616199] after:opacity-60 py-5 px-4"
+        className="aspect-[376/554] bg-no-repeat bg-cover bg-[#C5C5C5] after:absolute after:inset-0  py-5 px-4 "
         style={{
           clipPath: "url(#clip-shape)",
           backgroundImage: `url(${image})`,
@@ -27,7 +27,7 @@ const TeamMemberCard = ({
         style={{
           clipPath: "url(#clip-shape)",
         }}
-        className="absolute z-20 group text-white text-start h-full w-full inset-0 origin-center hover:h-full hover:w-full bg-[#0e0e0e80]   hover:bg-[#70707080] hover:backdrop-blur-[9px] flex flex-col px-6 pt-44 transition-all  hover:justify-normal "
+        className="absolute z-20 group text-white text-start h-full w-full inset-0 origin-center hover:h-full hover:w-full bg-[#0e0e0e00]   hover:bg-[#70707080] hover:backdrop-blur-[9px] flex flex-col px-6 pt-44 transition-all  hover:justify-normal "
       >
         <div className="transition-all absolute bottom-8  group-hover:bottom-[70%] text-xl md:text-2xl ">
           <h4 className="font-extrabold text-2xl mb-3 font-[Mulish]">{name}</h4>
