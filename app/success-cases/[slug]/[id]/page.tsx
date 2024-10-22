@@ -98,7 +98,7 @@ const CaseDateail = () => {
       </section>
 
       <article
-        className="px-14 blog-container container mx-auto"
+        className="px-14 blog-container max-w-7xl mx-auto"
         dangerouslySetInnerHTML={{ __html: transformedContent }}
       ></article>
 
