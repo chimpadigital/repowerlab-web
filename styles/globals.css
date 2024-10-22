@@ -86,7 +86,22 @@ html {
     word-break: break-word !important;
 }
 
-.blog-container figure {
+.ck.ck-content a,
+.blog-container a {
+    text-decoration: underline;
+}
+
+.blog-container figure.media{
+    aspect-ratio: 560/315;
+    width: 700px;
+}
+
+.blog-container figure.media iframe{
+    height: 100%;
+    width: 100%;
+}
+
+.blog-container figure.table {
     display: table !important;
     margin: .9em auto !important;
     width: 100% !important;
