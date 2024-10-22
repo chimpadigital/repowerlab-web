@@ -44,7 +44,7 @@ export default function Hero() {
   return (
     <div className="w-full px-8 items-center relative flex-col w-full top-[-80px]">
       
-      <div className="w-full  flex justify-center top-[50px]  min-h-[85vh] bg-fixed bg-cover bg-[url(/images/how-we-work/gradiente-radial.png)] bg-primary rounded-[20px] pt-[100px]">
+      <div className="w-full flex-col items-center  flex justify-center top-[50px]  min-h-[85vh] bg-fixed bg-cover bg-[url(/images/how-we-work/gradiente-radial.png)] bg-primary rounded-[20px] pt-[100px]">
         <div className="container px-6 h-full z-10 top-[-80px] ">
           <Breadcrumbs
             itemClasses={{
@@ -63,9 +63,14 @@ export default function Hero() {
             <h5 className={"text-center pt-12 " + title({ color: "white" })}>This is how we work</h5>
           </div>
 
-          <div ref={ref} className={`w-full  relative`} style={{ height: `${150 * dataWeWork.length}vh` }}>
+        
+        </div>
+        <div ref={ref} className={`w-full contenidoscroll relative`} style={{ height: `${150 * dataWeWork.length}vh` }}>
             <div className="grid grid-cols-2 sticky h-screen items-center w-full top-0">
-              <div className="w-full absolute border-r-[2rem] w-screen border-l-[2rem] border-white left-[-14%] pointer-events-none  h-screen z-20"></div>
+              <div className="absolute w-screen left-[-2rem] pointer-events-none  h-screen z-20">
+                <div className="absolute h-screen w-[2rem] bg-white left-0"></div>
+                <div className="absolute h-screen w-[2.9rem] bg-white right-0"></div>
+              </div>
               <motion.div style={{ x }} className='flex gap-[100px] relative w-full no-wrap'>
                 {
                   dataWeWork.map((data, index) => (
@@ -77,7 +82,6 @@ export default function Hero() {
             </div>
 
           </div>
-        </div>
       </div>
 
     </div>

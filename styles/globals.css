@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 * {
@@ -26,6 +27,18 @@ html {
     width: 100%;
     bottom: 0;
 
+
+}
+
+.contenidoscroll {
+    scrollbar-width: none;
+}
+
+.contenidoscroll {
+    ::-webkit-scrollbar {
+        display: none;
+
+    }
 }
 
 .swiper-wrapper {
@@ -148,4 +161,3 @@ html {
     background: rgba(19, 19, 19, 0.28);
     mix-blend-mode: multiply;
 }
-
