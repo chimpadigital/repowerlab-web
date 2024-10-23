@@ -29,6 +29,7 @@ const MeetOurTeam = () => {
               description="Residing in Virginia, US, Victoria has over 20 years of experience in sustainable finance. As the founder of PRISSMA and co-founder of RepowerLab, she has been instrumental in driving sustainability and decarbonization strategies for companies. Victoria's expertise includes developing ESG investment strategies, innovative climate finance products, and advising investors on renewable energy projects. She has received recognition as one of DC's Top 50 Women Leaders for two consecutive years."
               name="Victoria Galeano "
               position="Co-Founder & Managing Director of US"
+              blur="hover:backdrop-blur-[9px]"
             />
 
             <TeamMemberCard
@@ -36,6 +37,7 @@ const MeetOurTeam = () => {
               description="Based in Madrid, Spain, Alfonso brings over 25 years of experience in logistics, wind farm repowering, and energy project development. His notable achievements include founding Repowering Solutions and overseeing the decommissioning of over 300 wind turbines in Europe. Alfonso has led various renewable energy projects, including onshore and offshore wind farms and solar photovoltaic power plants."
               name="Alfonso Alvaro"
               position="Co-Founder & Managing Director of EU"
+              blur="hover:backdrop-blur-[20px]"
             />
 
             <TeamMemberCard
@@ -43,6 +45,7 @@ const MeetOurTeam = () => {
               description="Operating from Cali, Colombia, Fernando has over 40 years of experience in business planning, management, and renewable energy development. As a founding partner in multiple ventures, Fernando has promoted over 4 GW of renewable energy projects. His dedication to environmental preservation and community engagement is evident in his active participation in social welfare initiatives, particularly through Rotary."
               name="Fernando Garces "
               position="Co-Founder & Managing Director of LATAM"
+              blur="hover:backdrop-blur-[30px]"
             />
 
             <TeamMemberCard
@@ -50,6 +53,7 @@ const MeetOurTeam = () => {
               description="A seasoned business and project developer in the  renewable energy sector, Iván has contributed to the successful development of over 1.5 GW. Moreover, Iván brings a vast experience within the wind energy industry, from the design of wind turbines, support structures and wind farms to the business development and project management of large-scale wind power in Latin America."
               name="Iván David Rojas "
               position="Business Development Manager"
+              blur="hover:backdrop-blur-[50px]"
             />
           </div>
 
