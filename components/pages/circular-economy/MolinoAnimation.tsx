@@ -18,9 +18,9 @@ export default function MolinoAnimation() {
     const numbers = useTransform(scrollYProgress, [0, 1], [0, dataMolino.length])
 
     return (
-        <section className="w-full flex justify-center">
+        <section className="w-screen flex justify-center">
             <div className="container px-6">
-                <div className="w-full" ref={ref} style={{ height: `${dataMolino.length * 200}vh` }}>
+                <div className="w-screen" ref={ref} style={{ height: `${dataMolino.length * 200}vh` }}>
                     <div className="grid h-screen h-full items-center grid-cols-1 lg:grid-cols-2 sticky top-0">
                         <div className="col-span-1 flex items-center justify-center">
                             <RecursoSvg className="lg:w-full lg:h-auto h-[45vh]" rotate={rotate} numbers={numbers} />
@@ -32,7 +32,7 @@ export default function MolinoAnimation() {
                                         RepowerLab's {" "}
                                     </span>
                                     Circular Economy Business Model</h4>
-                                <div className="h-[400px] w-full relative mt-8">
+                                <div className="h-[45vh] w-full relative mt-8">
                                     {
                                         dataMolino.map((el, i) => (
                                             <Text key={"data" + i} numbers={numbers} data={el} index={i} />
