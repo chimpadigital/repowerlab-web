@@ -6,6 +6,7 @@ export const title = tv({
     color: {
       white: "text-white",
       primary: "text-primary",
+      secondary: "text-secondary",
       violet: "from-[#FF1CF7] to-[#b249f8]",
       yellow: "from-[#FF705B] to-[#FFB457]",
       blue: "from-[#5EA2EF] to-[#0072F5]",
@@ -22,6 +23,10 @@ export const title = tv({
     fullWidth: {
       true: "w-full block",
     },
+    weight: {
+      normal: "font-normal",
+      light: "font-light"
+    }
   },
   defaultVariants: {
     size: "md",

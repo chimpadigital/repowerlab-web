@@ -57,21 +57,21 @@ export default function Footer() {
                       <>
                         {
                           el.child ?
-                            <>
+                            <div key={"el1" + i}>
                               <div className="text-primary pt-[25px] text-[18px]">{el.label}</div>
                               <div className="flex flex-col pt-[10px] gap-[15px]">
                                 {
                                   el.child.map((el2, j) => (
-                                    <Link key={j} className="text-primary  text-[14px]" href={el2.url}>
+                                    <Link key={"el2" + j} className="text-primary  text-[14px]" href={el2.url}>
                                       {el2.label}
                                     </Link>
 
                                   ))
                                 }
                               </div>
-                            </>
+                            </div>
                             :
-                            <Link key={i} className="text-primary pt-[25px] text-[18px]" href={el.url}>
+                            <Link key={"el1" + i} className="text-primary pt-[25px] text-[18px]" href={el.url}>
                               {el.label}
                             </Link>
 
