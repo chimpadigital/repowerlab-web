@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { FormEvent, useState } from "react";
 import GreenBanner from "./GreenBanner";
 import { button, title } from "./primitives";
@@ -86,7 +86,7 @@ const GreenBannerNewsLetter = () => {
 
             {subscriptionSuccess && (
               <span className="absolute text-green-400 -bottom-8 left-8">
-                Subscription successful
+                Successful subscription
               </span>
             )}
           </div>
