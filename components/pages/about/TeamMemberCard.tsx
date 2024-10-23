@@ -5,7 +5,6 @@ interface TeamMemberCardProps {
   position: string;
   description: string;
   image: string;
-  blur:string
 }
 
 const TeamMemberCard = ({
@@ -13,7 +12,6 @@ const TeamMemberCard = ({
   position,
   description,
   image,
-  blur
 }: TeamMemberCardProps) => {
   return (
     <div className="card-miembro relative  w-[376px] font-[Mulish] overflow-hidden">
@@ -29,15 +27,13 @@ const TeamMemberCard = ({
         style={{
           clipPath: "url(#clip-shape)",
         }}
-        className={`absolute z-20 group text-white text-start h-full w-full inset-0 origin-center hover:h-full hover:w-full bg-[#0e0e0e00]   hover:bg-[#70707080]  flex flex-col px-6 pt-44 transition-all ${blur}  hover:justify-normal`}
+        className={`absolute z-20 group text-white text-start h-full w-full inset-0 origin-center hover:h-full hover:w-full bg-[#0e0e0e00]   hover:bg-[#707070cc]  flex flex-col px-6 pt-44 transition-all hover:backdrop-blur-[30px]  hover:justify-normal`}
       >
         <div className="transition-all absolute bottom-8  group-hover:bottom-[70%] text-xl md:text-2xl ">
           <h4 className="font-extrabold text-2xl mb-3 font-[Mulish]">{name}</h4>
           <p className="font-[Mulish] text-2xl">{position}</p>
         </div>
-        <div
-          className="opacity-0 transition-all mt-3 group-hover:opacity-100 "
-        >
+        <div className="opacity-0 transition-all mt-3 group-hover:opacity-100 ">
           <p
             className="font-[Mulish] text-base font-extralight cursor-default"
             style={{
