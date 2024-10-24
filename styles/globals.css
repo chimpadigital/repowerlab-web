@@ -93,7 +93,7 @@ html {
 
 .blog-container figure.media{
     aspect-ratio: 560/315;
-    width: 700px;
+    max-width: 700px;
 }
 
 .blog-container figure.media iframe{
