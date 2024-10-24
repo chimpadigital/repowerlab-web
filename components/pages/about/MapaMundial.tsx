@@ -63,14 +63,6 @@ const MapaMundial = () => {
           zIndex: 999999999999,
         }}
       >
-        <figure className="relative inline-block h-[87px] w-full">
-          <Image
-            alt=""
-            src={"/images/noImage.png"}
-            fill
-            className=" bg-gray-600 rounded-[7px] h-3 object-contain py-6"
-          />
-        </figure>
         <h3 className="text-base text-primary font-extrabold">
           {locations.find((item) => item.id === indexLocation)?.projectType}
         </h3>
