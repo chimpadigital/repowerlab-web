@@ -15,15 +15,15 @@ export const globalRoutes: Partial<RoutesWithChildI>[] = [
         child: [
             {
                 title: "Wind turbines",
-                url: ""
+                url: "products/wind-turbines"
             },
             {
                 title: "Wind turbines spare parts",
-                url: ""
+                url: "products/turbine-parts"
             },
             {
                 title: "Market place",
-                url: ""
+                url: "marketplace"
             },
         ]
     },

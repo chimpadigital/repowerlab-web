@@ -19,7 +19,7 @@ export default function JoinOurMission() {
         trigger: "px-2 py-4 data-[hover=true]:bg-default-100 shadow-none mt-6  font-bold h-14 flex items-center border-none pr4",
         indicator: "text-medium pr5",
     };
-
+ 
     return (
         <section className="w-full flex justify-center py-[100px]">
             <div className="container text-primary px-6">

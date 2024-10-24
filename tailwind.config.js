@@ -16,6 +16,9 @@ module.exports = {
         mono: ["var(--font-mono)"],
         mulish: ["var(--font-mulish)"],
       },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(270deg, #B3C5DF 0%, #FFF 57.02%)',
+      },
       colors:{
         primary: "#1C4741",
         secondary: "#BACCE6",
@@ -23,8 +26,10 @@ module.exports = {
         accent: "#E8B516",
         grey:{
           100: "#F4F4F4",
+          500: "#BFBFBF",
           600: "#9B9B9B",
           700: "#4F4F4F",
+          parrafo: "#444",
           background: "#9B9494E5"
         }
       }

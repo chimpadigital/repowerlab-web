@@ -18,13 +18,15 @@ export default function page() {
                                 <h4 className={`${title()} !block mb-3 max-w-[20ch] leading-[3rem]`}>
                                     Get in touch{" "}
                                     <span className={`${title()} text-secondary`}>
-                                        Sustainable Future
+                                        Today
                                     </span>
                                 </h4>
-                                <p className="max-w-[101ch] font-light mt-6">
-                                Join us in making a difference. Contact RepowerLab to explore how we can work together to advance the circular economy in wind energy.
-                                </p>
-                           
+                                <div className="max-w-[101ch] font-light mt-6 text-[18px]">
+                                    <p className='max-w-[580px]'>
+                                        Join us in making a difference. Contact RepowerLab to explore how we can work together to advance the circular economy in wind energy.
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
                         <div className="flex relative ml-2 ">

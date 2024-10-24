@@ -9,7 +9,7 @@ const Paragraph = ({ text, className, textAccent }: { text: string, className?: 
         return parts.map((part, index) => {
             if (part.startsWith('**') && part.endsWith('**')) {
                 // Remove the ** and wrap in strong tag
-                return <strong key={index}>{part.slice(2, -2)}</strong>;
+                return <strong className='font-bold' key={index}>{part.slice(2, -2)}</strong>;
             }
             if (part.startsWith('__') && part.endsWith('__')) {
                 // Remove the __ and wrap in span tag

@@ -30,7 +30,7 @@ export default function Hero() {
   })
 
 
-  const x = useTransform(scrollYProgress, [0, 1], [0, -200 * dataWeWork.length])
+  const x = useTransform(scrollYProgress, [0, 1], [0, -180 * dataWeWork.length])
 
   const off = useTransform(scrollYProgress, [0, 1], [0, .9])
 
