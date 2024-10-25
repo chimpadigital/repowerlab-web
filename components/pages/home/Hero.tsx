@@ -13,7 +13,7 @@ export default function Hero() {
                 </video>
                 <div className="container px-6 relative z-10">
                     <div className="grid grid-cols-2 h-full">
-                        <div className="col-span-1 h-full flex flex-col justify-center">
+                        <div className="col-span-2 lg:col-span-1 h-full flex flex-col justify-center">
                             <div className="max-w-[600px]">
                                 <h1 className={title({ color: "white", size: "md" })}>{'"'}Rethinking Energy Assets: Leading the Charge in Circular Economy Innovation{'"'}</h1>
                             </div>

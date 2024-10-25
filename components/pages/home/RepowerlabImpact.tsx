@@ -3,6 +3,7 @@ import { IconHowWeWork } from '@/components/icons'
 import { subtitle, title } from '@/components/primitives'
 import RotateScroll from '@/components/RotateScroll'
 import WordAnimated from '@/components/WordAnimated'
+import ThreeContainer from '@/three/ThreeContainer'
 import { extendVariants } from '@nextui-org/system'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -28,8 +29,11 @@ export default function RepowerlabImpact() {
                             <Card title='COST REDUCTION IN DECOMMISSIONING' percent='85-90%' description='By optimizing the decommissioning process, we reduce costs by 90%, making sustainable energy transitions more affordable and accessible.' />
                         </div>
                     </div>
-                    <div className='grid lg:grid-cols-2 grid-cols-1 gap-6'>
-                        <div className="col-span-1">
+                    <div className='grid lg:grid-cols-2 grid-cols-1 gap-6 relative'>
+                        <div className="absolute w-full h-[500px]">
+                            <ThreeContainer />
+                        </div>
+                        <div className="col-span-1 relative z-10">
                             <div className="max-w-[400px] text-white">
                                 <h3 className={`${title({ color: "white", size: "md" })}`}>This is how <span className='text-secondary'>we work</span></h3>
                                 <p className="pt-[50px]">
@@ -57,7 +61,7 @@ export default function RepowerlabImpact() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-1">
+                        <div className="col-span-1 relative z-10">
                             <Single title='A single point of contact' url='' description='We provide a single point of contact for all services, ensuring seamless communication and coordination' />
                             <div className='pt-8'>
                                 <Single title='Global Presence' url='' description='Our services span two continents, delivering and servicing anywhere in the world.' />

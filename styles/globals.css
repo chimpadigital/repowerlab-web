@@ -15,8 +15,14 @@ html {
     scroll-behavior: smooth;
 }
 
+#canvas-container>div {
+    position: absolute;
+    bottom: 0;
+}
+
 #canvas-container {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     height: 100dvh;
     width: 100%;
 }
@@ -104,12 +110,12 @@ html {
     text-decoration: underline;
 }
 
-.blog-container figure.media{
+.blog-container figure.media {
     aspect-ratio: 560/315;
     max-width: 700px;
 }
 
-.blog-container figure.media iframe{
+.blog-container figure.media iframe {
     height: 100%;
     width: 100%;
 }

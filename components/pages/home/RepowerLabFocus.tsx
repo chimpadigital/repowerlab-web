@@ -7,15 +7,15 @@ export default function RepowerLabFocus() {
     return (
         <div className="w-full flex justify-center px-10">
             <div className='container'>
-                <div className="flex text-primary gap-[90px]" >
+                <div className="flex flex-col lg:flex-row text-primary gap-[90px]" >
                     <h5 className={title({ color: "primary" })}>RepowerLab's Focus</h5>
                     <WordAnimated accentColor='!text-accent' text='--RepowerLab is a pioneering company transforming the energy sector by --providing --innovative --solutions --for --end-of-life --energy --assets, including decommissioning, repowering, retrofitting, recycling, and resale of renewable energy infrastructure.' />
                 </div>
-                <div className="pt-12 grid grid-cols-1 md:grid-cols-2 ">
-                    <div className="col-span-1">
+                <div className="pt-12 grid grid-cols-2 ">
+                    <div className="lg:col-span-1 col-span-2 flex justify-center">
                         <Image quality={100} width={500} height={500} alt="imagen focus" src={'/images/home/home-focus.png'}></Image>
                     </div>
-                    <div className="col-span-1 flex flex-col items-center justify-center text-primary text-[22px] font-light">
+                    <div className="lg:col-span-1 col-span-2 flex flex-col items-center justify-center text-primary text-[22px] font-light">
                         <p>
                             With a strong presence in Europe, the US, and Latin America, we have
                             {" "}
