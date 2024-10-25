@@ -7,27 +7,27 @@ import { FifthIcon, FirstIcon, FourdIcon, SecondIcon, ThirdIcon } from './iconsH
 const array = [
   {
     title: "Value Recovery Assessment",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt unde magni incidunt aliquam minus nisi, magnam tenetur hic. Nesciunt cupiditate fuga porro optio, rem eveniet quas cum ratione sed voluptatibus.",
+    description: "Helping sellers assess the value of their turbines and parts to maximize returns.",
     icon: FirstIcon
   },
   {
     title: "Dismantling and Transportation",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt unde magni incidunt aliquam minus nisi, magnam tenetur hic. Nesciunt cupiditate fuga porro optio, rem eveniet quas cum ratione sed voluptatibus.",
+    description: "Managing the safe and efficient dismantling and transport of turbines and parts.",
     icon: SecondIcon
   },
   {
     title: "Buyer Support",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt unde magni incidunt aliquam minus nisi, magnam tenetur hic. Nesciunt cupiditate fuga porro optio, rem eveniet quas cum ratione sed voluptatibus.",
+    description: "Assisting buyers in selecting the right turbines and parts, ensuring they meet their project requirements and regulatory standards.",
     icon: ThirdIcon
   },
   {
     title: "Inspection and Quality Assurance",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt unde magni incidunt aliquam minus nisi, magnam tenetur hic. Nesciunt cupiditate fuga porro optio, rem eveniet quas cum ratione sed voluptatibus.",
+    description: "Providing thorough inspections and quality assurance to ensure all products meet the highest standards.",
     icon: FourdIcon
   },
   {
     title: "Sales Process Management",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt unde magni incidunt aliquam minus nisi, magnam tenetur hic. Nesciunt cupiditate fuga porro optio, rem eveniet quas cum ratione sed voluptatibus.",
+    description: "Facilitating the sale from initial consultation through to final delivery and installation.",
     icon: FifthIcon
   },
 ]
