@@ -19,27 +19,27 @@ export default function RepowerLabFocus() {
                         <p>
                             With a strong presence in Europe, the US, and Latin America, we have
                             {" "}
-                            <strong className="text-accent">
+                            <strong className="text-accent font-bold">
                                 successfully managed numerous decommissioning projects
                             </strong>     {" "}
                             on a global scale. <br />
                             Our expertise ensures     {" "}
-                            <strong className="text-accent">
+                            <strong className="text-accent font-bold">
                                 maximum value recovery
                             </strong>     {" "}
                             and extended lifespan for energy assets. We offer comprehensive,     {" "}
-                            <strong className="text-accent">
+                            <strong className="text-accent font-bold">
                                 turnkey circular economy solutions
                             </strong>     {" "}
                             that include strategic planning, asset recovery, and the resale and installation of refurbished equipment.
                         </p>
-                        <p className="pt-4">
+                        <p className="pt-2">
                             Committed to sustainability, we utilize advanced European recycling technologies to achieve     {" "}
-                            <strong className="text-accent">
+                            <strong className="text-accent font-bold">
                                 high material recovery rates.
                             </strong>     {" "}
                             By enhancing the performance and efficiency of energy assets, RepowerLab promotes environmental stewardship, driving     {" "}
-                            <strong className="text-accent">innovation and sustainability</strong>     {" "}
+                            <strong className="text-accent font-bold">innovation and sustainability</strong>     {" "}
                             in the renewable energy industry.
                         </p>
                     </div>
