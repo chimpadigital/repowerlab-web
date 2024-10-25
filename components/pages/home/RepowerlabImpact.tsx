@@ -20,7 +20,7 @@ export default function RepowerlabImpact() {
                             <WordAnimated accentColor='text-secondary' text={"Our commitment to the circular economy and innovative energy solutions --delivers --measurable --results --in --waste --reduction, --efficiency, --and --cost --savings."} />
                         </div>
                     </div>
-                    <div className="pt-[200px]">
+                    <div className="pt-[200px] relative z-10">
                         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 mb-[200px]">
 
                             <Card title='Waste reduction' percent='85-90%' description='Through advanced recycling and repurposing, Repowerlab cuts waste from decommissioned wind turbines by up to 90%, leading the industry in sustainable practices.' />

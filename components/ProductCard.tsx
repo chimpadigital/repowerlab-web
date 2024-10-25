@@ -10,7 +10,7 @@ export default function ProductCard({ title, img, height, href, description }: {
 
     const variants = {
         closed: { width: "80%", height: 100, padding: "30px" },
-        open: { width: "100%", height, padding: "80px" },
+        open: { width: "100%", height, padding: "40px" },
     }
     const variants2 = {
         closed: { bottom: "50px" },
@@ -46,7 +46,7 @@ export default function ProductCard({ title, img, height, href, description }: {
                             </motion.div>
                             {
                                 description &&
-                                <motion.p variants={variantsP} className='absolute text-[16px] top-[80px]' transition={{ duration: 0.6 }} animate={open ? "open" : "closed"}>
+                                <motion.p variants={variantsP} className='absolute w-full text-[16px] top-[80px]' transition={{ duration: 0.6 }} animate={open ? "open" : "closed"}>
                                     {description}
                                 </motion.p>
                             }
