@@ -24,7 +24,7 @@ export default function JoinOurMission() {
                 <div className="grid lg:grid-cols-2 grid cols-1">
                     <div className="col-span-1">
                         <h4 className={title()}>Join Our Mission</h4>
-                        <Paragraph className='text-grey-600 pt-[40px] max-w-[450px]' text='At RepowerLab, we are dedicated to **advancing the circular economy in the wind energy sector**. By working together with partners, clients, and talented individuals, we can achieve a more sustainable and efficient future. **Join us in our mission to innovate, transform, and lead the way in renewable energy solutions.**' />
+                        <Paragraph className='text-grey-parrafo text-[20px] pt-[40px] max-w-[450px]' text='At RepowerLab, we are dedicated to **advancing the circular economy in the wind energy sector**. By working together with partners, clients, and talented individuals, we can achieve a more sustainable and efficient future. **Join us in our mission to innovate, transform, and lead the way in renewable energy solutions.**' />
 
                     </div>
                     <div className="col-span-1">
@@ -78,12 +78,12 @@ const Indicator = () => {
 
 const Cards = ({ title, list }: { title: string, list: string[] }) => {
     return (
-        <article className='text-primary bg-secondary rounded-[20px] px-6 pt-6 pb-8 w-[25%] max-w-[400px] min-w-[300px] shadow'>
-            <h5 className={subtitle({ colors: "primary", size: "md" })}>{title}</h5>
-            <ul className="pt-8">
+        <article className='text-primary bg-secondary rounded-[20px] px-8 pt-6 pb-8 w-[25%] max-w-[400px] min-w-[300px]' style={{boxShadow:"4px 4px 4px 0px rgba(0, 0, 0, 0.10)"}}>
+            <h5 className={subtitle({ colors: "primary", size: "sm" })}>{title}</h5>
+            <ul className="pt-6">
                 {
                     list.map((el, i) => (
-                        <motion.li whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: 60 }} key={i} transition={{ delay: 0.2 * i, duration: .6, type:"just" }} className='flex gap-2 items-start'>
+                        <motion.li whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: 60 }} key={i} transition={{ delay: 0.2 * i, duration: .6, type:"just" }} className='flex gap-2 py-1 px-0 items-start'>
                             <span >
                                 <svg className='translate-y-[10px]' width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.74678 9.59881L12.5884 0.101307C12.7 -0.0337692 12.8812 -0.0337692 12.9927 0.101307L14.0429 1.37328C14.1545 1.50836 14.1545 1.72714 14.0429 1.86294L4.94832 12.8983C4.83679 13.0334 4.65615 13.0341 4.54403 12.899L0.0841537 7.51633C-0.0279542 7.38125 -0.0279542 7.16175 0.0835729 7.02667L1.15121 5.73359C1.26274 5.59851 1.44397 5.59851 1.5555 5.73359L4.74678 9.59881Z" fill="#1C4741" />
