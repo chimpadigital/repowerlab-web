@@ -56,7 +56,6 @@ const CaseDateail = () => {
         const response = await axios.get(
           `https://api.repowerlab.chimpance.digital/api/entries/${params?.id}`
         );
-
         if (response?.status === 200) {
           setBlogDetail(response.data);
         }
@@ -67,8 +66,9 @@ const CaseDateail = () => {
 
     getBlogDetail();
   }, []);
+  console.log(blogDetail?.data);
 
-  const cleanContent = sanitizeHtml(blogDetail?.data?.content, {
+  const cleanContent = blogDetail?.data?.content ? sanitizeHtml(blogDetail?.data?.content, {
     allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img", "oembed"]),
     allowedAttributes: {
       oembed: ["url"],
@@ -76,35 +76,36 @@ const CaseDateail = () => {
       a: ["href"],
       "*": ["class"],
     },
-  });
+  }) : ""
 
   const transformedContent = replaceOembedWithIframe(cleanContent);
 
+  if (blogDetail?.data?.content) {
+    return (
+      <>
+        <section className="w-full px-6">
+          <HeroBreadcrumb
+            img="/images/cases/bg-hero.webp"
+            breadcrumbs={breadcrumbs}
+            position="left"
+          >
+            <div className="flex flex-col text-white mt-10">
+              <h4 className={`text-white mr-auto text-left ${title()}`}>
+                {blogDetail?.data?.title}
+              </h4>
+            </div>
+          </HeroBreadcrumb>
+        </section>
 
-  return (
-    <>
-      <section className="w-full px-6">
-        <HeroBreadcrumb
-          img="/images/cases/bg-hero.webp"
-          breadcrumbs={breadcrumbs}
-          position="left"
-        >
-          <div className="flex flex-col text-white mt-10">
-            <h4 className={`text-white mr-auto text-left ${title()}`}>
-              {blogDetail?.data?.title}
-            </h4>
-          </div>
-        </HeroBreadcrumb>
-      </section>
+        <article
+          className="px-14 blog-container max-w-7xl mx-auto"
+          dangerouslySetInnerHTML={{ __html: transformedContent }}
+        ></article>
 
-      <article
-        className="px-14 blog-container max-w-7xl mx-auto"
-        dangerouslySetInnerHTML={{ __html: transformedContent }}
-      ></article>
-
-      <RelatedPosts categoria={''}/>
-    </>
-  );
+        <RelatedPosts categoria={""} />
+      </>
+    );
+  }
 };
 
 export default CaseDateail;
