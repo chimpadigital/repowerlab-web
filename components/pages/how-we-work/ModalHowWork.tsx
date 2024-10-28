@@ -37,7 +37,7 @@ export default function ModalHowWork({ isOpen, onOpenChange, data, index }: { is
                                     <p className="font-light text-[18px] pt-6">{data.sellers}</p>
                                 </div>
                             </div>
-                            <div className="flex gap-8">
+                            <div className="flex gap-8 pt-6">
                                 <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center p-2">
                                     <div>
                                         <Buyers />
