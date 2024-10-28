@@ -57,6 +57,9 @@ const CaseDateail = () => {
           `https://api.repowerlab.chimpance.digital/api/entries/${params?.id}`
         );
         if (response?.status === 200) {
+
+          console.log(response);
+          
           setBlogDetail(response.data);
         }
       } catch (error) {
@@ -97,10 +100,10 @@ const CaseDateail = () => {
           </HeroBreadcrumb>
         </section>
 
-        <article
+        {/* <article
           className="px-14 blog-container max-w-7xl mx-auto"
           dangerouslySetInnerHTML={{ __html: transformedContent }}
-        ></article>
+        ></article> */}
 
         <RelatedPosts categoria={""} />
       </>
