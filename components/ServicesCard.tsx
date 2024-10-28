@@ -35,7 +35,7 @@ const ServicesCard = ({ titulo, svgIcono, texto, link }: ServicesCardProps) => {
         <h4 className="max-w-[12ch] text-xl font-light">{titulo}</h4>
       </div>
       <div className="absolute p-[26px] inset-0 translate-y-[100%] transition-all group-hover:translate-y-0 bg-[#F4F4F4] h-full w-full flex flex-col justify-between">
-        <p className="text-sm">{texto}</p>
+        <p className="text-base">{texto}</p>
         <Link
           href={link}
           className=" flex items-center gap-2 ml-auto font-semibold"
