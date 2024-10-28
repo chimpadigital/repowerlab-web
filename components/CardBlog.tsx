@@ -39,7 +39,7 @@ function cambiarFormatoFecha(fechaStr: any) {
 
 const TextoConResumen = ({ contenidoHtml }: any) => {
   // Crear un elemento temporal para extraer el texto
- 
+
   const div = document.createElement('div');
   div.innerHTML = contenidoHtml;
 
@@ -56,7 +56,7 @@ const TextoConResumen = ({ contenidoHtml }: any) => {
 
 export default function CardBlog({ blog, }: { blog: BlogI }) {
 
-  const fechaCambiada = cambiarFormatoFecha(blog?.published_at);
+  const fechaCambiada = (blog && blog.published_at) ? cambiarFormatoFecha(blog?.published_at) : "";
 
   return (
     <article className={`w-[400px] p-6`}>

@@ -49,7 +49,7 @@ export default function Products() {
               img='/images/home/products/4a.png' />
           </div>
         </div>
-        <div className="py-4 flex justify-center w-full">
+        <div className="py-4 mt-4 flex justify-center w-full">
           <Link href="products/wind-turbines" className='w-full mt-6 max-w-[180px] relative overflow-hidden gap-4 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white flex justify-between hover:max-w-[190px]'>
             <div className="w-full absolute h-full top-0 left-0 bg-primary">
             </div>
