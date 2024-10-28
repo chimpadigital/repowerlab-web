@@ -71,7 +71,7 @@ export default function Footer() {
                               </div>
                             </div>
                             :
-                            <Link key={"el1" + i} className="text-primary pt-[25px] text-[18px]" href={el.url}>
+                            <Link key={"el1extra" + i} className="text-primary pt-[25px] text-[18px]" href={el.url}>
                               {el.label}
                             </Link>
 

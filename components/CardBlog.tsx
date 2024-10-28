@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { subtitle } from './primitives';
 import Image from 'next/image';
@@ -38,6 +39,7 @@ function cambiarFormatoFecha(fechaStr: any) {
 
 const TextoConResumen = ({ contenidoHtml }: any) => {
   // Crear un elemento temporal para extraer el texto
+ 
   const div = document.createElement('div');
   div.innerHTML = contenidoHtml;
 

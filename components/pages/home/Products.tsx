@@ -15,10 +15,10 @@ export default function Products() {
 
       </div>
       <div className="pt-[60px] w-full">
-        <div className="grid grid-cols-4 gap-[1px] ">
+        <div className="grid grid-cols-4">
           <div className="col-span-1">
             <ProductCard
-              description='New turbines from canceled projects, offering top performance at a lower cost'
+              description='Turbines from canceled projects, offering top performance at a lower cost'
               href={"marketplace/"}
               height='65vh'
               title='Unused <br/> wind turbines'
@@ -26,7 +26,7 @@ export default function Products() {
           </div>
           <div className="col-span-1">
             <ProductCard
-              description='New turbines from canceled projects, offering top performance at a lower cost'
+              description='Remanufactured turbines, providing a cost-effective way to extend wind farm life'
               href={"marketplace/"}
               height='65vh'
               title='Refurbished <br/>  wind turbines'
@@ -34,7 +34,7 @@ export default function Products() {
           </div>
           <div className="col-span-1">
             <ProductCard
-              description='New turbines from canceled projects, offering top performance at a lower cost'
+              description='Budget-friendly turbines sold as-is for installation or refurbishment.'
               href={"marketplace/"}
               height='65vh'
               title='Used <br/> wind turbines'
@@ -42,7 +42,7 @@ export default function Products() {
           </div>
           <div className="col-span-1">
             <ProductCard
-              description='New turbines from canceled projects, offering top performance at a lower cost'
+              description='New and refurbished parts to keep turbines running efficiently.'
               href={"marketplace/"}
               height='65vh'
               title='Wind turbine <br/> spare parts'

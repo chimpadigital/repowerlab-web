@@ -16,7 +16,7 @@ const prueba: BlogI = {
 
 export default function SuccesCases() {
     return (
-        <div className='py-[100px] w-full flex justify-center relative z-10'>
+        <div className='pb-[100px] w-full flex justify-center relative z-10'>
             <div className="container">
                 <div className="flex flex-col items-center justify-center">
                     <h2 className={`${title({ color: "primary" })} text-center w-full`}>Success Cases</h2>
