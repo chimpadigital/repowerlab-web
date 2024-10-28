@@ -20,8 +20,8 @@ export default function MapHome() {
               <div className="relative">
                 <Image width={1500} quality={100} height={900} src={"/images/home/mapa.png"} alt="" className=' w-full h-auto rounded-[20px]'></Image>
                 <Card top={"20%"} left={"7%"} title={"WIND TURBINES SOLD"} number={416}/>
-                <Card top={"60%"} left={"18%"} title={"FINISHED PROJECTS"} number={45}/>
-                <Card top={"25%"} left={"40%"} title={"SATISFIED CLIENTS"} number={29}/>
+                <Card top={"60%"} left={"18%"} title={"FINISHED PROJECTS"} number={29}/>
+                <Card top={"25%"} left={"40%"} title={"SATISFIED CLIENTS"} number={45}/>
                 <Card top={"50%"} left={"48%"} title={"DISMANTLED WIND FARMS"} number={16}/>
               </div>
             </div>
