@@ -1,10 +1,10 @@
 import { title } from "@/components/primitives";
 import Image from "next/image";
 import React from "react";
-import iconoLight from "@/public/images/circular-economy/icon-light.png";
-import iconoCiruclarEconomy from "@/public/images/circular-economy/icon-circular-economy.png";
-import iconoRefurbishment from "@/public/images/circular-economy/icon-refurbishment.png";
-import iconoRecycling from "@/public/images/circular-economy/icon-recicle.png";
+import iconoLight from "@/public/images/circular-economy/icon-light.svg";
+import iconoCiruclarEconomy from "@/public/images/circular-economy/icon-circular-economy.svg";
+import iconoRefurbishment from "@/public/images/circular-economy/icon-refurbishment.svg";
+import iconoRecycling from "@/public/images/circular-economy/icon-recicle.svg";
 import Link from "next/link";
 
 const SolutionsCards = () => {

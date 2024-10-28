@@ -49,7 +49,6 @@ const CaseDateail = () => {
   const params = useParams();
 
   const [blogDetail, setBlogDetail] = useState<any>();
-  console.log(blogDetail);
 
   useEffect(() => {
     const getBlogDetail = async () => {
@@ -81,6 +80,7 @@ const CaseDateail = () => {
 
   const transformedContent = replaceOembedWithIframe(cleanContent);
 
+
   return (
     <>
       <section className="w-full px-6">
@@ -102,7 +102,7 @@ const CaseDateail = () => {
         dangerouslySetInnerHTML={{ __html: transformedContent }}
       ></article>
 
-      <RelatedPosts />
+      <RelatedPosts categoria={''}/>
     </>
   );
 };
