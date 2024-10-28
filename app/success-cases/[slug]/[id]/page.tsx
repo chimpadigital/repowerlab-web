@@ -80,7 +80,7 @@ const CaseDateail = () => {
 
   const transformedContent = replaceOembedWithIframe(cleanContent);
 
-  if (blogDetail?.data?.content) {
+  if (blogDetail?.data) {
     return (
       <>
         <section className="w-full px-6">
