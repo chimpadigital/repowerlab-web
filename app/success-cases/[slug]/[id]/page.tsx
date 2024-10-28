@@ -57,6 +57,9 @@ const CaseDateail = () => {
           `https://api.repowerlab.chimpance.digital/api/entries/${params?.id}`
         );
         if (response?.status === 200) {
+
+          console.log(response);
+          
           setBlogDetail(response.data);
         }
       } catch (error) {
@@ -80,7 +83,7 @@ const CaseDateail = () => {
 
   const transformedContent = replaceOembedWithIframe(cleanContent);
 
-  if (blogDetail?.data?.content) {
+  if (blogDetail?.data) {
     return (
       <>
         <section className="w-full px-6">
@@ -97,10 +100,10 @@ const CaseDateail = () => {
           </HeroBreadcrumb>
         </section>
 
-        <article
+        {/* <article
           className="px-14 blog-container max-w-7xl mx-auto"
           dangerouslySetInnerHTML={{ __html: transformedContent }}
-        ></article>
+        ></article> */}
 
         <RelatedPosts categoria={""} />
       </>
