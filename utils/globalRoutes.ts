@@ -50,7 +50,7 @@ export const globalRoutes: Partial<RoutesWithChildI>[] = [
         child: [
             {
                 title: "Succes Cases",
-                url: "succes-cases"
+                url: "success-cases"
             },
  
         ]
