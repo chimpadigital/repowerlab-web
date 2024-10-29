@@ -3,32 +3,38 @@ import { IconHowWeWork } from '@/components/icons'
 import { subtitle, title } from '@/components/primitives'
 import RotateScroll from '@/components/RotateScroll'
 import WordAnimated from '@/components/WordAnimated'
+import ThreeContainer from '@/three/ThreeContainer'
 import { extendVariants } from '@nextui-org/system'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import React, { useState } from 'react'
 
 export default function RepowerlabImpact() {
     return (
-        <div className='px-8'>
+        <div className='px-8 relative'>
+            <div className="absolute bottom-0 w-full h-[500px]">
+                <ThreeContainer />
+            </div>
             <div className="rounded-[10px] bg-primary py-[100px] flex justify-center">
                 <div className="container px-6">
-                    <div className="flex justify-between">
+                    <div className="flex flex-col lg:flex-row justify-between gap-[40px] lg:gap-[100px]">
                         <h5 className={`${title({ color: "white", size: "md" })} max-w-[300px]`}>RepowerLab's Impact</h5>
                         <div className="max-w-[1000px] text-grey-100" >
                             <WordAnimated accentColor='text-secondary' text={"Our commitment to the circular economy and innovative energy solutions --delivers --measurable --results --in --waste --reduction, --efficiency, --and --cost --savings."} />
                         </div>
                     </div>
-                    <div className="pt-[200px]">
-                        <div className="grid grid-cols-4 gap-8 mb-[200px]">
+                    <div className="pt-[120px] relative z-10">
+                        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 mb-[200px]">
 
-                            <Card title='Waste reduction' percent='85-90%' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aliquam a sapiente, officia at in, culpa odit suscipit eius eos accusantium error vero quasi quidem minus ad cumque ducimus rerum?' />
-                            <Card title='Waste avoided' percent='60%' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aliquam a sapiente, officia at in, culpa odit suscipit eius eos accusantium error vero quasi quidem minus ad cumque ducimus rerum?' />
-                            <Card title='Increased power output' percent='25-30%' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aliquam a sapiente, officia at in, culpa odit suscipit eius eos accusantium error vero quasi quidem minus ad cumque ducimus rerum?' />
-                            <Card title='COST REDUCTION IN DECOMMISSIONING' percent='85-90%' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aliquam a sapiente, officia at in, culpa odit suscipit eius eos accusantium error vero quasi quidem minus ad cumque ducimus rerum?' />
+                            <Card title='Waste reduction' percent='85-90%' description='Through advanced recycling and repurposing, Repowerlab cuts waste from decommissioned wind turbines by up to 90%, leading the industry in sustainable practices.' />
+                            <Card title='Waste avoided' percent='60%' description='Our circular economy initiatives have successfully diverted 60% of potential waste from landfills, turning end-of-life wind turbine components into valuable resources.' />
+                            <Card title='Increased power output' percent='25-30%' description='Repowerlab’s innovative repowering techniques boost the efficiency of wind turbines by 25-35%, maximizing energy production from existing assets.' />
+                            <Card title='COST REDUCTION IN DECOMMISSIONING' percent='85-90%' description='By optimizing the decommissioning process, we reduce costs by 90%, making sustainable energy transitions more affordable and accessible.' />
                         </div>
                     </div>
-                    <div className='grid lg:grid-cols-2 grid-cols-1'>
-                        <div className="col-span-1">
+                    <div className='grid lg:grid-cols-2 grid-cols-1 gap-6 relative'>
+
+                        <div className="col-span-1 relative z-10">
                             <div className="max-w-[400px] text-white">
                                 <h3 className={`${title({ color: "white", size: "md" })}`}>This is how <span className='text-secondary'>we work</span></h3>
                                 <p className="pt-[50px]">
@@ -42,7 +48,7 @@ export default function RepowerlabImpact() {
                                     an obligation-free introduction.
                                 </p>
                                 <div className="pt-[60px]">
-                                    <button className='w-full max-w-[180px] relative overflow-hidden gap-4 items-center transition-all duration-[600] py-4 px-6 rounded-full  text-white flex justify-between hover:max-w-[200px]'>
+                                    <Link href="how-we-work" className='w-full max-w-[180px] relative overflow-hidden gap-4 items-center transition-all duration-[600] py-4 px-6 rounded-full  text-white flex justify-between hover:max-w-[200px]'>
                                         <div className="w-full absolute h-full top-0 left-0 bg-[#ffffff]/40">
                                         </div>
                                         <span className='relative text-[18px]'>Read more</span>
@@ -52,11 +58,11 @@ export default function RepowerlabImpact() {
                                         </svg>
 
 
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-1">
+                        <div className="col-span-1 relative z-10">
                             <Single title='A single point of contact' url='' description='We provide a single point of contact for all services, ensuring seamless communication and coordination' />
                             <div className='pt-8'>
                                 <Single title='Global Presence' url='' description='Our services span two continents, delivering and servicing anywhere in the world.' />
@@ -86,15 +92,18 @@ const Card = ({ title, percent, description }: CardI) => {
         closed: { opacity: 0, y: 450 },
     }
     return (
-        <motion.article onClick={() => { setOpen(!open) }} style={{ height: open ? "320px" : "150px" }} className={`border overflow-hidden cursor-pointer h-full transition-all duration-600 relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6`}>
+        <motion.article onClick={() => { setOpen(!open) }} style={{ height: open ? "315px" : "150px" }} className={`border overflow-hidden cursor-pointer h-full transition-all duration-600 relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6`}>
             <div className=' relative z-10'>
                 <h5 className="font-light uppercase text-[20px] w-[200px]">{title}</h5>
                 <h5 className="text-bold text-[32px]">{percent}</h5>
+                <div className="relative h-full">
+                    <p className="w-[250px]" style={{ opacity: 0, color: "transparent" }}>{description}</p>
+                    <motion.p variants={variants} animate={open ? "open" : "closed"} transition={{ duration: .6 }} className={` absolute top-2 max-w-[250px] pe-4  w-full`}>{description}</motion.p>
+                </div>
             </div>
             <svg className='absolute bottom-2 right-2' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 18V5M18 18L2 2M18 18H5" stroke="white" strokeWidth="3" />
             </svg>
-            <motion.p variants={variants} animate={open ? "open" : "closed"} transition={{ duration: .6 }} className={` absolute bottom-2 w-[250px]`}>{description}</motion.p>
         </motion.article>
     )
 }
@@ -116,7 +125,7 @@ const Single = ({ title, url, description }: SingleI) => {
             <RotateScroll>
                 <IconHowWeWork />
             </RotateScroll>
-            
+
         </article>
     )
 }

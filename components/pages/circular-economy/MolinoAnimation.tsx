@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { dataMolino } from './dataMolino'
 import { subtitle, title } from '@/components/primitives'
 import Paragraph from '@/atoms/Paragraph'
+import Image from 'next/image'
 
 export default function MolinoAnimation() {
 
@@ -19,25 +20,29 @@ export default function MolinoAnimation() {
 
     return (
         <section className="w-screen flex justify-center">
-            <div className="container px-6">
-                <div className="w-screen" ref={ref} style={{ height: `${dataMolino.length * 200}vh` }}>
-                    <div className="grid h-screen h-full items-center grid-cols-1 lg:grid-cols-2 sticky top-0">
-                        <div className="col-span-1 flex items-center justify-center">
-                            <RecursoSvg className="lg:w-full lg:h-auto h-[45vh]" rotate={rotate} numbers={numbers} />
-                        </div>
-                        <div className="col-span-1">
-                            <div className='w-[420px]'>
-                                <h4 className={title({ color: "secondary", size: "md", weight: "normal" })}>
-                                    <span className='text-primary'>
-                                        RepowerLab's {" "}
-                                    </span>
-                                    Circular Economy Business Model</h4>
-                                <div className="h-[45vh] w-full relative mt-8">
-                                    {
-                                        dataMolino.map((el, i) => (
-                                            <Text key={"data" + i} numbers={numbers} data={el} index={i} />
-                                        ))
-                                    }
+            <div className="w-screen" ref={ref} style={{ height: `${dataMolino.length * 200}vh` }}>
+                <div className="h-screen h-full items-center flex justify-center  sticky top-0">
+                    <Image width={400} height={400} alt="bg" className='absolute left-0 bottom-[-100px]' src="/images/circular-economy/bg_wind.png"></Image>
+                    <div className="container px-6">
+                        <div className="grid h-screen h-full items-center grid-cols-1 lg:grid-cols-2 sticky top-0">
+
+                            <div className="col-span-1 flex items-center justify-center">
+                                <RecursoSvg className="lg:w-full lg:h-auto h-[45vh]" rotate={rotate} numbers={numbers} />
+                            </div>
+                            <div className="col-span-1">
+                                <div className='w-[420px]'>
+                                    <h4 className={title({ color: "secondary", size: "md", weight: "normal" })}>
+                                        <span className='text-primary'>
+                                            RepowerLab's {" "}
+                                        </span>
+                                        Circular Economy Business Model</h4>
+                                    <div className="h-[45vh] w-full relative mt-8">
+                                        {
+                                            dataMolino.map((el, i) => (
+                                                <Text key={"data" + i} numbers={numbers} data={el} index={i} />
+                                            ))
+                                        }
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -58,7 +63,7 @@ const Text = ({ numbers, data, index }: { index: number, numbers: any, data: { t
                 <h5 className="text-[42px] text-primary font-bold">{index + 1}</h5>
                 <h6 className={subtitle({ colors: "primary" })}>{data.title}</h6>
             </div>
-            <Paragraph className='text-primary text-[18px] font-light' text={data.description}></Paragraph>
+            <Paragraph className='text-primary mt-8 text-[18px] font-light' text={data.description}></Paragraph>
         </motion.div>
     )
 }

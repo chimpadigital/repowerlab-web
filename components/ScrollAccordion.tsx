@@ -59,13 +59,13 @@ export default function ScrollAccordion({
     <section
       id={id}
       ref={ref}
-      className="mt-4 text-[#000] flex justify-center w-full h-full relative "
+      className={`accordeon-${id} mt-4 text-[#000] flex justify-center w-full h-full relative `}
       style={{ height: `${items.length * 1.5 * 100}vh` }}
     >
       <div className="container px-6">
         <div className="grid grid-cols-2 min-h-screen items-center sticky top-0 gap-[20px]">
           <div
-            className={`col-span-1 relative max-h-[700px] h-full ${imgPosition == "right" && "order-last"}`}
+            className={`col-span-1 relative max-h-[700px]  max-[1366px]:max-h-[600px] max-[1536px]:max-h-[700px]    h-full ${imgPosition == "right" && "order-last"}`}
           >
             {y &&
               items.map((el, index) => (
@@ -86,7 +86,7 @@ export default function ScrollAccordion({
             )}
           </div>
           <div
-            className={`col-span-1 max-h-[700px] p-12 shadow-lg rounded-[20px] h-full flex flex-col relative justify-between`}
+            className={`col-span-1 max-h-[700px]  max-[1366px]:max-h-[600px] max-[1536px]:max-h-[700px]   p-12 shadow-lg rounded-[20px] h-full flex flex-col relative justify-between`}
           >
             <motion.div
               style={{
@@ -152,6 +152,7 @@ const ImageMotion = ({ index, src, y, rounded = true }: any) => {
         src={src}
         alt="img-bg"
         fill
+        quality={100}
         className={`w-full h-full absolute object-cover ${rounded && "rounded-[20px]"}`}
       />
     </motion.div>
@@ -186,7 +187,7 @@ const AccordionMotion = ({ index, el, y, distancia }: any) => {
   return (
     <motion.div key={index} className={`relative`} style={{ y: top }}>
       <div className="py-2">
-        <div className="rounded-full w-full p-[20px] bg-grey-100 text-primary font-bold">
+        <div className="rounded-full w-full p-[20px] max-[1366px]:py-[10px] max-[1536px]:py-[20px] bg-grey-100 text-primary font-bold">
           {el.title}
         </div>
       </div>

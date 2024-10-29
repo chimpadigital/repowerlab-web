@@ -5,12 +5,12 @@ import Link from 'next/link'
 
 export default function FeatureProducts() {
     return (
-        <div className='py-[100px]'>
+        <div className='pb-[50px]'>
             <div className='flex justify-center items-center flex-col pt-8 pb-[80px]'>
                 <h3 className={`${title()} text-primary mb-3 !block`}>
                     Feature Products
                 </h3>
-                <p className="text-grey-600 max-w-[700px] text-center">Welcome to the RepowerLab Marketplace, your destination for high-quality wind turbines, spare parts, and recycled materials, all thoroughly inspected for your energy asset needs.</p>
+                <p className="text-grey-parrafo max-w-[700px] text-center">Welcome to the RepowerLab Marketplace, your destination for high-quality wind turbines, spare parts, and recycled materials, all thoroughly inspected for your energy asset needs.</p>
             </div>
             <ScrollProducts />
             <div className="w-full py-[60px] flex justify-center items-center">

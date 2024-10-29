@@ -58,7 +58,8 @@ export const subtitle = tv({
       grey: "text-grey-600"
     },
     size: {
-      md: "text-[24px]"
+      md: "text-[24px]",
+      sm: "!text-[22px]"
     },
     fullWidth: {
       true: "!w-full",

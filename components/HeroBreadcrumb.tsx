@@ -32,7 +32,7 @@ export default function HeroBreadcrumb({
         />
         <div className="w-full px-4 container">
           <div className="relative z-10 w-full h-full grid grid-cols-2">
-            <div className="lg:col-span-1 col-span-2">
+            <div className="lg:col-span-1 col-span-2 lg:ps-8">
               <Breadcrumbs
                 itemClasses={{
                   item: "text-white font-bold text-[18px] data-[current=true]:underline data-[current=true]:underline-offset-[6px]",

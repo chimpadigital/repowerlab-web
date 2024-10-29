@@ -3,15 +3,14 @@ import { title } from "@/components/primitives";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-const RelatedPosts = () => {
-
+const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
   const [blogs, setBlogs] = useState<any>();
 
   useEffect(() => {
     const getBlogs = async () => {
       try {
         const response = await axios.get(
-          `https://api.repowerlab.chimpance.digital/api/entries?page=1&per_page=3`
+          `https://api.repowerlab.chimpance.digital/api/entries?${ categoria && `filter[category])=${categoria}&`}page=1&per_page=3&sort=-created_at`
         );
 
         if (response?.status === 200) {
@@ -21,7 +20,7 @@ const RelatedPosts = () => {
         console.log(error);
       }
     };
-    getBlogs()
+    getBlogs();
   }, []);
 
   return (

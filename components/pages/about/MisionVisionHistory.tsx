@@ -22,7 +22,7 @@ const MisionVisionHistory = () => {
           style={{ width: "min(100%, 374px)" }}
         >
           <h4 className={title()}>Our Mission</h4>
-          <p className="mt-6 text-[#7E7E7E]">
+          <p className="mt-6 text-[#444444]">
             RepowerLab is dedicated to advancing the wind energy sector through
             innovative repowering, recycling, and sustainability solutions. Our
             mission is to maximize the lifespan and efficiency of wind turbines,
@@ -46,7 +46,7 @@ const MisionVisionHistory = () => {
           style={{ width: "min(100%, 374px)" }}
         >
           <h4 className={title()}>Our Vision</h4>
-          <p className="mt-6 text-[#7E7E7E]">
+          <p className="mt-6 text-[#444444]">
             To lead the global transition to a sustainable energy future by
             being the foremost provider of repowering and recycling solutions
             for wind turbines, fostering environmental stewardship, economic
@@ -68,7 +68,7 @@ const MisionVisionHistory = () => {
           style={{ width: "min(100%, 374px)" }}
         >
           <h4 className={title()}>Our History</h4>
-          <p className="mt-6 text-[#7E7E7E]">
+          <p className="mt-6 text-[#444444]">
             RepowerLab was borne as a spin-off of Repowering Solutions, a
             company with more than 15 years of experience in the dismantling,
             retrofitting, recycling, buying and selling of wind turbines in

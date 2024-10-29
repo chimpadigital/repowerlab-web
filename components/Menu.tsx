@@ -12,6 +12,7 @@ import { RepowerIcon } from './navicons'
 export default function Menu({ active, setMenu }: { active: boolean, setMenu?: any }) {
   const [linkActve, setActive] = useState(0)
   const [isActive, setIsActive] = useState(false)
+ 
 
   return (
     <div className='w-full h-[calc(100dvh)] fixed lg:block hidden bg-menu bg-secondary left-0 top-0 z-40'
