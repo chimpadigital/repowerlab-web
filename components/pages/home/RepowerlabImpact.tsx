@@ -91,13 +91,13 @@ const Card = ({ title, percent, description }: CardI) => {
         closed: { opacity: 0, y: 450 },
     }
     return (
-        <motion.article onClick={() => { setOpen(!open) }} style={{ height: open ? "320px" : "150px" }} className={`border overflow-hidden cursor-pointer h-full transition-all duration-600 relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6`}>
+        <motion.article onClick={() => { setOpen(!open) }} style={{ height: open ? "315px" : "150px" }} className={`border overflow-hidden cursor-pointer h-full transition-all duration-600 relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6`}>
             <div className=' relative z-10'>
                 <h5 className="font-light uppercase text-[20px] w-[200px]">{title}</h5>
                 <h5 className="text-bold text-[32px]">{percent}</h5>
                 <div className="relative h-full">
                     <p className="w-[250px]" style={{ opacity: 0, color: "transparent" }}>{description}</p>
-                    <motion.p variants={variants} animate={open ? "open" : "closed"} transition={{ duration: .6 }} className={` absolute top-2 max-w-[250px]  w-full px-6`}>{description}</motion.p>
+                    <motion.p variants={variants} animate={open ? "open" : "closed"} transition={{ duration: .6 }} className={` absolute top-2 max-w-[250px] pe-4  w-full`}>{description}</motion.p>
                 </div>
             </div>
             <svg className='absolute bottom-2 right-2' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
