@@ -17,7 +17,7 @@ module.exports = {
         mulish: ["var(--font-mulish)"],
       },
       backgroundImage: {
-        'custom-gradient': 'linear-gradient(270deg, #B3C5DF 0%, #FFF 57.02%)',
+        'custom-gradient': 'linear-gradient(270deg, #B3C5DF80 0%, #FFF 57.02%)',
       },
       colors:{
         primary: "#1C4741",
