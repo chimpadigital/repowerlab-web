@@ -12,10 +12,9 @@ import { ReCaptchaProvider } from "next-recaptcha-v3";
 
 export interface ProvidersProps {
   children: React.ReactNode;
-  themeProps?: ThemeProviderProps;
 }
 
-export function Providers({ children, themeProps }: ProvidersProps) {
+export function Providers({ children }: ProvidersProps) {
   const router = useRouter();
 
   React.useEffect(() => {
@@ -46,7 +45,7 @@ export function Providers({ children, themeProps }: ProvidersProps) {
         apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string}
       >
         <NextUIProvider navigate={router.push}>
-          <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
+          {children}
         </NextUIProvider>
         <button className="fixed bottom-4 right-4 bg-accent z-20 rounded-full shadow-xl text-white w-12 h-12 flex items-center justify-center" id="backToTop">
         <span>
