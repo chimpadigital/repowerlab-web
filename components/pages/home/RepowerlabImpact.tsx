@@ -11,7 +11,10 @@ import React, { useState } from 'react'
 
 export default function RepowerlabImpact() {
     return (
-        <div className='px-8'>
+        <div className='px-8 relative'>
+            <div className="absolute bottom-0 w-full h-[500px]">
+                <ThreeContainer />
+            </div>
             <div className="rounded-[10px] bg-primary py-[100px] flex justify-center">
                 <div className="container px-6">
                     <div className="flex flex-col lg:flex-row justify-between gap-[40px] lg:gap-[100px]">
@@ -20,7 +23,7 @@ export default function RepowerlabImpact() {
                             <WordAnimated accentColor='text-secondary' text={"Our commitment to the circular economy and innovative energy solutions --delivers --measurable --results --in --waste --reduction, --efficiency, --and --cost --savings."} />
                         </div>
                     </div>
-                    <div className="pt-[200px] relative z-10">
+                    <div className="pt-[120px] relative z-10">
                         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 mb-[200px]">
 
                             <Card title='Waste reduction' percent='85-90%' description='Through advanced recycling and repurposing, Repowerlab cuts waste from decommissioned wind turbines by up to 90%, leading the industry in sustainable practices.' />
@@ -30,9 +33,7 @@ export default function RepowerlabImpact() {
                         </div>
                     </div>
                     <div className='grid lg:grid-cols-2 grid-cols-1 gap-6 relative'>
-                        <div className="absolute w-full h-[500px]">
-                            <ThreeContainer />
-                        </div>
+
                         <div className="col-span-1 relative z-10">
                             <div className="max-w-[400px] text-white">
                                 <h3 className={`${title({ color: "white", size: "md" })}`}>This is how <span className='text-secondary'>we work</span></h3>
