@@ -11,6 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        '2xl': '1536px',
+      },
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],

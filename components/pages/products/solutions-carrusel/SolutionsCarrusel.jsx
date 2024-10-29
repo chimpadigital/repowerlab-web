@@ -31,12 +31,12 @@ export default function SolutionsCarrusel({ cards }) {
   const handleMoveRight = () => {
     if (moveLeft === null) {
       setMoveRight(
-        "md:transform md:-translate-x-[75%] md:transition-all md:duration-[1000ms] xl:transform xl:-translate-x-[43%]"
+        "transform md:-translate-x-[75%] md:transition-all md:duration-[1000ms]  md:-translate-x-[50%]  xl:-translate-x-[40%] 2xl::-translate-x-[30%]"
       );
     } else {
       setMoveLeft("");
       setMoveRight(
-        "md:transform md:-translate-x-[75%] md:transition-all md:duration-[1000ms] xl:transform xl:-translate-x-[43%]"
+        "transform md:-translate-x-[75%] transition-all duration-[1000ms] lg:-translate-x-[50%]   xl:-translate-x-[40%] 2xl:-translate-x-[30%] "
       );
     }
     return;
@@ -91,7 +91,7 @@ export default function SolutionsCarrusel({ cards }) {
               className={`md:border-r-2 ${i === 0 ? 'lg:border lg:border-transparent lg:rounded-l-[20px]' : i === cards.length - 1 ? 'lg:border lg:border-transparent lg:rounded-r-[20px]' : i === 1 ? 'border-l-2' : ''} flex flex-col justify-start items-start pl-4 hover:bg-primary hover:text-secondary   transition-all duration-300 ease-in-out`}
             >
 
-              <div className="overflow-hidden flex items-center h-full">
+              <div className="overflow-hidden pt-[40px] h-full">
                 <p
 
                   className="mt pr-2 font-light"
