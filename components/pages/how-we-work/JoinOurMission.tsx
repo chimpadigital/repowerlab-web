@@ -83,7 +83,7 @@ const Cards = ({ title, list }: { title: string, list: string[] }) => {
             <ul className="pt-6">
                 {
                     list.map((el, i) => (
-                        <motion.li whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: 60 }} key={i} transition={{ delay: 0.2 * i, duration: .6, type:"just" }} className='flex gap-2 py-1 px-0 items-start'>
+                        <motion.li whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: 60 }} key={i} transition={{ delay: 0.2 * i, type:"just" }} className='flex gap-2 transition duration-[600] py-1 px-0 items-start'>
                             <span >
                                 <svg className='translate-y-[10px]' width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.74678 9.59881L12.5884 0.101307C12.7 -0.0337692 12.8812 -0.0337692 12.9927 0.101307L14.0429 1.37328C14.1545 1.50836 14.1545 1.72714 14.0429 1.86294L4.94832 12.8983C4.83679 13.0334 4.65615 13.0341 4.54403 12.899L0.0841537 7.51633C-0.0279542 7.38125 -0.0279542 7.16175 0.0835729 7.02667L1.15121 5.73359C1.26274 5.59851 1.44397 5.59851 1.5555 5.73359L4.74678 9.59881Z" fill="#1C4741" />

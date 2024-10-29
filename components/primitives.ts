@@ -59,7 +59,7 @@ export const subtitle = tv({
     },
     size: {
       md: "text-[24px]",
-      sm: "text-[22px]"
+      sm: "!text-[22px]"
     },
     fullWidth: {
       true: "!w-full",
