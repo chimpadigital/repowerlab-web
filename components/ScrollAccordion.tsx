@@ -152,6 +152,7 @@ const ImageMotion = ({ index, src, y, rounded = true }: any) => {
         src={src}
         alt="img-bg"
         fill
+        quality={100}
         className={`w-full h-full absolute object-cover ${rounded && "rounded-[20px]"}`}
       />
     </motion.div>
