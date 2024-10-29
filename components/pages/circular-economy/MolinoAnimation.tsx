@@ -58,7 +58,7 @@ const Text = ({ numbers, data, index }: { index: number, numbers: any, data: { t
     const opacity = useTransform(numbers, [index - .5, index], [0, 1])
 
     return (
-        <motion.div className="flex items-center flex-col absolute p-2 top-0 bg-white" style={{ zIndex: index, opacity: index == 0 ? 1 : opacity }}>
+        <motion.div className="flex items-center flex-col absolute p-2 top-0 w-full h-full bg-white" style={{ zIndex: index, opacity: index == 0 ? 1 : opacity }}>
             <div className="flex gap-12 items-center w-full">
                 <h5 className="text-[42px] text-primary font-bold">{index + 1}</h5>
                 <h6 className={subtitle({ colors: "primary" })}>{data.title}</h6>
