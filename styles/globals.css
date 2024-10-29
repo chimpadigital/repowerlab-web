@@ -113,6 +113,7 @@ html {
 .blog-container figure.media {
     aspect-ratio: 560/315;
     max-width: 700px;
+    margin-block: 20px;
 }
 
 .blog-container figure.media iframe {
@@ -166,6 +167,7 @@ html {
     height: auto;
     width: 100% !important;
     max-width: 100% !important;
+    margin-bottom: 20px;
 }
 
 /* ------------- */

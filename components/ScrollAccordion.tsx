@@ -152,6 +152,7 @@ const ImageMotion = ({ index, src, y, rounded = true }: any) => {
         src={src}
         alt="img-bg"
         fill
+        quality={100}
         className={`w-full h-full absolute object-cover ${rounded && "rounded-[20px]"}`}
       />
     </motion.div>
@@ -186,7 +187,7 @@ const AccordionMotion = ({ index, el, y, distancia }: any) => {
   return (
     <motion.div key={index} className={`relative`} style={{ y: top }}>
       <div className="py-2">
-        <div className="rounded-full w-full p-[20px] bg-grey-100 text-primary font-bold">
+        <div className="rounded-full w-full p-[20px] max-[1366px]:py-[10px] max-[1536px]:py-[20px] bg-grey-100 text-primary font-bold">
           {el.title}
         </div>
       </div>
