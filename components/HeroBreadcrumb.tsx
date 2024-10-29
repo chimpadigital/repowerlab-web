@@ -26,7 +26,7 @@ export default function HeroBreadcrumb({
         <Image
           src={img}
           fill
-          className="object-cover absolute z-0"
+          className="object-cover object-top absolute z-0"
           alt="bg-hero"
           quality={100}
         />
