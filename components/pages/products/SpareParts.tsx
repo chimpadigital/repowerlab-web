@@ -39,7 +39,7 @@ const Card = ({ titulo, svgIcono, texto }: any) => {
                 <div className={"h-[78px] transition-all duration-[1.2s] aspect-square rounded-full grid place-items-center w-fit " + `${hover ? "bg-primary text-secondary" : "bg-secondary text-primary"}`}>
                     {svgIcono}
                 </div>
-                <h4 className=" text-xl font-bold">{titulo}</h4>
+                <h4 className=" text-[24px] font-bold">{titulo}</h4>
                 <p className="font-light">{texto}</p>
             </div>
         </div>
