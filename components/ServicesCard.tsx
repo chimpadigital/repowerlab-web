@@ -20,19 +20,24 @@ const item = {
 };
 
 const ServicesCard = ({ titulo, svgIcono, texto, link }: ServicesCardProps) => {
+
   return (
     <motion.div
       variants={item}
-      className="relative overflow-hidden group shadow-[5px_5px_4px_0px_#0000001A] rounded-[10px] bg-[#F4F4F4] w-fit text-primary min-h-[280px] px-6"
+      className="relative overflow-hidden group shadow-[5px_5px_4px_0px_#0000001A] rounded-[10px] bg-[#F4F4F4] w-fit text-primary min-h-[280px] px-6 pb-6"
       style={{
         width: "min(100%, 307px)",
       }}
     >
-      <div className="h-full transition-all group-hover:-translate-y-8  w-full flex gap-4 flex-col justify-center">
+      <div className="h-full transition-all group-hover:-translate-y-8  w-full flex gap-4 flex-col pt-14">
         <div className="bg-[#B3C5DF] h-[78px] aspect-square rounded-full grid place-items-center w-fit">
           {svgIcono}
         </div>
-        <h4 className="max-w-[12ch] text-xl font-light">{titulo}</h4>
+        <h4
+          className={`${titulo.length < 16 ? "max-w-[9ch]" : "max-w-[12ch]"}  text-xl font-light`}
+        >
+          {titulo}
+        </h4>
       </div>
       <div className="absolute p-[26px] inset-0 translate-y-[100%] transition-all group-hover:translate-y-0 bg-[#F4F4F4] h-full w-full flex flex-col justify-between">
         <p className="text-base">{texto}</p>

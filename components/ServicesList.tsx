@@ -57,7 +57,7 @@ const ServicesList = () => {
         link="/our-services/#blade-recycling"
         svgIcono={<RecicladoCuchillasIcono />}
         texto="Repowerlab leads in recycling and repurposing turbine blades through mechanical shredding, cement co-processing, and creating new products, supporting a circular economy."
-        titulo="Blade recycling"
+        titulo={`Bladere cycling`}
       />
       <ServicesCard
         link="/our-services#inspection"
