@@ -18,7 +18,7 @@ export default function Products() {
         <div className="grid grid-cols-4">
           <div className="col-span-1">
             <ProductCard
-              description='Turbines from canceled projects, offering top performance at a lower cost'
+              description='Turbines from canceled projects, offering top performance at a lower cost.'
               href={"marketplace/"}
               height='65vh'
               title='Unused <br/> wind turbines'
@@ -26,7 +26,7 @@ export default function Products() {
           </div>
           <div className="col-span-1">
             <ProductCard
-              description='Remanufactured turbines, providing a cost-effective way to extend wind farm life'
+              description='Remanufactured turbines, providing a cost-effective way to extend wind farm life.'
               href={"marketplace/"}
               height='65vh'
               title='Refurbished <br/>  wind turbines'

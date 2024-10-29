@@ -75,10 +75,10 @@ export const button = tv({
   base: "group transition-all border-2 py-[10px] px-5 w-fit before:w-[160%] before:h-[190%] flex justify-center before:rounded-[50%] z-[1] before:z-[-1] hover:before:top-[-35%] overflow-hidden before:absolute relative before:top-[180%] hover:before:-scale-y-150 before:transition-all rounded-full",
   variants: {
     greenLine: {
-      true: "hover:border-primary text-primary hover:text-white border-primary before:bg-primary",
+      true: "hover:border-transparent text-primary hover:text-white border-primary before:bg-primary",
     },
     whiteLine: {
-      true: "hover:border-secondary bg-transparent text-white hover:text-primary border-white before:bg-secondary",
+      true: "hover:border-transparent bg-transparent text-white hover:text-primary border-white before:bg-secondary",
     },
   },
   defaultVariants: {

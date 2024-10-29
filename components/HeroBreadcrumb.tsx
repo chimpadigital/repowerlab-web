@@ -22,7 +22,7 @@ export default function HeroBreadcrumb({
 }: HeroBreadcrumbI) {
   return (
     <div className="w-full  relative top-[-80px]">
-      <div className="w-full relative flex justify-center overflow-hidden h-full min-h-[620px] px-10 rounded-[20px] pt-[150px]">
+      <div className="w-full relative flex justify-center overflow-hidden h-full min-h-[620px] rounded-[20px] pt-[150px]">
         <Image
           src={img}
           fill
@@ -30,25 +30,27 @@ export default function HeroBreadcrumb({
           alt="bg-hero"
           quality={100}
         />
-        <div className="w-full px-4 container">
-          <div className="relative z-10 w-full h-full grid grid-cols-2">
-            <div className="lg:col-span-1 col-span-2 lg:ps-8">
-              <Breadcrumbs
-                itemClasses={{
-                  item: "text-white font-bold text-[18px] data-[current=true]:underline data-[current=true]:underline-offset-[6px]",
-                  separator: "text-white/40",
-                }}
-              >
-                {breadcrumbs.map((el, index) => (
-                  <BreadcrumbItem href={el.href} key={index}>
-                    {el.label}
-                  </BreadcrumbItem>
-                ))}
-              </Breadcrumbs>
-              {position == "left" && children}
-            </div>
-            <div className="lg:col-span-1 col-span-2 h-full flex items-center ">
-              {position == "right" && children}
+        <div className="w-full flex justify-center">
+          <div className="container px-6">
+            <div className="relative z-10 w-full h-full grid grid-cols-2">
+              <div className="lg:col-span-1 col-span-2 sm:ps-6">
+                <Breadcrumbs
+                  itemClasses={{
+                    item: "text-white font-bold text-[18px] data-[current=true]:underline data-[current=true]:underline-offset-[6px]",
+                    separator: "text-white/40",
+                  }}
+                >
+                  {breadcrumbs.map((el, index) => (
+                    <BreadcrumbItem href={el.href} key={index}>
+                      {el.label}
+                    </BreadcrumbItem>
+                  ))}
+                </Breadcrumbs>
+                {position == "left" && children}
+              </div>
+              <div className="lg:col-span-1 col-span-2 h-full flex items-center ">
+                {position == "right" && children}
+              </div>
             </div>
           </div>
         </div>
