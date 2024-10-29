@@ -23,7 +23,7 @@ const MeetOurTeam = () => {
       <section className="our-team lg:-top-6 relative px-6 ">
         <div className="rounded-[20px] bg-grey-100 py-40 bg-[url(/images/about/recursoOurTeam.webp)] bg-no-repeat bg-cover bg-left">
           <h4 className={`${title()} text-primary`}>Meet our Team</h4>
-          <div className="grid grid-cols-1 lg:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4 justify-items-center px-6	xl:px-14 gap-5 xl:gap-20 mx-auto flex-wrap pt-40">
+          <div className="grid grid-cols-1 lg:grid-cols-2  min-[1366px]:grid-cols-3 min-[1666px]:grid-cols-4 justify-items-center px-6	xl:px-14 gap-5 xl:gap-20 mx-auto flex-wrap pt-40">
             <TeamMemberCard
               image="/images/about/member-victoria.webp"
               description="Residing in Virginia, US, Victoria has over 20 years of experience in sustainable finance. As the founder of PRISSMA and co-founder of RepowerLab, she has been instrumental in driving sustainability and decarbonization strategies for companies. Victoria's expertise includes developing ESG investment strategies, innovative climate finance products, and advising investors on renewable energy projects. She has received recognition as one of DC's Top 50 Women Leaders for two consecutive years."
