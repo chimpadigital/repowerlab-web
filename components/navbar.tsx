@@ -8,16 +8,20 @@ import {
 import NextLink from "next/link";
 import LogoRepower from "@/atoms/Logo";
 import Menu from "./Menu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CloseIcon, MenuIcon, ProfileIcon, Cart } from "./navicons";
 import { button } from "./primitives";
 import useScrollTop from "@/utils/useTopCheck";
+import { useDisableBodyScroll } from '@/utils/preventScroll'
+
 
 export const Navbar = () => {
   const [active, setActive] = useState(false)
   const isTop = useScrollTop()
 
-  const bgNavStyle= {
+ 
+
+  const bgNavStyle = {
     background: " rgba(129, 126, 126, 0.48)",
     backdropFilter: "blur(10px)",
   }
@@ -37,13 +41,15 @@ export const Navbar = () => {
             {
               active
                 ?
-                <CloseIcon onClick={() => { setActive(!active) }} className="cursor-pointer" />
+                <CloseIcon onClick={() => { 
+                  setActive(!active);
+                }} className="cursor-pointer" />
                 :
                 <div className="py-4 px-6 rounded-full flex gap-4 relative transition-all duration-[600ms] overflow-hidden items-center" style={!isTop ? bgNavStyle : {}}>
                   <button className={`${button({ whiteLine: true })}`}>Connect</button>
                   <Cart />
                   <ProfileIcon />
-                  <MenuIcon onClick={() => { setActive(!active) }} className="cursor-pointer"></MenuIcon>
+                  <MenuIcon onClick={() => { setActive(!active);}} className="cursor-pointer"></MenuIcon>
                 </div>
             }
           </div>

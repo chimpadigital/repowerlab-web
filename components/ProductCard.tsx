@@ -10,7 +10,7 @@ export default function ProductCard({ title, img, height, href, description }: {
 
     const variants = {
         closed: { width: "80%", height: 100, padding: "30px" },
-        open: { width: "100%", height, padding: "80px" },
+        open: { width: "100%", height, padding: "40px" },
     }
     const variants2 = {
         closed: { bottom: "50px" },
@@ -23,7 +23,7 @@ export default function ProductCard({ title, img, height, href, description }: {
     }
     const variantFlecha = {
         closed: { x: 550 },
-        open: { x: 50 }
+        open: { x: 0 }
     }
     return (
         <Link href={href}>
@@ -32,21 +32,25 @@ export default function ProductCard({ title, img, height, href, description }: {
                 <motion.div className="absolute flex justify-center w-full " variants={variants2} animate={open ? "open" : "closed"}>
                     <motion.div variants={variants} animate={open ? "open" : "closed"} className="absolute h-full" style={{
                         borderRadius: open ? "0px" : "10px",
-                        background: "rgba(197, 197, 197, 0.48)",
+                        background: "#4B4A4A",
+                        opacity: ".48",
                         backdropFilter: "blur(10px)",
 
                     }}></motion.div>
                     <motion.div className="flex flex-col justify-center relative text-white" variants={variants} animate={open ? "open" : "closed"}>
                         <div className='text-[24px] font-normal relative pe-4 flex' >
-                            <h6 dangerouslySetInnerHTML={{ __html: title }}></h6>
-                            <motion.div variants={variantFlecha} transition={{ duration: 0.6 }} animate={open ? "open" : "closed"} className="w-12 h-12 bg-[#C5C5C526] right-0 absolute z-10 rounded-full border-white border cursor-pointer" style={{}}>
-                                <div className="flex h-full w-full justify-center items-center">
-                                    <ArrowRight />
-                                </div>
-                            </motion.div>
+                            <div className="flex w-full justify-between">
+
+                                <h6 dangerouslySetInnerHTML={{ __html: title }}></h6>
+                                <motion.div variants={variantFlecha} transition={{ duration: 0.6 }} animate={open ? "open" : "closed"} className="w-12 h-12 bg-[#C5C5C526] right-0 relative z-10 rounded-full border-white border cursor-pointer" style={{}}>
+                                    <div className="flex h-full w-full justify-center items-center">
+                                        <ArrowRight />
+                                    </div>
+                                </motion.div>
+                            </div>
                             {
                                 description &&
-                                <motion.p variants={variantsP} className='absolute text-[16px] top-[80px]' transition={{ duration: 0.6 }} animate={open ? "open" : "closed"}>
+                                <motion.p variants={variantsP} className='absolute w-full text-[18px] top-[120px]' transition={{ duration: 0.6 }} animate={open ? "open" : "closed"}>
                                     {description}
                                 </motion.p>
                             }

@@ -1,5 +1,6 @@
 import GreenBanner from "@/components/GreenBanner";
 import HeroBreadcrumb from "@/components/HeroBreadcrumb";
+import MolinoAnimation from "@/components/pages/circular-economy/MolinoAnimation";
 import SolutionsAccordeon from "@/components/pages/circular-economy/SolutionsAccordeon";
 import SolutionsCards from "@/components/pages/circular-economy/SolutionsCards";
 import { button, title } from "@/components/primitives";
@@ -38,6 +39,7 @@ const CircularEconomy = () => {
           </div>
         </HeroBreadcrumb>
       </section>
+      <MolinoAnimation />
       <SolutionsCards />
       <SolutionsAccordeon />
       <div className="px-6">

@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 * {
@@ -14,8 +15,14 @@ html {
     scroll-behavior: smooth;
 }
 
+#canvas-container>div {
+    position: absolute;
+    bottom: 0;
+}
+
 #canvas-container {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     height: 100dvh;
     width: 100%;
 }
@@ -26,6 +33,18 @@ html {
     width: 100%;
     bottom: 0;
 
+
+}
+
+.contenidoscroll {
+    scrollbar-width: none;
+}
+
+.contenidoscroll {
+    ::-webkit-scrollbar {
+        display: none;
+
+    }
 }
 
 .swiper-wrapper {
@@ -91,13 +110,13 @@ html {
     text-decoration: underline;
 }
 
-.blog-container figure.media{
+.blog-container figure.media {
     aspect-ratio: 560/315;
     max-width: 700px;
     margin-block: 20px;
 }
 
-.blog-container figure.media iframe{
+.blog-container figure.media iframe {
     height: 100%;
     width: 100%;
 }
@@ -165,4 +184,3 @@ html {
     background: rgba(19, 19, 19, 0.28);
     mix-blend-mode: multiply;
 }
-

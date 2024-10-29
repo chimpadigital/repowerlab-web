@@ -1,7 +1,9 @@
+"use client"
 import React from 'react'
 import { subtitle } from './primitives';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Avatar, AvatarGroup, AvatarIcon } from "@nextui-org/avatar";
 
 export interface BlogI {
   title: string;
@@ -12,13 +14,50 @@ export interface BlogI {
     name: string;
     img: string | null
   }
+  content?: any;
   images: any[];
   description: string;
 }
 
+function obtenerResumen(texto: string) {
+  const palabras = texto.split(' ');
+  const primerasCuatro = palabras.slice(0, 2).join(' ');
+  return primerasCuatro + '...';
+}
 
+function cambiarFormatoFecha(fechaStr: any) {
+  // Convertir la cadena de fecha a un objeto Date
+  const fecha = new Date(fechaStr.replace(' ', 'T')); // Agregar 'T' para que el formato sea válido
+
+  // Opciones para el formato deseado
+  const opciones: any = { year: 'numeric', month: 'long', day: 'numeric' };
+
+  // Formatear la fecha
+  const fechaFormateada = new Intl.DateTimeFormat('en-US', opciones).format(fecha);
+
+  return fechaFormateada;
+}
+
+const TextoConResumen = ({ contenidoHtml }: any) => {
+  // Crear un elemento temporal para extraer el texto
+
+  const div = document.createElement('div');
+  div.innerHTML = contenidoHtml;
+
+  // Extraer el texto sin HTML
+  const textoSinHtml = div.innerText.trim();
+  const resumen = obtenerResumen(textoSinHtml);
+
+  return (
+    <div>
+      <p>{resumen}</p>
+    </div>
+  );
+};
 
 export default function CardBlog({ blog, }: { blog: BlogI }) {
+
+  const fechaCambiada = (blog && blog.published_at) ? cambiarFormatoFecha(blog?.published_at) : "";
 
   return (
     <article className={`w-[400px] p-6`}>
@@ -26,13 +65,18 @@ export default function CardBlog({ blog, }: { blog: BlogI }) {
 
         <h5 className={`${subtitle({ colors: "primary", size: "md" })}`}>{blog?.title}</h5>
 
-        <Image width={400} height={200} alt="" className="w-full object-cover rounded-[10px] " src={blog?.images[0]?.url ||  "/images/our-services/e2.jpg"} />
+        <Image width={400} height={200} alt="" className="w-full object-cover h-[200px] rounded-[10px] " src={blog?.images[0]?.url || "/images/our-services/e2.jpg"} />
 
-        <h5 className={`${subtitle({ colors: "grey" })} font-light`}>{blog?.description}</h5>
+        <div className={`${subtitle({ size: "md" })} font-light text-grey-parrafo`}>
+          <TextoConResumen contenidoHtml={blog.content} />
+        </div>
 
-        <div className="flex justify-between">
-          <div className="flex gap-2"></div>
-          <p className="text-grey-600">{blog?.published_at}</p>
+        <div className="flex justify-between items-center text-grey-parrafo">
+          <div className="flex gap-2 items-center">
+            <Avatar name="Victoria Galeano" src={blog.images[0] ? '/images/home/products/1.webp' : undefined} />
+            <p>Victoria Galeano</p>
+          </div>
+          <p >{fechaCambiada}</p>
         </div>
 
         <div className="w-full flex justify-end">
