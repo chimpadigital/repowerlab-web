@@ -10,7 +10,7 @@ const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
     const getBlogs = async () => {
       try {
         const response = await axios.get(
-          `https://api.repowerlab.chimpance.digital/api/entries?${ categoria && `filter[category])=${categoria}&`}page=1&per_page=3&sort=-created_at`
+          `https://api.repowerlab.chimpance.digital/api/entries?${categoria && `filter[category])=${categoria}&`}page=1&per_page=3&sort=-created_at`
         );
 
         if (response?.status === 200) {
@@ -22,6 +22,9 @@ const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
     };
     getBlogs();
   }, []);
+
+  
+  if (!blogs) return null;
 
   return (
     <section className="mt-20 py-9 mx-6 rounded-[20px] bg-grey-100 text-primary">
