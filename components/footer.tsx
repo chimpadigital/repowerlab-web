@@ -44,7 +44,7 @@ export default function Footer() {
       <div className="relative flex justify-center flex-col items-center w-full h-full py-[40px] min-h-[400px] px-14">
         <div className="relative w-full flex justify-between pt-6 z-10">
           <div>
-            <Logo />
+            <Logo className="w-[300px] h-auto"/>
           </div>
           <div>
 
@@ -119,7 +119,7 @@ export default function Footer() {
         <div className="w-full relative container z-10 flex justify-end">
           <Link
             href="mailto:info@repowerlab.com"
-            className="text-[36px] text-primary font-light "
+            className="text-[28px] text-primary font-bold "
           >
             {" "}
             info@repowerlab.com
