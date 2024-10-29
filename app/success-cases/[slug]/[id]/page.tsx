@@ -105,7 +105,7 @@ const CaseDateail = () => {
           dangerouslySetInnerHTML={{ __html: transformedContent }}
         ></article>
 
-        {/* <RelatedPosts categoria={""} /> */}
+        <RelatedPosts categoria={blogDetail.data?.category} />
       </>
     );
   }
