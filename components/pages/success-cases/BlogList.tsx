@@ -13,7 +13,7 @@ const BlogList = () => {
     const getBlogs = async () => {
       try {
         const response = await axios.get(
-          `https://api.repowerlab.chimpance.digital/api/entries?page=${currentPage}&per_page=6`
+          `https://api.repowerlab.chimpance.digital/api/entries?page=${currentPage}&per_page=6&sort=-created_at`
         );
 
         if (response?.status === 200) {
@@ -27,7 +27,7 @@ const BlogList = () => {
 
     getBlogs();
   }, [currentPage]);
- 
+
   return (
     <div>
       <div

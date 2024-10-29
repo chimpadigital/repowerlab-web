@@ -10,7 +10,7 @@ const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
     const getBlogs = async () => {
       try {
         const response = await axios.get(
-          `https://api.repowerlab.chimpance.digital/api/entries?${ categoria && `filter[category])=${categoria}&`}page=1&per_page=3`
+          `https://api.repowerlab.chimpance.digital/api/entries?${ categoria && `filter[category])=${categoria}&`}page=1&per_page=3&sort=-created_at`
         );
 
         if (response?.status === 200) {
