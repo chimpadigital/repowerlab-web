@@ -32,7 +32,8 @@ export default function ProductCard({ title, img, height, href, description }: {
                 <motion.div className="absolute flex justify-center w-full " variants={variants2} animate={open ? "open" : "closed"}>
                     <motion.div variants={variants} animate={open ? "open" : "closed"} className="absolute h-full" style={{
                         borderRadius: open ? "0px" : "10px",
-                        background: "rgba(197, 197, 197, 0.48)",
+                        background: "#4B4A4A",
+                        opacity: ".48",
                         backdropFilter: "blur(10px)",
 
                     }}></motion.div>
@@ -49,7 +50,7 @@ export default function ProductCard({ title, img, height, href, description }: {
                             </div>
                             {
                                 description &&
-                                <motion.p variants={variantsP} className='absolute w-full text-[16px] top-[80px]' transition={{ duration: 0.6 }} animate={open ? "open" : "closed"}>
+                                <motion.p variants={variantsP} className='absolute w-full text-[18px] top-[120px]' transition={{ duration: 0.6 }} animate={open ? "open" : "closed"}>
                                     {description}
                                 </motion.p>
                             }

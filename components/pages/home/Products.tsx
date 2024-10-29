@@ -10,7 +10,7 @@ export default function Products() {
       <div className="container relative z-10 w-full px-8">
         <div className="w-full flex justify-center items-center flex-col">
           <h2 className={`${title({ color: "primary" })} text-center`}>Products</h2>
-          <p className="text-center max-w-[800px] pt-6 text-grey-600">RepowerLab offers high-quality unused and refurbished wind turbines, spare parts, and recycled materials, with a focus on sustainability and comprehensive support from procurement to installation.</p>
+          <p className="text-center max-w-[800px] pt-6 text-grey-parrafo">RepowerLab offers high-quality unused and refurbished wind turbines, spare parts, and recycled materials, with a focus on sustainability and comprehensive support from procurement to installation.</p>
         </div>
 
       </div>
