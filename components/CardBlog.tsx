@@ -3,6 +3,7 @@ import React from 'react'
 import { subtitle } from './primitives';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Avatar, AvatarGroup, AvatarIcon } from "@nextui-org/avatar";
 
 export interface BlogI {
   title: string;
@@ -66,13 +67,16 @@ export default function CardBlog({ blog, }: { blog: BlogI }) {
 
         <Image width={400} height={200} alt="" className="w-full object-cover h-[200px] rounded-[10px] " src={blog?.images[0]?.url || "/images/our-services/e2.jpg"} />
 
-        <div className={`${subtitle({ colors: "grey", size: "md" })} font-light`}>
+        <div className={`${subtitle({ size: "md" })} font-light text-grey-parrafo`}>
           <TextoConResumen contenidoHtml={blog.content} />
         </div>
 
-        <div className="flex justify-between">
-          <div className="flex gap-2"></div>
-          <p className="text-grey-600">{fechaCambiada}</p>
+        <div className="flex justify-between items-center text-grey-parrafo">
+          <div className="flex gap-2 items-center">
+            <Avatar name="Victoria Galeano" src={blog.images[0] ? '/images/home/products/1.webp' : undefined} />
+            <p>Victoria Galeano</p>
+          </div>
+          <p >{fechaCambiada}</p>
         </div>
 
         <div className="w-full flex justify-end">

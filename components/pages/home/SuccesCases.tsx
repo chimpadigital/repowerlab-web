@@ -46,7 +46,7 @@ export default function SuccesCases() {
             <div className="container">
                 <div className="flex flex-col items-center justify-center">
                     <h2 className={`${title({ color: "primary" })} text-center w-full`}>Success Cases</h2>
-                    <p className='max-w-[680px] pt-6 text-grey-600 w-full text-center font-light'>
+                    <p className='max-w-[680px] pt-6 text-grey-parrafo w-full text-center font-light'>
                         Discover RepowerLab’s success in decommissioning, retrofitting, and reselling refurbished wind turbines, highlighting our circular economy solutions for the energy sector.
                     </p>
                     {
