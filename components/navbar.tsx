@@ -13,13 +13,14 @@ import { CloseIcon, MenuIcon, ProfileIcon, Cart } from "./navicons";
 import { button } from "./primitives";
 import useScrollTop from "@/utils/useTopCheck";
 import { useDisableBodyScroll } from '@/utils/preventScroll'
+import Link from "next/link";
 
 
 export const Navbar = () => {
   const [active, setActive] = useState(false)
   const isTop = useScrollTop()
 
- 
+
 
   const bgNavStyle = {
     background: " rgba(129, 126, 126, 0.48)",
@@ -28,33 +29,37 @@ export const Navbar = () => {
 
   return (
     <>
-      <NextUINavbar maxWidth="xl" isBlurred={false} classNames={{ base: "mt-[20px] bg-transparent z-50 transition duration-[900ms] text-white w-full top-[40px] ", wrapper: "w-full !px-6 !container" }} position="sticky">
-        <NavbarContent className=" sm:basis-full" justify="start">
-          <NavbarBrand as="li" className="gap-3 max-w-fit py-4 px-6  transition-all duration-[600ms] rounded-full" style={!isTop ? bgNavStyle : {}}>
-            <NextLink className="flex justify-start items-center gap-1" href="/">
+      <div className="sticky top-[40px] mt-[20px] z-50 text-white w-full flex justify-center">
+        <div className="container px-6">
+          <div className="flex justify-between">
+            <div className="gap-3 max-w-fit py-4 px-6 relative  transition-all duration-[600ms] rounded-full" style={!isTop ? bgNavStyle : {}}>
 
-              <LogoRepower className={`${active ? 'text-primary' : 'text-white'} transition-all duration-[600]`} />
-            </NextLink>
-          </NavbarBrand>
-          <div className="flex justify-end items-center w-full gap-4">
+              <Link className="flex justify-start block  items-center gap-1" href="/">
+                <LogoRepower className={`${active ? 'text-primary' : 'text-white'} transition-all duration-[600]`} />
+              </Link>
+            </div>
+            <div className="flex justify-end items-center w-full gap-4">
 
-            {
-              active
-                ?
-                <CloseIcon onClick={() => { 
-                  setActive(!active);
-                }} className="cursor-pointer" />
-                :
-                <div className="py-4 px-6 rounded-full flex gap-4 relative transition-all duration-[600ms] overflow-hidden items-center" style={!isTop ? bgNavStyle : {}}>
-                  <button className={`${button({ whiteLine: true })}`}>Connect</button>
-                  <Cart />
-                  <ProfileIcon />
-                  <MenuIcon onClick={() => { setActive(!active);}} className="cursor-pointer"></MenuIcon>
-                </div>
-            }
+              {
+                active
+                  ?
+                  <CloseIcon onClick={() => {
+                    setActive(!active);
+                  }} className="cursor-pointer" />
+                  :
+                  <div className="py-4 px-6 rounded-full flex gap-4 relative transition-all duration-[600ms] overflow-hidden items-center" style={!isTop ? bgNavStyle : {}}>
+                    <button className={`${button({ whiteLine: true })}`}>Connect</button>
+                    <Cart />
+                    <ProfileIcon />
+                    <MenuIcon onClick={() => { setActive(!active); }} className="cursor-pointer"></MenuIcon>
+                  </div>
+              }
+            </div>
           </div>
-        </NavbarContent>
-      </NextUINavbar>
+        </div>
+
+      </div>
+     
       <Menu active={active} setMenu={() => { setActive(!active) }}></Menu>
 
     </>
