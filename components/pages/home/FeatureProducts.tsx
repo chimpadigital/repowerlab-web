@@ -10,7 +10,7 @@ export default function FeatureProducts() {
                 <h3 className={`${title()} text-primary mb-3 !block`}>
                     Feature Products
                 </h3>
-                <p className="text-grey-600 max-w-[700px] text-center">Welcome to the RepowerLab Marketplace, your destination for high-quality wind turbines, spare parts, and recycled materials, all thoroughly inspected for your energy asset needs.</p>
+                <p className="text-grey-parrafo max-w-[700px] text-center">Welcome to the RepowerLab Marketplace, your destination for high-quality wind turbines, spare parts, and recycled materials, all thoroughly inspected for your energy asset needs.</p>
             </div>
             <ScrollProducts />
             <div className="w-full py-[60px] flex justify-center items-center">
