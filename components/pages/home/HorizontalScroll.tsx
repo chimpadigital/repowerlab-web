@@ -82,8 +82,8 @@ const Card = ({ index, title, description, x, children }: any) => {
   return (
     <motion.div className="h-[300px] rounded-[10px] relative bg-[#ddd]  p-6" style={{ width }}>
       <motion.div className='absolute z-10 w-full min-w-[200px] gap-6 text-primary font-bold flex justify-center' style={{ rotate, bottom, left }}>
-        <div className="w-[250px] flex justify-between">
-          <h5 className="w-[200px] font-normal">
+        <div className="w-[250px] flex justify-between gap-6">
+          <h5 className="w-[190px] font-normal">
             {title}
           </h5>
           <div>
