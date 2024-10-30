@@ -8,15 +8,15 @@ import { FacebookIcon, LinkedInIcon, TwitterIcon } from "./icons";
 
 export default function Footer() {
   const linksMenu = [
-    { label: "Services", url: "our-services" },
+    { label: "Services", url: "/our-services" },
     {
       label: "Circular economy",
       child: [
-        { label: "Our Business Model", url: "our-services" },
-        { label: "This is how we work", url: "how-we-work" },
+        { label: "Our Business Model", url: "/circular-economy" },
+        { label: "This is how we work", url: "/how-we-work" },
       ]
     },
-    { label: "Marketplace", url: "marketplace" },
+    { label: "Marketplace", url: "/marketplace" },
     {
       label: "Resources",
       child: [
@@ -33,10 +33,10 @@ export default function Footer() {
   ];
 
   const linksProducts = [
-    { label: "Unused wind turbines", url: "/" },
-    { label: "Refurbished wind turbines", url: "/" },
-    { label: "Used wind turbine", url: "/" },
-    { label: "Wind turbine spare parts", url: "/" },
+    { label: "Unused wind turbines", url: "/products/wind-turbines" },
+    { label: "Refurbished wind turbines", url: "/products/wind-turbines" },
+    { label: "Used wind turbine", url: "/products/wind-turbines" },
+    { label: "Wind turbine spare parts", url: "/products/turbine-parts" },
   ];
 
   return (

@@ -3,6 +3,7 @@ import CardBlog, { BlogI } from '@/components/CardBlog'
 import { title } from '@/components/primitives'
 import React, { Fragment, useEffect, useState } from "react";
 import axios from "axios";
+import { IsotipoRepowerlab } from '@/components/icons';
 
 const prueba: BlogI = {
     title: "Wind turbines",
@@ -43,7 +44,10 @@ export default function SuccesCases() {
     }, [currentPage]);
     return (
         <div className='pb-[120px] w-full flex justify-center relative z-10'>
-            <div className="container">
+            <div className="absolute text-grey-100 top-[-100px] z-0 left-[-50px]">
+                <IsotipoRepowerlab className="w-[350px] h-auto fill-grey-100 " />
+            </div>
+            <div className="container relative z-10">
                 <div className="flex flex-col items-center justify-center">
                     <h2 className={`${title({ color: "primary" })} text-center w-full`}>Success Cases</h2>
                     <p className='max-w-[680px] pt-6 text-grey-parrafo w-full text-center font-light'>
@@ -71,7 +75,7 @@ export default function SuccesCases() {
                                     </Fragment>
                                 ))
                             }
-                         
+
                         </div>
                     }
                 </div>
