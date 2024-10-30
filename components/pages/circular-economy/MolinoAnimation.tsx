@@ -20,7 +20,7 @@ export default function MolinoAnimation() {
 
     return (
         <section className="w-screen flex justify-center">
-            <div className="w-screen" ref={ref} style={{ height: `${dataMolino.length * 200}vh` }}>
+            <div className="w-screen" ref={ref} style={{ height: `${dataMolino.length * 100}vh` }}>
                 <div className="h-screen h-full items-center flex justify-center  sticky top-0">
                     <Image width={400} height={400} alt="bg" className='absolute left-0 bottom-[-100px]' src="/images/circular-economy/bg_wind.png"></Image>
                     <div className="container px-6">
