@@ -45,7 +45,7 @@ export default function Hero() {
     <div className="w-full px-8 items-center relative flex-col w-full top-[-80px]">
 
       <div className="w-full flex-col items-center  flex justify-center top-[50px]  min-h-[85vh] bg-fixed bg-cover bg-[url(/images/how-we-work/gradiente-radial.png)] bg-primary rounded-[20px] pt-[100px]">
-      <div className="absolute inset-0 bg-[url(/images/how-we-work/gradiente-radial.png)] bg-cover opacity-50"></div>
+        <div className="absolute inset-0 bg-[url(/images/how-we-work/gradiente-radial.png)] bg-cover opacity-50"></div>
         <div className="container px-6 h-full z-10 top-[-80px] ">
           <Breadcrumbs
             itemClasses={{
@@ -74,14 +74,14 @@ export default function Hero() {
             </div>
             <motion.div style={{ x }} className='flex gap-[7.5vw] ps-[40px] relative w-full no-wrap'>
               <div className="flex-grow flex items-end justify-center relative z-10">
-                <h5 className={title({color:"white"}) + " w-[360px] leading-relaxed"}> <span className='text-secondary'>Start your journey</span> with a personalized consultation.</h5>
+                <h5 className={title({ color: "white" }) + " w-[360px] leading-relaxed"}> <span className='text-secondary'>Start your journey</span> with a personalized consultation.</h5>
               </div>
               {
                 dataWeWork.map((data, index) => (
                   <Circle key={index} index={index} data={data} />
                 ))
               }
-              <Vector className="absolute left-0 bottom-0 z-[-1]" scrollYProgress={off} style={{ pathLength: off }} />
+              <Vector opacity={0.9} className="absolute left-0 bottom-0 z-[-1]" scrollYProgress={off} style={{ pathLength: off }} />
 
             </motion.div>
           </div>
@@ -109,6 +109,7 @@ const Circle = ({ index, data }: { index: number, data: HowWorkI }) => {
       <ModalHowWork
         index={index}
         isOpen={isOpen}
+
         onOpenChange={onOpenChange}
         data={data} />
     </>
@@ -117,9 +118,27 @@ const Circle = ({ index, data }: { index: number, data: HowWorkI }) => {
 
 const Vector = (props: any) => {
   return (
-    <motion.svg  {...props} width="5468" height="478" viewBox="0 0 5468 478" fill="none" xmlns="http://www.w3.org/2000/svg" opacity={0.7}>
-      <motion.path strokeDasharray="0 1" style={{ pathLength: props.scrollYProgress }} d="M12 182.5C498.5 560 492 97.5 742.5 136.5C993 175.5 1039 427 1330 427C1621 427 1726.95 101.919 2055.39 104.721C2377.16 107.465 2403.13 514.896 2719 453.5C2939.09 410.721 3079.49 161.865 3303.5 152.5C3542.63 142.503 3583.65 362.479 3814.89 424.221C4266.8 544.883 4506.02 -108.791 4949.39 40.2209C5184.09 119.1 5453.89 424.221 5453.89 424.221" stroke="white" stroke-width="36" />
+
+    // <motion.svg {...props}  width="5367" height="478" viewBox="0 0 5367 478" fill="none">
+    //   <motion.path strokeDasharray="0 1" style={{ pathLength: props.scrollYProgress }} d="M9 104.721C402 -102 590 506.5 744 342.5C898 178.5 1017 103.5 1236 342.5C1455 581.5 1625.95 101.92 1954.39 104.721C2276.16 107.466 2302.13 514.896 2618 453.5C2838.09 410.721 2978.49 161.865 3202.5 152.5C3441.63 142.503 3482.65 362.479 3713.89 424.221C4165.8 544.883 4405.02 -108.79 4848.39 40.221C5083.09 119.1 5352.89 424.221 5352.89 424.221" stroke="white" stroke-width="36" />
+    // </motion.svg>
+    <motion.svg {...props} width="5363" height="478" viewBox="0 0 5363 478" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <motion.path strokeDasharray="0 1" style={{ pathLength: props.scrollYProgress }} d="M5 104.721C422 0.5 654.5 65.5 654.5 65.5C654.5 65.5 955 124 1174 363C1393 602 1621.95 101.92 1950.39 104.721C2272.16 107.466 2298.13 514.896 2614 453.5C2834.09 410.721 2974.49 161.865 3198.5 152.5C3437.63 142.503 3478.65 362.479 3709.89 424.221C4161.8 544.883 4401.02 -108.79 4844.39 40.221C5079.09 119.1 5348.89 424.221 5348.89 424.221" stroke="url(#paint0_linear_2_2)" stroke-width="36" />
+      <defs>
+        <linearGradient id="paint0_linear_2_2" x1="5" y1="238.901" x2="5348.89" y2="238.901" gradientUnits="userSpaceOnUse">
+          <stop offset="0.0805917" stop-color="white" />
+          <stop offset="0.254579" stop-color="#BACCE6" />
+          <stop offset="0.440081" stop-color="white" />
+          <stop offset="0.65217" stop-color="#BACCE6" />
+          <stop offset="0.748585" stop-color="#DDE6F3" />
+          <stop offset="0.844999" stop-color="white" />
+          <stop offset="0.9225" stop-color="#DDE6F3" />
+          <stop offset="1" stop-color="#BACCE6" />
+        </linearGradient>
+      </defs>
     </motion.svg>
+
+
 
   )
 }
