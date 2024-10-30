@@ -14,11 +14,12 @@ import { button } from "./primitives";
 import useScrollTop from "@/utils/useTopCheck";
 import { useDisableBodyScroll } from '@/utils/preventScroll'
 import Link from "next/link";
+import LangChange from "./LangChange";
 
 
 export const Navbar = () => {
   const [active, setActive] = useState(false)
-  const isTop = useScrollTop()
+  const { isAtTop, isAtBottom } = useScrollTop();
 
 
 
@@ -34,7 +35,7 @@ export const Navbar = () => {
           <div className="flex justify-between">
             {
               active ?
-                <div className="gap-3 max-w-fit py-4 px-6 relative  transition-all duration-[600ms] rounded-full" >
+                <div className={"gap-3 max-w-fit py-4 px-6 relative  transition-all duration-[600ms] rounded-full " } >
 
                   <Link className="flex justify-start block  items-center gap-1" href="/">
                     <LogoRepower className={`${active ? 'text-primary' : 'text-white'} transition-all duration-[600]`} />
@@ -42,7 +43,7 @@ export const Navbar = () => {
                 </div>
 
                 :
-                <div className="gap-3 max-w-fit py-4 px-6 relative  transition-all duration-[600ms] rounded-full" style={!isTop ? bgNavStyle : {}}>
+                <div className={`gap-3 max-w-fit py-4 px-6 relative  transition-all duration-[600ms] rounded-full ${isAtBottom ? "opacity-0" : ""}`}style={!isAtTop ? bgNavStyle : {}}>
 
                   <Link className="flex justify-start block  items-center gap-1" href="/">
                     <LogoRepower className={`${active ? 'text-primary' : 'text-white'} transition-all duration-[600]`} />
@@ -55,14 +56,15 @@ export const Navbar = () => {
                 active
                   ?
                   <CloseIcon onClick={() => {
-                    setActive(!active);
+                    setActive(false);
                   }} className="cursor-pointer" />
                   :
-                  <div className="py-4 px-6 rounded-full flex gap-4 relative transition-all duration-[600ms] overflow-hidden items-center" style={!isTop ? bgNavStyle : {}}>
-                    <button className={`${button({ whiteLine: true })}`}>Connect</button>
+                  <div className="py-4 px-6 rounded-full flex gap-4 relative transition-all duration-[600ms] overflow-hidden items-center" style={!isAtTop ? bgNavStyle : {}}>
+                    <LangChange />
+                    <Link href={"/about/contact-us"} className={`${button({ whiteLine: true })}`}>Connect</Link>
                     <Cart />
                     <ProfileIcon />
-                    <MenuIcon onClick={() => { setActive(!active); }} className="cursor-pointer"></MenuIcon>
+                    <MenuIcon onClick={() => { setActive(true); }} className="cursor-pointer"></MenuIcon>
                   </div>
               }
             </div>
@@ -71,7 +73,7 @@ export const Navbar = () => {
 
       </div>
 
-      <Menu active={active} setMenu={() => { setActive(!active) }}></Menu>
+      <Menu active={active} setMenu={() => { setActive(false) }}></Menu>
 
     </>
   );

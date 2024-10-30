@@ -66,13 +66,13 @@ export default function Hero() {
 
 
         </div>
-        <div ref={ref} className={`w-full contenidoscroll relative`} style={{ height: `${150 * dataWeWork.length}vh` }}>
+        <div ref={ref} className={`w-full contenidoscroll relative`} style={{ height: `${60 * dataWeWork.length}vh` }}>
           <div className="grid grid-cols-2 sticky h-screen items-center w-full top-0">
             <div className="absolute w-screen left-[-2rem] pointer-events-none  h-screen z-20">
               <div className="absolute h-screen w-[2rem] bg-white left-0"></div>
               <div className="absolute h-screen w-[2.9rem] bg-white right-0"></div>
             </div>
-            <motion.div style={{ x }} className='flex gap-[100px] ps-[40px] relative w-full no-wrap'>
+            <motion.div style={{ x }} className='flex gap-[7.5vw] ps-[40px] relative w-full no-wrap'>
               <div className="flex-grow flex items-end justify-center relative z-10">
                 <h5 className={title({color:"white"}) + " w-[360px] leading-relaxed"}> <span className='text-secondary'>Start your journey</span> with a personalized consultation.</h5>
               </div>

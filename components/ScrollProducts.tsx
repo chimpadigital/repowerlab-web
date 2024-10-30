@@ -60,7 +60,7 @@ export default function ScrollProducts() {
 const Card = ({ top = 0, turbine, animation = true, y, index }: any) => {
     const opacity = useTransform(y, [index, index + 1], [1, 0])
     return (
-        <article className="bg-grey-background w-[400px] py-8 px-6 border-white relative border rounded-[20px]" style={{ top: `${top}px` }}>
+        <article className="bg-[#666262]/90 w-[400px] py-8 px-6 border-white relative border rounded-[20px]" style={{ top: `${top}px` }}>
             <motion.div style={{ opacity: animation ? opacity : 1 }}>
 
                 <div className="flex justify-end">

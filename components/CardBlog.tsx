@@ -67,7 +67,7 @@ export default function CardBlog({ blog, }: { blog: BlogI }) {
 
         <Image width={400} height={200} alt="" className="w-full object-cover h-[200px] rounded-[10px] " src={blog?.images[0]?.url || "/images/our-services/e2.jpg"} />
 
-        <div className={`${subtitle({ size: "md" })} font-light text-grey-parrafo`}>
+        <div className={`${subtitle({ size: "md" })} font-light !text-grey-parrafo`}>
           <TextoConResumen contenidoHtml={blog.content} />
         </div>
 
