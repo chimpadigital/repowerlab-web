@@ -33,10 +33,10 @@ export default function Footer() {
   ];
 
   const linksProducts = [
-    { label: "Unused wind turbines", url: "marketplace?type=windturbines" },
-    { label: "Refurbished wind turbines", url: "marketplace?type=spareparts" },
-    { label: "Used wind turbine", url: "marketplace?type=spareparts" },
-    { label: "Wind turbine spare parts", url: "marketplace?type=spareparts" },
+    { label: "Unused wind turbines", url: "/" },
+    { label: "Refurbished wind turbines", url: "/" },
+    { label: "Used wind turbine", url: "/" },
+    { label: "Wind turbine spare parts", url: "/" },
   ];
 
   return (
@@ -97,17 +97,18 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
+
               <div className="md:grid-cols-1 grid-cols-3">
                 <h5 className={subtitle({ colors: "primary" })}>Follow</h5>
                 <div className="pt-[60px]">
                   <div className="flex flex-col gap-[30px] ps-6">
-                    <Link className="text-primary fill-primary" href="">
+                    <Link className="text-primary fill-primary" href="https://www.linkedin.com/company/repowerlab-llc/" target="_blank" rel="noopener noreferrer">
                       <LinkedInIcon width={22} height={22} />
                     </Link>
-                    <Link className="text-primary fill-primary" href="">
+                    <Link className="text-primary fill-primary" href="" target="_blank" rel="noopener noreferrer">
                       <TwitterIcon width={22} height={22} />
                     </Link>
-                    <Link className="text-primary fill-primary" href="">
+                    <Link className="text-primary fill-primary" href="" target="_blank" rel="noopener noreferrer">
                       <FacebookIcon width={22} height={22} />
                     </Link>
                   </div>
@@ -128,7 +129,7 @@ export default function Footer() {
         <Image
           quality={100}
           fill
-          src={"/images/shared/Footer.png"}
+          src={"/images/shared/Footer.webp"}
           alt="footer"
           className="rounded-[25px] object-cover mx-auto h-full"
         ></Image>

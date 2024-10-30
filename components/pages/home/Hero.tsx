@@ -1,5 +1,6 @@
 "use client"
 import { button, title } from '@/components/primitives'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Hero() {
@@ -15,12 +16,12 @@ export default function Hero() {
                     <div className="grid grid-cols-2 h-full">
                         <div className="col-span-2 lg:col-span-1 h-full flex flex-col justify-center">
                             <div className="max-w-[600px]">
-                                <h1 className={title({ color: "white", size: "md" })}>{'"'}Rethinking Energy Assets: Leading the Charge in Circular Economy Innovation{'"'}</h1>
+                                <h1 className={title({ color: "white", size: "md" })}>Rethinking Energy Assets: Leading the Charge in Circular Economy Innovation</h1>
                             </div>
                             <div className="flex gap-[25px] pt-8">
-                                <button className={`${button({ whiteLine: true })}`}>Products </button>
-                                <button className={`${button({ whiteLine: true })}`}>Services</button>
-                                <button className={`${button({ whiteLine: true })}`}>Marketplace</button>
+                                <Link href="/products/turbine-parts" className={`${button({ whiteLine: true })} block`}>Products </Link>
+                                <Link href="/our-services" className={`${button({ whiteLine: true })} block`}>Services</Link>
+                                <Link href="/marketplace" className={`${button({ whiteLine: true })} block`}>Marketplace</Link>
                             </div>
                         </div>
                     </div>

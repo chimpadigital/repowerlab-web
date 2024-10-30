@@ -36,7 +36,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
             </p>
           </div>
         </div>
-        <div className="container px-6 mt-[100px] relative z-20 ">
+        <div className="container px-6 mt-[100px] relative z-50 ">
           <div className="grid grid-cols-3 pt-[80px]">
             <div className="grid col-span-2 grid-cols-2">
               <div className="col-span-1 flex flex-col gap-8 pe-8 ">
@@ -44,9 +44,9 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                 </div>
               </div>
             </div>
-            <div className='col-span-1 flex flex-col gap-4 ps-8 relative z-40 '>
-              <div className="overflow-y-auto px-6 max-h-[80vh] pb-10">
-                <div>
+            <div className='col-span-1 flex flex-col gap-4 ps-8 relative z-40 custom-scroll'>
+              <div className="overflow-auto px-6 scroll-smooth  max-h-[75vh] pb-10">
+                <div className='scroll-smooth '>
                   {globalRoutes.map((item, index) => (
                     <div key={`item-${index}`}> {/* Use descriptive key with 'item' */}
                       {item.child ? (
@@ -81,7 +81,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                                       <div className="flex flex-col gap-2">
                                         {
                                           item2.child.map((item3, index) => (
-                                            <Link key={`link-${index}`} className='cursor-pointer py-2  select-none text-primary text-[14px]' href={`/${item3.url}`}>
+                                            <Link key={`link-${index}`} className='block cursor-pointer py-2  select-none text-primary text-[14px]' href={`/${item3.url}`}>
                                               {(item3.title)}
                                             </Link>
                                           ))}
@@ -91,7 +91,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
 
                                 ) : (
 
-                                  <Link key={`link-${index}`} className='cursor-pointer py-2  select-none text-primary text-[20px] xl:text-[22px]' href={`/${item2.url}`}>
+                                  <Link key={`link-${index}`} className='block cursor-pointer py-2  select-none text-primary text-[20px] xl:text-[22px]' href={`/${item2.url}`}>
                                     {(item2.title)}
                                   </Link>
                                 )
@@ -100,7 +100,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                           </AccordionItem>
                         </Accordion>
                       ) : (
-                        <Link key={`link-${index}`} className='cursor-pointer inline-block	 pt-2 select-none text-primary xl:text-[36px] text-[28px]' href={`/${item.url}`}>
+                        <Link key={`link-${index}`} className='block cursor-pointer inline-block	py-2 select-none text-primary xl:text-[36px] text-[28px]' href={`/${item.url}`}>
                           {(item.title)}
                         </Link>
                       )}
