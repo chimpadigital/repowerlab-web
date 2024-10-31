@@ -10,7 +10,7 @@ import Solutions from '@/components/pages/products/Solutions';
 export default function page() {
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Products", href: "" },
+    { label: "Products", href: "none" },
     { label: "Wind turbines Parts", href: "/" },
   ];
   return (

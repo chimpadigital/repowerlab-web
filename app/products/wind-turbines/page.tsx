@@ -9,7 +9,7 @@ import FeatureProducts from "@/components/pages/home/FeatureProducts";
 export default function WindPage() {
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Products", href: "" },
+    { label: "Products", href: "none" },
     { label: "Wind turbines", href: "/" },
   ];
   return (
