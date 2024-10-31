@@ -36,8 +36,9 @@ export default function WindPage() {
           </div>
         </HeroBreadcrumb>
       </section>
-
-      <OurOffer />
+      <section id="includes">
+        <OurOffer />
+      </section>
 
       <FeatureProducts />
     </>

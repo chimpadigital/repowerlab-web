@@ -33,9 +33,9 @@ export default function Footer() {
   ];
 
   const linksProducts = [
-    { label: "Unused wind turbines", url: "/products/wind-turbines" },
-    { label: "Refurbished wind turbines", url: "/products/wind-turbines" },
-    { label: "Used wind turbine", url: "/products/wind-turbines" },
+    { label: "Unused wind turbines", url: "/products/wind-turbines#includes" },
+    { label: "Refurbished wind turbines", url: "/products/wind-turbines#includes" },
+    { label: "Used wind turbine", url: "/products/wind-turbines#includes" },
     { label: "Wind turbine spare parts", url: "/products/turbine-parts" },
   ];
 
@@ -44,7 +44,7 @@ export default function Footer() {
       <div className="relative flex justify-center flex-col items-center w-full h-full py-[40px] min-h-[400px] px-14">
         <div className="relative w-full flex justify-between pt-6 z-10">
           <div>
-            <Logo className="w-[300px] h-auto"/>
+            <Logo className="w-[300px] h-auto" />
           </div>
           <div>
 
