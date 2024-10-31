@@ -18,6 +18,7 @@ export default function WindPage() {
         <HeroBreadcrumb
           img="/images/product/wind-turbine-bg.png"
           breadcrumbs={breadcrumbs}
+          objectPosition="bottom"
         >
           <div className="flex justify-end text-white w-full">
             <div className="max-w-[500px]">

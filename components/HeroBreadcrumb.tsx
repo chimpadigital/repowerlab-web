@@ -11,6 +11,7 @@ interface HeroBreadcrumbI {
     href: string;
   }[];
   position?: "right" | "left";
+  objectPosition?: string;
   children: React.ReactNode;
 }
 
@@ -18,6 +19,7 @@ export default function HeroBreadcrumb({
   img,
   breadcrumbs,
   position = "right",
+  objectPosition = "top",
   children,
 }: HeroBreadcrumbI) {
   return (
@@ -26,7 +28,10 @@ export default function HeroBreadcrumb({
         <Image
           src={img}
           fill
-          className="object-cover object-top absolute z-0"
+          className="object-cover absolute z-0"
+          style={{
+            objectPosition
+          }}
           alt="bg-hero"
           quality={100}
         />

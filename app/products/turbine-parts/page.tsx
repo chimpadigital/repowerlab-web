@@ -19,6 +19,7 @@ export default function page() {
         <HeroBreadcrumb
           img="/images/product/wind-turbine-parts.png"
           breadcrumbs={breadcrumbs}
+          objectPosition="bottom" 
         >
           <div className="flex justify-end text-white w-full">
             <div className="max-w-[500px]">
