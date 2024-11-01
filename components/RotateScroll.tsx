@@ -9,7 +9,7 @@ export default function RotateScroll({ children, rotateNumber = 360 }: any) {
     const ref = useRef<any>()
     const { scrollYProgress } = useScroll({
         target: ref,
-        offset: ['start .85', 'start .35']
+        offset: ['start .85', 'start -.45']
     })
 
     const rotate = useTransform(scrollYProgress, [0, 1], [0, rotateNumber])

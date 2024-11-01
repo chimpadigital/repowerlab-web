@@ -21,6 +21,22 @@ html {
     bottom: 0;
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track {
+    border: solid 3px white;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #1C4741;
+    border: solid 3px white;
+}
+
 #canvas-container {
     position: absolute;
     bottom: 0;

@@ -29,23 +29,22 @@ export default function JoinOurMission() {
                     </div>
                     <div className="col-span-1">
                         <Accordion variant="splitted" itemClasses={itemClasses}>
-                            <AccordionItem indicator={<Indicator />} key="1" aria-label="Accordion 1" title="Are you a business looking to collaborate on 
-sustainable energy solutions?">
-                                <hr className="w-[80%] border border-grey-600/15" />
+                            <AccordionItem indicator={<Indicator />} key="1" aria-label="Accordion 1" title="Are you a business looking to collaborate on sustainable energy solutions?">
+                                <hr className="w-full border border-grey-600/15" />
                                 <div className='pt-4'>
-                                    <Paragraph text='Join us in creating a circular economy for wind energy. Together, we can innovate and transform the industry.' className='text-grey-600' />
+                                    <Paragraph text='Join us in creating a circular economy for wind energy. Together, we can innovate and transform the industry.' className='text-grey-parrafo' />
                                 </div>
                             </AccordionItem>
                             <AccordionItem indicator={<Indicator />} key="2" aria-label="Accordion 2" title="Need expert assistance with wind turbine projects?">
-                                <hr className="w-[80%] border border-grey-600/15" />
+                                <hr className="w-full border border-grey-600/15" />
                                 <div className='pt-4'>
-                                    <Paragraph text='Join us in creating a circular economy for wind energy. Together, we can innovate and transform the industry.' className='text-grey-600' />
+                                    <Paragraph text='From disassembly and warehousing to refurbishing and sales, RepowerLab is here to provide comprehensive support throughout the lifecycle of your wind energy assets.' className='text-grey-parrafo' />
                                 </div>
                             </AccordionItem>
                             <AccordionItem indicator={<Indicator />} key="3" aria-label="Accordion 3" title="Talent Passionate about renewable energy and sustainability?">
-                                <hr className="w-[80%] border border-grey-600/15" />
+                                <hr className="w-full border border-grey-600/15" />
                                 <div className='pt-4'>
-                                    <Paragraph text='Join us in creating a circular economy for wind energy. Together, we can innovate and transform the industry.' className='text-grey-600' />
+                                    <Paragraph text='We are always looking for talented individuals to join our team. If you are driven to make a difference and eager to contribute to our mission, we want to hear from you.' className='text-grey-parrafo' />
                                 </div>
                             </AccordionItem>
                         </Accordion>

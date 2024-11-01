@@ -45,18 +45,16 @@ function Card({ title, img, height, description }: { title: string, img: string,
     }
 
     return (
-        <article onMouseEnter={() => { setOpen(true) }} onMouseLeave={() => { setOpen(false) }} className='w-full relative overflow-hidden' style={{ height }}>
-            <Image quality={100} alt="imagebg" src={img} fill className='object-cover z-0'></Image>
+        <article onMouseEnter={() => { setOpen(true) }} onMouseLeave={() => { setOpen(false) }} className={`w-full object-cover bg-cover bg-no-repeat relative cursor-pointer overflow-hidden`} style={{ height,  backgroundImage: `url(${img})`, }}>
             <motion.div className="absolute flex justify-center w-full " transition={{ duration: .8 }} variants={variants2} animate={open ? "open" : "closed"}>
                 <motion.div variants={variants} transition={{ duration: .8 }} animate={open ? "open" : "closed"} className="absolute h-full" style={{
                     borderRadius: open ? "0px" : "10px",
                     background: "#4B4A4A",
                     opacity: ".48",
                     backdropFilter: "blur(10px)",
-
                 }}></motion.div>
-                <motion.h6 variants={variantsT} transition={{ duration: .8 }} animate={open ? "open" : "closed"} className="absolute bottom-[36px] font-bold text-white text-[22px]">{title}</motion.h6>
-                <motion.div className="flex flex-col justify-center relative text-white" variants={variants} transition={{ duration: .8 }} animate={open ? "open" : "closed"}>
+                <motion.h6 variants={variantsT} transition={{ duration: .8 }} animate={open ? "open" : "closed"} className="absolute z-10 bottom-[36px] font-bold text-white text-[22px]">{title}</motion.h6>
+                <motion.div style={{backdropFilter: "blur(10px)", borderRadius: open ? "0px" : "10px",}} className="flex flex-col justify-center relative text-white" variants={variants} transition={{ duration: .8 }} animate={open ? "open" : "closed"}>
 
                         {
                             description &&

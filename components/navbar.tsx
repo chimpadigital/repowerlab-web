@@ -14,11 +14,12 @@ import { button } from "./primitives";
 import useScrollTop from "@/utils/useTopCheck";
 import { useDisableBodyScroll } from '@/utils/preventScroll'
 import Link from "next/link";
+import LangChange from "./LangChange";
 
 
 export const Navbar = () => {
   const [active, setActive] = useState(false)
-  const isTop = useScrollTop()
+  const { isAtTop, isAtBottom } = useScrollTop();
 
 
 
@@ -29,29 +30,41 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="sticky top-[40px] mt-[20px] z-50 text-white w-full flex justify-center">
+      <div className="sticky top-[40px] mt-[20px] mb-[-100px] z-50 text-white w-full flex justify-center">
         <div className="container px-6">
           <div className="flex justify-between">
-            <div className="gap-3 max-w-fit py-4 px-6 relative  transition-all duration-[600ms] rounded-full" style={!isTop ? bgNavStyle : {}}>
+            {
+              active ?
+                <div className={"gap-3 max-w-fit py-4 px-6 relative  transition-all duration-[600ms] rounded-full " } >
 
-              <Link className="flex justify-start block  items-center gap-1" href="/">
-                <LogoRepower className={`${active ? 'text-primary' : 'text-white'} transition-all duration-[600]`} />
-              </Link>
-            </div>
+                  <Link className="flex justify-start block  items-center gap-1" href="/">
+                    <LogoRepower className={`${active ? 'text-primary' : 'text-white'} transition-all duration-[600]`} />
+                  </Link>
+                </div>
+
+                :
+                <div className={`gap-3 max-w-fit py-4 px-6 relative  transition-all duration-[600ms] rounded-full ${isAtBottom ? "opacity-0" : ""}`}style={!isAtTop ? bgNavStyle : {}}>
+
+                  <Link className="flex justify-start block  items-center gap-1" href="/">
+                    <LogoRepower className={`${active ? 'text-primary' : 'text-white'} transition-all duration-[600]`} />
+                  </Link>
+                </div>
+            }
             <div className="flex justify-end items-center w-full gap-4">
 
               {
                 active
                   ?
                   <CloseIcon onClick={() => {
-                    setActive(!active);
+                    setActive(false);
                   }} className="cursor-pointer" />
                   :
-                  <div className="py-4 px-6 rounded-full flex gap-4 relative transition-all duration-[600ms] overflow-hidden items-center" style={!isTop ? bgNavStyle : {}}>
-                    <button className={`${button({ whiteLine: true })}`}>Connect</button>
+                  <div className="py-4 px-6 rounded-full flex gap-4 relative transition-all duration-[600ms] overflow-hidden items-center" style={!isAtTop ? bgNavStyle : {}}>
+                    <LangChange />
+                    <Link href={"/about/contact-us"} className={`${button({ whiteLine: true })}`}>Connect</Link>
                     <Cart />
                     <ProfileIcon />
-                    <MenuIcon onClick={() => { setActive(!active); }} className="cursor-pointer"></MenuIcon>
+                    <MenuIcon onClick={() => { setActive(true); }} className="cursor-pointer"></MenuIcon>
                   </div>
               }
             </div>
@@ -59,8 +72,8 @@ export const Navbar = () => {
         </div>
 
       </div>
-     
-      <Menu active={active} setMenu={() => { setActive(!active) }}></Menu>
+
+      <Menu active={active} setMenu={() => { setActive(false) }}></Menu>
 
     </>
   );

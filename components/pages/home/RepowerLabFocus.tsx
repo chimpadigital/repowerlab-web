@@ -2,18 +2,19 @@ import { title } from '@/components/primitives'
 import WordAnimated from '@/components/WordAnimated'
 import React from 'react'
 import Image from 'next/image'
+import RotateScroll from '@/components/RotateScroll'
 
 export default function RepowerLabFocus() {
     return (
         <div className="w-full flex justify-center px-10">
             <div className='container'>
                 <div className="flex flex-col lg:flex-row text-primary gap-[90px]" >
-                    <h5 className={title({ color: "primary" })}>RepowerLab's Focus</h5>
+                    <h5 className={title({ color: "primary" })+ " whitespace-nowrap"}>Our Focus</h5>
                     <WordAnimated accentColor='!text-accent' text='--RepowerLab is a pioneering company transforming the energy sector by --providing --innovative --solutions --for --end-of-life --energy --assets, including decommissioning, repowering, retrofitting, recycling, and resale of renewable energy infrastructure.' />
                 </div>
                 <div className="pt-12 grid grid-cols-2 ">
                     <div className="lg:col-span-1 col-span-2 flex justify-center">
-                        <Image quality={100} width={500} height={500} alt="imagen focus" src={'/images/home/home-focus.png'}></Image>
+                            <Image quality={100} width={500} height={500} alt="imagen focus" src={'/images/home/CircularEconomy.webp'}></Image>
                     </div>
                     <div className="lg:col-span-1 col-span-2 flex flex-col items-center justify-center text-primary text-[22px] font-light">
                         <p>

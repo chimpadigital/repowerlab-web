@@ -2,9 +2,11 @@
 import Paragraph from '@/atoms/Paragraph'
 import { button } from '@/components/primitives';
 import { Accordion, AccordionItem, Link } from '@nextui-org/react'
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useParams } from 'next/navigation';
 
 export default function OurOffer() {
+  const params = useParams()
   const itemClasses = {
     base: "py-0 w-full text-primary my-[20px] bg-custom-gradient shadow",
     title: "font-bold text-[20px] text-primary w-[80%]",
@@ -43,13 +45,20 @@ export default function OurOffer() {
     { title: "Technical Support:", text: " Providing on-site technical assistance during installation to address any issues that arise." },
     { title: "Training:", text: "Offering comprehensive training programs for your team on the operation and maintenance of the new turbines." },
   ]
+
+  useEffect(() => {
+    console.log(params)
+  }, [
+    params
+  ])
   return (
     <section className='w-full flex justify-center'>
       <div className="container px-6">
-        <Accordion variant="splitted" itemClasses={itemClasses}>
+        <Accordion variant="splitted" itemClasses={itemClasses}
+          defaultExpandedKeys={["wind-turbines"]}>
 
           <AccordionItem
-            key="1"
+            key="wind-turbines"
             aria-label="Accordion 1"
             title="Wind Turbines">
             <hr className="w-full border border-grey-500" />

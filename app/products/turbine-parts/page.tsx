@@ -10,7 +10,7 @@ import Solutions from '@/components/pages/products/Solutions';
 export default function page() {
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Products", href: "" },
+    { label: "Products", href: "none" },
     { label: "Wind turbines Parts", href: "/" },
   ];
   return (
@@ -19,6 +19,7 @@ export default function page() {
         <HeroBreadcrumb
           img="/images/product/wind-turbine-parts.png"
           breadcrumbs={breadcrumbs}
+          objectPosition="bottom" 
         >
           <div className="flex justify-end text-white w-full">
             <div className="max-w-[500px]">

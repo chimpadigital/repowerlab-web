@@ -9,7 +9,7 @@ import FeatureProducts from "@/components/pages/home/FeatureProducts";
 export default function WindPage() {
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Products", href: "" },
+    { label: "Products", href: "none" },
     { label: "Wind turbines", href: "/" },
   ];
   return (
@@ -18,6 +18,7 @@ export default function WindPage() {
         <HeroBreadcrumb
           img="/images/product/wind-turbine-bg.png"
           breadcrumbs={breadcrumbs}
+          objectPosition="bottom"
         >
           <div className="flex justify-end text-white w-full">
             <div className="max-w-[500px]">
@@ -36,8 +37,9 @@ export default function WindPage() {
           </div>
         </HeroBreadcrumb>
       </section>
-
-      <OurOffer />
+      <section id="includes">
+        <OurOffer />
+      </section>
 
       <FeatureProducts />
     </>

@@ -20,6 +20,7 @@ export default function AboutPage() {
             label: "Company", href: "/about"
           }]}
           img="/images/about/headerImgAbout.webp"
+          objectPosition="center"
           position="left"
         >
           <div className="flex mt-10">

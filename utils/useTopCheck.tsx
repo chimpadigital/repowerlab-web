@@ -1,11 +1,17 @@
 import { useEffect, useState } from 'react';
 
 const useScrollTop = () => {
-  const [isAtTop, setIsAtTop] = useState(true);
+  const [scrollPosition, setScrollPosition] = useState({
+    isAtTop: true,
+    isAtBottom: false,
+  });
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsAtTop(window.scrollY === 0);
+      const isAtTop = window.scrollY === 0;
+      const isAtBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight;
+
+      setScrollPosition({ isAtTop, isAtBottom });
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -16,7 +22,7 @@ const useScrollTop = () => {
     };
   }, []);
 
-  return isAtTop;
+  return scrollPosition;
 };
 
 export default useScrollTop;

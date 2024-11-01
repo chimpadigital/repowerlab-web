@@ -27,7 +27,7 @@ const CircularEconomy = () => {
               >
                 Circular Economy Business Model
               </h4>
-              <p className="mt-6 font-light">
+              <p className="mt-6 ">
                 At RepowerLab, we are dedicated to advancing the circular
                 economy in the wind energy sector. Our comprehensive solutions
                 span the entire lifecycle of wind turbines, ensuring that

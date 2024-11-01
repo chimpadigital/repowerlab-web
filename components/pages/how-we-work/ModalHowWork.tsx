@@ -11,46 +11,56 @@ export default function ModalHowWork({ isOpen, onOpenChange, data, index }: { is
             backdrop="opaque"
             isOpen={isOpen}
             onOpenChange={onOpenChange}
-            size='5xl'
+            closeButton={<></>}
+            size='full'
             classNames={{
-                base: "bg-grey-100 text-primary pt-[40px] px-10 pb-[180px] overflow-x-hidden",
-                body: "relative pt-[50px] ",
-                backdrop: "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20"
+                base: "bg-grey-100 text-primary pt-[40px] flex flex-col justify-center container px-10 pb-[180px] overflow-x-hidden",
+                body: "relative pt-[50px] flex flex-col justify-center",
+                backdrop: "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20",
+
             }}
         >
             <ModalContent >
                 {(onClose) => (
                     <>
-                        <ModalHeader className="flex flex-col gap-1">
-                            <h4 className={subtitle({ size: "md", colors: "primary" }) + " flex gap-4"}>{index + 1} - {data.title}</h4>
-                            <h5 className="text-[16px] ps-8 font-light">{data.subtitle}</h5>
-                        </ModalHeader>
-                        <ModalBody>
-                            <div className="flex gap-8">
-                                <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center p-2">
-                                    <div>
-                                        <Sellers />
-                                    </div>
-                                </div>
-                                <div className="">
-                                    <h5 className='font-bold text-[20px]'>For Sellers</h5>
-                                    <p className="font-light text-[18px] pt-6">{data.sellers}</p>
-                                </div>
-                            </div>
-                            <div className="flex gap-8 pt-6">
-                                <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center p-2">
-                                    <div>
-                                        <Buyers />
-                                    </div>
-                                </div>
-                                <div className="">
-                                    <h5 className='font-bold text-[20px]'>For Buyers</h5>
-                                    <p className="font-light text-[18px] pt-6">{data.buyers}</p>
-                                </div>
-                            </div>
-                            <RepowerIcon className="absolute w-[500px] z-[-1] h-[500px] text-white right-[-150px] bottom-[-380px] opacity-50" />
-                        </ModalBody>
+                        <div className="flex justify-center w-full h-full">
 
+                            <div className="h-full container flex-col itesms-center px-6 flex">
+
+                                <CloseButton onClick={() => { onClose() }} />
+                                <ModalHeader className="flex justify-center gap-1">
+                                    <div className="container">
+                                        <h4 className={subtitle({ size: "md", colors: "primary" }) + " flex gap-4"}>{index + 1} - {data.title}</h4>
+                                        <h5 className="text-[16px] ps-8 font-light">{data.subtitle}</h5>
+                                    </div>
+                                </ModalHeader>
+                                <ModalBody>
+                                    <div className="flex gap-8">
+                                        <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center p-2">
+                                            <div>
+                                                <Sellers />
+                                            </div>
+                                        </div>
+                                        <div className="">
+                                            <h5 className='font-bold text-[20px]'>For Sellers</h5>
+                                            <p className="font-light text-[18px] pt-6">{data.sellers}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-8 pt-6">
+                                        <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center p-2">
+                                            <div>
+                                                <Buyers />
+                                            </div>
+                                        </div>
+                                        <div className="">
+                                            <h5 className='font-bold text-[20px]'>For Buyers</h5>
+                                            <p className="font-light text-[18px] pt-6">{data.buyers}</p>
+                                        </div>
+                                    </div>
+                                </ModalBody>
+                            </div>
+                            <RepowerIcon className="absolute w-[500px] z-[-1] h-[500px] text-white right-[-150px] bottom-[-20%] opacity-50" />
+                        </div>
                     </>
                 )}
             </ModalContent>
@@ -58,6 +68,27 @@ export default function ModalHowWork({ isOpen, onOpenChange, data, index }: { is
     )
 }
 
+const CloseButton = (props: any) => {
+    return (
+        <svg width="43" height="43" {...props} className='absolute right-4 top-4 cursor-pointer hover:opacity-75 transition-all duration-600' viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_7987_3530)">
+                <path d="M9.98098 30.019C8.3573 28.4508 7.06221 26.5749 6.17125 24.5009C5.2803 22.4268 4.81133 20.196 4.79172 17.9388C4.7721 15.6815 5.20223 13.443 6.05701 11.3538C6.91178 9.26452 8.17409 7.36644 9.77026 5.77026C11.3664 4.17409 13.2645 2.91178 15.3538 2.05701C17.443 1.20223 19.6815 0.772104 21.9388 0.791719C24.196 0.811333 26.4268 1.2803 28.5009 2.17125C30.5749 3.06221 32.4508 4.3573 34.019 5.98098C37.1157 9.18721 38.8292 13.4815 38.7904 17.9388C38.7517 22.3961 36.9638 26.66 33.8119 29.8119C30.66 32.9638 26.3961 34.7517 21.9388 34.7904C17.4815 34.8292 13.1872 33.1157 9.98098 30.019ZM24.38 18L29.191 13.189L26.794 10.792L22 15.603L17.189 10.792L14.792 13.189L19.603 18L14.792 22.811L17.189 25.208L22 20.397L26.811 25.208L29.208 22.811L24.397 18H24.38Z" fill="#1C4741" />
+            </g>
+            <defs>
+                <filter id="filter0_d_7987_3530" x="0.791077" y="0.791077" width="42" height="42" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.729412 0 0 0 0 0.8 0 0 0 0 0.901961 0 0 0 0.15 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_7987_3530" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_7987_3530" result="shape" />
+                </filter>
+            </defs>
+        </svg>
+    )
+}
 
 const Buyers = () => {
     return (

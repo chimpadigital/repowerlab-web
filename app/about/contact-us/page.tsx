@@ -11,7 +11,7 @@ const ContactUs = () => {
 
   return (
     <section className="contact-us w-full px-6">
-      <div className="w-full  relative top-[-80px]">
+      <div className="w-full  relative">
         <div className="w-full relative flex justify-center overflow-hidden h-full min-h-[620px] px-6 rounded-[20px] pt-[100px]">
           <Image
             src="/images/contact-us/headerImgContactUs.webp"
@@ -20,11 +20,13 @@ const ContactUs = () => {
             alt="bg-hero"
             quality={100}
           />
-          <div className="w-full px-10">
-            <div className="relative z-10 w-full h-full grid grid-cols-2">
-              <div className="lg:col-span-1 col-span-2">
+          <div className="w-full flex justify-center px-10 ">
+            <div className="relative container 2xl:px-6 z-10 w-full h-full grid grid-cols-2 pt-6">
+              <div className="lg:col-span-1 col-span-2 ps-6">
                 <Breadcrumbs
+                
                   itemClasses={{
+
                     item: "text-white font-bold text-[18px] data-[current=true]:text-accent",
                     separator: "text-white/40",
                   }}

@@ -27,17 +27,15 @@ export default function ProductCard({ title, img, height, href, description }: {
     }
     return (
         <Link href={href}>
-            <article onMouseEnter={() => { setOpen(true) }} onMouseLeave={() => { setOpen(false) }} className='w-full relative cursor-pointer overflow-hidden' style={{ height }}>
-                <Image quality={100} alt="imagebg" src={img} fill className='object-cover z-0'></Image>
-                <motion.div className="absolute flex justify-center w-full " variants={variants2} animate={open ? "open" : "closed"}>
+            <article onMouseEnter={() => { setOpen(true) }} onMouseLeave={() => { setOpen(false) }} className={`w-full object-cover bg-cover bg-no-repeat relative cursor-pointer overflow-hidden`} style={{ height,  backgroundImage: `url(${img})`, }}>
+                <motion.div className="absolute flex justify-center w-full z-1" variants={variants2} animate={open ? "open" : "closed"}>
                     <motion.div variants={variants} animate={open ? "open" : "closed"} className="absolute h-full" style={{
                         borderRadius: open ? "0px" : "10px",
                         background: "#4B4A4A",
                         opacity: ".48",
-                        backdropFilter: "blur(10px)",
-
+                        
                     }}></motion.div>
-                    <motion.div className="flex flex-col justify-center relative text-white" variants={variants} animate={open ? "open" : "closed"}>
+                    <motion.div className="flex flex-col justify-center relative text-white" style={{backdropFilter: "blur(10px)", borderRadius: open ? "0px" : "10px",}}  variants={variants} animate={open ? "open" : "closed"}>
                         <div className='text-[24px] font-normal relative pe-4 flex' >
                             <div className="flex w-full justify-between">
 

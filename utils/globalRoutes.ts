@@ -7,7 +7,7 @@ export interface RoutesWithChildI {
 
 export const globalRoutes: Partial<RoutesWithChildI>[] = [
     {
-        title: "Service",
+        title: "Services",
         url: "our-services"
     },
     {
@@ -20,10 +20,6 @@ export const globalRoutes: Partial<RoutesWithChildI>[] = [
             {
                 title: "Wind turbines spare parts",
                 url: "products/turbine-parts"
-            },
-            {
-                title: "Market place",
-                url: "marketplace"
             },
         ]
     },
@@ -42,7 +38,7 @@ export const globalRoutes: Partial<RoutesWithChildI>[] = [
         ]
     },
     {
-        title: "Market place",
+        title: "Marketplace",
         url: "marketplace"
     },
     {
