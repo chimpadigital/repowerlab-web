@@ -10,7 +10,7 @@ const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
     const getBlogs = async () => {
       try {
         const response = await axios.get(
-          `https://api.repowerlab.chimpance.digital/api/entries?${ categoria && `filter[category])=${categoria}&`}page=1&per_page=3&sort=-created_at`
+          `https://api.repowerlab.chimpance.digital/api/entries?${categoria && `filter[category])=${categoria}&`}page=1&per_page=3&sort=-created_at`
         );
 
         if (response?.status === 200) {
@@ -25,18 +25,20 @@ const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
 
   return (
     <section className="mt-20 py-9 mx-6 rounded-[20px] bg-grey-100 text-primary">
-      <header className="px-8">
-        <p className="mb-6 text-xl font-light">Related posts</p>
-        <h4 className={` ${title()}`}>You may also like</h4>
-      </header>
-      <div className="mt-10 px-2 flex flex-col items-center lg:items-stretch lg:flex-row justify-between gap-[60px] w-full">
-        <CardBlog blog={blogs?.data[0]} />
-        <div className="min-h-full min-w-[2px] bg-grey-600/40 hidden lg:flex"></div>
+      <div className=" container mx-auto">
+        <header className="px-8">
+          <p className="mb-6 text-xl font-light">Related posts</p>
+          <h4 className={` ${title()}`}>You may also like</h4>
+        </header>
+        <div className="mt-10 px-2 flex flex-col items-center lg:items-stretch lg:flex-row justify-between gap-[60px] w-full">
+          <CardBlog blog={blogs?.data[0]} />
+          <div className="min-h-full min-w-[2px] bg-grey-600/40 hidden lg:flex"></div>
 
-        <CardBlog blog={blogs?.data[1]} />
-        <div className="min-h-full min-w-[2px] bg-grey-600/40 hidden lg:flex"></div>
+          <CardBlog blog={blogs?.data[1]} />
+          <div className="min-h-full min-w-[2px] bg-grey-600/40 hidden lg:flex"></div>
 
-        <CardBlog blog={blogs?.data[2]} />
+          <CardBlog blog={blogs?.data[2]} />
+        </div>
       </div>
     </section>
   );

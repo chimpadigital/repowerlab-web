@@ -57,9 +57,7 @@ const CaseDateail = () => {
           `https://api.repowerlab.chimpance.digital/api/entries/${params?.id}`
         );
         if (response?.status === 200) {
-
-          console.log(response);
-          
+     
           setBlogDetail(response.data);
         }
       } catch (error) {
@@ -69,18 +67,18 @@ const CaseDateail = () => {
 
     getBlogDetail();
   }, []);
-  console.log(blogDetail?.data);
 
   const cleanContent = blogDetail?.data?.content ? sanitizeHtml(blogDetail?.data?.content, {
-    allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img", "oembed"]),
+    allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img", "oembed", "iframe"]),
     allowedAttributes: {
       oembed: ["url"],
       img: ["src"],
       a: ["href"],
+      iframe: ["src"],
       "*": ["class"],
     },
   }) : ""
-
+ 
   const transformedContent = replaceOembedWithIframe(cleanContent);
 
   if (blogDetail?.data) {
@@ -94,7 +92,7 @@ const CaseDateail = () => {
           >
             <div className="flex flex-col text-white mt-10">
               <h4 className={`text-white mr-auto text-left ${title()}`}>
-                {blogDetail?.data?.title}
+                {blogDetail?.data?.title ? blogDetail?.data?.title : ""}
               </h4>
             </div>
           </HeroBreadcrumb>
@@ -102,10 +100,10 @@ const CaseDateail = () => {
 
         <article
           className="px-14 blog-container max-w-7xl mx-auto"
-          dangerouslySetInnerHTML={{ __html: transformedContent }}
+          dangerouslySetInnerHTML={{ __html: cleanContent?.includes('oembed') ? transformedContent : cleanContent }}
         ></article>
 
-        <RelatedPosts categoria={blogDetail.data?.category} />
+        <RelatedPosts categoria={blogDetail?.data?.category} />
       </>
     );
   }
