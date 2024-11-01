@@ -91,7 +91,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
 
                                 ) : (
 
-                                  <Link key={`link-${index}`} className='block cursor-pointer py-2  select-none text-primary text-[20px] xl:text-[22px]' href={`/${item2.url}`}>
+                                  <Link key={`link-${index}`} className='block cursor-pointer py-4  select-none text-primary text-[20px] xl:text-[22px]' href={`/${item2.url}`}>
                                     {(item2.title)}
                                   </Link>
                                 )

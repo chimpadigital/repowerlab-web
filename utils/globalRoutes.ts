@@ -38,7 +38,7 @@ export const globalRoutes: Partial<RoutesWithChildI>[] = [
         ]
     },
     {
-        title: "Market place",
+        title: "Marketplace",
         url: "marketplace"
     },
     {
