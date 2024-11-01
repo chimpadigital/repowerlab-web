@@ -65,7 +65,7 @@ export default function ScrollAccordion({
       <div className="container px-6">
         <div className="grid grid-cols-2 min-h-screen items-center sticky top-0 gap-[20px]">
           <div
-            className={`col-span-1 relative max-h-[550px] min-[1400px]:max-h-[600px]   min-[1800px]:max-h-[700px]     h-full ${imgPosition == "right" && "order-last"}`}
+            className={`col-span-1 relative max-h-[550px] min-[1600px]:max-h-[600px]   min-[1800px]:max-h-[700px]     h-full ${imgPosition == "right" && "order-last"}`}
           >
             {y &&
               items.map((el, index) => (
@@ -86,7 +86,7 @@ export default function ScrollAccordion({
             )}
           </div>
           <div
-            className={`col-span-1 max-h-[550px] min-[1400px]:max-h-[600px] min-[1800px]:max-h-[700px]   p-12 shadow-lg rounded-[20px] h-full flex flex-col relative justify-between`}
+            className={`col-span-1 max-h-[550px] min-[1600px]:max-h-[600px] min-[1800px]:max-h-[700px]   p-12 shadow-lg rounded-[20px] h-full flex flex-col relative justify-between`}
           >
             <motion.div
               style={{
