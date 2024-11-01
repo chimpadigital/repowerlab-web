@@ -15,7 +15,7 @@ export default function Hero() {
     },
     {
       label: "Circular economy",
-      href: ""
+      href: "/circular-economy"
     },
     {
       label: "This is how we work",
@@ -42,14 +42,14 @@ export default function Hero() {
 
 
   return (
-    <div className="w-full px-8 items-center relative flex-col w-full top-[-80px]">
+    <div className="w-full px-8 items-center relative flex-col w-full top-[-100px]">
 
       <div className="w-full flex-col items-center  flex justify-center top-[50px]  min-h-[85vh] bg-fixed bg-cover bg-[url(/images/how-we-work/gradiente-radial.png)] bg-primary rounded-[20px] pt-[100px]">
         <div className="absolute inset-0 bg-[url(/images/how-we-work/gradiente-radial.png)] bg-cover opacity-50"></div>
         <div className="container px-6 h-full z-10 top-[-80px] ">
           <Breadcrumbs
             itemClasses={{
-              base: " pt-[120px]",
+              base: " pt-[90px] ps-6",
               item: "text-white font-bold text-[18px] data-[current=true]:underline underline-offset-4",
               separator: "text-white",
             }}
