@@ -44,7 +44,7 @@ export default function SuccesCases() {
     }, [currentPage]);
     return (
         <div className='pb-[120px] w-full flex justify-center relative z-10'>
-            <div className="absolute !text-grey-100 top-[-100px] z-0 left-[-50px]">
+            <div className="absolute !text-grey-100 z-0 left-[-50px]">
                 <IsotipoRepowerlab className="w-[350px] h-auto !fill-grey-100 " />
             </div>
             <div className="container relative z-10">

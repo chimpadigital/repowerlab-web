@@ -14,7 +14,7 @@ interface HeroBreadcrumbI {
   objectPosition?: string;
   children: React.ReactNode;
 }
-
+ 
 export default function HeroBreadcrumb({
   img,
   breadcrumbs,
@@ -23,7 +23,7 @@ export default function HeroBreadcrumb({
   children,
 }: HeroBreadcrumbI) {
   return (
-    <div className="w-full  relative top-[-100px]">
+    <div className="w-full  relative pb-[150px]">
       <div className="w-full relative flex justify-center overflow-hidden h-full min-h-[620px] rounded-[20px] pt-[150px]">
         <Image
           src={img}

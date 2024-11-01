@@ -11,7 +11,7 @@ const ContactUs = () => {
 
   return (
     <section className="contact-us w-full px-6">
-      <div className="w-full  relative top-[-100px]">
+      <div className="w-full  relative">
         <div className="w-full relative flex justify-center overflow-hidden h-full min-h-[620px] px-6 rounded-[20px] pt-[100px]">
           <Image
             src="/images/contact-us/headerImgContactUs.webp"

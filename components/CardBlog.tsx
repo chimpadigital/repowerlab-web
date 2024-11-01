@@ -14,6 +14,7 @@ export interface BlogI {
     name: string;
     img: string | null
   }
+  category?: string;
   content?: any;
   images: any[];
   description: string;
@@ -67,8 +68,8 @@ export default function CardBlog({ blog, }: { blog: BlogI }) {
 
         <Image width={400} height={200} alt="" className="w-full object-cover h-[200px] rounded-[10px] " src={blog?.images[0]?.url || "/images/our-services/e2.jpg"} />
 
-        <div className={`${subtitle({ size: "sm" })} font-light !text-grey-parrafo`}>
-          <TextoConResumen contenidoHtml={blog.content} />
+        <div className={`text-[1.2rem] font-light !text-grey-parrafo`}>
+          {blog.category}
         </div>
 
         <div className="flex justify-between items-center text-grey-parrafo">

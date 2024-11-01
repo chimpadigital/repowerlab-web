@@ -30,7 +30,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="sticky top-[40px] mt-[20px] z-50 text-white w-full flex justify-center">
+      <div className="sticky top-[40px] mt-[20px] mb-[-100px] z-50 text-white w-full flex justify-center">
         <div className="container px-6">
           <div className="flex justify-between">
             {
