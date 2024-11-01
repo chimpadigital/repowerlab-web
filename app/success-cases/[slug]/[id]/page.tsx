@@ -58,16 +58,18 @@ const CaseDateail = () => {
         );
         if (response?.status === 200) {
 
+          console.log(response);
           
           setBlogDetail(response.data);
         }
       } catch (error) {
-        console.error(error);
+        console.log(error);
       }
     };
 
     getBlogDetail();
   }, []);
+  console.log(blogDetail?.data);
 
   const cleanContent = blogDetail?.data?.content ? sanitizeHtml(blogDetail?.data?.content, {
     allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img", "oembed"]),
