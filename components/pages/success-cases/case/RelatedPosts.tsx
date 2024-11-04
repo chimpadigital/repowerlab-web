@@ -23,11 +23,9 @@ const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
     getBlogs();
   }, []);
 
-  if (!blogs) return null;
-
   return (
     <section className="mt-20 py-9 mx-6 rounded-[20px] bg-grey-100 text-primary">
-      <div className="container mx-auto">
+      <div className=" container mx-auto">
         <header className="px-8">
           <p className="mb-6 text-xl font-light">Related posts</p>
           <h4 className={` ${title()}`}>You may also like</h4>

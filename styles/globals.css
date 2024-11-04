@@ -105,11 +105,13 @@ html {
 .ck.ck-content h2,
 .blog-container h2 {
     font-size: 30px !important;
+    font-weight: bolder;
 }
 
 .ck.ck-content h3,
 .blog-container h3 {
     font-size: 24px !important;
+    font-weight: bolder;
 }
 
 .ck.ck-content h4,
@@ -136,6 +138,10 @@ html {
 .blog-container figure.media iframe {
     height: 100%;
     width: 100%;
+}
+
+.blog-container figure.media div{
+    height: 100%;
 }
 
 .blog-container figure.table {
@@ -166,10 +172,12 @@ html {
     margin-bottom: 1rem !important;
 }
 
+.ck-content ol,
 .ck.ck-content ol {
     list-style: decimal !important;
 }
 
+.ck-content ul,
 .ck.ck-content ul {
     list-style: disc !important;
 }
