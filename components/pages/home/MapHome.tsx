@@ -13,7 +13,7 @@ export default function MapHome() {
           <div className="absolute z-10 bottom-12">
             <p className="text-[100px] font-light translate-x-[-150px] -translate-y-[200px] -rotate-90 text-white">Numbers</p>
           </div>
-          <p className="absolute z-10 bottom-[120px] left-[160px] min-w-[1600px]:text-[18px] text-[16px] !w-[270px] text-white">Check out our track record, showcased through the numbers that define our success.</p>
+          <p className="absolute z-10 bottom-[120px] left-[160px] min-[1700px]:text-[18px] text-[16px] w-[270px] text-white">Check out our track record, showcased through the numbers that define our success.</p>
           <div className="w-full flex relative h-full items-center">
             <div className="flex w-full justify-center items-center">
               <div className="w-[400px]"></div>
@@ -36,7 +36,7 @@ export default function MapHome() {
 
 const Card = ({ top, left, title, number }: any) => {
   return (
-    <article className='p-4 w-[200px] h-[100px] flex justify-center items-center relaative absolute' style={{
+    <article className='p-4 w-[215px] h-[100px] flex justify-center items-center relaative absolute' style={{
       top,
       left,
       borderRadius: "10px",
