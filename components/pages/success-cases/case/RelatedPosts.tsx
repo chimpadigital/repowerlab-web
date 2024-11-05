@@ -31,13 +31,13 @@ const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
           <h4 className={` ${title()}`}>You may also like</h4>
         </header>
         <div className="mt-10 px-2 flex flex-col items-center lg:items-stretch lg:flex-row justify-between gap-[60px] w-full">
-          <CardBlog blog={blogs?.data[0]} />
+          {blogs?.data[0] && <CardBlog blog={blogs?.data[0]} />}
           <div className="min-h-full min-w-[2px] bg-grey-600/40 hidden lg:flex"></div>
 
-          <CardBlog blog={blogs?.data[1]} />
+          {blogs?.data[1] && <CardBlog blog={blogs?.data[1]} />}
           <div className="min-h-full min-w-[2px] bg-grey-600/40 hidden lg:flex"></div>
 
-          <CardBlog blog={blogs?.data[2]} />
+          {blogs?.data[2] ? <CardBlog blog={blogs?.data[2]} /> : <div className="w-[400px]"></div>}
         </div>
       </div>
     </section>
