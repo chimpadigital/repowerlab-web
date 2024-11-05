@@ -84,7 +84,7 @@ const CaseDateail = () => {
   if (blogDetail?.data) {
     return (
       <>
-        <section className="w-full px-6">
+        <section className="w-full px-6 ">
           <HeroBreadcrumb
             img="/images/cases/bg-hero.webp"
             breadcrumbs={breadcrumbs}

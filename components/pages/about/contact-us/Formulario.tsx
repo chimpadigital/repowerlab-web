@@ -68,10 +68,10 @@ const Formulario = () => {
   };
 
   return (
-    <div className="formulario-contacto w-full flex justify-end pb-24 pt-28 scroll-smooth	">
+    <div className="formulario-contacto w-full flex justify-end pb-24 pt-10 md:pt-28 scroll-smooth	">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="w-full flex flex-col gap-9 scroll-smooth"
+        className="w-full flex flex-col gap-3 md:gap-9 scroll-smooth"
         id="contact-us-form"
         style={{
           width: "min(100%, 464px)",
@@ -80,6 +80,9 @@ const Formulario = () => {
         <Input
           error={errors.name && errors.name.message}
           placeholder="Your Name"
+          placeholderMovile="Name"
+          label="Your Name"
+          id="contact-name"
           control={control}
           name="name"
           rules={{
@@ -98,6 +101,9 @@ const Formulario = () => {
         <Input
           error={errors.phone && errors.phone.message}
           placeholder="Phone"
+          placeholderMovile="Phone"
+          label="Your Phone Number"
+          id="contact-phone"
           type="tel"
           control={control}
           name="phone"
@@ -117,6 +123,9 @@ const Formulario = () => {
         <Input
           error={errors.email && errors.email.message}
           placeholder="Your Email Adress"
+          placeholderMovile="Email"
+          label="Your Email Adress"
+          id="contact-email"
           type="email"
           control={control}
           name="email"
@@ -140,19 +149,23 @@ const Formulario = () => {
               ref={ref}
               aria-label="asunto"
               placeholder="Select subject"
-              className="w-full"
+              className="w-full pt-2"
+              labelPlacement="outside"
+              label="Select subject"
               scrollShadowProps={{
                 isEnabled: false,
               }}
               classNames={{
                 trigger:
-                  "bg-[#C5C5C5]/15 py-4 px-8 backdrop-blur-2xl border-white  transition-all border-2 rounded-full px-8 font-sans h-[60px] data-[hover=true]:bg-[#C5C5C5]/15 data-[open=true]:border-accent",
+                  "bg-[#C5C5C5]/15 py-4 px-5 md:px-8 backdrop-blur-2xl border-white  transition-all border-2 rounded-full font-sans h-[60px] data-[hover=true]:bg-[#C5C5C5]/15 data-[open=true]:border-accent",
                 value:
                   "font-medium text-[16px] text-white group-data-[has-value=true]:text-white",
                 popoverContent:
                   "bg-white text-[#777] p-0 rounded-[10px] text-base",
                 listbox: "p-0",
                 selectorIcon: "text-white h-7 w-7",
+                label:
+                  "!text-white text-base group[data-filled=true]:text-white pb-3",
               }}
               listboxProps={{
                 itemClasses: {
@@ -178,6 +191,9 @@ const Formulario = () => {
 
         <TextArea
           placeholder="Message"
+          placeholderMovile="Note"
+          label="Message"
+          id="contact-msg"
           error={errors.msg && errors.msg.message}
           name="msg"
           control={control}

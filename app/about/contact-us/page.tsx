@@ -21,10 +21,11 @@ const ContactUs = () => {
           />
           <div className="w-full flex justify-center px-0 md:px-10 ">
             <div className="relative container 2xl:px-6 z-10 w-full h-full grid grid-cols-2 pt-6">
-              <div className="lg:col-span-1 col-span-2 ps-6">
+              <div className="lg:col-span-1 col-span-2 p-0 md:ps-6 ">
                 <Breadcrumbs
+                  className="hidden md:block"
                   itemClasses={{
-                    item: "text-white font-bold text-[18px] data-[current=true]:text-accent",
+                    item: "text-white font-bold text-[18px] data-[current=true]:text-accent ",
                     separator: "text-white/40",
                   }}
                 >
@@ -47,12 +48,12 @@ const ContactUs = () => {
                     </BreadcrumbItem>
                   ))}
                 </Breadcrumbs>
-                <div className="text-start text-white mt-10">
+                <div className="text-start text-white mt-0 md:mt-10">
                   <h4 className={title({ size: "md" })}>Contact us</h4>
                   <p className="mt-6 font-light w-[25ch]">
                     Feel free to use the contact form to reach out to us.
                   </p>
-                  <div className="mt-8 flex gap-3 items-center fill-white text-white">
+                  <div className="mt-8 hidden md:flex gap-3 items-center fill-white text-white">
                     <Mail />
                     <span>info@repowerlab.com</span>
                   </div>
