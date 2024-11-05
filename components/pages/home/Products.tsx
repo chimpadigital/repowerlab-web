@@ -19,7 +19,7 @@ export default function Products() {
           <div className="col-span-1">
             <ProductCard
               description='Turbines from canceled projects, offering top performance at a lower cost.'
-              href={"marketplace/"}
+              href={"/products/wind-turbines#includes"}
               height='65vh'
               title='Unused <br/> wind turbines'
               img='/images/home/products/1a.png' />
@@ -27,7 +27,7 @@ export default function Products() {
           <div className="col-span-1">
             <ProductCard
               description='Remanufactured turbines, providing a cost-effective way to extend wind farm life.'
-              href={"marketplace/"}
+              href={"/products/wind-turbines#includes"}
               height='65vh'
               title='Refurbished <br/>  wind turbines'
               img='/images/home/products/2a.png' />
@@ -35,7 +35,7 @@ export default function Products() {
           <div className="col-span-1">
             <ProductCard
               description='Budget-friendly turbines sold as-is for installation or refurbishment.'
-              href={"marketplace/"}
+              href={"/products/wind-turbines#includes"}
               height='65vh'
               title='Used <br/> wind turbines'
               img='/images/home/products/3a.png' />
@@ -43,7 +43,7 @@ export default function Products() {
           <div className="col-span-1">
             <ProductCard
               description='New and refurbished parts to keep turbines running efficiently.'
-              href={"marketplace/"}
+              href={"/products/turbine-parts"}
               height='65vh'
               title='Wind turbine <br/> spare parts'
               img='/images/home/products/4a.png' />

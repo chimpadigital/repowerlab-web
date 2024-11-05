@@ -6,7 +6,7 @@ import Link from "next/link";
 
 interface HeroBreadcrumbI {
   img: string;
-  breadcrumbs: {
+  breadcrumbs?: {
     label: string;
     href: string;
   }[];
@@ -14,7 +14,7 @@ interface HeroBreadcrumbI {
   objectPosition?: string;
   children: React.ReactNode;
 }
- 
+
 export default function HeroBreadcrumb({
   img,
   breadcrumbs,
@@ -39,18 +39,21 @@ export default function HeroBreadcrumb({
           <div className="container px-6">
             <div className="relative z-10 w-full h-full grid grid-cols-2">
               <div className="lg:col-span-1 col-span-2 sm:ps-6">
-                <Breadcrumbs
-                  itemClasses={{
-                    item: "text-white font-bold text-[18px] !opacity-100 data-[current=true]:underline data-[current=true]:underline-offset-[6px]",
-                    separator: "text-white/40",
-                  }}
-                >
-                  {breadcrumbs.map((el, index) => (
-                    <BreadcrumbItem isDisabled={el.href == "none"} href={el.href} key={index}>
-                      {el.label}
-                    </BreadcrumbItem>
-                  ))}
-                </Breadcrumbs>
+                {
+                  breadcrumbs &&
+                  <Breadcrumbs
+                    itemClasses={{
+                      item: "text-white font-bold text-[18px] !opacity-100 data-[current=true]:underline data-[current=true]:underline-offset-[6px]",
+                      separator: "text-white/40",
+                    }}
+                  >
+                    {breadcrumbs.map((el, index) => (
+                      <BreadcrumbItem isDisabled={el.href == "none"} href={el.href} key={index}>
+                        {el.label}
+                      </BreadcrumbItem>
+                    ))}
+                  </Breadcrumbs>
+                }
                 {position == "left" && children}
               </div>
               <div className="lg:col-span-1 col-span-2 h-full flex items-center ">
