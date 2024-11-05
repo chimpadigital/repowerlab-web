@@ -14,26 +14,33 @@ import CountryContactData from "./CountryContactData";
 
 const ConnectToday = () => {
   return (
-    <div className="flex text-left flex-col lg:flex-row px-16 gap-10 mx-auto pb-20 lg:items-center pt-20">
+    <div className="flex text-left flex-col lg:flex-row px-6 md:px-16 gap-10 mx-auto pb-20 lg:items-center pt-20">
       <article className="flex flex-[2] flex-col md:flex-row lg:flex-col w-full justify-between lg:justify-normal">
         <div className="">
           <h3 className={`${title()} text-primary mb-3 !block`}>
             Connect Today
           </h3>
-          <p className={`text-[#444444] max-w-[40ch] mb-8 font-light`}>
+          <p
+            className={`text-[#444444] hidden  md:block  max-w-[40ch] mb-8 font-light`}
+          >
             Contact RepowerLab to explore our circular economy solutions and
             maximize the value of your energy assets.
+          </p>
+          <p
+            className={`text-[#444444] md:hidden block max-w-[25ch] mb-8 font-light`}
+          >
+            Explore circular solutions—contact us today.
           </p>
         </div>
         <div>
           <Link href={"/about/contact-us#contact-us-form"} className={button()}>
             Connect now
           </Link>
-          <div className="mt-10 flex gap-3 items-center fill-primary text-primary">
+          <div className="mt-10 hidden md:flex gap-3 items-center fill-primary text-primary">
             <Mail />
             <span>info@repowerlab.com</span>
           </div>
-          <div className="mt-10 flex gap-3 items-center">
+          <div className="mt-10 hidden md:flex gap-3 items-center">
             <Link className="fill-primary" href="">
               <LinkedInIcon width={22} height={22} />
             </Link>

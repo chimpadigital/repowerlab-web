@@ -55,14 +55,19 @@ const GreenBannerNewsLetter = () => {
       <div className="flex w-full flex-col md:flex-row md:items-center gap-10">
         <div className="flex-1 text-start flex items-center justify-between">
           <div className="flex-1">
-            <h4 className={`${title()} !block mb-3`}>Subscribe to</h4>
+            <h4 className={`${title()} !block md:mb-3 leading-tight	`}>
+              Subscribe to
+            </h4>
             <h4 className={`${title()} text-secondary !block mb-4 md:mb-10`}>
               Our Newsletter
             </h4>
-            <p className="max-w-[52ch] font-light">
+            <p className="max-w-[52ch] hidden md:block font-light">
               Subscribe to our newsletter for the latest in circular economy
               solutions for the energy sector and stay ahead with our projects,
               services, and industry trends.
+            </p>
+            <p className="max-w-[52ch] font-light md:hidden block">
+              Get the latest on circular energy solutions—subscribe now.
             </p>
           </div>
         </div>
@@ -70,7 +75,7 @@ const GreenBannerNewsLetter = () => {
           onSubmit={handleOnSubmitSubscribe}
           className="flex gap-4 flex-1 flex-col md:items-end xl:flex-row xl:gap-10"
         >
-          <div className="w-[80%] relative">
+          <div className="w-full md:w-[80%] relative">
             <input
               type="email"
               name="email"
@@ -94,7 +99,7 @@ const GreenBannerNewsLetter = () => {
             type="submit"
             className={`scroll-smooth ${button({
               whiteLine: true,
-            })}`}
+            })} w-full md:w-fit`}
           >
             {isSending ? (
               <span className="flex gap-3  fill-white group-hover:fill-primary">
