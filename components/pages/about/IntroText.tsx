@@ -5,7 +5,7 @@ import WordAnimated from "@/components/WordAnimated";
 
 const IntroText = () => {
   return (
-    <article className="text-start px-20 text-primary">
+    <article className="text-start px-6 md:px-20 text-primary text-base">
       <WordAnimated accentColor="!text-accent" text="--RepowerLab is a pioneering company transforming the energy sector by providing innovative solutions for end-of-life energy assets, --including --decommissioning, --repowering, --retrofitting, --recycling, --and --resale --of --renewable --energy --infrastructure. With extensive experience in decommissioning and managing over --4 --GW --of --renewable energy across the United States, Europe, Latin America, and Africa, our team has successfully dismantled, refurbished, and reinstalled turbines globally. This includes significant projects in countries like Germany, Austria, France, Italy, Spain, the UK, Chile, and Nicaragua, with ongoing projects in Italy and France focused on recycling." />
       <br />
       <br />

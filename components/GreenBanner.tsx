@@ -1,9 +1,9 @@
 import React from "react";
-import img from "@/public/images/greenBannerBg.png"
+import img from "@/public/images/greenBannerBg.png";
 
 const GreenBanner = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="w-full bg-[url(/images/greenBannerBg.png)] bg-no-repeat bg-right bg-cover md:bg-contain items-center flex  px-6  md:pl-10 lg:pl-14 py-7 lg:py-24 lg:px-40 rounded-[20px] bg-primary text-white">
+    <div className="w-full bg-[url(/images/greenBannerBg.png)] bg-no-repeat bg-right bg-cover md:bg-contain items-center flex  px-6  md:pl-10 lg:pl-14  py-10 md:py-7 lg:py-24 lg:px-40 rounded-[20px] bg-primary text-white">
       {children}
     </div>
   );
