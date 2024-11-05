@@ -68,7 +68,7 @@ const Formulario = () => {
   };
 
   return (
-    <div className="w-full flex justify-end pb-24 pt-28 scroll-smooth	">
+    <div className="formulario-contacto w-full flex justify-end pb-24 pt-28 scroll-smooth	">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="w-full flex flex-col gap-9 scroll-smooth"
