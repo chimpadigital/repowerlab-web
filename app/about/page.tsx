@@ -2,6 +2,7 @@
 import GreenBanner from "@/components/GreenBanner";
 import HeroBreadcrumb from "@/components/HeroBreadcrumb";
 import IntroText from "@/components/pages/about/IntroText";
+import IntroTextMobile from "@/components/pages/about/IntroTextMobile";
 import MapaMundial from "@/components/pages/about/MapaMundial";
 import MeetOurTeam from "@/components/pages/about/MeetOurTeam";
 import MisionVisionHistory from "@/components/pages/about/MisionVisionHistory";
@@ -31,6 +32,7 @@ export default function AboutPage() {
         </HeroBreadcrumb>
       </div>
       <IntroText />
+      <IntroTextMobile/>
       <MisionVisionHistory />
       <MapaMundial />
       <WhyChooseRepowerlab />
