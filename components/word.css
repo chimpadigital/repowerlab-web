@@ -1,5 +1,5 @@
 .paragraph {
-    font-size: 30px;
+    /* font-size: 30px; */
     display: flex;
     flex-wrap: wrap;
 
@@ -7,6 +7,7 @@
         position: relative;
         margin-top: 2px;
         margin-left: 10px;
+        font-size: inherit;
 
         .shadow {
             position: absolute;
