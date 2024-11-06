@@ -51,9 +51,9 @@ export default function AboutPage() {
           <div className="flex w-full flex-col lg:flex-row md:items-center gap-10">
             <div className="flex-1 gap-10 text-start flex items-center justify-between">
               <div className="flex-1">
-                <h4 className={`${title()} !block mb-3 max-w-[50ch] tracking-wider`}>
+                <h4 className={`${title()} !block mb-3 leading-snug max-w-[50ch] tracking-wider`}>
                   Join us on this journey to{" "}
-                  <span className={`${title()} text-secondary tracking-wider`}>
+                  <span className={`${title()} leading-snug text-secondary tracking-wider`}>
                     transform wind energy assets and create a cleaner, greener
                     world.
                   </span>
