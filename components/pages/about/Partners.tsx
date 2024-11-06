@@ -37,8 +37,8 @@ const partners = [
 
 const Partners = () => {
   return (
-    <div className="mt-48">
-      <div className="mx-auto text-start mb-20 px-14">
+    <div className="mt:20 md:mt-48">
+      <div className="mx-auto text-start mb-10 md:mb-20 px-8 md:px-14">
         <h4 className={`${title()} text-primary text-start`}>Partners</h4>
       </div>
 
@@ -52,8 +52,13 @@ const Partners = () => {
           }}
           loop={true}
           slidesPerView={"auto"}
-          spaceBetween={27}
+          spaceBetween={10}
           grabCursor={true}
+          breakpoints={{
+            640: {
+              spaceBetween: 27,
+            },
+          }}
         >
           {partners.map((partner, index) => {
             return (

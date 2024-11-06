@@ -196,6 +196,7 @@ html {
 }
 
 /* ------------- */
+
 .bg-home {
     border-radius: 20px;
     opacity: 0.3;
@@ -208,4 +209,16 @@ html {
     opacity: 0.5;
     background: rgba(19, 19, 19, 0.28);
     mix-blend-mode: multiply;
+}
+
+/* ------------- */
+
+.card-miembro{
+    width: min(100%, 276px);
+}
+
+@screen sm {
+    .card-miembro{
+        width: min(100%, 376px);
+    }
 }
