@@ -14,7 +14,12 @@ const TeamMemberCard = ({
   image,
 }: TeamMemberCardProps) => {
   return (
-    <div className="card-miembro relative font-[Mulish] overflow-hidden">
+    <div
+      className="card-miembro relative font-[Mulish] overflow-hidden"
+      style={{
+        clipPath: "url(#clip-shape)",
+      }}
+    >
       <div
         className="aspect-[265/368] md:aspect-[376/554] bg-no-repeat bg-cover bg-[#C5C5C5] after:absolute after:inset-0 py-5 px-4 "
         style={{
