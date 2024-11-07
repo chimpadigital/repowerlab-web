@@ -9,30 +9,38 @@ import Link from "next/link";
 
 const SolutionsCards = () => {
   return (
-    <section className="px-8 mx-6 bg-primary bg-[url(/images/circular-economy/bg-solutions-cards.webp)] bg-fixed bg-no-repeat bg-cover rounded-[20px] pt-32 pb-32 text-center">
-      <h4 className={`${title({ size: "md" })} text-white`}>
+    <section className=" px-6 md:px-8 mx-4 md:mx-6 bg-primary bg-[url(/images/circular-economy/bg-solutions-cards.webp)] bg-fixed bg-no-repeat bg-cover rounded-[20px] pt-16 md:pt-32 pb-32 md:text-center">
+      <h4 className={`${title({ size: "md" })} text-white hidden md:block`}>
         Circular Economy Solutions
       </h4>
-      <div className="flex gap-5 justify-center mt-24 flex-wrap">
+      <div className=" md:hidden flex flex-col">
+        <h4 className={`${title({ size: "md" })} text-white text-left `}>
+          Our Circular
+        </h4>
+        <h4 className={`${title({ size: "md" })} text-white text-left `}>
+          Economy Solutions
+        </h4>
+      </div>
+      <div className="flex gap-5 justify-center mt-10 md:mt-24 flex-wrap">
         <Link
           href={"/circular-economy#repowering-solutions"}
-          className="w-fit px-8 py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-[10px] text-left"
+          className="w-fit px-[18px] md:px-8 py-10 md:py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-tl-[10px] md:rounded-[10px] text-left flex md:flex-col md:justify-normal md:items-start md:gap-0 items-center gap-4 flex-wrap"
           style={{ width: "min(100%, 309px)" }}
         >
-          <div className="w-[62px] aspect-square rounded-full bg-white grid place-items-center">
+          <div className="w-[62px] h-fit aspect-square rounded-full bg-white grid place-items-center">
             <Image alt="icon light" src={iconoLight} height={35} width={32} />
           </div>
-          <h5 className="max-w-[10ch] inline-block text-2xl mt-7">
+          <h5 className="max-w-[10ch] inline-block text-lg md:text-2xl md:mt-7">
             Repowering Solutions
           </h5>
         </Link>
 
         <a
           href={"/circular-economy#circular-economy-solution"}
-          className="w-fit px-8 py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-[10px] text-left"
+          className="w-fit px-[18px] md:px-8 py-10  md:py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-tl-[10px] md:rounded-[10px] text-left flex md:flex-col md:justify-normal md:items-start md:gap-0 items-center gap-4 flex-wrap "
           style={{ width: "min(100%, 309px)" }}
         >
-          <div className="w-[62px] aspect-square rounded-full bg-white grid place-items-center">
+          <div className="w-[62px] h-fit aspect-square rounded-full bg-white grid place-items-center">
             <Image
               alt="icon light"
               src={iconoCiruclarEconomy}
@@ -40,17 +48,17 @@ const SolutionsCards = () => {
               width={42}
             />
           </div>
-          <h5 className="max-w-[20ch] inline-block text-2xl mt-7">
+          <h5 className="max-w-[14ch] inline-block text-lg md:text-2xl md:mt-7">
             Circular Economy Solutions
           </h5>
         </a>
 
         <Link
           href={"/circular-economy#refurbishment"}
-          className="w-fit px-8 py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-[10px] text-left"
+          className="w-fit px-[18px] md:px-8 py-10  md:py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-tl-[10px] md:rounded-[10px] text-left flex md:flex-col md:justify-normal md:items-start md:gap-0 items-center gap-4 flex-wrap"
           style={{ width: "min(100%, 309px)" }}
         >
-          <div className="w-[62px] aspect-square rounded-full bg-white grid place-items-center">
+          <div className="w-[62px] h-fit aspect-square rounded-full bg-white grid place-items-center">
             <Image
               alt="icon light"
               src={iconoRefurbishment}
@@ -58,17 +66,17 @@ const SolutionsCards = () => {
               width={42}
             />
           </div>
-          <h5 className="max-w-[10ch] inline-block text-2xl mt-7">
+          <h5 className="max-w-[10ch] inline-block text-lg md:text-2xl md:mt-7">
             Refurbishment Solutions
           </h5>
         </Link>
 
         <Link
           href={"/circular-economy#recycling-solution"}
-          className="w-fit px-8 py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-[10px] text-left"
+          className="w-fit px-[18px] md:px-8 py-10  md:py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-tl-[10px] md:rounded-[10px] text-left flex md:flex-col md:justify-normal md:items-start md:gap-0 items-center gap-4 flex-wrap"
           style={{ width: "min(100%, 309px)" }}
         >
-          <div className="w-[62px] aspect-square rounded-full bg-white grid place-items-center">
+          <div className="w-[62px] h-fit aspect-square rounded-full bg-white grid place-items-center">
             <Image
               alt="icon light"
               src={iconoRecycling}
@@ -77,7 +85,7 @@ const SolutionsCards = () => {
               quality={100}
             />
           </div>
-          <h5 className="max-w-[10ch] inline-block text-2xl mt-7">
+          <h5 className="max-w-[10ch] inline-block text-lg md:text-2xl md:mt-7">
             Recycling Solutions
           </h5>
         </Link>
