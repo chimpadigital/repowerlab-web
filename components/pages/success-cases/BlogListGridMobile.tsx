@@ -1,10 +1,10 @@
-"use client"
+"use client";
 import CardBlog, { BlogI } from "@/components/CardBlog";
 import { Pagination } from "@nextui-org/react";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-const BlogListGrid = () => {
+const BlogListGridMobile = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [BlogList, setBlogList] = useState<BlogI[]>([]);
   const [lastPage, setLastPage] = useState(1);
@@ -13,7 +13,7 @@ const BlogListGrid = () => {
     const getBlogs = async () => {
       try {
         const response = await axios.get(
-          `https://api.repowerlab.chimpance.digital/api/entries?page=${currentPage}&per_page=6&sort=-created_at`
+          `https://api.repowerlab.chimpance.digital/api/entries?page=${currentPage}&per_page=4&sort=-created_at`
         );
 
         if (response?.status === 200) {
@@ -28,14 +28,9 @@ const BlogListGrid = () => {
     getBlogs();
   }, [currentPage]);
 
-
-
   return (
-    <div className="hidden md:block">
-      <div
-        className="grid grid-cols-1 lg:grid-cols-2 max-w-[1380px]  xl:grid-cols-3  justify-items-center 
-      mx-auto"
-      >
+    <div className="md:hidden">
+      <div className="flex flex-col gap-5">
         {BlogList[0] && (
           <div className="lg:border-r border-grey-600 w-full  grid  place-items-center">
             <CardBlog blog={BlogList[0]} />
@@ -56,12 +51,6 @@ const BlogListGrid = () => {
             <CardBlog blog={BlogList[3]} />
           </div>
         )}
-        {BlogList[4] && (
-          <div className="lg:border-r border-grey-600 w-full  grid  place-items-center">
-            <CardBlog blog={BlogList[4]} />
-          </div>
-        )}
-        {BlogList[5] && <CardBlog blog={BlogList[5]} />}
       </div>
       <div className="flex justify-center gap-[4px] mt-20 mb-32">
         <button
@@ -121,4 +110,4 @@ const BlogListGrid = () => {
   );
 };
 
-export default BlogListGrid;
+export default BlogListGridMobile;
