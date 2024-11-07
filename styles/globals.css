@@ -140,7 +140,7 @@ html {
     width: 100%;
 }
 
-.blog-container figure.media div{
+.blog-container figure.media div {
     height: 100%;
 }
 
@@ -213,12 +213,12 @@ html {
 
 /* ------------- */
 
-.card-miembro{
+.card-miembro {
     width: min(100%, 276px);
 }
 
-@screen sm {
-    .card-miembro{
+@media screen and (min) {
+    .card-miembro {
         width: min(100%, 376px);
     }
 }
