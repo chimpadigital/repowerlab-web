@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const MisionVisionHistory = () => {
   return (
     <div
-      className="MisionVisionHistory flex flex-wrap  gap-24 mx-auto justify-center my-20 px-6"
+      className="MisionVisionHistory flex flex-wrap gap-16 md:gap-24 mx-auto justify-center my-20 px-6"
       style={{ width: "min(100%, 1500px)" }}
     >
       <motion.div
@@ -18,7 +18,7 @@ const MisionVisionHistory = () => {
         viewport={{ once: true }}
       >
         <div
-          className="text-primary  z-[1] bg-white cursor-default relative shadow-[0px_4px_4px_0px_#0000001A] py-10 px-4 rounded-[20px] h-full transition-all hover:translate-x-3 hover:translate-y-6"
+          className="text-primary z-[1] bg-white cursor-default relative shadow-[0px_4px_4px_0px_#0000001A] py-10 px-4 rounded-[20px] h-full transition-all hover:translate-x-3 hover:translate-y-6"
           style={{ width: "min(100%, 374px)" }}
         >
           <h4 className={title()}>Our Mission</h4>
@@ -30,7 +30,7 @@ const MisionVisionHistory = () => {
             ensuring a sustainable and prosperous future for renewable energy.
           </p>
         </div>
-        <div className=" absolute origin-bottom-right inset-0 bg-gradient-to-r from-white to-secondary/50 rounded-[20px] transition-all group-hover:-rotate-6 group-hover:-translate-y-14 group-hover:translate-x-3 z-[0]"></div>
+        <div className="absolute origin-bottom-right inset-0 bg-gradient-to-r from-white to-secondary/50 rounded-[20px] -translate-y-6 md:translate-y-0 transition-all group-hover:-rotate-6 group-hover:-translate-y-14 group-hover:translate-x-3 z-[0]"></div>
       </motion.div>
 
       <motion.div
@@ -53,7 +53,7 @@ const MisionVisionHistory = () => {
             efficiency, and innovation in the renewable energy industry.
           </p>
         </div>
-        <div className=" absolute inset-0 bg-gradient-to-r from-white to-secondary/50 rounded-[20px] z-[0]"></div>
+        <div className="absolute inset-0 bg-gradient-to-r -translate-y-6 md:translate-y-0 from-white to-secondary/50 rounded-[20px] z-[0]"></div>
       </motion.div>
       <motion.div
         className="relative group"
@@ -76,7 +76,7 @@ const MisionVisionHistory = () => {
             countries through our three international offices.
           </p>
         </div>
-        <div className="absolute origin-bottom-left inset-0 bg-gradient-to-r from-white to-secondary/50 rounded-[20px] transition-all group-hover:rotate-6 group-hover:-translate-y-14 group-hover:translate-x-8 z-[0]"></div>
+        <div className="absolute origin-bottom-left inset-0 bg-gradient-to-r from-white to-secondary/50 rounded-[20px] -translate-y-6 md:translate-y-0 transition-all group-hover:rotate-6 group-hover:-translate-y-14 group-hover:translate-x-8 z-[0]"></div>
       </motion.div>
     </div>
   );

@@ -140,7 +140,7 @@ html {
     width: 100%;
 }
 
-.blog-container figure.media div{
+.blog-container figure.media div {
     height: 100%;
 }
 
@@ -196,6 +196,7 @@ html {
 }
 
 /* ------------- */
+
 .bg-home {
     border-radius: 20px;
     opacity: 0.3;
@@ -208,4 +209,36 @@ html {
     opacity: 0.5;
     background: rgba(19, 19, 19, 0.28);
     mix-blend-mode: multiply;
+}
+
+/* ------------- */
+
+.card-miembro {
+    width: min(100%, 276px);
+}
+
+@media screen and (min-width: 640px) {
+    .card-miembro {
+        width: min(100%, 376px);
+    }
+}
+
+/* ----Slider cards success cases */
+
+.swiper-blogs {
+
+    .swiper-pagination{
+        bottom: -3px !important;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #BACCE6;
+    }
+    .swiper-pagination-bullet-active {
+        width: 60px !important;
+        transition: all 0.5s ease-in-out;
+        background-color: transparent;
+        border-radius: 25rem;
+        background: linear-gradient(90.12deg, #FFFFFF -1.27%, #BACCE6 99.9%);
+    }
 }

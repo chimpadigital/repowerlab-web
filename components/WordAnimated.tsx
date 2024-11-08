@@ -22,7 +22,11 @@ export default function WordAnimated({
   }, []);
 
   return (
-    <p ref={element} className="paragraph font-light ">
+    <p
+      ref={element}
+      className="paragraph font-light"
+      style={{ fontSize: "inherit" }}
+    >
       {words &&
         words.map((word: any, i: any) => {
           const start = i / words.length;
@@ -57,7 +61,7 @@ function Word({
   if (word.startsWith("**")) {
     word = word.replace("**", "");
     return (
-      <span className="word font-light ">
+      <span className="word font-light text-2xl">
         <strong className="shadow font-medium text-inherit">{word}</strong>
         <motion.strong style={{ opacity }} className="text-inherit font-medium">
           {word}
