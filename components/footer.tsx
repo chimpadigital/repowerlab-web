@@ -40,16 +40,16 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full flex items-center justify-center text-primary mt-4 px-6 min-h-[400px]  mb-8">
+    <footer className="w-full flex items-center justify-center text-primary mt-4 lg:px-6 px-4 min-h-[400px]  md:mb-8 mb-[120px]">
       <div className="relative flex justify-center flex-col items-center w-full h-full py-[40px] min-h-[400px] px-14">
-        <div className="relative w-full flex justify-between pt-6 z-10">
+        <div className="relative w-full grow flex flex-col md:flex-row justify-between pt-6 z-10">
           <div>
-            <Logo className="w-[300px] h-auto" />
+            <Logo className="w-full md:w-[300px] h-auto" />
           </div>
           <div>
 
             <div className="grid grid-cols-3 gap-12 ">
-              <div className="md:grid-cols-1 grid-cols-3">
+              <div className="md:col-span-1 col-span-3 hidden md:block">
                 <h5 className={subtitle({ colors: "primary" })}>Menu</h5>
                 <div className="pt-[30px]">
                   <div className="flex flex-col ">
@@ -81,7 +81,7 @@ export default function Footer() {
                   </div >
                 </div>
               </div>
-              <div className="md:grid-cols-1 grid-cols-3">
+              <div className="md:col-span-1 col-span-3 hidden md:block">
                 <h5 className={subtitle({ colors: "primary" })}>Products</h5>
                 <div className="pt-[30px]">
                   <div className="flex flex-col">
@@ -98,10 +98,10 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="md:grid-cols-1 grid-cols-3">
-                <h5 className={subtitle({ colors: "primary" })}>Follow</h5>
+              <div className="md:col-span-1 col-span-3">
+                <h5 className={subtitle({ colors: "primary" }) + " hidden md:block"}>Follow</h5>
                 <div className="pt-[60px]">
-                  <div className="flex flex-col gap-[30px] ps-6">
+                  <div className="flex md:flex-col gap-[30px] justify-center md:justify-start md:ps-6">
                     <Link className="text-primary fill-primary" href="https://www.linkedin.com/company/repowerlab-llc/" target="_blank" rel="noopener noreferrer">
                       <LinkedInIcon width={22} height={22} />
                     </Link>
@@ -117,7 +117,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="w-full relative container z-10 flex justify-end">
+        <div className="w-full relative container z-10 justify-end hidden md:flex">
           <Link
             href="mailto:info@repowerlab.com"
             className="text-[28px] text-primary font-bold "
@@ -131,7 +131,14 @@ export default function Footer() {
           fill
           src={"/images/shared/Footer.webp"}
           alt="footer"
-          className="rounded-[25px] object-cover mx-auto h-full"
+          className="rounded-[25px] object-cover mx-auto hidden md:block h-full"
+        ></Image>
+        <Image
+          quality={100}
+          fill
+          src={"/images/shared/footermob.png"}
+          alt="footer"
+          className="rounded-[25px] object-cover mx-auto h-full block md:hidden"
         ></Image>
       </div>
     </footer>

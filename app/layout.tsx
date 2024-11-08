@@ -7,6 +7,8 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { Navbar } from "@/components/navbar";
 import Footer from "@/components/footer";
+import FixedMenu from "@/components/FixedMobMenu";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export const metadata: Metadata = {
   title: {
@@ -18,6 +20,16 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
 };
+
+
+export async function getStaticProps({ locale }: any) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])), // Cargar el archivo de traducción 'common' según el idioma
+    },
+  };
+}
+
 
 export default function RootLayout({
   children,
@@ -32,7 +44,9 @@ export default function RootLayout({
           <div className="relative flex flex-col  mt-[40px]">
             <Navbar />
             <main className="mx-auto flex-grow w-full">{children}</main>
+            <FixedMenu />
             <Footer />
+
           </div>
         </Providers>
       </body>

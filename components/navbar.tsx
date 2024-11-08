@@ -15,6 +15,7 @@ import useScrollTop from "@/utils/useTopCheck";
 import { useDisableBodyScroll } from '@/utils/preventScroll'
 import Link from "next/link";
 import LangChange from "./LangChange";
+import { useTranslation } from "next-i18next";
 
 
 export const Navbar = () => {
@@ -28,29 +29,40 @@ export const Navbar = () => {
     backdropFilter: "blur(10px)",
   }
 
+  const { t } = useTranslation()
+
   return (
     <>
       <div className="sticky top-[40px] mt-[20px] mb-[-100px] z-50 text-white w-full flex justify-center">
         <div className="container px-6">
-          <div className="flex justify-between">
+          <div className="flex justify-center lg:justify-between">
             {
               active ?
-                <div className={"gap-3 max-w-fit py-4 px-6 relative  transition-all duration-[600ms] rounded-full " } >
+                <div className={"gap-3 max-w-fit md:py-4 py-2 px-6 relative  transition-all duration-[600ms] rounded-full "} >
 
-                  <Link className="flex justify-start block  items-center gap-1" href="/">
-                    <LogoRepower className={`${active ? 'text-primary' : 'text-white'} transition-all duration-[600]`} />
+                  <Link className="flex justify-between md:justify-start block  items-center gap-1" href="/">
+                    <LogoRepower className={`${active ? 'text-primary' : 'text-white'} w-[54%] md:w-[193px] transition-all duration-[600]`} />
+                    {t("greetings")}
+                    <div className="md:hidden flex gap-1 items-center">
+                      <LangChange />
+                      <ProfileIcon />
+                    </div>
                   </Link>
                 </div>
 
                 :
-                <div className={`gap-3 max-w-fit py-4 px-6 relative  transition-all duration-[600ms] rounded-full ${isAtBottom ? "opacity-0" : ""}`}style={!isAtTop ? bgNavStyle : {}}>
+                <div className={`gap-3 max-w-fit md:py-4 py-2 px-6 relative  transition-all duration-[600ms] rounded-full ${isAtBottom ? "opacity-0" : ""}`} style={!isAtTop ? bgNavStyle : {}}>
 
-                  <Link className="flex justify-start block  items-center gap-1" href="/">
-                    <LogoRepower className={`${active ? 'text-primary' : 'text-white'} transition-all duration-[600]`} />
+                  <Link className="flex justify-start justify-between md:justify-start block  items-center gap-1" href="/">
+                    <LogoRepower className={`${active ? 'text-primary' : 'text-white'} w-[54%] md:w-[193px]  transition-all duration-[600]`} />
+                    <div className="md:hidden flex gap-1 items-center">
+                      <LangChange />
+                      <ProfileIcon />
+                    </div>
                   </Link>
                 </div>
             }
-            <div className="flex justify-end items-center w-full gap-4">
+            <div className="lg:flex hidden justify-end items-center w-full gap-4">
 
               {
                 active
