@@ -13,7 +13,7 @@ const BlogListGridMobile = () => {
     const getBlogs = async () => {
       try {
         const response = await axios.get(
-          `https://api.repowerlab.chimpance.digital/api/entries?page=${currentPage}&per_page=4&sort=-created_at`
+          `https://api.repowerlab.chimpance.digital/api/entries?page=${currentPage}&per_page=3&sort=-created_at`
         );
 
         if (response?.status === 200) {
@@ -44,11 +44,6 @@ const BlogListGridMobile = () => {
         {BlogList[2] && (
           <div className="lg:border-r xl:border-none border-grey-600 w-full  grid  place-items-center">
             <CardBlog blog={BlogList[2]} />
-          </div>
-        )}
-        {BlogList[3] && (
-          <div className="xl:border-r border-grey-600 w-full  grid  place-items-center">
-            <CardBlog blog={BlogList[3]} />
           </div>
         )}
       </div>
