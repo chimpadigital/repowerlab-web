@@ -40,6 +40,7 @@ export default function SuccesCases() {
             }
         };
 
+
         getBlogs();
     }, [currentPage]);
     return (

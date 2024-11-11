@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
+import {Link} from '@/i18n/routing';
 import { ArrowRight } from './icons'
 
 export default function ProductCard({ title, img, height, href, description }: { href: string, title: string, img: string, height: string, description?: string }) {
@@ -40,7 +40,7 @@ export default function ProductCard({ title, img, height, href, description }: {
                             <div className="flex w-full justify-between">
 
                                 <h6 dangerouslySetInnerHTML={{ __html: title }}></h6>
-                                <motion.div variants={variantFlecha} transition={{ duration: 0.6 }} animate={open ? "open" : "closed"} className="w-12 h-12 bg-[#C5C5C526] right-0 relative z-10 rounded-full border-white border cursor-pointer" style={{}}>
+                                <motion.div variants={variantFlecha} transition={{ duration: 0.6 }} animate={open ? "open" : "closed"} className="w-12 h-12 bg-[#C5C5C526] right-0 relative z-10 text-white rounded-full border-white border cursor-pointer" style={{}}>
                                     <div className="flex h-full w-full justify-center items-center">
                                         <ArrowRight />
                                     </div>

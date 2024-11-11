@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
-import Link from "next/link";
+import {Link} from '@/i18n/routing';
 
 interface HeroBreadcrumbI {
   img: string;

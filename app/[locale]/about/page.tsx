@@ -9,7 +9,7 @@ import MisionVisionHistory from "@/components/pages/about/MisionVisionHistory";
 import Partners from "@/components/pages/about/Partners";
 import WhyChooseRepowerlab from "@/components/pages/about/WhyChooseRepowerlab";
 import { button, title } from "@/components/primitives";
-import Link from "next/link";
+import { Link } from '@/i18n/routing';
 
 export default function AboutPage() {
   return (
