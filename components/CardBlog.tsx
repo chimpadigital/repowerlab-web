@@ -2,7 +2,7 @@
 import React from 'react'
 import { subtitle } from './primitives';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { Avatar, AvatarGroup, AvatarIcon } from "@nextui-org/avatar";
 
 export interface BlogI {

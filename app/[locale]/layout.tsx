@@ -1,6 +1,10 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { routing } from '@/i18n/routing';
 
 import { Providers } from "./providers";
 
@@ -22,33 +26,31 @@ export const metadata: Metadata = {
 };
 
 
-export async function getStaticProps({ locale }: any) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common'])), // Cargar el archivo de traducción 'common' según el idioma
-    },
-  };
-}
 
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params: { locale }
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
+  const messages = await getMessages();
   return (
-    <html suppressHydrationWarning lang="en">
+    <html suppressHydrationWarning lang={locale}>
       <head />
       <body className={clsx("min-h-screen bg-background antialiased")}>
-        <Providers>
-          <div className="relative flex flex-col  mt-[40px]">
-            <Navbar />
-            <main className="mx-auto flex-grow w-full">{children}</main>
-            <FixedMenu />
-            <Footer />
+        <NextIntlClientProvider messages={messages}>
+          <Providers>
+            <div className="relative flex flex-col  mt-[40px]">
+              <Navbar />
+              <main className="mx-auto flex-grow w-full">{children}</main>
+              <FixedMenu />
+              <Footer />
 
-          </div>
-        </Providers>
+            </div>
+          </Providers>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

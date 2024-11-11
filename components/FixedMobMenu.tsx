@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { CartIcon, CircularIcon, ContactIcon, HomeIcon, MenuICon } from './FixedIcons'
 import { usePathname } from 'next/navigation'
-import Link from 'next/link'
+import {Link} from '@/i18n/routing';
 import MenuMobile from './MenuMobile'
 
 export default function FixedMenu() {

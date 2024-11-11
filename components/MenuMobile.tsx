@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
+import { Link } from '@/i18n/routing';
 import { globalRoutes } from '@/utils/globalRoutes'
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import { ArrowMenu } from './icons'

@@ -6,7 +6,7 @@ import WordAnimated from '@/components/WordAnimated'
 import ThreeContainer from '@/three/ThreeContainer'
 import { extendVariants } from '@nextui-org/system'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
+import {Link} from '@/i18n/routing';
 import React, { useState } from 'react'
 
 export default function RepowerlabImpact() {

@@ -3,7 +3,7 @@ import Hero from '@/components/pages/how-we-work/Hero'
 import JoinOurMission from '@/components/pages/how-we-work/JoinOurMission'
 import { button, title } from '@/components/primitives'
 import React from 'react'
-import Link from 'next/link'
+import { Link } from '@/i18n/routing';
 
 export default function page() {
     return (

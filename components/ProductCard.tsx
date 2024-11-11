@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
+import {Link} from '@/i18n/routing';
 import { ArrowRight } from './icons'
 
 export default function ProductCard({ title, img, height, href, description }: { href: string, title: string, img: string, height: string, description?: string }) {

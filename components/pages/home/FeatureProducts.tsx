@@ -1,7 +1,7 @@
 import ScrollProducts from '@/components/ScrollProducts'
 import React from 'react'
 import { button, title } from '@/components/primitives'
-import Link from 'next/link'
+import {Link} from '@/i18n/routing';
 
 export default function FeatureProducts() {
     return (

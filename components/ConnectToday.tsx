@@ -5,7 +5,7 @@ import {
   TwitterIcon,
 } from "@/components/icons";
 import { button, subtitle, title } from "@/components/primitives";
-import Link from "next/link";
+import {Link} from '@/i18n/routing';
 import React from "react";
 import flagUSA from "@/public/images/contact-us/flagUSA.png";
 import flagColombia from "@/public/images/contact-us/flagColombia.png";

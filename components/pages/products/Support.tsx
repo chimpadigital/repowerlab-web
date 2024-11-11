@@ -3,7 +3,7 @@ import { title } from '@/components/primitives'
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
+import {Link} from '@/i18n/routing';
 
 
 export default function Support() {

@@ -14,7 +14,7 @@ import {
   warehousing,
 } from "@/utils/ourServicesAccordeons";
 import GreenBanner from "@/components/GreenBanner";
-import Link from "next/link";
+import { Link } from '@/i18n/routing';
 
 export default function page() {
   const breadcrumbs = [

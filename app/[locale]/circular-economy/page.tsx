@@ -4,7 +4,7 @@ import MolinoAnimation from "@/components/pages/circular-economy/MolinoAnimation
 import SolutionsAccordeon from "@/components/pages/circular-economy/SolutionsAccordeon";
 import SolutionsCards from "@/components/pages/circular-economy/SolutionsCards";
 import { button, title } from "@/components/primitives";
-import Link from "next/link";
+import {Link} from '@/i18n/routing';
 import React from "react";
 
 const CircularEconomy = () => {

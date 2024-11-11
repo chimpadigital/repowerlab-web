@@ -1,7 +1,7 @@
 import { ArrowButtonIcon } from '@/components/icons'
 import { title } from '@/components/primitives'
 import ProductCard from '@/components/ProductCard'
-import Link from 'next/link'
+import {Link} from '@/i18n/routing';
 import React from 'react'
 
 export default function Products() {

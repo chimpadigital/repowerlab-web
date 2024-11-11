@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { useScroll, useTransform, motion } from 'framer-motion'
 import { PowerIcon, RotorIcon, TowerIcon, WindIcon } from './icons'
-import Link from 'next/link'
+import {Link} from '@/i18n/routing';
 const turbine = {
     title: "ECOTECNIA E44",
     power: "45 HH tubular steel tower",
