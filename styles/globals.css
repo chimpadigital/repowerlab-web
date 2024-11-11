@@ -64,18 +64,22 @@ html {
     }
 }
 
-.swiper-wrapper {
-    display: flex;
-    align-items: center;
-    transition-timing-function: linear !important;
-    position: relative;
-    user-select: none;
-    -webkit-touch-callout: none;
-    backface-visibility: hidden;
-}
 
-.swiper-slide {
-    width: auto !important;
+.mySwiper-solutions {
+
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
+        transition-timing-function: linear !important;
+        position: relative;
+        user-select: none;
+        -webkit-touch-callout: none;
+        backface-visibility: hidden;
+    }
+
+    .swiper-slide {
+        width: auto !important;
+    }
 }
 
 /* // Arreglando estilos de listas para blog ↓ */
@@ -224,18 +228,33 @@ html {
 }
 
 /* ----Slider cards success cases */
-.swiper.swiper-blogs{
-    width: 100%;
-}
-.swiper {
 
-    .swiper-pagination{
+.swiper {
+    height: 100%;
+    width: 100%;
+
+    .swiper-slide {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+.swiper-pagination-blogs {
+
+
+    .swiper-pagination {
         bottom: -3px !important;
     }
 
     .swiper-pagination-bullet {
         background-color: #1c474194;
     }
+
     .swiper-pagination-bullet-active {
         width: 60px !important;
         transition: all 0.5s ease-in-out;
