@@ -224,21 +224,23 @@ html {
 }
 
 /* ----Slider cards success cases */
-
-.swiper-blogs {
+.swiper.swiper-blogs{
+    width: 100%;
+}
+.swiper {
 
     .swiper-pagination{
         bottom: -3px !important;
     }
 
     .swiper-pagination-bullet {
-        background-color: #BACCE6;
+        background-color: #1c474194;
     }
     .swiper-pagination-bullet-active {
         width: 60px !important;
         transition: all 0.5s ease-in-out;
         background-color: transparent;
         border-radius: 25rem;
-        background: linear-gradient(90.12deg, #FFFFFF -1.27%, #BACCE6 99.9%);
+        background: linear-gradient(90.12deg, #FFFFFF -1.27%, #1C4741 99.9%);
     }
 }

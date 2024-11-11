@@ -9,7 +9,7 @@ import MisionVisionHistory from "@/components/pages/about/MisionVisionHistory";
 import Partners from "@/components/pages/about/Partners";
 import WhyChooseRepowerlab from "@/components/pages/about/WhyChooseRepowerlab";
 import { button, title } from "@/components/primitives";
-import { Link } from '@/i18n/routing';
+import { Link } from "@/i18n/routing";
 
 export default function AboutPage() {
   return (
@@ -32,7 +32,7 @@ export default function AboutPage() {
         >
           <div className="flex mt-10">
             <h4 className={`text-white mr-auto text-left ${title()}`}>
-              Company
+              Our Company
             </h4>
           </div>
         </HeroBreadcrumb>
@@ -51,9 +51,13 @@ export default function AboutPage() {
           <div className="flex w-full flex-col lg:flex-row md:items-center gap-10">
             <div className="flex-1 gap-10 text-start flex items-center justify-between">
               <div className="flex-1">
-                <h4 className={`${title()} !block mb-3 leading-snug max-w-[50ch] tracking-wider`}>
+                <h4
+                  className={`${title()} !block mb-3 leading-snug max-w-[50ch] tracking-wider`}
+                >
                   Join us on this journey to{" "}
-                  <span className={`${title()} leading-snug text-secondary tracking-wider`}>
+                  <span
+                    className={`${title()} leading-snug text-secondary tracking-wider`}
+                  >
                     transform wind energy assets and create a cleaner, greener
                     world.
                   </span>
