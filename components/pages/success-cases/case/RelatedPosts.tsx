@@ -57,10 +57,14 @@ const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
           )}
         </div>
       </section>
-      <section className=" md:hidden">
+      <section className="md:hidden">
+        <header className="px-8 text-primary">
+          <p className="text-base font-light">Related posts</p>
+          <h4 className={` ${title()}`}>You may also like</h4>
+        </header>
         <Swiper
-          slidesPerView={1.2}
-          spaceBetween={10}
+          slidesPerView={1}
+          spaceBetween={0}
           pagination={{
             clickable: true,
           }}
