@@ -68,18 +68,16 @@ export default function CardBlog({ blog, }: { blog: BlogI }) {
 
         <Image width={400} height={200} alt="" className="w-full object-cover h-[200px] rounded-[10px] " src={blog?.images[0]?.url || "/images/our-services/e2.jpg"} />
 
-        <div className={`text-[1.2rem] font-light !text-grey-parrafo`}>
+        <div className={`text-[1.2rem] font-light !text-[#444444]`}>
           {blog?.category}
         </div>
-
         <div className="flex justify-between items-center text-grey-parrafo">
           <div className="flex gap-2 items-center">
             <Avatar name="Victoria Galeano" src={blog?.images[0] ? '/images/home/products/1.webp' : undefined} />
             <p>Victoria Galeano</p>
           </div>
-          <p >{fechaCambiada}</p>
+          <p>{fechaCambiada}</p>
         </div>
-
         <div className="w-full flex justify-end">
           <Link href={`/success-cases/${blog?.slug || '-'}/${blog?.id}`} className='font-bold flex gap-2 items-center text-primary cursor-pointer'>
             Read More
