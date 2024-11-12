@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const ContactUs = () => {
   return (
-    <section className="contact-us w-full px-3 md:px-6">
+    <section className="contact-us w-full px-4 md:px-6">
       <div className="w-full  relative">
         <div className="w-full relative flex justify-center overflow-hidden h-full min-h-[620px] px-6 rounded-[20px] pt-[100px]">
           <Image
