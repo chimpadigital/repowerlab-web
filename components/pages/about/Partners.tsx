@@ -54,11 +54,7 @@ const Partners = () => {
           slidesPerView={"auto"}
           spaceBetween={10}
           grabCursor={true}
-          breakpoints={{
-            640: {
-              spaceBetween: 27,
-            },
-          }}
+          className="slider-parners"
         >
           {partners.map((partner, index) => {
             return (

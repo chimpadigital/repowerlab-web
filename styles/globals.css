@@ -82,6 +82,7 @@ html {
     }
 }
 
+
 /* // Arreglando estilos de listas para blog ↓ */
 .blog-container blockquote {
     border-left: 5px solid #ccc;
@@ -227,6 +228,9 @@ html {
     }
 }
 
+
+
+
 /* ----Slider cards success cases */
 
 .swiper {
@@ -240,12 +244,9 @@ html {
         justify-content: center;
         align-items: center;
     }
-
-
 }
 
 .swiper-pagination-blogs {
-
 
     .swiper-pagination {
         bottom: -3px !important;
@@ -261,5 +262,13 @@ html {
         background-color: transparent;
         border-radius: 25rem;
         background: linear-gradient(90.12deg, #FFFFFF -1.27%, #1C4741 99.9%);
+    }
+}
+
+/* Slider parners */
+
+.slider-parners {
+    .swiper-slide {
+        width: auto !important;
     }
 }
