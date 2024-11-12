@@ -22,7 +22,7 @@ const SuccessCases = () => {
             <h4 className={`text-white mr-auto text-left ${title()}`}>
               Success cases
             </h4>
-            <p className="mt-7 text-xl">
+            <p className="mt-7 text-sm md:text-xl">
               Welcome to the RepowerLab Success Cases
             </p>
           </div>
