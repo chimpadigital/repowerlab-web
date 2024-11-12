@@ -107,7 +107,7 @@ export default function SolutionsCarrusel({ cards }) {
       <div className="block md:hidden">
         <div className="mt-14 shadow-md rounded-l-lg rounded-r-lg md:rounded-r-none">
           <swiper-container
-            className="mySwiper"
+            className="mySwiper-solutions"
             pagination={true}
             paginationDynamicBullets={true}
             spaceBetween={"0px"}
