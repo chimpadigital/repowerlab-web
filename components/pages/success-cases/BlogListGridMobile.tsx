@@ -30,7 +30,7 @@ const BlogListGridMobile = () => {
 
   return (
     <div className="md:hidden">
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-2">
         {BlogList[0] && (
           <div className="lg:border-r border-grey-600 w-full  grid  place-items-center">
             <CardBlog blog={BlogList[0]} />

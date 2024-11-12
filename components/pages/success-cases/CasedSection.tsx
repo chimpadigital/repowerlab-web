@@ -34,7 +34,7 @@ const CasedSection = () => {
         return (
           <div
             key={index}
-            className="w-fit relative group px-7 md:px-16 py-12 origin-top transition-all bg-gradient-to-r from-[#fff] to-90% to-[#B3C5DF] shadow-[5px_5px_4px_0px_#0000001A] rounded-[20px] after:inset-0 after:absolute after:bg-grey-100 after:rounded-[20px]  after:transition-all hover:md:after:opacity-0"
+            className="w-fit relative group px-7 md:px-16 py-8 origin-top transition-all bg-gradient-to-r from-[#fff] to-90% to-[#B3C5DF] shadow-[5px_5px_4px_0px_#0000001A] rounded-[20px] after:inset-0 after:absolute after:bg-grey-100 after:rounded-[20px]  after:transition-all hover:md:after:opacity-0"
             style={{
               background:
                 "linear-gradient(270deg, #B3C5DF -42.56%, #FFFFFF 57.02%)",
@@ -44,11 +44,11 @@ const CasedSection = () => {
               <div className="mb-2 md:mb-10 group-hover:md:opacity-0 w-fit transition-all rounded-full scale-75 -translate-x-2 md:translate-x-0 md:scale-100 h-16 aspect-square bg-secondary grid place-items-center">
                 {item.icon}
               </div>
-              <p className="max-w-[25ch] hidden md:block h-full flex-1 text-xl transition-all group-hover:md:-translate-y-24 text-primary font-medium md:font-light">
+              <p className="max-w-[25ch] hidden md:block h-full flex-1 text-xl transition-all group-hover:md:-translate-y-24 text-primary ">
                 {item.text}
               </p>
 
-              <p className="max-w-[25ch] md:hidden h-full flex-1 text-xl transition-all group-hover:md:-translate-y-24 text-primary font-medium md:font-light">
+              <p className="max-w-[25ch] md:hidden h-full flex-1 text-xl transition-all group-hover:md:-translate-y-24 text-primary">
                 {item.textMobile}
               </p>
             </div>
