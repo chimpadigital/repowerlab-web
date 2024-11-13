@@ -21,10 +21,10 @@ export default function MolinoAnimation() {
     return (
         <section className="w-screen flex justify-center">
             <div className="w-screen" ref={ref} style={{ height: `${dataMolino.length * 100}vh` }}>
-                <div className="h-screen h-full items-center flex justify-center  sticky top-0">
+                <div className="h-[100dvh] h-full items-center flex justify-center  sticky top-0">
                     <Image width={400} height={400} alt="bg" className='absolute left-0 bottom-[-100px]' src="/images/circular-economy/bg_wind.png"></Image>
                     <div className="container px-6">
-                        <div className="grid h-screen h-full items-center grid-cols-1 lg:grid-cols-2 sticky top-0">
+                        <div className="grid h-[100dvh] h-full items-center grid-cols-1 lg:grid-cols-2 sticky top-0">
 
                             <div className="col-span-1 flex items-center justify-center">
                                 <RecursoSvg className="lg:w-full lg:h-auto h-[45vh]" rotate={rotate} numbers={numbers} />

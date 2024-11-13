@@ -59,7 +59,7 @@ export default function ScrollAccordion({
     <section
       id={id}
       ref={ref}
-      className={`accordeon-${id} mt-4 text-[#000] flex justify-center w-full h-full relative `}
+      className={`accordeon-${id} mt-4 text-[#000]  justify-center hidden md:flex w-full h-full relative `}
       style={{ height: `${items.length * .85 * 100}vh` }}
     >
       <div className="container px-6">
