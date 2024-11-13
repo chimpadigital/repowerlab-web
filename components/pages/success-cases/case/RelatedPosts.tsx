@@ -57,16 +57,17 @@ const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
           )}
         </div>
       </section>
-      <section className="md:hidden">
+      <section className="md:hidden mt-10">
         <header className="px-8 text-primary">
           <p className="text-base font-light">Related posts</p>
           <h4 className={` ${title()}`}>You may also like</h4>
         </header>
         <Swiper
-          slidesPerView={1}
+          slidesPerView={1.2}
           spaceBetween={0}
           pagination={{
             clickable: true,
+            el: ".swiper-pagination-blogs",
           }}
           modules={[Pagination]}
           className="swiper-blogs"
@@ -88,6 +89,7 @@ const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
             </SwiperSlide>
           )}
         </Swiper>
+        <div className="swiper-pagination-blogs h-10 flex justify-center gap-2 mt-2"></div>
       </section>
     </div>
   );

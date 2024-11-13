@@ -6,14 +6,18 @@ import {Link} from '@/i18n/routing';
 export default function FeatureProducts() {
     return (
         <div className='pb-[50px]'>
-            <div className='flex justify-center items-center flex-col pt-8 pb-[80px]'>
-                <h3 className={`${title()} text-primary mb-3 !block`}>
+            <div className='flex justify-center items-center flex-col pt-8 px-4 pb-8 md:pb-[80px]'>
+                <h3 className={`${title()} text-primary mr-auto md:mr-0 mb-3 !block`}>
                     Feature Products
                 </h3>
-                <p className="text-grey-parrafo max-w-[700px] text-center">Welcome to the RepowerLab Marketplace, your destination for high-quality wind turbines, spare parts, and recycled materials, all thoroughly inspected for your energy asset needs.</p>
+                <p className="text-grey-parrafo max-w-[700px] text-center hidden md:block">Welcome to the RepowerLab Marketplace, your destination for high-quality wind turbines, spare parts, and recycled materials, all thoroughly inspected for your energy asset needs.</p>
+                <p className='text-grey-parrafo text-sm md:hidden'>
+                Visit our Marketplace for refurbished turbines, spare parts, and reclaimed materials—giving wind components 
+                a second life.
+                </p>
             </div>
             <ScrollProducts />
-            <div className="w-full py-[60px] flex justify-center items-center">
+            <div className="w-full py-[60px]  justify-center items-center hidden md:flex">
                 <Link href="marketplace" className={`${button()} flex gap-2 items-center`}>
                     Go to Marketplace 
                     <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
