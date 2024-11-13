@@ -40,7 +40,7 @@ export const circularEconomySolutions = [
     {
         title: "Maintenance and Repair",
         description:
-            "Extending the life of wind turbines through regular maintenance and advanced repair techniques.",
+            "Implementing advanced diagnostic and inspection techniques to certify older turbines for extended operation.",
         img: "/images/circular-economy/circular-economy-solution.webp",
     },
     {
