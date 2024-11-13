@@ -20,7 +20,7 @@ export default function FixedMenu() {
   return (
     <>
       <MenuMobile open={open} setOpen={setOpen} />
-      <div className='fixed w-screen bottom-6 left-0 px-4 z-[999] flex md:hidden justify-center'>
+      <div className='fixed w-full bottom-6 left-0 px-4 z-[999] flex md:hidden justify-center'>
         <div className="w-full flex px-6 gap-4 justify-between rounded-[20px] py-4 text-white" style={bgNavStyle}>
           <Link href="/" className='flex flex-col block items-center gap-1 justify-center'>
             <HomeIcon className="w-full h-auto" />

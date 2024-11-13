@@ -19,24 +19,31 @@ export default function MolinoAnimation() {
     const numbers = useTransform(scrollYProgress, [0, 1], [0, dataMolino.length])
 
     return (
-        <section className="w-screen flex justify-center">
-            <div className="w-screen" ref={ref} style={{ height: `${dataMolino.length * 100}vh` }}>
-                <div className="h-[100dvh] h-full items-center flex justify-center  sticky top-0">
+        <section className="w-full flex justify-center">
+            <div className="w-full relative" ref={ref} style={{ height: `${dataMolino.length * 100}vh` }}>
+                    <h4 className={title({ color: "secondary", size: "md", weight: "normal" }) + " md:hidden px-6 absolute block"}>
+                        <span className='text-primary'>
+                            RepowerLab's {" "}
+                        </span>
+                        Circular Economy Business Model
+                    </h4>
+                <div className="h-[100vh] items-center flex justify-center  sticky top-0">
                     <Image width={400} height={400} alt="bg" className='absolute left-0 bottom-[-100px]' src="/images/circular-economy/bg_wind.png"></Image>
                     <div className="container px-6">
-                        <div className="grid h-[100dvh] h-full items-center grid-cols-1 lg:grid-cols-2 sticky top-0">
+                        <div className="grid h-[100vh] items-center grid-cols-1 lg:grid-cols-2 pt-[80px]">
 
-                            <div className="col-span-1 flex items-center justify-center">
-                                <RecursoSvg className="lg:w-full lg:h-auto h-[45vh]" rotate={rotate} numbers={numbers} />
+                            <div className="col-span-1 flex items-center justify-center w-full overflow-hidden">
+                                <RecursoSvg preserveAspectRatio="xMidYMid slice" className="lg:w-full lg:h-auto h-[57vh] md:h-[45vh]" rotate={rotate} numbers={numbers} />
                             </div>
                             <div className="col-span-1">
-                                <div className='w-[420px]'>
-                                    <h4 className={title({ color: "secondary", size: "md", weight: "normal" })}>
+                                <div className='w-full md:w-[420px]'>
+                                    <h4 className={title({ color: "secondary", size: "md", weight: "normal" }) + " hidden md:block"}>
                                         <span className='text-primary'>
                                             RepowerLab's {" "}
                                         </span>
-                                        Circular Economy Business Model</h4>
-                                    <div className="h-[45vh] w-full relative mt-8">
+                                        Circular Economy Business Model
+                                    </h4>
+                                    <div className="h-[45vh] w-full relative md:mt-8">
                                         {
                                             dataMolino.map((el, i) => (
                                                 <Text key={"data" + i} numbers={numbers} data={el} index={i} />
@@ -55,15 +62,19 @@ export default function MolinoAnimation() {
 
 const Text = ({ numbers, data, index }: { index: number, numbers: any, data: { title: string, description: string } }) => {
 
-    const opacity = useTransform(numbers, [index - .5, index], [0, 1])
+    const opacity = useTransform(numbers, [index - 0.5, index, index, index + 0.5], [0, 1, 1, 0])
+    const opacity2 = useTransform(numbers, [index, index + 0.5], [1, 0])
+    const opacityF = useTransform(numbers, [index - 0.5, index], [0, 1])
 
     return (
-        <motion.div className="flex items-center flex-col absolute p-2 top-0 w-full h-full bg-white" style={{ zIndex: index, opacity: index == 0 ? 1 : opacity }}>
+        <motion.div
+            className="flex items-center flex-col absolute p-2 top-[-40px] md:top-0 w-full h-full"
+            style={{ zIndex: index, opacity: index == 0 ? opacity2 : index == dataMolino.length - 1 ? opacityF : opacity }}>
             <div className="flex gap-12 items-center w-full">
-                <h5 className="text-[42px] text-primary font-bold">{index + 1}</h5>
+                <h5 className="md:text-[42px] text-[38px] text-primary font-bold">{index + 1}</h5>
                 <h6 className={subtitle({ colors: "primary" })}>{data.title}</h6>
             </div>
-            <Paragraph className='text-primary mt-8 text-[18px] font-light' text={data.description}></Paragraph>
+            <Paragraph className='text-primary mt-2 md:mt-8 md:text-[18px] text-[16px] font-light ' text={data.description}></Paragraph>
         </motion.div>
     )
 }

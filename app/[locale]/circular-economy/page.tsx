@@ -64,7 +64,7 @@ const CircularEconomy = () => {
                 </p>
               </div>
             </div>
-            <div className="flex relative -left-3">
+            <div className="flex relative mt-4 md:mt-0 -left-3">
               <Link
                 href="/about/contact-us"
                 className={`scroll-smooth ${button({

@@ -4,10 +4,12 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { button } from "./primitives";
+import { useWindowSize } from "@/utils/useResize";
+import AccordionMob from "./AccordionMob";
 
-interface ScrollAcordionI {
+export interface ScrollAcordionI {
   imgPosition?: "right" | "left";
-  items: { title: string; description: string | string[]; img: string }[];
+  items: { title: string; description: string; img: string }[];
   titleItems?: string;
   id: string;
   imgText?: string;
@@ -15,7 +17,29 @@ interface ScrollAcordionI {
 
 const fixFirst = 0.3;
 
-export default function ScrollAccordion({
+export default function ScrollAcordion({
+  items,
+  imgPosition = "left",
+  titleItems,
+  id,
+  imgText,
+}: ScrollAcordionI) {
+  const size = useWindowSize()
+  return (
+    <>
+      {
+        size[0] < 1000 ?
+          <section className="pt-4">
+            <AccordionMob items={items} imgPosition={imgPosition} titleItems={titleItems} id={id} imgText={imgText} />
+          </section>
+          :
+          <ScrollAccordionDesk items={items} imgPosition={imgPosition} titleItems={titleItems} id={id} imgText={imgText} />
+      }
+    </>
+  )
+}
+
+export function ScrollAccordionDesk({
   items,
   imgPosition = "left",
   titleItems,

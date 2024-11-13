@@ -2,7 +2,7 @@ import { Button, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader } from
 import React from 'react'
 import { HowWorkI } from './data'
 import { subtitle, title } from '@/components/primitives'
-import { RepowerIcon } from '@/components/navicons'
+import { RepowerIcon } from '@/components/pages/shared/navicons'
 
 
 export default function ModalHowWork({ isOpen, onOpenChange, data, index }: { isOpen: boolean, onOpenChange: any, data: HowWorkI, index: number }) {

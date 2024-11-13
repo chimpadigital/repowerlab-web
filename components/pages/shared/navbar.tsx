@@ -1,20 +1,13 @@
 "use client"
-import {
-  Navbar as NextUINavbar,
-  NavbarContent,
-  NavbarBrand,
-} from "@nextui-org/navbar";
 
-import NextLink from "next/link";
 import LogoRepower from "@/atoms/Logo";
 import Menu from "./Menu";
 import { useEffect, useState } from "react";
 import { CloseIcon, MenuIcon, ProfileIcon, Cart } from "./navicons";
-import { button } from "./primitives";
+import { button } from "../../primitives";
 import useScrollTop from "@/utils/useTopCheck";
-import { useDisableBodyScroll } from '@/utils/preventScroll'
 import {Link} from '@/i18n/routing';
-import LangChange from "./LangChange";
+import LangChange from "../../LangChange";
 import { useTranslations } from 'next-intl';
 
 
@@ -33,8 +26,8 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="sticky top-[40px] mt-[20px] mb-[-100px] z-50 text-white w-full flex justify-center">
-        <div className="container px-6">
+      <div className="sticky md:top-[40px] top-[20px] mt-[20px] mb-[-100px] z-50 text-white w-full flex justify-center">
+        <div className="container px-4 md:px-6">
           <div className="flex justify-center lg:justify-between">
             {
               active ?

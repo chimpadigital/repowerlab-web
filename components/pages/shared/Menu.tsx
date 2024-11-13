@@ -5,7 +5,7 @@ import Image from 'next/image'
 import {Link} from '@/i18n/routing';
 import { globalRoutes } from '@/utils/globalRoutes'
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
-import { ArrowMenu } from './icons'
+import { ArrowMenu } from '../../icons'
 import { RepowerIcon } from './navicons'
 import { usePathname } from 'next/navigation';
 

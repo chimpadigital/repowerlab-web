@@ -9,9 +9,9 @@ import { routing } from '@/i18n/routing';
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
-import { Navbar } from "@/components/navbar";
-import Footer from "@/components/footer";
-import FixedMenu from "@/components/FixedMobMenu";
+import { Navbar } from "@/components/pages/shared/navbar";
+import Footer from "@/components/pages/shared/footer";
+import FixedMenu from "@/components/pages/shared/FixedMobMenu";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export const metadata: Metadata = {

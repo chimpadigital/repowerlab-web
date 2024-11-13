@@ -3,8 +3,8 @@ import React from "react";
 import { Link } from "@nextui-org/link";
 import Image from "next/image";
 import Logo from "@/atoms/Logo";
-import { subtitle } from "./primitives";
-import { FacebookIcon, LinkedInIcon, TwitterIcon } from "./icons";
+import { subtitle } from "../../primitives";
+import { FacebookIcon, LinkedInIcon, TwitterIcon } from "../../icons";
 
 export default function Footer() {
   const linksMenu = [

@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import RotateScroll from '@/components/RotateScroll'
-import { RepowerIcon } from '@/components/navicons'
+import { RepowerIcon } from '@/components/pages/shared/navicons'
 
 export default function MapHome() {
   return (
