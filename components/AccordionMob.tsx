@@ -31,7 +31,17 @@ export default function AccordionMob({
                             <AccordionItem indicator={<Indicator />} key={i} aria-label={`Accordion ${i}`} title={el.title}>
                                 <hr className="w-full border border-primary/75" />
                                 <div className='pt-4'>
-                                    <Paragraph text={el.description} className='text-grey-parrafo' />
+                                    {Array.isArray(el.description) ? (
+                                        <ul>
+                                            {el.description.map((item: any, index: any) => (
+                                                <li className="list-disc ml-4 text-grey-parrafo" key={index}>
+                                                    {item}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    ) : (
+                                        <Paragraph text={el.description} className='text-grey-parrafo' />
+                                    )}
                                 </div>
                             </AccordionItem>
                         ))

@@ -9,7 +9,7 @@ import AccordionMob from "./AccordionMob";
 
 export interface ScrollAcordionI {
   imgPosition?: "right" | "left";
-  items: { title: string; description: string; img: string }[];
+  items: { title: string; description: string | string[]; img: string }[];
   titleItems?: string;
   id: string;
   imgText?: string;
