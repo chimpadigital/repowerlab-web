@@ -64,7 +64,8 @@ const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
         </header>
         <Swiper
           slidesPerView={1.2}
-          spaceBetween={0}
+          spaceBetween={10}
+          grabCursor={true}
           pagination={{
             clickable: true,
             el: ".swiper-pagination-blogs",

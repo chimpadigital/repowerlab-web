@@ -2,7 +2,7 @@ export const repoweringSolutions = [
     {
         title: "Repowering Solutions",
         description:
-            "Repowering involves upgrading existing wind farms with new, higher-capacity turbines. This not only increases energy production but also enhances the efficiency and reliability of wind farms. RepowerLab provides expert consulting and technical analysis to assess the potential of your wind farms for repowering",
+            "Repowering involves upgrading existing wind farms with new, higher-capacity turbines. This not only increases energy production but also enhances the efficiency and reliability of wind farms. RepowerLab provides expert consulting and technical analysis to assess the potential of your wind farms for repowering.",
         img: "/images/circular-economy/repowering-solution.webp",
     },
     {
