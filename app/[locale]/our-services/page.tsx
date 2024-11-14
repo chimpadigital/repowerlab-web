@@ -1,3 +1,4 @@
+"use client";
 import HeroBreadcrumb from "@/components/HeroBreadcrumb";
 import { button, title } from "@/components/primitives";
 import React from "react";
@@ -14,7 +15,7 @@ import {
   warehousing,
 } from "@/utils/ourServicesAccordeons";
 import GreenBanner from "@/components/GreenBanner";
-import { Link } from '@/i18n/routing';
+import { Link } from "@/i18n/routing";
 
 export default function page() {
   const breadcrumbs = [
@@ -46,7 +47,8 @@ export default function page() {
       <div className="mb-10">
         <ServicesList />
       </div>
-      <section className="px-2 md:px-6 mb-14">
+
+      <section className="md:px-6 mb-14">
         <ScrollAccordion items={decommissioning} id="decommissioning" />
         <ScrollAccordion items={repowering} id="repowering" />
         <ScrollAccordion
