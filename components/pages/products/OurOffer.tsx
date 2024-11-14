@@ -204,7 +204,12 @@ export default function OurOffer() {
                   of new and refurbished parts to keep turbines running
                   smoothly. <span className="font-bold">Includes:</span> Blades,
                   gearboxes, generators, control systems, and other key
-                  components.(read more: hipervinculo con pag de spare parts).
+                  components.{" "}
+                  <Link href="turbine-parts" className="underline text-sm">
+                    {" "}
+                    Read more
+                  </Link>
+                  .
                   <br />
                 </p>
               </article>
@@ -222,13 +227,6 @@ export default function OurOffer() {
                   className={`${button()} flex gap-2 items-center hidden md:block`}
                 >
                   Wind turbine parts
-                </Link>
-
-                <Link
-                  href="products/turbine-parts"
-                  className={`md:hidden text-xs text-end ml-auto mt-2 underline`}
-                >
-                  Wind turbine spare parts
                 </Link>
               </div>
             </div>
