@@ -77,9 +77,6 @@ html {
         backface-visibility: hidden;
     }
 
-    .swiper-slide {
-        width: auto !important;
-    }
 }
 
 
@@ -246,9 +243,29 @@ html {
     }
 }
 
+/* Slider parners */
+
+.slider-parners {
+    .swiper-slide {
+        width: auto !important;
+    }
+
+}
+
+/* Slider spare parts */
+.slider-spare-parts {
+    width: 100vw;
+    padding-bottom: 40px !important;
+
+    .swiper-slide {
+        width: 100vw;
+    }
+}
+
+/* estilos bullets de paginacion */
 .swiper-pagination-blogs,
 .swiper-pagination-spare-parts,
-.mySwiper-solutions {
+.swiper-pagination-solutions {
 
     .swiper-pagination {
         bottom: -3px !important;
@@ -264,47 +281,5 @@ html {
         background-color: transparent;
         border-radius: 25rem;
         background: linear-gradient(90.12deg, #FFFFFF -1.27%, #1C4741 99.9%);
-    }
-}
-
-.mySwiper-solutions::part(bullet) {
-    background-color: #1c474194;
-
-}
-
-.mySwiper-solutions::part(bullet-active) {
-    width: 60px !important;
-    transition: all 0.5s ease-in-out;
-    background-color: transparent;
-    border-radius: 25rem;
-    background: linear-gradient(90.12deg, #FFFFFF -1.27%, #1C4741 99.9%);
-}
-
-.swiper-pagination-spare-parts {
-    .swiper-pagination-bullet {
-        background-color: #bacce6;
-    }
-
-    .swiper-pagination-bullet-active {
-        background: linear-gradient(90.12deg, #FFFFFF -1.27%, #BACCE6 99.9%);
-    }
-}
-
-/* Slider parners */
-
-.slider-parners {
-    .swiper-slide {
-        width: auto !important;
-    }
-
-}
-
-/* Slider parners */
-.slider-spare-parts {
-    width: 100vw;
-    padding-bottom: 40px !important;
-
-    .swiper-slide {
-        width: 100vw;
     }
 }

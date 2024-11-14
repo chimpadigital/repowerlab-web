@@ -1,18 +1,20 @@
+"use client"
 import LeftArrow from "./solutions-btns/LeftArrow";
 import RightArrow from "./solutions-btns/RightArrow";
 import { useEffect, useState } from "react";
 
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/navigation";
-
-// import function to register Swiper custom elements
-import { register } from "swiper/element/bundle";
-import Link from "next/link";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 import { title } from "@/components/primitives";
-// register Swiper custom elements
-register();
+import Link from "next/link";
+
 
 export default function SolutionsCarrusel({ cards }) {
+
+  console.log(cards);
+  
   const [moveLeft, setMoveLeft] = useState();
   const [moveRight, setMoveRight] = useState();
   const numCols = cards.length;
@@ -77,50 +79,61 @@ export default function SolutionsCarrusel({ cards }) {
         >
           {cards.map((card, i) => (
             <Link
-              key={card.id}
+              key={card?.id}
               target="_blank"
               // href={ `/${locale}/${card.href}`}
-              href={card.href}
+              href={card?.href}
               className={`md:border-r-2 ${i === 0 ? "lg:border lg:border-transparent lg:rounded-l-[20px]" : i === cards.length - 1 ? "lg:border lg:border-transparent lg:rounded-r-[20px]" : i === 1 ? "border-l-2" : ""} flex flex-col justify-start items-start pl-4 hover:bg-primary hover:text-secondary   transition-all duration-300 ease-in-out`}
             >
               <div className="overflow-hidden pt-[40px] h-full">
-                <p className="mt pr-2 font-light">{card.title}</p>
+                <p className="mt pr-2 font-light">{card?.title}</p>
               </div>
             </Link>
-          ))}
+          ))} 
         </div>
       </div>
       {/* SECCIÓN CARRUSEL MOBILE */}
       <div className="block md:hidden">
         <div className="mt-14 rounded-l-lg rounded-r-lg md:rounded-r-none">
-          <swiper-container
-            class="mySwiper-solutions"
+           <Swiper
+            className="mySwiper-solutions"
             pagination={{
               clickable: true,
               el: ".swiper-pagination-solutions",
             }}
-            space-between={"10px"}
-            slides-per-view="1.2"
-            direction="horizontal"
-            grab-cursor={true}
+            spaceBetween={10}
+            slidesPerView={1.2}
+            breakpoints={{
+              566: {
+                slidesPerView: 2.2,
+              },
+              768: {
+                slidesPerView: 3.2,
+              },
+              1024: {
+                slidesPerView: 4.2,
+              },
+            }}
+            grabCursor={true}
+            modules={[Pagination]}
           >
-            {cards.map((card, index) => (
-              <swiper-slide key={card.id}>
-                <Link className="w-full h-full" href={card.href}>
+            {cards?.map((card, index) => (
+              <SwiperSlide key={card.id}>
+                <Link className="w-full h-full" href={card?.href}>
                   <div className="h-[90px] w-full rounded-[10px] overflow-hidden">
                     <div className="overflow-hidden h-full flex w-full">
                       <div className="text-6xl flex justify-center items-center bg-secondary text-primary px-4 font-medium">
                         {index + 1}
                       </div>
                       <p className="text-secondary overflow-hidden bg-primary flex items-center w-full px-3 py-2">
-                        {card.title}
+                        {card?.title}
                       </p>
                     </div>
                   </div>
                 </Link>
-              </swiper-slide>
+              </SwiperSlide>
             ))}
-          </swiper-container>
+          </Swiper> 
           <div className="swiper-pagination-solutions flex justify-center items-center mt-4"></div>
         </div>
       </div>
