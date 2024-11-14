@@ -6,9 +6,11 @@ import "./word.css";
 export default function WordAnimated({
   text,
   accentColor,
+  textCenter = false
 }: {
   text: string;
   accentColor?: string;
+  textCenter?: boolean;
 }) {
   const element = useRef(null);
   const [words, setWords] = useState<any>(null);
@@ -25,7 +27,8 @@ export default function WordAnimated({
     <p
       ref={element}
       className="paragraph font-light"
-      style={{ fontSize: "inherit" }}
+      style={{ fontSize: "inherit", justifyContent: textCenter ? "center" : "left" }}
+
     >
       {words &&
         words.map((word: any, i: any) => {
@@ -88,7 +91,7 @@ function Word({
   if (word.startsWith("-*")) {
     word = word.replace("-*", "");
     return (
-      <span className="word font-light ">
+      <span className="word ">
         <strong className={"shadow font-medium text-inherit ${"}>{word}</strong>
         <motion.strong
           style={{ opacity }}

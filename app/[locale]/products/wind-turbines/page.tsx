@@ -2,7 +2,7 @@ import Paragraph from "@/atoms/Paragraph";
 import HeroBreadcrumb from "@/components/HeroBreadcrumb";
 import { title } from "@/components/primitives";
 
-import { ArrowButtonIcon } from "@/components/icons";
+import { ArrowButtonIcon, DownloadIcon } from "@/components/icons";
 import OurOffer from "@/components/pages/products/OurOffer";
 import FeatureProducts from "@/components/pages/home/FeatureProducts";
 
@@ -35,10 +35,15 @@ export default function WindPage() {
                 circular economy. We provide Purchasing and Installation
                 Support, plus warehousing and logistics for efficient handling.
               </p>
-              <button className="hidden md:flex w-full mt-6 max-w-[250px] relative overflow-hidden gap-4 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white justify-between hover:max-w-[270px]">
-                <div className="w-full absolute h-full top-0 left-0 bg-[#666262]/40"></div>
+              <button className="flex w-full mt-6 max-w-[250px] relative overflow-hidden gap-2 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white  hover:max-w-[270px]">
+                <div className="w-full absolute h-full top-0 left-0 bg-[#272424]/40"></div>
                 <span className="relative text-[18px]">Download brochure</span>
-                <ArrowButtonIcon />
+                <span className="fill-white md:hidden h-[18px]">
+                  <DownloadIcon />
+                </span>
+                <div className=" hidden md:block">
+                  <ArrowButtonIcon />
+                </div>
               </button>
             </div>
           </div>
