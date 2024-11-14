@@ -39,7 +39,7 @@ const ServicesList = () => {
         link="/our-services#decommissioning"
         svgIcono={<GruaIcono />}
         texto="RepowerLab safely dismantles, relocates, and reassembles wind turbines, adhering to environmental and safety standards. The turbines are either reinstalled, used for spare parts, or recycled."
-        titulo="Wind farm decommissioning"
+        titulo="Safe Dismantling"
       />
       <ServicesCard
         link="/our-services#repowering"
