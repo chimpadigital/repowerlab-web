@@ -262,10 +262,20 @@ html {
     }
 }
 
+/* Slider card servicios */
+.swiper-services {
+    padding-bottom: 2rem !important;
+
+    .swiper-slide {
+        height: auto !important;
+    }
+}
+
 /* estilos bullets de paginacion */
 .swiper-pagination-blogs,
 .swiper-pagination-spare-parts,
-.swiper-pagination-solutions {
+.swiper-pagination-solutions,
+.swiper-pagination-services {
 
     .swiper-pagination {
         bottom: -3px !important;
@@ -281,5 +291,19 @@ html {
         background-color: transparent;
         border-radius: 25rem;
         background: linear-gradient(90.12deg, #FFFFFF -1.27%, #1C4741 99.9%);
+    }
+}
+
+.swiper-pagination-services {
+    .swiper-pagination-bullet {
+        background-color: #BACCE6;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 60px !important;
+        transition: all 0.5s ease-in-out;
+        background-color: transparent;
+        border-radius: 25rem;
+        background: linear-gradient(90.12deg, #FFFFFF -1.27%, #BACCE6 99.9%);
     }
 }
