@@ -33,12 +33,17 @@ export default function page() {
           <div className="flex justify-end text-white w-full">
             <div className="max-w-[500px]">
               <h4 className={title({ size: "md" })}>Services</h4>
-              <p className="mt-6 font-light">
+              <p className="mt-6 font-light hidden md:block">
                 RepowerLab offers a full range of services to maximize the value
                 of your energy assets. From wind farm decommissioning and
                 turbine retrofitting to resale, blade recycling, and expert
                 installation support, we ensure precision, sustainability, and
                 optimized performance at every stage.
+              </p>
+              <p className="mt-6 font-light md:hidden">
+                RepowerLab offers full services to maximize energy assets,
+                including decommissioning, retrofitting, resale, recycling, and
+                installation support.
               </p>
             </div>
           </div>

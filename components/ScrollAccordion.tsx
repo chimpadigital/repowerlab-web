@@ -9,7 +9,12 @@ import AccordionMob from "./AccordionMob";
 
 export interface ScrollAcordionI {
   imgPosition?: "right" | "left";
-  items: { title: string; description: string | string[]; img: string }[];
+  items: {
+    title: string;
+    description: string | string[];
+    img: string;
+    descriptionMobile: string | { title: string; description: string }[];
+  }[];
   titleItems?: string;
   id: string;
   imgText?: string;
@@ -24,19 +29,30 @@ export default function ScrollAcordion({
   id,
   imgText,
 }: ScrollAcordionI) {
-  const size = useWindowSize()
+  const size = useWindowSize();
   return (
     <>
-      {
-        size[0] < 1000 ?
-          <section className="pt-4">
-            <AccordionMob items={items} imgPosition={imgPosition} titleItems={titleItems} id={id} imgText={imgText} />
-          </section>
-          :
-          <ScrollAccordionDesk items={items} imgPosition={imgPosition} titleItems={titleItems} id={id} imgText={imgText} />
-      }
+      {size[0] < 1000 ? (
+        <section className="pt-4">
+          <AccordionMob
+            items={items}
+            imgPosition={imgPosition}
+            titleItems={titleItems}
+            id={id}
+            imgText={imgText}
+          />
+        </section>
+      ) : (
+        <ScrollAccordionDesk
+          items={items}
+          imgPosition={imgPosition}
+          titleItems={titleItems}
+          id={id}
+          imgText={imgText}
+        />
+      )}
     </>
-  )
+  );
 }
 
 export function ScrollAccordionDesk({
@@ -84,7 +100,7 @@ export function ScrollAccordionDesk({
       id={id}
       ref={ref}
       className={`accordeon-${id} mt-4 text-[#000]  justify-center hidden md:flex w-full h-full relative `}
-      style={{ height: `${items.length * .85 * 100}vh` }}
+      style={{ height: `${items.length * 0.85 * 100}vh` }}
     >
       <div className="container px-6">
         <div className="grid grid-cols-2 min-h-screen items-center sticky top-0 gap-[20px]">
