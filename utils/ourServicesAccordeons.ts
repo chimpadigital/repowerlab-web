@@ -114,7 +114,7 @@ export const retrofitting = [
                     " Overhaul gearboxes and generators to match new turbine performance.",
             },
             {
-                title: "Structural Overhaul:",
+                title: "Structural Overhaul",
                 description:
                     " Ensure robust performance via inspections, repairs, and refinishing.",
             },
@@ -173,7 +173,7 @@ export const inspection = [
         title: "Comprehensive Inspections",
         description:
             "Offering independent inspections of wind turbines, assessing components like the gearbox, generator, and blades.",
-        descriptionMobile: "Help buyers make informed decisions by verifying equipment quality and turbine value.",
+        descriptionMobile: "Offering independent inspections of wind turbines, assessing components like the gearbox, generator, and blades.",
         img: "/images/our-services/inspection.webp",
     },
     {
@@ -188,7 +188,7 @@ export const inspection = [
         title: "Purchasing Advice",
         description:
             "Ensuring buyers make informed decisions through detailed inspection reports that verify equipment quality and assess turbine value.",
-        descriptionMobile: "Ensuring buyers make informed decisions through detailed inspection reports that verify equipment quality and assess turbine value.",
+        descriptionMobile: "Help buyers make informed decisions by verifying equipment quality and turbine value.",
         img: "/images/our-services/inspection.webp",
     },
 ];
@@ -220,7 +220,7 @@ export const resaleParts = [
         title: "Old Wind Turbines & Spare Parts",
         description:
             "Marketing un-refurbished turbines and spare parts for reuse, catering to the growing demand in the wind energy maintenance market.",
-        descriptionMobile:  "Marketing un-refurbished turbines and spare parts for reuse, catering to the growing demand in the wind energy maintenance market.",
+        descriptionMobile: "Marketing un-refurbished turbines and spare parts for reuse, catering to the growing demand in the wind energy maintenance market.",
         img: "/images/our-services/resale.webp",
     },
 ];

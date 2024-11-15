@@ -58,10 +58,10 @@ const ServicesCard = ({
         </div>
       </div>
       <div className="absolute p-[26px] inset-0 translate-y-[100%] transition-all group-hover:translate-y-0 bg-[#F4F4F4] h-full w-full flex flex-col justify-between">
-        <p className={`text-base ${textoMobile ? "hidden md:block" : "block"}`}>
+        <p className={`text-desktop text-base hidden md:block`}>
           {texto}
         </p>
-        {textoMobile && <p className="text-base md:hidden">{textoMobile}</p>}
+       <p className="text-mobile text-base md:hidden">{textoMobile}</p>
         <Link
           href={link}
           className=" flex items-center gap-2 ml-auto font-semibold mt-2"

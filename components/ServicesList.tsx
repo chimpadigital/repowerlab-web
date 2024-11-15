@@ -44,14 +44,15 @@ const ServicesList = () => {
         <ServicesCard
           link="#decommissioning"
           svgIcono={<GruaIcono />}
-          texto="Safe dismantling, relocating, and reassembling wind turbines—meeting safety and environmental standards every step of the way."
-          textoMobile="Safe dismantling and reassembling of turbines, ensuring environmental standards are met."
+          texto="RepowerLab safely dismantles, relocates, and reassembles wind turbines, adhering to environmental and safety standards. The turbines are either reinstalled, used for spare parts, or recycled."
+          textoMobile="Safe dismantling, relocating, and reassembling wind turbines—meeting safety and environmental standards every step of the way."
           titulo="Safe Dismantling"
         />
         <ServicesCard
           link="#repowering"
           svgIcono={<TurbinaeolicaIcono />}
           texto="RepowerLab repowers wind farms by retrofitting turbines to improve efficiency, boost energy output, and reduce costs, all while following sustainable practices."
+          textoMobile="RepowerLab repowers wind farms by retrofitting turbines to improve efficiency, boost energy output, and reduce costs, all while following sustainable practices."
           titulo="Wind farm repowering"
         />
         <ServicesCard
@@ -65,30 +66,35 @@ const ServicesList = () => {
           link="/#blade-recycling"
           svgIcono={<RecicladoCuchillasIcono />}
           texto="Repowerlab leads in recycling and repurposing turbine blades through mechanical shredding, cement co-processing, and creating new products, supporting a circular economy."
+          textoMobile="Recycling blades into new products. Leading the way in the circular economy."
           titulo={`Blade recycling`}
         />
         <ServicesCard
           link="#inspection"
           svgIcono={<LupaIcono />}
           texto="Providing independent, transparent inspections of wind turbines at various lifecycle stages, Repowerlab helps reduce risks, ensure compliance, and identify opportunities for maintenance or decommissioning."
+          textoMobile="Providing independent, transparent inspections of wind turbines at various lifecycle stages, Repowerlab helps reduce risks, ensure compliance, and identify opportunities for maintenance or decommissioning."
           titulo="Inspection & value recovery"
         />
         <ServicesCard
           link="#resale-parts"
           svgIcono={<RasaleParts />}
           texto="Repowerlab specializes in the global trade of wind turbines and parts, connecting supply with demand to maximize value."
+          textoMobile="Repowerlab specializes in the global trade of wind turbines and parts, connecting supply with demand to maximize value."
           titulo="Resale of wind turbines & spare parts"
         />
         <ServicesCard
           link="#resale-materials"
           svgIcono={<RasaleMaterial />}
           texto="RepowerLab's recycling operations address the disposal needs of wind turbine blades, particularly in the U.S. The company repurposes these materials into new products like street furniture, contributing to the circular economy."
+          textoMobile="RepowerLab's recycling operations address the disposal needs of wind turbine blades, particularly in the U.S. The company repurposes these materials into new products like street furniture, contributing to the circular economy."
           titulo="Resale of materials"
         />
         <ServicesCard
           link="#warehousing"
           svgIcono={<Transporte />}
           texto="Repowerlab offers secure warehousing solutions and specialized logistics to ensure the safe and efficient handling, storage, and transportation of wind turbine components."
+          textoMobile="Repowerlab offers secure warehousing solutions and specialized logistics to ensure the safe and efficient handling, storage, and transportation of wind turbine components."
           titulo="Warehousing & transportation"
         />
       </motion.div>
@@ -108,10 +114,10 @@ const ServicesList = () => {
             <ServicesCard
               link="#decommissioning"
               svgIcono={<GruaIcono />}
-              texto="Safe dismantling, relocating, and reassembling wind turbines—meeting safety and environmental standards every step of the way."
-              textoMobile="Safe dismantling and reassembling of turbines, ensuring environmental standards are met."
+              texto="RepowerLab safely dismantles, relocates, and reassembles wind turbines, adhering to environmental and safety standards. The turbines are either reinstalled, used for spare parts, or recycled."
+              textoMobile="Safe dismantling, relocating, and reassembling wind turbines—meeting safety and environmental standards every step of the way."
               titulo="Safe Dismantling"
-            />{" "}
+            />
           </SwiperSlide>
 
           <SwiperSlide>
@@ -119,6 +125,7 @@ const ServicesList = () => {
               link="#repowering"
               svgIcono={<TurbinaeolicaIcono />}
               texto="RepowerLab repowers wind farms by retrofitting turbines to improve efficiency, boost energy output, and reduce costs, all while following sustainable practices."
+              textoMobile="RepowerLab repowers wind farms by retrofitting turbines to improve efficiency, boost energy output, and reduce costs, all while following sustainable practices."
               titulo="Wind farm repowering"
             />
           </SwiperSlide>
@@ -128,6 +135,7 @@ const ServicesList = () => {
               link="#retrofitting"
               svgIcono={<RecicladoIcono />}
               texto="RepowerLab enhances the performance and extends the lifespan of existing wind turbines through comprehensive retrofitting and refurbishing services, ensuring turbines operate at peak efficiency and durability."
+              textoMobile="Recycling blades into new products. Leading the way in the circular economy."
               titulo="Wind turbine retrofitting & refurbishing"
             />
           </SwiperSlide>
@@ -137,6 +145,7 @@ const ServicesList = () => {
               link="/#blade-recycling"
               svgIcono={<RecicladoCuchillasIcono />}
               texto="Repowerlab leads in recycling and repurposing turbine blades through mechanical shredding, cement co-processing, and creating new products, supporting a circular economy."
+              textoMobile="Recycling blades into new products. Leading the way in the circular economy."
               titulo={`Blade recycling`}
             />
           </SwiperSlide>
@@ -146,6 +155,7 @@ const ServicesList = () => {
               link="#inspection"
               svgIcono={<LupaIcono />}
               texto="Providing independent, transparent inspections of wind turbines at various lifecycle stages, Repowerlab helps reduce risks, ensure compliance, and identify opportunities for maintenance or decommissioning."
+              textoMobile="Providing independent, transparent inspections of wind turbines at various lifecycle stages, Repowerlab helps reduce risks, ensure compliance, and identify opportunities for maintenance or decommissioning."
               titulo="Inspection & value recovery"
             />
           </SwiperSlide>
@@ -155,6 +165,7 @@ const ServicesList = () => {
               link="#resale-parts"
               svgIcono={<RasaleParts />}
               texto="Repowerlab specializes in the global trade of wind turbines and parts, connecting supply with demand to maximize value."
+              textoMobile="Repowerlab specializes in the global trade of wind turbines and parts, connecting supply with demand to maximize value."
               titulo="Resale of wind turbines & spare parts"
             />
           </SwiperSlide>
@@ -164,15 +175,7 @@ const ServicesList = () => {
               link="#resale-materials"
               svgIcono={<RasaleMaterial />}
               texto="RepowerLab's recycling operations address the disposal needs of wind turbine blades, particularly in the U.S. The company repurposes these materials into new products like street furniture, contributing to the circular economy."
-              titulo="Resale of materials"
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <ServicesCard
-              link="#resale-materials"
-              svgIcono={<RasaleMaterial />}
-              texto="RepowerLab's recycling operations address the disposal needs of wind turbine blades, particularly in the U.S. The company repurposes these materials into new products like street furniture, contributing to the circular economy."
+              textoMobile="RepowerLab's recycling operations address the disposal needs of wind turbine blades, particularly in the U.S. The company repurposes these materials into new products like street furniture, contributing to the circular economy."
               titulo="Resale of materials"
             />
           </SwiperSlide>
@@ -182,6 +185,7 @@ const ServicesList = () => {
               link="#warehousing"
               svgIcono={<Transporte />}
               texto="Repowerlab offers secure warehousing solutions and specialized logistics to ensure the safe and efficient handling, storage, and transportation of wind turbine components."
+              textoMobile="Repowerlab offers secure warehousing solutions and specialized logistics to ensure the safe and efficient handling, storage, and transportation of wind turbine components."
               titulo="Warehousing & transportation"
             />
           </SwiperSlide>

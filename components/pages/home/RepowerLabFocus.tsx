@@ -26,7 +26,7 @@ export default function RepowerLabFocus() {
                 for end-of-life renewable energy.
               </span>{" "}
               We turn end-of-life wind farms into valuable assets by
-              dismantling, refurbishing, reselling
+              dismantling, refurbishing, reselling and repurposing wind turbines.
             </p>
           </article>
         </div>
