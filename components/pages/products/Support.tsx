@@ -16,9 +16,11 @@ export default function Support() {
       >
         Comprehensive Support
       </h2>
-      <p className="pb-12 pt-4 md:pt-8 max-w-[600px] md:text-center px-6 md:px-0">
+      <p className="pb-12 pt-4 md:pt-8 max-w-[600px] text-grey-parrafo md:text-center px-6 md:px-0">
         To assist our clients further, we offer extensive support in the
-        procurement and installation of turbine parts. This includes:
+        procurement and installation of turbine parts.
+        <br className="md:hidden"/>
+        <span className="font-bold md:font-normal"> This includes:</span>
       </p>
 
       <div className="w-full flex-col md:flex-row  gap-[1px] mt-6 hidden md:flex">

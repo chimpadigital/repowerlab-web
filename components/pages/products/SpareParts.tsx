@@ -17,7 +17,7 @@ import "swiper/css/navigation";
 export default function SpareParts() {
   return (
     <section className="w-full flex justify-center overflow-hidden">
-      <div className="pl-4">
+      <div className="pl-6">
         <div className="flex justify-center mb-4">
           <h2
             className={
