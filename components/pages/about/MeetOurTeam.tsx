@@ -38,7 +38,7 @@ const MeetOurTeam = () => {
             />
             <TeamMemberCard
               image="/images/about/member-victoria.webp"
-              description="Residing in Virginia, US, Victoria has over 20 years of experience in sustainable finance. She has been instrumental in driving sustainability and decarbonization strategies for companies. Victoria's expertise includes developing ESG investment strategies, innovative climate finance products, and advising investors on renewable energy projects. She has received recognition as one of DC's Top 50 Women Leaders for two consecutive years."
+              description="Residing in Virginia, US, Victoria has over 20 years of experience in sustainable finance. As the founder of PRISSMA and co-founder of RepowerLab, she has been instrumental in driving sustainability and decarbonization strategies for companies. Victoria's expertise includes developing ESG investment strategies, innovative climate finance products, and advising investors on renewable energy projects. She has received recognition as one of DC's Top 50 Women Leaders for two consecutive years."
               name="Victoria Galeano "
               position="Co-Founder & Managing Director of US"
             />

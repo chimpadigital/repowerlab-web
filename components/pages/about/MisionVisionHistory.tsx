@@ -21,8 +21,18 @@ const MisionVisionHistory = () => {
           className="text-primary z-[1] bg-white cursor-default relative shadow-[0px_4px_4px_0px_#0000001A] py-6 md:py-10 px-4 rounded-[20px] h-full transition-all hover:md:translate-x-3 hover:md:translate-y-6"
           style={{ width: "min(100%, 374px)" }}
         >
-          <h4 className={`${title()} text-[26px] md:text-[2.3rem] lg:text-[36px]`}>Our Mission</h4>
-          <p className="mt-3 md:mt-6 text-[#444444]">
+          <h4
+            className={`${title()} text-[26px] md:text-[2.3rem] lg:text-[36px]`}
+          >
+            Our Mission
+          </h4>
+          <p className="mt-3 md:mt-6 text-[#444444] md:hidden">
+            We are committed to advancing wind energy through repowering,
+            recycling, and sustainability. Our mission is to maximize turbine
+            lifespan, reduce environmental impact, and support the circular
+            economy for a sustainable future.
+          </p>
+          <p className="mt-3 md:mt-6 text-[#444444] hidden md:block">
             RepowerLab is dedicated to advancing the wind energy sector through
             innovative repowering, recycling, and sustainability solutions. Our
             mission is to maximize the lifespan and efficiency of wind turbines,
@@ -45,8 +55,17 @@ const MisionVisionHistory = () => {
           className="text-primary z-[1] bg-white cursor-default relative shadow-[0px_4px_4px_0px_#0000001A] py-6 md:py-10 px-4 rounded-[20px] h-full transition-all group-hover:md:translate-y-8"
           style={{ width: "min(100%, 374px)" }}
         >
-          <h4 className={`${title()} text-[26px] md:text-[2.3rem] lg:text-[36px]`}>Our Vision</h4>
-          <p className="mt-3 md:mt-6 text-[#444444]">
+          <h4
+            className={`${title()} text-[26px] md:text-[2.3rem] lg:text-[36px]`}
+          >
+            Our Vision
+          </h4>
+          <p className="mt-3 md:mt-6 text-[#444444] md:hidden">
+            Lead the global shift to sustainable energy by being the top
+            provider of wind turbine repowering and recycling, promoting
+            environmental care, economic efficiency, and renewable innovation.
+          </p>
+          <p className="mt-3 md:mt-6 text-[#444444] hidden md:block">
             To lead the global transition to a sustainable energy future by
             being the foremost provider of repowering and recycling solutions
             for wind turbines, fostering environmental stewardship, economic
@@ -67,8 +86,18 @@ const MisionVisionHistory = () => {
           className="text-primary z-[1] bg-white cursor-default relative shadow-[0px_4px_4px_0px_#0000001A] py-6 md:py-10 px-4 rounded-[20px] h-full transition-all hover:md:translate-x-6 hover:md:translate-y-6"
           style={{ width: "min(100%, 374px)" }}
         >
-          <h4 className={`${title()} text-[26px] md:text-[2.3rem] lg:text-[36px]`}>Our History</h4>
-          <p className="mt-3 md:mt-6 text-[#444444]">
+          <h4
+            className={`${title()} text-[26px] md:text-[2.3rem] lg:text-[36px]`}
+          >
+            Our History
+          </h4>
+          <p className="mt-3 md:mt-6 text-[#444444]  md:hidden">
+            RepowerLab started as a spin-off of Repowering Solutions, with over
+            15 years of experience in wind turbine dismantling and recycling. We
+            now operate globally, executing projects in 20 countries through
+            three international offices.
+          </p>
+          <p className="mt-3 md:mt-6 text-[#444444] hidden md:block">
             RepowerLab was borne as a spin-off of Repowering Solutions, a
             company with more than 15 years of experience in the dismantling,
             retrofitting, recycling, buying and selling of wind turbines in
