@@ -1,131 +1,225 @@
-"use client"
-import { IconHowWeWork } from '@/components/icons'
-import { subtitle, title } from '@/components/primitives'
-import RotateScroll from '@/components/RotateScroll'
-import WordAnimated from '@/components/WordAnimated'
-import ThreeContainer from '@/three/ThreeContainer'
-import { extendVariants } from '@nextui-org/system'
-import { motion } from 'framer-motion'
-import {Link} from '@/i18n/routing';
-import React, { useState } from 'react'
+"use client";
+import { IconHowWeWork } from "@/components/icons";
+import { subtitle, title } from "@/components/primitives";
+import RotateScroll from "@/components/RotateScroll";
+import WordAnimated from "@/components/WordAnimated";
+import ThreeContainer from "@/three/ThreeContainer";
+import { extendVariants } from "@nextui-org/system";
+import { motion } from "framer-motion";
+import { Link } from "@/i18n/routing";
+import React, { useState } from "react";
 
 export default function RepowerlabImpact() {
-    return (
-        <div className='px-8 relative'>
-            <div className="absolute bottom-0 w-full h-[500px]">
-                <ThreeContainer />
+  return (
+    <div className="px-8 relative">
+      <div className="absolute bottom-0 w-full h-[500px]">
+        <ThreeContainer />
+      </div>
+      <div className="rounded-[10px] bg-primary pt-9 md:py-[100px] flex justify-center">
+        <div className="container px-6">
+          <div className="flex flex-col lg:flex-row justify-between gap-4 md:gap-[40px] lg:gap-[100px]">
+            <h5
+              className={`${title({ color: "white", size: "md" })} max-w-[300px] text-secondary lg:text-white`}
+            >
+              RepowerLab's Impact
+            </h5>
+            <div className="max-w-[1000px] text-grey-100 text-[30px] hidden lg:block">
+              <WordAnimated
+                accentColor="text-secondary"
+                text={
+                  "Our commitment to the circular economy and innovative energy solutions --delivers --measurable --results --in --waste --reduction, --efficiency, --and --cost --savings."
+                }
+              />
             </div>
-            <div className="rounded-[10px] bg-primary py-[100px] flex justify-center">
-                <div className="container px-6">
-                    <div className="flex flex-col lg:flex-row justify-between gap-[40px] lg:gap-[100px]">
-                        <h5 className={`${title({ color: "white", size: "md" })} max-w-[300px]`}>RepowerLab's Impact</h5>
-                        <div className="max-w-[1000px] text-grey-100 text-[30px]" >
-                            <WordAnimated accentColor='text-secondary' text={"Our commitment to the circular economy and innovative energy solutions --delivers --measurable --results --in --waste --reduction, --efficiency, --and --cost --savings."} />
-                        </div>
-                    </div>
-                    <div className="pt-[120px] relative z-10">
-                        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 mb-[200px]">
+            <p className="md:hidden text-white ">
+              Circular economy solutions that cut waste, boost efficiency, and
+              save costs.
+            </p>
+          </div>
+          <div className="pt-14 md:pt-[120px] relative z-10">
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 mb-5 md:mb-[200px]">
+              <Card
+                title="Waste reduction"
+                percent="85-90%"
+                description="Through advanced recycling and repurposing, Repowerlab cuts waste from decommissioned wind turbines by up to 90%, leading the industry in sustainable practices."
+                descriptionMobile="Advanced recycling and repurposing reduce turbine waste by up to 90%."
+              />
+              <Card
+                title="Waste avoided"
+                percent="60%"
+                description="Our circular economy initiatives have successfully diverted 60% of potential waste from landfills, turning end-of-life wind turbine components into valuable resources."
+                descriptionMobile="We avoided 60% of potential waste by keeping materials in use longer."
+              />
+              <Card
+                title="Increased power output"
+                percent="25-30%"
+                description="Repowerlab’s innovative repowering techniques boost the efficiency of wind turbines by 25-35%, maximizing energy production from existing assets."
+                descriptionMobile="Repowering techniques boost turbine efficiency by 25-35%, maximizing energy production."
+              />
+              <Card
+                title="COST REDUCTION IN DECOMMISSIONING"
+                percent="85-90%"
+                description="By optimizing the decommissioning process, we reduce costs by 90%, making sustainable energy transitions more affordable and accessible."
+                descriptionMobile="90% cost reduction by optimizing the decommissioning process, making energy transitions affordable."
+              />
+            </div>
+          </div>
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 relative">
+            <div className="col-span-1 relative z-10">
+              <div className="max-w-[400px] text-white">
+                <h3 className={`${title({ color: "white", size: "md" })}`}>
+                  This is how <span className="text-secondary">we work</span>
+                </h3>
+                <p>
+                  We manage wind turbines from start to finish. Buying or
+                  selling? We make it easy.{" "}
+                  <Link href={"/about/contact-us"} className="text-secondary">
+                    Contact us for a free consultation.
+                  </Link>
+                </p>
+                <p className="pt-[50px] hidden md:block">
+                  At RepowerLab, we offer a comprehensive solution for the
+                  lifecycle management of wind turbines.
+                </p>
+                <p className="pt-[50px] hidden md:block">
+                  Whether you're selling or buying wind turbines, we ensure a
+                  smooth, efficient, and transparent process.
+                </p>
+                <p className="pt-[50px] hidden md:block">
+                  Looking for expert assistance? Please contact us for an
+                  obligation-free introduction.
+                </p>
+                <div className="pt-5 md:pt-[60px]">
+                  <Link
+                    href="how-we-work"
+                    className="w-full max-w-[180px] relative overflow-hidden gap-4 items-center transition-all duration-[600] py-4 px-6 rounded-full  text-white flex justify-between hover:max-w-[200px] mx-auto md:mx-0"
+                  >
+                    <div className="w-full absolute h-full top-0 left-0 bg-[#ffffff]/40"></div>
+                    <span className="relative text-[18px]">Read more</span>
 
-                            <Card title='Waste reduction' percent='85-90%' description='Through advanced recycling and repurposing, Repowerlab cuts waste from decommissioned wind turbines by up to 90%, leading the industry in sustainable practices.' />
-                            <Card title='Waste avoided' percent='60%' description='Our circular economy initiatives have successfully diverted 60% of potential waste from landfills, turning end-of-life wind turbine components into valuable resources.' />
-                            <Card title='Increased power output' percent='25-30%' description='Repowerlab’s innovative repowering techniques boost the efficiency of wind turbines by 25-35%, maximizing energy production from existing assets.' />
-                            <Card title='COST REDUCTION IN DECOMMISSIONING' percent='85-90%' description='By optimizing the decommissioning process, we reduce costs by 90%, making sustainable energy transitions more affordable and accessible.' />
-                        </div>
-                    </div>
-                    <div className='grid lg:grid-cols-2 grid-cols-1 gap-6 relative'>
-
-                        <div className="col-span-1 relative z-10">
-                            <div className="max-w-[400px] text-white">
-                                <h3 className={`${title({ color: "white", size: "md" })}`}>This is how <span className='text-secondary'>we work</span></h3>
-                                <p className="pt-[50px]">
-                                    At RepowerLab, we offer a comprehensive solution
-                                    for the lifecycle management of wind turbines.
-                                </p>
-                                <p className="pt-[50px]">
-                                    Whether you're selling or buying wind turbines, we ensure a smooth, efficient, and transparent process.
-                                </p>
-                                <p className="pt-[50px]">Looking for expert assistance? Please contact us for
-                                    an obligation-free introduction.
-                                </p>
-                                <div className="pt-[60px]">
-                                    <Link href="how-we-work" className='w-full max-w-[180px] relative overflow-hidden gap-4 items-center transition-all duration-[600] py-4 px-6 rounded-full  text-white flex justify-between hover:max-w-[200px]'>
-                                        <div className="w-full absolute h-full top-0 left-0 bg-[#ffffff]/40">
-                                        </div>
-                                        <span className='relative text-[18px]'>Read more</span>
-
-                                        <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.8231 7.15212C20.7176 7.3202 20.6224 7.50145 20.5047 7.65437C19.0019 9.60468 17.4965 11.551 15.9911 13.498C15.7628 13.7933 15.5117 13.8362 15.3048 13.6206C15.1056 13.413 15.0659 13.0683 15.2177 12.802C15.2778 12.6972 15.3502 12.603 15.422 12.51C16.6151 10.9651 17.8082 9.42078 19.0029 7.87846C19.0548 7.81123 19.119 7.75982 19.1776 7.70116C19.1679 7.67216 19.1588 7.64316 19.1491 7.61416C19.0666 7.61416 18.984 7.61416 18.901 7.61416C12.8341 7.61416 6.76712 7.61416 0.700691 7.61284C0.586576 7.61284 0.469914 7.60493 0.358346 7.57527C0.14489 7.51793 -0.00641355 7.25758 0.000209187 6.98405C0.00683192 6.71579 0.15457 6.47126 0.358856 6.41853C0.470423 6.38953 0.587085 6.38294 0.70171 6.38294C6.76151 6.38162 12.8218 6.38162 18.8816 6.38162H19.1934C19.1048 6.26035 19.0533 6.18587 18.9988 6.11534C17.7777 4.53282 16.5565 2.94963 15.3339 1.36909C15.1693 1.1562 15.0679 0.925506 15.1607 0.617043C15.2682 0.260464 15.61 0.120073 15.851 0.340216C15.9335 0.415355 16.0053 0.511585 16.0772 0.603861C17.554 2.51264 19.0314 4.42143 20.5052 6.33483C20.6229 6.48708 20.7177 6.669 20.8226 6.83707V7.15278L20.8231 7.15212Z" fill="white" />
-                                        </svg>
-
-
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-span-1 relative z-10">
-                            <Single title='A single point of contact' url='' description='We provide a single point of contact for all services, ensuring seamless communication and coordination' />
-                            <div className='pt-8'>
-                                <Single title='Global Presence' url='' description='Our services span two continents, delivering and servicing anywhere in the world.' />
-                            </div>
-                            <div className='pt-8'>
-                                <Single title='Expertise' url='' description='With over 12 years of experience, we bring unmatched expertise to every project.' />
-                            </div>
-                        </div>
-                    </div>
+                    <svg
+                      width="21"
+                      height="14"
+                      viewBox="0 0 21 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.8231 7.15212C20.7176 7.3202 20.6224 7.50145 20.5047 7.65437C19.0019 9.60468 17.4965 11.551 15.9911 13.498C15.7628 13.7933 15.5117 13.8362 15.3048 13.6206C15.1056 13.413 15.0659 13.0683 15.2177 12.802C15.2778 12.6972 15.3502 12.603 15.422 12.51C16.6151 10.9651 17.8082 9.42078 19.0029 7.87846C19.0548 7.81123 19.119 7.75982 19.1776 7.70116C19.1679 7.67216 19.1588 7.64316 19.1491 7.61416C19.0666 7.61416 18.984 7.61416 18.901 7.61416C12.8341 7.61416 6.76712 7.61416 0.700691 7.61284C0.586576 7.61284 0.469914 7.60493 0.358346 7.57527C0.14489 7.51793 -0.00641355 7.25758 0.000209187 6.98405C0.00683192 6.71579 0.15457 6.47126 0.358856 6.41853C0.470423 6.38953 0.587085 6.38294 0.70171 6.38294C6.76151 6.38162 12.8218 6.38162 18.8816 6.38162H19.1934C19.1048 6.26035 19.0533 6.18587 18.9988 6.11534C17.7777 4.53282 16.5565 2.94963 15.3339 1.36909C15.1693 1.1562 15.0679 0.925506 15.1607 0.617043C15.2682 0.260464 15.61 0.120073 15.851 0.340216C15.9335 0.415355 16.0053 0.511585 16.0772 0.603861C17.554 2.51264 19.0314 4.42143 20.5052 6.33483C20.6229 6.48708 20.7177 6.669 20.8226 6.83707V7.15278L20.8231 7.15212Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </Link>
                 </div>
+              </div>
             </div>
+            <div className="col-span-1 relative z-10">
+              <Single
+                title="A single point of contact"
+                url=""
+                description="We provide a single point of contact for all services, ensuring seamless communication and coordination"
+              />
+              <div className="pt-8">
+                <Single
+                  title="Global Presence"
+                  url=""
+                  description="Our services span two continents, delivering and servicing anywhere in the world."
+                />
+              </div>
+              <div className="pt-8">
+                <Single
+                  title="Expertise"
+                  url=""
+                  description="With over 12 years of experience, we bring unmatched expertise to every project."
+                />
+              </div>
+            </div>
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
 interface CardI {
-    title: string,
-    percent: string,
-    description: string
+  title: string;
+  percent: string;
+  description: string;
+  descriptionMobile: string;
 }
 
-const Card = ({ title, percent, description }: CardI) => {
-    const [open, setOpen] = useState<boolean>(false)
+const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
+  const [open, setOpen] = useState<boolean>(false);
 
-    const variants = {
-        open: { opacity: 1, y: 0 },
-        closed: { opacity: 0, y: 450 },
-    }
-    return (
-        <motion.article onClick={() => { setOpen(!open) }} style={{ height: open ? "315px" : "150px" }} className={`border overflow-hidden cursor-pointer h-full transition-all duration-600 relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6`}>
-            <div className=' relative z-10'>
-                <h5 className="font-light uppercase text-[20px] w-[200px]">{title}</h5>
-                <h5 className="text-bold text-[32px]">{percent}</h5>
-                <div className="relative h-full">
-                    <p className="w-[250px]" style={{ opacity: 0, color: "transparent" }}>{description}</p>
-                    <motion.p variants={variants} animate={open ? "open" : "closed"} transition={{ duration: .6 }} className={` absolute top-2 max-w-[250px] pe-4  w-full`}>{description}</motion.p>
-                </div>
-            </div>
-            <svg className='absolute bottom-2 right-2' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 18V5M18 18L2 2M18 18H5" stroke="white" strokeWidth="3" />
-            </svg>
-        </motion.article>
-    )
-}
+  const variants = {
+    open: { opacity: 1, y: 0 },
+    closed: { opacity: 0, y: 450 },
+  };
+  return (
+    <motion.article
+      onClick={() => {
+        setOpen(!open);
+      }}
+      style={{ height: open ? "315px" : "150px" }}
+      className={`border overflow-hidden cursor-pointer h-full transition-all duration-600 relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6`}
+    >
+      <div className=" relative z-10">
+        <h5 className="font-light uppercase text-[20px] w-[200px]">{title}</h5>
+        <h5 className="text-bold text-[32px]">{percent}</h5>
+        <div className="relative h-full">
+          <p className="w-[250px]" style={{ opacity: 0, color: "transparent" }}>
+            {description}
+          </p>
+          <motion.p
+            variants={variants}
+            animate={open ? "open" : "closed"}
+            transition={{ duration: 0.6 }}
+            className={` absolute top-2 max-w-[250px] pe-4  w-full hidden md:block`}
+          >
+            {description}
+          </motion.p>
+          <motion.p
+            variants={variants}
+            animate={open ? "open" : "closed"}
+            transition={{ duration: 0.6 }}
+            className={` absolute top-2 max-w-[250px] pe-4  w-full md:hidden`}
+          >
+            {descriptionMobile}
+          </motion.p>
+        </div>
+      </div>
+      <svg
+        className="absolute bottom-2 right-2"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M18 18V5M18 18L2 2M18 18H5" stroke="white" strokeWidth="3" />
+      </svg>
+    </motion.article>
+  );
+};
 
 interface SingleI {
-    title: string,
-    url: string,
-    description: string
+  title: string;
+  url: string;
+  description: string;
 }
 
 const Single = ({ title, url, description }: SingleI) => {
-
-    return (
-        <article className=' flex justify-between items-center gap-4 pb-6 border-b border-grey-100/50'>
-            <div className='max-w-[480px]'>
-                <h5 className={`${subtitle({ colors: "white", size: "md" })}`}>{title}</h5>
-                <p className="text-white">{description}</p>
-            </div>
-            <RotateScroll>
-                <IconHowWeWork />
-            </RotateScroll>
-
-        </article>
-    )
-}
+  return (
+    <article className=" flex justify-between items-center gap-4 pb-6 border-b border-grey-100/50">
+      <div className="max-w-[480px]">
+        <h5 className={`${subtitle({ colors: "white", size: "md" })}`}>
+          {title}
+        </h5>
+        <p className="text-white">{description}</p>
+      </div>
+      <RotateScroll>
+        <IconHowWeWork />
+      </RotateScroll>
+    </article>
+  );
+};
