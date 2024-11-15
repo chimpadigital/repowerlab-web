@@ -92,13 +92,13 @@ export default function page() {
                     world.
                   </span>
                 </h4>
-                <p className="max-w-[40ch] font-light mt-14">
+                <p className="max-w-[40ch] font-light mt-1 md:mt-14">
                   Together, we can achieve sustainable growth and make a lasting
                   impact on our planet.
                 </p>
               </div>
             </div>
-            <div className="flex relative left-3">
+            <div className="flex relative left-0 justify-center md:left-3 md:justify-normal">
               <Link
                 href="/about/contact-us"
                 className={`scroll-smooth ${button({

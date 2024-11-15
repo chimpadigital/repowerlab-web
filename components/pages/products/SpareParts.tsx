@@ -17,7 +17,7 @@ import "swiper/css/navigation";
 export default function SpareParts() {
   return (
     <section className="w-full flex justify-center overflow-hidden">
-      <div className="pl-6">
+      <div className="pl-8">
         <div className="flex justify-center mb-4">
           <h2
             className={
@@ -27,7 +27,7 @@ export default function SpareParts() {
           >
             Wind Turbine Spare Parts Include
           </h2>
-          <h2 className="text-[22px] font-bold text-primary text-center max-w-[18ch] md:hidden">
+          <h2 className="text-[28px] font-bold text-primary text-center max-w-[18ch] md:hidden">
             Our Wind Turbine Spare Parts Include
           </h2>
         </div>
@@ -61,8 +61,8 @@ export default function SpareParts() {
         <div className="md:hidden">
           <Swiper
             modules={[Pagination]}
-            slidesPerView={1.2}
-            spaceBetween={20}
+            slidesPerView={1.3}
+            spaceBetween={10}
             grabCursor={true}
             pagination={{
               clickable: true,
