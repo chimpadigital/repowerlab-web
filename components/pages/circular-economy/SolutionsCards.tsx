@@ -14,18 +14,17 @@ const SolutionsCards = () => {
         Circular Economy Solutions
       </h4>
       <div className=" md:hidden flex flex-col">
-        <h4 className={`${title({ size: "md" })} text-white text-left `}>
+        <h4 className={`${title({ size: "md" })} text-white text-left text-[28px] `}>
           Our Circular
         </h4>
-        <h4 className={`${title({ size: "md" })} text-white text-left `}>
+        <h4 className={`${title({ size: "md" })} text-white text-left text-[28px] `}>
           Economy Solutions
         </h4>
       </div>
       <div className="flex gap-5 justify-center mt-10 md:mt-24 flex-wrap">
         <Link
           href={"/circular-economy#repowering-solutions"}
-          className="w-fit px-[18px] md:px-8 py-10 md:py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-tl-[10px] md:rounded-[10px] text-left flex md:flex-col md:justify-normal md:items-start md:gap-0 items-center gap-4 flex-wrap"
-          style={{ width: "min(100%, 309px)" }}
+          className="md:w-[min(100%,_309px)] w-full px-[18px] md:px-8 py-10 md:py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-tl-[10px] md:rounded-[10px] text-left flex md:flex-col md:justify-normal md:items-start md:gap-0 items-center gap-6 flex-wrap"
         >
           <div className="w-[62px] h-fit aspect-square rounded-full bg-white grid place-items-center">
             <Image alt="icon light" src={iconoLight} height={35} width={32} />
@@ -37,8 +36,7 @@ const SolutionsCards = () => {
 
         <a
           href={"/circular-economy#circular-economy-solution"}
-          className="w-fit px-[18px] md:px-8 py-10  md:py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-tl-[10px] md:rounded-[10px] text-left flex md:flex-col md:justify-normal md:items-start md:gap-0 items-center gap-4 flex-wrap "
-          style={{ width: "min(100%, 309px)" }}
+          className="md:w-[min(100%,_309px)] w-full  px-[18px] md:px-8 py-10  md:py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-tl-[10px] md:rounded-[10px] text-left flex md:flex-col md:justify-normal md:items-start md:gap-0 items-center gap-6 flex-wrap "
         >
           <div className="w-[62px] h-fit aspect-square rounded-full bg-white grid place-items-center">
             <Image
@@ -55,8 +53,7 @@ const SolutionsCards = () => {
 
         <Link
           href={"/circular-economy#refurbishment"}
-          className="w-fit px-[18px] md:px-8 py-10  md:py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-tl-[10px] md:rounded-[10px] text-left flex md:flex-col md:justify-normal md:items-start md:gap-0 items-center gap-4 flex-wrap"
-          style={{ width: "min(100%, 309px)" }}
+          className="md:w-[min(100%,_309px)] w-full px-[18px] md:px-8 py-10  md:py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-tl-[10px] md:rounded-[10px] text-left flex md:flex-col md:justify-normal md:items-start md:gap-0 items-center gap-6 flex-wrap"
         >
           <div className="w-[62px] h-fit aspect-square rounded-full bg-white grid place-items-center">
             <Image
@@ -73,8 +70,7 @@ const SolutionsCards = () => {
 
         <Link
           href={"/circular-economy#recycling-solution"}
-          className="w-fit px-[18px] md:px-8 py-10  md:py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-tl-[10px] md:rounded-[10px] text-left flex md:flex-col md:justify-normal md:items-start md:gap-0 items-center gap-4 flex-wrap"
-          style={{ width: "min(100%, 309px)" }}
+          className="md:w-[min(100%,_309px)] w-full  px-[18px] md:px-8 py-10  md:py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-tl-[10px] md:rounded-[10px] text-left flex md:flex-col md:justify-normal md:items-start md:gap-0 items-center gap-6 flex-wrap"
         >
           <div className="w-[62px] h-fit aspect-square rounded-full bg-white grid place-items-center">
             <Image

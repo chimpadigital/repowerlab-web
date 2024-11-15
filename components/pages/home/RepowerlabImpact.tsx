@@ -117,12 +117,14 @@ export default function RepowerlabImpact() {
               <Single
                 title="A single point of contact"
                 url=""
+                descriptionMobile="One contact, all services—smooth and simple."
                 description="We provide a single point of contact for all services, ensuring seamless communication and coordination"
               />
               <div className="pt-8">
                 <Single
                   title="Global Presence"
                   url=""
+                  descriptionMobile="We’re global—serving three continents and counting."
                   description="Our services span two continents, delivering and servicing anywhere in the world."
                 />
               </div>
@@ -130,6 +132,7 @@ export default function RepowerlabImpact() {
                 <Single
                   title="Expertise"
                   url=""
+                  descriptionMobile="12+ years of unmatched expertise in every project."
                   description="With over 12 years of experience, we bring unmatched expertise to every project."
                 />
               </div>
@@ -206,16 +209,18 @@ interface SingleI {
   title: string;
   url: string;
   description: string;
+  descriptionMobile: string;
 }
 
-const Single = ({ title, url, description }: SingleI) => {
+const Single = ({ title, url, description, descriptionMobile }: SingleI) => {
   return (
     <article className=" flex justify-between items-center gap-4 pb-6 border-b border-grey-100/50">
       <div className="max-w-[480px]">
         <h5 className={`${subtitle({ colors: "white", size: "md" })}`}>
           {title}
         </h5>
-        <p className="text-white">{description}</p>
+        <p className="text-white hidden md:block">{description}</p>
+        <p className="text-white md:hidden">{descriptionMobile}</p>
       </div>
       <RotateScroll>
         <IconHowWeWork />

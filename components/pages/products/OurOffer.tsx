@@ -204,14 +204,12 @@ export default function OurOffer() {
                   of new and refurbished parts to keep turbines running
                   smoothly. <span className="font-bold">Includes:</span> Blades,
                   gearboxes, generators, control systems, and other key
-                  components.{" "}
-                  <Link href="turbine-parts" className="underline text-sm">
-                    {" "}
-                    Read more
-                  </Link>
-                  .
-                  <br />
+                  components.
                 </p>
+
+                <Link href="turbine-parts" className="underline text-sm text-end w-full justify-end">
+                  Wind turbine spare parts
+                </Link>
               </article>
               <div className="flex flex-wrap gap-4 items-center justify-between">
                 <div className="max-w-[600px] hidden md:block">
@@ -224,7 +222,7 @@ export default function OurOffer() {
                 </div>
                 <Link
                   href="products/turbine-parts"
-                  className={`${button()} flex gap-2 items-center hidden md:block`}
+                  className={`${button()}  gap-2 items-center hidden md:flex`}
                 >
                   Wind turbine parts
                 </Link>
@@ -277,7 +275,7 @@ export default function OurOffer() {
                   return (
                     <p
                       key={index.toString() + item.title}
-                      className="text-[#444444]"
+                      className="text-[#444444]  mb-3"
                     >
                       <span className="font-bold">{item.title}:</span>{" "}
                       {item.text}
@@ -316,7 +314,7 @@ export default function OurOffer() {
                   return (
                     <p
                       key={index.toString() + item.title}
-                      className="text-[#444444]"
+                      className="text-[#444444] mb-3"
                     >
                       <span className="font-bold">{item.title}:</span>{" "}
                       {item.text}
