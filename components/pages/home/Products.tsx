@@ -6,11 +6,11 @@ import React from 'react'
 
 export default function Products() {
   return (
-    <div className='py-[100px] w-full flex-col items-center flex justify-center'>
+    <div className='pt-0 md:py-[100px] w-full flex-col items-center flex justify-center'>
       <div className="container relative z-10 w-full px-8">
-        <div className="w-full flex justify-center items-center flex-col">
-          <h2 className={`${title({ color: "primary" })} text-center`}>Products</h2>
-          <p className="text-center max-w-[800px] pt-6 text-grey-parrafo">RepowerLab offers high-quality unused and refurbished wind turbines, spare parts, and recycled materials, with a focus on sustainability and comprehensive support from procurement to installation.</p>
+        <div className="w-full flex justify-center md:items-center flex-col">
+          <h2 className={`${title({ color: "primary" })} md:text-center`}>Products</h2>
+          <p className="text-center max-w-[800px] pt-6 text-grey-parrafo hidden md:block">RepowerLab offers high-quality unused and refurbished wind turbines, spare parts, and recycled materials, with a focus on sustainability and comprehensive support from procurement to installation.</p>
         </div>
 
       </div>
