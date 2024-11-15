@@ -30,9 +30,17 @@ export default function page() {
               </h4>
               <Paragraph
                 text="RepowerLab supplies a wide range of turbine parts to support maintenance and repair operations. Our inventory includes both new and refurbished components, ensuring that clients have access to the parts they need to keep their turbines running efficiently."
-                className="mt-6 "
+                className="mt-6 hidden md:block"
               ></Paragraph>
-                <button className="flex w-full mt-6 max-w-[250px] relative overflow-hidden gap-3 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white  hover:max-w-[270px]">
+
+              <Paragraph
+                text=" RepowerLab offers a variety of turbine parts for maintenance and
+                repairs. Our stock includes both new and refurbished items,
+                ensuring clients get the parts needed to keep turbines running
+                smoothly."
+                className="mt-6 md:hidden"
+              ></Paragraph>
+              <button className="flex w-full mt-6 max-w-[250px] relative overflow-hidden gap-3 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white  hover:max-w-[270px]">
                 <div className="w-full absolute h-full top-0 left-0 bg-[#272424]/40"></div>
                 <span className="relative text-[18px]">Download brochure</span>
                 <span className="fill-white md:hidden h-[18px] z-10">
