@@ -7,7 +7,7 @@ import Paragraph from "@/atoms/Paragraph";
 
 export default function RepowerLabFocus() {
   return (
-    <div className="w-full flex justify-center px-10">
+    <div className="w-full flex justify-center px-4 lg:px-10">
       <div className="container">
         <div className="flex flex-col lg:flex-row text-primary gap-2 md:gap-[90px] text-[30px]">
           <h5 className={title({ color: "primary" }) + " whitespace-nowrap"}>
@@ -20,17 +20,12 @@ export default function RepowerLabFocus() {
             />
           </article>
           <article className="md:hidden text-base">
-            <p>
-              Leading innovatio{" "}
-              <span className="text-accent">
-                for end-of-life renewable energy.
-              </span>{" "}
-              We turn end-of-life wind farms into valuable assets by
-              dismantling, refurbishing, reselling and repurposing wind turbines.
-            </p>
+            <Paragraph textAccent="text-accent" className="text-[18px]" text="Leading innovation __for end-of-life renewable energy.__ We turn end-of-life wind farms into valuable assets by dismantling, refurbishing, reselling 
+and repurposing wind turbines."></Paragraph>
+
           </article>
         </div>
-        <div className="pt-12 grid grid-cols-2 ">
+        <div className="pt-12 md:grid grid-cols-2 hidden">
           <div className="lg:col-span-1 col-span-2 flex justify-center">
             <Image
               quality={100}
