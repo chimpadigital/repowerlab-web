@@ -42,7 +42,7 @@ export default async function RootLayout({
       <body className={clsx("min-h-screen bg-background antialiased")}>
         <NextIntlClientProvider messages={messages}>
           <Providers>
-            <div className="relative flex flex-col  mt-[40px]">
+            <div className="relative flex flex-col mt-[20px]  lg:mt-[40px]">
               <Navbar />
               <main className="mx-auto flex-grow w-full">{children}</main>
               <FixedMenu />

@@ -6,8 +6,8 @@ import { RepowerIcon } from '@/components/pages/shared/navicons'
 
 export default function MapHome() {
   return (
-    <div className="w-full min-h-screen  px-8">
-      <div className="relative w-full py-[80px] min-h-screen flex justify-center">
+    <div className="w-full px-8">
+      <div className="relative w-full hidden py-[80px] min-h-screen lg:flex justify-center">
         <Image fill src={"/images/home/mapa-bg.png"} alt="" className='object-cover rounded-[20px]'></Image>
         <div className="container w-full relative">
           <div className="absolute z-10 bottom-12">

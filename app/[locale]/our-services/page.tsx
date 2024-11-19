@@ -24,7 +24,7 @@ export default function page() {
 
   return (
     <>
-      <section className="w-full px-6">
+      <section className="w-full px-4 lg:px-6">
         <HeroBreadcrumb
           img="/images/our-services/bg-hero.webp"
           breadcrumbs={breadcrumbs}

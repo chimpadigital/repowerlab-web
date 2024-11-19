@@ -39,7 +39,6 @@ const CircularEconomy = () => {
           </div>
         </HeroBreadcrumb>
       </section>
-      <iframe src="https://www.instagram.com/reel/DCUbBiMPvYF//embed/">Iframe not supported</iframe>
       <MolinoAnimation />
       <SolutionsCards />
       <SolutionsAccordeon />

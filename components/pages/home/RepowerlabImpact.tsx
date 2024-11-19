@@ -11,7 +11,7 @@ import React, { useState } from 'react'
 
 export default function RepowerlabImpact() {
     return (
-        <div className='px-8 relative'>
+        <div className='px-8 relative overflow-x-hidden'>
             <div className="absolute bottom-0 w-full h-[500px]">
                 <ThreeContainer />
             </div>

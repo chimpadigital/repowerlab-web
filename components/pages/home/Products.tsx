@@ -14,7 +14,7 @@ export default function Products() {
         </div>
 
       </div>
-      <div className="pt-[60px] w-full">
+      <div className="pt-[60px] w-full hidden md:block">
         <div className="grid grid-cols-4">
           <div className="col-span-1">
             <ProductCard

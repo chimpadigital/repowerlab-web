@@ -26,7 +26,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="sticky md:top-[40px] top-[20px] mt-[20px] mb-[-100px] z-50 text-white w-full flex justify-center">
+      <div className="sticky md:top-[40px] top-[20px] mt-[20px] mb-[-85px] lg:mb-[-100px] z-50 text-white w-full flex justify-center">
         <div className="container px-4 md:px-6">
           <div className="flex justify-center lg:justify-between">
             {
