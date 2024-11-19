@@ -77,9 +77,6 @@ html {
         backface-visibility: hidden;
     }
 
-    .swiper-slide {
-        width: auto !important;
-    }
 }
 
 
@@ -233,7 +230,7 @@ html {
 
 /* ----Slider cards success cases */
 
-.swiper {
+.swiper-blogs {
     height: 100%;
     width: 100%;
 
@@ -246,7 +243,39 @@ html {
     }
 }
 
-.swiper-pagination-blogs {
+/* Slider parners */
+
+.slider-parners {
+    .swiper-slide {
+        width: auto !important;
+    }
+
+}
+
+/* Slider spare parts */
+.slider-spare-parts {
+    width: 100vw;
+    padding-bottom: 40px !important;
+
+    .swiper-slide {
+        width: 100vw;
+    }
+}
+
+/* Slider card servicios */
+.swiper-services {
+    padding-bottom: 2rem !important;
+
+    .swiper-slide {
+        height: auto !important;
+    }
+}
+
+/* estilos bullets de paginacion */
+.swiper-pagination-blogs,
+.swiper-pagination-spare-parts,
+.swiper-pagination-solutions,
+.swiper-pagination-services {
 
     .swiper-pagination {
         bottom: -3px !important;
@@ -265,10 +294,16 @@ html {
     }
 }
 
-/* Slider parners */
+.swiper-pagination-services {
+    .swiper-pagination-bullet {
+        background-color: #BACCE6;
+    }
 
-.slider-parners {
-    .swiper-slide {
-        width: auto !important;
+    .swiper-pagination-bullet-active {
+        width: 60px !important;
+        transition: all 0.5s ease-in-out;
+        background-color: transparent;
+        border-radius: 25rem;
+        background: linear-gradient(90.12deg, #FFFFFF -1.27%, #BACCE6 99.9%);
     }
 }

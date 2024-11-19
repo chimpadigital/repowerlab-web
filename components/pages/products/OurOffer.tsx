@@ -4,7 +4,6 @@ import { button } from "@/components/primitives";
 import { Accordion, AccordionItem, Link } from "@nextui-org/react";
 import React, { useEffect } from "react";
 import { useParams } from "next/navigation";
-import { title } from "process";
 
 export default function OurOffer() {
   const params = useParams();
@@ -48,7 +47,7 @@ export default function OurOffer() {
     },
     {
       title: "Spare Parts",
-      text: "A wide range of new and refurbished parts to keep turbines running smoothly. Includes: Blades, gearboxes, generators, control systems, and other key components",
+      text: "A wide range of new and refurbished parts to keep turbines running smoothly. Includes: Blades, gearboxes, generators, control systems, and other key components.(read more: hipervinculo con pag de spare parts).",
     },
   ];
 
@@ -184,18 +183,33 @@ export default function OurOffer() {
                 <ListComponent list={listWindTurbine1} />
               </article>
               <article className="md:hidden">
-                {listWindTurbine1Mobile.map((item, index) => {
-                  return (
-                    <p
-                      key={index.toString() + item.title}
-                      className="text-[#444444] mb-3"
-                    >
-                      <span className="font-bold">{item.title}:</span>{" "}
-                      {item.text}
-                      <br />
-                    </p>
-                  );
-                })}
+                <p className="text-[#444444] mb-3">
+                  <span className="font-bold">Unused Turbines:</span> Like-new
+                  turbines from canceled projects, sold secondhand for great
+                  value. Inspected and tested for top performance.
+                  <br />
+                </p>
+
+                <p className="text-[#444444] mb-3">
+                  <span className="font-bold">Refurbished Turbines:</span>{" "}
+                  Quality refurbished turbines traded globally, extending farm
+                  life efficiently in markets like Central America and South
+                  Korea. Used Turbines: Budget-friendly turbines sold as-is,
+                  ideal for new projects or refurbishment.
+                  <br />
+                </p>
+
+                <p className="text-[#444444] mb-3">
+                  <span className="font-bold">Spare Parts:</span> A wide range
+                  of new and refurbished parts to keep turbines running
+                  smoothly. <span className="font-bold">Includes:</span> Blades,
+                  gearboxes, generators, control systems, and other key
+                  components.
+                </p>
+
+                <Link href="turbine-parts" className="underline text-sm text-end w-full justify-end">
+                  Wind turbine spare parts
+                </Link>
               </article>
               <div className="flex flex-wrap gap-4 items-center justify-between">
                 <div className="max-w-[600px] hidden md:block">
@@ -208,16 +222,9 @@ export default function OurOffer() {
                 </div>
                 <Link
                   href="products/turbine-parts"
-                  className={`${button()} flex gap-2 items-center hidden md:block`}
+                  className={`${button()}  gap-2 items-center hidden md:flex`}
                 >
                   Wind turbine parts
-                </Link>
-
-                <Link
-                  href="products/turbine-parts"
-                  className={`md:hidden text-xs text-end ml-auto mt-2 underline`}
-                >
-                  Wind turbine spare parts
                 </Link>
               </div>
             </div>
@@ -268,7 +275,7 @@ export default function OurOffer() {
                   return (
                     <p
                       key={index.toString() + item.title}
-                      className="text-[#444444]"
+                      className="text-[#444444]  mb-3"
                     >
                       <span className="font-bold">{item.title}:</span>{" "}
                       {item.text}
@@ -307,7 +314,7 @@ export default function OurOffer() {
                   return (
                     <p
                       key={index.toString() + item.title}
-                      className="text-[#444444]"
+                      className="text-[#444444] mb-3"
                     >
                       <span className="font-bold">{item.title}:</span>{" "}
                       {item.text}
