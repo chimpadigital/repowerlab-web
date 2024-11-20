@@ -24,7 +24,7 @@ export default function FixedMenu() {
         <div className="w-full grid grid-cols-4 px-6 gap-4 justify-between rounded-[20px] py-4 text-white" style={bgNavStyle}>
           <Link href="/" className='flex flex-col cols-span-1 block items-center gap-1 justify-center'>
             <HomeIcon />
-            <small className={`font-bold text-[10px] transition ease duration-[600] ${pathname == '/' ? "block" : "hidden"}`}>Home</small>
+            <small className={`font-bold text-[10px] transition ease duration-[600] ${(pathname == '/en' || pathname == '/es')  ? "block" : "hidden"}`}>Home</small>
           </Link>
           {/* <Link href="/marketplace" className='flex flex-col cols-span-1 block items-center gap-1 justify-center'>
             <CircularIcon />
@@ -32,11 +32,11 @@ export default function FixedMenu() {
           </Link> */}
           <Link href="/circular-economy" className='flex flex-col cols-span-1 block items-center gap-1 justify-center'>
             <CartIcon />
-            <small className={`font-bold text-[10px] transition ease duration-[600] ${pathname == '/marketplace' ? "block" : "hidden"}`}>Marketplace</small>
+            <small className={`font-bold text-[10px] transition ease duration-[600] ${(pathname == '/en/marketplace'  || pathname == '/es/marketplace') ? "block" : "hidden"}`}>Marketplace</small>
           </Link>
           <Link href="/about/contact-us" className='flex flex-col cols-span-1 block items-center gap-1 justify-center'>
             <ContactIcon />
-            <small className={`font-bold text-[10px] transition ease duration-[600] ${pathname == '/about/contact-us' ? "block" : "hidden"}`}>Contact</small>
+            <small className={`font-bold text-[10px] transition ease duration-[600] ${(pathname == '/en/about/contact-us' || pathname == '/es/about/contact-us') ? "block" : "hidden"}`}>Contact</small>
           </Link>
           <div className='flex flex-col cols-span-1 block items-center gap-1 justify-center' onClick={() => { setOpen(!open) }}>
             <MenuICon />

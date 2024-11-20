@@ -90,6 +90,7 @@ a free consultation.__"></Paragraph>
               <Single
                 title="A single point of contact"
                 url=""
+                index={1}
                 descriptionMobile="One contact, all services—smooth and simple."
                 description="We provide a single point of contact for all services, ensuring seamless communication and coordination"
               />
@@ -97,6 +98,7 @@ a free consultation.__"></Paragraph>
                 <Single
                   title="Global Presence"
                   url=""
+                  index={2}
                   descriptionMobile="We’re global—serving three continents and counting."
                   description="Our services span two continents, delivering and servicing anywhere in the world."
                 />
@@ -105,6 +107,7 @@ a free consultation.__"></Paragraph>
                 <Single
                   title="Expertise"
                   url=""
+                  index={3}
                   descriptionMobile="12+ years of unmatched expertise in every project."
                   description="With over 12 years of experience, we bring unmatched expertise to every project."
                 />
@@ -181,13 +184,14 @@ const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
 interface SingleI {
   title: string;
   url: string;
+  index:number
   description: string;
   descriptionMobile: string;
 }
 
-const Single = ({ title, url, description, descriptionMobile }: SingleI) => {
+const Single = ({ title, url, description, descriptionMobile, index }: SingleI) => {
   return (
-    <article className=" flex flex-col-reverse md:flex-row justify-between items-start md:items-center gap-4 pb-6 border-b border-grey-100/50">
+    <article className={`flex flex-col-reverse md:flex-row justify-between items-start md:items-center gap-4 pb-6 ${ index == 3 ? "md:border-b" : "border-b" }  border-grey-100/50`}>
       <div className="max-w-[480px]">
         <h5 className={`md:text-white text-secondary font-bold pb-4 text-[22px] md:text-[28px]`}>
           {title}
