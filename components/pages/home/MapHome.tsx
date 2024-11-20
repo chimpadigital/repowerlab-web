@@ -3,10 +3,11 @@ import React from 'react'
 import Image from 'next/image'
 import RotateScroll from '@/components/RotateScroll'
 import { RepowerIcon } from '@/components/pages/shared/navicons'
+import MapHomeMobile from './MapHomeMobile'
 
 export default function MapHome() {
   return (
-    <div className="w-full px-8">
+    <div className="w-full px-4  lg:px-8">
       <div className="relative w-full hidden py-[80px] min-h-screen lg:flex justify-center">
         <Image fill src={"/images/home/mapa-bg.png"} alt="" className='object-cover rounded-[20px]'></Image>
         <div className="container w-full relative">
@@ -19,22 +20,25 @@ export default function MapHome() {
               <div className="w-[400px]"></div>
               <div className="relative grow">
                 <Image width={1500} quality={100} height={900} src={"/images/home/mapa.png"} alt="" className=' w-full h-auto rounded-[20px]'></Image>
-                <Card top={"20%"} left={"7%"} title={"WIND TURBINES SOLD"} number={416}/>
-                <Card top={"60%"} left={"18%"} title={"FINISHED PROJECTS"} number={29}/>
-                <Card top={"25%"} left={"40%"} title={"SATISFIED CLIENTS"} number={45}/>
-                <Card top={"50%"} left={"48%"} title={"DISMANTLED WIND FARMS"} number={16}/>
+                <CardM top={"20%"} left={"7%"} title={"WIND TURBINES SOLD"} number={416}/>
+                <CardM top={"60%"} left={"18%"} title={"FINISHED PROJECTS"} number={29}/>
+                <CardM top={"25%"} left={"40%"} title={"SATISFIED CLIENTS"} number={45}/>
+                <CardM top={"50%"} left={"48%"} title={"DISMANTLED WIND FARMS"} number={16}/>
               </div>
             </div>
 
           </div>
         </div>
       </div>
+      <div className="relative lg:hidden">
+        <MapHomeMobile />
+      </div>
     </div>
   )
 }
 
 
-const Card = ({ top, left, title, number }: any) => {
+const CardM = ({ top, left, title, number }: any) => {
   return (
     <article className='p-4 w-[215px] h-[100px] flex justify-center items-center relaative absolute' style={{
       top,
@@ -58,3 +62,5 @@ const Card = ({ top, left, title, number }: any) => {
     </article >
   )
 }
+
+

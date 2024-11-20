@@ -17,10 +17,10 @@ export default function ProductsSwiper() {
             grabCursor={true}
             pagination={{
                 clickable: true,
-                el: ".swiper-pagination-services",
+                el: ".swiper-pagination-blogs",
             }}
             modules={[Pagination]}
-            className="swiper-services w-full"
+            className="swiper-blogs w-full"
         >
             <SwiperSlide >
                 <CardMobile
@@ -54,8 +54,7 @@ export default function ProductsSwiper() {
                     title='Wind turbine \n spare parts'
                     img='/images/home/products/4a.png' />
             </SwiperSlide>
-
-            <div className="swiper-pagination-services h-10 flex justify-center gap-2"></div>
+            <div className="swiper-pagination-blogs h-10 flex justify-center gap-2 mt-2"></div>
         </Swiper>
     )
 }
