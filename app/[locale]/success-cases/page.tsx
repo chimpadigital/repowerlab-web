@@ -18,7 +18,7 @@ const SuccessCases = () => {
           breadcrumbs={breadcrumbs}
           position="left"
         >
-          <div className="flex flex-col text-white mt-10">
+          <div className="flex flex-col text-white h-full justify-center">
             <h4 className={`text-white mr-auto text-left ${title()}`}>
               Success cases
             </h4>

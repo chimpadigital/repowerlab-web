@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
-import {Link} from '@/i18n/routing';
+import { Link } from '@/i18n/routing';
 
 interface HeroBreadcrumbI {
   img: string;
@@ -23,8 +23,8 @@ export default function HeroBreadcrumb({
   children,
 }: HeroBreadcrumbI) {
   return (
-    <div className="w-full  relative pb-[65px] md:pb-[150px]">
-      <div className="w-full relative flex justify-center overflow-hidden h-full min-h-[620px] rounded-[20px] pt-[150px]">
+    <div className="w-full  relative pb-[45px] md:pb-[150px]">
+      <div className="w-full relative flex justify-center overflow-hidden h-full min-h-[400px] md:min-h-[620px] rounded-[20px] pt-[80px] md:pt-[150px]">
         <Image
           src={img}
           fill
@@ -39,21 +39,23 @@ export default function HeroBreadcrumb({
           <div className="container px-6">
             <div className="relative z-10 w-full h-full grid grid-cols-2">
               <div className="lg:col-span-1 col-span-2 sm:ps-6">
-                {
-                  breadcrumbs &&
-                  <Breadcrumbs
-                    itemClasses={{
-                      item: "text-white font-bold text-[18px] !opacity-100 data-[current=true]:underline data-[current=true]:underline-offset-[6px]",
-                      separator: "text-white/40",
-                    }}
-                  >
-                    {breadcrumbs.map((el, index) => (
-                      <BreadcrumbItem isDisabled={el.href == "none"} href={el.href} key={index}>
-                        {el.label}
-                      </BreadcrumbItem>
-                    ))}
-                  </Breadcrumbs>
-                }
+                <div className="hidden md:block">
+                  {
+                    breadcrumbs &&
+                    <Breadcrumbs
+                      itemClasses={{
+                        item: "text-white font-bold text-[18px] !opacity-100 data-[current=true]:underline data-[current=true]:underline-offset-[6px]",
+                        separator: "text-white/40",
+                      }}
+                    >
+                      {breadcrumbs.map((el, index) => (
+                        <BreadcrumbItem isDisabled={el.href == "none"} href={el.href} key={index}>
+                          {el.label}
+                        </BreadcrumbItem>
+                      ))}
+                    </Breadcrumbs>
+                  }
+                </div>
                 {position == "left" && children}
               </div>
               <div className="lg:col-span-1 col-span-2 h-full flex items-center ">
