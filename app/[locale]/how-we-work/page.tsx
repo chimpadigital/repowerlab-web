@@ -1,14 +1,14 @@
 import GreenBanner from '@/components/GreenBanner'
-import Hero from '@/components/pages/how-we-work/Hero'
 import JoinOurMission from '@/components/pages/how-we-work/JoinOurMission'
 import { button, title } from '@/components/primitives'
 import React from 'react'
 import { Link } from '@/i18n/routing';
+import HeroContainer from '@/components/pages/how-we-work/HeroContainer'
 
 export default function page() {
     return (
         <div>
-            <Hero />
+            <HeroContainer />
             <JoinOurMission />
             <div className="px-6 pb-8">
                 <GreenBanner>

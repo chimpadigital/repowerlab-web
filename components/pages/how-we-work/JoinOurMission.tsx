@@ -10,16 +10,16 @@ import { motion } from 'framer-motion'
 export default function JoinOurMission() {
 
     const itemClasses = {
-        base: "py-0 w-full text-primary !shadow-none",
-        title: "font-normal text-[22px] text-primary w-[80%]",
-        heading: "shadow-none",
-        content: "shadow-none  px-4 py-2",
-        trigger: "px-2 py-4  shadow-none mt-6  font-bold flex items-center border-none pr4",
+        base: "py-0 w-full text-primary px-2 md:px-4 md:border-0 md:bg-transparent bg-grey-100 border-[0px] md:border-[20px] !shadow-none",
+        title: "font-normal data-[open=true]:font-bold text-[16px] md:text-[22px] text-primary w-[90%] md:w-[80%]",
+        heading: "shadow-none data-[open]=true:font-bold md:bg-transparent bg-grey-100",
+        content: "shadow-none md:px-4 py-2",
+        trigger: "md:px-2 py-4  shadow-none md:mt-6  font-bold flex items-center border-none pr4",
         indicator: "text-medium pr5",
     };
 
     return (
-        <section className="w-full flex justify-center py-[100px]">
+        <section className="w-full flex justify-center py-12 md:py-[100px]">
             <div className="container text-primary px-6">
                 <div className="grid lg:grid-cols-2 grid cols-1">
                     <div className="col-span-1">
@@ -27,7 +27,7 @@ export default function JoinOurMission() {
                         <Paragraph className='text-grey-parrafo text-[20px] pt-[40px] max-w-[450px]' text='At RepowerLab, we are dedicated to **advancing the circular economy in the wind energy sector**. By working together with partners, clients, and talented individuals, we can achieve a more sustainable and efficient future. **Join us in our mission to innovate, transform, and lead the way in renewable energy solutions.**' />
 
                     </div>
-                    <div className="col-span-1">
+                    <div className="col-span-1 mt-6 md:mt-0">
                         <Accordion variant="splitted" itemClasses={itemClasses}>
                             <AccordionItem indicator={<Indicator />} key="1" aria-label="Accordion 1" title="Are you a business looking to collaborate on sustainable energy solutions?">
                                 <hr className="w-full border border-grey-600/15" />
@@ -51,10 +51,10 @@ export default function JoinOurMission() {
                     </div>
                 </div>
 
-                <div className="flex pt-[150px] gap-6 justify-center flex-wrap">
-                    <Cards title='Why Partner with Us?' list={['Expertise in wind turbine lifecycle management', 'Proven track record in disassembly, warehousing, and refurbishing', 'Commitment to sustainability and innovation']} />
-                    <Cards title='Why Choose RepowerLab?' list={['Comprehensive support from consultation to installation', 'Tailored solutions to meet your specific needs', 'A dedicated team of experts at your service']} />
-                    <Cards title='Why Work with Us?' list={['Be part of a pioneering team in renewable energy', 'Opportunities for growth and professional development', 'Contribute to meaningful, impactful projects']} />
+                <div className="flex pt-[60px] md:pt-[150px] gap-6 justify-center flex-wrap">
+                    <Cards image="i1" title='Why Partner with Us?' list={['Expertise in wind turbine lifecycle management', 'Proven track record in disassembly, warehousing, and refurbishing', 'Commitment to sustainability and innovation']} />
+                    <Cards image="i2" title='Why Choose RepowerLab?' list={['Comprehensive support from consultation to installation', 'Tailored solutions to meet your specific needs', 'A dedicated team of experts at your service']} />
+                    <Cards image="i3" title='Why Work with Us?' list={['Be part of a pioneering team in renewable energy', 'Opportunities for growth and professional development', 'Contribute to meaningful, impactful projects']} />
                 </div>
             </div>
         </section>
@@ -75,11 +75,12 @@ const Indicator = () => {
     )
 }
 
-const Cards = ({ title, list }: { title: string, list: string[] }) => {
+const Cards = ({ title, list, image }: { title: string, list: string[], image:string }) => {
     return (
         <article className='text-primary bg-secondary rounded-[20px] px-8 pt-6 pb-8 w-[25%] max-w-[400px] min-w-[300px]' style={{ boxShadow: "4px 4px 4px 0px rgba(0, 0, 0, 0.10)" }}>
+            <img className='w-[40px] h-[40px] mb-4 md:hidden' src={`/images/how-we-work/${image}.png`} alt="" />
             <h5 className={subtitle({ colors: "primary", size: "sm" })}>{title}</h5>
-            <ul className="pt-6">
+            <ul className="pt-4 md:pt-6">
                 {
                     list.map((el, i) => (
                         <motion.li whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: 60 }} key={i} transition={{ delay: 0.2 * i, duration: .6, ease: "linear" }} className='flex gap-2  py-1 px-0 items-start'>

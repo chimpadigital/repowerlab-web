@@ -26,7 +26,7 @@ export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?:
                 <CloseIcon onClick={() => { setOpen(false) }} />
             </div>
             {globalRoutes.map((item, index) => (
-                <div key={`item-${index}`} className='z-10 relative px-12'> {/* Use descriptive key with 'item' */}
+                <div key={`item-${index}`} className='z-10 relative mt-6 md:mt-0 px-12'> {/* Use descriptive key with 'item' */}
                     {item.child ? (
                         <Accordion
                             selectionMode="single"
