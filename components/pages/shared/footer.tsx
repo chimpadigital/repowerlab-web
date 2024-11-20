@@ -42,7 +42,7 @@ export default function Footer() {
   return (
     <footer className="w-full flex items-center justify-center text-primary mt-4 lg:px-6 px-4 min-h-[400px]  lg:mb-8 mb-[120px]">
       <div className="relative flex justify-center flex-col items-center w-full h-full py-[40px] min-h-[400px] px-14">
-        <div className="relative w-full grow flex flex-col lg:flex-row justify-between pt-6 z-10">
+        <div className="relative w-full grow flex flex-col lg:flex-row justify-between md:pt-6 z-10">
           <div>
             <Logo className="w-full lg:w-[300px] h-auto" />
           </div>
@@ -115,7 +115,7 @@ export default function Footer() {
                   <div className="flex pt-4 justify-center lg:hidden">
                     <Link
                       href="mailto:info@repowerlab.com"
-                      className="text-[24px] text-primary font-bold "
+                      className="text-[19px] text-primary"
                     >
                       {" "}
                       info@repowerlab.com
