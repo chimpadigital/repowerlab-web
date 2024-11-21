@@ -20,8 +20,8 @@ export default function WindPage() {
           breadcrumbs={breadcrumbs}
           objectPosition="bottom"
         >
-          <div className="flex md:justify-end text-white w-full">
-            <div className="max-w-[500px]">
+          <div className="flex md:justify-end text-white w-full pb-[40px] md:pb-0" >
+            <div className="max-w-[500px] pt-4 md:pt-0">
               <h4 className={title({ size: "md" })}>Wind turbines</h4>
               <article className="hidden md:block">
                 <Paragraph
@@ -35,7 +35,7 @@ export default function WindPage() {
                 circular economy. We provide Purchasing and Installation
                 Support, plus warehousing and logistics for efficient handling.
               </p>
-              <button className="flex w-full mt-6 max-w-[250px] relative overflow-hidden gap-3 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white  hover:max-w-[270px] ">
+              <button className="flex w-full mt-6 max-w-[250px] mb-[35px] md:mb-0 relative overflow-hidden gap-3 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white  hover:max-w-[270px] ">
                 <div className="w-full absolute h-full top-0 left-0 bg-[#272424]/40"></div>
                 <span className="relative text-[18px]">Download brochure</span>
                 <span className="fill-white md:hidden h-[18px] z-10">
