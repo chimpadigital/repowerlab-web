@@ -25,65 +25,68 @@ export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?:
                 <LogoRepower />
                 <CloseIcon onClick={() => { setOpen(false) }} />
             </div>
-            {globalRoutes.map((item, index) => (
-                <div key={`item-${index}`} className='z-10 relative mt-6 md:mt-0 px-12'> {/* Use descriptive key with 'item' */}
-                    {item.child ? (
-                        <Accordion
-                            selectionMode="single"
-                            className="p-0 gap-4"
-                            key={`first-item-${index}`}
-                            itemClasses={{
-                                title: "cursor-pointer  select-none text-primary   text-[20px]",
-                                trigger: "cursor-pointer  select-none text-primary  text-[20px]",
-                                indicator: "data-[open=true]:rotate-180"
-                            }}
-                        >
-                            <AccordionItem
-                                indicator={<ArrowMenu />}
-                                title={(item.title)}>
-                                <div className="flex flex-col">
-                                    {item.child.map((item2, index) => (
-                                        item2.child ? (
-                                            <Accordion
-                                                key={`item-2+${index}`}
-                                                className="p-0"
-                                                itemClasses={{
-                                                    title: "cursor-pointer  select-none text-primary text-[20px]",
-                                                    trigger: "cursor-pointer  select-none text-primary text-[20px]"
-                                                }}
-                                            >
-                                                <AccordionItem
-                                                    indicator={<ArrowMenu />}
-                                                    aria-label={`Accordion ${index}`}
-                                                    title={(item2.title)}>
-                                                    <div className="flex flex-col gap-2">
-                                                        {
-                                                            item2.child.map((item3, index) => (
-                                                                <Link key={`link-${index}`} className='block cursor-pointer  select-none text-primary text-[14px]' href={`/${item3.url}`}>
-                                                                    {(item3.title)}
-                                                                </Link>
-                                                            ))}
-                                                    </div>
-                                                </AccordionItem>
-                                            </Accordion>
+            <div style={{ height: "calc(100dvh - 130px)" }} className='overflow-y-scroll'>
+                {globalRoutes.map((item, index) => (
+                    <div key={`item-${index}`} className='z-10  relative mt-6 md:mt-0 px-12'> {/* Use descriptive key with 'item' */}
+                        {item.child ? (
+                            <Accordion
+                                selectionMode="single"
+                                className="p-0 gap-4"
+                                key={`first-item-${index}`}
+                                itemClasses={{
+                                    title: "cursor-pointer  select-none text-primary   text-[20px]",
+                                    trigger: "cursor-pointer  select-none text-primary  text-[20px]",
+                                    indicator: "data-[open=true]:rotate-180"
+                                }}
+                            >
+                                <AccordionItem
+                                    indicator={<ArrowMenu />}
+                                    title={(item.title)}>
+                                    <div className="flex flex-col">
+                                        {item.child.map((item2, index) => (
+                                            item2.child ? (
+                                                <Accordion
+                                                    key={`item-2+${index}`}
+                                                    className="p-0"
+                                                    itemClasses={{
+                                                        title: "cursor-pointer  select-none text-primary text-[20px]",
+                                                        trigger: "cursor-pointer  select-none text-primary text-[20px]"
+                                                    }}
+                                                >
+                                                    <AccordionItem
+                                                        indicator={<ArrowMenu />}
+                                                        aria-label={`Accordion ${index}`}
+                                                        title={(item2.title)}>
+                                                        <div className="flex flex-col gap-2">
+                                                            {
+                                                                item2.child.map((item3, index) => (
+                                                                    <Link key={`link-${index}`} className='block cursor-pointer  select-none text-primary text-[14px]' href={`/${item3.url}`}>
+                                                                        {(item3.title)}
+                                                                    </Link>
+                                                                ))}
+                                                        </div>
+                                                    </AccordionItem>
+                                                </Accordion>
 
-                                        ) : (
+                                            ) : (
 
-                                            <Link key={`link-${index}`} className='block cursor-pointer   select-none text-primary py-[1rem] text-[20px] ' href={`/${item2.url}`}>
-                                                {(item2.title)}
-                                            </Link>
-                                        )
-                                    ))}
-                                </div >
-                            </AccordionItem>
-                        </Accordion>
-                    ) : (
-                        <Link key={`link-${index}`} className='block cursor-pointer inline-block	select-none text-primary  text-[20px]' href={`/${item.url}`}>
-                            {(item.title)}
-                        </Link>
-                    )}
-                </div>
-            ))}
+                                                <Link key={`link-${index}`} className='block cursor-pointer   select-none text-primary py-[1rem] text-[20px] ' href={`/${item2.url}`}>
+                                                    {(item2.title)}
+                                                </Link>
+                                            )
+                                        ))}
+                                    </div >
+                                </AccordionItem>
+                            </Accordion>
+                        ) : (
+                            <Link key={`link-${index}`} className='block cursor-pointer inline-block	select-none text-primary  text-[20px]' href={`/${item.url}`}>
+                                {(item.title)}
+                            </Link>
+                        )}
+                    </div>
+                ))}
+            </div>
+
         </div>
     )
 }
