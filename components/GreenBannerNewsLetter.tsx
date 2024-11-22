@@ -85,13 +85,13 @@ const GreenBannerNewsLetter = () => {
               className="md:ml-auto rounded-full focus-within:outline-2 border-white border-2  focus:outline-none focus:border-accent  placeholder-gray-400 transition-all duration-300  bg-[#C5C5C5]/15 py-[10px] px-8 backdrop-blur-sm placeholder:text-white placeholder:font-light w-full"
             />
             {errorSubstribe && (
-              <span className="absolute text-red-400 -bottom-8 left-8">
+              <span className="md:absolute text-red-400 pt-2 md:pt-0 md:-bottom-8 md:left-8">
                 {errorSubstribe}
               </span>
             )}
 
             {subscriptionSuccess && (
-              <span className="absolute text-green-400 -bottom-8 left-8">
+              <span className="md:absolute text-green-400 pt-2 md:pt-0 md:-bottom-8 md:left-8">
                 Successful subscription
               </span>
             )}

@@ -8,8 +8,9 @@ import {
   ArrowRight,
   GruaIcono,
 } from "./icons";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 interface ServicesCardProps {
   titulo: string;
@@ -34,6 +35,7 @@ const ServicesCard = ({
   link,
   textoMobile,
 }: ServicesCardProps) => {
+  const pathname = usePathname()
   return (
     <motion.div
       variants={item}
@@ -61,9 +63,9 @@ const ServicesCard = ({
         <p className={`text-desktop text-base hidden md:block`}>
           {texto}
         </p>
-       <p className="text-mobile text-base md:hidden">{textoMobile}</p>
+        <p className="text-mobile text-base md:hidden">{textoMobile}</p>
         <Link
-          href={link}
+          href={`/our-services${link}`}
           className=" flex items-center gap-2 ml-auto font-semibold mt-2"
         >
           <span>Read More</span>

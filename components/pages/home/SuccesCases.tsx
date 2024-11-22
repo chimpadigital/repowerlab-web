@@ -78,38 +78,44 @@ export default function SuccesCases() {
             </div>
           )}
           <div className="mt-5 md:hidden relative">
-            <Swiper
-              slidesPerView={1.1}
-              spaceBetween={5}
-              grabCursor={true}
-              pagination={{
-                clickable: true,
-                el: ".swiper-pagination-success",
-              }}
-              modules={[Pagination]}
-              className="swiper-blogs"
-            >
-              {blogList[0] && (
-                <SwiperSlide>
-                  <CardBlog blog={blogList[0]} />
-                </SwiperSlide>
-              )}
+            {
+              blogList[0] && blogList[1] && blogList[2] ?
+                <Swiper
+                  slidesPerView={1.1}
+                  spaceBetween={5}
+                  grabCursor={true}
+                  pagination={{
+                    clickable: true,
+                    el: ".swiper-pagination-success",
+                  }}
+                  modules={[Pagination]}
+                  className="swiper-blogs"
+                >
 
-              {blogList[1] && (
-                <SwiperSlide>
-                  <CardBlog blog={blogList[1]} />
-                </SwiperSlide>
-              )}
-              {blogList[2] && (
-                <SwiperSlide>
-                  <CardBlog blog={blogList[2]} />
-                </SwiperSlide>
-              )}
-              <div className="swiper-pagination-success h-10 flex justify-center gap-2 mt-2"></div>
-            </Swiper>
+                  <SwiperSlide>
+                    <CardBlog blog={blogList[0]} />
+                  </SwiperSlide>
+
+
+
+                  <SwiperSlide>
+                    <CardBlog blog={blogList[1]} />
+                  </SwiperSlide>
+
+
+                  <SwiperSlide>
+                    <CardBlog blog={blogList[2]} />
+                  </SwiperSlide>
+
+
+                  < div className="swiper-pagination-success h-10 flex justify-center gap-2 mt-2"></div>
+                </Swiper>
+                :
+                ""
+            }
           </div>
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }
