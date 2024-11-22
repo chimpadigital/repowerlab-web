@@ -18,6 +18,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import { useTranslations } from "next-intl";
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -32,6 +33,7 @@ const container = {
 };
 
 const ServicesList = () => {
+  const t = useTranslations("Services.cards")
   return (
     <>
       <motion.div
@@ -44,58 +46,58 @@ const ServicesList = () => {
         <ServicesCard
           link="#decommissioning"
           svgIcono={<GruaIcono />}
-          texto="RepowerLab safely dismantles, relocates, and reassembles wind turbines, adhering to environmental and safety standards. The turbines are either reinstalled, used for spare parts, or recycled."
-          textoMobile="Safe dismantling, relocating, and reassembling wind turbines—meeting safety and environmental standards every step of the way."
-          titulo="Safe Dismantling"
+          texto={t.raw("card1.d")}
+          textoMobile={t.raw("card1.dM")}
+          titulo={t.raw("card1.title")}
         />
         <ServicesCard
           link="#repowering"
           svgIcono={<TurbinaeolicaIcono />}
-          texto="RepowerLab repowers wind farms by retrofitting turbines to improve efficiency, boost energy output, and reduce costs, all while following sustainable practices."
-          textoMobile="RepowerLab repowers wind farms by retrofitting turbines to improve efficiency, boost energy output, and reduce costs, all while following sustainable practices."
-          titulo="Wind farm repowering"
+          texto={t.raw("card2.d")}
+          textoMobile={t.raw("card2.dM")}
+          titulo={t.raw("card2.title")}
         />
         <ServicesCard
           link="#retrofitting"
           svgIcono={<RecicladoIcono />}
-          texto="RepowerLab enhances the performance and extends the lifespan of existing wind turbines through comprehensive retrofitting and refurbishing services, ensuring turbines operate at peak efficiency and durability."
-          textoMobile="RepowerLab enhances the performance and extends the lifespan of existing wind turbines through comprehensive retrofitting and refurbishing services, ensuring turbines operate at peak efficiency and durability."
-          titulo="Wind turbine retrofitting & refurbishing"
+          texto={t.raw("card3.d")}
+          textoMobile={t.raw("card3.dM")}
+          titulo={t.raw("card3.title")}
         />
         <ServicesCard
           link="/#blade-recycling"
           svgIcono={<RecicladoCuchillasIcono />}
-          texto="Repowerlab leads in recycling and repurposing turbine blades through mechanical shredding, cement co-processing, and creating new products, supporting a circular economy."
-          textoMobile="Recycling blades into new products. Leading the way in the circular economy."
-          titulo={`Blade recycling`}
+          texto={t.raw("card4.d")}
+          textoMobile={t.raw("card4.dM")}
+          titulo={t.raw("card4.title")}
         />
         <ServicesCard
           link="#inspection"
           svgIcono={<LupaIcono />}
-          texto="Providing independent, transparent inspections of wind turbines at various lifecycle stages, Repowerlab helps reduce risks, ensure compliance, and identify opportunities for maintenance or decommissioning."
-          textoMobile="Providing independent, transparent inspections of wind turbines at various lifecycle stages, Repowerlab helps reduce risks, ensure compliance, and identify opportunities for maintenance or decommissioning."
-          titulo="Inspection & value recovery"
+          texto={t.raw("card5.d")}
+          textoMobile={t.raw("card5.dM")}
+          titulo={t.raw("card5.title")}
         />
         <ServicesCard
           link="#resale-parts"
           svgIcono={<RasaleParts />}
-          texto="Repowerlab specializes in the global trade of wind turbines and parts, connecting supply with demand to maximize value."
-          textoMobile="Repowerlab specializes in the global trade of wind turbines and parts, connecting supply with demand to maximize value."
-          titulo="Resale of wind turbines & spare parts"
+          texto={t.raw("card6.d")}
+          textoMobile={t.raw("card6.dM")}
+          titulo={t.raw("card6.title")}
         />
         <ServicesCard
           link="#resale-materials"
           svgIcono={<RasaleMaterial />}
-          texto="RepowerLab's recycling operations address the disposal needs of wind turbine blades, particularly in the U.S. The company repurposes these materials into new products like street furniture, contributing to the circular economy."
-          textoMobile="RepowerLab's recycling operations address the disposal needs of wind turbine blades, particularly in the U.S. The company repurposes these materials into new products like street furniture, contributing to the circular economy."
-          titulo="Resale of materials"
+          texto={t.raw("card7.d")}
+          textoMobile={t.raw("card7.dM")}
+          titulo={t.raw("card7.title")}
         />
         <ServicesCard
           link="#warehousing"
           svgIcono={<Transporte />}
-          texto="Repowerlab offers secure warehousing solutions and specialized logistics to ensure the safe and efficient handling, storage, and transportation of wind turbine components."
-          textoMobile="Repowerlab offers secure warehousing solutions and specialized logistics to ensure the safe and efficient handling, storage, and transportation of wind turbine components."
-          titulo="Warehousing & transportation"
+          texto={t.raw("card8.d")}
+          textoMobile={t.raw("card8.dM")}
+          titulo={t.raw("card8.title")}
         />
       </motion.div>
       <div className="md:hidden px-4">
@@ -114,9 +116,9 @@ const ServicesList = () => {
             <ServicesCard
               link="#decommissioning"
               svgIcono={<GruaIcono />}
-              texto="RepowerLab safely dismantles, relocates, and reassembles wind turbines, adhering to environmental and safety standards. The turbines are either reinstalled, used for spare parts, or recycled."
-              textoMobile="Safe dismantling, relocating, and reassembling wind turbines—meeting safety and environmental standards every step of the way."
-              titulo="Safe Dismantling"
+              texto={t.raw("card1.d")}
+              textoMobile={t.raw("card1.dM")}
+              titulo={t.raw("card1.title")}
             />
           </SwiperSlide>
 
@@ -124,9 +126,9 @@ const ServicesList = () => {
             <ServicesCard
               link="#repowering"
               svgIcono={<TurbinaeolicaIcono />}
-              texto="RepowerLab repowers wind farms by retrofitting turbines to improve efficiency, boost energy output, and reduce costs, all while following sustainable practices."
-              textoMobile="RepowerLab repowers wind farms by retrofitting turbines to improve efficiency, boost energy output, and reduce costs, all while following sustainable practices."
-              titulo="Wind farm repowering"
+              texto={t.raw("card2.d")}
+              textoMobile={t.raw("card2.dM")}
+              titulo={t.raw("card2.title")}
             />
           </SwiperSlide>
 
@@ -134,9 +136,9 @@ const ServicesList = () => {
             <ServicesCard
               link="#retrofitting"
               svgIcono={<RecicladoIcono />}
-              texto="RepowerLab enhances the performance and extends the lifespan of existing wind turbines through comprehensive retrofitting and refurbishing services, ensuring turbines operate at peak efficiency and durability."
-              textoMobile="RepowerLab enhances the performance and extends the lifespan of existing wind turbines through comprehensive retrofitting and refurbishing services, ensuring turbines operate at peak efficiency and durability."
-              titulo="Wind turbine retrofitting & refurbishing"
+              texto={t.raw("card3.d")}
+              textoMobile={t.raw("card3.dM")}
+              titulo={t.raw("card3.title")}
             />
           </SwiperSlide>
 
@@ -144,9 +146,9 @@ const ServicesList = () => {
             <ServicesCard
               link="/#blade-recycling"
               svgIcono={<RecicladoCuchillasIcono />}
-              texto="Repowerlab leads in recycling and repurposing turbine blades through mechanical shredding, cement co-processing, and creating new products, supporting a circular economy."
-              textoMobile="Recycling blades into new products. Leading the way in the circular economy."
-              titulo={`Blade recycling`}
+              texto={t.raw("card4.d")}
+          textoMobile={t.raw("card4.dM")}
+          titulo={t.raw("card4.title")}
             />
           </SwiperSlide>
 
@@ -154,9 +156,9 @@ const ServicesList = () => {
             <ServicesCard
               link="#inspection"
               svgIcono={<LupaIcono />}
-              texto="Providing independent, transparent inspections of wind turbines at various lifecycle stages, Repowerlab helps reduce risks, ensure compliance, and identify opportunities for maintenance or decommissioning."
-              textoMobile="Providing independent, transparent inspections of wind turbines at various lifecycle stages, Repowerlab helps reduce risks, ensure compliance, and identify opportunities for maintenance or decommissioning."
-              titulo="Inspection & value recovery"
+              texto={t.raw("card5.d")}
+              textoMobile={t.raw("card5.dM")}
+              titulo={t.raw("card5.title")}
             />
           </SwiperSlide>
 
@@ -164,9 +166,9 @@ const ServicesList = () => {
             <ServicesCard
               link="#resale-parts"
               svgIcono={<RasaleParts />}
-              texto="Repowerlab specializes in the global trade of wind turbines and parts, connecting supply with demand to maximize value."
-              textoMobile="Repowerlab specializes in the global trade of wind turbines and parts, connecting supply with demand to maximize value."
-              titulo="Resale of wind turbines & spare parts"
+              texto={t.raw("card6.d")}
+              textoMobile={t.raw("card6.dM")}
+              titulo={t.raw("card6.title")}
             />
           </SwiperSlide>
 
@@ -174,9 +176,9 @@ const ServicesList = () => {
             <ServicesCard
               link="#resale-materials"
               svgIcono={<RasaleMaterial />}
-              texto="RepowerLab's recycling operations address the disposal needs of wind turbine blades, particularly in the U.S. The company repurposes these materials into new products like street furniture, contributing to the circular economy."
-              textoMobile="RepowerLab's recycling operations address the disposal needs of wind turbine blades, particularly in the U.S. The company repurposes these materials into new products like street furniture, contributing to the circular economy."
-              titulo="Resale of materials"
+              texto={t.raw("card7.d")}
+              textoMobile={t.raw("card7.dM")}
+              titulo={t.raw("card7.title")}
             />
           </SwiperSlide>
 
@@ -184,9 +186,9 @@ const ServicesList = () => {
             <ServicesCard
               link="#warehousing"
               svgIcono={<Transporte />}
-              texto="Repowerlab offers secure warehousing solutions and specialized logistics to ensure the safe and efficient handling, storage, and transportation of wind turbine components."
-              textoMobile="Repowerlab offers secure warehousing solutions and specialized logistics to ensure the safe and efficient handling, storage, and transportation of wind turbine components."
-              titulo="Warehousing & transportation"
+              texto={t.raw("card8.d")}
+              textoMobile={t.raw("card8.dM")}
+              titulo={t.raw("card8.title")}
             />
           </SwiperSlide>
         </Swiper>

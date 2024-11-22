@@ -4,8 +4,10 @@ import { button, title } from '@/components/primitives'
 import React from 'react'
 import { Link } from '@/i18n/routing';
 import HeroContainer from '@/components/pages/how-we-work/HeroContainer'
+import { useTranslations } from 'next-intl';
 
 export default function page() {
+    const t = useTranslations("HowWeWork.Banner")
     return (
         <div>
             <HeroContainer />
@@ -16,9 +18,9 @@ export default function page() {
                         <div className="flex-1 gap-10 text-start flex items-center justify-between">
                             <div className="flex-1">
                                 <h4 className={`${title()} !block mb-3 max-w-[20ch] leading-[3rem]`}>
-                                    Get in touch{" "}
+                                    {t("title1") +" "}
                                     <span className={`${title()} text-secondary`}>
-                                        Today
+                                        {t("title2")}
                                     </span>
                                 </h4>
                                 <div className="max-w-[101ch] font-light mt-6 text-[18px]">
@@ -29,7 +31,7 @@ export default function page() {
 
                             </div>
                         </div>
-                        <div className="flex relative ml-2 ">
+                        <div className="flex relative ml-2 pt-4 w-full justify-center md:justify-start">
                             <Link
                                 href="/about/contact-us"
                                 className={`scroll-smooth ${button({

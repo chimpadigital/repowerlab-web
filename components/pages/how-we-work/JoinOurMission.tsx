@@ -52,8 +52,8 @@ export default function JoinOurMission() {
                 </div>
 
                 <div className="flex pt-[60px] md:pt-[150px] gap-6 justify-center flex-wrap">
-                    <Cards image="i1" title='Why Partner with Us?' list={['Expertise in wind turbine lifecycle management', 'Proven track record in disassembly, warehousing, and refurbishing', 'Commitment to sustainability and innovation']} />
-                    <Cards image="i2" title='Why Choose RepowerLab?' list={['Comprehensive support from consultation to installation', 'Tailored solutions to meet your specific needs', 'A dedicated team of experts at your service']} />
+                    <Cards image="i2" title='Why Partner with Us?' list={['Expertise in wind turbine lifecycle management', 'Proven track record in disassembly, warehousing, and refurbishing', 'Commitment to sustainability and innovation']} />
+                    <Cards image="i1" title='Why Choose RepowerLab?' list={['Comprehensive support from consultation to installation', 'Tailored solutions to meet your specific needs', 'A dedicated team of experts at your service']} />
                     <Cards image="i3" title='Why Work with Us?' list={['Be part of a pioneering team in renewable energy', 'Opportunities for growth and professional development', 'Contribute to meaningful, impactful projects']} />
                 </div>
             </div>
@@ -77,7 +77,7 @@ const Indicator = () => {
 
 const Cards = ({ title, list, image }: { title: string, list: string[], image:string }) => {
     return (
-        <article className='text-primary bg-secondary rounded-[20px] px-8 pt-6 pb-8 w-[25%] max-w-[400px] min-w-[300px]' style={{ boxShadow: "4px 4px 4px 0px rgba(0, 0, 0, 0.10)" }}>
+        <article className='text-primary bg-secondary rounded-[20px] px-8 pt-6 pb-8 w-[25%] w-full max-w-[400px] min-w-[300px]' style={{ boxShadow: "4px 4px 4px 0px rgba(0, 0, 0, 0.10)" }}>
             <img className='w-[40px] h-[40px] mb-4 md:hidden' src={`/images/how-we-work/${image}.png`} alt="" />
             <h5 className={subtitle({ colors: "primary", size: "sm" })}>{title}</h5>
             <ul className="pt-4 md:pt-6">

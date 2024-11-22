@@ -3,9 +3,11 @@ import React from 'react'
 import { HowWorkI } from './data'
 import { subtitle, title } from '@/components/primitives'
 import { RepowerIcon } from '@/components/pages/shared/navicons'
+import { useTranslations } from 'next-intl'
 
 
 export default function ModalHowWork({ isOpen, onOpenChange, data, index }: { isOpen: boolean, onOpenChange: any, data: HowWorkI, index: number }) {
+   const t =useTranslations("HowWeWork.Hero.data")
     return (
         <Modal
             backdrop="opaque"
@@ -30,8 +32,8 @@ export default function ModalHowWork({ isOpen, onOpenChange, data, index }: { is
                                 <CloseButton onClick={() => { onClose() }} />
                                 <ModalHeader className="flex justify-center gap-1">
                                     <div className="container">
-                                        <h4 className={subtitle({ size: "md", colors: "primary" }) + " flex gap-4 max-w-[75vw]"}>{index + 1} - {data.title}</h4>
-                                        <h5 className="text-[16px] md:ps-8 font-light">{data.subtitle}</h5>
+                                        <h4 className={subtitle({ size: "md", colors: "primary" }) + " flex gap-4 max-w-[75vw]"}>{index + 1} - {t(data.title)}</h4>
+                                        <h5 className="text-[16px] md:ps-8 font-light">{t(data.subtitle)}</h5>
                                     </div>
                                 </ModalHeader>
                                 <ModalBody>
@@ -44,11 +46,12 @@ export default function ModalHowWork({ isOpen, onOpenChange, data, index }: { is
                                                     </div>
                                                 </div>
                                             </div>
-                                            <h5 className='font-bold md:hidden whitespace-nowrap text-[20px]'>For Sellers</h5>
+                                            <h5 className='font-bold md:hidden whitespace-nowrap text-[20px]'>{t("forSellers")}</h5>
                                         </div>
                                         <div className="">
-                                            <h5 className='font-bold text-[20px] hidden md:block'>For Sellers</h5>
-                                            <p className="font-light text-[16px] md:text-[18px] md:pt-6">{data.sellers}</p>
+                                            <h5 className='font-bold text-[20px] hidden md:block'>{t("forSellers")}</h5>
+                                            <p className="font-light text-[16px] md:text-[18px] hidden md:block md:pt-6">{t(data.sellers)}</p>
+                                            <p className="font-light text-[16px]  md:hidden">{t(data.sellersM)}</p>
                                         </div>
                                     </div>
                                     <div className="flex flex-col md:flex-row gap-4 md:gap-8 pt-4 max-w-[1200px]">
@@ -60,11 +63,12 @@ export default function ModalHowWork({ isOpen, onOpenChange, data, index }: { is
                                                     </div>
                                                 </div>
                                             </div>
-                                            <h5 className='font-bold md:hidden whitespace-nowrap text-[20px]'>For Buyers</h5>
+                                            <h5 className='font-bold md:hidden whitespace-nowrap text-[20px]'>{t("forBuyers")}</h5>
                                         </div>
                                         <div className="">
-                                            <h5 className='font-bold text-[20px] hidden md:block'>For Buyers</h5>
-                                            <p className="font-light text-[16px] md:text-[18px] md:pt-6">{data.buyers}</p>
+                                            <h5 className='font-bold text-[20px] hidden md:block'>{t("forBuyers")}</h5>
+                                            <p className="font-light text-[16px] md:text-[18px] md:pt-6 hidden md:block">{t(data.buyers)}</p>
+                                            <p className="font-light text-[16px]  md:hidden">{t(data.buyersM)}</p>
                                         </div>
                                     </div>
 

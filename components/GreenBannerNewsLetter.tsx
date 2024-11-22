@@ -5,8 +5,10 @@ import { button, title } from "./primitives";
 import { useReCaptcha } from "next-recaptcha-v3";
 import axios from "axios";
 import { IsotipoRepowerlab } from "./icons";
+import { useTranslations } from "next-intl";
 
 const GreenBannerNewsLetter = () => {
+  const t = useTranslations('Newsletter')
   const [errorSubstribe, setErrorSubscribe] = useState("");
   const [subscriptionSuccess, setSubscriptionSuccess] = useState(false);
   const [isSending, setIsSending] = useState(false);
@@ -56,18 +58,16 @@ const GreenBannerNewsLetter = () => {
         <div className="flex-1 text-start flex items-center justify-between">
           <div className="flex-1">
             <h4 className={`${title()} !block md:mb-3 leading-tight	`}>
-              Subscribe to
+              {t('title1')}
             </h4>
             <h4 className={`${title()} text-secondary !block mb-4 md:mb-10`}>
-              Our Newsletter
+              {t('title2')}
             </h4>
             <p className="max-w-[52ch] hidden md:block font-light">
-              Subscribe to our newsletter for the latest in circular economy
-              solutions for the energy sector and stay ahead with our projects,
-              services, and industry trends.
+              {t('p')}
             </p>
             <p className="max-w-[52ch] font-light md:hidden block">
-              Get the latest on circular energy solutions—subscribe now.
+              {t('pM')}
             </p>
           </div>
         </div>
@@ -92,7 +92,7 @@ const GreenBannerNewsLetter = () => {
 
             {subscriptionSuccess && (
               <span className="md:absolute text-green-400 pt-2 md:pt-0 md:-bottom-8 md:left-8">
-                Successful subscription
+                {t("success")}
               </span>
             )}
           </div>
@@ -104,13 +104,13 @@ const GreenBannerNewsLetter = () => {
           >
             {isSending ? (
               <span className="flex gap-3  fill-white group-hover:fill-primary">
-                Sending...
+                {t("sending")}
                 <span className="animate-spin transition-all h-[21px]">
                   <IsotipoRepowerlab />
                 </span>
               </span>
             ) : (
-              "Subscribe"
+              <>{t("subscribe")}</>
             )}
           </button>
         </form>

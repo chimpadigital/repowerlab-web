@@ -6,19 +6,21 @@ import { title } from '@/components/primitives'
 import { dataWeWork, HowWorkI } from './data'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import ModalHowWork from './ModalHowWork'
+import { useTranslations } from 'next-intl'
 
 export default function Hero() {
+  const t = useTranslations("HowWeWork.Hero")
   const breadcrumbs = [
     {
-      label: "Home",
+      label: t.raw("bread1"),
       href: ""
     },
     {
-      label: "Circular economy",
+      label: t.raw("bread2"),
       href: "/circular-economy"
     },
     {
-      label: "This is how we work",
+      label: t.raw("bread3"),
       href: ""
     }
   ]
@@ -60,7 +62,7 @@ export default function Hero() {
             ))}
           </Breadcrumbs>
           <div className="col-span-2 flex justify-center">
-            <h5 className={"text-center pt-12 " + title({ color: "white" })}>This is how we work</h5>
+            <h5 className={"text-center pt-12 " + title({ color: "white" })}>{t("title")}</h5>
           </div>
 
 
@@ -73,7 +75,7 @@ export default function Hero() {
             </div>
             <motion.div style={{ x }} className='flex gap-[7.5vw] ps-[40px] relative w-full no-wrap'>
               <div className="flex-grow flex items-end justify-center relative z-10">
-                <h5 className={title({ color: "white" }) + " w-[360px] leading-relaxed"}> <span className='text-secondary'>Start your journey</span> with a personalized consultation.</h5>
+                <h5 className={title({ color: "white" }) + " w-[360px] leading-relaxed"}> <span className='text-secondary'>{t("sub1")}</span> {t("sub2")}</h5>
               </div>
               {
                 dataWeWork.map((data, index) => (
@@ -94,12 +96,14 @@ export default function Hero() {
 
 const Circle = ({ index, data }: { index: number, data: HowWorkI }) => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
+  const t = useTranslations("HowWeWork.Hero.data")
   return (
     <>
       <article onClick={() => { onOpen() }} className="min-w-[200px] min-h-[200px] max-w-[200px] max-h-[200px] border-2 bg-[#7B72724D] cursor-pointer border-grey-100 p-4 flex items-center hover:bg-[linear-gradient(145deg,#B3C5DF_-11.89%,rgba(179,197,223,0.20)_0.1%,#FFF_70.83%)] flex-col text-white hover:text-primary justify-center rounded-full transition-all duration-600 ease " style={{ marginTop: `${index % 2 == 0 ? "0px" : "200px"}`, backdropFilter: "blur(10px)", }}>
-        <h6>{index + 1}</h6>
+        <h4>{index + 1}</h4>
         <div className="pt-4 flex flex-col justify-center items-center">
-          <h6 className='text-center'>{data.title}</h6>
+          <h5 className='text-center'> {t(data.title)} </h5>
+
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
             <path d="M19.5 12.998H13.5V18.998H11.5V12.998H5.5V10.998H11.5V4.99805H13.5V10.998H19.5V12.998Z" fill="currentColor" />
           </svg>

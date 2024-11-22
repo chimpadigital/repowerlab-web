@@ -7,8 +7,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import { useTranslations } from 'next-intl'
 
 export default function HeroMobile() {
+    const t = useTranslations("HowWeWork.Hero")
     return (
         <div className="px-4">
             <div className="h-[466px] mb-[120px] w-full bg-secondary relative rounded-[20px]">
