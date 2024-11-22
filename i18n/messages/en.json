@@ -7,7 +7,7 @@
     "Home": {
         "Hero": {
             "title": "Rethinking Energy Assets: Leading the Charge in Circular Economy Innovation",
-            "titleMob": "Rethinking Energy Assets for a Circular Future",
+            "titleMob": "Rethinking \\n Energy Assets for \\n a Circular Future",
             "btn1": "Products",
             "btn2": "Services",
             "btn3": "Marketplace"
@@ -145,7 +145,7 @@
             "card4":"DISMANTLED WIND FARMS"
         },
         "FeaturedProduct": {
-            
+
         }
     }
 }

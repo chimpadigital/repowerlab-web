@@ -1,4 +1,5 @@
 "use client"
+import Title from '@/atoms/Title';
 import { button, title } from '@/components/primitives'
 import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
@@ -20,7 +21,7 @@ export default function Hero() {
                         <div className="col-span-2 lg:col-span-1 h-full flex flex-col justify-center">
                             <div className="max-w-[600px]">
                                 <h1 className={title({ color: "white", size: "md" }) + " hidden md:block"}>{tH('title')}</h1>
-                                <h1 className={title({ color: "white", size: "md" }) + " md:hidden w-[80%]"}>{tH('titleMob')}</h1>
+                                <Title className={title({ color: "white", size: "md" }) + " md:hidden w-[80%]"} title={tH.raw('titleMob')}></Title>
                             </div>
                             <div className="hidden md:flex gap-[25px] pt-8">
                                 <Link href="/products/turbine-parts" className={`${button({ whiteLine: true })} block`}>{tH('btn1')} </Link>
