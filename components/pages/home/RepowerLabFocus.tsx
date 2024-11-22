@@ -22,7 +22,7 @@ export default function RepowerLabFocus() {
             />
           </article>
           <article className="md:hidden text-base">
-            <Paragraph textAccent="text-accent" className="text-[18px]" text="Leading innovation __for end-of-life renewable energy.__ We turn end-of-life wind farms into valuable assets by dismantling, refurbishing, reselling and repurposing wind turbines."></Paragraph>
+            <Paragraph textAccent="text-accent" className="text-[18px] leading-7" text="Leading innovation __for end-of-life renewable energy.__ We turn end-of-life wind farms into valuable assets by dismantling, refurbishing, reselling and repurposing wind turbines."></Paragraph>
 
           </article>
         </div>

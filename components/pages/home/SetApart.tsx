@@ -34,7 +34,7 @@ const MobileContainer = () => {
             <div className="h-[350px] bg-[url(/images/home/apart.webp)] bg-no-repeat bg-cover bg-center rounded-[20px] w-full relative">
                 <div className="relative p-6 z-10">
                     <h4 className="text-white font-bold text-[22px]">{t("titleMob")}</h4>
-                    <p className='font-normal text-[18px] leading-6 pt-4 text-white max-w-[240px]'>{t("subtitleMob")}</p>
+                    <p className='font-normal text-[18px] leading-7 pt-4 text-white max-w-[240px]'>{t("subtitleMob")}</p>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full rounded-[20px]" style={{
                     background: "linear-gradient(181deg, rgba(75, 100, 128, 0.70) 20.44%, rgba(121, 135, 153, 0.48) 59.9%, rgba(255, 255, 255, 0.00) 77.53%)"

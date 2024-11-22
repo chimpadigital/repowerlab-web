@@ -74,7 +74,7 @@ a free consultation.__"></Paragraph>
                   </p>
                 </div>
                 <div className="md:pt-[60px] pt-[35px] flex justify-center md:justify-start">
-                  <Link href="how-we-work" className='w-full max-w-[180px] relative overflow-hidden gap-4 items-center transition-all duration-[600] py-4 px-6 rounded-full  text-white flex justify-between hover:max-w-[200px]'>
+                  <Link href="/how-we-work" className='w-full max-w-[180px] relative overflow-hidden gap-4 items-center transition-all duration-[600] py-4 px-6 rounded-full  text-white flex justify-between hover:max-w-[200px]'>
                     <div className="w-full absolute h-full top-0 left-0 bg-[#ffffff]/40">
                     </div>
                     <span className='relative text-[18px]'>{t("howWork.read")}</span>

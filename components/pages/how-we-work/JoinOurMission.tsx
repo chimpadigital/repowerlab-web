@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 export default function JoinOurMission() {
 
     const itemClasses = {
-        base: "py-0 w-full text-primary px-2 md:px-4 md:border-0 md:bg-transparent bg-grey-100 border-[0px] md:border-[20px] !shadow-none",
+        base: "py-0 w-full text-primary px-2 md:px-4 md:border-0 md:bg-transparent bg-grey-100 !shadow-none",
         title: "font-normal data-[open=true]:font-bold text-[16px] md:text-[22px] text-primary w-[90%] md:w-[80%]",
         heading: "shadow-none data-[open]=true:font-bold md:bg-transparent bg-grey-100",
         content: "shadow-none md:px-4 py-2",

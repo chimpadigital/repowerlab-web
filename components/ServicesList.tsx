@@ -59,7 +59,7 @@ const ServicesList = () => {
           link="#retrofitting"
           svgIcono={<RecicladoIcono />}
           texto="RepowerLab enhances the performance and extends the lifespan of existing wind turbines through comprehensive retrofitting and refurbishing services, ensuring turbines operate at peak efficiency and durability."
-          textoMobile="Recycling blades into new products. Leading the way in the circular economy."
+          textoMobile="RepowerLab enhances the performance and extends the lifespan of existing wind turbines through comprehensive retrofitting and refurbishing services, ensuring turbines operate at peak efficiency and durability."
           titulo="Wind turbine retrofitting & refurbishing"
         />
         <ServicesCard
@@ -135,7 +135,7 @@ const ServicesList = () => {
               link="#retrofitting"
               svgIcono={<RecicladoIcono />}
               texto="RepowerLab enhances the performance and extends the lifespan of existing wind turbines through comprehensive retrofitting and refurbishing services, ensuring turbines operate at peak efficiency and durability."
-              textoMobile="Recycling blades into new products. Leading the way in the circular economy."
+              textoMobile="RepowerLab enhances the performance and extends the lifespan of existing wind turbines through comprehensive retrofitting and refurbishing services, ensuring turbines operate at peak efficiency and durability."
               titulo="Wind turbine retrofitting & refurbishing"
             />
           </SwiperSlide>

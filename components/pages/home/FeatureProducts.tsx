@@ -4,36 +4,45 @@ import React from "react";
 import { button, title } from "@/components/primitives";
 import { Link } from "@/i18n/routing";
 import { usePathname } from "next/navigation";
+import { ArrowButtonIcon } from '@/components/icons'
+import { useTranslations } from "next-intl";
 
 export default function FeatureProducts() {
   const pathname = usePathname();
-  console.log(pathname);
+  const t = useTranslations('Home.FeaturedProduct')
 
   return (
     <div className="pb-[50px]">
       <div className="flex justify-center items-center flex-col pt-8 px-4 pb-8 md:pb-[80px]">
         <h3 className={`${title()} text-primary mr-auto md:mr-0 mb-3 !block`}>
-          Feature Products
+        {t('title')}
         </h3>
         <p className="text-grey-parrafo max-w-[700px] text-center hidden md:block">
-          Welcome to the RepowerLab Marketplace, your destination for
-          high-quality wind turbines, spare parts, and recycled materials, all
-          thoroughly inspected for your energy asset needs.
+        {t('p1')}
         </p>
         <p
           className={`text-grey-parrafo text-sm md:hidden ${(pathname === "/es" || pathname === "/en" ) && "hidden"}`}
         >
-          Visit our Marketplace for refurbished turbines, spare parts, and
-          reclaimed materials—giving wind components a second life.
+          {t('p2')}
         </p>
       </div>
       <ScrollProducts />
+      <div className="py-4 mt-4 flex justify-center w-full md:hidden">
+              <Link href="products/wind-turbines" className='w-full mt-6 max-w-[230px] relative overflow-hidden gap-2 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white flex justify-between '>
+                <div className="w-full absolute h-full top-0 left-0 bg-primary">
+                </div>
+                <span className='relative text-[18px]'>{t('button')}</span>
+
+                <ArrowButtonIcon className="relative z-10 text-white" />
+
+              </Link>
+            </div>
       <div className="w-full py-[60px]  justify-center items-center hidden md:flex">
         <Link
-          href="marketplace"
+          href="/marketplace"
           className={`${button()} flex gap-2 items-center`}
         >
-          Go to Marketplace
+          {t('button')}
           <svg
             width="21"
             height="11"
