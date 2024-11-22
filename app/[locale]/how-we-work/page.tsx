@@ -25,20 +25,20 @@ export default function page() {
                                 </h4>
                                 <div className="max-w-[101ch] font-light mt-6 text-[18px]">
                                     <p className='max-w-[580px]'>
-                                        Join us in making a difference. Contact RepowerLab to explore how we can work together to advance the circular economy in wind energy.
+                                        {t("p")}
                                     </p>
                                 </div>
 
                             </div>
                         </div>
-                        <div className="flex relative ml-2 pt-4 w-full justify-center md:justify-start">
+                        <div className="flex relative ml-2 pt-4 w-full md:w-fit justify-center md:justify-start">
                             <Link
                                 href="/about/contact-us"
                                 className={`scroll-smooth ${button({
                                     whiteLine: true,
                                 })}`}
                             >
-                                Connect
+                                {t("connect")}
                             </Link>
                         </div>
                     </div>

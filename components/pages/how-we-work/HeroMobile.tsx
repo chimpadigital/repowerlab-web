@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { useTranslations } from 'next-intl'
+import { RepowerIcon } from '../shared/navicons'
 
 export default function HeroMobile() {
     const t = useTranslations("HowWeWork.Hero")
@@ -15,9 +16,9 @@ export default function HeroMobile() {
         <div className="px-4">
             <div className="h-[466px] mb-[120px] w-full bg-secondary relative rounded-[20px]">
                 <div className="pt-[110px] px-6 text-primary relative z-10">
-                    <h1 className='text-[22px] font-bold'>This is how we work</h1>
-                    <p className="pt-4 text-[18px]">Start your journey with
-                        a personalized consultation.</p>
+                    <h1 className='text-[22px] font-bold'>{t("title")}</h1>
+                    <p className="pt-4 text-[18px]">{t("sub1") + " " + t("sub2")}
+                    </p>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-[url(/images/how-we-work/mask.png)] rounded-[20px] bg-no-repeat bg-cover"></div>
                 <div className="relative">
@@ -52,13 +53,15 @@ export default function HeroMobile() {
 
 const CardMobile = ({ index, data }: { index: number, data: HowWorkI }) => {
     const { isOpen, onOpen, onOpenChange } = useDisclosure()
+    const t = useTranslations("HowWeWork.Hero.data")
     return (
         <>
-            <article onClick={() => { onOpen() }} className='p-6 relative w-[80vw] max-w-[400px] h-[300px] rounded-[20px] bg-[#2F2E2E]/60'>
+            <article onClick={() => { onOpen() }} style={{ backdropFilter: "blur(10px)" }} className='p-6 relative overflow-hidden w-[80vw] max-w-[400px] h-[300px] rounded-[20px] bg-[#2F2E2E]/60'>
                 <h3 className='text-accent text-[90px]'>{index + 1}</h3>
-                <h4 className='text-white text-[22px]'>{data.title}</h4>
-                <div className="flex justify-end gap-2 w-full items-center pe-4 absolute bottom-4 left-0 text-white">
-                    <p>Read More</p>
+                <RepowerIcon preserveAspectRatio="xMidYMid slice" className="absolute fill-grey-100/10 text-grey-100/10 -top-4 -right-4 h-[120px] w-[120px]"/>
+                <h4 className='text-white font-bold text-[22px] relative z-10'>{t(data.title)}</h4>
+                <div className="flex justify-end gap-2 w-full z-10 items-center pe-4 absolute bottom-4 left-0 text-white">
+                    <p className='font-bold'>{t("read")}</p>
                     <div className="w-4 h-4 fill-white">
                         <ArrowRight />
                     </div>

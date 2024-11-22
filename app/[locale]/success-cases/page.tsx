@@ -36,7 +36,7 @@ const SuccessCases = () => {
           backgroundPosition: "top left, bottom right",
         }}
       >
-        <h2 className="text-primary font-bold text-[22px] mb-4">Success Cases</h2>
+        <h2 className="text-primary font-bold text-[22px] mb-4 md:hidden">Success Cases</h2>
         <p className="max-w-[73ch] text-center font-medium md:font-normal text-2xl text-primary hidden md:block">
           We’ve dismantled, refurbished, and resold over 200 wind turbines
           through our marketplace. By 2025, we will have over 4,000 wind
@@ -47,7 +47,7 @@ const SuccessCases = () => {
           </span>
         </p>
 
-        <p className="max-w-[73ch] text-center text-base text-primary px-2">
+        <p className="max-w-[73ch] text-center text-base text-primary px-2 md:hidden">
           We’ve dismantled, refurbished, and resold over 200 turbines. By 2025,
           over 4,000 turbines will be ready for installation,{" "}
           <span className="text-accent font-medium">

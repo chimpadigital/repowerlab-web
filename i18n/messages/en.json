@@ -223,6 +223,7 @@
             "sub2": " with a personalized consultation.",
             
             "data": {
+                "read":"Read more",
                 "forSellers":"For Sellers",
                 "forBuyers":"For Buyers",
                 "data1": {
@@ -307,9 +308,37 @@
                 }
             }
         },
+        "JoinMission":{
+            "title":"Join Our Mission",
+            "p":"At RepowerLab, we are dedicated to **advancing the circular economy in the wind energy sector**. By working together with partners, clients, and talented individuals, we can achieve a more sustainable and efficient future. **Join us in our mission to innovate, transform, and lead the way in renewable energy solutions.**",
+            "pM":"**At RepowerLab, we advance the circular economy in wind energy.** By collaborating with partners, clients, and passionate individuals, we aim for a sustainable future. **Join us to lead in renewable energy solutions.**",
+            "accordion":{
+                "ac1":{
+                    "title":"Are you a business looking to collaborate on sustainable energy solutions?",
+                    "titleM":"Looking to collaborate on sustainable energy?",
+                    "p":"Join us in creating a circular economy for wind energy. Together, we can innovate and transform the industry.",
+                    "pM":"Join us to create a circular wind energy economy."
+                },
+                "ac2":{
+                    "title":"Need expert assistance with wind turbine projects?",
+                    "titleM":"Need expert assistance with wind turbine projects?",
+                    "p":"From disassembly and warehousing to refurbishing and sales, RepowerLab is here to provide comprehensive support throughout the lifecycle of your wind energy assets.",
+                    "pM":"We offer full support, from disassembly to refurbishment."
+                },
+                "ac3":{
+                    "title":"Talent Passionate about renewable energy and sustainability?",
+                    "titleM":"Passionate about renewable energy and sustainability?",
+                    "p":"We are always looking for talented individuals to join our team. If you are driven to make a difference and eager to contribute to our mission, we want to hear from you.",
+                    "pM":"We want talented individuals eager to make a difference."
+                }
+            }
+        },
         "Banner":{
             "title1":"Get in touch",
-            "title2":"Today"
+            "title2":"Today",
+            "p":"Join us in making a difference. Contact RepowerLab to explore how we can work together to advance the circular economy in wind energy.",
+            "connect":"Connect"
+            
         }
     }
 }

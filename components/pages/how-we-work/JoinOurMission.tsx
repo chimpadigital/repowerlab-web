@@ -5,10 +5,11 @@ import { subtitle, title } from '@/components/primitives'
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl';
 
 
 export default function JoinOurMission() {
-
+    const t = useTranslations("HowWeWork.JoinMission")
     const itemClasses = {
         base: "py-0 w-full text-primary px-2 md:px-4 md:border-0 md:bg-transparent bg-grey-100 !shadow-none",
         title: "font-normal data-[open=true]:font-bold text-[16px] md:text-[22px] text-primary w-[90%] md:w-[80%]",
@@ -20,35 +21,59 @@ export default function JoinOurMission() {
 
     return (
         <section className="w-full flex justify-center py-12 md:py-[100px]">
-            <div className="container text-primary px-6">
+            <div className="container text-primary px-4 md:px-6">
                 <div className="grid lg:grid-cols-2 grid cols-1">
                     <div className="col-span-1">
-                        <h4 className={title()}>Join Our Mission</h4>
-                        <Paragraph className='text-grey-parrafo text-[20px] pt-[40px] max-w-[450px]' text='At RepowerLab, we are dedicated to **advancing the circular economy in the wind energy sector**. By working together with partners, clients, and talented individuals, we can achieve a more sustainable and efficient future. **Join us in our mission to innovate, transform, and lead the way in renewable energy solutions.**' />
+                        <h4 className={title()}>{t("title")}</h4>
+                        <Paragraph className='text-grey-parrafo hidden md:block text-[20px] pt-[40px] max-w-[450px]' text={t.raw('p')} />
+                        <Paragraph className='text-grey-parrafo md:hidden text-[20px] pt-[40px] max-w-[450px]' text={t.raw('pM')} />
 
                     </div>
-                    <div className="col-span-1 mt-6 md:mt-0">
+                    <div className="col-span-1 mt-6 md:mt-0 hidden md:block">
                         <Accordion variant="splitted" itemClasses={itemClasses}>
-                            <AccordionItem indicator={<Indicator />} key="1" aria-label="Accordion 1" title="Are you a business looking to collaborate on sustainable energy solutions?">
+                            <AccordionItem indicator={<Indicator />} key="1" aria-label="Accordion 1" title={t.raw("accordion.ac1.title")}>
                                 <hr className="w-full border border-grey-600/15" />
                                 <div className='pt-4'>
-                                    <Paragraph text='Join us in creating a circular economy for wind energy. Together, we can innovate and transform the industry.' className='text-grey-parrafo' />
+                                    <Paragraph text={t.raw("accordion.ac1.p")} className='text-grey-parrafo' />
                                 </div>
                             </AccordionItem>
-                            <AccordionItem indicator={<Indicator />} key="2" aria-label="Accordion 2" title="Need expert assistance with wind turbine projects?">
+                            <AccordionItem indicator={<Indicator />} key="2" aria-label="Accordion 2" title={t("accordion.ac2.title")}>
                                 <hr className="w-full border border-grey-600/15" />
                                 <div className='pt-4'>
-                                    <Paragraph text='From disassembly and warehousing to refurbishing and sales, RepowerLab is here to provide comprehensive support throughout the lifecycle of your wind energy assets.' className='text-grey-parrafo' />
+                                <Paragraph text={t.raw("accordion.ac2.p")} className='text-grey-parrafo' />
                                 </div>
                             </AccordionItem>
-                            <AccordionItem indicator={<Indicator />} key="3" aria-label="Accordion 3" title="Talent Passionate about renewable energy and sustainability?">
+                            <AccordionItem indicator={<Indicator />} key="3" aria-label="Accordion 3" title={t.raw("accordion.ac3.title")}>
                                 <hr className="w-full border border-grey-600/15" />
                                 <div className='pt-4'>
-                                    <Paragraph text='We are always looking for talented individuals to join our team. If you are driven to make a difference and eager to contribute to our mission, we want to hear from you.' className='text-grey-parrafo' />
+                                <Paragraph text={t.raw("accordion.ac3.p")} className='text-grey-parrafo' />
                                 </div>
                             </AccordionItem>
                         </Accordion>
                     </div>
+                    <div className="col-span-1 mt-6 md:mt-0 md:hidden">
+                        <Accordion variant="splitted" itemClasses={itemClasses}>
+                            <AccordionItem indicator={<Indicator />} key="1" aria-label="Accordion 1" title={t.raw("accordion.ac1.titleM")}>
+                                <hr className="w-full border border-grey-600/15" />
+                                <div className='pt-4'>
+                                    <Paragraph text={t.raw("accordion.ac1.pM")} className='text-grey-parrafo' />
+                                </div>
+                            </AccordionItem>
+                            <AccordionItem indicator={<Indicator />} key="2" aria-label="Accordion 2" title={t("accordion.ac2.titleM")}>
+                                <hr className="w-full border border-grey-600/15" />
+                                <div className='pt-4'>
+                                <Paragraph text={t.raw("accordion.ac2.pM")} className='text-grey-parrafo' />
+                                </div>
+                            </AccordionItem>
+                            <AccordionItem indicator={<Indicator />} key="3" aria-label="Accordion 3" title={t.raw("accordion.ac3.titleM")}>
+                                <hr className="w-full border border-grey-600/15" />
+                                <div className='pt-4'>
+                                <Paragraph text={t.raw("accordion.ac3.pM")} className='text-grey-parrafo' />
+                                </div>
+                            </AccordionItem>
+                        </Accordion>
+                    </div>
+                  
                 </div>
 
                 <div className="flex pt-[60px] md:pt-[150px] gap-6 justify-center flex-wrap">
