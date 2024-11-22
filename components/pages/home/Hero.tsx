@@ -24,12 +24,12 @@ export default function Hero() {
                                 <Title className={title({ color: "white", size: "md" }) + " md:hidden w-[80%]"} title={tH.raw('titleMob')}></Title>
                             </div>
                             <div className="hidden md:flex gap-[25px] pt-8">
-                                <Link href="/products/turbine-parts" className={`${button({ whiteLine: true })} block`}>{tH('btn1')} </Link>
+                                <Link href="#products" className={`${button({ whiteLine: true })} block`}>{tH('btn1')} </Link>
                                 <Link href="/our-services" className={`${button({ whiteLine: true })} block`}>{tH('btn2')}</Link>
                                 <Link href="/marketplace" className={`${button({ whiteLine: true })} block`}>{tH('btn3')}</Link>
                             </div>
                             <div className="flex md:hidden flex-col gap-[25px] pt-8">
-                                <Link href="/products/turbine-parts" className={`text-white text-[1.2rem] items-center font-bold flex gap-2 block`}>{tH('btn1')}  <Arrow /></Link>
+                                <Link href="#products" className={`text-white text-[1.2rem] items-center font-bold flex gap-2 block`}>{tH('btn1')}  <Arrow /></Link>
                                 <Link href="/our-services" className={`text-white text-[1.2rem] items-center font-bold flex gap-2 block`}>{tH('btn2')} <Arrow /></Link>
                                 <Link href="/marketplace" className={`text-white text-[1.2rem] items-center font-bold flex gap-2 block`}>{tH('btn3')} <Arrow /></Link>
                             </div>

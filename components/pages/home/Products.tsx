@@ -15,7 +15,7 @@ export default function Products() {
   const resize = useWindowSize()
 
   return (
-    <div className='pt-0 md:py-[100px] w-full flex-col items-center flex justify-center'>
+    <div className='pt-0 md:py-[100px] w-full flex-col items-center flex justify-center' id='products'>
       <div className="container relative z-10 w-full px-4 md:px-8">
         <div className="w-full flex justify-center md:items-center flex-col">
           <h2 className={`${title({ color: "primary" })} md:text-center`}>{t('title')}</h2>
