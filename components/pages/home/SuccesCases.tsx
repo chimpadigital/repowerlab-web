@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import { useTranslations } from "next-intl";
 
 const prueba: BlogI = {
   title: "Wind turbines",
@@ -26,7 +27,7 @@ export default function SuccesCases() {
   const [currentPage, setCurrentPage] = useState(1);
   const [blogList, setBlogList] = useState<BlogI[]>([]);
   const [lastPage, setLastPage] = useState(1);
-
+  const t = useTranslations('Home.SuccesCases')
   useEffect(() => {
     const getBlogs = async () => {
       try {
@@ -55,16 +56,13 @@ export default function SuccesCases() {
           <h2
             className={`${title({ color: "primary" })} px-4 md:text-center w-full`}
           >
-            Success Cases
+            {t("title")}
           </h2>
           <p className="max-w-[680px] pt-6 text-grey-parrafo w-full text-center font-light hidden md:block">
-            Discover RepowerLab’s success in decommissioning, retrofitting, and
-            reselling refurbished wind turbines, highlighting our circular
-            economy solutions for the energy sector.
+            {t("sub")}
           </p>
-          <p className="md:hidden px-4">
-            Learn how we succeed in decommissioning, retrofitting, and reselling
-            turbines—leading in the circular economy.
+          <p className="md:hidden pt-6 w-[90%] leading-7 text-grey-parrafo text-[18px] px-4">
+            {t("subM")}
           </p>
 
           {blogList && (
@@ -81,8 +79,8 @@ export default function SuccesCases() {
           )}
           <div className="mt-5 md:hidden">
             <Swiper
-              slidesPerView={1.2}
-              spaceBetween={10}
+              slidesPerView={1.1}
+              spaceBetween={5}
               grabCursor={true}
               pagination={{
                 clickable: true,

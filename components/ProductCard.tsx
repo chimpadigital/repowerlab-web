@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Link } from '@/i18n/routing';
 import { ArrowRight } from './icons'
+import Title from '@/atoms/Title';
 
 export default function ProductCard({ title, img, height, href, description }: { href: string, title: string, img: string, height: string, description?: string }) {
     const [open, setOpen] = useState<boolean>(false)
@@ -38,8 +39,7 @@ export default function ProductCard({ title, img, height, href, description }: {
                     <motion.div className="flex flex-col justify-center relative text-white" style={{ backdropFilter: "blur(10px)", borderRadius: open ? "0px" : "10px", }} variants={variants} animate={open ? "open" : "closed"}>
                         <div className='text-[24px] font-normal relative pe-4 flex' >
                             <div className="flex w-full justify-between">
-
-                                <h6 dangerouslySetInnerHTML={{ __html: title }}></h6>
+                                <Title className='' title={title} />
                                 <motion.div variants={variantFlecha} transition={{ duration: 0.6 }} animate={open ? "open" : "closed"} className="w-12 h-12 bg-[#C5C5C526] right-0 relative z-10 text-white rounded-full border-white border cursor-pointer" style={{}}>
                                     <div className="flex h-full w-full justify-center items-center">
                                         <div className="h-3 fill-white left-px relative">

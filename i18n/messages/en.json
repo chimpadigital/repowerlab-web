@@ -1,5 +1,151 @@
 {
     "greeting": "Hello",
+    "shared": {
+        "no-video-support": "Tu navegador no soporta la reproducción de videos."
+    },
     "Navbar": {},
-    "Home": {}
+    "Home": {
+        "Hero": {
+            "title": "Rethinking Energy Assets: Leading the Charge in Circular Economy Innovation",
+            "titleMob": "Rethinking Energy Assets for a Circular Future",
+            "btn1": "Products",
+            "btn2": "Services",
+            "btn3": "Marketplace"
+        },
+        "Our-Focus": {
+            "title": "Our Focus",
+            "animatedWord": "--RepowerLab is a pioneering company transforming the energy sector by --providing --innovative --solutions --for --end-of-life --energy --assets, including decommissioning, repowering, retrofitting, recycling, and resale of renewable energy infrastructure.",
+            "paragraphMobile": "Leading innovation __for end-of-life renewable energy.__ We turn end-of-life wind farms into valuable assets by dismantling, refurbishing, reselling and repurposing wind turbines.",
+            "paragraph1": "With a strong presence in Europe, the US, and Latin America, we have **successfully managed numerous decommissioning projects** on a global scale.\n Our expertise ensures **maximum value recovery** and extended lifespan for energy assets. We offer comprehensive, **turnkey circular economy solutions** that include strategic planning, asset recovery, and the resale and installation of refurbished equipment.",
+            "paragraph2": "Committed to sustainability, we utilize advanced European recycling technologies to achieve **high material recovery rates.**  By enhancing the performance and efficiency of energy assets, RepowerLab promotes environmental stewardship, driving **innovation and sustainability** in the renewable energy industry."
+        },
+        "SetApart": { 
+            "title": "What sets us apart",
+            "subtitle": "At Repowerlab, we lead in innovation, sustainability, and compliance, setting new standards in the energy sector.",
+            "titleMob":"Our Edge",
+            "subtitleMob":"We lead in innovation, sustainability, and setting        new energy standards.",
+            "cards": {
+                "card1": {
+                    "title": "Value Recovery Assessment",
+                    "paragraph": "Helping sellers assess the value of their turbines and parts to maximize returns.",
+                    "paragraphMob": "Maximize your returns—let us assess your turbines’ value."
+                },
+                "card2": {
+                    "title": "Dismantling and Transportation",
+                    "paragraph": "Managing the safe and efficient dismantling and transport of turbines and parts.",
+                    "paragraphMob": "Safe, efficient turbine dismantling and transport."
+                },
+                "card3": {
+                    "title": "Buyer Support",
+                    "paragraph": "Assisting buyers in selecting the right turbines and parts, ensuring they meet their project requirements and regulatory standards.",
+                    "paragraphMob": "Get expert help finding the right turbines and parts."
+                },
+                "card4": {
+                    "title": "Inspection and Quality Assurance",
+                    "paragraph": "Providing thorough inspections and quality assurance to ensure all products meet the highest standards.",
+                    "paragraphMob": "Ensuring quality and safety for turbine dismantling and transport."
+                },
+                "card5": {
+                    "title": "Sales Process Management",
+                    "paragraph": "Facilitating the sale from initial consultation through to final delivery and installation.",
+                    "paragraphMob": "Ensuring quality and safety for turbine dismantling and transport."
+                }
+            }
+        },
+        "Impact":{
+            "title":"Repowerlab's Impact",
+            "subtitle":"Circular economy solutions that cut waste, boost efficiency, and save costs.",
+            "animatedWord": "Our commitment to the circular economy and innovative energy solutions --delivers --measurable --results --in --waste --reduction, --efficiency, --and --cost --savings.",
+            "cards":{
+                "card1":{
+                    "title":"Waste reduction",
+                    "descriptionMob":"Advanced recycling and repurposingf reduce turbine waste by up to 90%.",
+                    "description":"Through advanced recycling and repurposing, Repowerlab cuts waste from decommissioned wind turbines by up to 90%, leading the industry in sustainable practices."
+                },
+                "card2":{
+                    "title":"Waste avoided",
+                    "descriptionMob":"We avoided 60% of potential waste by keeping materials in use longer.",
+                    "description":"Our circular economy initiatives have successfully diverted 60% of potential waste from landfills, turning end-of-life wind turbine components into valuable resources."
+                },
+                "card3":{
+                    "title":"Increased power output",
+                    "descriptionMob":"Repowering techniques boost turbine efficiency by 25-335% maximizing energy production",
+                    "description":"Repowerlab’s innovative repowering techniques boost the efficiency of wind turbines by 25-35%, maximizing energy production from existing assets."
+                },
+                "card4":{
+                    "title":"COST REDUCTION IN DECOMMISSIONING",
+                    "descriptionMob":"90% cost reduction by optimizing the decommissioning process, making energy transitions affordable.",
+                    "description":"By optimizing the decommissioning process, we reduce costs by 90%, making sustainable energy transitions more affordable and accessible."
+                }
+            },
+            "howWork":{
+                "title1":"This is how",
+                "title2":"we work",
+                "p1":"At RepowerLab, we offer a comprehensive solution for the lifecycle management of wind turbines.",
+                "p2":"Whether you're selling or buying wind turbines, we ensure a smooth, efficient, and transparent process.",
+                "p3":"Looking for expert assistance? Please contact us for an obligation-free introduction.",
+                "read":"Read more"
+            },
+            "singles":{
+                "card1":{
+                    "title":"A single point of contac",
+                    "d":"We provide a single point of contact for all services, ensuring seamless communication and coordination",
+                    "dM":"One contact, all services—smooth and simple."
+                },
+                "card2":{
+                    "title":"Global Presence",
+                    "d":"Our services span two continents, delivering and servicing anywhere in the world.",
+                    "dM":"We’re global—serving three continents and counting."
+                },
+                "card3":{
+                    "title":"Expertise",
+                    "d":"With over 12 years of experience, we bring unmatched expertise to every project.",
+                    "dM":"12+ years of unmatched expertise in every project."
+                }
+               
+            }
+        },
+        "SuccesCases":{
+            "title":"Success cases",
+            "sub":"Discover RepowerLab’s success in decommissioning, retrofitting, and reselling refurbished wind turbines, highlighting our circular economy solutions for the energy sector.",
+            "subM":"Learn how we succeed in decommissioning, retrofitting, and reselling turbines—leading in the circular economy."
+        },
+        "Services":{
+            "title":"Services"
+        },
+        "Products":{
+            "title":"Products",
+            "paragraph":"RepowerLab offers high-quality unused and refurbished wind turbines, spare parts, and recycled materials, with a focus on sustainability and comprehensive support from procurement to installation.",
+            "read":"Read more",
+            "cards":{
+                "card1":{
+                    "title":"Unused \n wind turbines",
+                    "description":"Turbines from canceled projects, offering top performance at a lower cost."
+                },
+                "card2":{
+                    "title":"Refurbished \n wind turbines",
+                    "description":"Remanufactured turbines, providing a cost-effective way to extend wind farm life."
+                },
+                "card3":{
+                    "title":"Used \n wind turbines",
+                    "description":"Budget-friendly turbines sold as-is for installation or refurbishment."
+                },
+                "card4":{
+                    "title":"Wind turbine \n spare parts",
+                    "description":"New and refurbished parts to keep turbines running efficiently."
+                }
+            }
+        },
+        "Numbers":{
+            "title":"Numbers",
+            "subtitle":"Check out our track record, showcased through the numbers that define our success.",
+            "card1":"WIND TURBINES SOLD",
+            "card2":"FINISHED PROJECTS",
+            "card3":"SATISFIED CLIENTS",
+            "card4":"DISMANTLED WIND FARMS"
+        },
+        "FeaturedProduct": {
+            
+        }
+    }
 }

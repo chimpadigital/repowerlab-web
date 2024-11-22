@@ -1,9 +1,12 @@
 "use client"
 import { button, title } from '@/components/primitives'
 import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 import React from 'react'
 
 export default function Hero() {
+    const t = useTranslations()
+    const tH = useTranslations('Home.Hero')
     return (
         <div className="w-full px-4 lg:px-8 items-center flex-col w-full flex justify-center relative pb-[65px] md:pb-[150px]">
             <div className="w-full relative flex justify-center overflow-hidden h-full min-h-[90vh] max-h-[1500px]  rounded-[20px] ">
@@ -16,23 +19,24 @@ export default function Hero() {
                     <div className="grid grid-cols-2 h-full md:ps-[2rem]">
                         <div className="col-span-2 lg:col-span-1 h-full flex flex-col justify-center">
                             <div className="max-w-[600px]">
-                                <h1 className={title({ color: "white", size: "md" })}>Rethinking Energy Assets: Leading the Charge in Circular Economy Innovation</h1>
+                                <h1 className={title({ color: "white", size: "md" }) + " hidden md:block"}>{tH('title')}</h1>
+                                <h1 className={title({ color: "white", size: "md" }) + " md:hidden w-[80%]"}>{tH('titleMob')}</h1>
                             </div>
                             <div className="hidden md:flex gap-[25px] pt-8">
-                                <Link href="/products/turbine-parts" className={`${button({ whiteLine: true })} block`}>Products </Link>
-                                <Link href="/our-services" className={`${button({ whiteLine: true })} block`}>Services</Link>
-                                <Link href="/marketplace" className={`${button({ whiteLine: true })} block`}>Marketplace</Link>
+                                <Link href="/products/turbine-parts" className={`${button({ whiteLine: true })} block`}>{tH('btn1')} </Link>
+                                <Link href="/our-services" className={`${button({ whiteLine: true })} block`}>{tH('btn2')}</Link>
+                                <Link href="/marketplace" className={`${button({ whiteLine: true })} block`}>{tH('btn3')}</Link>
                             </div>
                             <div className="flex md:hidden flex-col gap-[25px] pt-8">
-                                <Link href="/products/turbine-parts" className={`text-white text-[1.2rem] items-center font-bold flex gap-2 block`}>Products  <Arrow /></Link>
-                                <Link href="/our-services" className={`text-white text-[1.2rem] items-center font-bold flex gap-2 block`}>Services <Arrow /></Link>
-                                <Link href="/marketplace" className={`text-white text-[1.2rem] items-center font-bold flex gap-2 block`}>Marketplace <Arrow /></Link>
+                                <Link href="/products/turbine-parts" className={`text-white text-[1.2rem] items-center font-bold flex gap-2 block`}>{tH('btn1')}  <Arrow /></Link>
+                                <Link href="/our-services" className={`text-white text-[1.2rem] items-center font-bold flex gap-2 block`}>{tH('btn2')} <Arrow /></Link>
+                                <Link href="/marketplace" className={`text-white text-[1.2rem] items-center font-bold flex gap-2 block`}>{tH('btn3')} <Arrow /></Link>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     )
 }

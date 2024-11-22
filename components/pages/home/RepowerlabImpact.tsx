@@ -9,8 +9,11 @@ import { motion } from "framer-motion";
 import { Link } from "@/i18n/routing";
 import React, { useState } from "react";
 import Paragraph from "@/atoms/Paragraph";
+import { useTranslations } from "next-intl";
 
 export default function RepowerlabImpact() {
+  const t = useTranslations("Home.Impact")
+
   return (
     <div className='md:px-8 px-4 relative overflow-x-hidden'>
       <div className="absolute bottom-0 hidden lg:block w-full h-[500px]">
@@ -19,56 +22,62 @@ export default function RepowerlabImpact() {
       <div className="rounded-[10px] bg-primary pt-9 md:py-[100px] flex justify-center">
         <div className="container px-6">
           <div className="flex flex-col lg:flex-row justify-between gap-4 md:gap-[40px] lg:gap-[100px]">
-            <h5 className={`text-secondary md:text-white text-[28px] max-w-[300px]`}>RepowerLab's Impact</h5>
-            <p className="md:hidden text-white text-[18px]">Circular economy solutions that cut waste, boost efficiency, and save costs.</p>
+            <h5 className={`text-secondary md:text-white text-[28px] max-w-[300px]`}>{t("title")}</h5>
+            <p className="md:hidden text-white text-[18px]">{t("subtitle")}</p>
             <div className="max-w-[1000px] hidden md:block text-grey-100 text-[30px]" >
-              <WordAnimated accentColor='text-secondary' text={"Our commitment to the circular economy and innovative energy solutions --delivers --measurable --results --in --waste --reduction, --efficiency, --and --cost --savings."} />
+              <WordAnimated accentColor='text-secondary' text={t.raw("animatedWord")} />
             </div>
           </div>
           <div className="pt-[80px] md:pt-[120px] relative z-10">
             <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 mb-[80px] md:mb-[200px]">
-              <Card title='Waste reduction' percent='85-90%'
-                descriptionMobile="Advanced recycling and repurposingf reduce turbine waste by up to 90%"
-                description='Through advanced recycling and repurposing, Repowerlab cuts waste from decommissioned wind turbines by up to 90%, leading the industry in sustainable practices.' />
-              <Card title='Waste avoided'
+              <Card percent='85-90%'
+                title={t.raw("cards.card1.title")}
+                descriptionMobile={t.raw("cards.card1.descriptionMob")}
+                description={t.raw("cards.card1.description")} />
+              <Card
                 percent='60%'
-                descriptionMobile="We avoided 60% of potential waste by keeping materials in use longer."
-                description='Our circular economy initiatives have successfully diverted 60% of potential waste from landfills, turning end-of-life wind turbine components into valuable resources.' />
+                title={t.raw("cards.card2.title")}
+                descriptionMobile={t.raw("cards.card2.descriptionMob")}
+                description={t.raw("cards.card2.description")} />
               <Card
-                descriptionMobile="Repowering techniques boost turbine efficiency by 25-335% maximizing energy production"
-                title='Increased power output' percent='25-30%' description='Repowerlab’s innovative repowering techniques boost the efficiency of wind turbines by 25-35%, maximizing energy production from existing assets.' />
+                percent='25-30%'
+                title={t.raw("cards.card3.title")}
+                descriptionMobile={t.raw("cards.card3.descriptionMob")}
+                description={t.raw("cards.card3.description")} />
               <Card
-                descriptionMobile="90% cost reduction by optimizing the decommissioning process, making energy transitions affordable."
-                title='COST REDUCTION IN DECOMMISSIONING' percent='85-90%' description='By optimizing the decommissioning process, we reduce costs by 90%, making sustainable energy transitions more affordable and accessible.' />
+                percent='85-90%'
+                title={t.raw("cards.card4.title")}
+                descriptionMobile={t.raw("cards.card4.descriptionMob")}
+                description={t.raw("cards.card4.description")} />
             </div>
           </div>
           <div className='grid pb-2 lg:grid-cols-2 grid-cols-1 gap-6 relative'>
-
             <div className="col-span-1 relative z-10">
               <div className="max-w-[400px] text-white">
-                <h3 className={`${title({ color: "white", size: "md" })}`}>This is how <span className='text-secondary'>we work</span></h3>
-                <div className="md:hidden">
-                  <Paragraph textAccent="text-secondary" text="We manage wind turbines from start to finish. Buying or selling? We make it easy. __Contact us for 
+                <h3 className={`${title({ color: "white", size: "md" })}`}>{t("howWork.title1")} <span className='text-secondary'>{t("howWork.title2")}</span></h3>
+                <div className="md:hidden pt-6">
+                  <Paragraph textAccent="text-secondary" className="text-[18px]" text="We manage wind turbines from start to finish. Buying or selling? We make it easy. __Contact us for 
 a free consultation.__"></Paragraph>
                 </div>
                 <div className="hidden md:block">
 
                   <p className="pt-[50px]">
-                    At RepowerLab, we offer a comprehensive solution
-                    for the lifecycle management of wind turbines.
+                    {t("howWork.p1")}
                   </p>
                   <p className="pt-[50px]">
-                    Whether you're selling or buying wind turbines, we ensure a smooth, efficient, and transparent process.
+                    {t("howWork.p2")}
+
                   </p>
-                  <p className="pt-[50px]">Looking for expert assistance? Please contact us for
-                    an obligation-free introduction.
+                  <p className="pt-[50px]">
+
+                    {t("howWork.p3")}
                   </p>
                 </div>
-                <div className="md:pt-[60px] pt-[30px]">
+                <div className="md:pt-[60px] pt-[35px] flex justify-center md:justify-start">
                   <Link href="how-we-work" className='w-full max-w-[180px] relative overflow-hidden gap-4 items-center transition-all duration-[600] py-4 px-6 rounded-full  text-white flex justify-between hover:max-w-[200px]'>
                     <div className="w-full absolute h-full top-0 left-0 bg-[#ffffff]/40">
                     </div>
-                    <span className='relative text-[18px]'>Read more</span>
+                    <span className='relative text-[18px]'>{t("howWork.read")}</span>
 
                     <svg
                       width="21"
@@ -86,30 +95,30 @@ a free consultation.__"></Paragraph>
                 </div>
               </div>
             </div>
-            <div className="col-span-1 relative z-10">
+            <div className="col-span-1 relative z-10 pt-6">
               <Single
-                title="A single point of contact"
                 url=""
                 index={1}
-                descriptionMobile="One contact, all services—smooth and simple."
-                description="We provide a single point of contact for all services, ensuring seamless communication and coordination"
+                title={t.raw("singles.card1.title")}
+                descriptionMobile={t.raw("singles.card1.dM")}
+                description={t.raw("singles.card1.d")}
               />
               <div className="pt-8">
                 <Single
-                  title="Global Presence"
                   url=""
                   index={2}
-                  descriptionMobile="We’re global—serving three continents and counting."
-                  description="Our services span two continents, delivering and servicing anywhere in the world."
+                  title={t.raw("singles.card2.title")}
+                  descriptionMobile={t.raw("singles.card2.dM")}
+                  description={t.raw("singles.card2.d")}
                 />
               </div>
               <div className="pt-8">
                 <Single
-                  title="Expertise"
                   url=""
                   index={3}
-                  descriptionMobile="12+ years of unmatched expertise in every project."
-                  description="With over 12 years of experience, we bring unmatched expertise to every project."
+                  title={t.raw("singles.card3.title")}
+                  descriptionMobile={t.raw("singles.card3.dM")}
+                  description={t.raw("singles.card3.d")}
                 />
               </div>
             </div>
@@ -184,14 +193,14 @@ const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
 interface SingleI {
   title: string;
   url: string;
-  index:number
+  index: number
   description: string;
   descriptionMobile: string;
 }
 
 const Single = ({ title, url, description, descriptionMobile, index }: SingleI) => {
   return (
-    <article className={`flex flex-col-reverse md:flex-row justify-between items-start md:items-center gap-4 pb-6 ${ index == 3 ? "md:border-b" : "border-b" }  border-grey-100/50`}>
+    <article className={`flex flex-col-reverse md:flex-row justify-between items-start md:items-center gap-4 pb-6 ${index == 3 ? "md:border-b" : "border-b"}  border-grey-100/50`}>
       <div className="max-w-[480px]">
         <h5 className={`md:text-white text-secondary font-bold pb-4 text-[22px] md:text-[28px]`}>
           {title}
@@ -200,7 +209,7 @@ const Single = ({ title, url, description, descriptionMobile, index }: SingleI) 
         <p className="text-white md:hidden">{descriptionMobile}</p>
       </div>
       <RotateScroll>
-        <IconHowWeWork className="text-accent md:text-white md:opacity-50"/>
+        <IconHowWeWork className="text-accent md:text-white md:opacity-50" />
       </RotateScroll>
     </article>
   );

@@ -31,7 +31,7 @@ function cambiarFormatoFecha(fechaStr: any) {
   const fecha = new Date(fechaStr.replace(' ', 'T')); // Agregar 'T' para que el formato sea válido
 
   // Opciones para el formato deseado
-  const opciones: any = { year: 'numeric', month: 'long', day: 'numeric' };
+  const opciones: any = { year: 'numeric', month: 'short', day: 'numeric' };
 
   // Formatear la fecha
   const fechaFormateada = new Intl.DateTimeFormat('en-US', opciones).format(fecha);
@@ -61,7 +61,7 @@ export default function CardBlog({ blog, }: { blog: BlogI }) {
   const fechaCambiada = (blog && blog.published_at) ? cambiarFormatoFecha(blog?.published_at) : "";
 
   return (
-    <article className={`p-6 pt-0 md:pt-6`} style={{width: "min(100%, 400px)"}}>
+    <article className={`p-2 md:p-6  pt-0 md:pt-6`} style={{width: "min(100%, 400px)"}}>
       <div className="flex gap-2 flex-col">
 
         <h5 className={`${subtitle({ colors: "primary", size: "md" })}`}>{blog?.title}</h5>

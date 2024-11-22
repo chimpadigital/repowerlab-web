@@ -8,8 +8,10 @@ import { Pagination } from "swiper/modules";
 import { Link } from '@/i18n/routing';
 import Title from '@/atoms/Title';
 import { ArrowRight } from '@/components/icons';
+import { useTranslations } from 'next-intl';
 
 export default function ProductsSwiper() {
+    const t = useTranslations('Home.Products')
     return (
         <Swiper
             slidesPerView={1}
@@ -24,34 +26,34 @@ export default function ProductsSwiper() {
         >
             <SwiperSlide >
                 <CardMobile
-                    description='Turbines from canceled projects, offering top performance at a lower cost.'
+                    description={t.raw('cards.card1.description')}
+                    title={t.raw('cards.card1.title')}
                     href={"/products/wind-turbines#includes"}
-                    title='Unused \n wind turbines'
                     img='/images/home/products/1a.png' />
             </SwiperSlide>
 
             <SwiperSlide>
                 <CardMobile
-                    description='Remanufactured turbines, providing a cost-effective way to extend wind farm life.'
+                    description={t.raw('cards.card2.description')}
+                    title={t.raw('cards.card2.title')}
                     href={"/products/wind-turbines#includes"}
-                    title='Refurbished \n wind turbines'
                     img='/images/home/products/2a.png' />
             </SwiperSlide>
 
             <SwiperSlide>
                 <CardMobile
-                    description='Budget-friendly turbines sold as-is for installation or refurbishment.'
+                    description={t.raw('cards.card3.description')}
+                    title={t.raw('cards.card3.title')}
                     href={"/products/wind-turbines#includes"}
-                    title='Used \n wind turbines'
                     img='/images/home/products/3a.png' />
 
             </SwiperSlide>
 
             <SwiperSlide>
                 <CardMobile
-                    description='New and refurbished parts to keep turbines running efficiently.'
+                    description={t.raw('cards.card4.description')}
+                    title={t.raw('cards.card4.title')}
                     href={"/products/turbine-parts"}
-                    title='Wind turbine \n spare parts'
                     img='/images/home/products/4a.png' />
             </SwiperSlide>
             <div className="swiper-pagination-blogs h-10 flex justify-center gap-2 mt-2"></div>

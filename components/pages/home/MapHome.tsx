@@ -4,26 +4,28 @@ import Image from 'next/image'
 import RotateScroll from '@/components/RotateScroll'
 import { RepowerIcon } from '@/components/pages/shared/navicons'
 import MapHomeMobile from './MapHomeMobile'
+import { useTranslations } from 'next-intl'
 
 export default function MapHome() {
+  const t = useTranslations('Home.Numbers')
   return (
     <div className="w-full px-4  lg:px-8">
       <div className="relative w-full hidden py-[80px] min-h-screen lg:flex justify-center">
         <Image fill src={"/images/home/mapa-bg.png"} alt="" className='object-cover rounded-[20px]'></Image>
         <div className="container w-full relative">
           <div className="absolute z-10 bottom-12">
-            <p className="text-[100px] font-light translate-x-[-150px] -translate-y-[200px] -rotate-90 text-white">Numbers</p>
+            <p className="text-[100px] font-light translate-x-[-150px] -translate-y-[200px] -rotate-90 text-white">{t('title')}</p>
           </div>
-          <p className="absolute z-10 bottom-[120px] left-[160px] min-[1700px]:text-[18px] text-[16px] w-[270px] text-white">Check out our track record, showcased through the numbers that define our success.</p>
+          <p className="absolute z-10 bottom-[120px] left-[160px] min-[1700px]:text-[18px] text-[16px] w-[270px] text-white">{t('subtitle')}</p>
           <div className="w-full flex relative h-full items-center">
             <div className="flex w-full justify-center items-center">
               <div className="w-[400px]"></div>
               <div className="relative grow">
                 <Image width={1500} quality={100} height={900} src={"/images/home/mapa.png"} alt="" className=' w-full h-auto rounded-[20px]'></Image>
-                <CardM top={"20%"} left={"7%"} title={"WIND TURBINES SOLD"} number={416}/>
-                <CardM top={"60%"} left={"18%"} title={"FINISHED PROJECTS"} number={29}/>
-                <CardM top={"25%"} left={"40%"} title={"SATISFIED CLIENTS"} number={45}/>
-                <CardM top={"50%"} left={"48%"} title={"DISMANTLED WIND FARMS"} number={16}/>
+                <CardM top={"20%"} left={"7%"} title={t.raw('card1')} number={416}/>
+                <CardM top={"60%"} left={"18%"} title={t.raw('card2')} number={29}/>
+                <CardM top={"25%"} left={"40%"} title={t.raw('card3')} number={45}/>
+                <CardM top={"50%"} left={"48%"} title={t.raw('card4')} number={16}/>
               </div>
             </div>
 
