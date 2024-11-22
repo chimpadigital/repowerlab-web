@@ -272,6 +272,7 @@ html {
 }
 
 /* estilos bullets de paginacion */
+.swiper-pagination-success,
 .swiper-pagination-blogs,
 .swiper-pagination-spare-parts,
 .swiper-pagination-solutions,
