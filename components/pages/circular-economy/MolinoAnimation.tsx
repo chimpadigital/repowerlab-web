@@ -22,7 +22,7 @@ export default function MolinoAnimation() {
     return (
         <section className="w-full flex justify-center">
             <div className="w-full relative" ref={ref} style={{ height: `${dataMolino.length * 100}vh` }}>
-                <h4 className={title({ color: "secondary", size: "md", weight: "normal" }) + " md:hidden font-[600] px-6 absolute"}>
+                <h4 className={title({ color: "secondary", size: "md", weight: "normal" }) + " md:hidden !font-[600] px-6 absolute top-[-20px]"}>
                     <span className='text-primary'>
                         {t("title")} {" "}
                     </span>

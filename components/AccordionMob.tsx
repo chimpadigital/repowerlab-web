@@ -32,6 +32,13 @@ export default function AccordionMob({
         <p className="pt-4 text-grey-parrafo">
           {t(items[0].descriptionMobile.toString())}
         </p>
+        {titleItems && (
+          <p
+            className="mt-4 font-bold text-primary"
+          >
+            {t(titleItems)}
+          </p>
+        )}
         <Accordion variant="splitted" itemClasses={itemClasses}>
           {items2.map((el, i) => (
             <AccordionItem

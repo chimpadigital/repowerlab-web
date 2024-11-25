@@ -44,21 +44,30 @@ const CircularEconomy = () => {
           <div className="flex w-full flex-col lg:flex-row md:items-center ">
             <div className="flex-1 gap-10 text-start flex items-center justify-between">
               <div className="flex-1">
-                <h4 className={`${title()} !block mb-3 max-w-[20ch] leading-[3rem]`}>
+                <h4 className={`${title()} md:block mb-3 hidden max-w-[20ch] leading-[3rem]`}>
                 {t("banner.title")}{" "}
                   <span className={`${title()} text-secondary`}>
                   {t("banner.title2")}
                   </span>
                 </h4>
-                <p className="max-w-[100ch] font-light mt-6">
+                <h4 className={`text-[20px] font-bold block md:hidden mb-3 leading-[2rem]`}>
+                {t("banner.titleM")}{" "}
+                  <span className={` text-secondary`}>
+                  {t("banner.title2M")}
+                  </span>
+                </h4>
+                <p className="max-w-[100ch] font-light text-[18px] mt-6 md:hidden ">
+                {t("banner.pM")}
+                </p>
+                <p className="max-w-[100ch] font-light mt-6 hidden md:block">
                 {t("banner.p1")}
                 </p>
-                <p className="max-w-[100ch] font-light mt-8">
+                <p className="max-w-[100ch] font-light mt-8 hidden md:block">
                 {t("banner.p2")}
                 </p>
               </div>
             </div>
-            <div className="flex relative mt-4 md:mt-0 -left-3">
+            <div className="flex relative justify-center md:justify-start mt-6 md:mt-4 md:mt-0 -left-3">
               <Link
                 href="/about/contact-us"
                 className={`scroll-smooth ${button({
