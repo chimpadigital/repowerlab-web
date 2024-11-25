@@ -11,10 +11,10 @@ const HorizontalScroll = React.lazy(() => import('./HorizontalScroll'));
 export default function SetApart() {
     const size = useWindowSize()
     return (
-        <div className='w-full flex justify-center px-6 py-[40px]'>
+        <div className='w-full flex justify-center px-6 py-[40px] rounded-[20px]'>
             <div className='relative w-full flex justify-center rounded-[20px]'>
 
-                <div className="relative z-[2] w-full pt-[40px] lg:pt-[100px] ">
+                <div className="relative z-[2] w-full pt-[40px] lg:pt-[100px] rounded-[20px]">
                     {
                         size[0] > 1000 ?
                             <HorizontalScroll /> :

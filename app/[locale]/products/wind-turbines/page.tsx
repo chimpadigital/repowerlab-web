@@ -48,7 +48,7 @@ export default function WindPage() {
           </div>
         </HeroBreadcrumb>
       </section>
-      <section id="includes">
+      <section id="includes" className="md:pb-12">
         <OurOffer />
       </section>
 

@@ -15,11 +15,11 @@ export default function HorizontalScroll() {
   const x = useTransform(scrollYProgress, [0, 1], [0, array.length])
 
   return (
-    <div ref={ref} className='w-full relative bg-[url(/images/home/apart.png)] bg-fixed bg-bottom bg-no-repeat bg-cover' style={{ height: `${array.length * 100}vh` }}>
+    <motion.div ref={ref} className='w-full relative  bg-set-apart bg-fixed bg-bottom bg-no-repeat rounded-[20px] bg-cover' style={{ height: `${array.length * 100}vh` }}>
       <div className="sticky top-0 h-screen w-full">
-        <div className='absolute w-full rounded-[20px] h-full z-[1]' style={{
+        {/* <div className='absolute w-full rounded-[20px] h-full z-[1]' style={{
           background: "linear-gradient(181deg, rgba(75, 100, 128, 0.70) 20.44%, rgba(121, 135, 153, 0.48) 59.9%, rgba(255, 255, 255, 0.00) 77.53%)"
-        }}></div>
+        }}></div> */}
         {/* <Image src="/images/home/apart.png" width="1500" height="1900" quality={100} alt="bgsetapart" className='bg-fixed absolute w-full z-0 object-cover h-screen w-full rounded-[20px]'></Image> */}
 
         <div className="flex  flex-col pt-[100px] gap-8 h-full w-full items-center relative z-[3]">
@@ -45,7 +45,7 @@ export default function HorizontalScroll() {
 
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

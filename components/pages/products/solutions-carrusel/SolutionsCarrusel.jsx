@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { title } from "@/components/primitives";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
 
@@ -22,7 +22,7 @@ export default function SolutionsCarrusel({ cards }) {
 
   const handleMoveLeft = () => {
     if (moveRight === null) {
-      return;
+      return; 
     } else {
       setMoveRight("");
       setMoveLeft("transform translate-x-0 transition-all duration-[1000ms]");

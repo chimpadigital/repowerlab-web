@@ -46,17 +46,17 @@ export default function Support() {
       </div>
       <div className="px-4 w-full md:hidden">
         <CardMobile
-          img="/images/product/expert.png"
+          img="/images/product/expertM.png"
           title={t.raw("cardsM.card1.title")}
           description={t.raw("cardsM.card1.description")}
         />
         <CardMobile
-          img="/images/product/logistics.png"
+          img="/images/product/logisticsM.png"
           title={t.raw("cardsM.card2.title")}
           description={t.raw("cardsM.card2.description")}
         />
         <CardMobile
-          img="/images/product/support.png"
+          img="/images/product/supportM.png"
           title={t.raw("cardsM.card3.title")}
           description={t.raw("cardsM.card3.description")}
         />

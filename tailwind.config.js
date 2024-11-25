@@ -21,6 +21,7 @@ module.exports = {
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(270deg, #B3C5DF80 0%, #FFF 57.02%)',
+        'set-apart': 'linear-gradient(181deg, rgba(75, 100, 128, 0.70) 20.44%, rgba(121, 135, 153, 0.48) 59.9%, rgba(255, 255, 255, 0.00) 77.53%), url(/images/home/apart.png)'
       },
       colors:{
         primary: "#1C4741",

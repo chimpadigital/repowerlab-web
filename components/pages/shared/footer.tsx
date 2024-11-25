@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Link } from "@nextui-org/link";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import Logo from "@/atoms/Logo";
 import { subtitle } from "../../primitives";

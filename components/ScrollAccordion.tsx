@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { button } from "./primitives";
 import { useWindowSize } from "@/utils/useResize";
 import AccordionMob from "./AccordionMob";

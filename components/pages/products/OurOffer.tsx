@@ -1,7 +1,8 @@
 "use client";
 import Paragraph from "@/atoms/Paragraph";
 import { button } from "@/components/primitives";
-import { Accordion, AccordionItem, Link } from "@nextui-org/react";
+import { Accordion, AccordionItem } from "@nextui-org/react";
+import { Link } from "@/i18n/routing";
 import React, { useEffect } from "react";
 import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
@@ -89,7 +90,7 @@ export default function OurOffer() {
       title: t.raw("accordions.ac3.list.l6.title"),
       text: t.raw("accordions.ac3.list.l6.text"),
     }
-    
+
   ];
 
   const listPurchaseMobile = [
@@ -158,6 +159,9 @@ export default function OurOffer() {
         {t("title")}
       </h3>
       <div className="container px-6">
+        <h3 className="text-[32px] text-primary font-bold hidden md:block">
+          {t("title")}
+        </h3>
         <Accordion
           variant="splitted"
           itemClasses={itemClasses}

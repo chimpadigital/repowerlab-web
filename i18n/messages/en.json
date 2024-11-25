@@ -146,7 +146,7 @@
         },
         "FeaturedProduct": {
             "title": "Feature Products",
-            "p1": "Welcome to the RepowerLab Marketplace, your destination for high-quality wind turbines, spare parts, and recycled materials, all thoroughly inspected for your energy asset needs.",
+            "p1": "Explore our Marketplace, featuring high-quality refurbished turbines and spare parts, along with reclaimed materials from dismantled wind farms, all ready for a second life.",
             "p2": "Visit our Marketplace for refurbished turbines, spare parts, and reclaimed materials—giving wind components a second life.",
             "button": "Go to Marketplace"
         }
@@ -1058,7 +1058,7 @@
                 "position":"Co-Founder & Managing Director of LATAM"
             },
             "victoria":{
-                "description":"Residing in Virginia, US, Victoria has over 20 years of experience in sustainable finance. As the founder of PRISSMA and co-founder of RepowerLab, she has been instrumental in driving sustainability and decarbonization strategies for companies. Victoria's expertise includes developing ESG investment strategies, innovative climate finance products, and advising investors on renewable energy projects. She has received recognition as one of DC's Top 50 Women Leaders for two consecutive years.",
+                "description":"Residing in Virginia, US, Victoria has over 20 years of experience in sustainable finance. She has been instrumental in driving sustainability and decarbonization strategies for companies. Victoria's expertise includes developing ESG investment strategies, innovative climate finance products, and advising investors on renewable energy projects. She has received recognition as one of DC's Top 50 Women Leaders for two consecutive years.",
                 "position":"Co-Founder & Managing Director of US"
             },
             "ivan":{
@@ -1072,18 +1072,18 @@
             "pM":" RepowerLab believes in circular economy solutions. We manage every  stage of a turbine’s lifecycle, from assessment and refurbishment to recycling, maximizing value and transforming materials into new products."
         },
         "mission":{
-            "title":"Our Mission",
+            "title":"Mission",
             "p":"RepowerLab is dedicated to advancing the wind energy sector through innovative repowering, recycling, and sustainability solutions. Our mission is to maximize the lifespan and efficiency of wind turbines, reduce environmental impact, and support the circular economy, ensuring a sustainable and prosperous future for renewable energy.",
             "pM":"We are committed to advancing wind energy through repowering, recycling, and sustainability. Our mission is to maximize turbine lifespan, reduce environmental impact, and support the circular economy for a sustainable future."
         },
         "vision":{
-            "title":"Our Vision",
+            "title":"Vision",
             "p":"To lead the global transition to a sustainable energy future by being the foremost provider of repowering and recycling solutions for wind turbines,  fostering environmental stewardship, economic efficiency, and innovation in the renewable energy industry.",
             "pM":"Lead the global shift to sustainable energy by being the top provider of wind turbine repowering and recycling, promoting environmental care, economic efficiency, and renewable innovation."
         },
         "history":{
-            "title":"Our History",
-            "p":"RepowerLab was borne as a spin-off of Repowering Solutions, a company with more than 15 years of experience in the dismantling, retrofitting, recycling, buying and selling of wind turbines in Europe. Today, with a global presence, we execute projects in 20 countries through our three international offices.",
+            "title":"History",
+            "p":"RepowerLab was born as a spin-off of Repowering Solutions, a company with more than 15 years of experience in the dismantling, retrofitting, recycling, buying and selling of wind turbines in Europe. Today, with a global presence, we execute projects in 20 countries through our three international offices.",
             "pM":"RepowerLab started as a spin-off of Repowering Solutions, with over 15 years of experience in wind turbine dismantling and recycling. We now operate globally, executing projects in 20 countries through three international offices."
         }
     }

@@ -176,16 +176,9 @@ const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
           </motion.p>
         </div>
       </div>
-      <svg
-        className="absolute bottom-2 right-2"
-        width="20"
-        height="20"
-        viewBox="0 0 20 20"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M18 18V5M18 18L2 2M18 18H5" stroke="white" strokeWidth="3" />
-      </svg>
+      <img className="absolute bottom-2 right-2" src="images/home/arrow.png" alt="" />
+    
+
     </motion.article>
   );
 };
