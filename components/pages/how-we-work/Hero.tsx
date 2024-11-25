@@ -99,7 +99,7 @@ const Circle = ({ index, data }: { index: number, data: HowWorkI }) => {
   const t = useTranslations("HowWeWork.Hero.data")
   return (
     <>
-      <article onClick={() => { onOpen() }} className="min-w-[200px] min-h-[200px] max-w-[200px] max-h-[200px] border-2 bg-[#7B72724D] cursor-pointer border-grey-100 p-4 flex items-center hover:bg-[linear-gradient(145deg,#B3C5DF_-11.89%,rgba(179,197,223,0.20)_0.1%,#FFF_70.83%)] flex-col text-white hover:text-primary justify-center rounded-full transition-all duration-600 ease " style={{ marginTop: `${index % 2 == 0 ? "0px" : "200px"}`, backdropFilter: "blur(10px)", }}>
+      <article onClick={() => { onOpen() }} className="min-w-[200px] min-h-[200px] max-w-[200px] max-h-[200px] border-2 bg-[#7B72724D] cursor-pointer border-grey-100 p-4 flex items-center hover:bg-[linear-gradient(145deg,#B3C5DF_-11.89%,rgba(179,197,223,0.20)_0.1%,#FFF_70.83%)] flex-col text-white hover:text-primary justify-center rounded-full transition-all blurRepower duration-600 ease " style={{ marginTop: `${index % 2 == 0 ? "0px" : "200px"}`, backdropFilter: "blur(10px)", }}>
         <h4>{index + 1}</h4>
         <div className="pt-4 flex flex-col justify-center items-center">
           <h5 className='text-center'> {t(data.title)} </h5>

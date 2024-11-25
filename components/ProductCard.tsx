@@ -36,7 +36,7 @@ export default function ProductCard({ title, img, height, href, description }: {
                         opacity: ".48",
 
                     }}></motion.div>
-                    <motion.div className="flex flex-col justify-center relative text-white" style={{ backdropFilter: "blur(10px)", borderRadius: open ? "0px" : "10px", }} variants={variants} animate={open ? "open" : "closed"}>
+                    <motion.div className="flex flex-col justify-center relative text-white blurRepower" style={{ backdropFilter: "blur(10px)", borderRadius: open ? "0px" : "10px", }} variants={variants} animate={open ? "open" : "closed"}>
                         <div className='text-[24px] font-normal relative pe-4 flex' >
                             <div className="flex w-full justify-between">
                                 <Title className='' title={title} />

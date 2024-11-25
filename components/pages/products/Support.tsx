@@ -117,7 +117,7 @@ function Card({
           variants={variants}
           transition={{ duration: 0.8 }}
           animate={open ? "open" : "closed"}
-          className="absolute h-full"
+          className="absolute h-full blurRepower"
           style={{
             borderRadius: open ? "0px" : "10px",
             background: "#4B4A4A",

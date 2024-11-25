@@ -21,7 +21,7 @@ export default function FixedMenu() {
     <>
       <MenuMobile open={open} setOpen={setOpen} />
       <div className='fixed w-full bottom-6 left-0 px-4 z-[45] flex md:hidden justify-center'>
-        <div className="w-full grid grid-cols-4 px-6 gap-4 justify-between rounded-[20px] py-4 text-white" style={bgNavStyle}>
+        <div className="w-full grid grid-cols-4 px-6 gap-4 justify-between rounded-[20px] py-4 text-white blurRepower" style={bgNavStyle}>
           <Link href="/" className='flex flex-col cols-span-1 block items-center gap-1 justify-center'>
             <HomeIcon />
             <small className={`font-bold text-[10px] transition ease duration-[600] ${(pathname == '/en' || pathname == '/es')  ? "block" : "hidden"}`}>Home</small>

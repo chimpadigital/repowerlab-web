@@ -42,13 +42,12 @@ export default function MapHome() {
 
 const CardM = ({ top, left, title, number }: any) => {
   return (
-    <article className='p-4 w-[215px] h-[100px] flex justify-center items-center relaative absolute' style={{
+    <article className='p-4 w-[215px] h-[100px] flex justify-center blurRepower items-center relaative absolute' style={{
       top,
       left,
       borderRadius: "10px",
       border: " 1px solid var(--gris, #F4F4F4)",
       background: "rgba(6, 6, 6, 0.50)",
-      backdropFilter: "blur(10px)"
     }}>
       <div className="content text-white">
         <h5 className="text-light text-[14px] uppercase text-center">{title}</h5>
