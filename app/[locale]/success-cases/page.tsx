@@ -27,10 +27,8 @@ const SuccessCases = () => {
             <h4 className={`text-white mr-auto text-left ${title()}`}>
               {t("title")}
             </h4>
-            <p className="mt-7 text-sm md:text-xl">
-            {t("subtitle")}
-              
-            </p>
+            <Paragraph className="mt-7 text-[20px] md:text-xl hidden md:block" text={t.raw("subtitle")}></Paragraph>
+            <Paragraph className="mt-7 text-[18px] md:text-xl md:hidden" text={t.raw("subtitleM")}></Paragraph>
           </div>
         </HeroBreadcrumb>
       </section>

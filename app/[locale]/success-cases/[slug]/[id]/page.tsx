@@ -6,6 +6,8 @@ import axios from "axios";
 import sanitizeHtml from "sanitize-html";
 import RelatedPosts from "@/components/pages/success-cases/case/RelatedPosts";
 import { useParams } from "next/navigation";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -16,7 +18,7 @@ const breadcrumbs = [
 const replaceOembedWithIframe = (htmlContent: any) => {
   const div = document.createElement("div");
   div.innerHTML = htmlContent;
-
+ 
   const oembeds = div.querySelectorAll("oembed");
 
   oembeds.forEach((oembed) => {
@@ -47,7 +49,7 @@ const replaceOembedWithIframe = (htmlContent: any) => {
 
 const CaseDateail = () => {
   const params = useParams();
-
+  const t = useTranslations("SuccessCases")
   const [blogDetail, setBlogDetail] = useState<any>();
 
   useEffect(() => {
@@ -57,7 +59,7 @@ const CaseDateail = () => {
           `https://api.repowerlab.chimpance.digital/api/entries/${params?.id}`
         );
         if (response?.status === 200) {
-     
+
           setBlogDetail(response.data);
         }
       } catch (error) {
@@ -78,7 +80,7 @@ const CaseDateail = () => {
       "*": ["class"],
     },
   }) : ""
- 
+
   const transformedContent = replaceOembedWithIframe(cleanContent);
 
   if (blogDetail?.data) {
@@ -90,7 +92,18 @@ const CaseDateail = () => {
             breadcrumbs={breadcrumbs}
             position="left"
           >
-            <div className="flex flex-col text-white mt-10">
+            <div className="md:hidden mt-4">
+              <Link href="/success-cases" className="text-white items-center font-medium flex gap-4">
+                <span>
+                  <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 7L1 7M1 7L7 1M1 7L7 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                {t("title")}
+                
+                </Link>
+            </div>
+            <div className="flex flex-col text-whit mt-[60px] md:mt-10">
               <h4 className={`text-white mr-auto text-left ${title()}`}>
                 {blogDetail?.data?.title ? blogDetail?.data?.title : ""}
               </h4>
