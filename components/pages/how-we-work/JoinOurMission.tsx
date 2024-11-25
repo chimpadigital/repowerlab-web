@@ -12,9 +12,9 @@ export default function JoinOurMission() {
     const t = useTranslations("HowWeWork.JoinMission")
     const itemClasses = {
         base: "py-0 w-full text-primary px-2 md:px-4 md:border-0 md:bg-transparent bg-grey-100 !shadow-none",
-        title: "font-normal data-[open=true]:font-bold text-[16px] md:text-[22px] text-primary w-[90%] md:w-[80%]",
+        title: "font-normal data-[open=true]:font-bold text-[16px] md:text-[22px] ps-2 md:ps-0 text-primary w-[90%] md:w-[80%]",
         heading: "shadow-none data-[open]=true:font-bold md:bg-transparent bg-grey-100",
-        content: "shadow-none md:px-4 py-2",
+        content: "shadow-none ps-2 md:px-4 py-2",
         trigger: "md:px-2 py-4  shadow-none md:mt-6  font-bold flex items-center border-none pr4",
         indicator: "text-medium pr5",
     };
