@@ -148,8 +148,8 @@ const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
       onClick={() => {
         setOpen(!open);
       }}
-      style={{ height: open ? "315px" : "150px" }}
-      className={`border overflow-hidden cursor-pointer h-full transition-all duration-600 relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6`}
+      // style={{ height: open ? "315px" : "150px" }}
+      className={`border overflow-hidden cursor-pointer h-full transition-all ${open ? 'md:height-[315px] h-auto' : 'h-[150px]'} duration-600 relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6`}
     >
       <div className=" relative z-10">
         <h5 className="font-light uppercase text-[20px] w-[200px]">{title}</h5>
@@ -176,8 +176,8 @@ const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
           </motion.p>
         </div>
       </div>
-      <img className="absolute bottom-2 right-2" src="images/home/arrow.png" alt="" />
-    
+      <img className={`absolute bottom-2 right-2 transition-all duration-[600] ${open ? 'rotate-180' : ''}`} src="images/home/arrow.png" alt="" />
+
 
     </motion.article>
   );

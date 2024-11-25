@@ -6,7 +6,7 @@ import React from 'react'
 export default function Services() {
     const t = useTranslations('Home.Services')
     return (
-        <div className='py-[60px] md:py-[100px] w-full flex justify-center'>
+        <div className='pt-[60px] md:py-[100px] w-full flex justify-center'>
             <div className="container w-full px-0 md:px-8">
                 <div className="w-full px-4 flex justify-start md:justify-center">
                     <h2 className={`${title({ color: "primary" })} text-center`}>{t("title")}</h2>

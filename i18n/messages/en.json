@@ -49,7 +49,7 @@
                 "card5": {
                     "title": "Sales Process Management",
                     "paragraph": "Facilitating the sale from initial consultation through to final delivery and installation.",
-                    "paragraphMob": "Ensuring quality and safety for turbine dismantling and transport."
+                    "paragraphMob": "From consultation to installation—we handle it all."
                 }
             }
         },
@@ -145,7 +145,7 @@
             "card4": "DISMANTLED WIND FARMS"
         },
         "FeaturedProduct": {
-            "title": "Feature Products",
+            "title": "Featured Products",
             "p1": "Explore our Marketplace, featuring high-quality refurbished turbines and spare parts, along with reclaimed materials from dismantled wind farms, all ready for a second life.",
             "p2": "Visit our Marketplace for refurbished turbines, spare parts, and reclaimed materials—giving wind components a second life.",
             "button": "Go to Marketplace"
