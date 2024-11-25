@@ -41,7 +41,7 @@ export default function page() {
               ></Paragraph>
               <button className="flex w-full mt-6 max-w-[250px] mb-[35px] md:mb-0 relative overflow-hidden gap-3 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white  hover:max-w-[270px]">
                 <div className="w-full absolute h-full top-0 left-0 bg-[#272424]/40"></div>
-                <span className="relative text-[18px]">{t("Hero.download")}</span>
+                <span className="relative text-[16px] sm:text-[18px] whitespace-nowrap">{t("Hero.download")}</span>
                 <span className="fill-white md:hidden h-[18px] z-10">
                   <DownloadIcon />
                 </span>
