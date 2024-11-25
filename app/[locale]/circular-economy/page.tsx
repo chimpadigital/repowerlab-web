@@ -23,7 +23,7 @@ const CircularEconomy = () => {
           breadcrumbs={breadcrumbs}
         >
           <div className="flex justify-end text-white w-full">
-            <div className="max-w-[500px]">
+            <div className="max-w-[500px] hidden md:block">
               <h4
                 className={`${title({ size: "md" })} max-w-[16ch] !inline-block`}
               >
@@ -31,6 +31,16 @@ const CircularEconomy = () => {
               </h4>
               <p className="mt-6 pb-10 md:pb-0">
                 {t("p")}
+              </p>
+            </div>
+            <div className="max-w-[500px] md:hidden">
+              <h4
+                className={`${title({ size: "md" })} max-w-[16ch] !inline-block`}
+              >
+                {t("titleM")}
+              </h4>
+              <p className="mt-6 pb-10 md:pb-0">
+                {t("pM")}
               </p>
             </div>
           </div>
