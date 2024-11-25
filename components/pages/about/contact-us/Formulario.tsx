@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import axios from "axios";
 import { IsotipoRepowerlab } from "@/components/icons";
+import { useTranslations } from "next-intl";
 
 export type FormValues = {
   name: string;
@@ -35,7 +36,7 @@ const Formulario = () => {
       tipo: "",
     },
   });
-
+  const t = useTranslations("Contact.form")
   const [messageSent, setMessageSent] = useState(false);
   const [messageFailed, setMessageFailed] = useState(false);
 
@@ -79,61 +80,61 @@ const Formulario = () => {
       >
         <Input
           error={errors.name && errors.name.message}
-          placeholder="Your Name"
-          placeholderMovile="Name"
-          label="Your Name"
+          placeholder={t.raw("name.placeholder")}
+          placeholderMovile={t.raw("name.placeholderM")}
+          label={t.raw("name.label")}
           id="contact-name"
           control={control}
           name="name"
           rules={{
-            required: "Name is required",
+            required: t.raw("name.required"),
             minLength: {
               value: 3,
-              message: "Name must be at least 3 characters",
+              message: t.raw("name.message"),
             },
             maxLength: {
               value: 30,
-              message: "Name must be at most 30 characters",
+              message: t.raw("name.maxLength"),
             },
           }}
         />
 
         <Input
           error={errors.phone && errors.phone.message}
-          placeholder="Phone"
-          placeholderMovile="Phone"
-          label="Your Phone Number"
+          placeholder={t.raw("phone.placeholder")}
+          placeholderMovile={t.raw("phone.placeholderM")}
+          label={t.raw("phone.label")}
           id="contact-phone"
           type="tel"
           control={control}
           name="phone"
           rules={{
-            required: "Phone number is required",
+            required: t.raw("name.required"),
             minLength: {
               value: 7,
-              message: "Phone number must be at least 7 characters",
+              message: t.raw("phone.message"),
             },
             maxLength: {
               value: 15,
-              message: "Phone number must be at most 15 characters",
+              message: t.raw("phone.maxLength"),
             },
           }}
         />
 
         <Input
           error={errors.email && errors.email.message}
-          placeholder="Your Email Adress"
-          placeholderMovile="Email"
-          label="Your Email Adress"
+          placeholder={t.raw("email.placeholder")}
+          placeholderMovile={t.raw("email.placeholderMobile")}
+          label={t.raw("email.label")}
           id="contact-email"
           type="email"
           control={control}
           name="email"
           rules={{
-            required: "Email is required",
+            required: t.raw("email.required"),
             pattern: {
               value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-              message: "Invalid email address",
+              message: t.raw("email.invalidMessage"),
             },
           }}
         />
@@ -148,16 +149,16 @@ const Formulario = () => {
               onBlur={onBlur}
               ref={ref}
               aria-label="asunto"
-              placeholder="Select subject"
+              placeholder={t.raw("asunto.placeholder")}
               className="w-full pt-2"
               labelPlacement="outside"
-              label="Select subject"
+              label={t.raw("asunto.label")}
               scrollShadowProps={{
                 isEnabled: false,
               }}
               classNames={{
                 trigger:
-                  "bg-[#C5C5C5]/15 py-4 px-5 md:px-8 backdrop-blur-2xl border-white  transition-all border-2 rounded-full font-sans h-[60px] data-[hover=true]:bg-[#C5C5C5]/15 data-[open=true]:border-accent",
+                  "bg-[#C5C5C5]/15 py-4 px-5 md:px-8 backdrop-blur-2xl border-white transition-all border-2 rounded-full font-sans h-[60px] data-[hover=true]:bg-[#C5C5C5]/15 data-[open=true]:border-accent",
                 value:
                   "font-medium text-[16px] text-white group-data-[has-value=true]:text-white",
                 popoverContent:
@@ -181,31 +182,31 @@ const Formulario = () => {
                 },
               }}
             >
-              <SelectItem key="Product">Product</SelectItem>
-              <SelectItem key="Service">Service</SelectItem>
-              <SelectItem key="Circular-economy">Circular economy</SelectItem>
-              <SelectItem key="Other">Other</SelectItem>
+              <SelectItem key="Product">{t.raw("asunto.options.product")}</SelectItem>
+              <SelectItem key="Service">{t.raw("asunto.options.service")}</SelectItem>
+              <SelectItem key="Circular-economy">{t.raw("asunto.options.circularEconomy")}</SelectItem>
+              <SelectItem key="Other">{t.raw("asunto.options.other")}</SelectItem>
             </Select>
           )}
         />
 
         <TextArea
-          placeholder="Message"
-          placeholderMovile="Note"
-          label="Message"
+          placeholder={t.raw("msg.placeholder")}
+          placeholderMovile={t.raw("msg.placeholderMobile")}
+          label={t.raw("msg.label")}
           id="contact-msg"
           error={errors.msg && errors.msg.message}
           name="msg"
           control={control}
           rules={{
-            required: "Message is required",
+            required: t.raw("msg.required"),
             minLength: {
               value: 10,
-              message: "Message must be at least 10 characters",
+              message: t.raw("msg.minLength.message"),
             },
             maxLength: {
               value: 200,
-              message: "Message must be at most 200 characters",
+              message: t.raw("msg.maxLength.message"),
             },
           }}
         />
@@ -215,27 +216,26 @@ const Formulario = () => {
           columnGap: "2.5rem",
         }}>
           <RadioButton
-            label="Partner"
+            label={t.raw("tipo.partner")}
             name="tipo"
             control={control}
             value="partner"
           />
           <RadioButton
-            label="Client"
+            label={t.raw("tipo.client")}
             name="tipo"
             control={control}
             value="client"
           />
           <RadioButton
-            label="Talent"
+            label={t.raw("tipo.talent")}
             name="tipo"
             control={control}
             value="talent"
-          />
-        </div>
+          />        </div>
 
         <p className="text-white font-medium text-sm">
-          We will get back to you within 2 business days.
+          {t.raw("message.info")}
         </p>
         <div className="mx-auto relative grid place-items-center">
           <button
@@ -244,10 +244,10 @@ const Formulario = () => {
             })} mx-auto`}
           >
             {!isSubmitting ? (
-              "Send message"
+              t.raw("message.sendButton")
             ) : (
-              <span className="flex gap-3  fill-white group-hover:fill-primary">
-                Sending...
+              <span className="flex gap-3 fill-white group-hover:fill-primary">
+                {t.raw("message.sendingButton")}
                 <span className="animate-spin transition-all">
                   <IsotipoRepowerlab />
                 </span>
@@ -256,16 +256,16 @@ const Formulario = () => {
           </button>
           {messageSent && (
             <span
-              className={`absolute w-max -bottom-8 text-center transition-all mt-3 inline-block text-white  ${messageSent ? "opacity-100  translate-y-0" : "opacity-0  translate-y-3"}`}
+              className={`absolute w-max -bottom-8 text-center transition-all mt-3 inline-block text-white  ${messageSent ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"}`}
             >
-              Message sent successfully
+              {t.raw("message.messageSent")}
             </span>
           )}
           {messageFailed && (
             <span
-              className={`absolute w-max -bottom-8 text-center transition-all mt-3 inline-block text-red-400  ${messageFailed ? "opacity-100  translate-y-0" : "opacity-0  translate-y-3"}`}
+              className={`absolute w-max -bottom-8 text-center transition-all mt-3 inline-block text-red-400  ${messageFailed ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"}`}
             >
-              An error occurred, please try again later.
+              {t.raw("message.messageFailed")}
             </span>
           )}
         </div>

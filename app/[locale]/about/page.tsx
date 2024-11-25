@@ -10,19 +10,21 @@ import Partners from "@/components/pages/about/Partners";
 import WhyChooseRepowerlab from "@/components/pages/about/WhyChooseRepowerlab";
 import { button, title } from "@/components/primitives";
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 export default function AboutPage() {
+  const t = useTranslations("About")
   return (
     <section className="overflow-x-clip">
       <div className="px-6">
         <HeroBreadcrumb
           breadcrumbs={[
             {
-              label: "Home",
+              label:  t.raw("Hero.b1"),
               href: "/",
             },
             {
-              label: "Company",
+              label: t.raw("Hero.b2"),
               href: "/about",
             },
           ]}
@@ -30,9 +32,9 @@ export default function AboutPage() {
           objectPosition="center"
           position="left"
         >
-          <div className="flex mt-10">
+          <div className="flex mt-[100px] md:mt-10">
             <h4 className={`text-white mr-auto text-left ${title()}`}>
-              Our Company
+             {t("Hero.heading")}
             </h4>
           </div>
         </HeroBreadcrumb>
@@ -51,20 +53,14 @@ export default function AboutPage() {
           <div className="flex w-full flex-col lg:flex-row md:items-center gap-10">
             <div className="flex-1 gap-10 text-start flex items-center justify-between">
               <div className="flex-1">
-                <h4
-                  className={`${title()} !block mb-3 leading-snug max-w-[50ch]`}
-                >
-                  Join us on this journey to{" "}
-                  <span
-                    className={`${title()} leading-snug text-secondary`}
-                  >
-                    transform wind energy assets and create a cleaner, greener
-                    world.
+                <h4 className={`${title()} !block mb-3 leading-snug max-w-[50ch]`}>
+                  {t("greenBanner.title")}{" "}
+                  <span className={`${title()} leading-snug text-secondary`}>
+                    {t("greenBanner.highlightedTitle")}
                   </span>
                 </h4>
                 <p className="max-w-[40ch] font-light mt-7 md:mt-14">
-                  Together, we can achieve sustainable growth and make a lasting
-                  impact on our planet.
+                  {t("greenBanner.paragraph")}
                 </p>
               </div>
             </div>
@@ -75,7 +71,7 @@ export default function AboutPage() {
                   whiteLine: true,
                 })}`}
               >
-                Connect
+                {t("greenBanner.button")}
               </Link>
             </div>
           </div>

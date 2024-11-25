@@ -1,15 +1,20 @@
+import Paragraph from "@/atoms/Paragraph";
 import HeroBreadcrumb from "@/components/HeroBreadcrumb";
 import BlogList from "@/components/pages/success-cases/BlogList";
 import CasedSection from "@/components/pages/success-cases/CasedSection";
 import { title } from "@/components/primitives";
+import { useTranslations } from "next-intl";
 import React from "react";
 
-const breadcrumbs = [
-  { label: "Home", href: "/" },
-  { label: "Success cases", href: "/success-cases" },
-];
 
 const SuccessCases = () => {
+
+  const t = useTranslations("SuccessCases")
+
+  const breadcrumbs = [
+    { label: t.raw("b1"), href: "/" },
+    { label: t.raw("b2"), href: "/success-cases" },
+  ];
   return (
     <>
       <section className="w-full px-6">
@@ -20,10 +25,11 @@ const SuccessCases = () => {
         >
           <div className="flex flex-col text-white h-full justify-center">
             <h4 className={`text-white mr-auto text-left ${title()}`}>
-              Success cases
+              {t("title")}
             </h4>
             <p className="mt-7 text-sm md:text-xl">
-              Welcome to the RepowerLab Success Cases
+            {t("subtitle")}
+              
             </p>
           </div>
         </HeroBreadcrumb>
@@ -36,25 +42,9 @@ const SuccessCases = () => {
           backgroundPosition: "top left, bottom right",
         }}
       >
-        <h2 className="text-primary font-bold text-[22px] mb-4 md:hidden">Success Cases</h2>
-        <p className="max-w-[73ch] text-center font-medium md:font-normal text-2xl text-primary hidden md:block">
-          We’ve dismantled, refurbished, and resold over 200 wind turbines
-          through our marketplace. By 2025, we will have over 4,000 wind
-          turbines ready for installation,{" "}
-          <span className="text-accent font-medium">
-            showcasing our commitment to sustainable energy and circular economy
-            solutions
-          </span>
-        </p>
-
-        <p className="max-w-[73ch] text-center text-base text-primary px-2 md:hidden">
-          We’ve dismantled, refurbished, and resold over 200 turbines. By 2025,
-          over 4,000 turbines will be ready for installation,{" "}
-          <span className="text-accent font-medium">
-            highlighting our dedication to sustainable energy and the circular
-            economy.
-          </span>
-        </p>
+        <h2 className="text-primary font-bold text-[22px] mb-4 md:hidden">{t("title")}</h2>
+        <Paragraph className="max-w-[73ch] text-center font-medium md:font-normal text-2xl text-primary hidden md:block" textAccent="text-accent font-medium" text={t.raw("p")}/>
+        <Paragraph className="max-w-[73ch] text-center text-base text-primary px-2 md:hidden" textAccent="text-accent font-medium" text={t.raw("pM")}/>
       </article>
       <BlogList />
     </>

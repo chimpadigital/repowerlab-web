@@ -14,27 +14,26 @@ const SolutionsAccordeon = () => {
         items={repoweringSolutions}
         id="repowering-solutions"
         imgPosition="right"
-        imgText="Our expertise ensures that your wind farm achieves maximum efficiency and profitability while contributing to a sustainable energy future."
+        imgText="CircularEconomy.SolutionsCards.imgText1"
       />
       <ScrollAccordion
         items={circularEconomySolutions}
         id="circular-economy-solution"
-        titleItems={"Key strategies include:"}
-        imgText="By integrating these strategies, RepowerLab helps reduce environmental impact and promotes sustainable energy practices."
+        titleItems="CircularEconomy.SolutionsCards.itemTitle2"
+        imgText="CircularEconomy.SolutionsCards.imgText2"
       />
       <ScrollAccordion
         items={refurbishmentSolutions}
         id="refurbishment"
-        titleItems="Our refurbishment services include:"
-        imgText="RepowerLab’s refurbishment solutions provide 
-a cost-effective way to maintain high performance and reliability in your wind energy assets."
+        titleItems="CircularEconomy.SolutionsCards.itemTitle3"
+        imgText="CircularEconomy.SolutionsCards.imgText3"
         imgPosition="right"
       />
       <ScrollAccordion
         items={recyclingSolutions}
         id="recycling-solution"
-        titleItems=" Our recycling solutions include:"
-        imgText="Our recycling solutions help reduce waste and conserve resources, supporting the overall sustainability of the wind energy sector."
+       titleItems="CircularEconomy.SolutionsCards.itemTitle4"
+        imgText="CircularEconomy.SolutionsCards.imgText4"
       />
     </section>
   );

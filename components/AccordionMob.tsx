@@ -3,6 +3,7 @@ import { ScrollAcordionI } from "./ScrollAccordion";
 import { title } from "./primitives";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import Paragraph from "@/atoms/Paragraph";
+import { useTranslations } from "next-intl";
 
 export default function AccordionMob({
   items,
@@ -11,6 +12,7 @@ export default function AccordionMob({
   id,
   imgText,
 }: ScrollAcordionI) {
+  const t = useTranslations()
   const itemClasses = {
     base: "py-0 w-full px-0 text-primary bg-transparent !shadow-none",
     title: "font-bold text-[18px] text-primary w-[80%]",
@@ -25,10 +27,10 @@ export default function AccordionMob({
     <div className="p-4 py-2 w-full" id={id}>
       <article className="bg-grey-100 rounded-[20px] px-4 py-8">
         <h5 className={title({ size: "sm", color: "primary" })}>
-          {items[0].title}
+          {t(items[0].title)}
         </h5>
         <p className="pt-4 text-grey-parrafo">
-          {items[0].descriptionMobile.toString()}
+          {t(items[0].descriptionMobile.toString())}
         </p>
         <Accordion variant="splitted" itemClasses={itemClasses}>
           {items2.map((el, i) => (
@@ -36,7 +38,7 @@ export default function AccordionMob({
               indicator={<Indicator />}
               key={i}
               aria-label={`Accordion ${i}`}
-              title={el.title}
+              title={t.raw(el.title)}
             >
               <hr className="w-full border border-primary/75" />
               <div className="pt-4">
@@ -48,13 +50,13 @@ export default function AccordionMob({
                         key={index}
                       >
                         <span className="font-bold">{item.title}: </span>
-                        {item.description}
+                        {t(item.description)}
                       </li>
                     ))}
                   </ul>
                 ) : (
                   <Paragraph
-                    text={el.descriptionMobile}
+                    text={t.raw(el.descriptionMobile)}
                     className="text-grey-parrafo"
                   />
                 )}

@@ -9,12 +9,13 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { title } from "@/components/primitives";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 
 export default function SolutionsCarrusel({ cards }) {
-
+  const t = useTranslations("TurbineParts.Solutions")
   console.log(cards);
-  
+
   const [moveLeft, setMoveLeft] = useState();
   const [moveRight, setMoveRight] = useState();
   const numCols = cards.length;
@@ -49,7 +50,7 @@ export default function SolutionsCarrusel({ cards }) {
       <div className="flex justify-between items-center overflow-hidden">
         <div className="w-full break-words md:w-full">
           <h2 className={title({ color: "primary", size: "md" })}>
-            Solutions made for you
+            {t("madefor")}
           </h2>
         </div>
         <div
@@ -72,9 +73,8 @@ export default function SolutionsCarrusel({ cards }) {
       {/* SECCIÓN DEL CARRUSEL PARA DESKTOP */}
       <div className="hidden md:flex flex-col w-full mt-4  xl:ml-0">
         <div
-          className={`grid mt-8 shadow-lg rounded-l-[20px] rounded-r-[20px] solutions-box h-[9rem] ${
-            numCols > 5 ? "w-[1827px]" : "w-[1200px]"
-          }  font-bold text-lg transition-all duration-700 ease-in-out ${moveLeft} ${moveRight}`}
+          className={`grid mt-8 shadow-lg rounded-l-[20px] rounded-r-[20px] solutions-box h-[9rem] ${numCols > 5 ? "w-[1827px]" : "w-[1200px]"
+            }  font-bold text-lg transition-all duration-700 ease-in-out ${moveLeft} ${moveRight}`}
           style={{ gridTemplateColumns: `repeat(${numCols}, 1fr)` }}
         >
           {cards.map((card, i) => (
@@ -89,13 +89,13 @@ export default function SolutionsCarrusel({ cards }) {
                 <p className="mt pr-2 font-light">{card?.title}</p>
               </div>
             </Link>
-          ))} 
+          ))}
         </div>
       </div>
       {/* SECCIÓN CARRUSEL MOBILE */}
       <div className="block md:hidden">
         <div className="mt-14 rounded-l-lg rounded-r-lg md:rounded-r-none">
-           <Swiper
+          <Swiper
             className="mySwiper-solutions"
             pagination={{
               clickable: true,
@@ -133,7 +133,7 @@ export default function SolutionsCarrusel({ cards }) {
                 </Link>
               </SwiperSlide>
             ))}
-          </Swiper> 
+          </Swiper>
           <div className="swiper-pagination-solutions flex justify-center items-center mt-4"></div>
         </div>
       </div>

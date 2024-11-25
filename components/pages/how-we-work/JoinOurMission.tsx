@@ -77,9 +77,22 @@ export default function JoinOurMission() {
                 </div>
 
                 <div className="flex pt-[60px] md:pt-[150px] gap-6 justify-center flex-wrap">
-                    <Cards image="i2" title='Why Partner with Us?' list={['Expertise in wind turbine lifecycle management', 'Proven track record in disassembly, warehousing, and refurbishing', 'Commitment to sustainability and innovation']} />
-                    <Cards image="i1" title='Why Choose RepowerLab?' list={['Comprehensive support from consultation to installation', 'Tailored solutions to meet your specific needs', 'A dedicated team of experts at your service']} />
-                    <Cards image="i3" title='Why Work with Us?' list={['Be part of a pioneering team in renewable energy', 'Opportunities for growth and professional development', 'Contribute to meaningful, impactful projects']} />
+                    <Cards image="i2" 
+                    title={t.raw('cards.card1.title')} 
+                    list={
+                        [t.raw('cards.card1.list1'), 
+                            t.raw('cards.card1.list2'),
+                            t.raw('cards.card1.list3'),]} />
+                    <Cards image="i1" 
+                    title={t.raw('cards.card2.title')} 
+                    list={[t.raw('cards.card2.list1'), 
+                        t.raw('cards.card2.list2'),
+                        t.raw('cards.card2.list3'),]} />
+                    <Cards image="i3" 
+                    title={t.raw('cards.card3.title')} 
+                    list={[t.raw('cards.card3.list1'), 
+                        t.raw('cards.card3.list2'),
+                        t.raw('cards.card3.list3'),]} />
                 </div>
             </div>
         </section>

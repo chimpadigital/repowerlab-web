@@ -6,6 +6,7 @@ import Link from "next/link";
 import { button } from "./primitives";
 import { useWindowSize } from "@/utils/useResize";
 import AccordionMob from "./AccordionMob";
+import { useTranslations } from "next-intl";
 
 export interface ScrollAcordionI {
   imgPosition?: "right" | "left";
@@ -67,6 +68,7 @@ export function ScrollAccordionDesk({
   const { scrollYProgress } = useScroll({
     target: ref,
   });
+  const t = useTranslations()
 
   const y = useTransform(scrollYProgress, [0, 1], [0, items.length]);
   const opacityOfTitle = useTransform(y, [0.8, 1.8], [1, 0]);
@@ -113,14 +115,14 @@ export function ScrollAccordionDesk({
               ))}
             {imgText && (
               <div className="absolute left-0 right-0 rounded-[20px] bottom-0 py-10 px-12 bg-black/35 backdrop-blur-sm text-white flex gap-5 items-center justify-between font-medium">
-                <p className="max-w-[48ch]">{imgText}</p>
+                <p className="max-w-[48ch]">{t(imgText)}</p>
                 <Link
                   href="/about/contact-us"
                   className={`scroll-smooth h-fit ${button({
                     whiteLine: true,
                   })} w-fit`}
                 >
-                  Connect
+                  {t("shared.connect")}
                 </Link>
               </div>
             )}
@@ -138,10 +140,10 @@ export function ScrollAccordionDesk({
             >
               <div className="">
                 <div className="text-[24px] font-bold text-primary">
-                  {items[0].title}
+                  {t(items[0].title)}
                 </div>
                 <div className={`text-[#444444] pt-6`}>
-                  {items[0].description}
+                  {t(items[0].description)}
                 </div>
               </div>
               {titleItems && (
@@ -151,7 +153,7 @@ export function ScrollAccordionDesk({
                   }}
                   className="mt-4 text-primary pb-5"
                 >
-                  {titleItems}
+                  {t(titleItems)}
                 </motion.p>
               )}
             </motion.div>
@@ -201,6 +203,8 @@ const ImageMotion = ({ index, src, y, rounded = true }: any) => {
 
 const AccordionMotion = ({ index, el, y, distancia }: any) => {
   const [hidden, setHidden] = useState(true);
+  const t = useTranslations()
+
   const opacity = useTransform(
     y,
     [
@@ -228,7 +232,7 @@ const AccordionMotion = ({ index, el, y, distancia }: any) => {
     <motion.div key={index} className={`relative`} style={{ y: top }}>
       <div className="py-2">
         <div className="rounded-full w-full px-[20px] py-[12px]  bg-grey-100 text-primary font-bold">
-          {el.title}
+          {t(el.title)}
         </div>
       </div>
       <motion.div
@@ -239,12 +243,12 @@ const AccordionMotion = ({ index, el, y, distancia }: any) => {
           <ul>
             {el.description.map((item: any, index: any) => (
               <li className="list-disc ml-4" key={index}>
-                {item}
+                {t(item)}
               </li>
             ))}
           </ul>
         ) : (
-          <>{el.description}</>
+          <>{t(el.description)}</>
         )}
       </motion.div>
     </motion.div>

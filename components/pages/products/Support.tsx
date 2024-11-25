@@ -4,8 +4,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 export default function Support() {
+  const t = useTranslations("TurbineParts.Support")
   return (
     <section className="w-full flex flex-col md:items-center justify-center pt-10 md:py-[80px]">
       <h2
@@ -14,50 +16,49 @@ export default function Support() {
           " md:text-center  max-w-[12ch] md:w-full px-6 md:px-0 leading-7 md:leading-normal"
         }
       >
-        Comprehensive Support
+        {t("title")}
       </h2>
       <p className="pb-12 pt-4 md:pt-8 max-w-[600px] text-grey-parrafo md:text-center px-6 md:px-0">
-        To assist our clients further, we offer extensive support in the
-        procurement and installation of turbine parts.
-        <br className="md:hidden"/>
-        <span className="font-bold md:font-normal"> This includes:</span>
+        {t("p")}
+        <br className="md:hidden" />
+        <span className="font-bold md:font-normal"> {t("include")}</span>
       </p>
 
       <div className="w-full flex-col md:flex-row  gap-[1px] mt-6 hidden md:flex">
         <Card
-          title="Expert Advice"
-          img={"/images/product/expert.png"}
+          title={t.raw("cards.card1.title")}
+          img="/images/product/expert.png"
           height="600px"
-          description="Guidance on selecting the right parts for your turbines."
+          description={t.raw("cards.card1.description")}
         />
         <Card
-          title="Logistics"
-          img={"/images/product/logistics.png"}
+          title={t.raw("cards.card2.title")}
+          img="/images/product/logistics.png"
           height="600px"
-          description="Coordinating the delivery and installation of parts, ensuring they arrive on time and in perfect condition."
+          description={t.raw("cards.card2.description")}
         />
         <Card
-          title="After-Sales Support"
-          img={"/images/product/support.png"}
+          title={t.raw("cards.card3.title")}
+          img="/images/product/support.png"
           height="600px"
-          description="Ongoing support to address any issues and ensure the continued performance of your turbines."
+          description={t.raw("cards.card3.description")}
         />
       </div>
-      <div className="px-4">
+      <div className="px-4 w-full md:hidden">
         <CardMobile
           img="/images/product/expert.png"
-          title="Expert Advice"
-          description="Guidance on selecting the right parts for your turbines."
+          title={t.raw("cardsM.card1.title")}
+          description={t.raw("cardsM.card1.description")}
         />
         <CardMobile
           img="/images/product/logistics.png"
-          title="Logistics"
-          description="Coordinating the delivery and installation of parts, ensuring they arrive on time and in perfect condition."
+          title={t.raw("cardsM.card2.title")}
+          description={t.raw("cardsM.card2.description")}
         />
         <CardMobile
           img="/images/product/support.png"
-          title="After-Sales Support"
-          description="Ongoing support to address any issues and ensure the continued performance of your turbines."
+          title={t.raw("cardsM.card3.title")}
+          description={t.raw("cardsM.card3.description")}
         />
       </div>
     </section>

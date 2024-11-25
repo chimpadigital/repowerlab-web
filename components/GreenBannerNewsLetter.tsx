@@ -81,7 +81,7 @@ const GreenBannerNewsLetter = () => {
               name="email"
               aria-label="Email for subscription"
               required
-              placeholder="Your mail address here"
+              placeholder={t.raw('placeholder')}
               className="md:ml-auto rounded-full focus-within:outline-2 border-white border-2  focus:outline-none focus:border-accent  placeholder-gray-400 transition-all duration-300  bg-[#C5C5C5]/15 py-[10px] px-8 backdrop-blur-sm placeholder:text-white placeholder:font-light w-full"
             />
             {errorSubstribe && (

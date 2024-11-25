@@ -5,9 +5,12 @@ import { Mail } from "@/components/icons";
 import Formulario from "@/components/pages/about/contact-us/Formulario";
 import { title } from "@/components/primitives";
 import { BreadcrumbItem, Breadcrumbs } from "@nextui-org/react";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 
 const ContactUs = () => {
+  const t = useTranslations("Contact")
+  const locale = useLocale()
   return (
     <section className="contact-us w-full px-4 md:px-6">
       <div className="w-full  relative">
@@ -31,16 +34,16 @@ const ContactUs = () => {
                 >
                   {[
                     {
-                      label: "Home",
-                      href: "/",
+                      label: t.raw("b1"),
+                      href: `/${locale}`,
                     },
                     {
-                      label: "Company",
-                      href: "/about",
+                      label: t.raw("b2"),
+                      href: `/${locale}/about`,
                     },
                     {
-                      label: "Contact us",
-                      href: "/about/contact-us",
+                      label: t.raw("b3"),
+                      href: `/${locale}/about/contact-us`,
                     },
                   ].map((el, index) => (
                     <BreadcrumbItem key={index} href={el.href}>
@@ -49,9 +52,9 @@ const ContactUs = () => {
                   ))}
                 </Breadcrumbs>
                 <div className="text-start text-white mt-0 md:mt-10">
-                  <h4 className={title({ size: "md" })}>Contact us</h4>
+                  <h4 className={title({ size: "md" })}>{t("title")}</h4>
                   <p className="mt-6 font-light w-[25ch]">
-                    Feel free to use the contact form to reach out to us.
+                    {t("sub")}
                   </p>
                   <div className="mt-8 hidden md:flex gap-3 items-center fill-white text-white">
                     <Mail />

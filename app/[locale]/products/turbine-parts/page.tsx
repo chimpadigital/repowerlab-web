@@ -7,11 +7,13 @@ import { ArrowButtonIcon, DownloadIcon } from "@/components/icons";
 import SpareParts from "@/components/pages/products/SpareParts";
 import Support from "@/components/pages/products/Support";
 import Solutions from "@/components/pages/products/Solutions";
+import { useTranslations } from "next-intl";
 export default function page() {
+  const t = useTranslations("TurbineParts")
   const breadcrumbs = [
-    { label: "Home", href: "/" },
-    { label: "Products", href: "none" },
-    { label: "Wind turbines Parts", href: "/" },
+    { label: t.raw("Hero.b1"), href: "/" },
+    { label: t.raw("Hero.b2"), href: "none" },
+    { label: t.raw("Hero.b3"), href: "/" },
   ];
   return (
     <>
@@ -26,23 +28,20 @@ export default function page() {
               <h4
                 className={`${title({ size: "md" })} max-w-[12ch] !inline-block`}
               >
-                Wind Turbines Spare Parts
+                {t("Hero.title")}
               </h4>
               <Paragraph
-                text="RepowerLab supplies a wide range of turbine parts to support maintenance and repair operations. Our inventory includes both new and refurbished components, ensuring that clients have access to the parts they need to keep their turbines running efficiently."
+                text={t.raw("Hero.p")}
                 className="mt-6 hidden md:block"
               ></Paragraph>
 
               <Paragraph
-                text=" RepowerLab offers a variety of turbine parts for maintenance and
-                repairs. Our stock includes both new and refurbished items,
-                ensuring clients get the parts needed to keep turbines running
-                smoothly."
+                text={t.raw("Hero.pM")}
                 className="mt-6 md:hidden"
               ></Paragraph>
               <button className="flex w-full mt-6 max-w-[250px] mb-[35px] md:mb-0 relative overflow-hidden gap-3 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white  hover:max-w-[270px]">
                 <div className="w-full absolute h-full top-0 left-0 bg-[#272424]/40"></div>
-                <span className="relative text-[18px]">Download brochure</span>
+                <span className="relative text-[18px]">{t("Hero.download")}</span>
                 <span className="fill-white md:hidden h-[18px] z-10">
                   <DownloadIcon />
                 </span>

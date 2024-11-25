@@ -13,8 +13,10 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { useTranslations } from "next-intl";
 
 export default function SpareParts() {
+  const t = useTranslations("TurbineParts.SpareParts")
   return (
     <section className="w-full flex justify-center overflow-hidden">
       <div className="pl-8">
@@ -25,37 +27,37 @@ export default function SpareParts() {
               " text-center w-full hidden md:block"
             }
           >
-            Wind Turbine Spare Parts Include
+            {t("title")}
           </h2>
           <h2 className="text-[28px] font-bold text-primary text-center max-w-[18ch] md:hidden">
-            Our Wind Turbine Spare Parts Include
+            {t("titleM")}
           </h2>
         </div>
         <div className="max-w-[1280px] hidden md:flex py-[80px] justify-center flex-wrap px-6 gap-[40px]">
           <Card
-            titulo="Blades"
+            titulo={t.raw("cards.card1.titulo")}
             svgIcono={<BladeIcon />}
-            texto="New and refurbished blades suitable for a variety of turbine models."
+            texto={t.raw("cards.card1.texto")}
           />
           <Card
-            titulo="Gearboxes"
+            titulo={t.raw("cards.card2.titulo")}
             svgIcono={<GearBoxesIcon />}
-            texto="High-quality gearboxes that are rigorously tested for reliability and performance."
+            texto={t.raw("cards.card2.texto")}
           />
           <Card
-            titulo="Other components"
+            titulo={t.raw("cards.card3.titulo")}
             svgIcono={<ComponentIcon />}
-            texto="Including towers, hubs, and more, all sourced from trusted manufacturers."
+            texto={t.raw("cards.card3.texto")}
           />
           <Card
-            titulo="Generators"
+            titulo={t.raw("cards.card4.titulo")}
             svgIcono={<GeneratorIcon />}
-            texto="Efficient generators to ensure optimal energy production."
+            texto={t.raw("cards.card4.texto")}
           />
           <Card
-            titulo="Control systems"
+            titulo={t.raw("cards.card5.titulo")}
             svgIcono={<ControlIcon />}
-            texto="Advanced control systems for better performance and reliability."
+            texto={t.raw("cards.card5.texto")}
           />
         </div>
         <div className="md:hidden">
@@ -83,37 +85,37 @@ export default function SpareParts() {
           >
             <SwiperSlide>
               <Card
-                titulo="Blades"
+                titulo={t.raw("cards.card1.titulo")}
                 svgIcono={<BladeIcon />}
-                texto="New and refurbished blades suitable for a variety of turbine models."
+                texto={t.raw("cards.card1.texto")}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Card
-                titulo="Gearboxes"
+                titulo={t.raw("cards.card2.titulo")}
                 svgIcono={<GearBoxesIcon />}
-                texto="High-quality gearboxes that are rigorously tested for reliability and performance."
+                texto={t.raw("cards.card2.texto")}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Card
-                titulo="Other components"
+                titulo={t.raw("cards.card3.titulo")}
                 svgIcono={<ComponentIcon />}
-                texto="Including towers, hubs, and more, all sourced from trusted manufacturers."
+                texto={t.raw("cards.card3.texto")}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Card
-                titulo="Generators"
+                titulo={t.raw("cards.card4.titulo")}
                 svgIcono={<GeneratorIcon />}
-                texto="Efficient generators to ensure optimal energy production."
+                texto={t.raw("cards.card4.texto")}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Card
-                titulo="Control systems"
+                titulo={t.raw("cards.card5.titulo")}
                 svgIcono={<ControlIcon />}
-                texto="Advanced control systems for better performance and reliability."
+                texto={t.raw("cards.card5.texto")}
               />
             </SwiperSlide>
           </Swiper>

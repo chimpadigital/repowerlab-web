@@ -16,11 +16,13 @@ import {
 } from "@/utils/ourServicesAccordeons";
 import GreenBanner from "@/components/GreenBanner";
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 export default function page() {
+  const t = useTranslations("Services")
   const breadcrumbs = [
-    { label: "Home", href: "/" },
-    { label: "Services", href: "/our-services" },
+    { label: t.raw("Hero.b1"), href: "/" },
+    { label: t.raw("Hero.b2"), href: "/our-services" },
   ];
 
   return (
@@ -32,18 +34,12 @@ export default function page() {
         >
           <div className="flex justify-end text-white w-full">
             <div className="max-w-[500px]">
-              <h4 className={title({ size: "md" })}>Services</h4>
+              <h4 className={title({ size: "md" })}>{t("Hero.title")}</h4>
               <p className="mt-6 font-light hidden md:block">
-                RepowerLab offers a full range of services to maximize the value
-                of your energy assets. From wind farm decommissioning and
-                turbine retrofitting to resale, blade recycling, and expert
-                installation support, we ensure precision, sustainability, and
-                optimized performance at every stage.
+                {t("Hero.text")}
               </p>
               <p className="mt-6 font-light md:hidden">
-                RepowerLab offers full services to maximize energy assets,
-                including decommissioning, retrofitting, resale, recycling, and
-                installation support.
+                {t("Hero.textM")}
               </p>
             </div>
           </div>

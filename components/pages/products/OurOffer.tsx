@@ -4,8 +4,10 @@ import { button } from "@/components/primitives";
 import { Accordion, AccordionItem, Link } from "@nextui-org/react";
 import React, { useEffect } from "react";
 import { useParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export default function OurOffer() {
+  const t = useTranslations("WindTurbines.OurOffer")
   const params = useParams();
   const itemClasses = {
     base: "py-0 w-full text-primary my-[20px] mb-0 md:my-[20px] bg-custom-gradient shadow-none md:shadow",
@@ -19,142 +21,131 @@ export default function OurOffer() {
 
   const listWindTurbine1 = [
     {
-      title: "Unused Wind Turbines:",
-      text: "Sourced from canceled or downsized projects, these turbines are essentially new but sold as secondhand, offering excellent value. Each turbine undergoes rigorous inspection and testing to ensure it conserves the highest standards of performance and reliability.",
+      title: t.raw("accordions.ac1.list.l1.title"),
+      text: t.raw("accordions.ac1.list.l1.text"),
     },
     {
-      title: "Refurbished Wind Turbines:",
-      text: "RepowerLab manages the global trade and resale of refurbished turbines, ensuring they meet OEM specifications. These turbines provide a cost-effective solution for extending the life of wind farms, with a focus on markets like Central America and South Korea.",
+      title: t.raw("accordions.ac1.list.l2.title"),
+      text: t.raw("accordions.ac1.list.l2.text"),
     },
     {
-      title: "Used Wind Turbines:",
-      text: "These are turbines sold in as-is condition, providing a budget-friendly option for buyers planning to install them in new projects or refurbish them as needed.",
+      title: t.raw("accordions.ac1.list.l3.title"),
+      text: t.raw("accordions.ac1.list.l3.text"),
     },
     {
-      title: "Wind Turbine Spare Parts:",
-      text: "RepowerLab supplies a wide range of turbine parts to support maintenance and repair operations. Our inventory includes both new and refurbished components, ensuring that clients have access to the parts they need to keep their turbines running efficiently.",
+      title: t.raw("accordions.ac1.list.l4.title"),
+      text: t.raw("accordions.ac1.list.l4.text"),
     },
+
   ];
 
-  const listWindTurbine1Mobile = [
-    {
-      title: "Unused Turbines",
-      text: "Like-new turbines from canceled projects, sold secondhand for great value. Inspected and tested for top performance.",
-    },
-    {
-      title: "Refurbished Turbines",
-      text: "Quality refurbished turbines traded globally, extending farm life efficiently in markets like Central America and South Korea. Used Turbines: Budget-friendly turbines sold as-is, ideal for new projects or refurbishment.",
-    },
-    {
-      title: "Spare Parts",
-      text: "A wide range of new and refurbished parts to keep turbines running smoothly. Includes: Blades, gearboxes, generators, control systems, and other key components.(read more: hipervinculo con pag de spare parts).",
-    },
-  ];
+
 
   const listWindTurbine2 = [
     {
-      title: "Blades:",
-      text: "New and refurbished blades suitable for a variety of turbine models.",
+      title: t.raw("accordions.ac1.list.l1.title"),
+      text: t.raw("accordions.ac1.list.l1.text"),
     },
     {
-      title: "Gearboxes:",
-      text: " High-quality gearboxes that are rigorously tested for reliability and performance.",
+      title: t.raw("accordions.ac1.list.l2.title"),
+      text: t.raw("accordions.ac1.list.l2.text"),
     },
     {
-      title: "Generators:",
-      text: " Efficient generators to ensure optimal energy production.",
+      title: t.raw("accordions.ac1.list.l3.title"),
+      text: t.raw("accordions.ac1.list.l3.text"),
     },
     {
-      title: "Contol Systems:",
-      text: "Advanced control systems for better performance and reliability.",
+      title: t.raw("accordions.ac1.list.l4.title"),
+      text: t.raw("accordions.ac1.list.l4.text"),
     },
     {
-      title: "Other Components",
-      text: "including towers, hubs, and more, all sourced from trusted manufacturers.",
+      title: t.raw("accordions.ac1.list.l5.title"),
+      text: t.raw("accordions.ac1.list.l5.text"),
     },
   ];
 
   const listPurchase = [
     {
-      title: "Expert Advice:",
-      text: "We work closely with clients to understand their specific needs, recommend the best turbines for their projects, and provide guidance on selecting the right parts for their turbines.",
+      title: t.raw("accordions.ac3.list.l1.title"),
+      text: t.raw("accordions.ac3.list.l1.text"),
     },
     {
-      title: "Technical Assessments:",
-      text: " Detailed evaluations of potential installation sites to ensure optimal turbine performance.",
+      title: t.raw("accordions.ac3.list.l2.title"),
+      text: t.raw("accordions.ac3.list.l2.text"),
     },
     {
-      title: "Logistics:",
-      text: " Coordinating the delivery and installation of parts, ensuring they arrive on time and in perfect condition.",
+      title: t.raw("accordions.ac3.list.l3.title"),
+      text: t.raw("accordions.ac3.list.l3.text"),
     },
     {
-      title: "Regulatory Assistance:",
-      text: " Guidance on meeting all local and international regulatory requirements.",
+      title: t.raw("accordions.ac3.list.l4.title"),
+      text: t.raw("accordions.ac3.list.l4.text"),
     },
     {
-      title: "Financial Consulting:",
-      text: " Support in securing financing options tailored to your project’s needs.",
+      title: t.raw("accordions.ac3.list.l5.title"),
+      text: t.raw("accordions.ac3.list.l5.text"),
     },
     {
-      title: "After-Sales Support:",
-      text: "Ongoing support to address any issues and ensure the continued performance of your turbines.",
-    },
+      title: t.raw("accordions.ac3.list.l6.title"),
+      text: t.raw("accordions.ac3.list.l6.text"),
+    }
+    
   ];
 
   const listPurchaseMobile = [
     {
-      title: "Expert Advice",
-      text: "Personalized recommendations for your project.",
+      title: t.raw("accordions.ac3.listM.l1.title"),
+      text: t.raw("accordions.ac3.listM.l1.text"),
     },
     {
-      title: "Technical Assessments",
-      text: "Site evaluations for best performance.",
+      title: t.raw("accordions.ac3.listM.l2.title"),
+      text: t.raw("accordions.ac3.listM.l2.text"),
     },
     {
-      title: "Logistics",
-      text: "Smooth delivery and installation",
+      title: t.raw("accordions.ac3.listM.l3.title"),
+      text: t.raw("accordions.ac3.listM.l3.text"),
     },
     {
-      title: "Regulatory Help",
-      text: "Ensure compliance with all regulations",
+      title: t.raw("accordions.ac3.listM.l4.title"),
+      text: t.raw("accordions.ac3.listM.l4.text"),
     },
     {
-      title: "Financial Consulting",
-      text: "Help securing financing.",
+      title: t.raw("accordions.ac3.listM.l5.title"),
+      text: t.raw("accordions.ac3.listM.l5.text"),
     },
     {
-      title: "After-Sales",
-      text: "Ongoing support for turbine performance.",
-    },
+      title: t.raw("accordions.ac3.listM.l6.title"),
+      text: t.raw("accordions.ac3.listM.l6.text"),
+    }
   ];
 
   const listSupport = [
     {
-      title: "Project Management:",
-      text: "Overseeing the installation from start to finish, coordinating with all relevant parties to ensure timely and successful completion.",
+      title: t.raw("accordions.ac4.list.l1.title"),
+      text: t.raw("accordions.ac4.list.l1.text"),
     },
     {
-      title: "Technical Support:",
-      text: " Providing on-site technical assistance during installation to address any issues that arise.",
+      title: t.raw("accordions.ac4.list.l2.title"),
+      text: t.raw("accordions.ac4.list.l2.text"),
     },
     {
-      title: "Training:",
-      text: "Offering comprehensive training programs for your team on the operation and maintenance of the new turbines.",
+      title: t.raw("accordions.ac4.list.l3.title"),
+      text: t.raw("accordions.ac4.list.l3.text"),
     },
   ];
 
   const listSupportMobile = [
     {
-      title: "Project Management",
-      text: "From start to finish.",
+      title: t.raw("accordions.ac4.listM.l1.title"),
+      text: t.raw("accordions.ac4.listM.l1.text"),
     },
     {
-      title: "Technical Support",
-      text: "On-site assistance.",
+      title: t.raw("accordions.ac4.listM.l2.title"),
+      text: t.raw("accordions.ac4.listM.l2.text"),
     },
     {
-      title: "Training",
-      text: "Programs for your team to operate and maintain turbines.",
+      title: t.raw("accordions.ac4.listM.l3.title"),
+      text: t.raw("accordions.ac4.listM.l3.text"),
     },
   ];
 
@@ -164,7 +155,7 @@ export default function OurOffer() {
   return (
     <section className="w-full flex flex-col md:flex-row items-center justify-center text-[22px]">
       <h3 className="text-center text-primary font-bold md:hidden">
-        Our offer includes
+        {t("title")}
       </h3>
       <div className="container px-6">
         <Accordion
@@ -175,7 +166,7 @@ export default function OurOffer() {
           <AccordionItem
             key="wind-turbines"
             aria-label="Wind Turbines"
-            title="Wind Turbines"
+            title={t.raw("accordions.ac1.title")}
           >
             <hr className="w-full border border-grey-500" />
             <div className="py-4">
@@ -183,39 +174,23 @@ export default function OurOffer() {
                 <ListComponent list={listWindTurbine1} />
               </article>
               <article className="md:hidden">
-                <p className="text-[#444444] mb-3">
-                  <span className="font-bold">Unused Turbines:</span> Like-new
-                  turbines from canceled projects, sold secondhand for great
-                  value. Inspected and tested for top performance.
-                  <br />
-                </p>
+                <Paragraph className="text-[#444444] mb-3" text={t.raw("accordions.ac1.list.l1.textM")}></Paragraph>
+                <br />
+                <Paragraph className="text-[#444444] mb-3" text={t.raw("accordions.ac1.list.l2.textM")}></Paragraph>
+                <br />
 
-                <p className="text-[#444444] mb-3">
-                  <span className="font-bold">Refurbished Turbines:</span>{" "}
-                  Quality refurbished turbines traded globally, extending farm
-                  life efficiently in markets like Central America and South
-                  Korea. Used Turbines: Budget-friendly turbines sold as-is,
-                  ideal for new projects or refurbishment.
-                  <br />
-                </p>
+                <Paragraph className="text-[#444444] mb-3" text={t.raw("accordions.ac1.list.l4.textM")} />
 
-                <p className="text-[#444444] mb-3">
-                  <span className="font-bold">Spare Parts:</span> A wide range
-                  of new and refurbished parts to keep turbines running
-                  smoothly. <span className="font-bold">Includes:</span> Blades,
-                  gearboxes, generators, control systems, and other key
-                  components.
-                </p>
 
                 <Link href="turbine-parts" className="underline text-sm text-end w-full justify-end">
-                  Wind turbine spare parts
+                  {t.raw("accordions.ac1.link")}
                 </Link>
               </article>
               <div className="flex flex-wrap gap-4 items-center justify-between">
                 <div className="max-w-[600px] hidden md:block">
                   <div className="py-4">
                     <p className="font-bold text-grey-parrafo">
-                      Our Wind Turbine Parts Include:
+                      {t("accordions.ac1.title2")}
                     </p>
                   </div>
                   <ListComponent list={listWindTurbine2} />
@@ -224,24 +199,25 @@ export default function OurOffer() {
                   href="products/turbine-parts"
                   className={`${button()}  gap-2 items-center hidden md:flex`}
                 >
-                  Wind turbine parts
+                  {t("accordions.ac1.link2")}
+
                 </Link>
               </div>
             </div>
           </AccordionItem>
 
-          <AccordionItem key="2" aria-label="Materials" title="Materials">
+          <AccordionItem key="2" aria-label="Materials" title={t.raw("accordions.ac2.title")}>
             <hr className="w-full border border-grey-500" />
             <div className="py-4">
               <article className="hidden md:block">
                 <Paragraph
-                  text="At RepowerLab, we focus on recovering valuable materials from the dismantling of wind farms, including steel, copper, fiberglass, electronics, concrete, and industrial oils. These materials are meticulously processed and repurposed for a second life in various industries, supporting a circular economy and reducing environmental impact."
+                  text={t.raw("accordions.ac2.text")}
                   className="text-grey-parrafo"
                 />
               </article>
               <article className="md:hidden">
                 <Paragraph
-                  text="We recover valuable materials like steel, copper, and fiberglass from dismantled wind farms. These are repurposed to support the circular economy and reduce waste."
+                  text={t.raw("accordions.ac2.textM")}
                   className="text-grey-parrafo"
                 />
               </article>
@@ -251,19 +227,19 @@ export default function OurOffer() {
           <AccordionItem
             key="3"
             aria-label="Purchasing Support"
-            title="Purchasing Support"
+            title={t.raw("accordions.ac3.title")}
           >
             <hr className="w-full border border-grey-500" />
             <div className="py-4">
               <article className="md:hidden mb-3">
                 <Paragraph
-                  text="We offer full support for turbine purchasing and installation:"
+                  text={t.raw("accordions.ac3.textM")}
                   className="text-grey-parrafo"
                 />
               </article>
               <article className="hidden md:block">
                 <Paragraph
-                  text="At RepowerLab, we understand that purchasing and installing wind turbines is a significant investment. That's why we provide comprehensive support throughout the entire process. Our services include:"
+                  text={t.raw("accordions.ac3.text")}
                   className="text-grey-parrafo"
                 />
               </article>
@@ -290,19 +266,19 @@ export default function OurOffer() {
           <AccordionItem
             key="4"
             aria-label="Installation Support"
-            title="Installation Support"
+            title={t.raw("accordions.ac4.title")}
           >
             <hr className="w-full border border-grey-500" />
             <div className="py-4">
               <article className="hidden md:block">
                 <Paragraph
-                  text="Our involvement doesn’t end with the sale. We offer extensive support during the installation process to ensure a smooth and efficient setup. Our services include:"
+                  text={t.raw("accordions.ac4.text")}
                   className="text-grey-parrafo"
                 />
               </article>
               <article className="mb-1 md:hidden">
                 <Paragraph
-                  text="We support you beyond the sale:"
+                  text={t.raw("accordions.ac4.textM")}
                   className="text-grey-parrafo"
                 />
               </article>
@@ -339,7 +315,7 @@ const ListComponent = ({
   return (
     <ul className="list-disc pl-6 text-grey-parrafo">
       {list.map((el, i) => (
-        <li key={"list" + i}>
+        <li key={"list" + i + el.title}>
           <strong>{el.title}</strong> {"  "}
           {el.text}
         </li>

@@ -6,9 +6,10 @@ import { dataMolino } from './dataMolino'
 import { subtitle, title } from '@/components/primitives'
 import Paragraph from '@/atoms/Paragraph'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 export default function MolinoAnimation() {
-
+    const t = useTranslations("CircularEconomy.molino")
     const ref = useRef<any>()
 
     const { scrollYProgress } = useScroll(
@@ -21,12 +22,12 @@ export default function MolinoAnimation() {
     return (
         <section className="w-full flex justify-center">
             <div className="w-full relative" ref={ref} style={{ height: `${dataMolino.length * 100}vh` }}>
-                    <h4 className={title({ color: "secondary", size: "md", weight: "normal" }) + " md:hidden px-6 absolute block"}>
-                        <span className='text-primary'>
-                            RepowerLab's {" "}
-                        </span>
-                        Circular Economy Business Model
-                    </h4>
+                <h4 className={title({ color: "secondary", size: "md", weight: "normal" }) + " md:hidden font-[600] px-6 absolute"}>
+                    <span className='text-primary'>
+                        {t("title")} {" "}
+                    </span>
+                    {t("title2")}
+                </h4>
                 <div className="h-[100vh] items-center flex justify-center  sticky top-0">
                     <Image width={400} height={400} alt="bg" className='absolute left-0 bottom-[-100px]' src="/images/circular-economy/bg_wind.png"></Image>
                     <div className="container px-6">
@@ -39,9 +40,9 @@ export default function MolinoAnimation() {
                                 <div className='w-full md:w-[420px]'>
                                     <h4 className={title({ color: "secondary", size: "md", weight: "normal" }) + " hidden md:block"}>
                                         <span className='text-primary'>
-                                            RepowerLab's {" "}
+                                            {t("title")} {" "}
                                         </span>
-                                        Circular Economy Business Model
+                                        {t("title2")}
                                     </h4>
                                     <div className="h-[45vh] w-full relative md:mt-8">
                                         {
@@ -61,7 +62,7 @@ export default function MolinoAnimation() {
 }
 
 const Text = ({ numbers, data, index }: { index: number, numbers: any, data: { title: string, description: string } }) => {
-
+    const t = useTranslations("CircularEconomy.molino")
     const opacity = useTransform(numbers, [index - 0.5, index, index, index + 0.5], [0, 1, 1, 0])
     const opacity2 = useTransform(numbers, [index, index + 0.5], [1, 0])
     const opacityF = useTransform(numbers, [index - 0.5, index], [0, 1])
@@ -72,9 +73,9 @@ const Text = ({ numbers, data, index }: { index: number, numbers: any, data: { t
             style={{ zIndex: index, opacity: index == 0 ? opacity2 : index == dataMolino.length - 1 ? opacityF : opacity }}>
             <div className="flex gap-12 items-center w-full">
                 <h5 className="md:text-[42px] text-[38px] text-primary font-bold">{index + 1}</h5>
-                <h6 className={subtitle({ colors: "primary" })}>{data.title}</h6>
+                <h6 className={subtitle({ colors: "primary" })}>{t(data.title)}</h6>
             </div>
-            <Paragraph className='text-primary mt-2 md:mt-8 md:text-[18px] text-[16px] font-light ' text={data.description}></Paragraph>
+            <Paragraph className='text-primary mt-2 md:mt-8 md:text-[18px] text-[16px] font-light ' text={t.raw(data.description)}></Paragraph>
         </motion.div>
     )
 }

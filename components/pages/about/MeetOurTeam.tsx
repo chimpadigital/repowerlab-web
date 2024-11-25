@@ -3,8 +3,10 @@ import React from "react";
 import image from "@/public/images/about/recursoOurTeam.webp";
 import TeamMemberCard from "./TeamMemberCard";
 import Partners from "./Partners";
+import { useTranslations } from "next-intl";
 
 const MeetOurTeam = () => {
+  const t = useTranslations("About.team")
   return (
     <>
       <svg width="0" height="0">
@@ -22,31 +24,33 @@ const MeetOurTeam = () => {
       </svg>
       <section className="our-team lg:-top-6 relative px-[10px] md:px-6 ">
         <div className="rounded-[20px] bg-grey-100 py-10 md:py-40 bg-[url(/images/about/recursoOurTeam.webp)] bg-no-repeat bg-cover bg-left">
-          <h4 className={`${title()} text-primary`}>Meet our Team</h4>
+          <h4 className={`${title()} text-primary`}>{t("meet")}</h4>
           <div className="grid grid-cols-1 lg:grid-cols-2  min-[1366px]:grid-cols-3 min-[1666px]:grid-cols-4 justify-items-center  px-4 md:px-6 xl:px-14 gap-5 xl:gap-20 mx-auto flex-wrap py-5 md:pt-40">
             <TeamMemberCard
               image="/images/about/member-alfonso.webp"
-              description="Based in Madrid, Spain, Alfonso brings over 25 years of experience in logistics, wind farm repowering, and energy project development. His notable achievements include founding Repowering Solutions and overseeing the decommissioning of over 300 wind turbines in Europe. Alfonso has led various renewable energy projects, including onshore and offshore wind farms and solar photovoltaic power plants."
               name="Alfonso Alvaro"
-              position="Co-Founder & Managing Director of EU"
+              description={t.raw("alfonso.description")}
+              position={t.raw("alfonso.position")}
             />
             <TeamMemberCard
               image="/images/about/member-fernando.webp"
-              description="Operating from Cali, Colombia, Fernando has over 40 years of experience in business planning, management, and renewable energy development. As a founding partner in multiple ventures, Fernando has promoted over 4 GW of renewable energy projects. His dedication to environmental preservation and community engagement is evident in his active participation in social welfare initiatives, particularly through Rotary."
+              description={t.raw("fernando.description")}
+              position={t.raw("fernando.position")}
               name="Fernando Garces "
-              position="Co-Founder & Managing Director of LATAM"
+        
             />
             <TeamMemberCard
               image="/images/about/member-victoria.webp"
-              description="Residing in Virginia, US, Victoria has over 20 years of experience in sustainable finance. As the founder of PRISSMA and co-founder of RepowerLab, she has been instrumental in driving sustainability and decarbonization strategies for companies. Victoria's expertise includes developing ESG investment strategies, innovative climate finance products, and advising investors on renewable energy projects. She has received recognition as one of DC's Top 50 Women Leaders for two consecutive years."
+              description={t.raw("victoria.description")}
+              position={t.raw("victoria.position")}
               name="Victoria Galeano "
-              position="Co-Founder & Managing Director of US"
+         
             />
             <TeamMemberCard
               image="/images/about/member-david.webp"
-              description="A seasoned business and project developer in the  renewable energy sector, Iván has contributed to the successful development of over 1.5 GW. Moreover, Iván brings a vast experience within the wind energy industry, from the design of wind turbines, support structures and wind farms to the business development and project management of large-scale wind power in Latin America."
+              description={t.raw("ivan.description")}
+              position={t.raw("ivan.position")}
               name="Iván David Rojas "
-              position="Business Development Manager"
             />
           </div>
           <div className="hidden md:block">

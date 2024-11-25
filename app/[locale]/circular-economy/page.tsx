@@ -5,12 +5,14 @@ import SolutionsAccordeon from "@/components/pages/circular-economy/SolutionsAcc
 import SolutionsCards from "@/components/pages/circular-economy/SolutionsCards";
 import { button, title } from "@/components/primitives";
 import {Link} from '@/i18n/routing';
+import { useTranslations } from "next-intl";
 import React from "react";
 
 const CircularEconomy = () => {
+  const t = useTranslations("CircularEconomy")
   const breadcrumbs = [
-    { label: "Home", href: "/" },
-    { label: "Circular Economy", href: "circular-economy" },
+    { label: t.raw("b1"), href: "/" },
+    { label: t.raw("b2"), href: "circular-economy" },
   ];
 
   return (
@@ -25,15 +27,10 @@ const CircularEconomy = () => {
               <h4
                 className={`${title({ size: "md" })} max-w-[16ch] !inline-block`}
               >
-                Circular Economy Business Model
+                {t("title")}
               </h4>
-              <p className="mt-6 ">
-                At RepowerLab, we are dedicated to advancing the circular
-                economy in the wind energy sector. Our comprehensive solutions
-                span the entire lifecycle of wind turbines, ensuring that
-                resources are used efficiently and sustainably. Explore our
-                range of services designed to support repowering, refurbishing,
-                and recycling of wind energy assets.
+              <p className="mt-6 pb-10 md:pb-0">
+                {t("p")}
               </p>
             </div>
           </div>
@@ -48,19 +45,16 @@ const CircularEconomy = () => {
             <div className="flex-1 gap-10 text-start flex items-center justify-between">
               <div className="flex-1">
                 <h4 className={`${title()} !block mb-3 max-w-[20ch] leading-[3rem]`}>
-                  Join Us in Building a{" "}
+                {t("banner.title")}{" "}
                   <span className={`${title()} text-secondary`}>
-                    Sustainable Future
+                  {t("banner.title2")}
                   </span>
                 </h4>
                 <p className="max-w-[100ch] font-light mt-6">
-                  RepowerLab is at the forefront of promoting a circular economy
-                  in the wind energy sector. By choosing our solutions, you
-                  contribute to a more sustainable and efficient energy future.
+                {t("banner.p1")}
                 </p>
                 <p className="max-w-[100ch] font-light mt-8">
-                  Contact us to learn more about how we can support your wind
-                  energy projects with innovative and sustainable solutions.
+                {t("banner.p2")}
                 </p>
               </div>
             </div>
@@ -71,7 +65,7 @@ const CircularEconomy = () => {
                   whiteLine: true,
                 })}`}
               >
-                Connect
+                {t("banner.connect")}
               </Link>
             </div>
           </div>

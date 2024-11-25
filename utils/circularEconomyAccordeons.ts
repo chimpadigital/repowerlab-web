@@ -1,144 +1,115 @@
 export const repoweringSolutions = [
     {
-        title: "Repowering Solutions",
-        description:
-            "Repowering involves upgrading existing wind farms with new, higher-capacity turbines. This not only increases energy production but also enhances the efficiency and reliability of wind farms. RepowerLab provides expert consulting and technical analysis to assess the potential of your wind farms for repowering.",
-        descriptionMobile:
-            "Repowering involves upgrading existing wind farms with new, higher-capacity turbines. This not only increases energy production but also enhances the efficiency and reliability of wind farms. RepowerLab provides expert consulting and technical analysis to assess the potential of your wind farms for repowering.",
+        title: "CircularEconomy.SolutionsCards.repoweringSolutions.a1.title",
+        description: "CircularEconomy.SolutionsCards.repoweringSolutions.a1.description",
+        descriptionMobile: "CircularEconomy.SolutionsCards.repoweringSolutions.a1.descriptionMobile",
         img: "/images/circular-economy/repowering-solution.webp",
     },
     {
-        title: "Assessment and Planning",
-        description:
-            "We evaluate your wind farm’s location, existing infrastructure, and energy production capabilities to determine the best repowering strategy.",
-        descriptionMobile:
-            "We evaluate your wind farm’s location, existing infrastructure, and energy production capabilities to determine the best repowering strategy.",
+        title: "CircularEconomy.SolutionsCards.repoweringSolutions.a2.title",
+        description: "CircularEconomy.SolutionsCards.repoweringSolutions.a2.description",
+        descriptionMobile: "CircularEconomy.SolutionsCards.repoweringSolutions.a2.descriptionMobile",
         img: "/images/circular-economy/repowering-solution.webp",
     },
     {
-        title: "Implementation",
-        description:
-            "Our team manages the entire repowering process, from dismantling old turbines to installing new, more efficient models.",
-        descriptionMobile:
-            "Our team manages the entire repowering process, from dismantling old turbines to installing new, more efficient models.",
+        title: "CircularEconomy.SolutionsCards.repoweringSolutions.a3.title",
+        description: "CircularEconomy.SolutionsCards.repoweringSolutions.a3.description",
+        descriptionMobile: "CircularEconomy.SolutionsCards.repoweringSolutions.a3.descriptionMobile",
         img: "/images/circular-economy/repowering-solution.webp",
     },
     {
-        title: "Value Recovery",
-        description:
-            "We help you recover value from decommissioned turbines through resale or recycling.",
-        descriptionMobile:
-            "We help you recover value from decommissioned turbines through resale or recycling.",
+        title: "CircularEconomy.SolutionsCards.repoweringSolutions.a4.title",
+        description: "CircularEconomy.SolutionsCards.repoweringSolutions.a4.description",
+        descriptionMobile: "CircularEconomy.SolutionsCards.repoweringSolutions.a4.descriptionMobile",
         img: "/images/circular-economy/repowering-solution.webp",
     },
 ];
 
 export const circularEconomySolutions = [
     {
-        title: "Circular Economy Solutions",
-        description:
-            "Our circular economy solutions aim to minimize waste and maximize resource utilization throughout the wind turbine lifecycle.",
-        descriptionMobile: "Our circular economy solutions aim to minimize waste and maximize resource utilization throughout the wind turbine lifecycle.",
+        title: "CircularEconomy.SolutionsCards.circularEconomySolutions.a1.title",
+        description: "CircularEconomy.SolutionsCards.circularEconomySolutions.a1.description",
+        descriptionMobile: "CircularEconomy.SolutionsCards.circularEconomySolutions.a1.descriptionMobile",
         img: "/images/circular-economy/circular-economy-solution.webp",
     },
     {
-        title: "Design for Circularity",
-        description:
-            "Developing wind turbines with materials and components that can be easily recycled or repurposed at the end of their life.",
-        descriptionMobile: "Developing wind turbines with materials and components that can be easily recycled or repurposed at the end of their life.",
+        title: "CircularEconomy.SolutionsCards.circularEconomySolutions.a2.title",
+        description: "CircularEconomy.SolutionsCards.circularEconomySolutions.a2.description",
+        descriptionMobile: "CircularEconomy.SolutionsCards.circularEconomySolutions.a2.descriptionMobile",
         img: "/images/circular-economy/circular-economy-solution.webp",
     },
     {
-        title: "Maintenance and Repair",
-        description:
-            "Implementing advanced diagnostic and inspection techniques to certify older turbines for extended operation.",
-        descriptionMobile: "Implementing advanced diagnostic and inspection techniques to certify older turbines for extended operation.",
+        title: "CircularEconomy.SolutionsCards.circularEconomySolutions.a3.title",
+        description: "CircularEconomy.SolutionsCards.circularEconomySolutions.a3.description",
+        descriptionMobile: "CircularEconomy.SolutionsCards.circularEconomySolutions.a3.descriptionMobile",
         img: "/images/circular-economy/circular-economy-solution.webp",
     },
     {
-        title: "Reuse and Repurpose",
-        description:
-            "Repurposing decommissioned turbine components for new applications, reducing the need for new materials.",
-        descriptionMobile:
-            "Repurposing decommissioned turbine components for new applications, reducing the need for new materials.",
+        title: "CircularEconomy.SolutionsCards.circularEconomySolutions.a4.title",
+        description: "CircularEconomy.SolutionsCards.circularEconomySolutions.a4.description",
+        descriptionMobile: "CircularEconomy.SolutionsCards.circularEconomySolutions.a4.descriptionMobile",
         img: "/images/circular-economy/circular-economy-solution.webp",
     },
     {
-        title: "Lifetime Extension",
-        description:
-            "Implementing advanced diagnostic and inspection techniques to certify older turbines for extended operation.",
-        descriptionMobile:
-            "Implementing advanced diagnostic and inspection techniques to certify older turbines for extended operation.",
+        title: "CircularEconomy.SolutionsCards.circularEconomySolutions.a5.title",
+        description: "CircularEconomy.SolutionsCards.circularEconomySolutions.a5.description",
+        descriptionMobile: "CircularEconomy.SolutionsCards.circularEconomySolutions.a5.descriptionMobile",
         img: "/images/circular-economy/circular-economy-solution.webp",
     },
 ];
+
 
 export const refurbishmentSolutions = [
     {
-        title: "Refurbishment Solutions",
-        description:
-            "Refurbishing wind turbines involves overhauling and upgrading components to restore them to optimal condition. This extends the lifespan of turbines and improves their performance. ",
-        descriptionMobile:
-            "Refurbishing wind turbines involves overhauling and upgrading components to restore them to optimal condition. This extends the lifespan of turbines and improves their performance. ",
-        img: "/images/circular-economy/refurbishment.webp",
+      title: "CircularEconomy.SolutionsCards.refurbishmentSolutions.a1.title",
+      description: "CircularEconomy.SolutionsCards.refurbishmentSolutions.a1.description",
+      descriptionMobile: "CircularEconomy.SolutionsCards.refurbishmentSolutions.a1.descriptionMobile",
+      img: "/images/circular-economy/refurbishment.webp",
     },
     {
-        title: "Component Overhaul",
-        description:
-            "Detailed inspection and refurbishment of critical components such as gearboxes, generators, and blades.",
-        descriptionMobile:
-            "Detailed inspection and refurbishment of critical components such as gearboxes, generators, and blades.",
-        img: "/images/circular-economy/refurbishment.webp",
+      title: "CircularEconomy.SolutionsCards.refurbishmentSolutions.a2.title",
+      description: "CircularEconomy.SolutionsCards.refurbishmentSolutions.a2.description",
+      descriptionMobile: "CircularEconomy.SolutionsCards.refurbishmentSolutions.a2.descriptionMobile",
+      img: "/images/circular-economy/refurbishment.webp",
     },
     {
-        title: "Performance Upgrades",
-        description:
-            "Implementing the latest technologies to enhance turbine efficiency and reliability.",
-        descriptionMobile:
-            "Implementing the latest technologies to enhance turbine efficiency and reliability.",
-        img: "/images/circular-economy/refurbishment.webp",
+      title: "CircularEconomy.SolutionsCards.refurbishmentSolutions.a3.title",
+      description: "CircularEconomy.SolutionsCards.refurbishmentSolutions.a3.description",
+      descriptionMobile: "CircularEconomy.SolutionsCards.refurbishmentSolutions.a3.descriptionMobile",
+      img: "/images/circular-economy/refurbishment.webp",
     },
     {
-        title: "Quality Assurance",
-        description:
-            "Ensuring that refurbished turbines meet or exceed original manufacturer specifications.",
-        descriptionMobile:
-            "Ensuring that refurbished turbines meet or exceed original manufacturer specifications.",
-        img: "/images/circular-economy/refurbishment.webp",
+      title: "CircularEconomy.SolutionsCards.refurbishmentSolutions.a4.title",
+      description: "CircularEconomy.SolutionsCards.refurbishmentSolutions.a4.description",
+      descriptionMobile: "CircularEconomy.SolutionsCards.refurbishmentSolutions.a4.descriptionMobile",
+      img: "/images/circular-economy/refurbishment.webp",
     },
-];
+  ];
+  
 
-export const recyclingSolutions = [
+  export const recyclingSolutions = [
     {
-        title: "Recycling Solutions",
-        description:
-            "Recycling is a crucial aspect of our circular economy approach. At RepowerLab, we employ advanced recycling techniques to recover valuable materials from decommissioned wind turbines.",
-        descriptionMobile:
-            "Recycling is a crucial aspect of our circular economy approach. At RepowerLab, we employ advanced recycling techniques to recover valuable materials from decommissioned wind turbines.",
-        img: "/images/circular-economy/recycling.webp",
+      title: "CircularEconomy.SolutionsCards.recyclingSolutions.a1.title",
+      description: "CircularEconomy.SolutionsCards.recyclingSolutions.a1.description",
+      descriptionMobile: "CircularEconomy.SolutionsCards.recyclingSolutions.a1.descriptionMobile",
+      img: "/images/circular-economy/recycling.webp",
     },
     {
-        title: "Material Recovery",
-        description:
-            "Using mechanical and chemical processes to extract materials such as fiberglass and metals from turbine components.",
-        descriptionMobile:
-            "Using mechanical and chemical processes to extract materials such as fiberglass and metals from turbine components.",
-        img: "/images/circular-economy/recycling.webp",
+      title: "CircularEconomy.SolutionsCards.recyclingSolutions.a2.title",
+      description: "CircularEconomy.SolutionsCards.recyclingSolutions.a2.description",
+      descriptionMobile: "CircularEconomy.SolutionsCards.recyclingSolutions.a2.descriptionMobile",
+      img: "/images/circular-economy/recycling.webp",
     },
     {
-        title: "Repurposing Blades",
-        description:
-            "Transforming decommissioned blades into new products, such as street furniture and construction materials.",
-        descriptionMobile:
-            "Transforming decommissioned blades into new products, such as street furniture and construction materials.",
-        img: "/images/circular-economy/recycling.webp",
+      title: "CircularEconomy.SolutionsCards.recyclingSolutions.a3.title",
+      description: "CircularEconomy.SolutionsCards.recyclingSolutions.a3.description",
+      descriptionMobile: "CircularEconomy.SolutionsCards.recyclingSolutions.a3.descriptionMobile",
+      img: "/images/circular-economy/recycling.webp",
     },
     {
-        title: "Environmental Compliance",
-        description:
-            "Ensuring all recycling activities meet stringent environmental regulations and contribute to a sustainable future.",
-        descriptionMobile:
-            "Ensuring all recycling activities meet stringent environmental regulations and contribute to a sustainable future.",
-        img: "/images/circular-economy/recycling.webp",
+      title: "CircularEconomy.SolutionsCards.recyclingSolutions.a4.title",
+      description: "CircularEconomy.SolutionsCards.recyclingSolutions.a4.description",
+      descriptionMobile: "CircularEconomy.SolutionsCards.recyclingSolutions.a4.descriptionMobile",
+      img: "/images/circular-economy/recycling.webp",
     },
-];
+  ];
