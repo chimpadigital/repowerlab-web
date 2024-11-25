@@ -33,19 +33,19 @@ export default function JoinOurMission() {
                         <Accordion variant="splitted" itemClasses={itemClasses}>
                             <AccordionItem indicator={<Indicator />} key="1" aria-label="Accordion 1" title={t.raw("accordion.ac1.title")}>
                                 <hr className="w-full border border-grey-600/15" />
-                                <div className='pt-4'>
+                                <div className='pt-4 px-2 md:px-0'>
                                     <Paragraph text={t.raw("accordion.ac1.p")} className='text-grey-parrafo' />
                                 </div>
                             </AccordionItem>
                             <AccordionItem indicator={<Indicator />} key="2" aria-label="Accordion 2" title={t("accordion.ac2.title")}>
                                 <hr className="w-full border border-grey-600/15" />
-                                <div className='pt-4'>
+                                <div className='pt-4 px-2 md:px-0'>
                                 <Paragraph text={t.raw("accordion.ac2.p")} className='text-grey-parrafo' />
                                 </div>
                             </AccordionItem>
                             <AccordionItem indicator={<Indicator />} key="3" aria-label="Accordion 3" title={t.raw("accordion.ac3.title")}>
                                 <hr className="w-full border border-grey-600/15" />
-                                <div className='pt-4'>
+                                <div className='pt-4 px-2 md:px-0'>
                                 <Paragraph text={t.raw("accordion.ac3.p")} className='text-grey-parrafo' />
                                 </div>
                             </AccordionItem>
