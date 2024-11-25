@@ -1,3 +1,4 @@
+"use client"
 import { title } from "@/components/primitives";
 import WordAnimated from "@/components/WordAnimated";
 import React from "react";

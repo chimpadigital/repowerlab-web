@@ -13,7 +13,7 @@ import MapHome from "@/components/pages/home/MapHome";
 export default function Home() {
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
       <RepowerLabFocus />
       <SetApart />
       <RepowerlabImpact />
