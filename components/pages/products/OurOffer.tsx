@@ -12,7 +12,7 @@ export default function OurOffer() {
   const params = useParams();
   const itemClasses = {
     base: "py-0 w-full text-primary my-[20px] mb-0 md:my-[20px] bg-custom-gradient shadow-none md:shadow",
-    title: "font-bold text-[16px] md:text-[24px] text-primary w-[80%]",
+    title: "font-bold text-[18px] md:text-[24px] text-primary w-[80%]",
     heading: "shadow-none",
     content: "shadow-none text-[14px] md:text-base px-4 py-2",
     trigger:
@@ -182,7 +182,8 @@ export default function OurOffer() {
                 <br />
                 <Paragraph className="text-[#444444] mb-3" text={t.raw("accordions.ac1.list.l2.textM")}></Paragraph>
                 <br />
-
+                <Paragraph className="text-[#444444] mb-3" text={t.raw("accordions.ac1.list.l3.textM")}></Paragraph>
+                <br />
                 <Paragraph className="text-[#444444] mb-3" text={t.raw("accordions.ac1.list.l4.textM")} />
 
 
@@ -280,7 +281,7 @@ export default function OurOffer() {
                   className="text-grey-parrafo"
                 />
               </article>
-              <article className="mb-1 md:hidden">
+              <article className="mb-1 md:hidden mb-3">
                 <Paragraph
                   text={t.raw("accordions.ac4.textM")}
                   className="text-grey-parrafo"

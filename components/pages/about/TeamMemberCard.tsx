@@ -44,7 +44,7 @@ const TeamMemberCard = ({
         </div>
         <div className="opacity-0 transition-all mt-3 group-hover:opacity-100 grou">
           <p
-            className="font-[Mulish] text-sm md:text-base font-extralight cursor-default"
+            className="font-[Mulish] text-sm md:text-base cursor-default"
             style={{
               transitionBehavior: "allow-discrete",
             }}

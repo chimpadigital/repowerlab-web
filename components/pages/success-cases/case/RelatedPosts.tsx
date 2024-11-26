@@ -31,7 +31,7 @@ const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
   console.log(blogs?.data);
 
   return (
-    <div>
+    <div className="mb-3">
       <section className="mt-20 py-9 hidden md:block mx-6 rounded-[20px] bg-grey-100 text-primary">
         <div className=" container mx-auto">
           <header className="px-8">

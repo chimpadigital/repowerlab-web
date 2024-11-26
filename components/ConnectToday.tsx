@@ -5,19 +5,16 @@ import {
   Mail,
   TwitterIcon,
 } from "@/components/icons";
-import { button, subtitle, title } from "@/components/primitives";
+import { button, title } from "@/components/primitives";
 import { Link } from '@/i18n/routing';
 import React from "react";
-import flagUSA from "@/public/images/contact-us/flagUSA.png";
-import flagColombia from "@/public/images/contact-us/flagColombia.png";
-import flagSpain from "@/public/images/contact-us/flagSpain.png";
 import CountryContactData from "./CountryContactData";
 import { useTranslations } from "next-intl";
 
 const ConnectToday = () => {
   const t = useTranslations('Connect')
   return (
-    <div className="flex text-left flex-col lg:flex-row px-6 md:px-16 gap-10 mx-auto pb-20 lg:items-center pt-20">
+    <div className="flex text-left flex-col lg:flex-row pl-3 pr-6 md:px-16 gap-10 mx-auto pb-20 lg:items-center pt-20">
       <article className="flex flex-[2] flex-col md:flex-row lg:flex-col w-full justify-between lg:justify-normal">
         <div className="">
           <h3 className={`${title()} text-primary mb-3 !block`}>

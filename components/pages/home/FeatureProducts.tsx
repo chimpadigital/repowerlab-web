@@ -13,7 +13,7 @@ export default function FeatureProducts() {
 
   return (
     <div className="pb-[50px]">
-      <div className="flex justify-center items-center flex-col pt-6 px-4 pb-8 md:pb-[50px]">
+      <div className="flex justify-center items-center flex-col pt-12 px-4 pb-8 md:pb-[50px]">
         <h3 className={`${title()} text-primary mr-auto md:mr-0 mb-3 !block`}>
           {t('title')}
         </h3>
@@ -21,7 +21,7 @@ export default function FeatureProducts() {
           {t('p1')}
         </p>
         <p
-          className={`text-grey-parrafo text-sm md:hidden ${(pathname === "/es" || pathname === "/en") && "hidden"}`}
+          className={`text-grey-parrafo md:hidden max-w-[30ch] text-left self-start ${(pathname === "/es" || pathname === "/en") && "hidden"}`}
         >
           {t('p2')}
         </p>
