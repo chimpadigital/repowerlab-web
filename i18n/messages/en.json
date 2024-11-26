@@ -157,7 +157,7 @@
         "title": "Services",
         "cards": {
             "card1": {
-                "title": "Safe Dismantling",
+                "title": "Safe dismantling",
                 "d": "RepowerLab safely dismantles, relocates, and reassembles wind turbines, adhering to environmental and safety standards. The turbines are either reinstalled, used for spare parts, or recycled.",
                 "dM": "Safe dismantling, relocating, and reassembling wind turbines—meeting safety and environmental standards every step of the way."
             },
@@ -230,8 +230,8 @@
             "repowering": {
                 "l1": {
                     "title": "Wind farm repowering",
-                    "description": "Boost your wind farm's life and performance with advanced repowering. We maximize efficiency and value while cutting costs.",
-                    "descriptionMobile": "Maximize efficiency and value with advanced repowering, extending wind farm life while reducing costs."
+                    "description": "RepowerLab specializes in repowering wind farms through advanced retrofitting solutions that extend the life and enhance the performance of existing turbines. Our focus is on maximizing the economic value of your energy assets by improving efficiency, increasing energy output, and reducing operational costs, all while adhering to sustainable practices.",
+                    "descriptionMobile": "RepowerLab repowers wind farms by retrofitting turbines to improve efficiency, boost energy output, and reduce costs, all while following sustainable practices."
                 },
                 "l2": {
                     "title": "Site Assessment & Planning",
@@ -262,8 +262,8 @@
             "retrofitting": {
                 "l1": {
                     "title": "Wind turbine retrofitting & refurbishing",
-                    "description": "RepowerLab specializes in repowering wind farms through advanced retrofitting solutions that extend the life and enhance the performance of existing turbines. Our focus is on maximizing the economic value of your energy assets by improving efficiency, increasing energy output, and reducing operational costs, all while adhering to sustainable practices.",
-                    "descriptionMobile": "We specialize in extending turbine life and boosting performance through retrofitting, maximizing efficiency, output, and value."
+                    "description": "RepowerLab enhances the performance and extends the lifespan of existing wind turbines through comprehensive retrofitting and refurbishing services, ensuring turbines operate at peak efficiency and durability.",
+                    "descriptionMobile": "RepowerLab enhances the performance and extends the lifespan of existing wind turbines through comprehensive retrofitting and refurbishing services, ensuring turbines operate at peak efficiency and durability."
                 },
                 "l2": {
                     "title": "Retrofitting",
@@ -645,13 +645,13 @@
                         },
                         "l2": {
                             "title": "Refurbished Wind Turbines:",
-                            "text": "Quality refurbished turbines traded globally, extending farm life efficiently in markets like Central America and South Korea. Used Turbines: Budget-friendly turbines sold as-is, ideal for new projects or refurbishment.",
-                            "textM": "**Refurbished Turbines:** Quality refurbished turbines traded globally, extending farm life efficiently in markets like Central America and South Korea. Used Turbines: Budget-friendly turbines sold as-is, ideal for new projects or refurbishment."
+                            "text": "RepowerLab manages the global trade and resale of refurbished turbines, ensuring they meet OEM specifications. These turbines provide a cost-effective solution for extending the life of wind farms, with a focus on markets like Central America and South Korea.",
+                            "textM": "**Refurbished Turbines:** RepowerLab handles global resale of refurbished turbines, meeting OEM standards. This extends wind farm life."
                         },
                         "l3": {
                             "title": "Used Wind Turbines:",
                             "text": "These are turbines sold in as-is condition, providing a budget-friendly option for buyers planning to install them in new projects or refurbish them as needed.",
-                            "textM": "Budget-friendly turbines sold as-is, ideal for new projects or refurbishment."
+                            "textM": "**Used wind turbines:** Budget-friendly turbines sold as-is, ideal for new projects or refurbishment."
                         },
                         "l4": {
                             "title": "Wind Turbine Spare Parts:",
@@ -750,7 +750,7 @@
                 "ac4": {
                     "title": "Installation Support",
                     "text": "Our involvement doesn’t end with the sale. We offer extensive support during the installation process to ensure a smooth and efficient setup. Our services include:",
-                    "textM": "We support you beyond the sale:",
+                    "textM": "We support you beyond the sale: ",
                     "list": {
                         "l1": {
                             "title": "Project Management:",

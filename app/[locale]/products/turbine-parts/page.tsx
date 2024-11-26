@@ -26,7 +26,7 @@ export default function page() {
           <div className="flex justify-end text-white w-full">
             <div className="max-w-[500px]">
               <h4
-                className={`${title({ size: "md" })} max-w-[12ch] !inline-block`}
+                className={`${title({ size: "md" })} max-w-[12ch] md:max-w-full !inline-block`}
               >
                 {t("Hero.title")}
               </h4>
@@ -39,7 +39,7 @@ export default function page() {
                 text={t.raw("Hero.pM")}
                 className="mt-6 md:hidden"
               ></Paragraph>
-              <button className="flex w-full mt-6 max-w-[250px] mb-[35px] md:mb-0 relative overflow-hidden gap-3 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white  hover:max-w-[270px]">
+              <button className="flex w-fit mt-6 max-w-[250px] mb-[35px] md:mb-0 relative overflow-hidden gap-3 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white  hover:max-w-[270px]">
                 <div className="w-full absolute h-full top-0 left-0 bg-[#272424]/40"></div>
                 <span className="relative text-[16px] sm:text-[18px] whitespace-nowrap">{t("Hero.download")}</span>
                 <span className="fill-white md:hidden h-[18px] z-10">

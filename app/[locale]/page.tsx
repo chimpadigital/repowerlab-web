@@ -22,7 +22,7 @@ export default function Home() {
       <FeatureProducts />
       <SuccesCases />
       <MapHome />
-      <div className="px-6">
+      <div className="px-5">
         <ConnectToday />
       </div>
       <div className="flex w-full justify-center py-4 px-6">
