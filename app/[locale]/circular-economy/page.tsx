@@ -70,7 +70,7 @@ const CircularEconomy = () => {
                 {t("banner.pM")}
                 </p>
                 <p className="max-w-[100ch] font-light mt-6 hidden md:block">
-                {t("banner.p1")}
+                {t("banner.p")}
                 </p>
                 <p className="max-w-[100ch] font-light mt-8 hidden md:block">
                 {t("banner.p2")}
