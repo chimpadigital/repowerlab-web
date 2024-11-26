@@ -16,6 +16,11 @@ html {
     box-sizing: border-box;
 }
 
+.blurRepower {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
 #canvas-container>div {
     position: absolute;
     bottom: 0;

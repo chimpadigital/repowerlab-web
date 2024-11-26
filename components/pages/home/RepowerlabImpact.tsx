@@ -147,8 +147,8 @@ const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
       onClick={() => {
         setOpen(!open);
       }}
-      style={{ height: open ? "315px" : "150px" }}
-      className={`border overflow-hidden cursor-pointer h-full transition-all duration-600 relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6`}
+      // style={{ height: open ? "315px" : "150px" }}
+      className={`border overflow-hidden cursor-pointer transition-all ${open ? 'md:height-[315px] h-auto' : 'h-[150px]'} duration-600 relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6`}
     >
       <div className=" relative z-10">
         <h5 className="font-light uppercase text-[20px] w-[200px]">{title}</h5>
@@ -175,8 +175,10 @@ const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
           </motion.p>
         </div>
       </div>
-      <img className="absolute bottom-2 right-2" src="images/home/arrow.png" alt="" />
-    
+      <svg className={`absolute bottom-2 right-2 transition-all duration-[600] ${open ? 'rotate-180' : ''}`} width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.06077 0.939331L16.5001 14.3787V4.99999H19.5001V19.5H5.00011V16.5H14.3788L0.939453 3.06065L3.06077 0.939331Z" fill="white" />
+      </svg>
+
 
     </motion.article>
   );

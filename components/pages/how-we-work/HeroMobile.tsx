@@ -56,7 +56,7 @@ const CardMobile = ({ index, data }: { index: number, data: HowWorkI }) => {
     const t = useTranslations("HowWeWork.Hero.data")
     return (
         <>
-            <article onClick={() => { onOpen() }} style={{ backdropFilter: "blur(10px)" }} className='p-6 relative overflow-hidden w-[80vw] max-w-[400px] h-[300px] rounded-[20px] bg-[#2F2E2E]/40'>
+            <article onClick={() => { onOpen() }} style={{ backdropFilter: "blur(10px)" }} className='p-6 relative overflow-hidden blurRepower  w-[80vw] max-w-[400px] h-[300px] rounded-[20px] bg-[#2F2E2E]/40'>
                 <h3 className='text-accent text-[90px]'>{index + 1}</h3>
                 <RepowerIcon preserveAspectRatio="xMidYMid slice" className="absolute fill-grey-100/10 text-grey-100/10 -top-4 -right-4 h-[120px] w-[120px]"/>
                 <h4 className='text-white font-bold text-[22px] relative z-10'>{t(data.title)}</h4>

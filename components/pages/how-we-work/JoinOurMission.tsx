@@ -12,18 +12,18 @@ export default function JoinOurMission() {
     const t = useTranslations("HowWeWork.JoinMission")
     const itemClasses = {
         base: "py-0 w-full text-primary px-2 md:px-4 md:border-0 md:bg-transparent bg-grey-100 !shadow-none",
-        title: "font-normal data-[open=true]:font-bold text-[16px] md:text-[22px] text-primary w-[90%] md:w-[80%]",
+        title: "font-normal data-[open=true]:font-bold text-[16px] md:text-[22px] ps-2 md:ps-0 text-primary w-[90%] md:w-[80%]",
         heading: "shadow-none data-[open]=true:font-bold md:bg-transparent bg-grey-100",
-        content: "shadow-none md:px-4 py-2",
+        content: "shadow-none ps-2 md:px-4 py-2",
         trigger: "md:px-2 py-4  shadow-none md:mt-6  font-bold flex items-center border-none pr4",
         indicator: "text-medium pr5",
     };
 
     return (
-        <section className="w-full flex justify-center py-12 md:py-[100px]">
+        <section className="w-full flex justify-center py-12 md:pb-[100px] md:pt-[50px]">
             <div className="container text-primary px-4 md:px-6">
                 <div className="grid lg:grid-cols-2 grid cols-1">
-                    <div className="col-span-1">
+                    <div className="col-span-1 md:pt-[47px]">
                         <h4 className={title()}>{t("title")}</h4>
                         <Paragraph className='text-grey-parrafo hidden md:block text-[20px] pt-[40px] max-w-[450px]' text={t.raw('p')} />
                         <Paragraph className='text-grey-parrafo md:hidden text-[20px] pt-[40px] max-w-[450px]' text={t.raw('pM')} />

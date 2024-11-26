@@ -6,9 +6,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import CardBlog, { BlogI } from "@/components/CardBlog";
+import { useTranslations } from "next-intl";
 
 const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
   const [blogs, setBlogs] = useState<any>();
+  const t = useTranslations("SuccessCases")
 
   useEffect(() => {
     const getBlogs = async () => {
@@ -33,8 +35,8 @@ const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
       <section className="mt-20 py-9 hidden md:block mx-6 rounded-[20px] bg-grey-100 text-primary">
         <div className=" container mx-auto">
           <header className="px-8">
-            <p className="mb-6 text-xl font-light">Related posts</p>
-            <h4 className={` ${title()}`}>You may also like</h4>
+            <p className="mb-6 text-xl font-light">{t("related")}</p>
+            <h4 className={` ${title()}`}>{t("may")}</h4>
           </header>
           {blogs?.data?.length > 0 && (
             <div className="mt-10 px-2 flex flex-col items-center lg:items-stretch lg:flex-row justify-between gap-[60px] w-full">
@@ -57,10 +59,10 @@ const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
           )}
         </div>
       </section>
-      <section className="md:hidden mt-10">
-        <header className="px-8 text-primary">
-          <p className="text-base font-light">Related posts</p>
-          <h4 className={` ${title()}`}>You may also like</h4>
+      <section className="md:hidden mt-2">
+        <header className="px-4 pb-[40px] text-primary">
+          <p className="text-base font-light">{t("related")}</p>
+          <h4 className={` ${title()}`}>{t("may")}</h4>
         </header>
         <Swiper
           slidesPerView={1.2}

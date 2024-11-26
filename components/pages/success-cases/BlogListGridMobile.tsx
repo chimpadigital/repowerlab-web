@@ -47,7 +47,7 @@ const BlogListGridMobile = () => {
           </div>
         )}
       </div>
-      <div className="flex justify-center gap-[4px] mt-20 mb-32">
+      <div className="flex justify-center gap-[4px] mt-8 md:mt-20 mb-8 md:mb-32">
         <button
           aria-label="first page"
           className="h-9 aspect-square rounded-full border-2 border-secondary fill-primary grid place-items-center disabled:border-gray-200 disabled:fill-gray-200"

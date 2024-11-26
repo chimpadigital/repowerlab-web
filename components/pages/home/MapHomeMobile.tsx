@@ -21,7 +21,7 @@ export default function MapHomeMobile() {
 const CardM = ({ title, number }: { title: string, number: number }) => {
     return (
         <article
-            className='flex flex-col text-white w-full max-w-[260px] items-center justify-center gap-2 p-4'
+            className='flex flex-col text-white w-full max-w-[260px] blurRepower items-center justify-center gap-2 p-4'
             style={{
                 borderRadius: "10px",
                 border: " 1px solid var(--gris, #F4F4F4)",

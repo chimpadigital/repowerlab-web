@@ -13,9 +13,9 @@ export default function Support() {
       <h2
         className={
           title({ color: "primary" }) +
-          " md:text-center  max-w-[12ch] md:w-full px-6 md:px-0 leading-7 md:leading-normal"
+          " md:text-center  max-w-[12ch] md:max-w-[100%] md:w-full px-6 md:px-0 leading-7 md:leading-normal"
         }
-      >
+      > 
         {t("title")}
       </h2>
       <p className="pb-12 pt-4 md:pt-8 max-w-[600px] text-grey-parrafo md:text-center px-6 md:px-0">
@@ -117,7 +117,7 @@ function Card({
           variants={variants}
           transition={{ duration: 0.8 }}
           animate={open ? "open" : "closed"}
-          className="absolute h-full"
+          className="absolute h-full blurRepower"
           style={{
             borderRadius: open ? "0px" : "10px",
             background: "#4B4A4A",

@@ -44,24 +44,24 @@ export default function OurOffer() {
 
   const listWindTurbine2 = [
     {
-      title: t.raw("accordions.ac1.list.l1.title"),
-      text: t.raw("accordions.ac1.list.l1.text"),
+      title: t.raw("accordions.ac1.list2.l1.title"),
+      text: t.raw("accordions.ac1.list2.l1.text"),
     },
     {
-      title: t.raw("accordions.ac1.list.l2.title"),
-      text: t.raw("accordions.ac1.list.l2.text"),
+      title: t.raw("accordions.ac1.list2.l2.title"),
+      text: t.raw("accordions.ac1.list2.l2.text"),
     },
     {
-      title: t.raw("accordions.ac1.list.l3.title"),
-      text: t.raw("accordions.ac1.list.l3.text"),
+      title: t.raw("accordions.ac1.list2.l3.title"),
+      text: t.raw("accordions.ac1.list2.l3.text"),
     },
     {
-      title: t.raw("accordions.ac1.list.l4.title"),
-      text: t.raw("accordions.ac1.list.l4.text"),
+      title: t.raw("accordions.ac1.list2.l4.title"),
+      text: t.raw("accordions.ac1.list2.l4.text"),
     },
     {
-      title: t.raw("accordions.ac1.list.l5.title"),
-      text: t.raw("accordions.ac1.list.l5.text"),
+      title: t.raw("accordions.ac1.list2.l5.title"),
+      text: t.raw("accordions.ac1.list2.l5.text"),
     },
   ];
 
@@ -186,12 +186,12 @@ export default function OurOffer() {
                 <Paragraph className="text-[#444444] mb-3" text={t.raw("accordions.ac1.list.l4.textM")} />
 
 
-                <Link href="turbine-parts" className="underline text-sm text-end w-full justify-end">
+                <Link href="/turbine-parts" className="underline text-sm text-end w-full justify-end">
                   {t.raw("accordions.ac1.link")}
                 </Link>
               </article>
               <div className="flex flex-wrap gap-4 items-center justify-between">
-                <div className="max-w-[600px] hidden md:block">
+                <div className="max-w-[725px] hidden md:block">
                   <div className="py-4">
                     <p className="font-bold text-grey-parrafo">
                       {t("accordions.ac1.title2")}
@@ -200,7 +200,7 @@ export default function OurOffer() {
                   <ListComponent list={listWindTurbine2} />
                 </div>
                 <Link
-                  href="products/turbine-parts"
+                  href="/products/turbine-parts"
                   className={`${button()}  gap-2 items-center hidden md:flex`}
                 >
                   {t("accordions.ac1.link2")}

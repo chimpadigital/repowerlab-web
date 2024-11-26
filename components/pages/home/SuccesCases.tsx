@@ -47,7 +47,7 @@ export default function SuccesCases() {
     getBlogs();
   }, [currentPage]);
   return (
-    <div className="pb-[60px] lg:pb-[120px] w-full flex justify-center relative z-10">
+    <div className="pb-[0px] lg:pb-[120px] w-full flex justify-center relative z-10">
       <div className="absolute !text-grey-100 z-0 left-[-50px] hidden md:block">
         <IsotipoRepowerlab className="w-[350px] h-auto !fill-grey-100 " />
       </div>
@@ -58,7 +58,7 @@ export default function SuccesCases() {
           >
             {t("title")}
           </h2>
-          <p className="max-w-[680px] pt-6 text-grey-parrafo w-full text-center font-light hidden md:block">
+          <p className="max-w-[680px] pt-6 text-grey-parrafo w-full text-center hidden md:block">
             {t("sub")}
           </p>
           <p className="md:hidden pt-6 w-[90%] leading-7 text-grey-parrafo text-[18px] px-4">
@@ -108,7 +108,7 @@ export default function SuccesCases() {
                   </SwiperSlide>
 
 
-                  < div className="swiper-pagination-success h-10 flex justify-center gap-2 mt-2"></div>
+                  < div className="swiper-pagination-success h-10 flex justify-center gap-2 mt-6"></div>
                 </Swiper>
                 :
                 ""

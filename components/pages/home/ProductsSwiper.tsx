@@ -56,7 +56,7 @@ export default function ProductsSwiper() {
                     href={"/products/turbine-parts"}
                     img='/images/home/products/4a.png' />
             </SwiperSlide>
-            <div className="swiper-pagination-blogs h-10 flex justify-center gap-2 mt-2"></div>
+            <div className="swiper-pagination-blogs h-10 flex justify-center gap-2 mt-6"></div>
         </Swiper>
     )
 }

@@ -147,7 +147,7 @@
             "card4": "DISMANTLED WIND FARMS"
         },
         "FeaturedProduct": {
-            "title": "Feature Products",
+            "title": "Featured Products",
             "p1": "Explore our Marketplace, featuring high-quality refurbished turbines and spare parts, along with reclaimed materials from dismantled wind farms, all ready for a second life.",
             "p2": "Visit our Marketplace for refurbished turbines, spare parts, and reclaimed materials—giving wind components a second life.",
             "button": "Go to Marketplace"
@@ -855,7 +855,7 @@
         "Solutions": {
             "madefor": "Solutions made for you",
             "titles":{
-                "title1": "Wind farm decommissioning",
+                "title1": "Safe dismantling",
                 "title2": "Wind farm repowering",
                 "title3": "Wind turbine retrofitting & refurbishing",
                 "title4": "Blade recycling",
@@ -870,6 +870,8 @@
         "b1": "Home",
         "b2": "Success cases",
         "title": "Success Cases",
+        "related":"Related posts",
+        "may":"You may also like",
         "subtitle": "Welcome to the RepowerLab Success Cases",
         "subtitleM": "Welcome to the\n RepowerLab Success Cases",
         "p": "We’ve dismantled, refurbished, and resold over 200 wind turbines through our marketplace. By 2025, we will have over 4,000 wind turbines ready for installation, __showcasing our commitment to sustainable energy and circular economy solutions__",

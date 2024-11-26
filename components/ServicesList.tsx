@@ -192,7 +192,7 @@ const ServicesList = () => {
             />
           </SwiperSlide>
         </Swiper>
-        <div className="swiper-pagination-services h-10 flex justify-center gap-2"></div>
+        <div className="swiper-pagination-services h-10 mt-6 flex justify-center gap-2"></div>
       </div>
     </>
   );
