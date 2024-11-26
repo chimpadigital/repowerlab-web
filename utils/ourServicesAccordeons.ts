@@ -92,16 +92,16 @@ export const retrofitting = [
         ],
         descriptionMobile: [
             {
-                title: "Services.Scroll.retrofitting.l4.dM.d1.title",
-                description:"Services.Scroll.retrofitting.l4.dM.d1.description",
+                title: "Services.Scroll.retrofitting.l4.descriptionMobile.d1.title",
+                description:"Services.Scroll.retrofitting.l4.descriptionMobile.d1.description",
             },
             {
-                title: "Services.Scroll.retrofitting.l4.dM.d2.title",
-                description:"Services.Scroll.retrofitting.l4.dM.d2.description",
+                title: "Services.Scroll.retrofitting.l4.descriptionMobile.d2.title",
+                description:"Services.Scroll.retrofitting.l4.descriptionMobile.d2.description",
             },
             {
-                title: "Services.Scroll.retrofitting.l4.dM.d3.title",
-                description:"Services.Scroll.retrofitting.l4.dM.d3.description",
+                title: "Services.Scroll.retrofitting.l4.descriptionMobile.d3.title",
+                description:"Services.Scroll.retrofitting.l4.descriptionMobile.d3.description",
             },
           
         ],

@@ -1,7 +1,7 @@
 {
     "greeting": "Hello",
     "shared": {
-        "no-video-support": "Tu navegador no soporta la reproducción de videos.",
+        "no-video-support": "Your browser does not support video playback.",
         "connect": "Connect"
     },
     "Navbar": {},
@@ -70,7 +70,7 @@
                 },
                 "card3": {
                     "title": "Increased power output",
-                    "descriptionMob": "Repowering techniques boost turbine efficiency by 25-335% maximizing energy production",
+                    "descriptionMob": "Repowering techniques boost turbine efficiency by 25-35% maximizing energy production",
                     "description": "Repowerlab’s innovative repowering techniques boost the efficiency of wind turbines by 25-35%, maximizing energy production from existing assets."
                 },
                 "card4": {
@@ -85,6 +85,8 @@
                 "p1": "At RepowerLab, we offer a comprehensive solution for the lifecycle management of wind turbines.",
                 "p2": "Whether you're selling or buying wind turbines, we ensure a smooth, efficient, and transparent process.",
                 "p3": "Looking for expert assistance? Please contact us for an obligation-free introduction.",
+                "pm1" :"We manage wind turbines from start to finish. Buying or selling? We make it easy. __Contact us for a free consultation.__",
+                "pm2" :"__Contact us for a free consultation.__",
                 "read": "Read more"
             },
             "singles": {
@@ -297,7 +299,7 @@
             "bladeRecycling": {
                 "l1": {
                     "title": "Blade recycling",
-                    "description": "Recycling blades into new products. Leading the way in the circular economy.",
+                    "description": "RepowerLab leads in recycling and repurposing turbine blades through mechanical shredding, cement co-processing, and creating new products, supporting a circular economy.",
                     "descriptionMobile": "Recycle blades into new products, promoting the circular economy."
                 },
                 "l2": {
@@ -649,7 +651,7 @@
                         "l3": {
                             "title": "Used Wind Turbines:",
                             "text": "These are turbines sold in as-is condition, providing a budget-friendly option for buyers planning to install them in new projects or refurbish them as needed.",
-                            "textM": ""
+                            "textM": "Budget-friendly turbines sold as-is, ideal for new projects or refurbishment."
                         },
                         "l4": {
                             "title": "Wind Turbine Spare Parts:",
@@ -949,7 +951,7 @@
                 "a1": {
                     "title": "Repowering Solutions",
                     "description": "Repowering involves upgrading existing wind farms with new, higher-capacity turbines. This not only increases energy production but also enhances the efficiency and reliability of wind farms. RepowerLab provides expert consulting and technical analysis to assess the potential of your wind farms for repowering.",
-                    "descriptionMobile": "Repowering involves upgrading existing wind farms with new, higher-capacity turbines. This not only increases energy production but also enhances the efficiency and reliability of wind farms. RepowerLab provides expert consulting and technical analysis to assess the potential of your wind farms for repowering."
+                    "descriptionMobile": "We upgrade existing wind farms with new turbines to boost energy production, efficiency, and reliability. Our experts assess your wind farm’s repowering potential."
                 },
                 "a2": {
                     "title": "Assessment and Planning",
@@ -1062,14 +1064,17 @@
             },
             "fernando":{
                 "description":"Operating from Cali, Colombia, Fernando has over 40 years of experience in business planning, management, and renewable energy development. As a founding partner in multiple ventures, Fernando has promoted over 4 GW of renewable energy projects. His dedication to environmental preservation and community engagement is evident in his active participation in social welfare initiatives, particularly through Rotary.",
+                "descriptionM": "Based in Madrid, Spain, Alfonso brings over 25 years of experience in logistics, wind farm repowering, and renewable energy project development. His achievements include overseeing the decommissioning of over 300 wind turbines in Europe. Alfonso has led the development of numerous renewable onshore and offshore wind farms.",
                 "position":"Co-Founder & Managing Director of LATAM"
             },
             "victoria":{
                 "description":"Residing in Virginia, US, Victoria has over 20 years of experience in sustainable finance. She has been instrumental in driving sustainability and decarbonization strategies for companies. Victoria's expertise includes developing ESG investment strategies, innovative climate finance products, and advising investors on renewable energy projects. She has received recognition as one of DC's Top 50 Women Leaders for two consecutive years.",
+                "descriptionM": "Based in Virginia, US, Victoria has over 20 years of expertise in sustainable finance. She has co-founded several impact ventures and has driven investments toward the development of numerous ESG projects. Recognized among DC's Top 50 Women Leaders, she advises investors on renewable energy projects.",
                 "position":"Co-Founder & Managing Director of US"
             },
             "ivan":{
-                "description":"A seasoned business and project developer in the  renewable energy sector, Iván has contributed to the successful development of over 1.5 GW. Moreover, Iván brings a vast experience within the wind energy industry, from the design of wind turbines, support structures and wind farms to the business development and project management of large-scale wind power in Latin America.",
+                "description":"A seasoned business and project developer in the  renewable energy sector, Iván has contributed to the successful development of over 1.5 GW. Moreover, Iván brings a vast experience within the wind energy industry, from the design of wind turbines, support structures and wind farms to the business development and project management of large-scale wind power in Latin America.", 
+                "descriptionM": "A seasoned business and project developer in the renewable energy sector, Iván has contributed to the successful development of over 1.5 GW. Moreover, Iván brings a vast experience within the wind energy industry, from the design of wind turbines, support structures and wind farms to the business development and project management of large-scale wind power in Latin America.",
                 "position":"Business Development Manager"
             }
         },
