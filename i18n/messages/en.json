@@ -1,7 +1,7 @@
 {
     "greeting": "Hello",
     "shared": {
-        "no-video-support": "Tu navegador no soporta la reproducción de videos.",
+        "no-video-support": "Your browser does not support video playback.",
         "connect": "Connect"
     },
     "Navbar": {},
@@ -49,7 +49,7 @@
                 "card5": {
                     "title": "Sales Process Management",
                     "paragraph": "Facilitating the sale from initial consultation through to final delivery and installation.",
-                    "paragraphMob": "Ensuring quality and safety for turbine dismantling and transport."
+                    "paragraphMob": "From consultation to installation—we handle it all."
                 }
             }
         },
@@ -70,7 +70,7 @@
                 },
                 "card3": {
                     "title": "Increased power output",
-                    "descriptionMob": "Repowering techniques boost turbine efficiency by 25-335% maximizing energy production",
+                    "descriptionMob": "Repowering techniques boost turbine efficiency by 25-35% maximizing energy production",
                     "description": "Repowerlab’s innovative repowering techniques boost the efficiency of wind turbines by 25-35%, maximizing energy production from existing assets."
                 },
                 "card4": {
@@ -297,7 +297,7 @@
             "bladeRecycling": {
                 "l1": {
                     "title": "Blade recycling",
-                    "description": "Recycling blades into new products. Leading the way in the circular economy.",
+                    "description": "RepowerLab leads in recycling and repurposing turbine blades through mechanical shredding, cement co-processing, and creating new products, supporting a circular economy.",
                     "descriptionMobile": "Recycle blades into new products, promoting the circular economy."
                 },
                 "l2": {
