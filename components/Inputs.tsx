@@ -105,7 +105,7 @@ export const RadioButton = (props: radioButtonProps) => {
   const { field } = useController(props);
 
   return (
-    <label className="last:mb-2 w-fit items-center flex gap-[10px] cursor-pointer">
+    <label className="last:mb-2 md:last:mb-0 w-fit items-center flex gap-[10px] cursor-pointer">
       <input
         {...field}
         type="radio"

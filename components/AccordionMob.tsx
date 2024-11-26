@@ -28,7 +28,7 @@ export default function AccordionMob({
     <div className="p-4 py-2 w-full" id={id}>
       <article className="bg-grey-100 rounded-[20px] px-4 py-8">
         <h5 className={title({ size: "sm", color: "primary" })}>
-          {t(items[0].titleMobile)}
+          {t(items[0].title)}
         </h5>
         <p className="pt-4 text-grey-parrafo">
           {t(items[0].descriptionMobile.toString())}
@@ -57,7 +57,7 @@ export default function AccordionMob({
                         className="list-disc ml-4 text-grey-parrafo"
                         key={index}
                       >
-                        <span className="font-bold">{item.titleMobile}: </span>
+                        <span className="font-bold">{t(item.titleMobile)}: </span>
                         {t(item.description)}
                       </li>
                     ))}

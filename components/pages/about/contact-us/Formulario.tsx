@@ -211,7 +211,7 @@ const Formulario = () => {
           }}
         />
 
-        <div className="flex  justify-center flex-wrap" style={{
+        <div className="flex  justify-center flex-wrap items-center" style={{
           rowGap: "1rem",
           columnGap: "2.5rem",
         }}>
