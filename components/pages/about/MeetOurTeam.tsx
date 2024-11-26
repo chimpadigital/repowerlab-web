@@ -27,13 +27,6 @@ const MeetOurTeam = () => {
           <h4 className={`${title()} text-primary`}>{t("meet")}</h4>
           <div className="grid grid-cols-1 lg:grid-cols-2  min-[1366px]:grid-cols-3 min-[1666px]:grid-cols-4 justify-items-center  px-4 md:px-6 xl:px-14 gap-5 xl:gap-20 mx-auto flex-wrap py-5 md:pt-40">
             <TeamMemberCard
-              image="/images/about/member-victoria.webp"
-              description={t.raw("victoria.description")}
-              position={t.raw("victoria.position")}
-              name="Victoria Galeano "
-         
-            />
-            <TeamMemberCard
               image="/images/about/member-alfonso.webp"
               name="Alfonso Alvaro"
               description={t.raw("alfonso.description")}
@@ -45,6 +38,13 @@ const MeetOurTeam = () => {
               position={t.raw("fernando.position")}
               name="Fernando Garces "
         
+            />
+            <TeamMemberCard
+              image="/images/about/member-victoria.webp"
+              description={t.raw("victoria.description")}
+              position={t.raw("victoria.position")}
+              name="Victoria Galeano "
+         
             />
             <TeamMemberCard
               image="/images/about/member-david.webp"
