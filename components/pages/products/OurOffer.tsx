@@ -191,7 +191,7 @@ export default function OurOffer() {
                 </Link>
               </article>
               <div className="flex flex-wrap gap-4 items-center justify-between">
-                <div className="max-w-[600px] hidden md:block">
+                <div className="max-w-[725px] hidden md:block">
                   <div className="py-4">
                     <p className="font-bold text-grey-parrafo">
                       {t("accordions.ac1.title2")}

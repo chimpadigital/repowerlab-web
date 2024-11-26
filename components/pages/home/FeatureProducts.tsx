@@ -15,28 +15,28 @@ export default function FeatureProducts() {
     <div className="pb-[50px]">
       <div className="flex justify-center items-center flex-col pt-8 px-4 pb-8 md:pb-[80px]">
         <h3 className={`${title()} text-primary mr-auto md:mr-0 mb-3 !block`}>
-        {t('title')}
+          {t('title')}
         </h3>
         <p className="text-grey-parrafo max-w-[700px] text-center hidden md:block">
-        {t('p1')}
+          {t('p1')}
         </p>
         <p
-          className={`text-grey-parrafo text-sm md:hidden ${(pathname === "/es" || pathname === "/en" ) && "hidden"}`}
+          className={`text-grey-parrafo text-sm md:hidden ${(pathname === "/es" || pathname === "/en") && "hidden"}`}
         >
           {t('p2')}
         </p>
       </div>
       <ScrollProducts />
       <div className="py-4 mt-4 flex justify-center w-full md:hidden">
-              <Link href="products/wind-turbines" className='w-full mt-6 max-w-[230px] relative overflow-hidden gap-2 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white flex justify-between '>
-                <div className="w-full absolute h-full top-0 left-0 bg-primary">
-                </div>
-                <span className='relative text-[18px]'>{t('button')}</span>
+        <Link href="/marketplace" className='w-full mt-6 max-w-[230px] relative overflow-hidden gap-2 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white flex justify-between '>
+          <div className="w-full absolute h-full top-0 left-0 bg-primary">
+          </div>
+          <span className='relative text-[18px]'>{t('button')}</span>
 
-                <ArrowButtonIcon className="relative z-10 text-white" />
+          <ArrowButtonIcon className="relative z-10 text-white" />
 
-              </Link>
-            </div>
+        </Link>
+      </div>
       <div className="w-full py-[60px]  justify-center items-center hidden md:flex">
         <Link
           href="/marketplace"

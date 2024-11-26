@@ -59,8 +59,8 @@ const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
           )}
         </div>
       </section>
-      <section className="md:hidden mt-10">
-        <header className="px-4 text-primary">
+      <section className="md:hidden mt-2">
+        <header className="px-4 pb-[40px] text-primary">
           <p className="text-base font-light">{t("related")}</p>
           <h4 className={` ${title()}`}>{t("may")}</h4>
         </header>
