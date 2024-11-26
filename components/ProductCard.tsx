@@ -80,7 +80,7 @@ export default function ProductCard({
             <div className="text-[24px] font-normal relative pe-4 flex">
               <div className="flex w-full justify-between">
                 <Title
-                  className={` ${title.length < 23 ? "max-w-[14ch]" : "max-w-[18ch]"} `}
+                  className={``}
                   title={title}
                 />
                 <motion.div

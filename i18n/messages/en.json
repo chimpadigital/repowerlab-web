@@ -121,19 +121,19 @@
             "read": "Read more",
             "cards": {
                 "card1": {
-                    "title": "Unused \n wind turbines",
+                    "title": "Unused \\n wind turbines",
                     "description": "Turbines from canceled projects, offering top performance at a lower cost."
                 },
                 "card2": {
-                    "title": "Refurbished \n wind turbines",
+                    "title": "Refurbished \\n wind turbines",
                     "description": "Remanufactured turbines, providing a cost-effective way to extend wind farm life."
                 },
                 "card3": {
-                    "title": "Used \n wind turbines",
+                    "title": "Used \\n wind turbines",
                     "description": "Budget-friendly turbines sold as-is for installation or refurbishment."
                 },
                 "card4": {
-                    "title": "Wind turbine \n spare parts",
+                    "title": "Wind turbine\\n spare parts",
                     "description": "New and refurbished parts to keep turbines running efficiently."
                 }
             }
