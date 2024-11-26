@@ -20,10 +20,10 @@ export default function JoinOurMission() {
     };
 
     return (
-        <section className="w-full flex justify-center py-12 md:py-[100px]">
+        <section className="w-full flex justify-center py-12 md:pb-[100px] md:pt-[50px]">
             <div className="container text-primary px-4 md:px-6">
                 <div className="grid lg:grid-cols-2 grid cols-1">
-                    <div className="col-span-1">
+                    <div className="col-span-1 md:pt-[47px]">
                         <h4 className={title()}>{t("title")}</h4>
                         <Paragraph className='text-grey-parrafo hidden md:block text-[20px] pt-[40px] max-w-[450px]' text={t.raw('p')} />
                         <Paragraph className='text-grey-parrafo md:hidden text-[20px] pt-[40px] max-w-[450px]' text={t.raw('pM')} />
