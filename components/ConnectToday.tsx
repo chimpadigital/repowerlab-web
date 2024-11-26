@@ -24,7 +24,7 @@ const ConnectToday = () => {
             {t("title")}
           </h3>
           <p
-            className={`text-[#444444] hidden  md:block  max-w-[40ch] mb-8 font-light`}
+            className={`text-[#444444] hidden  md:block  max-w-[40ch] mb-8 `}
           >
             {t("p")}
           </p>
@@ -43,7 +43,7 @@ const ConnectToday = () => {
             <span>info@repowerlab.com</span>
           </div>
           <div className="mt-10 hidden md:flex gap-3 items-center">
-            <Link className="fill-primary" href="">
+            <Link className="fill-primary" href="https://www.linkedin.com/company/repowerlab-llc/">
               <LinkedInIcon width={22} height={22} />
             </Link>
             <Link className="fill-primary" href="">
