@@ -28,7 +28,6 @@ const RelatedPosts = ({ categoria }: { categoria: string | null }) => {
     };
     getBlogs();
   }, []);
-  console.log(blogs?.data);
 
   return (
     <div className="mb-3">

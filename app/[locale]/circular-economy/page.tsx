@@ -77,7 +77,7 @@ const CircularEconomy = () => {
                 </p>
               </div>
             </div>
-            <div className="flex relative justify-center md:justify-start mt-6 md:mt-4 md:mt-0 -left-3">
+            <div className="flex relative justify-center md:justify-start mt-4 md:mt-0 -left-3">
               <Link
                 href="/about/contact-us"
                 className={`scroll-smooth ${button({
