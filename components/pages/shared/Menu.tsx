@@ -31,7 +31,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
             <div className="text-accent">
               <RepowerIcon />
             </div>
-            <p className="text-[18px] font-light w-[300px] pt-4  text-primary">
+            <p className="text-[17px] font-regular w-[300px] pt-4  text-primary">
               RepowerLab is a pioneering company transforming the wind energy sector by providing innovative solutions for end-of-life.
             </p>
           </div>
@@ -55,7 +55,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                           className="p-0"
                           key={`first-item-${index}`}
                           itemClasses={{
-                            base:"pt-2",
+                            base:"pt-2 pb-2",
                             title: "cursor-pointer  select-none text-primary py-0 xl:text-[36px] text-[28px]",
                             trigger: "cursor-pointer  select-none text-primary pt-2 py-0 xl:text-[36px] text-[28px]",
                             indicator: "data-[open=true]:rotate-180"
@@ -101,7 +101,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                           </AccordionItem>
                         </Accordion>
                       ) : (
-                        <Link key={`link-${index}`} className='block leading-[1.2] pt-2 cursor-pointer inline-block select-none text-primary xl:text-[36px] text-[28px]' href={`/${item.url}`}>
+                        <Link key={`link-${index}`} className='block leading-[1.2] pt-3 pb-3 cursor-pointer inline-block select-none text-primary xl:text-[36px] text-[28px]' href={`/${item.url}`}>
                           {(item.title)}
                         </Link>
                       )}
