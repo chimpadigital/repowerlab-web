@@ -176,7 +176,9 @@ const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
           </motion.p>
         </div>
       </div>
-      <img className={`absolute bottom-2 right-2 transition-all duration-[600] ${open ? 'rotate-180' : ''}`} src="images/home/arrow.png" alt="" />
+      <svg className={`absolute bottom-2 right-2 transition-all duration-[600] ${open ? 'rotate-180' : ''}`} width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.06077 0.939331L16.5001 14.3787V4.99999H19.5001V19.5H5.00011V16.5H14.3788L0.939453 3.06065L3.06077 0.939331Z" fill="white" />
+      </svg>
 
 
     </motion.article>
