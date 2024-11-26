@@ -56,8 +56,7 @@ export default function RepowerlabImpact() {
               <div className="max-w-[400px] text-white">
                 <h3 className={`${title({ color: "white", size: "md" })}`}>{t("howWork.title1")} <span className='text-secondary'>{t("howWork.title2")}</span></h3>
                 <div className="md:hidden pt-6">
-                  <Paragraph textAccent="text-secondary" className="text-[18px]" text="We manage wind turbines from start to finish. Buying or selling? We make it easy. __Contact us for 
-a free consultation.__"></Paragraph>
+                  <Paragraph textAccent="text-secondary" className="text-[18px]" text={t("howWork.pm1")}></Paragraph>
                 </div>
                 <div className="hidden md:block">
 

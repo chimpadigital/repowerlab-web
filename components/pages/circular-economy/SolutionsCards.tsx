@@ -31,7 +31,7 @@ const SolutionsCards = () => {
           <div className="w-[62px] h-fit aspect-square rounded-full bg-white grid place-items-center">
             <Image alt="icon light" src={iconoLight} height={35} width={32} />
           </div>
-          <h5 className="max-w-[10ch] inline-block text-lg md:text-2xl md:mt-7">
+          <h5 className="max-w-[12ch] inline-block text-lg md:text-2xl md:mt-7">
             {t("link1")}
           </h5>
         </Link>
@@ -65,7 +65,7 @@ const SolutionsCards = () => {
               width={42}
             />
           </div>
-          <h5 className="max-w-[10ch] inline-block text-lg md:text-2xl md:mt-7">
+          <h5 className="max-w-[12ch] inline-block text-lg md:text-2xl md:mt-7">
             {t("link3")}
           </h5>
         </Link>
@@ -83,7 +83,7 @@ const SolutionsCards = () => {
               quality={100}
             />
           </div>
-          <h5 className="max-w-[10ch] inline-block text-lg md:text-2xl md:mt-7">
+          <h5 className="max-w-[12ch] inline-block text-lg md:text-2xl md:mt-7">
             {t("link4")}
           </h5>
         </Link>

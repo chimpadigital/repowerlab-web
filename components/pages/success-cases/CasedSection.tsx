@@ -4,30 +4,35 @@ import {
   IsotipoRepowerlab,
   TurbinaeolicaIcono,
 } from "@/components/icons";
+import { useTranslations } from "next-intl";
 import React from "react";
 
-const text = [
-  {
-    icon: <CheckIcon />,
-    text: "Explore RepowerLab’s success stories, where our expertise in circular economy solutions for wind energy has transformed projects worldwide. ",
-    textMobile:
-      "Explore RepowerLab’s success stories, where our expertise in circular economy solutions for wind energy has transformed projects worldwide. ",
-  },
-  {
-    icon: <TurbinaeolicaIcono />,
-    text: "From decommissioning and dismantling wind farms to advising on the best second-hand turbines and equipment, and repowering existing farms to extend their lifespan, we deliver innovative, sustainable outcomes.",
-    textMobile:
-      "We dismantle wind farms, advise on second-hand turbines, and repower existing farms—delivering innovative and sustainable solutions.",
-  },
-  {
-    icon: <GlobeIcon />,
-    text: "Discover how we’ve maximized value, enhanced efficiency, and promoted sustainability for our clients across the globe.",
-    textMobile:
-      "Discover how we’ve maximized value, enhanced efficiency, and promoted sustainability for our clients across the globe.",
-  },
-];
 
 const CasedSection = () => {
+  
+  const t = useTranslations("SuccessCases")
+
+  const text = [
+    {
+      icon: <CheckIcon />,
+      text: t("card1"),
+      textMobile:
+      t("card1m")
+    },
+    {
+      icon: <TurbinaeolicaIcono />,
+      text: t("card2"),
+      textMobile:
+      t("card2m")
+    },
+    {
+      icon: <GlobeIcon />,
+      text: t("card3"),
+      textMobile:
+      t("card3m")
+    },
+  ];
+
   return (
     <div className="px-4 md:px-14 flex gap-6 flex-wrap justify-center text-primary">
       {text.map((item, index) => {
