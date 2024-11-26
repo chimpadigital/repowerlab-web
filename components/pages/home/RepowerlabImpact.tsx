@@ -22,7 +22,7 @@ export default function RepowerlabImpact() {
       <div className="rounded-[10px] bg-primary pt-9 md:py-[100px] flex justify-center">
         <div className="container px-6">
           <div className="flex flex-col lg:flex-row justify-between gap-4 md:gap-[40px] lg:gap-[100px]">
-            <h5 className={`text-secondary md:text-white text-[28px] max-w-[300px]`}>{t("title")}</h5>
+            <h5 className={`text-secondary md:text-white font-medium text-[28px] max-w-[300px]`}>{t("title")}</h5>
             <p className="md:hidden text-white text-[18px]">{t("subtitle")}</p>
             <div className="max-w-[1000px] hidden md:block text-grey-100 text-[30px]" >
               <WordAnimated accentColor='text-secondary' text={t.raw("animatedWord")} />
@@ -40,7 +40,7 @@ export default function RepowerlabImpact() {
                 descriptionMobile={t.raw("cards.card2.descriptionMob")}
                 description={t.raw("cards.card2.description")} />
               <Card
-                percent='25-30%'
+                percent='25-35%'
                 title={t.raw("cards.card3.title")}
                 descriptionMobile={t.raw("cards.card3.descriptionMob")}
                 description={t.raw("cards.card3.description")} />
@@ -52,7 +52,7 @@ export default function RepowerlabImpact() {
             </div>
           </div>
           <div className='grid pb-2 lg:grid-cols-2 grid-cols-1 gap-6 relative'>
-            <div className="col-span-1 relative z-10">
+            <div className="col-span-1 relative z-10 pb-8 md:pb-0">
               <div className="max-w-[400px] text-white">
                 <h3 className={`${title({ color: "white", size: "md" })}`}>{t("howWork.title1")} <span className='text-secondary'>{t("howWork.title2")}</span></h3>
                 <div className="md:hidden pt-6">
@@ -147,12 +147,11 @@ const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
       onClick={() => {
         setOpen(!open);
       }}
-      // style={{ height: open ? "315px" : "150px" }}
       className={`border overflow-hidden cursor-pointer transition-all ${open ? 'md:height-[315px] h-auto' : 'h-[150px]'} duration-600 relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6`}
     >
       <div className=" relative z-10">
-        <h5 className="font-light uppercase text-[20px] w-[200px]">{title}</h5>
-        <h5 className="text-bold text-[32px]">{percent}</h5>
+        <h5 className="uppercase text-[20px] w-[200px]">{title}</h5>
+        <h5 className="font-medium text-[32px]">{percent}</h5>
         <div className="relative h-full">
           <p className="w-[250px]" style={{ opacity: 0, color: "transparent" }}>
             {description}

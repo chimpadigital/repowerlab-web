@@ -26,7 +26,7 @@ const ConnectToday = () => {
             {t("p")}
           </p>
           <p
-            className={`text-[#444444] md:hidden block max-w-[25ch] mb-8 font-light`}
+            className={`text-[#444444] md:hidden text-lg block max-w-[25ch] mb-8 font-light`}
           >
             {t("pM")}
           </p>
