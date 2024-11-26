@@ -8,7 +8,6 @@ import {
   RasaleParts,
   RecicladoCuchillasIcono,
   RecicladoIcono,
-  SearchIcon,
   Transporte,
   TurbinaeolicaIcono,
 } from "./icons";
@@ -33,7 +32,7 @@ const container = {
 };
 
 const ServicesList = () => {
-  const t = useTranslations("Services.cards")
+  const t = useTranslations("Services.cards");
   return (
     <>
       <motion.div
@@ -65,7 +64,7 @@ const ServicesList = () => {
           titulo={t.raw("card3.title")}
         />
         <ServicesCard
-          link="/#blade-recycling"
+          link="#blade-recycling"
           svgIcono={<RecicladoCuchillasIcono />}
           texto={t.raw("card4.d")}
           textoMobile={t.raw("card4.dM")}
@@ -147,8 +146,8 @@ const ServicesList = () => {
               link="/#blade-recycling"
               svgIcono={<RecicladoCuchillasIcono />}
               texto={t.raw("card4.d")}
-          textoMobile={t.raw("card4.dM")}
-          titulo={t.raw("card4.title")}
+              textoMobile={t.raw("card4.dM")}
+              titulo={t.raw("card4.title")}
             />
           </SwiperSlide>
 

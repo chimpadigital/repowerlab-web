@@ -207,7 +207,7 @@
         "Scroll": {
             "decomissioning": {
                 "l1": {
-                    "title": "Safe Dismantling",
+                    "title": "Safe dismantling",
                     "description": "Repowerlab specializes in the safe and efficient dismantling, relocation, and reassembly of onshore and offshore wind turbines. The company ensures strict adherence to environmental protection, safety standards, and local guidelines, with turbines being reinstalled, used for spare parts, or recycled.",
                     "descriptionMobile": "Safe dismantling and reassembling of turbines, ensuring environmental standards are met."
                 },
@@ -879,7 +879,7 @@
         "card2": "From decommissioning and dismantling wind farms to advising on the best second-hand turbines and equipment, and repowering existing farms to extend their lifespan, we deliver innovative, sustainable outcomes.",
         "card2m": "We dismantle wind farms, advise on second-hand turbines, and repower existing farms-delivering innovative and sustainable solutions.",
         "card3": "Discover how we’ve maximized value, enhanced efficiency, and promoted sustainability for our clients across the globe.",
-        "card3m": "",
+        "card3m": "Discover how we’ve maximized value, enhanced efficiency, and promoted sustainability for our clients across the globe.",
         "p": "We’ve dismantled, refurbished, and resold over 200 wind turbines through our marketplace. By 2025, we will have over 4,000 wind turbines ready for installation, __showcasing our commitment to sustainable energy and circular economy solutions__",
         "pM": "We’ve dismantled, refurbished, and resold over 200 turbines. By 2025, over 4,000 turbines will be ready for installation, __highlighting our dedication to sustainable energy and the circular economy.__"
     },
@@ -956,21 +956,25 @@
             "repoweringSolutions": {
                 "a1": {
                     "title": "Repowering Solutions",
+                    "titleMobile": "Repowering Solutions",
                     "description": "Repowering involves upgrading existing wind farms with new, higher-capacity turbines. This not only increases energy production but also enhances the efficiency and reliability of wind farms. RepowerLab provides expert consulting and technical analysis to assess the potential of your wind farms for repowering.",
                     "descriptionMobile": "We upgrade existing wind farms with new turbines to boost energy production, efficiency, and reliability. Our experts assess your wind farm’s repowering potential."
                 },
                 "a2": {
                     "title": "Assessment and Planning",
+                    "titleMobile": "Assessment and Planning",
                     "description": "We evaluate your wind farm’s location, existing infrastructure, and energy production capabilities to determine the best repowering strategy.",
-                    "descriptionMobile": "We evaluate your wind farm’s location, existing infrastructure, and energy production capabilities to determine the best repowering strategy."
+                    "descriptionMobile": "We evaluate your wind farm to determine the best repowering strategy."
                 },
                 "a3": {
                     "title": "Implementation",
+                    "titleMobile": "Implementation",
                     "description": "Our team manages the entire repowering process, from dismantling old turbines to installing new, more efficient models.",
-                    "descriptionMobile": "Our team manages the entire repowering process, from dismantling old turbines to installing new, more efficient models."
+                    "descriptionMobile": "We manage the repowering process from dismantling old turbines to installing efficient new models."
                 },
                 "a4": {
                     "title": "Value Recovery",
+                    "titleMobile": "Value Recovery",
                     "description": "We help you recover value from decommissioned turbines through resale or recycling.",
                     "descriptionMobile": "We help you recover value from decommissioned turbines through resale or recycling."
                 }
@@ -978,26 +982,31 @@
             "circularEconomySolutions": {
                 "a1": {
                     "title": "Circular Economy Solutions",
+                    "titleMobile": "Circular Economy Solutions",
                     "description": "Our circular economy solutions aim to minimize waste and maximize resource utilization throughout the wind turbine lifecycle.",
-                    "descriptionMobile": "Our circular economy solutions aim to minimize waste and maximize resource utilization throughout the wind turbine lifecycle."
+                    "descriptionMobile": "Our solutions minimize waste and maximize resource use throughout the turbine lifecycle."
                 },
                 "a2": {
                     "title": "Design for Circularity",
+                    "titleMobile": "Design for Circularity",
                     "description": "Developing wind turbines with materials and components that can be easily recycled or repurposed at the end of their life.",
-                    "descriptionMobile": "Developing wind turbines with materials and components that can be easily recycled or repurposed at the end of their life."
+                    "descriptionMobile": "Turbines are built with easily recyclable materials."
                 },
                 "a3": {
                     "title": "Maintenance and Repair",
+                    "titleMobile": "Maintenance and Repair",
                     "description": "Implementing advanced diagnostic and inspection techniques to certify older turbines for extended operation.",
-                    "descriptionMobile": "Implementing advanced diagnostic and inspection techniques to certify older turbines for extended operation."
+                    "descriptionMobile": "Advanced diagnostics extend turbine life."
                 },
                 "a4": {
                     "title": "Reuse and Repurpose",
+                    "titleMobile": "Reuse and Repurpose",
                     "description": "Repurposing decommissioned turbine components for new applications, reducing the need for new materials.",
-                    "descriptionMobile": "Repurposing decommissioned turbine components for new applications, reducing the need for new materials."
+                    "descriptionMobile": "Refurbished turbines are overhauled to improve performance."
                 },
                 "a5": {
                     "title": "Lifetime Extension",
+                    "titleMobile": "Lifetime Extension",
                     "description": "Implementing advanced diagnostic and inspection techniques to certify older turbines for extended operation.",
                     "descriptionMobile": "Implementing advanced diagnostic and inspection techniques to certify older turbines for extended operation."
                 }
@@ -1005,43 +1014,51 @@
             "refurbishmentSolutions": {
                 "a1": {
                     "title": "Refurbishment Solutions",
+                    "titleMobile": "Refurbishment Solutions",
                     "description": "Refurbishing wind turbines involves overhauling and upgrading components to restore them to optimal condition. This extends the lifespan of turbines and improves their performance.",
-                    "descriptionMobile": "Refurbishing wind turbines involves overhauling and upgrading components to restore them to optimal condition. This extends the lifespan of turbines and improves their performance."
+                    "descriptionMobile": "Refurbishing turbines involves upgrading parts to optimal condition, extending their lifespan and improving performance."
                 },
                 "a2": {
                     "title": "Component Overhaul",
+                    "titleMobile": "Design for Circularity",
                     "description": "Detailed inspection and refurbishment of critical components such as gearboxes, generators, and blades.",
-                    "descriptionMobile": "Detailed inspection and refurbishment of critical components such as gearboxes, generators, and blades."
+                    "descriptionMobile": "Using materials that can be easily recycled or repurposed."
                 },
                 "a3": {
                     "title": "Performance Upgrades",
+                    "titleMobile": "Maintenance and Repair",
                     "description": "Implementing the latest technologies to enhance turbine efficiency and reliability.",
-                    "descriptionMobile": "Implementing the latest technologies to enhance turbine efficiency and reliability."
+                    "descriptionMobile": "Extending turbine life through regular maintenance and advanced repairs."
                 },
                 "a4": {
                     "title": "Quality Assurance",
+                    "titleMobile": "Reuse and Repurpose",
                     "description": "Ensuring that refurbished turbines meet or exceed original manufacturer specifications.",
-                    "descriptionMobile": "Ensuring that refurbished turbines meet or exceed original manufacturer specifications."
+                    "descriptionMobile": "Repurposing old turbine parts for new uses, reducing the need for new materials."
                 }
             },
             "recyclingSolutions": {
                 "a1": {
                     "title": "Recycling Solutions",
+                    "titleMobile": "Recycling Solutions",
                     "description": "Recycling is a crucial aspect of our circular economy approach. At RepowerLab, we employ advanced recycling techniques to recover valuable materials from decommissioned wind turbines.",
                     "descriptionMobile": "Recycling is a crucial aspect of our circular economy approach. At RepowerLab, we employ advanced recycling techniques to recover valuable materials from decommissioned wind turbines."
                 },
                 "a2": {
                     "title": "Material Recovery",
+                    "titleMobile": "Material Recovery",
                     "description": "Using mechanical and chemical processes to extract materials such as fiberglass and metals from turbine components.",
                     "descriptionMobile": "Using mechanical and chemical processes to extract materials such as fiberglass and metals from turbine components."
                 },
                 "a3": {
                     "title": "Repurposing Blades",
+                    "titleMobile": "Repurposing Blades",
                     "description": "Transforming decommissioned blades into new products, such as street furniture and construction materials.",
                     "descriptionMobile": "Transforming decommissioned blades into new products, such as street furniture and construction materials."
                 },
                 "a4": {
                     "title": "Environmental Compliance",
+                    "titleMobile": "Environmental Compliance",
                     "description": "Ensuring all recycling activities meet stringent environmental regulations and contribute to a sustainable future.",
                     "descriptionMobile": "Ensuring all recycling activities meet stringent environmental regulations and contribute to a sustainable future."
                 }

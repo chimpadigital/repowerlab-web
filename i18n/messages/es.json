@@ -954,21 +954,25 @@
       "repoweringSolutions": {
         "a1": {
           "title": "Soluciones de repotenciación",
+          "titleMobile": "Soluciones de repotenciación",
           "description": "La repotenciación implica la mejora de los parques eólicos existentes con turbinas nuevas de mayor capacidad. Esto no solo aumenta la producción de energía, sino que también mejora la eficiencia y la fiabilidad de los parques eólicos. RepowerLab ofrece asesoramiento experto y análisis técnico para evaluar el potencial de sus parques eólicos para la repotenciación.",
           "descriptionMobile": "Actualizamos los parques eólicos existentes con nuevas turbinas para aumentar la producción de energía, la eficiencia y la fiabilidad. Nuestros expertos evalúan el potencial de repotenciación de su parque eólico."
         },
         "a2": {
           "title": "Evaluación y planeación",
+          "titleMobile": "Evaluación y planeación",
           "description": "Evaluamos la ubicación de tu parque eólico, la infraestructura existente y las capacidades de producción de energía para determinar la mejor estrategia de repotenciamiento.",
           "descriptionMobile": "Evaluamos su parque eólico para determinar la mejor estrategia de repotenciación."
         },
         "a3": {
           "title": "Implementación",
+          "titleMobile": "Implementación",
           "description": "Nuestro equipo gestiona todo el proceso de repotenciamiento, desde el desmantelamiento de las turbinas antiguas hasta la instalación de nuevos modelos más eficientes.",
           "descriptionMobile": "Gestionamos el proceso de repotenciación, desde el desmantelamiento de turbinas antiguas hasta la instalación de nuevos modelos eficientes."
         },
         "a4": {
           "title": "Recuperación de valor",
+          "titleMobile": "Recuperación de valor",
           "description": "Te ayudamos a recuperar valor de las turbinas desmanteladas a través de su reventa o reciclaje.",
           "descriptionMobile": "Ayudamos a recuperar el valor de las turbinas fuera de servicio a través de la reventa o el reciclaje."
         }
@@ -976,26 +980,31 @@
       "circularEconomySolutions": {
         "a1": {
           "title": "Soluciones de economía circular",
+          "titleMobile": "Soluciones de economía circular",
           "description": "Nuestras soluciones de economía circular tienen como objetivo minimizar los residuos y maximizar la utilización de los recursos durante todo el ciclo de vida de las turbinas eólicas.",
           "descriptionMobile": "Nuestras soluciones minimizan el desperdicio y maximizan el uso de recursos durante todo el ciclo de vida de la turbina."
         },
         "a2": {
           "title": "Diseño para la circularidad",
+          "titleMobile": "Diseño para la circularidad",
           "description": "Desarrollo de turbinas eólicas con materiales y componentes que puedan reciclarse o reutilizarse fácilmente al final de su vida útil.",
           "descriptionMobile": "Las turbinas están construidas con materias primas fácilmente reciclables."
         },
         "a3": {
           "title": "Mantenimiento y reparación",
+          "titleMobile": "Mantenimiento y reparación",
           "description": "Implementamos técnicas avanzadas de diagnóstico e inspección para certificar las turbinas antiguas para una operación prolongada.",
           "descriptionMobile": "Los diagnósticos avanzados prolongan la vida útil de la turbina."
         },
         "a4": {
           "title": "Reutilización y cambio de uso",
+          "titleMobile": "Reutilización y cambio de uso",
           "description": "Reutilización de componentes de turbinas fuera de servicio para nuevas aplicaciones, reduciendo la necesidad de nuevos materiales.",
           "descriptionMobile": "Las turbinas reacondicionadas se revisan para mejorar el rendimiento."
         },
         "a5": {
           "title": "Extensión de vida útil",
+          "titleMobile": "Extensión de vida útil",
           "description": "Implementamos técnicas avanzadas de diagnóstico e inspección para certificar las turbinas antiguas y prolongar su vida útil.",
           "descriptionMobile": "Implementación de técnicas avanzadas de diagnóstico e inspección para certificar turbinas antiguas para un funcionamiento prolongado."
         }
@@ -1003,43 +1012,51 @@
       "refurbishmentSolutions": {
         "a1": {
           "title": "Soluciones de Modernización",
+          "titleMobile": "Soluciones de Modernización",
           "description": "El reacondicionamiento de turbinas eólicas implica la revisión y actualización de componentes para restaurarlos a condiciones óptimas. Esto prolonga la vida útil de las turbinas y mejora su rendimiento.",
           "descriptionMobile": "El reacondicionamiento de turbinas implica actualizar los repuestos para que estén en óptimas condiciones, prolongar su vida útil y mejorar el rendimiento."
         },
         "a2": {
           "title": "Revisión de componentes",
+          "titleMobile": "Diseño para la circularidad",
           "description": "Inspección detallada y reacondicionamiento de componentes críticos como cajas de engranajes, generadores y palas.",
-          "descriptionMobile": "Inspección detallada y reacondicionamiento de componentes críticos como cajas de engranajes, generadores y palas."
+          "descriptionMobile": "Las turbinas están construidas con materias primas fácilmente reciclables."
         },
         "a3": {
           "title": "Mejoras de rendimiento",
+          "titleMobile": "Mantenimiento y Reparación",
           "description": "Implementación de las últimas tecnologías para mejorar la eficiencia y la fiabilidad de las turbinas.",
-          "descriptionMobile": "Prolongar la vida útil de la turbina mediante mantenimiento regular y reparaciones avanzadas."
+          "descriptionMobile": "Los diagnósticos avanzados prolongan la vida útil de la turbina."
         },
         "a4": {
           "title": "Aseguramiento de la calidad",
+          "titleMobile": "Reutilización y cambio de uso",
           "description": "Garantizar que las turbinas reacondicionadas cumplan o superen las especificaciones originales del fabricante.",
-          "descriptionMobile": "Garantizar que las turbinas reacondicionadas cumplan o superen las especificaciones originales del fabricante."
+          "descriptionMobile": "Reutilización de repuestos viejas de turbinas para nuevos usos, reduciendo la necesidad de nuevas materias primas."
         }
       },
       "recyclingSolutions": {
         "a1": {
           "title": "Soluciones de reciclaje",
+          "titleMobile": "Soluciones de reciclaje",
           "description": "El reciclaje es un aspecto crucial de nuestro enfoque de economía circular. En RepowerLab, empleamos técnicas avanzadas de reciclaje para recuperar materiales valiosos de turbinas eólicas fuera de servicio.",
           "descriptionMobile": "El reciclaje es un aspecto crucial de nuestro enfoque de economía circular. En RepowerLab, empleamos técnicas avanzadas de reciclaje para recuperar materiales valiosos de turbinas eólicas fuera de servicio."
         },
         "a2": {
           "title": "Recuperación de materiales",
+          "titleMobile": "Recuperación de materiales",
           "description": "Uso de procesos mecánicos y químicos para extraer materiales como fibra de vidrio y metales de los componentes de las turbinas.",
           "descriptionMobile": "Uso de procesos mecánicos y químicos para extraer materiales como fibra de vidrio y metales de los componentes de las turbinas."
         },
         "a3": {
           "title": "Usos innovadores de palas",
+          "titleMobile": "Usos innovadores de palas",
           "description": "Transformación de palas fuera de servicio en nuevos productos, como mobiliario urbano y materiales de construcción.",
           "descriptionMobile": "Transformación de palas fuera de servicio en nuevos productos, como mobiliario urbano y materiales de construcción."
         },
         "a4": {
           "title": "Cumplimiento ambiental",
+          "titleMobile": "Cumplimiento ambiental",
           "description": "Garantizar que todas las actividades de reciclaje cumplan con las estrictas regulaciones ambientales y contribuyan a un futuro sostenible..",
           "descriptionMobile": "Garantizar que todas las actividades de reciclaje cumplan con las estrictas regulaciones ambientales y contribuyan a un futuro sostenible.."
         }

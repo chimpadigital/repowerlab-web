@@ -61,7 +61,7 @@ export default function SuccesCases() {
           <p className="max-w-[680px] pt-6 text-grey-parrafo w-full text-center hidden md:block">
             {t("sub")}
           </p>
-          <p className="md:hidden pt-6 w-[90%] leading-7 text-grey-parrafo text-[18px] px-4">
+          <p className="md:hidden pt-6 w-[90%] leading-7 text-grey-parrafo text-[18px] px-4 pb-8">
             {t("subM")}
           </p>
 

@@ -12,6 +12,7 @@ export interface ScrollAcordionI {
   imgPosition?: "right" | "left";
   items: {
     title: string;
+    titleMobile: string;
     description: string | string[];
     img: string;
     descriptionMobile: string | { title: string; description: string }[];

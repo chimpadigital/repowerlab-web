@@ -83,8 +83,8 @@ function CardMobile({
             >
 
                 <article className="absolute w-full bottom-0 pt-10 pb-6 px-6 min-h-[156px] text-white backdrop-blur-lg bg-[#4B4A4A7A]">
-                    <div className="flex justify-between">
-                        <Title className="text-lg mb-3" title={title} />
+                    <div className="flex justify-between items-center mb-3">
+                        <Title className="text-lg md:mb-3" title={title} />
                         <div className="w-12 h-12 bg-[#C5C5C526] right-0 relative z-10 text-white rounded-full border-white border cursor-pointer" >
                             <div className="flex h-full w-full justify-center items-center">
                                 <div className="h-3 fill-white left-px relative">
