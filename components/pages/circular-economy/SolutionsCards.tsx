@@ -11,7 +11,7 @@ import { useTranslations } from "next-intl";
 const SolutionsCards = () => {
   const t = useTranslations("CircularEconomy.SolutionsCards")
   return (
-    <section className=" px-6 md:px-8 mx-4 md:mx-6 bg-primary bg-[url(/images/circular-economy/bg-solutions-cards.webp)] bg-fixed bg-no-repeat bg-cover rounded-[20px] pt-16 md:pt-32 pb-32 md:text-center">
+    <section className=" px-6 md:px-8 mx-4 md:mx-6 bg-primary bg-[url(/images/circular-economy/bg-solutions-cards.webp)] bg-fixed bg-no-repeat bg-cover rounded-[20px] py-16 md:pt-32 md:pb-32 md:text-center">
       <h4 className={`${title({ size: "md" })} text-white hidden md:block`}>
         {t("title")}
       </h4>

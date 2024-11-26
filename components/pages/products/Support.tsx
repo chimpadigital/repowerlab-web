@@ -46,17 +46,17 @@ export default function Support() {
       </div>
       <div className="px-4 w-full md:hidden">
         <CardMobile
-          img="/images/product/expertM.png"
+          img="/images/product/expertM.webp"
           title={t.raw("cardsM.card1.title")}
           description={t.raw("cardsM.card1.description")}
         />
         <CardMobile
-          img="/images/product/logisticsM.png"
+          img="/images/product/logisticsM.webp"
           title={t.raw("cardsM.card2.title")}
           description={t.raw("cardsM.card2.description")}
         />
         <CardMobile
-          img="/images/product/supportM.png"
+          img="/images/product/supportM.webp"
           title={t.raw("cardsM.card3.title")}
           description={t.raw("cardsM.card3.description")}
         />
@@ -172,7 +172,7 @@ function CardMobile({
 }) {
   return (
     <div
-      className="rounded-[20px] relative bg-cover w-full bg-bottom h-[395px] overflow-hidden mb-4"
+      className="rounded-[20px] relative bg-cover w-full h-[395px] overflow-hidden mb-4 bg-bottom bg-no-repeat"
       style={{
         backgroundImage: `url(${img})`,
       }}
