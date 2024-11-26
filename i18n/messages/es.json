@@ -8,74 +8,74 @@
     "Home": {
         "Hero": {
             "title": "Repensando los activos energéticos: liderando la innovación en la economía circular",
-            "titleMob": "Repensando \\n los activos energéticos \\n  por un futuro Circular",
+            "titleMob": "Repensando \\n los activos energéticos \\n  para un futuro circular",
             "btn1": "Productos",
             "btn2": "Servicios",
-            "btn3": "Mercado en línea"
+            "btn3": "Tienda en línea"
         },
         "Our-Focus": {
             "title": "Nuestro Enfoque",
             "animatedWord": "--RepowerLab es una empresa pionera en la transformación del sector energético al --proporcionar -- --innovadoras --para --activos --energéticos --al --final --de --su --vida --útil, incluido el desmantelamiento, la repotenciación, la modernización, el reciclaje y la reventa de infraestructuras de energía renovable",
-            "paragraphMobile": "Liderando la innovación __para las energías renovables__ al final de su vida útil. Convertimos los parques eólicos en desuso en activos valiosos mediante el desmantelamiento, la renovación, la reventa y la reutilización de aerogeneradores.",
+            "paragraphMobile": "Innovación líder __para energías renovables al final de su vida útil.__ Convertimos los parques eólicos al final de su vida útil en activos valiosos mediante el desmantelamiento, la modernización, la reventa y el cambio de uso de las turbinas eólicas.",
             "paragraph1": "Con una fuerte presencia en Europa, Estados Unidos y América Latina, **hemos gestionado con éxito numerosos proyectos de desmantelamiento** a escala global. \n Nuestra experiencia **garantiza la máxima recuperación** de valor y una vida útil prolongada de los activos energéticos. Ofrecemos **soluciones integrales de economía circular** llave en mano que incluyen la planificación estratégica, la recuperación de activos y la reventa e instalación de equipos reacondicionados.",
             "paragraph2": "Comprometidos con la sostenibilidad, utilizamos tecnologías de reciclaje europeas avanzadas para lograr **altas tasas de recuperación de materiales.** Al mejorar el rendimiento y la eficiencia de los activos energéticos, RepowerLab promueve la gestión medioambiental, impulsando la **innovación y la sostenibilidad** en el sector de las energías renovables."
         },
         "SetApart": {
             "title": "Lo que nos destaca",
             "subtitle": "En Repowerlab, somos líderes en innovación, sostenibilidad y cumplimiento, estableciendo nuevos estándares en el sector energético.",
-            "titleMob": "Nuestra ventaja",
-            "subtitleMob": "Lideramos en innovación, sostenibilidad y establecimiento de nuevos estándares energéticos.",
+            "titleMob": "Nuestra Ventaja Competitiva",
+            "subtitleMob": "Somos líderes en innovación, sostenibilidad y en el establecimiento de nuevos estándares energéticos.",
             "cards": {
                 "card1": {
                     "title": "Evaluación de Recuperación de Valor",
                     "paragraph": "Ayudar a los vendedores a evaluar el valor de sus turbinas y piezas para maximizar los rendimientos",
-                    "paragraphMob": "Maximiza tus ganancias: déjanos evaluar el valor de tus aerogeneradores."
+                    "paragraphMob": "Maximice sus rendimientos: permítanos evaluar el valor de sus turbinas."
                 },
                 "card2": {
                     "title": "Desmantelamiento y transporte",
                     "paragraph": "Gestionar el desmantelamiento y transporte seguro y eficiente de turbinas y piezas.",
-                    "paragraphMob": "Desmantelamiento y transporte de aerogeneradores de manera segura y eficiente."
+                    "paragraphMob": "Desmantelamiento y transporte seguro y eficiente de turbinas."
                 },
                 "card3": {
                     "title": "Atención al comprador",
                     "paragraph": "Ayudar a los compradores a seleccionar las turbinas y piezas adecuadas, asegurándose de que cumplan con los requisitos de su proyecto y los estándares regulatorios",
-                    "paragraphMob": "Obtén ayuda experta para encontrar los aerogeneradores y piezas adecuadas."
+                    "paragraphMob": "Obtenga ayuda de expertos para encontrar las turbinas y los repuestos adecuadas."
                 },
                 "card4": {
                     "title": "Inspección y aseguramiento de la calidad",
                     "paragraph": "Proporcionar inspecciones exhaustivas y garantía de calidad para garantizar que todos los productos cumplan con los más altos estándares.",
-                    "paragraphMob": "Garantizando calidad y seguridad en el desmantelamiento y transporte de aerogeneradores."
+                    "paragraphMob": "Garantizar la calidad y la seguridad para el desmantelamiento y el transporte de las turbinas."
                 },
                 "card5": {
                     "title": "Gestión de Procesos de Ventas",
                     "paragraph": "Facilitando la venta desde la consulta inicial hasta la entrega final y la instalación.",
-                    "paragraphMob": "Desde la consulta hasta la instalación: nos encargamos de todo."
+                    "paragraphMob": "Desde el asesoramiento hasta la instalación, nos encargamos de todo."
                 }
             }
         },
         "Impact": {
             "title": "El impacto de RepowerLab",
-            "subtitle": "Soluciones de economía circular que reducen residuos, aumentan la eficiencia y ahorran costos.",
+            "subtitle": "Soluciones de economía circular que reducen los residuos, aumentan la eficiencia y ahorran costos.",
             "animatedWord": "Nuestro compromiso con la economía circular y las soluciones energéticas innovadoras --ofrece --resultados --medibles --en --la --reducción --de --residuos, --la --eficiencia --y --el --ahorro --de --costos.",
             "cards": {
                 "card1": {
                     "title": "Reducción de desechos",
-                    "descriptionMob": "El reciclaje avanzado y la reutilización reducen los residuos de los aerogeneradores hasta en un 90%.",
+                    "descriptionMob": "El reciclaje y el cambio de uso avanzados reducen los residuos de turbinas hasta en un 90%",
                     "description": "A través del reciclaje y la reutilización avanzados, Repowerlab reduce los residuos de las turbinas eólicas fuera de servicio hasta en un 90%, liderando la industria en prácticas sostenibles."
                 },
                 "card2": {
                     "title": "Desperdicio evitado",
-                    "descriptionMob": "Evitamos el 60% de los residuos potenciales al mantener los materiales en uso durante más tiempo.",
+                    "descriptionMob": "Evitamos el 60% de los residuos potenciales al mantener los materias primas en uso durante más tiempo",
                     "description": "Nuestras iniciativas de economía circular han desviado con éxito el 60% de los residuos potenciales de los vertederos, convirtiendo los componentes de las turbinas eólicas al final de su vida útil en recursos valiosos."
                 },
                 "card3": {
                     "title": "Aumento de la producción",
-                    "descriptionMob": "Las técnicas de repotenciación aumentan la eficiencia de los aerogeneradores entre un 25% y un 35%, maximizando la producción de energía.",
+                    "descriptionMob": "Las técnicas de repotenciación aumentan la eficiencia de la turbina en un 25-35%, maximizando la producción de energía.",
                     "description": "Las innovadoras técnicas de repotenciación de Repowerlab aumentan la eficiencia de las turbinas eólicas en un 25-35%, maximizando la producción de energía a partir de los activos existentes."
                 },
                 "card4": {
                     "title": "Reducción de costo en el desmantelamiento",
-                    "descriptionMob": "Reducción del 90% en costos al optimizar el proceso de desmantelamiento, haciendo las transiciones energéticas más asequibles.",
+                    "descriptionMob": "Reducción de costos del 90% al optimizar el proceso de desmantelamiento, haciendo que las transiciones energéticas sean asequibles.",
                     "description": "Al optimizar el proceso de desmantelamiento, reducimos los costos en un 90%, haciendo que las transiciones energéticas sostenibles sean más asequibles y accesibles."
                 }
             },
@@ -85,30 +85,32 @@
                 "p1": "En RepowerLab ofrecemos una solución integral para la gestión del ciclo de vida de los aerogeneradores.",
                 "p2": "Ya sea que venda o compre turbinas eólicas, garantizamos un proceso fluido, eficiente y transparente.",
                 "p3": "¿Busca ayuda experta? Póngase en contacto con nosotros para una presentación sin compromiso.",
+                "pm1" :"Gestionamos turbinas eólicas de principio a fin. ¿Comprar o vender? Te lo ponemos fácil. __Póngase en contacto con nosotros para una consulta gratuita.__",
+                "pm2" :"Póngase en contacto con nosotros para una consulta gratuita.",
                 "read": "Leer más"
             },
             "singles": {
                 "card1": {
                     "title": "Un único punto de contacto",
                     "d": "Proporcionamos un único punto de contacto para todos los servicios, lo que garantiza una comunicación y coordinación fluidas.",
-                    "dM": "Un solo contacto, todos los servicios: fácil y sin complicaciones."
+                    "dM": "Un contacto, todos los servicios, fluidos y sencillos."
                 },
                 "card2": {
                     "title": "Presencia global",
                     "d": "Nuestros servicios abarcan dos continentes, entregando y dando servicio a cualquier parte del mundo.",
-                    "dM": "Somos globales: atendemos tres continentes y seguimos creciendo."
+                    "dM": "Somos globales, prestamos servicios a tres continentes y seguimos creciendo."
                 },
                 "card3": {
                     "title": "Pericia",
                     "d": "Con más de 12 años de experiencia, aportamos una experiencia inigualable a cada proyecto.",
-                    "dM": "Más de 12 años de experiencia incomparable en cada proyecto."
+                    "dM": "Más de 12 años de experiencia inigualable en cada proyecto."
                 }
             }
         },
         "SuccesCases": {
             "title": "Casos de éxito",
             "sub": "Descubra el éxito de RepowerLab en el desmantelamiento, la modernización y la reventa de turbinas eólicas reacondicionadas, destacando nuestras soluciones de economía circular para el sector energético.",
-            "subM": "Descubre cómo logramos el éxito en el desmantelamiento, modernización y reventa de aerogeneradores, liderando en la economía circular."
+            "subM": "Descubra cómo logramos desmantelar, modernizar y revender turbinas, liderando la economía circular."
         },
         "Services": {
             "title": "Servicios"
@@ -157,37 +159,37 @@
             "card1": {
                 "title": "Desmantelamiento Seguro",
                 "d": "RepowerLab desmantela, reubica y vuelve a montar turbinas eólicas de forma segura, cumpliendo con las normas medioambientales y de seguridad. Las turbinas se reinstalan, se utilizan como piezas de repuesto o se reciclan.",
-                "dM": "Desmantelamiento, reubicación y reensamblaje seguros de aerogeneradores, cumpliendo con los estándares de seguridad y medioambientales en cada etapa."
+                "dM": "Desmantelamiento, reubicación y montaje seguro de turbinas eólicas, cumpliendo con los estándares de seguridad y medio ambiente en cada paso del camino."
             },
             "card2": {
                 "title": "Repotenciación de parques eólicos",
                 "d": "RepowerLab repotencia los parques eólicos mediante la modernización de las turbinas para mejorar la eficiencia, aumentar la producción de energía y reducir los costos, todo ello siguiendo prácticas sostenibles.",
-                "dM": "RepowerLab repotencia los parques eólicos modernizando los aerogeneradores para mejorar la eficiencia, aumentar la producción y reducir costos mientras se siguen prácticas sostenibles."
+                "dM": "RepowerLab repotencia los parques eólicos mediante la modernización de las turbinas para mejorar la eficiencia, aumentar la producción de energía y reducir los costos, todo ello siguiendo prácticas sostenibles."
             },
             "card3": {
                 "title": "Reacondicionamiento de turbinas eólicas",
                 "d": "RepowerLab mejora el rendimiento y extiende la vida útil de las turbinas eólicas existentes a través de servicios integrales de modernización y reacondicionamiento, lo que garantiza que las turbinas funcionen con la máxima eficiencia y durabilidad.",
-                "dM": "RepowerLab mejora el rendimiento y extiende la vida útil de los aerogeneradores existentes a través de servicios integrales de modernización."
+                "dM": "RepowerLab mejora el rendimiento y prolonga la vida útil de las turbinas eólicas existentes a través de servicios integrales de modernización y reacondicionamiento, lo que garantiza que las turbinas funcionen con la máxima eficiencia y durabilidad."
             },
             "card4": {
                 "title": "Reciclaje de palas",
                 "d": "RepowerLab lidera el reciclaje y la reutilización de palas de turbina a través de la trituración mecánica, el coprocesamiento de cemento y la creación de nuevos productos, apoyando una economía circular.",
-                "dM": "Reciclaje de las palas en nuevos productos. Liderando el camino en la economía circular."
+                "dM": "Reciclaje de palas en nuevos productos. Liderando el camino en la economía circular."
             },
             "card5": {
                 "title": "Inspección y recuperación de valor",
                 "d": "Al proporcionar inspecciones independientes y transparentes de las turbinas eólicas en varias etapas del ciclo de vida, RepowerLab ayuda a reducir los riesgos, garantizar el cumplimiento e identificar oportunidades de mantenimiento o desmantelamiento.",
-                "dM": "Proporcionando inspecciones independientes y transparentes de aerogeneradores en diversas etapas del ciclo de vida, RepowerLab ayuda a reducir riesgos, garantizar el cumplimiento y identificar oportunidades para el mantenimiento o desmantelamiento."
+                "dM": "Al proporcionar inspecciones independientes y transparentes de las turbinas eólicas en varias etapas del ciclo de vida, RepowerLab ayuda a reducir los riesgos, garantizar el cumplimiento e identificar oportunidades de mantenimiento o desmantelamiento."
             },
             "card6": {
-                "title": "Reventa de turbinas eólicas y piezas de repuesto",
+                "title": "Reventa de turbinas eólicas y repuesto",
                 "d": "RepowerLab se especializa en el comercio global de turbinas eólicas y piezas, conectando la oferta con la demanda para maximizar el valor.",
-                "dM": "RepowerLab se especializa en el comercio global de turbinas eólicas y piezas, conectando la oferta con la demanda para maximizar el valor."
+                "dM": "RepowerLab se especializa en el comercio global de turbinas eólicas y repuestos, conectando la oferta con la demanda para maximizar el valor."
             },
             "card7": {
-                "title": "Reventa de materiales",
+                "title": "Venta de materias primas",
                 "d": "Las operaciones de reciclaje de RepowerLab abordan las necesidades de eliminación de las palas de las turbinas eólicas, especialmente en los EE. UU. La compañía reutiliza estos materiales en nuevos productos como el mobiliario urbano, contribuyendo a la economía circular.",
-                "dM": "Las operaciones de reciclaje de RepowerLab abordan las necesidades de eliminación de las palas de las turbinas eólicas, especialmente en los EE. UU. La compañía reutiliza estos materiales en nuevos productos como el mobiliario urbano, contribuyendo a la economía circular."
+                "dM": "Las operaciones de reciclaje de RepowerLab abordan las necesidades de eliminación de las palas de las turbinas eólicas, particularmente en los EE. UU. La compañía cambia el uso de estos materias primas en nuevos productos como el mobiliario urbano, contribuyendo a la economía circular."
             },
             "card8": {
                 "title": "Almacenamiento y transporte",
@@ -196,82 +198,82 @@
             }
         },
         "Hero": {
-            "title": "Services",
-            "b1": "Home",
-            "b2": "Services",
+            "title": "Servicios",
+            "b1": "Inicio",
+            "b2": "Servicios",
             "text": "RepowerLab ofrece una gama completa de servicios para maximizar el valor de sus activos energéticos. Desde el desmantelamiento de parques eólicos y el reacondicionamiento de turbinas hasta la reventa, el reciclaje de palas y el soporte experto en instalación, garantizamos precisión, sostenibilidad y rendimiento optimizado en cada etapa.",
-            "textM": "RepowerLab ofrece servicios completos para maximizar los activos energéticos, incluyendo desmantelamiento, modernización, reventa, reciclaje y soporte en instalación."
+            "textM": "RepowerLab ofrece servicios completos para maximizar los activos energéticos, incluido el desmantelamiento, la modernización, la reventa, el reciclaje y el soporte de instalación."
         },
         "Scroll": {
             "decomissioning": {
                 "l1": {
                     "title": "Desmantelamiento Seguro",
                     "description": "RepowerLab se especializa en el desmantelamiento, reubicación y reensamblaje seguro y eficiente de aerogeneradores terrestres y marinos. La empresa asegura el estricto cumplimiento de las normas de protección ambiental, seguridad y directrices locales, con los aerogeneradores siendo reinstalados, utilizados para repuestos o reciclados.",
-                    "descriptionMobile": "Desmantelamiento y reensamblaje seguro de aerogeneradores, asegurando el cumplimiento de los estándares ambientales."
+                    "descriptionMobile": "Desmantelamiento, reubicación y montaje seguro de turbinas eólicas, cumpliendo con los estándares de seguridad y medio ambiente en cada paso del camino."
                 },
                 "l2": {
                     "title": "Desmontaje de turbinas eólicas",
                     "description": "RepowerLab ofrece servicios innovadores de desmantelamiento, reubicación industrial y reensamblaje, asegurando un desmantelamiento seguro y eficiente. Nuestro equipo experimentado se encarga de todos los aspectos del proceso, desde la evaluación inicial hasta la retirada cuidadosa de los componentes de los aerogeneradores. Utilizando equipos de última generación y cumpliendo con estrictos estándares de seguridad, minimizamos el impacto ambiental y preparamos los aerogeneradores para su reutilización o reciclaje.",
-                    "descriptionMobile": "Ofrecemos servicios innovadores de desmantelamiento, reubicación y reensamblaje, asegurando procesos seguros y eficientes mientras minimizamos el impacto ambiental para su reutilización o reciclaje."
+                    "descriptionMobile": "Proporcionamos desmantelamiento, reubicación y reensamblaje innovadores, garantizando procesos seguros y eficientes al tiempo que minimizamos el impacto ambiental para la reutilización o el reciclaje."
                 },
                 "l3": {
                     "title": "Desmontaje terrestre y marítimo",
                     "description": "RepowerLab apoya a los propietarios de parques eólicos para abordar los desafíos del desmantelamiento, garantizar la protección del medio ambiente, el cumplimiento de la eliminación de residuos y maximizar la rentabilidad a través de técnicas de deconstrucción especializadas",
-                    "descriptionMobile": "Apoyamos el desmantelamiento con protección ambiental, cumplimiento de residuos y técnicas especializadas para la rentabilidad."
+                    "descriptionMobile": "Apoyamos el desmantelamiento con protección del medio ambiente, cumplimiento de residuos y técnicas especializadas para la rentabilidad."
                 },
                 "l4": {
                     "title": "Planificación y Estudios Técnicos",
                     "description": "Los expertos de RepowerLab desarrollan planes de desmantelamiento y realizan estudios técnicos para garantizar el cumplimiento normativo. Facilitan las discusiones con los reguladores, gestionan contratistas especializados y optimizan la gestión de residuos y la reutilización de componentes.",
-                    "descriptionMobile": "Nuestros expertos desarrollan planes, realizan estudios y gestionan contratistas para el desmantelamiento, asegurando el cumplimiento normativo y la optimización de residuos."
+                    "descriptionMobile": "Nuestros expertos desarrollan planes, realizan estudios y gestionan contratistas para el desmantelamiento, lo que garantiza el cumplimiento normativo y la optimización de residuos"
                 }
             },
             "repowering": {
                 "l1": {
                     "title": "Repotenciación de parques eólicos",
                     "description": "Aumenta la vida útil y el rendimiento de tu parque eólico con una repotenciación avanzada. Maximizamos la eficiencia y el valor mientras reducimos costos.",
-                    "descriptionMobile": "Maximiza la eficiencia y el valor con una repotenciación avanzada, extendiendo la vida útil del parque eólico mientras reduces costos."
+                    "descriptionMobile": "Maximice la eficiencia y el valor con la repotenciación avanzada, lo que prolonga la vida útil de los parques eólicos y reduce los costos."
                 },
                 "l2": {
                     "title": "Evaluación de sitio y planeación",
                     "description": "Llevamos a cabo evaluaciones exhaustivas del estado actual de su parque eólico, incluido el análisis de recursos eólicos, estudios de integración de la red y planificación logística, para garantizar que se apliquen las soluciones de reacondicionamiento más efectivas.",
-                    "descriptionMobile": "Evaluamos tu parque eólico, analizamos los recursos y planificamos la logística para garantizar soluciones de modernización efectivas."
+                    "descriptionMobile": "Evaluamos su parque eólico, analizamos los recursos y planificamos la logística para garantizar soluciones de modernización efectivas."
                 },
                 "l3": {
                     "title": "Reacondicionamiento avanzado de turbinas eólicas",
                     "description": "Modernizamos los componentes críticos de las turbinas, incluidos los convertidores de potencia y los sistemas de control, para impulsar la producción de energía y prolongar la vida útil, centrándonos en las turbinas más antiguas que aún tienen un potencial significativo.",
-                    "descriptionMobile": "Actualiza componentes de los aerogeneradores, como convertidores y sistemas de control, para aumentar la energía y extender la vida útil, especialmente en modelos más antiguos."
+                    "descriptionMobile": "Actualice los componentes de la turbina, como los convertidores y los sistemas de control, para aumentar la energía y prolongar la vida útil, especialmente en el caso de los modelos más antiguos."
                 },
                 "l4": {
                     "title": "Remanufactura de palas y componentes",
                     "description": "Mejoramos las palas de las turbinas existentes y los componentes clave para garantizar la durabilidad y el rendimiento óptimo, evitando la necesidad de reemplazos completos.",
-                    "descriptionMobile": "Mejora las palas de los aerogeneradores para mayor durabilidad y rendimiento óptimo, evitando reemplazos completos."
+                    "descriptionMobile": "Mejore los álabes de la turbina para una durabilidad y un rendimiento óptimo, evitando reemplazos completos."
                 },
                 "l5": {
                     "title": "Integración a la Red y cumplimiento de normatividad",
                     "description": "Nos aseguramos de que las turbinas reacondicionadas cumplan con todos los requisitos de la red, incluido el control de energía y el cumplimiento de los códigos de red modernos, para integrarse sin problemas con la infraestructura existente.",
-                    "descriptionMobile": "Asegura que los aerogeneradores modernizados cumplan con los requisitos de la red para una integración sin problemas con los sistemas existentes."
+                    "descriptionMobile": "Asegúrese de que las turbinas modernizadas cumplan con los requisitos de la red para una integración perfecta con los sistemas existentes"
                 },
                 "l6": {
                     "title": "Recuperación del valor económico",
                     "description": "Nuestro enfoque se centra en recuperar el valor económico de sus activos, asegurando que su inversión siga generando rendimientos en los años venideros",
-                    "descriptionMobile": "Recupera el valor del activo para garantizar retornos de inversión a largo plazo."
+                    "descriptionMobile": "Recupere el valor de los activos para garantizar el rendimiento de la inversión a largo plazo"
                 }
             },
             "retrofitting": {
                 "l1": {
                     "title": "Reacondicionamiento y remanufactura de turbinas eólicas",
                     "description": "RepowerLab mejora el rendimiento y extiende la vida útil de las turbinas eólicas existentes a través de servicios integrales de modernización y reacondicionamiento, lo que garantiza que las turbinas funcionen con la máxima eficiencia y durabilidad.",
-                    "descriptionMobile": "Nos especializamos en extender la vida útil de los aerogeneradores y mejorar su rendimiento a través de la modernización, maximizando la eficiencia, la producción y el valor."
+                    "descriptionMobile": "Nos especializamos en extender la vida útil de la turbina y aumentar el rendimiento a través de la modernización, maximizando la eficiencia, la producción y el valor"
                 },
                 "l2": {
                     "title": "Reacondicionamiento",
                     "description": "Mejora del rendimiento de las turbinas eólicas: Nuestros servicios de reacondicionamiento se centran en la mejora de los sistemas de convertidores de potencia, la instalación de sistemas de control avanzados y el reacondicionamiento de las palas. Estas mejoras aumentan el rendimiento de las turbinas, prolongan la vida útil y reducen la necesidad de nuevas materias primas mediante la revisión de componentes críticos como cajas multiplicadoras y generadores.",
-                    "descriptionMobile": "Actualiza los sistemas de energía y moderniza las palas para aumentar la eficiencia, extender la vida útil y reducir la necesidad de nuevos materiales."
+                    "descriptionMobile": "Actualice los sistemas de alimentación y modernice las palas para aumentar la eficiencia, prolongar la vida útil y reducir las nuevas necesidades de material."
                 },
                 "l3": {
-                    "title": "Remanufactura",
+                    "title": "Reacondicionamiento",
                     "description": "Restauración de turbinas eólicas a condiciones óptimas: Llevamos a cabo inspecciones exhaustivas y comprobaciones estructurales, incluidas revisiones de componentes, para restaurar las turbinas a su condición óptima, asegurándonos de que cumplan con las especificaciones de los fabricantes de equipos originales. Nuestro proceso de remanufactura también incluye la limpieza, reparación y actualización de los sistemas eléctricos para mantener la máxima eficiencia operativa.",
-                    "descriptionMobile": "Restaura los aerogeneradores mediante inspecciones y revisiones, cumpliendo con las especificaciones del fabricante. También limpiamos, reparamos y actualizamos los sistemas para mejorar la eficiencia."
+                    "descriptionMobile": "Restaure las turbinas a través de inspecciones y revisiones, cumpliendo con las especificaciones de los fabricantes de equipos originales. También limpiamos, reparamos y actualizamos los sistemas para mejorar la eficiencia"
                 },
                 "l4": {
                     "title": "Revisiones y actualizaciones integrales",
@@ -280,16 +282,16 @@
                     "d3": "Actualizaciones eléctricas: Nuestros servicios incluyen limpieza, inspección y actualización de sistemas eléctricos para optimizar el funcionamiento de la turbina y garantizar la confiabilidad a largo plazo",
                     "dM": {
                         "d1": {
-                            "title": "Caja de Cambios y Generador",
-                            "description": "Revisamos las cajas de cambios y generadores para que coincidan con el rendimiento de los nuevos aerogeneradores."
+                            "title": "Caja multiplicadora y generador",
+                            "description": "Modernización de cajas de engranajes y generadores para que coincidan con el rendimiento de la nueva turbina."
                         },
                         "d2": {
                             "title": "Revisión Estructural",
-                            "description": "Asegura un rendimiento robusto mediante inspecciones, reparaciones y reacondicionamiento."
+                            "description": "Garantice un rendimiento sólido a través de inspecciones, reparaciones y nuevos acabados."
                         },
                         "d3": {
-                            "title": "Mejoras Eléctricas",
-                            "description": "Limpia y mejora los sistemas para un funcionamiento confiable."
+                            "title": "Actualizaciones eléctricas",
+                            "description": "Limpie y actualice los sistemas para un funcionamiento confiable."
                         }
                     }
                 }
@@ -298,51 +300,51 @@
                 "l1": {
                     "title": "Reciclaje de palas",
                     "description": "RepowerLab lidera el reciclaje y la reutilización de palas de turbina a través de la trituración mecánica, el coprocesamiento de cemento y la creación de nuevos productos, apoyando una economía circular.",
-                    "descriptionMobile": "Recicla las palas en nuevos productos, promoviendo la economía circular."
+                    "descriptionMobile": "Reciclar las palas en nuevos productos, promoviendo la economía circular."
                 },
                 "l2": {
                     "title": "Trituración mecánica",
                     "description": "Descomposición de las palas de las turbinas en componentes más pequeños para su reutilización, apoyando la economía circular mediante la reintroducción de materiales en la cadena de suministro",
-                    "descriptionMobile": "Descomposición de las palas para reutilizar, reintroducción de materiales en la cadena de suministro"
+                    "descriptionMobile": "Descomponer las palas para su reutilización, reintroduciendo materias primas en la cadena de suministro."
                 },
                 "l3": {
                     "title": "Coprocesamiento de cemento",
                     "description": "Integración de materiales de palas en la producción de cemento, reduciendo la necesidad de materiales vírgenes.",
-                    "descriptionMobile": "Utiliza materiales de las palas en la producción de cemento, reduciendo la necesidad de nuevos recursos."
+                    "descriptionMobile": "Utilice materias primas de palas en la producción de cemento, lo que reduce la necesidad de nuevos recursos."
                 },
                 "l4": {
                     "title": "Usos innovadores de palas",
                     "description": "Transformación de palas fuera de servicio en nuevos productos, como muebles de oficina y estructuras urbanas.",
-                    "descriptionMobile": "Transforma las palas desmanteladas en nuevos productos como muebles y estructuras."
+                    "descriptionMobile": "Transforme las palas fuera de servicio en nuevos productos, como muebles y estructuras."
                 }
             },
             "inspection": {
                 "l1": {
                     "title": "Inspección y recuperación de valor",
                     "description": "Al proporcionar inspecciones independientes y transparentes de las turbinas eólicas en varias etapas del ciclo de vida, RepowerLab ayuda a reducir los riesgos, garantizar el cumplimiento e identificar oportunidades de mantenimiento o desmantelamiento.",
-                    "descriptionMobile": "RepowerLab ofrece inspecciones independientes para reducir riesgos, garantizar el cumplimiento y identificar oportunidades para el mantenimiento o desmantelamiento."
+                    "descriptionMobile": "RepowerLab proporciona inspecciones independientes para reducir riesgos, garantizar el cumplimiento e identificar oportunidades de mantenimiento o desmantelamiento."
                 },
                 "l2": {
                     "title": "Inspecciones exhaustivas",
                     "description": "Ofrece inspecciones independientes de turbinas eólicas, evaluando componentes como la caja multiplicadora, el generador y las palas.",
-                    "descriptionMobile": "Ofrece inspecciones independientes de turbinas eólicas, evaluando componentes como la caja multiplicadora, el generador y las palas."
+                    "descriptionMobile": "Ofreciendo inspecciones independientes de turbinas eólicas, evaluando componentes como la caja de cambios, el generador y las palas."
                 },
                 "l3": {
                     "title": "Informes de inspección",
                     "description": "Proporcionar informes detallados sobre las condiciones de las turbinas, lo que ayuda a los clientes a reducir los riesgos, tranquilizar a las partes interesadas y cumplir con las regulaciones.",
-                    "descriptionMobile": "Proporcionando informes detallados sobre las condiciones de los aerogeneradores, ayudando a los clientes a reducir riesgos, tranquilizar a las partes interesadas y cumplir con las regulaciones."
+                    "descriptionMobile": "Proporcionar informes detallados sobre las condiciones de las turbinas, ayudando a los clientes a reducir riesgos, tranquilizar a las partes interesadas y cumplir con las regulaciones."
                 },
                 "l4": {
                     "title": "Asesoría en la compra",
                     "description": "Garantizar que los compradores tomen decisiones informadas a través de informes de inspección detallados que verifiquen la calidad del equipo y evalúen el valor de la turbina.",
-                    "descriptionMobile": "Ayuda a los compradores a tomar decisiones informadas verificando la calidad del equipo y el valor de los aerogeneradores."
+                    "descriptionMobile": "Ayude a los compradores a tomar decisiones informadas verificando la calidad del equipo y el valor de la turbina."
                 }
             },
             "resaleParts": {
                 "l1": {
-                    "title": "Reventa de turbinas eólicas y piezas de repuesto",
+                    "title": "Reventa de turbinas eólicas y repuestos",
                     "description": "RepowerLab se especializa en el comercio global de turbinas eólicas y piezas, conectando la oferta con la demanda para maximizar el valor.",
-                    "descriptionMobile": "RepowerLab se especializa en el comercio global de turbinas eólicas y piezas, conectando la oferta con la demanda para maximizar el valor."
+                    "descriptionMobile": "RepowerLab se especializa en el comercio global de turbinas eólicas y repuestos, conectando la oferta con la demanda para maximizar el valor."
                 },
                 "l2": {
                     "title": "Turbinas eólicas sin usar",
@@ -350,28 +352,28 @@
                     "descriptionMobile": "Procedentes de proyectos cancelados o reducidos, estas turbinas son esencialmente nuevas, pero se venden como de segunda mano, ofreciendo un excelente valor."
                 },
                 "l3": {
-                    "title": "Turbinas eólicas remanufacturadas",
+                    "title": "Turbinas eólicas reacondicionadas",
                     "description": "RepowerLab gestiona el comercio global y la reventa de turbinas reacondicionadas, asegurándose de que cumplan con las especificaciones de los fabricantes de equipos originales. Estas turbinas proporcionan una solución rentable para prolongar la vida útil de los parques eólicos.",
-                    "descriptionMobile": "RepowerLab gestiona la reventa global de aerogeneradores reacondicionados, cumpliendo con los estándares del fabricante. Esto extiende la vida útil de los parques eólicos en mercados como Centroamérica y Corea del Sur."
+                    "descriptionMobile": "RepowerLab se encarga de la reventa global de turbinas reacondicionadas, que cumplen con los estándares de los fabricantes de equipos originales. Esto prolonga la vida útil del parque eólico."
                 },
                 "l4": {
                     "title": "Turbinas eólicas usadas y repuestos",
                     "description": "Comercialización de turbinas eólicas sin reacondicionar y piezas de repuesto para su reutilización, atendiendo la creciente demanda en el mercado de mantenimiento de energía eólica.",
-                    "descriptionMobile": "Provenientes de proyectos cancelados o reducidos, estos aerogeneradores son esencialmente nuevos, pero se venden como de segunda mano, ofreciendo un excelente valor."
+                    "descriptionMobile": "Turbinas eólicas económicas 'tal cual' para proyectos de instalación directa o reacondicionamiento y repuestos usadas o reacondicionadas para prolongar la vida útil de las turbinas."
                 }
             },
             "resaleMaterials": {
                 "l1": {
                     "title": "Reventa de materiales",
                     "description": "Las operaciones de reciclaje de RepowerLab abordan las necesidades de eliminación de las palas de las turbinas eólicas, especialmente en los EE. UU. La compañía reutiliza estos materiales en nuevos productos como el mobiliario urbano, contribuyendo a la economía circular.",
-                    "descriptionMobile": "Las operaciones de reciclaje de RepowerLab abordan las necesidades de eliminación de las palas de las turbinas eólicas, especialmente en los EE. UU. La compañía reutiliza estos materiales en nuevos productos como el mobiliario urbano, contribuyendo a la economía circular."
+                    "descriptionMobile": "Las operaciones de reciclaje de RepowerLab abordan las necesidades de eliminación de las palas de las turbinas eólicas, particularmente en los EE. UU. La compañía cambia el uso de estos materias primas en nuevos productos como el mobiliario urbano, contribuyendo a la economía circular."
                 }
             },
             "warehousing": {
                 "l1": {
                     "title": "Almacenamiento y transporte",
                     "description": "RepowerLab ofrece soluciones de almacenamiento seguro y logística especializada para garantizar la manipulación, el almacenamiento y el transporte seguros y eficientes de los componentes de las turbinas eólicas.",
-                    "descriptionMobile": "Almacenamiento seguro y logística especializada para componentes de aerogeneradores."
+                    "descriptionMobile": "Proporcionar instalaciones de almacenamiento seguras para los componentes de las turbinas, garantizando que se almacenen en condiciones óptimas."
                 },
                 "l2": {
                     "title": "Soluciones de almacenamiento",
@@ -381,7 +383,7 @@
                 "l3": {
                     "title": "Transporte y logística",
                     "description": "Gestiona la logística del transporte de grandes piezas de turbinas por carretera, ferrocarril y mar, garantizando una entrega eficiente y segura.",
-                    "descriptionMobile": "Gestiona la logística del transporte de grandes piezas de turbinas por carretera, ferrocarril y mar, garantizando una entrega eficiente y segura."
+                    "descriptionMobile": "Gestionar la logística de transporte de grandes repuestos de turbinas por carretera, ferrocarril y mar, garantizando una entrega eficiente y segura."
                 }
             }
         }
@@ -390,17 +392,17 @@
         "title1": "Suscríbete  a",
         "title2": "nuestro boletín",
         "p": "Suscríbete a nuestra boletín informativo para conocer las últimas novedades en soluciones de economía circular para el sector energético y mantente a la vanguardia de nuestros proyectos, servicios y tendencias del sector.",
-        "pM": "Recibe lo último en soluciones de energía circular: ¡suscríbete ahora!",
+        "pM": "Obtenga lo último en soluciones de energía circular: suscríbase ahora.",
         "success": "Suscripción exitosa",
         "sending": "Enviando...",
         "subscribe": "Suscríbete",
-        "placeholder": "Tu dirección de correo aquí"
+        "placeholder": "Su dirección de correo electrónico aquí"
     },
     "Connect": {
         "title": "Contáctenos",
         "p": "Póngase en contacto con RepowerLab para explorar nuestras soluciones de economía circular y maximizar el valor de sus activos energéticos.",
-        "pM": "Explora soluciones circulares: contáctanos hoy mismo.",
-        "button": "Contáctenos",
+        "pM": "Explore soluciones circulares: póngase en contacto con nosotros hoy mismo.",
+        "button": "Conéctese ahora",
         "usa": "Estados Unido",
         "spain": "España",
         "colombia": "Colombia"
@@ -490,105 +492,105 @@
                     "subtitle": "Comience su viaje con una consulta personalizada.",
                     "sellers": "Póngase en contacto con nosotros con sus planes para vender sus turbinas eólicas. Nuestro equipo le brindará una consulta inicial para comprender sus necesidades y plazos. Comenzar temprano es clave para una transacción sin problemas",
                     "buyers": "Póngase en contacto con nosotros para analizar sus necesidades de compra de turbinas eólicas reacondicionadas. Lo guiaremos a través de los pasos iniciales y lo ayudaremos a comprender cómo podemos cumplir con sus requisitos específicos",
-                    "sellersM": "Contáctanos con tus planes para vender aerogeneradores. Ofrecemos una consulta inicial para entender tus necesidades y plazos.",
-                    "buyersM": "Contáctanos para hablar sobre la compra de aerogeneradores reacondicionados. Te guiaremos a través de los primeros pasos y adaptaremos las soluciones a tus necesidades."
+                    "sellersM": "Comunícate con tus planes para vender turbinas eólicas. Brindamos una consulta inicial para comprender sus necesidades y cronograma.",
+                    "buyersM": "Póngase en contacto con nosotros para hablar sobre la compra de turbinas reacondicionadas. Le guiaremos a través de los pasos iniciales y adaptaremos las soluciones a sus necesidades."
                 },
                 "data2": {
                     "title": " Recopilación detallada de datos",
                     "subtitle": "Reunir los detalles que importan.",
                     "sellers": "Para facilitar la venta, recopilamos información completa sobre sus turbinas eólicas. Esto incluye el tipo de turbina, la antigüedad, la altura del buje, el diámetro del rotor, los datos de producción y los registros de servicio. Estos datos son cruciales para atraer a posibles compradores.",
                     "buyers": "Proporcionamos datos detallados sobre cada turbina disponible, incluidas las especificaciones, las dimensiones, los pesos, el historial de producción y los registros de mantenimiento. Esta información le ayudará a tomar una decisión informada.",
-                    "sellersM": "Recopilamos información como el tipo de aerogenerador, su edad y los registros de servicio para atraer a compradores potenciales.",
-                    "buyersM": "Proporcionamos datos de cada aerogenerador, incluyendo especificaciones, dimensiones y registros de mantenimiento, para ayudarte a tomar decisiones informadas."
+                    "sellersM": "Recopilamos información como el tipo de turbina, la antig-edad y los registros de servicio para atraer a posibles compradores.",
+                    "buyersM": "Proporcionamos datos sobre cada turbina, incluidas las especificaciones, las dimensiones y los registros de mantenimiento, para ayudarlo a tomar decisiones informadas."
                 },
                 "data3": {
                     "title": "Introducción al mercado",
                     "subtitle": "Introducción de sus turbinas en un mercado global.",
                     "sellers": "Introducimos sus turbinas eólicas en un amplio mercado a través de nuestra extensa red. Esto incluye nuestro mercado, boletines mensuales y el contacto directo con nuestra base de clientes, lo que garantiza la máxima visibilidad de sus activos.",
                     "buyers": "Manténgase actualizado sobre las últimas turbinas disponibles suscribiéndose a nuestra lista de ventas mensuales y consultando nuestro mercado. Nuestra amplia red garantiza que tenga acceso a una amplia gama de opciones.",
-                    "sellersM": "Utilizamos nuestra red, mercado y boletines para maximizar la visibilidad de tus aerogeneradores.",
-                    "buyersM": "Suscríbete a nuestra lista de ventas mensual y consulta nuestro mercado para ver los últimos aerogeneradores disponibles."
+                    "sellersM": "Utilizamos nuestra red, tienda en línea y boletines informativos para maximizar la visibilidad de sus turbinas",
+                    "buyersM": "Suscríbase a nuestra lista de ventas mensuales y consulte nuestro mercado para obtener las últimas turbinas disponibles."
                 },
                 "data4": {
                     "title": "Inspección y Evaluación",
                     "subtitle": "Garantizar inspecciones exhaustivas para tomar decisiones informadas.",
                     "sellers": "Los compradores interesados tendrán que inspeccionar las turbinas eólicas. Organizamos y facilitamos estas inspecciones, asegurándonos de que ambas partes tengan la información y el apoyo necesarios durante todo el proceso.",
                     "buyers": "Le ayudamos a planificar y realizar inspecciones exhaustivas de las turbinas. Puede evaluar su estado y la idoneidad para sus necesidades, con el apoyo total de nuestro equipo.",
-                    "sellersM": "Organizamos inspecciones para los compradores potenciales y brindamos soporte durante todo el proceso.",
-                    "buyersM": "Ayudamos a planificar y realizar inspecciones para evaluar el estado de los aerogeneradores, con el apoyo completo de nuestro equipo."
+                    "sellersM": "Organizamos inspecciones para posibles compradores y brindamos apoyo durante todo el proceso.",
+                    "buyersM": "Ayudamos a planificar y realizar inspecciones para evaluar el estado de la turbina, con el apoyo total de nuestro equipo."
                 },
                 "data5": {
                     "title": "Negociación y redacción de contratos",
                     "subtitle": "Asegurar acuerdos justos y transparentes.",
                     "sellers": "Ayudamos en la negociación de los términos de la venta y en la redacción del contrato de venta. Esto garantiza que todos los aspectos legales y financieros estén claros y acordados por ambas partes.",
                     "buyers": "Ayudamos a negociar un acuerdo de compra justo, asegurando que todos los términos y condiciones sean transparentes y mutuamente beneficiosos. Nuestro equipo redacta el contrato para asegurar su inversión.",
-                    "sellersM": "Ayudamos a negociar los términos y redactar los contratos de venta para asegurar claridad.",
-                    "buyersM": "Negociamos acuerdos justos y redactamos contratos para proteger tu inversión."
+                    "sellersM": "Ayudamos en la negociación de los términos y la redacción de contratos de venta para garantizar la claridad.",
+                    "buyersM": "Negociamos acuerdos justos y redactamos contratos para proteger su inversión."
                 },
                 "data6": {
-                    "title": "Dismantling and Transportation Arrangements",
-                    "subtitle": "Managing safe and efficient dismantling and transport.",
+                    "title": "Desmantelamiento y transporte",
+                    "subtitle": "Gestionar el desmantelamiento y el transporte seguros y eficientes.",
                     "sellers": "RepowerLab helps you obtain offers from specialized dismantling companies. We also assist with permits, site access, and other logistical considerations to ensure a safe and efficient dismantling process.",
                     "buyers": "We coordinate with reliable transportation companies to move the dismantled turbines from the seller's site to yours. Our logistics expertise ensures that the components are transported safely and efficiently.",
-                    "sellersM": "We help get offers from dismantling companies and handle permits and logistics.",
-                    "buyersM": "We coordinate with transportation companies to move turbines safely and efficiently."
+                    "sellersM": "Ayudamos a obtener ofertas de las empresas de desmantelamiento y nos encargamos de los permisos y la logística.",
+                    "buyersM": "Nos coordinamos con las empresas de transporte para mover las turbinas de manera segura y eficiente."
                 },
                 "data7": {
-                    "title": "Refurbishment and Repair",
-                    "subtitle": "Extending the life of wind turbines through refurbishment",
+                    "title": "Modernización y reparación",
+                    "subtitle": "Prolongar la vida útil de los turbinas eólicas mediante su reacondicionamiento.",
                     "sellers": "At our facilities, we refurbish and repair turbine components, extending their lifecycle and enhancing their performance. Each part is meticulously inspected and restored to optimal condition.",
                     "buyers": "Our refurbishment process ensures that turbine components are restored to high standards. This extends their useful life and offers a cost-effective solution for your wind energy needs.",
-                    "sellersM": "We refurbish turbine components, enhancing performance and extending their lifecycle.",
-                    "buyersM": "Our refurbishment process restores components to high standards, extending their life and providing cost-effective energy solutions."
+                    "sellersM": "Reacondicionamos los componentes de las turbinas, mejorando el rendimiento y alargando su ciclo de vida.",
+                    "buyersM": "Nuestro proceso de reacondicionamiento restaura los componentes a altos estándares, prolongando su vida útil y proporcionando soluciones energéticas rentables."
                 },
                 "data8": {
-                    "title": "Recycling and Repurposing",
-                    "subtitle": "Minimizing waste through innovative recycling.",
+                    "title": "Reciclaje y reutilización",
+                    "subtitle": "Minimizar los residuos a través de un reciclaje innovador.",
                     "sellers": "Materials that cannot be refurbished are recycled and repurposed into new products, such as street furniture and other equipment. This minimizes waste and maximizes resource utilization.",
                     "buyers": "Using recycled materials contributes to sustainability and offers innovative solutions for various applications. Our recycling technologies ensure minimal waste and environmental impact.",
-                    "sellersM": "Non-refurbishable materials are recycled into new products, reducing waste.",
-                    "buyersM": "Recycled materials contribute to sustainability and minimize environmental impact."
+                    "sellersM": "Los materias primas no renovables se reciclan en nuevos productos, lo que reduce los residuos.",
+                    "buyersM": "Los materias primas reciclados contribuyen a la sostenibilidad y minimizan el impacto ambiental."
                 },
                 "data9": {
-                    "title": "Market Resale and Repowering Projects",
-                    "subtitle": "Giving turbines a second life in the market.",
+                    "title": "Proyectos de reventa y repotenciación en el mercado",
+                    "subtitle": "Dando una segunda vida a las turbinas en el mercado.",
                     "sellers": "Refurbished turbines are sold in the second-hand market, providing you with financial returns. We ensure you receive payment in full before issuing our invoice, providing financial security.",
                     "buyers": "We help you finalize the purchase and prepare for installation. Our repowering projects use refurbished components to enhance efficiency and power output of existing wind farms.",
-                    "sellersM": "Refurbished turbines are sold in the second-hand market, providing financial returns.",
-                    "buyersM": "We assist with purchase finalization and use refurbished components for enhanced efficiency."
+                    "sellersM": "Las turbinas reacondicionadas se venden en el mercado de segunda mano, lo que proporciona rendimientos financieros.",
+                    "buyersM": "Ayudamos con la finalización de la compra y utilizamos componentes reacondicionados para mejorar la eficiencia."
                 },
                 "data10": {
-                    "title": "Installation and Commissioning",
-                    "subtitle": "Ensuring your turbines are ready to generate power.",
+                    "title": "Instalación y puesta en marcha",
+                    "subtitle": "Asegurarse de que sus turbinas estén listas para generar energía.",
                     "sellers": "We provide continued support and services even after the sale is complete, ensuring a seamless transition and satisfaction.",
                     "buyers": "We assist with the installation and commissioning of your turbines, ensuring they are operational and efficient. Our ongoing maintenance support ensures long-term performance.",
-                    "sellersM": "We provide post-sale support to ensure a smooth transition.",
-                    "buyersM": "We assist with installation and commissioning, offering ongoing maintenance for long-term performance."
+                    "sellersM": "Brindamos soporte postventa para garantizar una transición sin problemas.",
+                    "buyersM": "Ayudamos con la instalación y la puesta en marcha, ofreciendo un mantenimiento continuo para un rendimiento a largo plazo."
                 }
             }
         },
         "JoinMission": {
             "title": "Únete a nuestra misión",
             "p": "En RepowerLab, nos dedicamos a **avanzar en la economía circular en el sector de la energía eólica.** Al trabajar junto con socios, clientes y personas talentosas, podemos lograr un futuro más sostenible y eficiente. **Únase a nosotros en nuestra misión de innovar, transformar y liderar el camino en soluciones de energía renovable.**",
-            "pM": "**En RepowerLab, promovemos la economía circular en la energía eólica.** Al colaborar con socios, clientes e individuos apasionados, buscamos un futuro sostenible. **Únete a nosotros para liderar en soluciones de energía renovable.**",
+            "pM": "**En RepowerLab avanzamos en la economía circular en la energía eólica.** Al colaborar con socios, clientes e individuos apasionados, buscamos un futuro sostenible. **Únete a nosotros para liderar en soluciones de energía renovable.**",
             "accordion": {
                 "ac1": {
                     "title": "¿Es usted una empresa que busca colaborar en soluciones de energía sostenible?",
-                    "titleM": "¿Buscas colaborar en energía sostenible?",
+                    "titleM": "¿Quieres colaborar en el ámbito de la energía sostenible?",
                     "p": "Únase a nosotros en la creación de una economía circular para la energía eólica. Juntos, podemos innovar y transformar la industria.",
                     "pM": "Únete a nosotros para crear una economía circular de energía eólica."
                 },
                 "ac2": {
                     "title": "¿Necesita ayuda experta con proyectos de turbinas eólicas?",
-                    "titleM": "¿Necesita ayuda experta con proyectos de turbinas eólicas?",
+                    "titleM": "¿Necesita ayuda experta para proyectos de turbinas?",
                     "p": "Desde el desmontaje y el almacenamiento hasta el reacondicionamiento y la venta, RepowerLab está aquí para proporcionar un apoyo integral durante todo el ciclo de vida de sus activos de energía eólica.",
-                    "pM": "Ofrecemos soporte completo, desde el desmantelamiento hasta el reacondicionamiento."
+                    "pM": "Ofrecemos soporte completo, desde el desmontaje hasta la modernización."
                 },
                 "ac3": {
                     "title": "Talento apasionado por las energías renovables y la sostenibilidad?",
-                    "titleM": "Apasionado por las energías renovables y la sostenibilidad?",
+                    "titleM": "¿Te apasionan las energías renovables?",
                     "p": "Siempre estamos buscando personas talentosas para unirse a nuestro equipo. Si está motivado para marcar la diferencia y ansioso por contribuir a nuestra misión, queremos saber de usted.",
-                    "pM": "Buscamos individuos talentosos y con ganas de hacer la diferencia."
+                    "pM": "Queremos personas talentosas con ganas de marcar la diferencia."
                 }
             },
             "cards": {
@@ -626,7 +628,7 @@
             "b2": "Productos",
             "b3": "Turbinas eólicas",
             "p": "RepowerLab proporciona turbinas eólicas, tanto **sin uso como reacondicionadas,** junto con **materiales reciclados** de granjas desmanteladas para apoyar una economía circular. Nuestro **soporte de compras** ofrece asesoramiento experto y asistencia regulatoria, mientras que el **soporte de instalación** garantiza una configuración sin problemas con gestión de proyectos y asistencia técnica. Además, ofrecemos servicios de **almacenamiento y logística** para un manejo eficiente de los componentes.",
-            "pM": "RepowerLab ofrece aerogeneradores nuevos y reacondicionados, además de repuestos y materiales reciclados de parques eólicos desmantelados para una economía circular. Brindamos soporte en compras e instalación, además de almacenamiento y logística para un manejo eficiente.",
+            "pM": "RepowerLab ofrece turbinas sin uso y reacondicionadas, además de repuestos y materias primas reciclados de granjas fuera de servicio para una economía circular. Brindamos soporte de compra e instalación, además de almacenamiento y logística para un manejo eficiente.",
             "download": "Descargar folleto"
         },
         "OurOffer": {
@@ -639,22 +641,22 @@
                             "title": "Turbinas eólicas sin uso:",
                             "titleM": "turbinas sin uso:",
                             "text": "Procedentes de proyectos cancelados o reducidos, estas turbinas son esencialmente nuevas, pero se venden como de segunda mano, ofreciendo un excelente valor. Cada turbina se somete a rigurosas inspecciones y pruebas para garantizar que conserva los más altos estándares de rendimiento y confiabilidad.",
-                            "textM": "**turbinas sin uso:** turbinas como nuevas, provenientes de proyectos cancelados, vendidos de segunda mano a un excelente valor. Inspeccionados y probados para un rendimiento óptimo."
+                            "textM": "**turbinas sin uso:** Turbinas como nuevas de proyectos cancelados, vendidas de segunda mano por un gran valor, inspeccionadas y probadas para obtener el máximo rendimiento."
                         },
                         "l2": {
-                            "title": "Turbinas eólicas remanufacturadas:",
+                            "title": "Turbinas eólicas reacondicionadas:",
                             "text": "RepowerLab gestiona el comercio global y la reventa de turbinas reacondicionadas, asegurándose de que cumplan con las especificaciones de los fabricantes de equipos originales. Estas turbinas proporcionan una solución rentable para prolongar la vida útil de los parques eólicos.",
-                            "textM": "**Turbinas remanufacturadas:** Aerogeneradores reacondicionados de calidad, comercializados a nivel global, extendiendo la vida útil de los parques eólicos de manera eficiente en mercados como Centroamérica y Corea del Sur. Aerogeneradores Usados: Aerogeneradores económicos vendidos tal como están, ideales para nuevos proyectos o reacondicionamiento."
+                            "textM": "**Turbinas reacondicionadas:** Turbinas reacondicionadas de calidad comercializadas a nivel mundial, lo que prolonga la vida útil de la granja de manera eficiente."
                         },
                         "l3": {
                             "title": "Turbinas eólicas usadas:",
                             "text": "Estas turbinas se venden en condiciones tal cual, lo que brinda una opción económica para los compradores que planean instalarlas en nuevos proyectos o renovarlas según sea necesario.",
-                            "textM": ""
+                            "textM": "Turbinas económicas que se venden tal cual, ideales para proyectos nuevos o reacondicionamientos."
                         },
                         "l4": {
                             "title": "Repuestos para turbinas eólicas:",
                             "text": "RepowerLab supplies a wide range of turbine parts to support maintenance and repair operations. Our inventory includes both new and refurbished components, ensuring that clients have access to the parts they need to keep their turbines running efficiently.",
-                            "textM": "**Piezas de repuesto:** Una amplia gama de piezas nuevas y reacondicionadas para mantener los aerogeneradores funcionando sin problemas. **Incluye:** Palas, cajas de cambios, generadores, sistemas de control y otros componentes clave."
+                            "textM": "**Repuesto:** Una amplia gama de repuestos nuevas y reacondicionadas para mantener las turbinas funcionando sin problemas. Incluye: palas, cajas de engranajes, generadores, sistemas de control y otros componentes clave"
                         }
                     },
                     "title2": " Nuestras piezas para turbinas eólicas incluyen:",
@@ -686,11 +688,11 @@
                 "ac2": {
                     "title": "Materiales",
                     "text": "En RepowerLab, nos enfocamos en recuperar materiales valiosos del desmantelamiento de parques eólicos, incluidos acero, cobre, fibra de vidrio, electrónica, concreto y aceites industriales. Estos materiales se procesan meticulosamente y se reutilizan para una segunda vida en diversas industrias, apoyando una economía circular y reduciendo el impacto ambiental.",
-                    "textM": "Recuperamos materiales valiosos como acero, cobre y fibra de vidrio de parques eólicos desmantelados. Estos se reutilizan para apoyar la economía circular y reducir los desechos."
+                    "textM": "Recuperamos materias primas valiosos como acero, cobre y fibra de vidrio de parques eólicos desmantelados. Estos se usan para apoyar la economía circular y reducir los residuos."
                 },
                 "ac3": {
                     "title": "Soporte en la compra",
-                    "textM": "We offer full support for turbine purchasing and installation:",
+                    "textM": "Ofrecemos soporte completo para la compra e instalación de turbinas:",
                     "text": "En RepowerLab, entendemos que la compra e instalación de turbinas eólicas es una inversión importante. Es por eso por lo que brindamos un soporte integral durante todo el proceso. Nuestros servicios incluyen:",
                     "list": {
                         "l1": {
@@ -725,7 +727,7 @@
                         },
                         "l2": {
                             "title": "Evaluaciones técnicas",
-                            "text": "Evaluaciones del sitio para un rendimiento óptimo."
+                            "text": "Evaluaciones del sitio para obtener el mejor rendimiento."
                         },
                         "l3": {
                             "title": "Logística",
@@ -733,11 +735,11 @@
                         },
                         "l4": {
                             "title": "Asistencia regulatoria",
-                            "text": "Garantiza el cumplimiento de todas las normativas."
+                            "text": "Asegure el cumplimiento de todas las regulaciones."
                         },
                         "l5": {
                             "title": "Consultoría Financiera",
-                            "text": "Ayuda para asegurar financiamiento."
+                            "text": "Ayuda a conseguir financiación."
                         },
                         "l6": {
                             "title": "Soporte postventa",
@@ -766,15 +768,15 @@
                     "listM": {
                         "l1": {
                             "title": "Gestión de proyecto",
-                            "text": "Desde principio hasta el final."
+                            "text": "De principio a fin."
                         },
                         "l2": {
                             "title": "Soporte técnico",
-                            "text": "Asistencia en el sitio."
+                            "text": "Asistencia in situ."
                         },
                         "l3": {
                             "title": "Capacitación",
-                            "text": "Programas para que tu equipo opere y mantenga las turbinas."
+                            "text": "Programas para que su equipo opere y mantenga turbinas."
                         }
                     }
                 }
@@ -788,12 +790,12 @@
             "b2": "Productos",
             "b3": "Repuestos para turbinas eólicas",
             "p": "RepowerLab suministra una amplia gama de piezas de turbinas para respaldar las operaciones de mantenimiento y reparación. Nuestro inventario incluye componentes nuevos y reacondicionados, lo que garantiza que los clientes tengan acceso a las piezas que necesitan para mantener sus turbinas funcionando de manera eficiente.",
-            "pM": "RepowerLab ofrece una variedad de piezas para turbinas eólicas para mantenimiento y reparaciones. Nuestro inventario incluye tanto artículos nuevos como reacondicionados, asegurando que los clientes obtengan las piezas necesarias para mantener las turbinas en funcionamiento de manera óptima.",
+            "pM": "RepowerLab ofrece una variedad de repuestos de turbinas para mantenimiento y reparaciones. Nuestro stock incluye artículos nuevos y reacondicionados, lo que garantiza que los clientes obtengan los repuestos necesarias para que las turbinas funcionen sin problemas.",
             "download": "Descargar folleto"
         },
         "SpareParts": {
             "title": "Las piezas de repuesto para turbinas eólicas incluyen",
-            "titleM": "Las piezas de repuesto para turbinas eólicas incluyen",
+            "titleM": "Nuestros repuestos para turbinas eólicas incluyen",
             "cards": {
                 "card1": {
                     "titulo": "Palas",
@@ -871,7 +873,7 @@
         "subtitle": "Bienvenidos a los casos de éxito de RepowerLab",
         "subtitleM": "Bienvenido a los\n Casos de Éxito de RepowerLab",
         "p": "We have dismantled, refurbished, and resold over 200 wind turbines through our marketplace. By 2025, we will have over 4,000 wind turbines ready for installation, showcasing our commitment to sustainable energy and circular economy solutions.",
-        "pM": "Hemos desmantelado, reacondicionado y revendido más de 200 turbinas. Para 2025, más de 4,000 turbinas estarán listas para su instalación, lo que resalta nuestro compromiso con la energía sostenible y la economía circular."
+        "pM": "Hemos desmantelado, reacondicionado y revendido más de 200 turbinas. Para 2025, más de 4.000 turbinas estarán listas para su instalación,  __lo que pone de manifiesto nuestra dedicación a la energía sostenible y la economía circular. __"
     },
     "CircularEconomy": {
         "b1": "Inicio",
@@ -879,11 +881,11 @@
         "title": "Modelo de negocio de economía circular",
         "p": "En RepowerLab, nos dedicamos a avanzar en la economía circular en el sector de la energía eólica. Nuestras soluciones integrales abarcan todo el ciclo de vida de las turbinas eólicas, lo que garantiza que los recursos se utilicen de manera eficiente y sostenible. Explore nuestra gama de servicios diseñados para apoyar la repotenciación, el reacondicionamiento y el reciclaje de activos de energía eólica.",
         "titleM": "Economía circular",
-        "pM": "We advance the circular economy in wind energy by covering the full turbine lifecycle—repowering, refurbishing, and recycling to ensure sustainable resource use.",
+        "pM": "Avanzamos en la economía circular en la energía eólica cubriendo todo el ciclo de vida de las turbinas: repotenciación, reacondicionamiento y reciclaje para garantizar el uso sostenible de los recursos.",
         "banner": {
             "title": "Únete a nosotros para ",
             "title2": "construir un futuro sostenible.",
-            "titleM": "Únete a nosotros en este viaje ",
+            "titleM": "Únase a nosotros en este viaje ",
             "title2M": "para transformar los activos de energía eólica y crear un mundo más limpio y verde.",
             "pM": "Juntos, podemos lograr un crecimiento sostenible y dejar un impacto duradero en nuestro planeta.",
             "p": "RepowerLab está a la vanguardia de la promoción de una economía circular en el sector de la energía eólica. Al elegir nuestras soluciones, contribuyes a un futuro energético más sostenible y eficiente.",
@@ -947,56 +949,56 @@
                 "a1": {
                     "title": "Soluciones de repotenciación",
                     "description": "La repotenciación implica la mejora de los parques eólicos existentes con turbinas nuevas de mayor capacidad. Esto no solo aumenta la producción de energía, sino que también mejora la eficiencia y la fiabilidad de los parques eólicos. RepowerLab ofrece asesoramiento experto y análisis técnico para evaluar el potencial de sus parques eólicos para la repotenciación.",
-                    "descriptionMobile": "El repotenciamiento implica la actualización de parques eólicos existentes con turbinas nuevas y de mayor capacidad. Esto no solo aumenta la producción de energía, sino que también mejora la eficiencia y la fiabilidad de los parques eólicos. RepowerLab ofrece consultoría experta y análisis técnicos para evaluar el potencial de tus parques eólicos para el repotenciamiento."
+                    "descriptionMobile": "Actualizamos los parques eólicos existentes con nuevas turbinas para aumentar la producción de energía, la eficiencia y la fiabilidad. Nuestros expertos evalúan el potencial de repotenciación de su parque eólico."
                 },
                 "a2": {
                     "title": "Evaluación y planeación",
                     "description": "Evaluamos la ubicación de tu parque eólico, la infraestructura existente y las capacidades de producción de energía para determinar la mejor estrategia de repotenciamiento.",
-                    "descriptionMobile": "Evaluamos la ubicación de tu parque eólico, la infraestructura existente y las capacidades de producción de energía para determinar la mejor estrategia de repotenciamiento."
+                    "descriptionMobile": "Evaluamos su parque eólico para determinar la mejor estrategia de repotenciación."
                 },
                 "a3": {
                     "title": "Implementación",
                     "description": "Nuestro equipo gestiona todo el proceso de repotenciamiento, desde el desmantelamiento de las turbinas antiguas hasta la instalación de nuevos modelos más eficientes.",
-                    "descriptionMobile": "Our team manages the entire repowering process, from dismantling old turbines to installing new, more efficient models."
+                    "descriptionMobile": "Gestionamos el proceso de repotenciación, desde el desmantelamiento de turbinas antiguas hasta la instalación de nuevos modelos eficientes."
                 },
                 "a4": {
                     "title": "Recuperación de valor",
                     "description": "Te ayudamos a recuperar valor de las turbinas desmanteladas a través de su reventa o reciclaje.",
-                    "descriptionMobile": "Te ayudamos a recuperar valor de las turbinas desmanteladas a través de su reventa o reciclaje."
+                    "descriptionMobile": "Ayudamos a recuperar el valor de las turbinas fuera de servicio a través de la reventa o el reciclaje."
                 }
             },
             "circularEconomySolutions": {
                 "a1": {
                     "title": "Soluciones de economía circular",
                     "description": "Nuestras soluciones de economía circular tienen como objetivo minimizar los residuos y maximizar la utilización de los recursos durante todo el ciclo de vida de las turbinas eólicas.",
-                    "descriptionMobile": "Nuestras soluciones de economía circular tienen como objetivo minimizar los residuos y maximizar la utilización de los recursos durante todo el ciclo de vida de las turbinas eólicas."
+                    "descriptionMobile": "Nuestras soluciones minimizan el desperdicio y maximizan el uso de recursos durante todo el ciclo de vida de la turbina."
                 },
                 "a2": {
                     "title": "Diseño para la circularidad",
                     "description": "Desarrollo de turbinas eólicas con materiales y componentes que puedan reciclarse o reutilizarse fácilmente al final de su vida útil.",
-                    "descriptionMobile": "Desarrollo de turbinas eólicas con materiales y componentes que puedan reciclarse o reutilizarse fácilmente al final de su vida útil."
+                    "descriptionMobile": "Las turbinas están construidas con materias primas fácilmente reciclables."
                 },
                 "a3": {
                     "title": "Mantenimiento y reparación",
                     "description": "Implementamos técnicas avanzadas de diagnóstico e inspección para certificar las turbinas antiguas para una operación prolongada.",
-                    "descriptionMobile": "Implementamos técnicas avanzadas de diagnóstico e inspección para certificar las turbinas antiguas para una operación prolongada."
+                    "descriptionMobile": "Los diagnósticos avanzados prolongan la vida útil de la turbina."
                 },
                 "a4": {
                     "title": "Reutilización y cambio de uso",
                     "description": "Reutilización de componentes de turbinas fuera de servicio para nuevas aplicaciones, reduciendo la necesidad de nuevos materiales.",
-                    "descriptionMobile": "Reutilización de componentes de turbinas fuera de servicio para nuevas aplicaciones, reduciendo la necesidad de nuevos materiales."
+                    "descriptionMobile": "Las turbinas reacondicionadas se revisan para mejorar el rendimiento."
                 },
                 "a5": {
                     "title": "Extensión de vida útil",
                     "description": "Implementamos técnicas avanzadas de diagnóstico e inspección para certificar las turbinas antiguas y prolongar su vida útil.",
-                    "descriptionMobile": "Implementamos técnicas avanzadas de diagnóstico e inspección para certificar las turbinas antiguas y prolongar su vida útil."
+                    "descriptionMobile": "Implementación de técnicas avanzadas de diagnóstico e inspección para certificar turbinas antiguas para un funcionamiento prolongado."
                 }
             },
             "refurbishmentSolutions": {
                 "a1": {
-                    "title": "Refurbishment Solutions",
+                    "title": "Soluciones de Modernización",
                     "description": "El reacondicionamiento de turbinas eólicas implica la revisión y actualización de componentes para restaurarlos a condiciones óptimas. Esto prolonga la vida útil de las turbinas y mejora su rendimiento.",
-                    "descriptionMobile": "El reacondicionamiento de turbinas eólicas implica la revisión y actualización de componentes para restaurarlos a condiciones óptimas. Esto prolonga la vida útil de las turbinas y mejora su rendimiento."
+                    "descriptionMobile": "El reacondicionamiento de turbinas implica actualizar los repuestos para que estén en óptimas condiciones, prolongar su vida útil y mejorar el rendimiento."
                 },
                 "a2": {
                     "title": "Revisión de componentes",
@@ -1006,7 +1008,7 @@
                 "a3": {
                     "title": "Mejoras de rendimiento",
                     "description": "Implementación de las últimas tecnologías para mejorar la eficiencia y la fiabilidad de las turbinas.",
-                    "descriptionMobile": "Implementación de las últimas tecnologías para mejorar la eficiencia y la fiabilidad de las turbinas."
+                    "descriptionMobile": "Prolongar la vida útil de la turbina mediante mantenimiento regular y reparaciones avanzadas."
                 },
                 "a4": {
                     "title": "Aseguramiento de la calidad",
@@ -1045,7 +1047,7 @@
             "heading":"Nuestra empresa"
         },
         "animatedWord":"-*RepowerLab es una empresa pionera que está transformando el sector energético al ofrecer soluciones innovadoras para los activos energéticos al final de su vida útil, -*incluyendo -*desmantelamiento, -*repotenciamiento, -*renovación, -*reciclaje -*y -*reventa -*de -*infraestructuras -*de -*energía -*renovable.",
-        "paragraphMobile":"__Leading innovation for end-of-life renewable energy.__ We turn end-of-life wind farms into valuable assets by dismantling, refurbishing, reselling and repurposing wind turbines.",
+        "paragraphMobile":"Innovación líder para energías renovables al final de su vida útil. Convertimos los parques eólicos al final de su vida útil en activos valiosos mediante el desmantelamiento, la modernización, la reventa y el cambio de uso de turbinas eólicas.",
         "greenBanner": {
             "title": "Únete a nosotros en este viaje ",
             "highlightedTitle": "para transformar los activos de energía eólica y crear un mundo más limpio y verde.",
@@ -1056,6 +1058,7 @@
             "meet":"Conoce a nuestro equipo",
             "alfonso":{
                 "description":"Con sede en Madrid, España, Alfonso aporta más de 25 años de experiencia en logística, repotenciación de parques eólicos y desarrollo de proyectos energéticos. Sus logros notables incluyen la fundación de Repowering Solutions y la supervisión del desmantelamiento de más de 300 turbinas eólicas en Europa. Alfonso ha liderado varios proyectos de energías renovables, incluyendo parques eólicos terrestres y marinos y plantas de energía solar fotovoltaica.",
+                "descriptionM": "Con sede en Madrid, España, Alfonso aporta más de 25 años de experiencia en logística, repotenciación de parques eólicos y desarrollo de proyectos de energía renovable. Sus logros incluyen la supervisión del desmantelamiento de más de 300 turbinas eólicas en Europa. Alfonso ha liderado el desarrollo de numerosos parques eólicos renovables terrestres y marinos.",
                 "position":"Co-fundador y Director General de la oficina de Europa"
             },
             "fernando":{
@@ -1064,32 +1067,34 @@
             },
             "victoria":{
                 "description":"Con residencia en Virginia, EE. UU., Victoria tiene más de 20 años de experiencia en finanzas sostenibles. La experiencia de Victoria incluye el desarrollo de estrategias de inversión ESG, productos innovadores de financiación climática y el asesoramiento a inversores sobre proyectos de energía renovable. Ha recibido el reconocimiento como una de las 50 mejores mujeres líderes del Distrito de Columbia en Estados Unidos durante dos años consecutivos.",
+                "descriptionM" :"Con sede en Virginia, EE. UU., Victoria tiene más de 20 años de experiencia en finanzas sostenibles. Ha cofundado varias empresas de impacto y ha impulsado inversiones hacia el desarrollo de numerosos proyectos ESG. Reconocida entre las 50 mejores mujeres líderes de DC, asesora a inversores en proyectos de energía renovable.",
                 "position":"Cofundadora y Directora General de EE. UU."
             },
             "ivan":{
                 "description":"Iván es un experimentado desarrollador de negocios y de proyectos en el sector de las energías renovables, ha contribuido al desarrollo exitoso de más de 1,5 GW. Además, Iván aporta una vasta experiencia dentro de la industria de la energía eólica, desde el diseño de turbinas eólicas, estructuras de soporte y parques eólicos hasta el desarrollo de negocios y la gestión de proyectos de energía eólica a gran escala en Latinoamérica.",
+                "descriptionM": "Iván, un experimentado desarrollador de negocios y proyectos en el sector de las energías renovables, ha contribuido al desarrollo exitoso de más de 1,5 GW. Además, Iván aporta una vasta experiencia dentro de la industria de la energía eólica, desde el diseño de turbinas eólicas, estructuras de soporte y parques eólicos hasta el desarrollo de negocios y gestión de proyectos de energía eólica a gran escala en América Latina.",
                 "position":"Gerente de Desarrollo de Negocios"
             }
         },
         "whyChoose":{
             "title":"¿Por qué elegir RepowerLab?",
             "p":"En RepowerLab, creemos en el poder de las soluciones de economía circular. Nuestro enfoque integral se centra en recuperar el valor económico de los parques eólicos, gestionando cada etapa del ciclo de vida de una turbina, desde la evaluación inicial y el reacondicionamiento hasta el reciclaje y la transformación de materiales en nuevos productos.",
-            "pM":" RepowerLab believes in circular economy solutions. We manage every  stage of a turbine’s lifecycle, from assessment and refurbishment to recycling, maximizing value and transforming materials into new products."
+            "pM":" RepowerLab cree en las soluciones de economía circular. Gestionamos todas las etapas del ciclo de vida de una turbina, desde la evaluación y la modernización hasta el reciclaje, maximizando el valor y transformando las materias primas en nuevos productos."
         },
         "mission":{
             "title":"Misión",
             "p":"RepowerLab se dedica a promover el sector de la energía eólica a través de soluciones innovadoras de repotenciación, reciclaje y sostenibilidad. Nuestra misión es maximizar la vida útil y la eficiencia de las turbinas eólicas, reducir el impacto ambiental y apoyar la economía circular, asegurando un futuro sostenible y próspero para las energías renovables.",
-            "pM":"We are committed to advancing wind energy through repowering, recycling, and sustainability. Our mission is to maximize turbine lifespan, reduce environmental impact, and support the circular economy for a sustainable future."
+            "pM":"Estamos comprometidos con el avance de la energía eólica a través de la repotenciación, el reciclaje y la sostenibilidad. Nuestra misión es maximizar la vida útil de las turbinas, reducir el impacto ambiental y apoyar la economía circular para un futuro sostenible."
         },
         "vision":{
             "title":"Visión",
             "p":"Liderar la transición global hacia un futuro energético sostenible siendo el principal proveedor de soluciones de repotenciación y reciclaje para turbinas eólicas, fomentando la gestión medioambiental, la eficiencia económica y la innovación en el sector de las energías renovables.",
-            "pM":"Lead the global shift to sustainable energy by being the top provider of wind turbine repowering and recycling, promoting environmental care, economic efficiency, and renewable innovation."
+            "pM":"Liderar el cambio global hacia la energía sostenible siendo el principal proveedor de repotenciación y reciclaje de turbinas eólicas, promoviendo el cuidado del medio ambiente, la eficiencia económica y la innovación renovable."
         },
         "history":{
             "title":"Historia",
             "p":"RepowerLab nace como spin-off de Repowering Solutions, una empresa con más de 15 años de experiencia en el desmantelamiento, retrofitting, reciclaje, compra y venta de aerogeneradores en Europa. Hoy, con presencia global, ejecutamos proyectos en 20 países a través de nuestras tres oficinas internacionales.",
-            "pM":"RepowerLab started as a spin-off of Repowering Solutions, with over 15 years of experience in wind turbine dismantling and recycling. We now operate globally, executing projects in 20 countries through three international offices."
+            "pM":"RepowerLab comenzó como una spin-off de Repowering Solutions, con más de 15 años de experiencia en el desmantelamiento y reciclaje de turbinas eólicas. Ahora operamos a nivel mundial, ejecutando proyectos en 20 países a través de tres oficinas internacionales."
         }
     }
 }
