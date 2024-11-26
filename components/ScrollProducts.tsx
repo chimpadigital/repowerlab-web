@@ -57,7 +57,7 @@ export default function ScrollProducts() {
       <div
         className="relative md:h-[300vh] pb-52"
         ref={ref}
-        // style={{ height: "calc(100% + 28rem)" }}
+      // style={{ height: "calc(100% + 28rem)" }}
       >
         <div className="relative  top-0 z-0 w-full hidden md:block">
           <div className="sticky top-0  h-[100vh] z-[1]">
@@ -158,7 +158,7 @@ const Card = ({ top = 0, turbine, animation = true, y, index }: any) => {
 
         <div className="flex justify-end text-[16px] font-bold">
           <Link
-            href={"" + turbine.id}
+            href={"/marketplace"}
             className="flex gap-2 items-center cursor-pointer"
           >
             Read more
@@ -205,7 +205,7 @@ const CardMobile = ({ top = 0, turbine }: any) => {
           </span>
         </div>
         <Link
-          href={"dfdf"}
+          href={"/marketplace"}
           className="h-9 grid place-items-center aspect-square rounded-full backdrop-blur-lg bg-[#C5C5C54D] border border-white"
         >
           <div className="h-3 fill-white left-px relative">

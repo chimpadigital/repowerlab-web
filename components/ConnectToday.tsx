@@ -57,13 +57,13 @@ const ConnectToday = () => {
       </article>
       <section className="flex-[1.5]">
         <CountryContactData
-          address="2623 Fairfax Drive, Arlington, VA 22201(USA)"
+          address={`2623 Fairfax Drive, Arlington, VA 22201(${t.raw("usa")})`}
           countryName={t.raw("usa")}
           phone="(+1) 202-2715608"
         />
         <hr className="my-6 border border-b-[#BACCE6]" />
         <CountryContactData
-          address="Balcon 98, 19192 Trijueque, Guadalajara, España"
+          address={`Balcon 98, 19192 Trijueque, Guadalajara, ${t.raw("spain")}`}
           countryName={t.raw("spain")}
           phone="+34 61 8680986"
         />

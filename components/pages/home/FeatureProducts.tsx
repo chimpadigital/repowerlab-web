@@ -13,11 +13,11 @@ export default function FeatureProducts() {
 
   return (
     <div className="pb-[50px]">
-      <div className="flex justify-center items-center flex-col pt-8 px-4 pb-8 md:pb-[80px]">
+      <div className="flex justify-center items-center flex-col pt-6 px-4 pb-8 md:pb-[50px]">
         <h3 className={`${title()} text-primary mr-auto md:mr-0 mb-3 !block`}>
           {t('title')}
         </h3>
-        <p className="text-grey-parrafo max-w-[700px] text-center hidden md:block">
+        <p className="text-grey-parrafo md:pt-6 max-w-[700px] text-center hidden md:block">
           {t('p1')}
         </p>
         <p

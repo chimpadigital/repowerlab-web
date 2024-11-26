@@ -19,7 +19,7 @@ export default function Products() {
       <div className="container relative z-10 w-full px-4 md:px-8">
         <div className="w-full flex justify-center md:items-center flex-col">
           <h2 className={`${title({ color: "primary" })} md:text-center`}>{t('title')}</h2>
-          <p className="text-center max-w-[800px] pt-6 text-grey-parrafo hidden md:block">{t('paragraph')}</p>
+          <p className="text-center max-w-[800px] pt-12 text-grey-parrafo hidden md:block">{t('paragraph')}</p>
         </div>
       </div>
       {
