@@ -149,20 +149,20 @@ const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
         setOpen(!open);
       }}
       // style={{ height: open ? "315px" : "150px" }}
-      className={`border overflow-hidden cursor-pointer transition-all ${open ? 'md:height-[315px] h-auto' : 'h-[150px]'} duration-600 relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6`}
+      className={`border overflow-hidden cursor-pointer transition-all ${open ? 'h-auto' : 'h-[150px]'} duration-600 relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6`}
     >
       <div className=" relative z-10">
         <h5 className="font-light uppercase text-[20px] w-[200px]">{title}</h5>
         <h5 className="text-bold text-[32px]">{percent}</h5>
         <div className="relative h-full">
-          <p className="w-[250px]" style={{ opacity: 0, color: "transparent" }}>
+          <p className="max-w-[250px] pe-2 md:pe-4  pb-2" style={{ opacity: 0, color: "transparent" }}>
             {description}
           </p>
           <motion.p
             variants={variants}
             animate={open ? "open" : "closed"}
             transition={{ duration: 0.6 }}
-            className={` absolute top-2 max-w-[250px] pe-4  w-full hidden md:block`}
+            className={` absolute top-2 max-w-[250px] pe-2 md:pe-4  w-full hidden md:block`}
           >
             {description}
           </motion.p>
