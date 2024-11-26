@@ -34,9 +34,9 @@ export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?:
                                 className="p-0 gap-4"
                                 key={`first-item-${index}`}
                                 itemClasses={{
-                                    title: "cursor-pointer  select-none text-primary   text-[20px]",
-                                    trigger: "cursor-pointer  select-none text-primary  text-[20px]",
-                                    indicator: "data-[open=true]:rotate-180"
+                                    title: "cursor-pointer  select-none text-primary   py-0 text-[20px]",
+                                    trigger: "cursor-pointer  select-none text-primary  py-0 text-[20px]",
+                                    indicator: "data-[open=true]:rotate-180 py-0"
                                 }}
                             >
                                 <AccordionItem
@@ -60,7 +60,7 @@ export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?:
                                                         <div className="flex flex-col gap-2">
                                                             {
                                                                 item2.child.map((item3, index) => (
-                                                                    <Link key={`link-${index}`} className='block cursor-pointer  select-none text-primary text-[14px]' href={`/${item3.url}`}>
+                                                                    <Link key={`link-${index}`} className='block cursor-pointer py-1 select-none text-primary text-[14px]' href={`/${item3.url}`}>
                                                                         {(item3.title)}
                                                                     </Link>
                                                                 ))}
@@ -70,7 +70,7 @@ export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?:
 
                                             ) : (
 
-                                                <Link key={`link-${index}`} className='block cursor-pointer   select-none text-primary py-[1rem] text-[20px] ' href={`/${item2.url}`}>
+                                                <Link key={`link-${index}`} className='block cursor-pointer   select-none text-primary text-[16px] pt-1' href={`/${item2.url}`}>
                                                     {(item2.title)}
                                                 </Link>
                                             )
