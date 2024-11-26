@@ -8,7 +8,7 @@ const MisionVisionHistory = () => {
   const t = useTranslations("About")
   return (
     <div
-      className="MisionVisionHistory flex flex-wrap gap-12 md:gap-24 mx-auto justify-center mt-36 mb-20 px-6"
+      className="MisionVisionHistory flex flex-wrap gap-12 md:gap-24 mx-auto justify-center mt-16 md:mt-36 mb-20 px-6"
       style={{ width: "min(100%, 1500px)" }}
     >
       <motion.div

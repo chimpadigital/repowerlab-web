@@ -14,7 +14,6 @@ import { useTranslations } from "next-intl";
 
 export default function SolutionsCarrusel({ cards }) {
   const t = useTranslations("TurbineParts.Solutions")
-  console.log(cards);
 
   const [moveLeft, setMoveLeft] = useState();
   const [moveRight, setMoveRight] = useState();

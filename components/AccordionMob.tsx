@@ -12,6 +12,7 @@ export default function AccordionMob({
   id,
   imgText,
 }: ScrollAcordionI) {
+    
   const t = useTranslations()
   const itemClasses = {
     base: "py-0 w-full px-0 text-primary bg-transparent !shadow-none",
@@ -27,7 +28,7 @@ export default function AccordionMob({
     <div className="p-4 py-2 w-full" id={id}>
       <article className="bg-grey-100 rounded-[20px] px-4 py-8">
         <h5 className={title({ size: "sm", color: "primary" })}>
-          {t(items[0].title)}
+          {t(items[0].titleMobile)}
         </h5>
         <p className="pt-4 text-grey-parrafo">
           {t(items[0].descriptionMobile.toString())}
@@ -45,7 +46,7 @@ export default function AccordionMob({
               indicator={<Indicator />}
               key={i}
               aria-label={`Accordion ${i}`}
-              title={t.raw(el.title)}
+              title={t.raw(el.titleMobile)}
             >
               <hr className="w-full border border-primary/75" />
               <div className="pt-4">
@@ -56,7 +57,7 @@ export default function AccordionMob({
                         className="list-disc ml-4 text-grey-parrafo"
                         key={index}
                       >
-                        <span className="font-bold">{item.title}: </span>
+                        <span className="font-bold">{item.titleMobile}: </span>
                         {t(item.description)}
                       </li>
                     ))}

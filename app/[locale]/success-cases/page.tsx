@@ -40,7 +40,7 @@ const SuccessCases = () => {
           backgroundPosition: "top left, bottom right",
         }}
       >
-        <h2 className="text-primary font-bold text-[22px] mb-4 md:hidden">{t("title")}</h2>
+        <h2 className="text-primary font-bold text-[36px] mb-4 md:hidden">{t("title")}</h2>
         <Paragraph className="max-w-[73ch] text-center font-medium md:font-normal text-2xl text-primary hidden md:block" textAccent="text-accent font-medium" text={t.raw("p")}/>
         <Paragraph className="max-w-[73ch] text-center text-base text-primary px-2 md:hidden" textAccent="text-accent font-medium" text={t.raw("pM")}/>
       </article>
