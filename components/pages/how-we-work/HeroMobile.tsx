@@ -16,7 +16,7 @@ export default function HeroMobile() {
         <div className="px-4">
             <div className="h-[466px] mb-[120px] w-full bg-secondary relative rounded-[20px]">
                 <div className="pt-[110px] px-6 text-primary relative z-10">
-                    <h1 className='text-[22px] font-bold'>{t("title")}</h1>
+                    <h1 className='text-[26px] font-bold'>{t("title")}</h1>
                     <p className="pt-4 text-[18px]">{t("sub1") + " " + t("sub2")}
                     </p>
                 </div>

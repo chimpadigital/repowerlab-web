@@ -64,7 +64,7 @@ export const Navbar = () => {
                     setActive(false);
                   }} className="cursor-pointer" />
                   :
-                  <div className="py-4 px-6 rounded-full flex gap-4 relative transition-all duration-[600ms] overflow-hidden items-center" style={!isAtTop ? bgNavStyle : {}}>
+                  <div className={`py-4 ${!isAtTop && "blurRepower"} px-6 rounded-full flex gap-4 relative transition-all duration-[600ms] overflow-hidden items-center`} style={!isAtTop ? bgNavStyle : {}}>
                     <LangChange />
                     <Link href={"/about/contact-us"} className={`${button({ whiteLine: true })}`}>Connect</Link>
                     <Cart />
