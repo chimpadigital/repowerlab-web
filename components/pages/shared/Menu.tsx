@@ -21,7 +21,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
   }, [pathname]); // Se activa cuando la ruta cambia
 
   return (
-    <div className='w-full h-[calc(100dvh)] fixed lg:block hidden bg-menu bg-secondary left-0 top-0 z-40'
+    <div className='w-full h-[calc(100dvh)] fixed pointer-events lg:block hidden bg-menu bg-secondary left-0 top-0 z-40'
       style={{ transform: active ? 'translateX(0%)' : 'translateX(100%)', transition: "1500ms" }}
     >
       <Image fill quality={100} src="/images/bg-menu.webp" alt='menu' className='absolute top-0 bg-secondary translate-y-[1px] w-full z-10'></Image>
@@ -46,17 +46,18 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
             </div>
             <div className='col-span-1 flex flex-col gap-4 ps-8 relative z-40 custom-scroll'>
               <div className="overflow-auto px-6 scroll-smooth  max-h-[75vh] pb-10">
-                <div className='scroll-smooth '>
+                <div className='scroll-smooth max-h-[60vh]'>
                   {globalRoutes.map((item, index) => (
-                    <div key={`item-${index}`}> {/* Use descriptive key with 'item' */}
+                    <div key={`item-${index}`} > {/* Use descriptive key with 'item' */}
                       {item.child ? (
                         <Accordion
                           selectionMode="single"
                           className="p-0"
                           key={`first-item-${index}`}
                           itemClasses={{
-                            title: "cursor-pointer  select-none text-primary  xl:text-[36px] text-[28px]",
-                            trigger: "cursor-pointer  select-none text-primary  xl:text-[36px] text-[28px]",
+                            base:"pt-2",
+                            title: "cursor-pointer  select-none text-primary py-0 xl:text-[36px] text-[28px]",
+                            trigger: "cursor-pointer  select-none text-primary pt-2 py-0 xl:text-[36px] text-[28px]",
                             indicator: "data-[open=true]:rotate-180"
                           }}
                         >
@@ -81,7 +82,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                                       <div className="flex flex-col gap-2">
                                         {
                                           item2.child.map((item3, index) => (
-                                            <Link key={`link-${index}`} className='block cursor-pointer py-2  select-none text-primary text-[14px]' href={`/${item3.url}`}>
+                                            <Link key={`link-${index}`} className='block cursor-pointer select-none text-primary text-[14px]' href={`/${item3.url}`}>
                                               {(item3.title)}
                                             </Link>
                                           ))}
@@ -91,7 +92,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
 
                                 ) : (
 
-                                  <Link key={`link-${index}`} className='block cursor-pointer py-4  select-none text-primary text-[20px] xl:text-[22px]' href={`/${item2.url}`}>
+                                  <Link key={`link-${index}`} className='block cursor-pointer select-none text-primary text-[20px] xl:text-[22px]' href={`/${item2.url}`}>
                                     {(item2.title)}
                                   </Link>
                                 )
@@ -100,7 +101,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                           </AccordionItem>
                         </Accordion>
                       ) : (
-                        <Link key={`link-${index}`} className='block cursor-pointer inline-block	py-2 select-none text-primary xl:text-[36px] text-[28px]' href={`/${item.url}`}>
+                        <Link key={`link-${index}`} className='block leading-[1.2] pt-2 cursor-pointer inline-block select-none text-primary xl:text-[36px] text-[28px]' href={`/${item.url}`}>
                           {(item.title)}
                         </Link>
                       )}
