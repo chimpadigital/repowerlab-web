@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { CloseIcon, MenuIcon, ProfileIcon, Cart } from "./navicons";
 import { button } from "../../primitives";
 import useScrollTop from "@/utils/useTopCheck";
-import {Link} from '@/i18n/routing';
+import { Link } from '@/i18n/routing';
 import LangChange from "../../LangChange";
 import { useTranslations } from 'next-intl';
 
@@ -35,17 +35,16 @@ export const Navbar = () => {
 
                   <Link className="flex justify-between md:justify-start block  items-center gap-1" href="/">
                     <LogoRepower className={`${active ? 'text-primary' : 'text-white'} w-[54%] md:w-[193px] transition-all duration-[600]`} />
-                 
-                    <div className="md:hidden flex gap-1 items-center">
-                      <LangChange />
-                      <ProfileIcon />
-                    </div>
                   </Link>
+                  <div className="md:hidden flex gap-1 items-center">
+                    <LangChange />
+                    <ProfileIcon />
+                  </div>
                 </div>
 
                 :
                 <div className={`gap-3 max-w-fit md:py-4 py-2 px-6 relative  transition-all duration-[600ms] ${!isAtTop && "blurRepower"} rounded-full ${isAtBottom ? "opacity-0" : ""}`} style={!isAtTop ? bgNavStyle : {}}>
-               
+
                   <Link className="flex justify-start justify-between md:justify-start block  items-center gap-1" href="/">
                     <LogoRepower className={`${active ? 'text-primary' : 'text-white'} w-[54%] md:w-[193px]  transition-all duration-[600]`} />
                     <div className="md:hidden flex gap-1 items-center">
