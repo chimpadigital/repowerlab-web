@@ -35,6 +35,7 @@ export default function HeroBreadcrumb({
           alt="bg-hero"
           quality={100}
         />
+        <div className="bgMobileHero md:hidden"></div>
         <div className="w-full flex justify-center">
           <div className="container px-6">
             <div className="relative z-10 w-full h-full grid grid-cols-2">
