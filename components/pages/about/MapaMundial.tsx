@@ -8,6 +8,7 @@ import { locations } from "@/utils/aboutMapData";
 
 const MapaMundial = () => {
   const [indexLocation, setIndexLocation] = useState<number>(0);
+  const [visible, setVisible] = useState(false);
 
   return (
     <div className="h-[600px] w-full relative grid place-items-center">
@@ -28,9 +29,18 @@ const MapaMundial = () => {
             <AdvancedMarker
               key={poi.key + index}
               position={poi.location}
-              onMouseEnter={() => setIndexLocation(index + 1)}
-              onDragStart={() => setIndexLocation(index + 1)}
-              onClick={() => {}}
+              onMouseEnter={() => { 
+                setIndexLocation(index + 1);
+                setVisible(true)
+              }}
+              onMouseLeave={() => { setVisible(false)}}
+              // onDragStart={() => setIndexLocation(index + 1)}
+              clickable
+              onClick={() => {
+                console.log("click");
+                setIndexLocation(index + 1);
+                setVisible(true)
+              }}
             >
               <div
                 data-tooltip-id="my-tooltip"
@@ -54,7 +64,7 @@ const MapaMundial = () => {
         style={{
           backgroundColor:
             locations.find((item) => item.id === indexLocation)?.type ===
-            "Office"
+              "Office"
               ? "#E8B516"
               : "#BACCE6",
           paddingBlock: "12px",
