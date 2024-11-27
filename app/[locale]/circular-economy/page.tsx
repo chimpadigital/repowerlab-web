@@ -53,7 +53,7 @@ const CircularEconomy = () => {
       <MolinoAnimation />
       <SolutionsCards />
       <SolutionsAccordeon />
-      <div className="px-6">
+      <div className="px-6 ">
         <GreenBanner>
           <div className="flex w-full flex-col lg:flex-row md:items-center ">
             <div className="flex-1 gap-10 text-start flex items-center justify-between">
