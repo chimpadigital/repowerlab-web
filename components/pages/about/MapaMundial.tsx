@@ -9,14 +9,11 @@ import { locations } from "@/utils/aboutMapData";
 
 const MapaMundial = () => {
   const [indexLocation, setIndexLocation] = useState<number>(0);
-  const [visible, setVisible] = useState(false);
   const [activeI, setActiveI] = useState<null | number>(null)
 
   return (
     <>
-      <div className="relative">
-        {JSON.stringify(visible)}
-      </div>
+
       <div className="h-[600px] w-full relative grid place-items-center">
         <div className="absolute h-full w-[99vw]">
           <Map
@@ -38,16 +35,14 @@ const MapaMundial = () => {
                 onMouseEnter={() => {
                   setIndexLocation(index + 1);
                   setActiveI(index)
-                  setVisible(true)
                 }}
-                onMouseLeave={() => { setVisible(false), setActiveI(null) }}
+                onMouseLeave={() => { setActiveI(null) }}
                 // onDragStart={() => setIndexLocation(index + 1)}
                 clickable
                 onClick={() => {
                   console.log("click");
                   setIndexLocation(index + 1);
                   setActiveI(index)
-                  setVisible(true)
                 }}
               >
                 <div

@@ -325,8 +325,27 @@ html {
 }
 
 /* how we work */
- .swiper-how-we-work{
-    .swiper-slide:first-child{
+.swiper-how-we-work {
+    .swiper-slide:first-child {
         margin-left: 14px;
     }
- }
+}
+
+/* Google maps cambios  */
+.gm-style-iw {
+    padding: 0 !important;
+    /* Elimina padding predeterminado */
+    margin: 0 !important;
+    /* Elimina márgenes */
+    box-shadow: none !important;
+    /* Elimina sombras por defecto */
+    background-color: transparent !important;
+    /* Asegúrate de que no haya fondo no deseado */
+    max-width: none !important;
+    /* Asegura que se respete tu estilo personalizado */
+}
+
+
+.gm-style .gm-style-iw-tc::after {
+    display: none !important;
+}
