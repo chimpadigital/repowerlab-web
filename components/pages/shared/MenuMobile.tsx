@@ -70,7 +70,7 @@ export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?:
 
                                             ) : (
 
-                                                <Link key={`link-${index}`} className='block cursor-pointer   select-none text-primary text-[16px] pt-1' href={`/${item2.url}`}>
+                                                <Link key={`link-${index}`} className='block cursor-pointer   select-none text-primary text-[16px] pt-2' href={`/${item2.url}`}>
                                                     {(item2.title)}
                                                 </Link>
                                             )
