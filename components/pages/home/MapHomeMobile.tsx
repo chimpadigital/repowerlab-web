@@ -12,8 +12,8 @@ export default function MapHomeMobile() {
 
                 <CardM title={t.raw('card1')} number={416} />
                 <CardM title={t.raw('card2')} number={29} />
-                <CardM title={t.raw('card3')} number={45} />
                 <CardM title={t.raw('card4')} number={16} />
+                <CardM title={t.raw('card3')} number={45} />
             </div>
         </div>
     )
