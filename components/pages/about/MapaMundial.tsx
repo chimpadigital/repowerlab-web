@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
-import { AdvancedMarker, Map, Pin } from "@vis.gl/react-google-maps";
-import { IsotipoRepowerlab, Logo } from "@/components/icons";
-import Image from "next/image";
+import { AdvancedMarker, Map } from "@vis.gl/react-google-maps";
+import { IsotipoRepowerlab } from "@/components/icons";
 import { locations } from "@/utils/aboutMapData";
 
 
@@ -18,7 +17,7 @@ const MapaMundial = () => {
           defaultCenter={{ lat: 22.54992, lng: 0 }}
           defaultZoom={3}
           mapId={process.env.NEXT_PUBLIC_MAP_DESIGN_ID as string}
-          gestureHandling={"greedy"}
+          gestureHandling={"cooperative"}
           disableDefaultUI={true}
           zoomControl
           scrollwheel={false}

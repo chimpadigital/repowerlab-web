@@ -31,7 +31,7 @@ export default function HeroMobile() {
                             el: ".swiper-pagination-blogs",
                         }}
                         modules={[Pagination]}
-                        className="swiper-blogs mt-[50px]"
+                        className="swiper-blogs swiper-how-we-work mt-[50px]"
                     >
                         {
                             dataWeWork.map((el, i) => (

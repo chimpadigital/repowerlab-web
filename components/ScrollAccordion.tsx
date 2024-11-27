@@ -35,7 +35,7 @@ export default function ScrollAcordion({
   return (
     <>
       {size[0] < 1000 ? (
-        <section className="pt-4">
+        <section className="pt-4 group">
           <AccordionMob
             items={items}
             imgPosition={imgPosition}

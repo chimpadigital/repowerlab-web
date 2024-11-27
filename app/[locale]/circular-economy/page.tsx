@@ -1,3 +1,4 @@
+"use client"
 import GreenBanner from "@/components/GreenBanner";
 import HeroBreadcrumb from "@/components/HeroBreadcrumb";
 import MolinoAnimation from "@/components/pages/circular-economy/MolinoAnimation";
@@ -6,6 +7,7 @@ import SolutionsCards from "@/components/pages/circular-economy/SolutionsCards";
 import { button, title } from "@/components/primitives";
 import {Link} from '@/i18n/routing';
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const CircularEconomy = () => {
@@ -14,6 +16,8 @@ const CircularEconomy = () => {
     { label: t.raw("b1"), href: "/" },
     { label: t.raw("b2"), href: "circular-economy" },
   ];
+
+  const pathname = usePathname()
 
   return (
     <>
@@ -49,12 +53,12 @@ const CircularEconomy = () => {
       <MolinoAnimation />
       <SolutionsCards />
       <SolutionsAccordeon />
-      <div className="px-6">
+      <div className="px-6 ">
         <GreenBanner>
           <div className="flex w-full flex-col lg:flex-row md:items-center ">
             <div className="flex-1 gap-10 text-start flex items-center justify-between">
               <div className="flex-1">
-                <h4 className={`${title()} md:block mb-3 hidden max-w-[20ch] leading-[3rem]`}>
+                <h4 className={`${title()} md:block mb-3 hidden ${pathname.includes('/es')? "max-w-[25ch]" : "max-w-[20ch]" }  leading-[3rem]`}>
                 {t("banner.title")}{" "}
                   <span className={`${title()} text-secondary`}>
                   {t("banner.title2")}
