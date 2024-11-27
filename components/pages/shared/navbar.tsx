@@ -47,11 +47,11 @@ export const Navbar = () => {
 
                   <Link className="flex justify-start justify-between md:justify-start block  items-center gap-1" href="/">
                     <LogoRepower className={`${active ? 'text-primary' : 'text-white'} w-[54%] md:w-[193px]  transition-all duration-[600]`} />
-                    <div className="md:hidden flex gap-1 items-center">
-                      <LangChange />
-                      <ProfileIcon />
-                    </div>
                   </Link>
+                  <div className="md:hidden flex gap-1 items-center">
+                    <LangChange />
+                    <ProfileIcon />
+                  </div>
                 </div>
             }
             <div className="lg:flex hidden justify-end items-center w-full gap-4">
