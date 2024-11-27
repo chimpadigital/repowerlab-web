@@ -8,6 +8,7 @@ import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import { ArrowMenu } from '../../icons'
 import { RepowerIcon } from './navicons'
 import { usePathname } from 'next/navigation';
+import {ScrollShadow} from "@nextui-org/react";
 
 
 export default function Menu({ active, setMenu }: { active: boolean, setMenu?: any }) {
@@ -16,17 +17,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
 
   const pathname = usePathname();
 
-  const handleScroll = (e: any) => {
-    const target = e.currentTarget; // Elemento al que se aplica el evento
 
-    const isAtTop = target.scrollTop === 0;
-    const isAtBottom = target.scrollHeight - target.scrollTop === target.clientHeight;
-
-    // Evita que el evento de scroll se propague si se llega al límite
-    if ((isAtTop && e.deltaY < 0) || (isAtBottom && e.deltaY > 0)) {
-      e.preventDefault();
-    }
-  };
 
   useEffect(() => {
     setMenu(false);
@@ -56,9 +47,9 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                 </div>
               </div>
             </div>
-            <div className='col-span-1 flex flex-col gap-4 ps-8 relative z-40 custom-scroll relative' >
-              <div className="overflow-auto px-6 scroll-smooth  max-h-[75vh] pb-10" style={{ overscrollBehavior: "none" }} onWheel={handleScroll}>
-                <div className='scroll-smooth max-h-[60vh]'>
+            <div className='col-span-1 flex flex-col gap-4 ps-8 relative z-40 relative' >
+              <div  className="px-6 pb-10" >
+                <ScrollShadow size={100} hideScrollBar  className='scroll-smooth max-h-[60vh] min-h-[60vh]'>
                   {globalRoutes.map((item, index) => (
                     <div key={`item-${index}`} > {/* Use descriptive key with 'item' */}
                       {item.child ? (
@@ -119,8 +110,8 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                       )}
                     </div>
                   ))}
-                </div>
-              </div>
+                </ScrollShadow >
+              </div >
             </div>
 
           </div>

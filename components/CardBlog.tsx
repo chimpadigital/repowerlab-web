@@ -61,30 +61,32 @@ export default function CardBlog({ blog, }: { blog: BlogI }) {
   const fechaCambiada = (blog && blog.published_at) ? cambiarFormatoFecha(blog?.published_at) : "";
 
   return (
-    <article className={`p-2 md:p-6  pt-0 md:pt-6`} style={{width: "min(100%, 400px)"}}>
-      <div className="flex gap-2 flex-col">
+    <article className={`p-2 md:p-6  pt-0 md:pt-6`} style={{ width: "min(100%, 400px)" }}>
+      <div className="flex gap-2 justify-between h-full flex-col">
 
         <h5 className={`${subtitle({ colors: "primary", size: "md" })}`}>{blog?.title}</h5>
+        <div className="flex gap-2 flex-col">
 
-        <Image width={400} height={200} alt="" className="w-full object-cover h-[200px] rounded-[10px] " src={blog?.images[0]?.url || "/images/our-services/e2.jpg"} />
+          <Image width={400} height={200} alt="" className="w-full object-cover h-[200px] rounded-[10px] " src={blog?.images[0]?.url || "/images/our-services/e2.jpg"} />
 
-        <div className={`text-[1.2rem] font-light !text-[#444444]`}>
-          {blog?.category}
-        </div>
-        <div className="flex justify-between items-center text-grey-parrafo">
-          <div className="flex gap-2 items-center">
-            <Avatar name="Victoria Galeano" src={blog?.images[0] ? '/images/home/products/1.webp' : undefined} />
-            <p>Victoria Galeano</p>
+          <div className={`text-[1.2rem] font-light !text-[#444444]`}>
+            {blog?.category ? blog.category : "Categoría"}
           </div>
-          <p>{fechaCambiada}</p>
-        </div>
-        <div className="w-full flex justify-end">
-          <Link href={`/success-cases/${blog?.slug || '-'}/${blog?.id}`} className='font-bold flex gap-2 items-center text-primary cursor-pointer'>
-            Read More
-            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
-              <path d="M1 12L7 6.5L1 1" stroke="#1C4741" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </Link>
+          <div className="flex justify-between items-center text-grey-parrafo">
+            <div className="flex gap-2 items-center">
+              <Avatar name="Victoria Galeano" src={blog?.images[0] ? '/images/home/products/1.webp' : undefined} />
+              <p>Victoria Galeano</p>
+            </div>
+            <p>{fechaCambiada}</p>
+          </div>
+          <div className="w-full flex justify-end">
+            <Link href={`/success-cases/${blog?.slug || '-'}/${blog?.id}`} className='font-bold flex gap-2 items-center text-primary cursor-pointer'>
+              Read More
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                <path d="M1 12L7 6.5L1 1" stroke="#1C4741" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </div>
     </article>
