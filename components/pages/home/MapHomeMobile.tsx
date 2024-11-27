@@ -6,7 +6,7 @@ export default function MapHomeMobile() {
     const t = useTranslations('Home.Numbers')
     return (
         <div className=' bg-[url(/images/home/mapa-mob.png)] bg-no-repeat px-6 py-[40px] bg-cover bg-center rounded-[20px]'>
-            <h4 className='text-[22px] text-white font-bold'>{t('title')}</h4>
+            <h4 className='text-[26px] text-white font-bold'>{t('title')}</h4>
             <p className="pt-2 text-[18px] text-white">{t('subtitle')}</p>
             <div className="flex justify-center items-center pt-12 flex-col gap-4">
 
