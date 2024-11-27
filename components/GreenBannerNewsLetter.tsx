@@ -57,10 +57,10 @@ const GreenBannerNewsLetter = () => {
       <div className="flex w-full flex-col md:flex-row md:items-center gap-10">
         <div className="flex-1 text-start flex items-center justify-between">
           <div className="flex-1">
-            <h4 className={`${title()} !block md:mb-3 leading-tight	`}>
+            <h4 className={`${title()} !block md:mb-1 leading-none	`}>
               {t('title1')}
             </h4>
-            <h4 className={`${title()} text-secondary !block mb-4 md:mb-10`}>
+            <h4 className={`${title()} text-secondary leading-none !block mb-4 md:mb-10`}>
               {t('title2')}
             </h4>
             <p className="max-w-[52ch] hidden md:block font-light">

@@ -531,40 +531,40 @@
         "data6": {
           "title": "Desmantelamiento y transporte",
           "subtitle": "Gestionar el desmantelamiento y el transporte seguros y eficientes.",
-          "sellers": "RepowerLab helps you obtain offers from specialized dismantling companies. We also assist with permits, site access, and other logistical considerations to ensure a safe and efficient dismantling process.",
-          "buyers": "We coordinate with reliable transportation companies to move the dismantled turbines from the seller's site to yours. Our logistics expertise ensures that the components are transported safely and efficiently.",
+          "sellers": "RepowerLab te ayuda a obtener ofertas de empresas especializadas en desmantelamiento. También ayudamos con los permisos, el acceso al sitio y otras consideraciones logísticas para garantizar un proceso de desmantelamiento seguro y eficiente.",
+          "buyers": "Nos coordinamos con empresas de transporte confiables para trasladar las turbinas desmanteladas del sitio del vendedor al suyo. Nuestra experiencia en logística garantiza que los componentes se transporten de forma segura y eficiente.",
           "sellersM": "Ayudamos a obtener ofertas de las empresas de desmantelamiento y nos encargamos de los permisos y la logística.",
           "buyersM": "Nos coordinamos con las empresas de transporte para mover las turbinas de manera segura y eficiente."
         },
         "data7": {
           "title": "Modernización y reparación",
           "subtitle": "Prolongar la vida útil de los turbinas eólicas mediante su reacondicionamiento.",
-          "sellers": "At our facilities, we refurbish and repair turbine components, extending their lifecycle and enhancing their performance. Each part is meticulously inspected and restored to optimal condition.",
-          "buyers": "Our refurbishment process ensures that turbine components are restored to high standards. This extends their useful life and offers a cost-effective solution for your wind energy needs.",
+          "sellers": "En nuestras instalaciones, reacondicionamos y reparamos los componentes de las turbinas, alargando su ciclo de vida y mejorando su rendimiento. Cada pieza se inspecciona meticulosamente y se restaura a su estado óptimo.",
+          "buyers": "Nuestro proceso de reacondicionamiento garantiza que los componentes de la turbina se restauren con altos estándares. Esto prolonga su vida útil y ofrece una solución rentable para sus necesidades de energía eólica.",
           "sellersM": "Reacondicionamos los componentes de las turbinas, mejorando el rendimiento y alargando su ciclo de vida.",
           "buyersM": "Nuestro proceso de reacondicionamiento restaura los componentes a altos estándares, prolongando su vida útil y proporcionando soluciones energéticas rentables."
         },
         "data8": {
           "title": "Reciclaje y reutilización",
           "subtitle": "Minimizar los residuos a través de un reciclaje innovador.",
-          "sellers": "Materials that cannot be refurbished are recycled and repurposed into new products, such as street furniture and other equipment. This minimizes waste and maximizes resource utilization.",
-          "buyers": "Using recycled materials contributes to sustainability and offers innovative solutions for various applications. Our recycling technologies ensure minimal waste and environmental impact.",
+          "sellers": "Los materiales que no se pueden reacondicionar se reciclan y se reutilizan en nuevos productos, como mobiliario urbano y otros equipos. Esto minimiza el desperdicio y maximiza la utilización de los recursos.",
+          "buyers": "El uso de materiales reciclados contribuye a la sostenibilidad y ofrece soluciones innovadoras para diversas aplicaciones. Nuestras tecnologías de reciclaje garantizan un mínimo de residuos e impacto ambiental.",
           "sellersM": "Los materias primas no renovables se reciclan en nuevos productos, lo que reduce los residuos.",
           "buyersM": "Los materias primas reciclados contribuyen a la sostenibilidad y minimizan el impacto ambiental."
         },
         "data9": {
           "title": "Proyectos de reventa y repotenciación en el mercado",
           "subtitle": "Dando una segunda vida a las turbinas en el mercado.",
-          "sellers": "Refurbished turbines are sold in the second-hand market, providing you with financial returns. We ensure you receive payment in full before issuing our invoice, providing financial security.",
-          "buyers": "We help you finalize the purchase and prepare for installation. Our repowering projects use refurbished components to enhance efficiency and power output of existing wind farms.",
+          "sellers": "Las turbinas reacondicionadas se venden en el mercado de segunda mano, lo que proporciona rendimientos financieros. Nos aseguramos de que reciba el pago en su totalidad antes de emitir nuestra factura, lo que le brinda seguridad financiera.",
+          "buyers": "Le ayudamos a finalizar la compra y a prepararse para la instalación. Nuestros proyectos de repotenciación utilizan componentes reacondicionados para mejorar la eficiencia y la producción de energía de los parques eólicos existentes.",
           "sellersM": "Las turbinas reacondicionadas se venden en el mercado de segunda mano, lo que proporciona rendimientos financieros.",
           "buyersM": "Ayudamos con la finalización de la compra y utilizamos componentes reacondicionados para mejorar la eficiencia."
         },
         "data10": {
           "title": "Instalación y puesta en marcha",
           "subtitle": "Asegurarse de que sus turbinas estén listas para generar energía.",
-          "sellers": "We provide continued support and services even after the sale is complete, ensuring a seamless transition and satisfaction.",
-          "buyers": "We assist with the installation and commissioning of your turbines, ensuring they are operational and efficient. Our ongoing maintenance support ensures long-term performance.",
+          "sellers": "Brindamos soporte y servicios continuos incluso después de que se complete la venta, lo que garantiza una transición y satisfacción sin problemas.",
+          "buyers": "Ayudamos con la instalación y puesta en marcha de sus turbinas, asegurándonos de que estén operativas y sean eficientes. Nuestro soporte de mantenimiento continuo garantiza el rendimiento a largo plazo.",
           "sellersM": "Brindamos soporte postventa para garantizar una transición sin problemas.",
           "buyersM": "Ayudamos con la instalación y la puesta en marcha, ofreciendo un mantenimiento continuo para un rendimiento a largo plazo."
         }
@@ -1073,7 +1073,7 @@
     "animatedWord": "-*RepowerLab es una empresa pionera que está transformando el sector energético al ofrecer soluciones innovadoras para los activos energéticos al final de su vida útil, -*incluyendo -*desmantelamiento, -*repotenciamiento, -*renovación, -*reciclaje -*y -*reventa -*de -*infraestructuras -*de -*energía -*renovable.",
     "paragraphMobile": "Innovación líder para energías renovables al final de su vida útil. Convertimos los parques eólicos al final de su vida útil en activos valiosos mediante el desmantelamiento, la modernización, la reventa y el cambio de uso de turbinas eólicas.",
     "greenBanner": {
-      "title": "Únete a nosotros en este viaje ",
+      "title": "Únase a nosotros en este viaje ",
       "highlightedTitle": "para transformar los activos de energía eólica y crear un mundo más limpio y verde.",
       "paragraph": "Juntos, podemos lograr un crecimiento sostenible y dejar un impacto duradero en nuestro planeta.",
       "button": "Conectar"

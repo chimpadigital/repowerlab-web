@@ -323,3 +323,10 @@ html {
         background: linear-gradient(90.12deg, #FFFFFF -1.27%, #BACCE6 99.9%);
     }
 }
+
+/* how we work */
+ .swiper-how-we-work{
+    .swiper-slide:first-child{
+        margin-left: 14px;
+    }
+ }

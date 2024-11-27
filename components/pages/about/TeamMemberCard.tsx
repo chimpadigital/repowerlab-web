@@ -4,13 +4,15 @@ interface TeamMemberCardProps {
   name: string;
   position: string;
   description: string;
+  descriptionM: string;
   image: string;
 }
 
 const TeamMemberCard = ({
   name,
   position,
-  description,
+  description, 
+  descriptionM, 
   image,
 }: TeamMemberCardProps) => {
   return (
@@ -42,14 +44,22 @@ const TeamMemberCard = ({
             {position}
           </p>
         </div>
-        <div className="opacity-0 transition-all mt-3 group-hover:opacity-100 grou">
+        <div className="opacity-0 transition-all mt-3 group-hover:opacity-100 ">
           <p
-            className="font-[Mulish] text-sm md:text-base cursor-default"
+            className="font-[Mulish] text-sm md:text-base cursor-default hidden md:block"
             style={{
               transitionBehavior: "allow-discrete",
             }}
           >
             {description}
+          </p>
+          <p
+            className="font-[Mulish] text-sm md:text-base cursor-default  md:hidden"
+            style={{
+              transitionBehavior: "allow-discrete",
+            }}
+          >
+            {descriptionM}
           </p>
         </div>
       </div>
