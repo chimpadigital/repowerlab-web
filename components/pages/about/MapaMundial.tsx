@@ -12,80 +12,84 @@ const MapaMundial = () => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <div className="h-[600px] w-full relative grid place-items-center">
-      <div className="absolute h-full w-[99vw]">
-        <Map
-          style={{ width: "100%", height: "100%" }}
-          defaultCenter={{ lat: 22.54992, lng: 0 }}
-          defaultZoom={3}
-          mapId={process.env.NEXT_PUBLIC_MAP_DESIGN_ID as string}
-          gestureHandling={"cooperative"}
-          disableDefaultUI={true}
-          zoomControl
-          scrollwheel={false}
-          maxZoom={5}
-          minZoom={2}
-        >
-          {locations.map((poi, index) => (
-            <AdvancedMarker
-              key={poi.key + index}
-              position={poi.location}
-              onMouseEnter={() => { 
-                setIndexLocation(index + 1);
-                setVisible(true)
-              }}
-              onMouseLeave={() => { setVisible(false)}}
-              // onDragStart={() => setIndexLocation(index + 1)}
-              clickable
-              onClick={() => {
-                console.log("click");
-                setIndexLocation(index + 1);
-                setVisible(true)
-              }}
-            >
-              <div
-                data-tooltip-id="my-tooltip"
-                className="group -z-[1] my-tooltip h-10 w-10 bg-primary rounded-full grid place-items-center relative after:absolute after:bg-primary after:h-6 after:w-6 after:rotate-45 after:translate-y-[0.73rem] after:rounded-[3px] "
-              >
-                <span
-                  className={`z-30 ${poi.type === "Office" ? "fill-accent" : "fill-secondary"}`}
-                >
-                  <IsotipoRepowerlab />
-                </span>
-              </div>
-            </AdvancedMarker>
-          ))}
-        </Map>
+    <>
+      <div className="relative">
+        {JSON.stringify(visible)}
       </div>
-      <Tooltip
-        id="my-tooltip"
-        anchorSelect=".my-tooltip"
-        arrowColor="transparent"
-        opacity={1}
-        className={`shadow-[0px_4px_4px_0px_#00000040] py-[15px] px-[15px]  rounded-lg w-[270px] flex flex-col gap-2 text-start text-primary bg-pink-50 ${locations.find((item) => item.id === indexLocation)?.type === "Office" ? "bg-accent" : "bg-secondary"} `}
-        style={{
-          backgroundColor:
-            locations.find((item) => item.id === indexLocation)?.type ===
-              "Office"
-              ? "#E8B516"
-              : "#BACCE6",
-          paddingBlock: "12px",
-          width: 270,
-          borderRadius: 8,
-          zIndex: 999999999999,
-        }}
-      >
-        <h3 className="text-base text-primary font-extrabold">
-          {locations.find((item) => item.id === indexLocation)?.projectType}
-        </h3>
-        <span className="text-xs text-primary font-medium uppercase">
-          {locations.find((item) => item.id === indexLocation)?.key}
-        </span>
-        <span className="text-xs text-primary">
-          {locations.find((item) => item.id === indexLocation)?.projectDesc}
-        </span>
-      </Tooltip>
-    </div>
+      <div className="h-[600px] w-full relative grid place-items-center">
+        <div className="absolute h-full w-[99vw]">
+          <Map
+            style={{ width: "100%", height: "100%" }}
+            defaultCenter={{ lat: 22.54992, lng: 0 }}
+            defaultZoom={3}
+            mapId={process.env.NEXT_PUBLIC_MAP_DESIGN_ID as string}
+            gestureHandling={"cooperative"}
+            disableDefaultUI={true}
+            zoomControl
+            scrollwheel={false}
+            maxZoom={5}
+            minZoom={2}
+          >
+            {locations.map((poi, index) => (
+              <AdvancedMarker
+                key={poi.key + index}
+                position={poi.location}
+                onMouseEnter={() => {
+                  setIndexLocation(index + 1);
+                  setVisible(true)
+                }}
+                onMouseLeave={() => { setVisible(false) }}
+                // onDragStart={() => setIndexLocation(index + 1)}
+                clickable
+                onClick={() => {
+                  console.log("click");
+                  setIndexLocation(index + 1);
+                  setVisible(true)
+                }}
+              >
+                <div
+                  className="group -z-[1] my-tooltip h-10 w-10 bg-primary rounded-full grid place-items-center relative after:absolute after:bg-primary after:h-6 after:w-6 after:rotate-45 after:translate-y-[0.73rem] after:rounded-[3px] "
+                >
+                  <span
+                    className={`z-30 ${poi.type === "Office" ? "fill-accent" : "fill-secondary"}`}
+                  >
+                    <IsotipoRepowerlab />
+                  </span>
+                </div>
+              </AdvancedMarker>
+            ))}
+          </Map>
+        </div>
+        <Tooltip
+          // id="my-tooltip"
+          anchorSelect=".my-tooltip"
+          arrowColor="transparent"
+          opacity={1}
+          className={`shadow-[0px_4px_4px_0px_#00000040] py-[15px] px-[15px]  rounded-lg w-[270px] flex flex-col gap-2 text-start text-primary bg-pink-50 ${locations.find((item) => item.id === indexLocation)?.type === "Office" ? "bg-accent" : "bg-secondary"} `}
+          style={{
+            backgroundColor:
+              locations.find((item) => item.id === indexLocation)?.type ===
+                "Office"
+                ? "#E8B516"
+                : "#BACCE6",
+            paddingBlock: "12px",
+            width: 270,
+            borderRadius: 8,
+            zIndex: 999999999999,
+          }}
+        >
+          <h3 className="text-base text-primary font-extrabold">
+            {locations.find((item) => item.id === indexLocation)?.projectType}
+          </h3>
+          <span className="text-xs text-primary font-medium uppercase">
+            {locations.find((item) => item.id === indexLocation)?.key}
+          </span>
+          <span className="text-xs text-primary">
+            {locations.find((item) => item.id === indexLocation)?.projectDesc}
+          </span>
+        </Tooltip>
+      </div>
+    </>
   );
 };
 
