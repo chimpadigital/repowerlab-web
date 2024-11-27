@@ -29,6 +29,7 @@ const MapaMundial = () => {
               key={poi.key + index}
               position={poi.location}
               onMouseEnter={() => setIndexLocation(index + 1)}
+              onDragStart={() => setIndexLocation(index + 1)}
               onClick={() => {}}
             >
               <div
