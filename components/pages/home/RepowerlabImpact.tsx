@@ -19,7 +19,7 @@ export default function RepowerlabImpact() {
       <div className="absolute bottom-0 hidden lg:block w-full h-[500px]">
         <ThreeContainer />
       </div>
-      <div className="rounded-[10px] bg-primary pt-9 md:py-[100px] flex justify-center">
+      <div className="rounded-[20px] bg-primary pt-9 md:py-[100px] flex justify-center">
         <div className="container px-6">
           <div className="flex flex-col lg:flex-row justify-between gap-4 md:gap-[40px] lg:gap-[100px]">
             <h5 className={`text-secondary md:text-white font-medium text-[26px] md:text-[28px] max-w-[300px]`}>{t("title")}</h5>
