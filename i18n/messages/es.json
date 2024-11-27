@@ -15,7 +15,7 @@
     },
     "Our-Focus": {
       "title": "Nuestro Enfoque",
-      "animatedWord": "--RepowerLab es una empresa pionera en la transformación del sector energético al --proporcionar -- --innovadoras --para --activos --energéticos --al --final --de --su --vida --útil, incluido el desmantelamiento, la repotenciación, la modernización, el reciclaje y la reventa de infraestructuras de energía renovable",
+      "animatedWord": "--RepowerLab es una empresa pionera en la transformación del sector energético al --proporcionar -- --innovadoras --para --activos --energéticos --al --final --de --su --vida --útil, incluido el desmantelamiento, la repotenciación, la modernización, el reciclaje y la reventa de infraestructuras de energía renovable.",
       "paragraphMobile": "Innovación líder __para energías renovables al final de su vida útil.__ Convertimos los parques eólicos al final de su vida útil en activos valiosos mediante el desmantelamiento, la modernización, la reventa y el cambio de uso de las turbinas eólicas.",
       "paragraph1": "Con una fuerte presencia en Europa, Estados Unidos y América Latina, **hemos gestionado con éxito numerosos proyectos de desmantelamiento** a escala global. \n Nuestra experiencia **garantiza la máxima recuperación** de valor y una vida útil prolongada de los activos energéticos. Ofrecemos **soluciones integrales de economía circular** llave en mano que incluyen la planificación estratégica, la recuperación de activos y la reventa e instalación de equipos reacondicionados.",
       "paragraph2": "Comprometidos con la sostenibilidad, utilizamos tecnologías de reciclaje europeas avanzadas para lograr **altas tasas de recuperación de materiales.** Al mejorar el rendimiento y la eficiencia de los activos energéticos, RepowerLab promueve la gestión medioambiental, impulsando la **innovación y la sostenibilidad** en el sector de las energías renovables."
@@ -28,7 +28,7 @@
       "cards": {
         "card1": {
           "title": "Evaluación de Recuperación de Valor",
-          "paragraph": "Ayudar a los vendedores a evaluar el valor de sus turbinas y piezas para maximizar los rendimientos",
+          "paragraph": "Ayudar a los vendedores a evaluar el valor de sus turbinas y piezas para maximizar los rendimientos.",
           "paragraphMob": "Maximice sus rendimientos: permítanos evaluar el valor de sus turbinas."
         },
         "card2": {
@@ -38,8 +38,8 @@
         },
         "card3": {
           "title": "Atención al comprador",
-          "paragraph": "Ayudar a los compradores a seleccionar las turbinas y piezas adecuadas, asegurándose de que cumplan con los requisitos de su proyecto y los estándares regulatorios",
-          "paragraphMob": "Obtenga ayuda de expertos para encontrar las turbinas y los repuestos adecuadas."
+          "paragraph": "Ayudar a los compradores a seleccionar las turbinas y piezas adecuadas, asegurándose de que cumplan con los requisitos de su proyecto y los estándares regulatorios.",
+          "paragraphMob": "Obtenga ayuda de expertos para encontrar las turbinas y los repuestos adecuados."
         },
         "card4": {
           "title": "Inspección y aseguramiento de la calidad",
@@ -56,7 +56,7 @@
     "Impact": {
       "title": "El impacto de RepowerLab",
       "subtitle": "Soluciones de economía circular que reducen los residuos, aumentan la eficiencia y ahorran costos.",
-      "animatedWord": "Nuestro compromiso con la economía circular y las soluciones energéticas innovadoras --ofrece --resultados --medibles --en --la --reducción --de --residuos, --la --eficiencia --y --el --ahorro --de --costos.",
+      "animatedWord": "Nuestro compromiso con la economía circular y las soluciones energéticas innovadoras --ofrecen --resultados --medibles --en --la --reducción --de --residuos, --la --eficiencia --y --el --ahorro --de --costos.",
       "cards": {
         "card1": {
           "title": "Reducción de desechos",
@@ -65,7 +65,7 @@
         },
         "card2": {
           "title": "Desperdicio evitado",
-          "descriptionMob": "Evitamos el 60% de los residuos potenciales al mantener los materias primas en uso durante más tiempo",
+          "descriptionMob": "Evitamos el 60% de los residuos potenciales al mantener los materias primas en uso durante más tiempo.",
           "description": "Nuestras iniciativas de economía circular han desviado con éxito el 60% de los residuos potenciales de los vertederos, convirtiendo los componentes de las turbinas eólicas al final de su vida útil en recursos valiosos."
         },
         "card3": {
@@ -74,7 +74,7 @@
           "description": "Las innovadoras técnicas de repotenciación de Repowerlab aumentan la eficiencia de las turbinas eólicas en un 25-35%, maximizando la producción de energía a partir de los activos existentes."
         },
         "card4": {
-          "title": "Reducción de costo en el desmantelamiento",
+          "title": "Reducción de costos en el desmantelamiento",
           "descriptionMob": "Reducción de costos del 90% al optimizar el proceso de desmantelamiento, haciendo que las transiciones energéticas sean asequibles.",
           "description": "Al optimizar el proceso de desmantelamiento, reducimos los costos en un 90%, haciendo que las transiciones energéticas sostenibles sean más asequibles y accesibles."
         }
@@ -129,8 +129,8 @@
           "description": "Turbinas reacondicionadas, que proporcionan una forma rentable de prolongar la vida útil de los parques eólicos."
         },
         "card3": {
-          "title": "Turbinas eólicas \n usadas Turbinas",
-          "description": "económicas que se venden tal cual para su instalación o renovación."
+          "title": "Turbinas eólicas \n usadas",
+          "description": "Turbinas económicas que se venden tal cual para su instalación o renovación."
         },
         "card4": {
           "title": "Piezas de repuesto \n para turbinas eólicas",
@@ -231,7 +231,7 @@
       "repowering": {
         "l1": {
           "title": "Repotenciación de parques eólicos",
-          "description": "Aumenta la vida útil y el rendimiento de tu parque eólico con una repotenciación avanzada. Maximizamos la eficiencia y el valor mientras reducimos costos.",
+          "description": "RepowerLab repotencia los parques eólicos mediante la modernización de las turbinas para mejorar la eficiencia, aumentar la producción de energía y reducir los costos, todo ello siguiendo prácticas sostenibles.",
           "descriptionMobile": "Maximice la eficiencia y el valor con la repotenciación avanzada, lo que prolonga la vida útil de los parques eólicos y reduce los costos."
         },
         "l2": {
@@ -262,7 +262,7 @@
       },
       "retrofitting": {
         "l1": {
-          "title": "Reacondicionamiento y remanufactura de turbinas eólicas",
+          "title": "Modernización y Reacondicionamiento de turbinas eólicas",
           "description": "RepowerLab mejora el rendimiento y extiende la vida útil de las turbinas eólicas existentes a través de servicios integrales de modernización y reacondicionamiento, lo que garantiza que las turbinas funcionen con la máxima eficiencia y durabilidad.",
           "descriptionMobile": "Nos especializamos en extender la vida útil de la turbina y aumentar el rendimiento a través de la modernización, maximizando la eficiencia, la producción y el valor"
         },
