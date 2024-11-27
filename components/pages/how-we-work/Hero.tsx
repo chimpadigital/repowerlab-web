@@ -49,10 +49,11 @@ export default function Hero() {
         <div className="absolute inset-0 bg-[url(/images/how-we-work/gradiente-radial.png)] bg-cover opacity-50"></div>
         <div className="container px-6 h-full z-10">
           <Breadcrumbs
+            className='ps-6'
             itemClasses={{
-              base: " pt-[90px] ps-6",
+              base: " pt-[90px]",
               item: "text-white font-bold text-[18px] data-[current=true]:underline underline-offset-4",
-              separator: "text-white",
+              separator: "text-white stroke-2",
             }}
           >
             {breadcrumbs.map((el, index) => (
