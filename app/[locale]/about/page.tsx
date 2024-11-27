@@ -53,13 +53,13 @@ export default function AboutPage() {
           <div className="flex w-full flex-col lg:flex-row md:items-center gap-10">
             <div className="flex-1 gap-10 text-start flex items-center justify-between">
               <div className="flex-1">
-                <h4 className={`${title()} !block mb-3 leading-snug max-w-[50ch]`}>
+                <h4 className={`${title()} !block mb-3 leading-none max-w-[50ch]`}>
                   {t("greenBanner.title")}{" "}
-                  <span className={`${title()} leading-snug text-secondary`}>
+                  <span className={`${title()} leading-none text-secondary`}>
                     {t("greenBanner.highlightedTitle")}
                   </span>
                 </h4>
-                <p className="max-w-[40ch] font-light mt-7 md:mt-14">
+                <p className="max-w-[40ch] font-light leading-tight mt-7 md:mt-14">
                   {t("greenBanner.paragraph")}
                 </p>
               </div>
