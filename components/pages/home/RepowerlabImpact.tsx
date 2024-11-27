@@ -29,7 +29,7 @@ export default function RepowerlabImpact() {
             </div>
           </div>
           <div className="pt-[80px] md:pt-[120px] relative z-10">
-            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 mb-[80px] md:mb-[200px]">
+            <div className="flex lg:flex-row flex-col justify-center gap-8 mb-[80px] md:mb-[200px]">
               <Card percent='85-90%'
                 title={t.raw("cards.card1.title")}
                 descriptionMobile={t.raw("cards.card1.descriptionMob")}
@@ -147,15 +147,20 @@ const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
       onClick={() => {
         setOpen(!open);
       }}
-      // style={{ height: open ? "315px" : "150px" }}
-      className={`border overflow-hidden cursor-pointer transition-all ${open ? 'h-auto' : 'h-[150px]'} duration-600 relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6`}
+      animate={{ maxHeight: open ? "600px" : "150px" }} // Usar un valor alto para maxHeight
+      transition={{ duration: 0.6}} // Transición suave
+      style={{height:"fit-content"}}
+      className="border overflow-hidden cursor-pointer h-fit relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6"
     >
       <div className=" relative z-10">
         <h5 className="uppercase text-[20px] w-[200px]">{title}</h5>
         <h5 className="font-medium text-[32px]">{percent}</h5>
         <div className="relative h-full">
-          <p className="max-w-[250px] pe-2 md:pe-4  pb-2" style={{ opacity: 0, color: "transparent" }}>
+          <p className="max-w-[250px] hidden md:block pe-2 md:pe-4  pb-2" style={{ opacity: 0, color: "transparent" }}>
             {description}
+          </p>
+          <p className="max-w-[250px] md:hidden pe-2 md:pe-4  pb-4" style={{ opacity: 0, color: "transparent" }}>
+            {descriptionMobile}
           </p>
           <motion.p
             variants={variants}

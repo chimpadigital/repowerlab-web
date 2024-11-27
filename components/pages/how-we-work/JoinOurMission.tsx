@@ -11,7 +11,7 @@ import { useTranslations } from 'next-intl';
 export default function JoinOurMission() {
     const t = useTranslations("HowWeWork.JoinMission")
     const itemClasses = {
-        base: "py-0 w-full text-primary px-2 md:px-4 md:border-0 md:bg-transparent bg-grey-100 !shadow-none",
+        base: "py-0 w-full text-primary base px-2 md:px-4 md:border-0 md:bg-transparent bg-grey-100 !shadow-none",
         title: "font-normal data-[open=true]:font-bold text-[16px] md:text-[22px] ps-2 md:ps-0 text-primary w-[90%] md:w-[80%]",
         heading: "shadow-none data-[open]=true:font-bold md:bg-transparent bg-grey-100",
         content: "shadow-none ps-2 md:px-4 py-2",
@@ -26,7 +26,7 @@ export default function JoinOurMission() {
                     <div className="col-span-1 md:pt-[47px]">
                         <h4 className={title()}>{t("title")}</h4>
                         <Paragraph className='text-grey-parrafo hidden md:block text-[20px] pt-[40px] max-w-[450px]' text={t.raw('p')} />
-                        <Paragraph className='text-grey-parrafo md:hidden text-[20px] pt-[40px] max-w-[450px]' text={t.raw('pM')} />
+                        <Paragraph className='text-grey-parrafo md:hidden text-[18px] pt-[40px] max-w-[450px]' text={t.raw('pM')} />
 
                     </div>
                     <div className="col-span-1 mt-6 md:mt-0 hidden md:block">
@@ -52,7 +52,7 @@ export default function JoinOurMission() {
                         </Accordion>
                     </div>
                     <div className="col-span-1 mt-6 md:mt-0 md:hidden">
-                        <Accordion variant="splitted" itemClasses={itemClasses}>
+                        <Accordion variant="splitted" className="px-0" itemClasses={itemClasses}>
                             <AccordionItem indicator={<Indicator />} key="1" aria-label="Accordion 1" title={t.raw("accordion.ac1.titleM")}>
                                 <hr className="w-full border border-grey-600/15" />
                                 <div className='pt-4'>

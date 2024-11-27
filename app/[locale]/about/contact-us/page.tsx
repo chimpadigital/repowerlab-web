@@ -22,6 +22,7 @@ const ContactUs = () => {
             alt="bg-hero"
             quality={100}
           />
+          <div className="bgMobileHero md:hidden"></div>
           <div className="w-full flex justify-center px-0 md:px-10 ">
             <div className="relative container 2xl:px-6 z-10 w-full h-full grid grid-cols-2 pt-6">
               <div className="lg:col-span-1 col-span-2 p-0 md:ps-6 ">

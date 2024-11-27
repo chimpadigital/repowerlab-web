@@ -1,11 +1,19 @@
+"use client"
 import React from 'react'
 import { Select, SelectItem, Avatar } from "@nextui-org/react";
+import { useRouter, usePathname } from '@/i18n/routing';
+import { useLocale } from 'next-intl';
+
 
 export default function LangChange() {
     const langs = [{ label: "EN", value: 'en' }, { label: 'ES', value: 'es' }]
+    const locale = useLocale()
+    const path = usePathname()
+    const router = useRouter()
     return (
         <Select
             items={langs}
+            aria-labelledby='change language'
             className="max-w-xs"
             variant="bordered"
             classNames={{
@@ -14,7 +22,8 @@ export default function LangChange() {
                 trigger: "border-none rounded-none shadow-none data-[open=true]:border !data-[open=true]:border-b-white !data-[open=true]:border-b",
                 listboxWrapper: "max-h-[400px]",
             }}
-            defaultSelectedKeys={[langs[0].value]}
+            defaultSelectedKeys={[locale]}
+            onSelectionChange={(value)=>{router.push(path, {locale:value.anchorKey})}}
             listboxProps={{
                 itemClasses: {
                     base: [
@@ -39,7 +48,7 @@ export default function LangChange() {
             renderValue={(items) => {
                 return items.map((item, i) => (
                     <div key={i} className="flex items-center uppercase text-white gap-2">
-                       {item.textValue}
+                        {item.textValue}
                     </div>
                 ));
             }}

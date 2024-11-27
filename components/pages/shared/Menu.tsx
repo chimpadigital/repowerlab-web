@@ -2,12 +2,13 @@
 
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import {Link} from '@/i18n/routing';
+import { Link } from '@/i18n/routing';
 import { globalRoutes } from '@/utils/globalRoutes'
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import { ArrowMenu } from '../../icons'
 import { RepowerIcon } from './navicons'
 import { usePathname } from 'next/navigation';
+import {ScrollShadow} from "@nextui-org/react";
 
 
 export default function Menu({ active, setMenu }: { active: boolean, setMenu?: any }) {
@@ -16,12 +17,14 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
 
   const pathname = usePathname();
 
+
+
   useEffect(() => {
     setMenu(false);
   }, [pathname]); // Se activa cuando la ruta cambia
 
   return (
-    <div className='w-full h-[calc(100dvh)] fixed pointer-events lg:block hidden bg-menu bg-secondary left-0 top-0 z-40'
+    <div data-lenis-prevent className='w-full h-[calc(100dvh)] fixed pointer-events lg:block hidden bg-menu bg-secondary left-0 top-0 z-40'
       style={{ transform: active ? 'translateX(0%)' : 'translateX(100%)', transition: "1500ms" }}
     >
       <Image fill quality={100} src="/images/bg-menu.webp" alt='menu' className='absolute top-0 bg-secondary translate-y-[1px] w-full z-10'></Image>
@@ -44,9 +47,9 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                 </div>
               </div>
             </div>
-            <div className='col-span-1 flex flex-col gap-4 ps-8 relative z-40 custom-scroll'>
-              <div className="overflow-auto px-6 scroll-smooth  max-h-[75vh] pb-10">
-                <div className='scroll-smooth max-h-[60vh]'>
+            <div className='col-span-1 flex flex-col gap-4 ps-8 relative z-40 relative' >
+              <div  className="px-6 pb-10" >
+                <ScrollShadow size={100} hideScrollBar  className='scroll-smooth max-h-[60vh] min-h-[60vh]'>
                   {globalRoutes.map((item, index) => (
                     <div key={`item-${index}`} > {/* Use descriptive key with 'item' */}
                       {item.child ? (
@@ -55,7 +58,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                           className="p-0"
                           key={`first-item-${index}`}
                           itemClasses={{
-                            base:"pt-2 pb-2",
+                            base: "pt-2 pb-2",
                             title: "cursor-pointer  select-none text-primary py-0 xl:text-[36px] text-[28px]",
                             trigger: "cursor-pointer  select-none text-primary pt-2 py-0 xl:text-[36px] text-[28px]",
                             indicator: "data-[open=true]:rotate-180"
@@ -107,8 +110,8 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                       )}
                     </div>
                   ))}
-                </div>
-              </div>
+                </ScrollShadow >
+              </div >
             </div>
 
           </div>

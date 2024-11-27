@@ -31,7 +31,7 @@ export default function page() {
 
                             </div>
                         </div>
-                        <div className="flex relative ml-2 pt-4 w-full md:w-fit justify-center md:justify-start">
+                        <div className="flex relative ml-2 pt-[1.8rem] md:pt-4 w-full md:w-fit justify-center md:justify-start">
                             <Link
                                 href="/about/contact-us"
                                 className={`scroll-smooth ${button({
