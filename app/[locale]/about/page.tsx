@@ -64,7 +64,7 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="flex relative left-3 justify-center md:justify-start">
+            <div className="flex relative md:left-3 justify-center md:justify-start">
               <Link
                 href="/about/contact-us"
                 className={`scroll-smooth ${button({
