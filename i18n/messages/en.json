@@ -148,8 +148,10 @@
         },
         "FeaturedProduct": {
             "title": "Featured Products",
+            "pHome":"Welcome to the RepowerLab Marketplace, your destination for high-quality wind turbines, spare parts, and recycled materials, all thoroughly inspected for your energy asset needs.",
             "p1": "Explore our Marketplace, featuring high-quality refurbished turbines and spare parts, along with reclaimed materials from dismantled wind farms, all ready for a second life.",
             "p2": "Visit our Marketplace for refurbished turbines, spare parts, and reclaimed materials—giving wind components a second life.",
+            "p2M": "Visit our Marketplace for refurbished turbines, spare parts, and reclaimed materials—giving wind components a second life.",
             "button": "Go to Marketplace"
         }
     },

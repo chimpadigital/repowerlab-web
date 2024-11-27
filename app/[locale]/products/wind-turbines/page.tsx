@@ -52,7 +52,7 @@ export default function WindPage() {
         <OurOffer />
       </section>
 
-      <FeatureProducts />
+      <FeatureProducts paragraph={"p1"}/>
     </>
   );
 }

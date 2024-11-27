@@ -19,7 +19,7 @@ export default function Home() {
       <RepowerlabImpact />
       <Services />
       <Products />
-      <FeatureProducts />
+      <FeatureProducts paragraph={"pHome"}/>
       <SuccesCases />
       <MapHome />
       <div className="px-5">

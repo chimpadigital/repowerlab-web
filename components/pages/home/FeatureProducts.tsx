@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { ArrowButtonIcon } from '@/components/icons'
 import { useTranslations } from "next-intl";
 
-export default function FeatureProducts() {
+export default function FeatureProducts({ paragraph }: { paragraph: string }) {
   const pathname = usePathname();
   const t = useTranslations('Home.FeaturedProduct')
 
@@ -17,14 +17,10 @@ export default function FeatureProducts() {
         <h3 className={`${title()} text-primary mr-auto md:mr-0 mb-3 !block`}>
           {t('title')}
         </h3>
-        <p className="text-grey-parrafo md:pt-6 max-w-[700px] text-center hidden md:block">
-          {t('p1')}
+        <p className={`text-grey-parrafo md:pt-6 max-w-[700px] text-center md:block ${pathname == "/es" || pathname == "/en" && " hidden"}`}>
+          {t(paragraph)}
         </p>
-        <p
-          className={`text-grey-parrafo md:hidden max-w-[30ch] text-left self-start ${(pathname === "/es" || pathname === "/en") && "hidden"}`}
-        >
-          {t('p2')}
-        </p>
+
       </div>
       <ScrollProducts />
       <div className="py-4 mt-4 flex justify-center w-full md:hidden">
