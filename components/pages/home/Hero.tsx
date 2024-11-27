@@ -20,7 +20,7 @@ export default function Hero() {
                     <div className="grid grid-cols-2 h-full md:ps-[2rem]">
                         <div className="col-span-2 lg:col-span-1 h-full flex flex-col justify-center">
                             <div className="max-w-[600px]">
-                                <h1 className={title({ color: "white", size: "md" }) + " hidden md:block"}>{tH('title')}</h1>
+                                <Title className={title({ color: "white", size: "md" }) + " hidden leading-[1.2] md:block"} title={tH.raw('title')}></Title>
                                 <Title className={title({ color: "white", size: "md" }) + " md:hidden w-[80%]"} title={tH.raw('titleMob')}></Title>
                             </div>
                             <div className="hidden md:flex gap-[25px] pt-8">
