@@ -38,8 +38,8 @@ export default function RepowerLabFocus() {
             ></Image>
           </div>
           <div className="lg:col-span-1 col-span-2 flex flex-col items-center justify-center text-primary text-[22px] font-light">
-            <Paragraph text={t.raw("paragraph1")} strongClass="!text-accent"></Paragraph>
-            <Paragraph className="pt-2" text={t.raw("paragraph2")} strongClass="!text-accent"></Paragraph>     
+            <Paragraph text={t.raw("paragraph1")} textAccent="!text-accent !font-normal"></Paragraph>
+            <Paragraph className="pt-2" text={t.raw("paragraph2")} textAccent="!text-accent !font-normal"></Paragraph>     
           </div>
         </div>
       </div>
