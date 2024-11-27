@@ -30,11 +30,13 @@ const MeetOurTeam = () => {
               image="/images/about/member-alfonso.webp"
               name="Alfonso Alvaro"
               description={t.raw("alfonso.description")}
+              descriptionM={t.raw("alfonso.descriptionM")}
               position={t.raw("alfonso.position")}
             />
             <TeamMemberCard
               image="/images/about/member-fernando.webp"
               description={t.raw("fernando.description")}
+              descriptionM={t.raw("fernando.descriptionM")}
               position={t.raw("fernando.position")}
               name="Fernando Garces "
         
@@ -42,6 +44,7 @@ const MeetOurTeam = () => {
             <TeamMemberCard
               image="/images/about/member-victoria.webp"
               description={t.raw("victoria.description")}
+              descriptionM={t.raw("victoria.descriptionM")}
               position={t.raw("victoria.position")}
               name="Victoria Galeano "
          
@@ -49,6 +52,7 @@ const MeetOurTeam = () => {
             <TeamMemberCard
               image="/images/about/member-david.webp"
               description={t.raw("ivan.description")}
+              descriptionM={t.raw("ivan.descriptionM")}
               position={t.raw("ivan.position")}
               name="Iván David Rojas "
             />
