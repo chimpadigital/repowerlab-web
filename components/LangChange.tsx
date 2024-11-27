@@ -11,7 +11,9 @@ export default function LangChange() {
     const path = usePathname()
     const router = useRouter()
     return (
-        <Select
+        <>
+         {/*Desocultar cuando activemos español*/}
+        {/* <Select
             items={langs}
             aria-labelledby='change language'
             className="max-w-xs"
@@ -62,6 +64,8 @@ export default function LangChange() {
                     </div>
                 </SelectItem>
             )}
-        </Select>
+        </Select> */}
+        </>
+
     )
 }
