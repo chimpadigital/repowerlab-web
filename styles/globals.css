@@ -330,3 +330,38 @@ html {
         margin-left: 14px;
     }
 }
+
+/* Google maps cambios  */
+.gm-style-iw .gm-style-iw-d {
+    padding: 0 !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+    padding-bottom: 0 !important;
+}
+
+.gm-style-iw {
+    padding: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    /* Elimina padding predeterminado */
+    margin: 0 !important;
+    /* Elimina márgenes */
+    box-shadow: none !important;
+    /* Elimina sombras por defecto */
+    background-color: transparent !important;
+    /* Asegúrate de que no haya fondo no deseado */
+    max-width: none !important;
+    /* Asegura que se respete tu estilo personalizado */
+}
+
+
+
+.gm-style .gm-style-iw-tc::after {
+    display: none !important;
+}
