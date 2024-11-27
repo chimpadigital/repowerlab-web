@@ -29,7 +29,7 @@ export default function SpareParts() {
           >
             {t("title")}
           </h2>
-          <h2 className="text-[28px] font-bold text-primary text-center max-w-[18ch] md:hidden">
+          <h2 className="text-[26px] font-bold text-primary text-center max-w-[18ch] md:hidden">
             {t("titleM")}
           </h2>
         </div>
