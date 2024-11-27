@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
-import { AdvancedMarker, Map } from "@vis.gl/react-google-maps";
+import { AdvancedMarker, Map, InfoWindow } from "@vis.gl/react-google-maps";
 import { IsotipoRepowerlab } from "@/components/icons";
 import { locations } from "@/utils/aboutMapData";
 
@@ -10,6 +10,7 @@ import { locations } from "@/utils/aboutMapData";
 const MapaMundial = () => {
   const [indexLocation, setIndexLocation] = useState<number>(0);
   const [visible, setVisible] = useState(false);
+  const [activeI, setActiveI] = useState<null | number>(null)
 
   return (
     <>
@@ -36,14 +37,16 @@ const MapaMundial = () => {
                 position={poi.location}
                 onMouseEnter={() => {
                   setIndexLocation(index + 1);
+                  setActiveI(index)
                   setVisible(true)
                 }}
-                onMouseLeave={() => { setVisible(false) }}
+                onMouseLeave={() => { setVisible(false), setActiveI(null) }}
                 // onDragStart={() => setIndexLocation(index + 1)}
                 clickable
                 onClick={() => {
                   console.log("click");
                   setIndexLocation(index + 1);
+                  setActiveI(index)
                   setVisible(true)
                 }}
               >
@@ -56,11 +59,36 @@ const MapaMundial = () => {
                     <IsotipoRepowerlab />
                   </span>
                 </div>
+                {
+                  activeI == index &&
+                  <InfoWindow headerDisabled={true} className={`shadow-[0px_4px_4px_0px_#00000040] py-[15px] px-[15px]  rounded-lg w-[270px] flex flex-col gap-2 text-start text-primary bg-pink-50 ${locations.find((item) => item.id === indexLocation)?.type === "Office" ? "bg-accent" : "bg-secondary"} `}
+                    style={{
+                      backgroundColor:
+                        locations.find((item) => item.id === indexLocation)?.type ===
+                          "Office"
+                          ? "#E8B516"
+                          : "#BACCE6",
+                      paddingBlock: "12px",
+                      width: 270,
+                      borderRadius: 8,
+                      zIndex: 999999999999,
+                    }} position={{ ...poi.location, lat: poi.location.lat + 5 }}>
+                    <h3 className="text-base text-primary font-extrabold">
+                      {locations.find((item) => item.id === indexLocation)?.projectType}
+                    </h3>
+                    <span className="text-xs text-primary font-medium uppercase">
+                      {locations.find((item) => item.id === indexLocation)?.key}
+                    </span>
+                    <span className="text-xs text-primary">
+                      {locations.find((item) => item.id === indexLocation)?.projectDesc}
+                    </span>
+                  </InfoWindow>
+                }
               </AdvancedMarker>
             ))}
           </Map>
         </div>
-        <Tooltip
+        {/* <Tooltip
           // id="my-tooltip"
           anchorSelect=".my-tooltip"
           arrowColor="transparent"
@@ -87,7 +115,7 @@ const MapaMundial = () => {
           <span className="text-xs text-primary">
             {locations.find((item) => item.id === indexLocation)?.projectDesc}
           </span>
-        </Tooltip>
+        </Tooltip> */}
       </div>
     </>
   );
