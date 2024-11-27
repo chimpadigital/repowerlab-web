@@ -58,6 +58,7 @@ const MapaMundial = () => {
       </div>
       <Tooltip
         id="my-tooltip"
+        anchorSelect="my-tooltip"
         arrowColor="transparent"
         opacity={1}
         className={`shadow-[0px_4px_4px_0px_#00000040] py-[15px] px-[15px]  rounded-lg w-[270px] flex flex-col gap-2 text-start text-primary bg-pink-50 ${locations.find((item) => item.id === indexLocation)?.type === "Office" ? "bg-accent" : "bg-secondary"} `}
