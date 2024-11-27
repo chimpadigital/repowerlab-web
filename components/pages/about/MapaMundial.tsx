@@ -44,7 +44,7 @@ const MapaMundial = () => {
             >
               <div
                 data-tooltip-id="my-tooltip"
-                className="group -z-[1] h-10 w-10 bg-primary rounded-full grid place-items-center relative after:absolute after:bg-primary after:h-6 after:w-6 after:rotate-45 after:translate-y-[0.73rem] after:rounded-[3px] "
+                className="group -z-[1] my-tooltip h-10 w-10 bg-primary rounded-full grid place-items-center relative after:absolute after:bg-primary after:h-6 after:w-6 after:rotate-45 after:translate-y-[0.73rem] after:rounded-[3px] "
               >
                 <span
                   className={`z-30 ${poi.type === "Office" ? "fill-accent" : "fill-secondary"}`}
@@ -58,7 +58,7 @@ const MapaMundial = () => {
       </div>
       <Tooltip
         id="my-tooltip"
-        anchorSelect="my-tooltip"
+        anchorSelect=".my-tooltip"
         arrowColor="transparent"
         opacity={1}
         className={`shadow-[0px_4px_4px_0px_#00000040] py-[15px] px-[15px]  rounded-lg w-[270px] flex flex-col gap-2 text-start text-primary bg-pink-50 ${locations.find((item) => item.id === indexLocation)?.type === "Office" ? "bg-accent" : "bg-secondary"} `}
