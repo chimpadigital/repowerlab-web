@@ -332,8 +332,16 @@ html {
 }
 
 /* Google maps cambios  */
+div.gm-style-iw-d {
+    padding: 0 !important;
+    background-color: transparent !important;
+}
 .gm-style-iw {
     padding: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-top: 0 !important;
+    padding-right: 0 !important;
     /* Elimina padding predeterminado */
     margin: 0 !important;
     /* Elimina márgenes */
@@ -344,6 +352,7 @@ html {
     max-width: none !important;
     /* Asegura que se respete tu estilo personalizado */
 }
+
 
 
 .gm-style .gm-style-iw-tc::after {
