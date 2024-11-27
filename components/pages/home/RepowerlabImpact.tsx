@@ -22,7 +22,7 @@ export default function RepowerlabImpact() {
       <div className="rounded-[10px] bg-primary pt-9 md:py-[100px] flex justify-center">
         <div className="container px-6">
           <div className="flex flex-col lg:flex-row justify-between gap-4 md:gap-[40px] lg:gap-[100px]">
-            <h5 className={`text-secondary md:text-white font-medium text-[28px] max-w-[300px]`}>{t("title")}</h5>
+            <h5 className={`text-secondary md:text-white font-medium text-[26px] md:text-[28px] max-w-[300px]`}>{t("title")}</h5>
             <p className="md:hidden text-white text-[18px]">{t("subtitle")}</p>
             <div className="max-w-[1000px] hidden md:block text-grey-100 text-[30px]" >
               <WordAnimated accentColor='text-secondary' text={t.raw("animatedWord")} />

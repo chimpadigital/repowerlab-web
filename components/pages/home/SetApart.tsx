@@ -33,7 +33,7 @@ const MobileContainer = () => {
         <>
             <div className="h-[350px] bg-[url(/images/home/apart.webp)] bg-no-repeat bg-cover bg-center rounded-[20px] w-full relative">
                 <div className="relative p-6 z-10">
-                    <h4 className="text-white font-bold text-[22px]">{t("titleMob")}</h4>
+                    <h4 className="text-white font-bold text-[26px]">{t("titleMob")}</h4>
                     <p className='font-normal text-[18px] leading-7 pt-4 text-white max-w-[240px]'>{t("subtitleMob")}</p>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full rounded-[20px]" style={{

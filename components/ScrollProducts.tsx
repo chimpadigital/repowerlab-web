@@ -199,8 +199,8 @@ const CardMobile = ({ top = 0, turbine }: any) => {
     >
       <header className="flex justify-between items-center mb-12">
         <div>
-          <h4 className="mb-3 font-bold">Ecotecnia E44</h4>
-          <span className="bg-white rounded-full text-grey-parrafo px-5 py-2 inline-block">
+          <h4 className="mb-3 font-bold text-[18px]">Ecotecnia E44</h4>
+          <span className="bg-white rounded-full text-grey-parrafo px-3 py-1 inline-block">
             Wind Turbine
           </span>
         </div>
