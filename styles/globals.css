@@ -346,7 +346,7 @@ html {
     padding-right: 0 !important;
     padding-left: 0 !important;
     margin: 0 !important;
-    overflow: hidden;
+    overflow: hidden !important;
     padding-bottom: 0 !important;
 }
 
