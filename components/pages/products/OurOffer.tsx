@@ -11,7 +11,7 @@ export default function OurOffer() {
   const t = useTranslations("WindTurbines.OurOffer")
   const params = useParams();
   const itemClasses = {
-    base: "py-0 w-full text-primary my-[20px] mb-0 md:my-[20px] bg-custom-gradient shadow-none md:shadow",
+    base: "py-0 w-full text-primary mt-[3px] mb-0 md:my-[20px] bg-custom-gradient shadow-none md:shadow",
     title: "font-bold text-[18px] md:text-[24px] text-primary w-[80%]",
     heading: "shadow-none",
     content: "shadow-none text-[14px] md:text-base px-4 py-2",
@@ -154,11 +154,11 @@ export default function OurOffer() {
     console.log(params);
   }, [params]);
   return (
-    <section className="w-full flex flex-col md:flex-row items-center justify-center text-[22px]">
+    <section className="w-full flex  flex-col md:flex-row items-center justify-center text-[22px]">
       <h3 className="text-center text-primary font-bold md:hidden">
         {t("title")}
       </h3>
-      <div className="container px-6">
+      <div className="container px-2">
         <h3 className="text-[32px] text-primary font-bold hidden md:block">
           {t("title")}
         </h3>

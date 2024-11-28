@@ -12,18 +12,18 @@ export default function FeatureProducts({ paragraph }: { paragraph: string }) {
   const t = useTranslations('Home.FeaturedProduct')
 
   return (
-    <div className="pb-[50px]">
-      <div className="flex justify-center items-center flex-col pt-12 px-4 pb-8 md:pb-[50px]">
-        <h3 className={`${title()} text-primary mr-auto md:mr-0 mb-3 !block`}>
+    <div className="">
+      <div className="flex justify-center items-center flex-col pt-[41px] px-4 pb-8 md:pb-[50px]">
+        <h3 className={`${title()} text-primary mr-auto md:mr-0 !block`}>
           {t('title')}
         </h3>
-        <p className={`text-grey-parrafo md:pt-6 max-w-[700px] text-center md:block ${pathname == "/es" || pathname == "/en" && " hidden"}`}>
+        <p className={`text-grey-parrafo md:pt-6 max-w-[700px] md:text-center md:block ${pathname == "/es" || pathname == "/en" && " hidden"}`}>
           {t(paragraph)}
         </p>
 
       </div>
       <ScrollProducts />
-      <div className="py-4 mt-4 flex justify-center w-full md:hidden">
+      <div className="pt-4 mt-4 flex justify-center w-full md:hidden">
         <Link href="/marketplace" className='w-full mt-6 max-w-[230px] relative overflow-hidden gap-2 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white flex justify-between '>
           <div className="w-full absolute h-full top-0 left-0 bg-primary">
           </div>

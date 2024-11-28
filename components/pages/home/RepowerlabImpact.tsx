@@ -15,7 +15,7 @@ export default function RepowerlabImpact() {
   const t = useTranslations("Home.Impact")
 
   return (
-    <div className='md:px-8 px-4 relative overflow-x-hidden'>
+    <div className='md:px-8 px-4 pt-4 md:pt-0 relative overflow-x-hidden'>
       <div className="absolute bottom-0 hidden lg:block w-full h-[500px]">
         <ThreeContainer />
       </div>
@@ -28,7 +28,7 @@ export default function RepowerlabImpact() {
               <WordAnimated accentColor='text-secondary' text={t.raw("animatedWord")} />
             </div>
           </div>
-          <div className="pt-[80px] md:pt-[120px] relative z-10">
+          <div className="pt-[61px] md:pt-[120px] relative z-10">
             <div className="flex lg:flex-row flex-col justify-center gap-8 mb-[80px] md:mb-[200px]">
               <Card percent='85-90%'
                 title={t.raw("cards.card1.title")}
@@ -94,7 +94,7 @@ export default function RepowerlabImpact() {
                 </div>
               </div>
             </div>
-            <div className="col-span-1 relative z-10 pt-6">
+            <div className="col-span-1 relative z-10 md:pt-6">
               <Single
                 url=""
                 index={1}

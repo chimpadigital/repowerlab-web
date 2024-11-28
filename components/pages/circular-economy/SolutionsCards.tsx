@@ -11,7 +11,7 @@ import { useTranslations } from "next-intl";
 const SolutionsCards = () => {
   const t = useTranslations("CircularEconomy.SolutionsCards")
   return (
-    <section className=" px-6 md:px-8 mx-4 md:mx-6 bg-primary bg-[url(/images/circular-economy/bg-solutions-cards.webp)] bg-fixed bg-no-repeat bg-cover rounded-[20px] py-16 md:pt-32 md:pb-32 md:text-center">
+    <section className=" px-6 md:px-8 mx-4 md:mx-6 mb-3 md:mb-0 bg-primary bg-[url(/images/circular-economy/bg-solutions-cards.webp)] bg-fixed bg-no-repeat bg-cover rounded-[20px] py-16 md:pt-32 md:pb-32 md:text-center">
       <h4 className={`${title({ size: "md" })} text-white hidden md:block`}>
         {t("title")}
       </h4>
@@ -23,7 +23,7 @@ const SolutionsCards = () => {
           {t("sub2")}
         </h4>
       </div>
-      <div className="flex gap-5 justify-center mt-10 md:mt-24 flex-wrap">
+      <div className="flex gap-[11px] justify-center mt-10 md:mt-24 flex-wrap">
         <Link
           href={"/circular-economy#repowering-solutions"}
           className="md:w-[min(100%,_309px)] w-full px-[18px] md:px-8 py-10 md:py-14 text-white bg-white/15 transition-all hover:bg-white/0 border-[0.5px] border-grey-100 rounded-tl-[10px] md:rounded-[10px] text-left flex md:flex-col md:justify-normal md:items-start md:gap-0 items-center gap-6 flex-wrap"

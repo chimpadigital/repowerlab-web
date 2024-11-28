@@ -45,11 +45,11 @@ export default function page() {
           </div>
         </HeroBreadcrumb>
       </section>
-      <div className="mb-10">
+      <div className="mb-[19px]">
         <ServicesList />
       </div>
 
-      <section className="md:px-6 mb-14">
+      <section className="md:px-6 pb-2 md:mb-14 px-4">
         <ScrollAccordion items={decommissioning} id="decommissioning" />
         <ScrollAccordion items={repowering} id="repowering" />
         <ScrollAccordion

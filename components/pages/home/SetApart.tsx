@@ -11,7 +11,7 @@ const HorizontalScroll = React.lazy(() => import('./HorizontalScroll'));
 export default function SetApart() {
     const size = useWindowSize()
     return (
-        <div className='w-full flex justify-center px-4 md:px-8 py-[40px] rounded-[20px]'>
+        <div className='w-full flex justify-center px-4 md:px-8 md:py-[40px] rounded-[20px]'>
             <div className='relative w-full flex justify-center rounded-[20px]'>
 
                 <div className="relative z-[2] w-full pt-[40px] lg:pt-[100px] rounded-[20px]">
@@ -40,7 +40,7 @@ const MobileContainer = () => {
                     background: "linear-gradient(181deg, rgba(75, 100, 128, 0.70) 20.44%, rgba(121, 135, 153, 0.48) 59.9%, rgba(255, 255, 255, 0.00) 77.53%)"
                 }}></div>
             </div>
-            <div className='pt-4 flex flex-col gap-4'>
+            <div className='pt-4 flex flex-col gap-[11px]'>
                 {
                     arraySetApart.map((el, i) => (
                         <CardMobile key={i} Icon={el.icon} {...el} />

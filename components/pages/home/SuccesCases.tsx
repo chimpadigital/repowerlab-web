@@ -47,7 +47,7 @@ export default function SuccesCases() {
     getBlogs();
   }, [currentPage]);
   return (
-    <div className="pb-[0px] lg:pb-[120px] w-full flex justify-center relative z-10">
+    <div className="pb-[0px] mt-[41px] lg:pb-[120px] w-full flex justify-center relative z-10">
       <div className="absolute !text-grey-100 z-0 left-[-50px] hidden md:block">
         <IsotipoRepowerlab className="w-[350px] h-auto !fill-grey-100 " />
       </div>

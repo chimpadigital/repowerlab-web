@@ -29,7 +29,7 @@ export default function AccordionMob({
   console.log(items[0].title.length);
   
   return (
-    <div className="p-4 py-2 w-full " id={id}>
+    <div className="pb-2 w-full " id={id}>
       <article className="bg-grey-100 rounded-[20px] px-4 py-8">
         <h5 className={`${title({ size: "sm", color: "primary" })} !inline-block ${items[0].title.length <= 30 ? "max-w-[17ch]" :""} group-[:nth-child(2)]:max-w-[17ch]`}>
           {t(items[0].title)}

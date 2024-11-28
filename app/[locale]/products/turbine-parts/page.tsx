@@ -17,7 +17,7 @@ export default function page() {
   ];
   return (
     <>
-      <section className="w-full px-6">
+      <section className="w-full px-4 md:px-6">
         <HeroBreadcrumb
           img="/images/product/wind-turbine-parts.png"
           breadcrumbs={breadcrumbs}

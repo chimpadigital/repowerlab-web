@@ -20,13 +20,13 @@ export default function JoinOurMission() {
     };
 
     return (
-        <section className="w-full flex justify-center py-12 md:pb-[100px] md:pt-[50px]">
+        <section className="w-full flex justify-center pb-4 pt-12 md:pb-[100px] md:pt-[50px]">
             <div className="container text-primary px-4 md:px-6">
-                <div className="grid lg:grid-cols-2 grid cols-1">
+                <div className="grid lg:grid-cols-2 cols-1">
                     <div className="col-span-1 md:pt-[47px]">
                         <h4 className={title()}>{t("title")}</h4>
                         <Paragraph className='text-grey-parrafo hidden md:block text-[20px] pt-[40px] max-w-[450px]' text={t.raw('p')} />
-                        <Paragraph className='text-grey-parrafo md:hidden text-[18px] pt-[40px] max-w-[450px]' text={t.raw('pM')} />
+                        <Paragraph className='text-grey-parrafo md:hidden text-[18px] pt-[21px] pb-4 max-w-[450px]' text={t.raw('pM')} />
 
                     </div>
                     <div className="col-span-1 mt-6 md:mt-0 hidden md:block">
@@ -76,7 +76,7 @@ export default function JoinOurMission() {
                   
                 </div>
 
-                <div className="flex pt-[60px] md:pt-[150px] gap-6 justify-center flex-wrap">
+                <div className="flex pt-[41px] md:pt-[150px] gap-[11px] justify-center flex-wrap">
                     <Cards image="i2" 
                     title={t.raw('cards.card1.title')} 
                     list={

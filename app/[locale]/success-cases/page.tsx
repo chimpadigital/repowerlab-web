@@ -17,7 +17,7 @@ const SuccessCases = () => {
   ];
   return (
     <>
-      <section className="w-full px-6">
+      <section className="w-full px-4 md:px-6">
         <HeroBreadcrumb
           img="/images/success-cases/bg-hero.webp"
           breadcrumbs={breadcrumbs}

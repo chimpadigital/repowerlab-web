@@ -93,7 +93,7 @@ export default function SolutionsCarrusel({ cards }) {
       </div>
       {/* SECCIÓN CARRUSEL MOBILE */}
       <div className="block md:hidden">
-        <div className="mt-14 rounded-l-lg rounded-r-lg md:rounded-r-none">
+        <div className="mt-7 rounded-l-lg rounded-r-lg md:rounded-r-none">
           <Swiper
             className="mySwiper-solutions"
             pagination={{
@@ -133,7 +133,7 @@ export default function SolutionsCarrusel({ cards }) {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="swiper-pagination-solutions flex justify-center items-center mt-4"></div>
+          <div className="swiper-pagination-solutions flex justify-center items-center mt-6"></div>
         </div>
       </div>
     </section>

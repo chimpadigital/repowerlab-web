@@ -25,7 +25,7 @@ export default function Home() {
       <div className="px-5">
         <ConnectToday />
       </div>
-      <div className="flex w-full justify-center py-4 px-6">
+      <div className="flex w-full justify-center pt-4 px-4">
         <GreenBannerNewsLetter />
       </div>
     </>

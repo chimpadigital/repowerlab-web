@@ -61,7 +61,7 @@ export default function CardBlog({ blog, }: { blog: BlogI }) {
   const fechaCambiada = (blog && blog.published_at) ? cambiarFormatoFecha(blog?.published_at) : "";
 
   return (
-    <article className={`p-2 md:p-6  pt-0 md:pt-6`} style={{ width: "min(100%, 400px)" }}>
+    <article className={`pr-2 pl-4 md:p-6  pt-0 md:pt-6`} style={{ width: "min(100%, 400px)" }}>
       <div className="flex gap-2 justify-between h-full flex-col">
 
         <h5 className={`${subtitle({ colors: "primary", size: "md" })}`}>{blog?.title}</h5>

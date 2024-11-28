@@ -16,7 +16,7 @@ export default function WindPage() {
   ];
   return (
     <>
-      <section className="w-full px-6">
+      <section className="w-full px-4">
         <HeroBreadcrumb
           img="/images/product/wind-turbine-bg.png"
           breadcrumbs={breadcrumbs}

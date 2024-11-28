@@ -16,7 +16,7 @@ export default function AboutPage() {
   const t = useTranslations("About")
   return (
     <section className="overflow-x-clip">
-      <div className="px-6">
+      <div className="px-4 md:px-6">
         <HeroBreadcrumb
           breadcrumbs={[
             {
@@ -45,10 +45,10 @@ export default function AboutPage() {
       <MapaMundial />
       <WhyChooseRepowerlab />
       <MeetOurTeam />
-      <div className="mt-10 md:hidden">
+      <div className="mt-[22] md:hidden">
         <Partners />
       </div>
-      <div className="px-3 md:px-6 relative lg:-top-1 mt-10 md:mt-4">
+      <div className="px-4 md:px-6 relative lg:-top-1 mt-10 md:mt-4">
         <GreenBanner>
           <div className="flex w-full flex-col lg:flex-row md:items-center gap-10">
             <div className="flex-1 gap-10 text-start flex items-center justify-between">

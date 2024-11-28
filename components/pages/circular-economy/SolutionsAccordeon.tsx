@@ -9,7 +9,7 @@ import React from "react";
 
 const SolutionsAccordeon = () => {
   return (
-    <section className="px-2 md:px-6 mb-3 md:mb-14">
+    <section className="px-4 md:px-6 mb-3 md:mb-14">
       <ScrollAccordion
         items={repoweringSolutions}
         id="repowering-solutions"

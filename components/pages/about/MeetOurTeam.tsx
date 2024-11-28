@@ -22,7 +22,7 @@ const MeetOurTeam = () => {
           />
         </clipPath>
       </svg>
-      <section className="our-team lg:-top-6 relative px-[10px] md:px-6 ">
+      <section className="our-team lg:-top-6 relative px-4 md:px-6 ">
         <div className="rounded-[20px] bg-grey-100 py-10 md:py-40 bg-[url(/images/about/recursoOurTeam.webp)] bg-no-repeat bg-cover bg-left">
           <h4 className={`${title()} text-primary`}>{t("meet")}</h4>
           <div className="grid grid-cols-1 lg:grid-cols-2  min-[1366px]:grid-cols-3 min-[1666px]:grid-cols-4 justify-items-center  px-4 md:px-6 xl:px-14 gap-5 xl:gap-20 mx-auto flex-wrap py-5 md:pt-40">

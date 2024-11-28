@@ -234,7 +234,7 @@ const Formulario = () => {
             value="talent"
           />        </div>
 
-        <p className="text-white font-medium text-sm">
+        <p className="text-white font-medium text-sm mt-2 md:mt-0">
           {t.raw("message.info")}
         </p>
         <div className="mx-auto relative grid place-items-center">

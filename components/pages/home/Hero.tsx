@@ -9,7 +9,7 @@ export default function Hero() {
     const t = useTranslations()
     const tH = useTranslations('Home.Hero')
     return (
-        <div className="w-full px-4 lg:px-8 items-center flex-col w-full flex justify-center relative pb-[65px] md:pb-[150px]">
+        <div className="w-full px-4 lg:px-8 items-center flex-col flex justify-center relative pb-[41px] md:pb-[150px]">
             <div className="w-full relative flex justify-center overflow-hidden h-full min-h-[90vh] max-h-[1500px]  rounded-[20px] ">
                 <div className='object-cover bg-[#000]/60 w-full h-full top-0 left-0 absolute z-[1]'></div>
                 <video className='object-cover bg-secondary md:object-center object-[-150px] w-full h-full top-0 left-0 absolute z-0' autoPlay muted playsInline loop>

@@ -34,12 +34,12 @@ const CasedSection = () => {
   ];
 
   return (
-    <div className="px-4 md:px-14 flex gap-6 flex-wrap justify-center text-primary">
+    <div className="px-4 md:px-14 flex gap-[12px] md:gap-4  flex-wrap justify-center text-primary">
       {text.map((item, index) => {
         return (
           <div
             key={index}
-            className="w-fit relative group px-7 md:px-16 py-8 origin-top transition-all bg-gradient-to-r from-[#fff] to-90% to-[#B3C5DF] shadow-[5px_5px_4px_0px_#0000001A] rounded-[20px] after:inset-0 after:absolute after:bg-grey-100 after:rounded-[20px]  after:transition-all hover:md:after:opacity-0"
+            className="w-full md:w-fit relative group px-7 md:px-16 py-8 origin-top transition-all bg-gradient-to-r from-[#fff] to-90% to-[#B3C5DF] shadow-[2.5px_2.5px_0px_0px_#0000001A] md:shadow-[5px_5px_4px_0px_#0000001A] rounded-[20px] after:inset-0 after:absolute after:bg-grey-100 after:rounded-[20px]  after:transition-all hover:md:after:opacity-0"
             style={{
               background:
                 "linear-gradient(270deg, #B3C5DF -42.56%, #FFFFFF 57.02%)",

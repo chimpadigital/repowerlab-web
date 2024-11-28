@@ -12,7 +12,7 @@ export default function page() {
         <div>
             <HeroContainer />
             <JoinOurMission />
-            <div className="px-6 pb-8">
+            <div className="px-4 md:px-6">
                 <GreenBanner>
                     <div className="flex w-full flex-col lg:flex-row md:items-center ">
                         <div className="flex-1 gap-10 text-start flex items-center justify-between">
@@ -31,7 +31,7 @@ export default function page() {
 
                             </div>
                         </div>
-                        <div className="flex relative ml-2 pt-[1.8rem] md:pt-4 w-full md:w-fit justify-center md:justify-start">
+                        <div className="flex relative left-10 ml-2 pt-[1.8rem] md:pt-4 w-full md:w-fit justify-center md:justify-start">
                             <Link
                                 href="/about/contact-us"
                                 className={`scroll-smooth ${button({
