@@ -656,7 +656,7 @@
             },
             "l4": {
               "title": "Repuestos para turbinas eólicas:",
-              "text": "RepowerLab supplies a wide range of turbine parts to support maintenance and repair operations. Our inventory includes both new and refurbished components, ensuring that clients have access to the parts they need to keep their turbines running efficiently.",
+              "text": "RepowerLab suministra una amplia gama de piezas de turbinas para respaldar las operaciones de mantenimiento y reparación. Nuestro inventario incluye componentes nuevos y reacondicionados, lo que garantiza que los clientes tengan acceso a las piezas que necesitan para mantener sus turbinas funcionando de manera eficiente.",
               "textM": "**Repuesto:** Una amplia gama de repuestos nuevas y reacondicionadas para mantener las turbinas funcionando sin problemas. Incluye: palas, cajas de engranajes, generadores, sistemas de control y otros componentes clave"
             }
           },
@@ -815,7 +815,7 @@
           "texto": "Generadores eficientes para garantizar una producción óptima de energía."
         },
         "card5": {
-          "titulo": "Sistemas de contro",
+          "titulo": "Sistemas de control",
           "texto": "Sistemas de control avanzados para un mejor rendimiento y fiabilidad."
         }
       }
@@ -920,8 +920,8 @@
           "description": "Aplicamos tecnologías avanzadas de reciclaje para procesar materiales de turbinas desmanteladas. La fibra de vidrio, la fibra de carbono, la madera de balsa, los metales de tierras raras, los compuestos y otros materiales se extraen o reciclan de manera eficiente, lo que contribuye a la creación de nuevos productos y reduce los desechos de los vertederos."
         },
         "d5": {
-          "title": "Remanufactura",
-          "description": "Remanufacturamos y reparamos los componentes de las turbinas, alargando su ciclo de vida y mejorando su rendimiento. Desde las palas hasta las góndolas, cada pieza se inspecciona meticulosamente y se restaura para que esté en óptimas condiciones."
+          "title": "Reacondicionamiento",
+          "description": "Reacondicionamiento y reparamos los componentes de las turbinas, alargando su ciclo de vida y mejorando su rendimiento. Desde las palas hasta las góndolas, cada pieza se inspeccionan meticulosamente y se restauran para que estén en óptimas condiciones."
         },
         "d6": {
           "title": "Reutilizar / Cambio de uso",
@@ -949,7 +949,7 @@
       "itemTitle2": "Las estrategias clave incluyen:",
       "imgText2": "Al integrar estas estrategias, RepowerLab ayuda a reducir el impacto ambiental y promueve prácticas energéticas sostenibles.",
       "itemTitle3": "Nuestros servicios de reacondicionamiento incluyen:",
-      "imgText3": "RepowerLab proporcionan una forma rentable de mantener un alto rendimiento y fiabilidad en sus activos de energía eólica.",
+      "imgText3": "RepowerLab proporciona una forma rentable de mantener un alto rendimiento y fiabilidad en sus activos de energía eólica.",
       "itemTitle4": "Nuestras soluciones incluyen:",
       "imgText4": "Nuestras soluciones de reciclaje ayudan a reducir los residuos y a conservar los recursos, apoyando la sostenibilidad general del sector de la energía eólica.",
       "repoweringSolutions": {
