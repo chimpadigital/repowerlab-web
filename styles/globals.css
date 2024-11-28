@@ -332,6 +332,12 @@ html {
 }
 
 /* Google maps cambios  */
+.gm-style-iw .gm-style-iw-d::before {
+    background: transparent;
+}
+.gm-style-iw .gm-style-iw-d::after {
+    background: transparent;
+}
 .gm-style-iw .gm-style-iw-d {
     padding: 0 !important;
     background-color: transparent !important;
@@ -344,6 +350,12 @@ html {
     padding-bottom: 0 !important;
 }
 
+.gm-style-iw::after {
+    background: transparent !important;
+}
+.gm-style-iw::before {
+    background: transparent !important;
+}
 .gm-style-iw {
     padding: 0 !important;
     padding-bottom: 0 !important;
@@ -354,7 +366,6 @@ html {
     margin: 0 !important;
     overflow: hidden;
     /* Elimina márgenes */
-    box-shadow: none !important;
     /* Elimina sombras por defecto */
     background-color: transparent !important;
     /* Asegúrate de que no haya fondo no deseado */
