@@ -22,7 +22,7 @@ export default function MolinoAnimation() {
     return (
         <section className="w-full flex justify-center">
             <div className="w-full relative" ref={ref} style={{ height: `${dataMolino.length * 100}vh` }}>
-                <h4 className={title({ color: "secondary", size: "md", weight: "normal" }) + " md:hidden !font-[600] px-6 absolute top-[-20px]"}>
+                <h4 className={title({ color: "secondary", size: "md", weight: "normal" }) + " md:hidden !font-[600] px-6 absolute top-[21px]"}>
                     <span className='text-primary'>
                         {t("title")} {" "}
                     </span>
@@ -31,7 +31,7 @@ export default function MolinoAnimation() {
                 <div className="h-[100vh] items-center flex justify-center  sticky top-0">
                     <Image width={400} height={400} alt="bg" className='absolute left-0 bottom-[-100px]' src="/images/circular-economy/bg_wind.png"></Image>
                     <div className="container px-6">
-                        <div className="grid h-[100vh] items-center grid-cols-1 lg:grid-cols-2 pt-[80px]">
+                        <div className="grid h-[100vh] items-center grid-cols-1 lg:grid-cols-2 pt-[171px]">
 
                             <div className="col-span-1 flex items-center justify-center w-full overflow-hidden">
                                 <RecursoSvg preserveAspectRatio="xMidYMid slice" className="lg:w-full lg:h-auto h-[57vh] md:h-[45vh]" rotate={rotate} numbers={numbers} />
@@ -69,7 +69,7 @@ const Text = ({ numbers, data, index }: { index: number, numbers: any, data: { t
 
     return (
         <motion.div
-            className="flex items-center flex-col absolute p-2 top-[-40px] md:top-0 w-full h-full"
+            className="flex items-center flex-col absolute p-2 top-[-15px] md:top-0 w-full h-full"
             style={{ zIndex: index, opacity: index == 0 ? opacity2 : index == dataMolino.length - 1 ? opacityF : opacity }}>
             <div className="flex gap-12 items-center w-full">
                 <h5 className="md:text-[42px] text-[38px] text-primary font-bold">{index + 1}</h5>

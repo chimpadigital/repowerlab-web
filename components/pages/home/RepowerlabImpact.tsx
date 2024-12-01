@@ -15,7 +15,7 @@ export default function RepowerlabImpact() {
   const t = useTranslations("Home.Impact")
 
   return (
-    <div className='md:px-8 px-4 pt-4 md:pt-0 relative overflow-x-hidden'>
+    <div className='md:px-8 px-4 pt-[41px] md:pt-0 relative overflow-x-hidden'>
       <div className="absolute bottom-0 hidden lg:block w-full h-[500px]">
         <ThreeContainer />
       </div>

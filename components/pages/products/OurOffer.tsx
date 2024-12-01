@@ -154,7 +154,7 @@ export default function OurOffer() {
     console.log(params);
   }, [params]);
   return (
-    <section className="w-full flex  flex-col md:flex-row items-center justify-center text-[22px]">
+    <section className="w-full flex gap-3 md:gap-0 flex-col md:flex-row items-center justify-center text-[22px]">
       <h3 className="text-center text-primary font-bold md:hidden">
         {t("title")}
       </h3>

@@ -20,7 +20,7 @@ export default function SpareParts() {
   return (
     <section className="w-full flex justify-center overflow-hidden">
       <div className="pl-8">
-        <div className="flex justify-center mb-4">
+        <div className="flex justify-center mb-4 pr-8">
           <h2
             className={
               title({ color: "primary" }) +

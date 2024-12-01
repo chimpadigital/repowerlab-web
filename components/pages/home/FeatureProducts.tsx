@@ -13,7 +13,7 @@ export default function FeatureProducts({ paragraph }: { paragraph: string }) {
 
   return (
     <div className="">
-      <div className="flex justify-center items-center flex-col pt-[41px] px-4 pb-8 md:pb-[50px]">
+      <div className="flex gap-4 md:gap-0 justify-center items-center flex-col pt-[41px] px-4 pb-8 md:pb-[50px]">
         <h3 className={`${title()} text-primary mr-auto md:mr-0 !block`}>
           {t('title')}
         </h3>
@@ -24,7 +24,7 @@ export default function FeatureProducts({ paragraph }: { paragraph: string }) {
       </div>
       <ScrollProducts />
       <div className="pt-4 mt-4 flex justify-center w-full md:hidden">
-        <Link href="/marketplace" className='w-full mt-6 max-w-[230px] relative overflow-hidden gap-2 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white flex justify-between '>
+        <Link href="/marketplace" className='w-full my-6 max-w-[230px] relative overflow-hidden gap-2 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white flex justify-between '>
           <div className="w-full absolute h-full top-0 left-0 bg-primary">
           </div>
           <span className='relative text-[18px]'>{t('button')}</span>
