@@ -6,6 +6,12 @@ import { ArrowButtonIcon, DownloadIcon } from "@/components/icons";
 import OurOffer from "@/components/pages/products/OurOffer";
 import FeatureProducts from "@/components/pages/home/FeatureProducts";
 import { useTranslations } from "next-intl";
+import { Metadata } from "next";
+import { metadataWindTurbines } from "@/app/getMetaData";
+
+export async function generateMetadata({ params: { locale } }: any): Promise<Metadata> {
+  return metadataWindTurbines(locale);
+}
 
 export default function WindPage() {
   const t = useTranslations('WindTurbines.Hero')
@@ -52,7 +58,7 @@ export default function WindPage() {
         <OurOffer />
       </section>
 
-      <FeatureProducts paragraph={"p1"}/>
+      <FeatureProducts paragraph={"p1"} />
     </>
   );
 }

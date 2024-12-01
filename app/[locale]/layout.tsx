@@ -13,19 +13,14 @@ import { Navbar } from "@/components/pages/shared/navbar";
 import Footer from "@/components/pages/shared/footer";
 import FixedMenu from "@/components/pages/shared/FixedMobMenu";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-
-export const metadata: Metadata = {
-  title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
+import { metadataHome } from "../getMetaData";
 
 
+
+export async function generateMetadata({ params: { locale } }: any): Promise<Metadata> {
+  return metadataHome(locale);
+  
+}
 
 
 export default async function RootLayout({

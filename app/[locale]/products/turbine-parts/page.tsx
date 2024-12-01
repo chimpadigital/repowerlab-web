@@ -8,6 +8,14 @@ import SpareParts from "@/components/pages/products/SpareParts";
 import Support from "@/components/pages/products/Support";
 import Solutions from "@/components/pages/products/Solutions";
 import { useTranslations } from "next-intl";
+
+import { Metadata } from "next";
+import { metadataWindTurbineParts } from "@/app/getMetaData";
+
+export async function generateMetadata({ params: { locale } }: any): Promise<Metadata> {
+  return metadataWindTurbineParts(locale);
+}
+
 export default function page() {
   const t = useTranslations("TurbineParts")
   const breadcrumbs = [

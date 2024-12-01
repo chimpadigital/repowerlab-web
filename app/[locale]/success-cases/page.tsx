@@ -6,6 +6,12 @@ import { title } from "@/components/primitives";
 import { useTranslations } from "next-intl";
 import React from "react";
 
+import { Metadata } from "next";
+import { metadataSuccessCases } from "@/app/getMetaData";
+
+export async function generateMetadata({ params: { locale } }: any): Promise<Metadata> {
+  return metadataSuccessCases(locale);
+}
 
 const SuccessCases = () => {
 
@@ -41,8 +47,8 @@ const SuccessCases = () => {
         }}
       >
         <h2 className="text-primary font-bold text-[36px] mb-4 md:hidden">{t("title")}</h2>
-        <Paragraph className="max-w-[73ch] text-center font-medium md:font-normal text-2xl text-primary hidden md:block" textAccent="text-accent font-medium" text={t.raw("p")}/>
-        <Paragraph className="max-w-[73ch] text-center text-[20px] text-primary px-2 md:hidden" textAccent="text-accent font-bold" text={t.raw("pM")}/>
+        <Paragraph className="max-w-[73ch] text-center font-medium md:font-normal text-2xl text-primary hidden md:block" textAccent="text-accent font-medium" text={t.raw("p")} />
+        <Paragraph className="max-w-[73ch] text-center text-[20px] text-primary px-2 md:hidden" textAccent="text-accent font-bold" text={t.raw("pM")} />
       </article>
       <BlogList />
     </>

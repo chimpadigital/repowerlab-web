@@ -6,6 +6,15 @@ import { Link } from '@/i18n/routing';
 import HeroContainer from '@/components/pages/how-we-work/HeroContainer'
 import { useTranslations } from 'next-intl';
 
+
+import { Metadata } from "next";
+import { metadataHowWeWork } from '@/app/getMetaData';
+
+export async function generateMetadata({ params: { locale } }: any): Promise<Metadata> {
+    return metadataHowWeWork(locale);
+}
+
+
 export default function page() {
     const t = useTranslations("HowWeWork.Banner")
     return (
