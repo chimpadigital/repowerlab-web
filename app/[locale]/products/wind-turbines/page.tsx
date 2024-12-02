@@ -40,7 +40,7 @@ export default function WindPage() {
               <p className="pt-4 md:hidden">
                 {t('pM')}
               </p>
-              <button className="flex w-full mt-6 max-w-[250px] mb-[35px] md:mb-0 relative overflow-hidden gap-3 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white  hover:max-w-[270px] ">
+              {/* <button className="flex w-full mt-6 max-w-[250px] mb-[35px] md:mb-0 relative overflow-hidden gap-3 items-center transition-all duration-[600] py-2 px-6 rounded-full  text-white  hover:max-w-[270px] ">
                 <div className="w-full absolute h-full top-0 left-0 bg-[#272424]/40"></div>
                 <span className="relative text-[16px] sm:text-[18px] whitespace-nowrap">{t("download")}</span>
                 <span className="fill-white md:hidden h-[18px] z-10">
@@ -49,7 +49,7 @@ export default function WindPage() {
                 <div className=" hidden md:block">
                   <ArrowButtonIcon />
                 </div>
-              </button>
+              </button> */}
             </div>
           </div>
         </HeroBreadcrumb>
