@@ -47,7 +47,7 @@ export default function AboutPage() {
       <MapaMundial />
       <WhyChooseRepowerlab />
       <MeetOurTeam />
-      <div className="mt-[22] md:hidden">
+      <div className="mt-[22px] md:hidden">
         <Partners />
       </div>
       <div className="px-4 md:px-6 relative lg:-top-1 mt-10 md:mt-4">
