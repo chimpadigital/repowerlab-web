@@ -105,12 +105,12 @@ export default function Footer() {
                     <Link className="text-primary fill-primary" href="https://www.linkedin.com/company/repowerlab-llc/" target="_blank" rel="noopener noreferrer">
                       <LinkedInIcon width={22} height={22} />
                     </Link>
-                    <Link className="text-primary fill-primary" href="" target="_blank" rel="noopener noreferrer">
+                    <Link className="text-primary fill-primary" href="https://x.com/repowerlab" target="_blank" rel="noopener noreferrer">
                       <TwitterIcon width={22} height={22} />
                     </Link>
-                    <Link className="text-primary fill-primary" href="" target="_blank" rel="noopener noreferrer">
+                    {/* <Link className="text-primary fill-primary" href="" target="_blank" rel="noopener noreferrer">
                       <FacebookIcon width={22} height={22} />
-                    </Link>
+                    </Link> */}
                   </div>
                   <div className="flex pt-4 justify-center lg:hidden">
                     <Link

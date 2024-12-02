@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import {
   FacebookIcon,
   LinkedInIcon,
@@ -6,13 +6,13 @@ import {
   TwitterIcon,
 } from "@/components/icons";
 import { button, title } from "@/components/primitives";
-import { Link } from '@/i18n/routing';
+import { Link } from "@/i18n/routing";
 import React from "react";
 import CountryContactData from "./CountryContactData";
 import { useTranslations } from "next-intl";
 
 const ConnectToday = () => {
-  const t = useTranslations('Connect')
+  const t = useTranslations("Connect");
   return (
     <div className="flex text-left flex-col lg:flex-row pl-3 pr-6 md:px-16 gap-10 mx-auto pb-[21px] lg:pb-14 lg:items-center pt-[41px]">
       <article className="flex flex-[2] flex-col md:flex-row lg:flex-col w-full justify-between lg:justify-normal">
@@ -20,9 +20,7 @@ const ConnectToday = () => {
           <h3 className={`${title()} text-primary mb-3 !block`}>
             {t("title")}
           </h3>
-          <p
-            className={`text-[#444444] hidden  md:block  max-w-[40ch] mb-8 `}
-          >
+          <p className={`text-[#444444] hidden  md:block  max-w-[40ch] mb-8 `}>
             {t("p")}
           </p>
           <p
@@ -40,15 +38,23 @@ const ConnectToday = () => {
             <span>info@repowerlab.com</span>
           </div>
           <div className="mt-10 hidden md:flex gap-3 items-center">
-            <Link className="fill-primary" href="https://www.linkedin.com/company/repowerlab-llc/">
+            <a
+              className="fill-primary"
+              target="_blank"
+              href="https://www.linkedin.com/company/repowerlab-llc/"
+            >
               <LinkedInIcon width={22} height={22} />
-            </Link>
-            <Link className="fill-primary" href="">
+            </a>
+            <a
+              className="fill-primary"
+              target="_blank"
+              href="https://x.com/repowerlab"
+            >
               <TwitterIcon width={22} height={22} />
-            </Link>
-            <Link className="fill-primary" href="">
+            </a>
+            {/* <Link className="fill-primary" target="_blank" href="">
               <FacebookIcon width={22} height={22} />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </article>
