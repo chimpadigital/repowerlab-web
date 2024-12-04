@@ -38,8 +38,6 @@ export default function ProductCard({
     closed: { x: 550 },
     open: { x: 0 },
   };
-
-  console.log(title.length);
   
   return (
     <Link href={href}>
