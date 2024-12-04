@@ -22,7 +22,9 @@ export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?:
         <div className="fixed w-screen md:hidden left-0 top-0 z-[1000] block h-screen" style={{ transform: open ? 'translateX(0%)' : 'translateX(100%)', transition: "1500ms" }}>
             <Image fill quality={100} src="/images/shared/menudesplegable.png" alt='menu' className='absolute object-cover top-0 bg-secondary w-full z-10'></Image>
             <div className="relative text-primary flex justify-between py-8 px-6 z-10 items-center">
-                <LogoRepower />
+                <Link aria-description='Home' href="/">
+                    <LogoRepower />
+                </Link>
                 <CloseIcon onClick={() => { setOpen(false) }} />
             </div>
             <div style={{ height: "calc(100dvh - 130px)" }} className='overflow-y-scroll'>
@@ -60,7 +62,7 @@ export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?:
                                                         <div className="flex flex-col gap-2">
                                                             {
                                                                 item2.child.map((item3, index) => (
-                                                                    <Link key={`link-${index}`} className='block cursor-pointer py-1 select-none text-primary text-[14px]' href={`/${item3.url}`}>
+                                                                    <Link aria-description={item3.title} key={`link-${index}`} className='block cursor-pointer py-1 select-none text-primary text-[14px]' href={`/${item3.url}`}>
                                                                         {(item3.title)}
                                                                     </Link>
                                                                 ))}
@@ -70,7 +72,7 @@ export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?:
 
                                             ) : (
 
-                                                <Link key={`link-${index}`} className='block cursor-pointer   select-none text-primary text-[16px] pt-2' href={`/${item2.url}`}>
+                                                <Link aria-description={item2.title} key={`link-${index}`} className='block cursor-pointer   select-none text-primary text-[16px] pt-2' href={`/${item2.url}`}>
                                                     {(item2.title)}
                                                 </Link>
                                             )
@@ -79,7 +81,7 @@ export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?:
                                 </AccordionItem>
                             </Accordion>
                         ) : (
-                            <Link key={`link-${index}`} className='block cursor-pointer inline-block	select-none text-primary  text-[20px]' href={`/${item.url}`}>
+                            <Link aria-description={item.title} key={`link-${index}`} className='block cursor-pointer inline-block	select-none text-primary  text-[20px]' href={`/${item.url}`}>
                                 {(item.title)}
                             </Link>
                         )}
