@@ -30,11 +30,11 @@ const CircularEconomy = () => {
         >
           <div className="flex justify-end text-white w-full">
             <div className="max-w-[500px] hidden md:block">
-              <h4
+              <h1
                 className={`${title({ size: "md" })} max-w-[16ch] !inline-block`}
               >
                 {t("title")}
-              </h4>
+              </h1>
               <p className="mt-6 pb-10 md:pb-0">
                 {t("p")}
               </p>

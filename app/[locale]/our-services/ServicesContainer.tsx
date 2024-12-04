@@ -34,7 +34,7 @@ export default function ServicesContainer() {
         >
           <div className="flex justify-end text-white w-full">
             <div className="max-w-[500px]">
-              <h4 className={title({ size: "md" })}>{t("Hero.title")}</h4>
+              <h1 className={title({ size: "md" })}>{t("Hero.title")}</h1>
               <p className="mt-6 font-light hidden md:block">
                 {t("Hero.text")}
               </p>

@@ -634,7 +634,7 @@ export const ArrowDiagonal = () => {
       xmlns="http://www.w3.org/2000/svg"
       className="stroke-inherit"
     >
-      <path d="M18 18V5M18 18L2 2M18 18H5" stroke-width="3" />
+      <path d="M18 18V5M18 18L2 2M18 18H5" strokeWidth="3" />
     </svg>
   );
 };

@@ -3,11 +3,15 @@ import { Metadata } from "next";
 export function metadataHome(locale: string): Metadata {
     const metadata = {
         es: {
-            title: "Inicio - RepowerLab",
+            title: "Inicio - Soluciones Energéticas Sostenibles | RepowerLab",
+            site_name:"RepowerLab",
+            image:"https://repowerlab-web.vercel.app/favicon.ico",
             description: "RepowerLab lidera la transformación del sector energético con soluciones innovadoras para activos al final de su vida útil. Desde desmantelamiento hasta reciclaje y reventa, impulsamos la economía circular en la energía renovable con tecnologías avanzadas y prácticas sostenibles que maximizan el valor y la eficiencia.",
         },
         en: {
-            title: "Home - RepowerLab",
+            title: "Home - Sustainable Energy Solutions | RepowerLab",
+            site_name:"RepowerLab",
+            image:"https://repowerlab-web.vercel.app/favicon.ico",
             description: "RepowerLab is transforming the energy sector with innovative solutions for end-of-life energy assets. From decommissioning to recycling and resale, we drive the circular economy in renewable energy with advanced technologies and sustainable practices that maximize value and efficiency.",
         }
     };

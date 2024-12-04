@@ -96,7 +96,7 @@ const CaseDateail = () => {
               <Link href="/success-cases" className="text-white items-center font-medium flex gap-4">
                 <span>
                   <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 7L1 7M1 7L7 1M1 7L7 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M17 7L1 7M1 7L7 1M1 7L7 13" stroke="white" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                 </span>
                 {t("title")}

@@ -35,9 +35,9 @@ export default function AboutPage() {
           position="left"
         >
           <div className="flex mt-[100px] md:mt-10">
-            <h4 className={`text-white mr-auto text-left ${title()}`}>
+            <h1 className={`text-white mr-auto text-left ${title()}`}>
              {t("Hero.heading")}
-            </h4>
+            </h1>
           </div>
         </HeroBreadcrumb>
       </div>
