@@ -19,6 +19,7 @@ export interface ScrollAcordionI {
   }[];
   titleItems?: string;
   id: string;
+  idDesktop: string;
   imgText?: string;
 }
 
@@ -29,30 +30,34 @@ export default function ScrollAcordion({
   imgPosition = "left",
   titleItems,
   id,
+  idDesktop,
   imgText,
 }: ScrollAcordionI) {
   const size = useWindowSize();
   return (
     <>
-      {size[0] < 1000 ? (
-        <section className="pt-[3px] group">
-          <AccordionMob
-            items={items}
-            imgPosition={imgPosition}
-            titleItems={titleItems}
-            id={id}
-            imgText={imgText}
-          />
-        </section>
-      ) : (
-        <ScrollAccordionDesk
+      <section className="pt-[3px] group md:hidden">
+        <AccordionMob
           items={items}
           imgPosition={imgPosition}
           titleItems={titleItems}
           id={id}
           imgText={imgText}
+          idDesktop={idDesktop}
         />
-      )}
+      </section>
+      <div>
+        <div className="hidden md:block">
+          <ScrollAccordionDesk
+            items={items}
+            imgPosition={imgPosition}
+            titleItems={titleItems}
+            id={idDesktop}
+            idDesktop={idDesktop}
+            imgText={imgText}
+          />
+        </div>
+      </div>
     </>
   );
 }
@@ -69,7 +74,7 @@ export function ScrollAccordionDesk({
   const { scrollYProgress } = useScroll({
     target: ref,
   });
-  const t = useTranslations()
+  const t = useTranslations();
 
   const y = useTransform(scrollYProgress, [0, 1], [0, items.length]);
   const opacityOfTitle = useTransform(y, [0.8, 1.8], [1, 0]);
@@ -204,7 +209,7 @@ const ImageMotion = ({ index, src, y, rounded = true }: any) => {
 
 const AccordionMotion = ({ index, el, y, distancia }: any) => {
   const [hidden, setHidden] = useState(true);
-  const t = useTranslations()
+  const t = useTranslations();
 
   const opacity = useTransform(
     y,

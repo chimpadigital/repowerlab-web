@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import ServicesCard from "./ServicesCard";
 import {
   GruaIcono,
@@ -33,6 +33,17 @@ const container = {
 
 const ServicesList = () => {
   const t = useTranslations("Services.cards");
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.location.hash) {
+      const id = window.location.hash.substring(1); // Obtén el ID del hash
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
+
   return (
     <>
       <motion.div
@@ -44,6 +55,7 @@ const ServicesList = () => {
       >
         <ServicesCard
           link="#decommissioning"
+          linkDesktop="#decommissioning-desk"
           svgIcono={<GruaIcono />}
           texto={t.raw("card1.d")}
           textoMobile={t.raw("card1.dM")}
@@ -51,6 +63,7 @@ const ServicesList = () => {
         />
         <ServicesCard
           link="#repowering"
+          linkDesktop="#repowering-desk"
           svgIcono={<TurbinaeolicaIcono />}
           texto={t.raw("card2.d")}
           textoMobile={t.raw("card2.dM")}
@@ -58,6 +71,7 @@ const ServicesList = () => {
         />
         <ServicesCard
           link="#retrofitting"
+          linkDesktop="#retrofitting-desk"
           svgIcono={<RecicladoIcono />}
           texto={t.raw("card3.d")}
           textoMobile={t.raw("card3.dM")}
@@ -65,6 +79,7 @@ const ServicesList = () => {
         />
         <ServicesCard
           link="#blade-recycling"
+          linkDesktop="#blade-recycling-desk"
           svgIcono={<RecicladoCuchillasIcono />}
           texto={t.raw("card4.d")}
           textoMobile={t.raw("card4.dM")}
@@ -72,6 +87,7 @@ const ServicesList = () => {
         />
         <ServicesCard
           link="#inspection"
+          linkDesktop="#inspection-desk"
           svgIcono={<LupaIcono />}
           texto={t.raw("card5.d")}
           textoMobile={t.raw("card5.dM")}
@@ -79,6 +95,7 @@ const ServicesList = () => {
         />
         <ServicesCard
           link="#resale-parts"
+          linkDesktop="#resale-parts-desk"
           svgIcono={<RasaleParts />}
           texto={t.raw("card6.d")}
           textoMobile={t.raw("card6.dM")}
@@ -86,6 +103,7 @@ const ServicesList = () => {
         />
         <ServicesCard
           link="#resale-materials"
+          linkDesktop="#resale-materials-desk"
           svgIcono={<RasaleMaterial />}
           texto={t.raw("card7.d")}
           textoMobile={t.raw("card7.dM")}
@@ -93,6 +111,7 @@ const ServicesList = () => {
         />
         <ServicesCard
           link="#warehousing"
+          linkDesktop="#warehousing-desk"
           svgIcono={<Transporte />}
           texto={t.raw("card8.d")}
           textoMobile={t.raw("card8.dM")}
@@ -118,6 +137,7 @@ const ServicesList = () => {
               texto={t.raw("card1.d")}
               textoMobile={t.raw("card1.dM")}
               titulo={t.raw("card1.title")}
+              linkDesktop="#decommissioning-desk"
             />
           </SwiperSlide>
 
@@ -128,6 +148,7 @@ const ServicesList = () => {
               texto={t.raw("card2.d")}
               textoMobile={t.raw("card2.dM")}
               titulo={t.raw("card2.title")}
+              linkDesktop="#repowering-desk"
             />
           </SwiperSlide>
 
@@ -138,6 +159,7 @@ const ServicesList = () => {
               texto={t.raw("card3.d")}
               textoMobile={t.raw("card3.dM")}
               titulo={t.raw("card3.title")}
+              linkDesktop="#retrofitting-desk"
             />
           </SwiperSlide>
 
@@ -148,6 +170,7 @@ const ServicesList = () => {
               texto={t.raw("card4.d")}
               textoMobile={t.raw("card4.dM")}
               titulo={t.raw("card4.title")}
+              linkDesktop="#blade-recycling"
             />
           </SwiperSlide>
 
@@ -158,6 +181,7 @@ const ServicesList = () => {
               texto={t.raw("card5.d")}
               textoMobile={t.raw("card5.dM")}
               titulo={t.raw("card5.title")}
+              linkDesktop="#inspection-desk"
             />
           </SwiperSlide>
 
@@ -168,6 +192,7 @@ const ServicesList = () => {
               texto={t.raw("card6.d")}
               textoMobile={t.raw("card6.dM")}
               titulo={t.raw("card6.title")}
+              linkDesktop="#resale-parts-desk"
             />
           </SwiperSlide>
 
@@ -178,6 +203,7 @@ const ServicesList = () => {
               texto={t.raw("card7.d")}
               textoMobile={t.raw("card7.dM")}
               titulo={t.raw("card7.title")}
+              linkDesktop="#resale-materials-desk"
             />
           </SwiperSlide>
 
@@ -188,6 +214,7 @@ const ServicesList = () => {
               texto={t.raw("card8.d")}
               textoMobile={t.raw("card8.dM")}
               titulo={t.raw("card8.title")}
+              linkDesktop="#werehousing-desk"
             />
           </SwiperSlide>
         </Swiper>

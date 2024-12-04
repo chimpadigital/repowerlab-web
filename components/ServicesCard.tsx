@@ -18,6 +18,7 @@ interface ServicesCardProps {
   texto: string;
   textoMobile?: string;
   link: string;
+  linkDesktop: string;
 }
 
 const item = {
@@ -33,9 +34,10 @@ const ServicesCard = ({
   svgIcono,
   texto,
   link,
+  linkDesktop,
   textoMobile,
 }: ServicesCardProps) => {
-  const pathname = usePathname()
+  const pathname = usePathname();
   return (
     <motion.div
       variants={item}
@@ -60,13 +62,20 @@ const ServicesCard = ({
         </div>
       </div>
       <div className="absolute p-[26px] inset-0 translate-y-[100%] transition-all group-hover:translate-y-0 bg-[#F4F4F4] h-full w-full flex flex-col justify-between">
-        <p className={`text-desktop text-base hidden md:block`}>
-          {texto}
-        </p>
+        <p className={`text-desktop text-base hidden md:block`}>{texto}</p>
         <p className="text-mobile text-base md:hidden">{textoMobile}</p>
         <Link
           href={`/our-services${link}`}
-          className=" flex items-center gap-2 ml-auto font-semibold mt-2"
+          className=" flex items-center gap-2 ml-auto font-semibold mt-2 md:hidden"
+        >
+          <span>Read More</span>
+          <span className="relative top-0.5">
+            <Arrow />
+          </span>
+        </Link>
+        <Link
+          href={`/our-services${linkDesktop}`}
+          className="  items-center gap-2 ml-auto font-semibold mt-2 hidden md:flex"
         >
           <span>Read More</span>
           <span className="relative top-0.5">

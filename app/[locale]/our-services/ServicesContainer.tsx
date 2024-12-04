@@ -1,7 +1,7 @@
 "use client";
 import HeroBreadcrumb from "@/components/HeroBreadcrumb";
 import { button, title } from "@/components/primitives";
-import React from "react";
+import React, { useEffect } from "react";
 import ScrollAccordion from "@/components/ScrollAccordion";
 import ServicesList from "@/components/ServicesList";
 import {
@@ -18,10 +18,8 @@ import GreenBanner from "@/components/GreenBanner";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
-
-
 export default function ServicesContainer() {
-  const t = useTranslations("Services")
+  const t = useTranslations("Services");
   const breadcrumbs = [
     { label: t.raw("Hero.b1"), href: "/" },
     { label: t.raw("Hero.b2"), href: "/our-services" },
@@ -40,9 +38,7 @@ export default function ServicesContainer() {
               <p className="mt-6 font-light hidden md:block">
                 {t("Hero.text")}
               </p>
-              <p className="mt-6 font-light md:hidden">
-                {t("Hero.textM")}
-              </p>
+              <p className="mt-6 font-light md:hidden">{t("Hero.textM")}</p>
             </div>
           </div>
         </HeroBreadcrumb>
@@ -52,29 +48,49 @@ export default function ServicesContainer() {
       </div>
 
       <section className="md:px-6 pb-2 md:mb-14 px-4">
-        <ScrollAccordion items={decommissioning} id="decommissioning" />
-        <ScrollAccordion items={repowering} id="repowering" />
+        <ScrollAccordion
+          items={decommissioning}
+          id="decommissioning"
+          idDesktop="decommissioning-desk"
+        />
+        <ScrollAccordion
+          items={repowering}
+          id="repowering"
+          idDesktop="repowering-desk"
+        />
         <ScrollAccordion
           items={retrofitting}
           id="retrofitting"
           imgPosition="right"
+          idDesktop="retrofitting-desk"
         />
         <ScrollAccordion
           items={bladeRecycling}
           id="blade-recycling"
           imgPosition="right"
+          idDesktop="blade-recycling-desk"
         />
-        <ScrollAccordion items={inspection} id="inspection" />
-        <ScrollAccordion items={resaleParts} id="resale-parts" />
+        <ScrollAccordion
+          items={inspection}
+          id="inspection"
+          idDesktop="inspection-desk"
+        />
+        <ScrollAccordion
+          items={resaleParts}
+          id="resale-parts"
+          idDesktop="resale-parts-desk"
+        />
         <ScrollAccordion
           items={resaleMaterials}
           id="resale-materials"
           imgPosition="right"
+          idDesktop="resale-materials-desk"
         />
         <ScrollAccordion
           items={warehousing}
           id="warehousing"
           imgPosition="right"
+          idDesktop="warehousing-desk"
         />
       </section>
 

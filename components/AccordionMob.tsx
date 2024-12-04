@@ -24,9 +24,6 @@ export default function AccordionMob({
     indicator: "text-medium pr5 data-[open=true]:rotate-0 -rotate-90 ",
   };
   const items2 = items.slice(1);
-
-
-  console.log(items[0].title.length);
   
   return (
     <div className="pb-2 w-full " id={id}>

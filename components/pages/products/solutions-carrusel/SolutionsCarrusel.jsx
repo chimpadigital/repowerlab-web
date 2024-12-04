@@ -81,7 +81,7 @@ export default function SolutionsCarrusel({ cards }) {
               key={card?.id}
               target="_blank"
               // href={ `/${locale}/${card.href}`}
-              href={card?.href}
+              href={card?.hrefDesk}
               className={`md:border-r-2 ${i === 0 ? "lg:border lg:border-transparent lg:rounded-l-[20px]" : i === cards.length - 1 ? "lg:border lg:border-transparent lg:rounded-r-[20px]" : i === 1 ? "border-l-2" : ""} flex flex-col justify-start items-start pl-4 hover:bg-primary hover:text-secondary   transition-all duration-300 ease-in-out`}
             >
               <div className="overflow-hidden pt-[40px] h-full">
