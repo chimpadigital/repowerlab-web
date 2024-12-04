@@ -30,7 +30,7 @@ export default function FixedMenu() {
             <CircularIcon />
             <small className={`font-bold text-[10px] transition ease duration-[600] ${pathname == '/circular-economy' ? "block" : "hidden"}`}>Circular</small>
           </Link> */}
-          <Link href="/circular-economy" className='flex flex-col cols-span-1 block items-center gap-1 justify-center'>
+          <Link href="/marketplace" className='flex flex-col cols-span-1 block items-center gap-1 justify-center'>
             <CartIcon />
             <small className={`font-bold text-[10px] transition ease duration-[600] ${(pathname == '/en/marketplace'  || pathname == '/es/marketplace') ? "block" : "hidden"}`}>Marketplace</small>
           </Link>
