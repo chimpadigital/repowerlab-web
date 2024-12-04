@@ -40,7 +40,6 @@ const MapaMundial = () => {
                 // onDragStart={() => setIndexLocation(index + 1)}
                 clickable
                 onClick={() => {
-                  console.log("click");
                   setIndexLocation(index + 1);
                   setActiveI(index)
                 }}
