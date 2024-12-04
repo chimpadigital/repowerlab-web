@@ -70,7 +70,7 @@ export default function SolutionsCarrusel({ cards }) {
         </div>
       </div>
       {/* SECCIÓN DEL CARRUSEL PARA DESKTOP */}
-      <div className="hidden md:flex flex-col w-full mt-4  xl:ml-0">
+      <div className="hidden lg:flex flex-col w-full mt-4  xl:ml-0">
         <div
           className={`grid mt-8 shadow-lg rounded-l-[20px] rounded-r-[20px] solutions-box h-[9rem] ${numCols > 5 ? "w-[1827px]" : "w-[1200px]"
             }  font-bold text-lg transition-all duration-700 ease-in-out ${moveLeft} ${moveRight}`}
@@ -92,7 +92,7 @@ export default function SolutionsCarrusel({ cards }) {
         </div>
       </div>
       {/* SECCIÓN CARRUSEL MOBILE */}
-      <div className="block md:hidden">
+      <div className="block lg:hidden">
         <div className="mt-7 rounded-l-lg rounded-r-lg md:rounded-r-none">
           <Swiper
             className="mySwiper-solutions"

@@ -66,7 +66,7 @@ const ServicesCard = ({
         <p className="text-mobile text-base md:hidden">{textoMobile}</p>
         <Link
           href={`/our-services${link}`}
-          className=" flex items-center gap-2 ml-auto font-semibold mt-2 md:hidden"
+          className=" flex items-center gap-2 ml-auto font-semibold mt-2 lg:hidden"
         >
           <span>Read More</span>
           <span className="relative top-0.5">
@@ -75,7 +75,7 @@ const ServicesCard = ({
         </Link>
         <Link
           href={`/our-services${linkDesktop}`}
-          className="  items-center gap-2 ml-auto font-semibold mt-2 hidden md:flex"
+          className="  items-center gap-2 ml-auto font-semibold mt-2 hidden lg:flex"
         >
           <span>Read More</span>
           <span className="relative top-0.5">
