@@ -36,7 +36,7 @@ export default function ScrollAcordion({
   const size = useWindowSize();
   return (
     <>
-      <section className="pt-[3px] group md:hidden">
+      <section className="pt-[3px] group lg:hidden">
         <AccordionMob
           items={items}
           imgPosition={imgPosition}
@@ -47,7 +47,7 @@ export default function ScrollAcordion({
         />
       </section>
       <div>
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <ScrollAccordionDesk
             items={items}
             imgPosition={imgPosition}
