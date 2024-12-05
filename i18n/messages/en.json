@@ -388,6 +388,12 @@
                     "descriptionMobile": "Managing the logistics of transporting large turbine parts via road, rail, and sea, ensuring efficient and safe delivery."
                 }
             }
+        }, 
+        "greenBanner": {
+            "title1": "Join us on this journey to ",
+            "title2": "transform wind energy assets and create a cleaner, greener world.",
+            "p": "Together, we can achieve sustainable growth and make a lasting impact on our planet.",
+            "pM": "Get the latest on circular energy solutions—subscribe now."
         }
     },
     "Newsletter": {
@@ -1090,7 +1096,7 @@
             },
             "fernando":{
                 "description":"Operating from Cali, Colombia, Fernando has over 40 years of experience in business planning, management, and renewable energy development. As a founding partner in multiple ventures, Fernando has promoted over 4 GW of renewable energy projects. His dedication to environmental preservation and community engagement is evident in his active participation in social welfare initiatives, particularly through Rotary.",
-                "descriptionM": "Based in Madrid, Spain, Alfonso brings over 25 years of experience in logistics, wind farm repowering, and renewable energy project development. His achievements include overseeing the decommissioning of over 300 wind turbines in Europe. Alfonso has led the development of numerous renewable onshore and offshore wind farms.",
+                "descriptionM": "Operando desde Cali, Colombia, Fernando tiene más de 40 años de experiencia en planificación de negocios, gestión y desarrollo de energías renovables. Como socio fundador en múltiples emprendimientos, Fernando ha promovido más de 4 GW de proyectos de energías renovables. Su dedicación a la preservación del medio ambiente y al compromiso con la comunidad es evidente en su participación activa en iniciativas de bienestar social, particularmente a través de Rotary.",
                 "position":"Co-Founder & Managing Director of LATAM"
             },
             "victoria":{

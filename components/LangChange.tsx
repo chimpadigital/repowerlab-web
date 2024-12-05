@@ -13,7 +13,7 @@ export default function LangChange() {
     return (
         <>
          {/*Desocultar cuando activemos español*/}
-        {/* <Select
+         {/* <Select
             items={langs}
             aria-labelledby='change language'
             className="max-w-xs"
@@ -64,7 +64,7 @@ export default function LangChange() {
                     </div>
                 </SelectItem>
             )}
-        </Select> */}
+        </Select>  */}
         </>
 
     )
