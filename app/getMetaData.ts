@@ -4,16 +4,18 @@ export function metadataHome(locale: string): Metadata {
     const metadata = {
         es: {
             title: "Inicio - Soluciones Energéticas Sostenibles | RepowerLab",
-            site_name:"RepowerLab",
-            image:"https://repowerlab-web.vercel.app/favicon.ico",
-            description: "RepowerLab lidera la transformación del sector energético con soluciones innovadoras para activos al final de su vida útil. Desde desmantelamiento hasta reciclaje y reventa, impulsamos la economía circular en la energía renovable con tecnologías avanzadas y prácticas sostenibles que maximizan el valor y la eficiencia.",
+            site_name: "RepowerLab",
+            image: "https://repowerlab-web.vercel.app/favicon.ico",
+            description:
+                "RepowerLab transforma el sector energético con soluciones innovadoras para reciclaje, reventa y economía circular en energía renovable.",
         },
         en: {
             title: "Home - Sustainable Energy Solutions | RepowerLab",
-            site_name:"RepowerLab",
-            image:"https://repowerlab-web.vercel.app/favicon.ico",
-            description: "RepowerLab is transforming the energy sector with innovative solutions for end-of-life energy assets. From decommissioning to recycling and resale, we drive the circular economy in renewable energy with advanced technologies and sustainable practices that maximize value and efficiency.",
-        }
+            site_name: "RepowerLab",
+            image: "https://repowerlab-web.vercel.app/favicon.ico",
+            description:
+                "RepowerLab drives energy transformation with innovative solutions for recycling, resale, and a circular economy in renewable energy.",
+        },
     };
 
     return (metadata as any)[locale] || metadata["en"];
@@ -22,11 +24,11 @@ export function metadataHome(locale: string): Metadata {
 export function metadataConnect(locale: string): Metadata {
     const metadata = {
         es: {
-            title: "Conecta - RepowerLab",
+            title: "Conecta con Nosotros - Soluciones Sostenibles | RepowerLab",
             description: "Contacta con RepowerLab para descubrir nuestras soluciones de economía circular y maximizar el valor de tus activos energéticos.",
         },
         en: {
-            title: "Connect - RepowerLab",
+            title: "Connect with Us - Sustainable Solutions | RepowerLab",
             description: "Contact RepowerLab to explore our circular economy solutions and maximize the value of your energy assets.",
         }
     };
@@ -37,12 +39,12 @@ export function metadataConnect(locale: string): Metadata {
 export function metadataCompany(locale: string): Metadata {
     const metadata = {
         es: {
-            title: "Nuestra Empresa - RepowerLab",
-            description: "RepowerLab es una empresa pionera en la transformación del sector energético, ofreciendo soluciones innovadoras para activos energéticos al final de su vida útil, incluyendo desmantelamiento, repotenciación, reacondicionamiento, reciclaje y reventa de infraestructuras de energía renovable.",
+            title: "Nuestra Empresa - Innovación en Energía Renovable | RepowerLab",
+            description: "RepowerLab lidera la transformación energética con soluciones para desmantelamiento, reacondicionamiento y reciclaje de infraestructuras renovables.",
         },
         en: {
-            title: "Our Company - RepowerLab",
-            description: "RepowerLab is a pioneering company transforming the energy sector by providing innovative solutions for end-of-life energy assets, including decommissioning, repowering, retrofitting, recycling, and resale of renewable energy infrastructure.",
+            title: "Our Company - Renewable Energy Innovation | RepowerLab",
+            description: "RepowerLab drives energy transformation with solutions for decommissioning, retrofitting, and recycling renewable energy infrastructures.",
         }
     };
 
@@ -52,12 +54,12 @@ export function metadataCompany(locale: string): Metadata {
 export function metadataCircularEconomy(locale: string): Metadata {
     const metadata = {
         es: {
-            title: "Modelo de Negocio de Economía Circular - RepowerLab",
-            description: "En RepowerLab, nos dedicamos a impulsar la economía circular en el sector de la energía eólica. Nuestras soluciones integrales cubren todo el ciclo de vida de los aerogeneradores, garantizando un uso eficiente y sostenible de los recursos. Descubre nuestros servicios de repotenciación, reacondicionamiento y reciclaje de activos de energía eólica.",
+            title: "Economía Circular en Energía Eólica | RepowerLab",
+            description: "RepowerLab lidera la economía circular en energía eólica con soluciones sostenibles para repotenciación, reacondicionamiento y reciclaje de aerogeneradores.",
         },
         en: {
-            title: "Circular Economy Business Model - RepowerLab",
-            description: "At RepowerLab, we are dedicated to advancing the circular economy in the wind energy sector. Our comprehensive solutions span the entire lifecycle of wind turbines, ensuring that resources are used efficiently and sustainably. Explore our range of services designed to support repowering, refurbishing, and recycling of wind energy assets.",
+            title: "Circular Economy in Wind Energy | RepowerLab",
+            description: "RepowerLab leads the circular economy in wind energy with sustainable solutions for repowering, refurbishing, and recycling wind turbines.",
         }
     };
 
@@ -67,12 +69,12 @@ export function metadataCircularEconomy(locale: string): Metadata {
 export function metadataHowWeWork(locale: string): Metadata {
     const metadata = {
         es: {
-            title: "Así Trabajamos - RepowerLab",
-            description: "Comienza tu viaje con una consulta personalizada. Descubre cómo trabajamos en RepowerLab para ofrecer soluciones innovadoras y sostenibles en el sector de la energía renovable.",
+            title: "Nuestro Proceso de Trabajo - Soluciones Sostenibles | RepowerLab",
+            description: "Descubre cómo en RepowerLab desarrollamos soluciones sostenibles en energía renovable. Consulta personalizada para transformar tus activos energéticos.",
         },
         en: {
-            title: "This is How We Work - RepowerLab",
-            description: "Start your journey with a personalized consultation. Discover how RepowerLab works to provide innovative and sustainable solutions in the renewable energy sector.",
+            title: "Our Process - Sustainable Solutions | RepowerLab",
+            description: "Learn how RepowerLab delivers sustainable renewable energy solutions. Start with a personalized consultation to transform your energy assets.",
         }
     };
 
@@ -82,12 +84,12 @@ export function metadataHowWeWork(locale: string): Metadata {
 export function metadataServices(locale: string): Metadata {
     const metadata = {
         es: {
-            title: "Servicios - RepowerLab",
-            description: "RepowerLab ofrece una gama completa de servicios para maximizar el valor de tus activos energéticos. Desde desmantelamiento de parques eólicos y reacondicionamiento de turbinas hasta reventa, reciclaje de aspas y soporte experto en instalación, garantizamos precisión, sostenibilidad y rendimiento óptimo en cada etapa.",
+            title: "Servicios de Energía Renovable | RepowerLab",
+            description: "Soluciones integrales en energía renovable: desmantelamiento, reacondicionamiento, reventa, reciclaje de aspas y soporte experto en instalación. Optimiza el valor de tus activos con RepowerLab.",
         },
         en: {
-            title: "Services - RepowerLab",
-            description: "RepowerLab offers a full range of services to maximize the value of your energy assets. From wind farm decommissioning and turbine retrofitting to resale, blade recycling, and expert installation support, we ensure precision, sustainability, and optimized performance at every stage.",
+            title: "Renewable Energy Services | RepowerLab",
+            description: "Comprehensive renewable energy solutions: decommissioning, retrofitting, resale, blade recycling, and expert installation support. Maximize the value of your assets with RepowerLab.",
         }
     };
 
@@ -97,12 +99,12 @@ export function metadataServices(locale: string): Metadata {
 export function metadataSuccessCases(locale: string): Metadata {
     const metadata = {
         es: {
-            title: "Casos de Éxito - RepowerLab",
-            description: "Descubre los éxitos de RepowerLab en desmantelamiento, reacondicionamiento y reventa de turbinas eólicas reacondicionadas, destacando nuestras soluciones de economía circular para el sector energético.",
+            title: "Casos de Éxito en Energía Renovable | RepowerLab",
+            description: "Explora los logros de RepowerLab en desmantelamiento, reacondicionamiento y reventa de turbinas eólicas, promoviendo soluciones sostenibles en economía circular.",
         },
         en: {
-            title: "Success Cases - RepowerLab",
-            description: "Discover RepowerLab’s success in decommissioning, retrofitting, and reselling refurbished wind turbines, highlighting our circular economy solutions for the energy sector.",
+            title: "Renewable Energy Success Stories | RepowerLab",
+            description: "Explore RepowerLab’s achievements in decommissioning, retrofitting, and reselling wind turbines, driving sustainable circular economy solutions.",
         }
     };
 
@@ -112,12 +114,12 @@ export function metadataSuccessCases(locale: string): Metadata {
 export function metadataWindTurbineParts(locale: string): Metadata {
     const metadata = {
         es: {
-            title: "Repuestos para Turbinas Eólicas - RepowerLab",
-            description: "RepowerLab ofrece una amplia gama de repuestos para turbinas eólicas para apoyar las operaciones de mantenimiento y reparación. Nuestro inventario incluye componentes nuevos y reacondicionados, asegurando que los clientes tengan acceso a las piezas necesarias para mantener sus turbinas funcionando eficientemente.",
+            title: "Repuestos de Turbinas Eólicas | Calidad Garantizada - RepowerLab",
+            description: "Encuentra repuestos nuevos y reacondicionados para turbinas eólicas en RepowerLab. Garantizamos componentes de calidad para optimizar el mantenimiento y la eficiencia de tus equipos.",
         },
         en: {
-            title: "Wind Turbines Spare Parts - RepowerLab",
-            description: "RepowerLab supplies a wide range of turbine parts to support maintenance and repair operations. Our inventory includes both new and refurbished components, ensuring that clients have access to the parts they need to keep their turbines running efficiently.",
+            title: "Wind Turbine Spare Parts | Quality Assured - RepowerLab",
+            description: "Discover new and refurbished wind turbine parts at RepowerLab. We provide high-quality components to optimize maintenance and ensure peak turbine efficiency.",
         }
     };
 
@@ -127,12 +129,12 @@ export function metadataWindTurbineParts(locale: string): Metadata {
 export function metadataWindTurbines(locale: string): Metadata {
     const metadata = {
         es: {
-            title: "Turbinas Eólicas - RepowerLab",
-            description: "RepowerLab ofrece turbinas eólicas, tanto **nuevas como reacondicionadas**, junto con **materiales reciclados** de parques desmantelados para apoyar una economía circular. Nuestro **Soporte de Compras** brinda asesoría experta y asistencia regulatoria, mientras que el **Soporte de Instalación** garantiza una configuración fluida con gestión de proyectos y apoyo técnico. Además, ofrecemos servicios de **almacenaje y logística** para un manejo eficiente de los componentes.",
+            title: "Turbinas Eólicas y Servicios Especializados - RepowerLab",
+            description: "En RepowerLab ofrecemos turbinas eólicas nuevas y reacondicionadas, además de materiales reciclados de parques desmantelados para promover la economía circular. Contamos con Soporte de Compras para asesoría experta y asistencia regulatoria, Soporte de Instalación para asegurar una puesta en marcha sin problemas, y servicios de almacenaje y logística para un manejo eficiente de componentes.",
         },
         en: {
-            title: "Wind Turbines - RepowerLab",
-            description: "RepowerLab provides wind turbines, both **unused and refurbished**, alongside **recycled materials** from decommissioned farms to support a circular economy. Our **Purchasing Support** offers expert advice and regulatory assistance, while **Installation Support** ensures smooth setup with project management and technical aid. Additionally, we offer **warehousing and logistics** services for efficient component handling.",
+            title: "Wind Turbines & Specialized Services - RepowerLab",
+            description: "RepowerLab offers new and refurbished wind turbines, along with recycled materials from decommissioned farms to promote a circular economy. Our Purchasing Support provides expert advice and regulatory assistance, Installation Support ensures seamless setup with project management and technical aid, and we offer warehousing and logistics services for efficient component handling.",
         }
     };
 

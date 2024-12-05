@@ -77,7 +77,7 @@ export default function ProductCard({
           >
             <div className="text-[24px] font-normal relative pe-4 flex">
               <div className="flex w-full justify-between">
-                <Title
+                <Title h1={false}
                   className={``}
                   title={title}
                 />
