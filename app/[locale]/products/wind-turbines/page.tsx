@@ -30,7 +30,7 @@ export default function WindPage() {
         >
           <div className="flex md:justify-end text-white w-full pb-[40px] md:pb-0" >
             <div className="max-w-[500px] pt-4 md:pt-0">
-              <h4 className={title({ size: "md" })}>{t("title")}</h4>
+              <h1 className={title({ size: "md" })}>{t("title")}</h1>
               <article className="hidden md:block">
                 <Paragraph
                   text={t.raw("p")}

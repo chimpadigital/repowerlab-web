@@ -30,9 +30,9 @@ const SuccessCases = () => {
           position="left"
         >
           <div className="flex flex-col text-white h-full justify-center">
-            <h4 className={`text-white mr-auto text-left ${title()}`}>
+            <h1 className={`text-white mr-auto text-left ${title()}`}>
               {t("title")}
-            </h4>
+            </h1>
             <Paragraph className="mt-7 text-[20px] md:text-xl hidden md:block" text={t.raw("subtitle")}></Paragraph>
             <Paragraph className="mt-7 text-[18px] md:text-xl md:hidden" text={t.raw("subtitleM")}></Paragraph>
           </div>

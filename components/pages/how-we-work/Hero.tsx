@@ -63,7 +63,7 @@ export default function Hero() {
             ))}
           </Breadcrumbs>
           <div className="col-span-2 flex justify-center">
-            <h5 className={"text-center pt-12 " + title({ color: "white" })}>{t("title")}</h5>
+            <h1 className={"text-center pt-12 " + title({ color: "white" })}>{t("title")}</h1>
           </div>
 
 
@@ -128,7 +128,7 @@ const Vector = (props: any) => {
     // </motion.svg>
 
     <motion.svg {...props} width="5363" height="478" viewBox="0 0 5363 478" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <motion.path strokeDasharray="0 1" style={{ pathLength: props.scrollYProgress }} d="M5 104.721C422 0.499939 654.5 65.4999 654.5 65.4999C654.5 65.4999 843 101.5 1174 363C1505 624.5 1621.95 101.919 1950.39 104.721C2272.16 107.465 2298.13 514.896 2614 453.5C2834.09 410.721 2974.49 161.865 3198.5 152.5C3437.63 142.503 3478.65 362.479 3709.89 424.221C4161.8 544.883 4401.02 -108.791 4844.39 40.2209C5079.09 119.1 5348.89 424.221 5348.89 424.221" stroke="url(#paint0_linear_2_2)" stroke-width="36" />
+      <motion.path strokeDasharray="0 1" style={{ pathLength: props.scrollYProgress }} d="M5 104.721C422 0.499939 654.5 65.4999 654.5 65.4999C654.5 65.4999 843 101.5 1174 363C1505 624.5 1621.95 101.919 1950.39 104.721C2272.16 107.465 2298.13 514.896 2614 453.5C2834.09 410.721 2974.49 161.865 3198.5 152.5C3437.63 142.503 3478.65 362.479 3709.89 424.221C4161.8 544.883 4401.02 -108.791 4844.39 40.2209C5079.09 119.1 5348.89 424.221 5348.89 424.221" stroke="url(#paint0_linear_2_2)" strokeWidth="36" />
       <defs>
         <linearGradient id="paint0_linear_2_2" x1="5" y1="238.9" x2="5348.89" y2="238.9" gradientUnits="userSpaceOnUse">
           <stop offset="0.0805917" stop-color="white" />
