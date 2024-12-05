@@ -34,7 +34,7 @@ export default function page() {
           <div className="flex justify-end text-white w-full">
             <div className="max-w-[500px]">
               <h4
-                className={`${title({ size: "md" })} max-w-[12ch] md:max-w-full !inline-block`}
+                className={`${title({ size: "md" })} max-w-[16ch] md:max-w-full !inline-block`}
               >
                 {t("Hero.title")}
               </h4>

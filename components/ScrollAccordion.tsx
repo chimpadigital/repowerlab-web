@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "@/i18n/routing";
 import { button } from "./primitives";
-import { useWindowSize } from "@/utils/useResize";
 import AccordionMob from "./AccordionMob";
 import { useTranslations } from "next-intl";
 
@@ -33,7 +32,6 @@ export default function ScrollAcordion({
   idDesktop,
   imgText,
 }: ScrollAcordionI) {
-  const size = useWindowSize();
   return (
     <>
       <section className="pt-[3px] group lg:hidden">
