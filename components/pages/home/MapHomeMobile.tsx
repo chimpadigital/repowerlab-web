@@ -30,7 +30,7 @@ const CardM = ({ title, number }: { title: string, number: number }) => {
                 background: "#4B4A4A50",
                 backdropFilter: "blur(10px)"
             }}>
-            <p className="font-light text-[17px]">{title}</p>
+            <p className="font-light text-[17px] text-center uppercase">{title}</p>
             <p className="font-bold text-[22px]">{number}</p>
         </article>
     )

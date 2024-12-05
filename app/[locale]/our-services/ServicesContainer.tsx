@@ -100,15 +100,13 @@ export default function ServicesContainer() {
             <div className="flex-1 gap-10 text-start flex items-center justify-between">
               <div className="flex-1">
                 <h4 className={`${title()} !block mb-3 max-w-[40ch]`}>
-                  Join us on this journey to{" "}
+                  {t("greenBanner.title1")}{" "}
                   <span className={`${title()} text-secondary`}>
-                    transform wind energy assets and create a cleaner, greener
-                    world.
+                    {t("greenBanner.title2")}
                   </span>
                 </h4>
                 <p className="max-w-[40ch] font-light mt-1 md:mt-14">
-                  Together, we can achieve sustainable growth and make a lasting
-                  impact on our planet.
+                  {t("greenBanner.p")}
                 </p>
               </div>
             </div>
