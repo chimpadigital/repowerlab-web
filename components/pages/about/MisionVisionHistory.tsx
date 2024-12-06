@@ -32,13 +32,9 @@ const MisionVisionHistory = () => {
             {t("mission.title")}
           </h4>
           {isDesktop ? (
-            <p className="mt-3 md:mt-6 text-[#444444]">
-              {t("mission.p")}
-            </p>
+            <p className="mt-3 md:mt-6 text-[#444444]">{t("mission.p")}</p>
           ) : (
-            <p className="mt-3 md:mt-6 text-[#444444]">
-              {t("mission.pM")}
-            </p>
+            <p className="mt-3 md:mt-6 text-[#444444]">{t("mission.pM")}</p>
           )}
         </div>
         <div className="absolute origin-bottom-right inset-0 bg-gradient-to-r from-white to-secondary/50 rounded-[20px] -translate-y-6 md:translate-y-0 transition-all group-hover:md:-rotate-6 group-hover:md:-translate-y-14 group-hover:md:translate-x-3 z-[0]"></div>
@@ -61,12 +57,11 @@ const MisionVisionHistory = () => {
           >
             {t("vision.title")}
           </h4>
-          <p className="mt-3 md:mt-6 text-[#444444] md:hidden">
-            {t("vision.pM")}
-          </p>
-          <p className="mt-3 md:mt-6 text-[#444444] hidden md:block">
-            {t("vision.p")}
-          </p>
+          {isDesktop ? (
+            <p className="mt-3 md:mt-6 text-[#444444]">{t("vision.pM")}</p>
+          ) : (
+            <p className="mt-3 md:mt-6 text-[#444444] ">{t("vision.p")}</p>
+          )}
         </div>
         <div className="absolute inset-0 bg-gradient-to-r -translate-y-6 md:translate-y-0 from-white to-secondary/50 rounded-[20px] z-[0]"></div>
       </motion.div>
@@ -87,12 +82,15 @@ const MisionVisionHistory = () => {
           >
             {t("history.title")}
           </h4>
-          <p className="mt-3 md:mt-6 text-[#444444] md:hidden">
-            {t("history.pM")}
-          </p>
-          <p className="mt-3 md:mt-6 text-[#444444] hidden md:block">
-            {t("history.p")}
-          </p>
+          {isDesktop ? (
+            <p className="mt-3 md:mt-6 text-[#444444]">
+              {t("history.p")}
+            </p>
+          ) : (
+            <p className="mt-3 md:mt-6 text-[#444444]">
+              {t("history.pM")}
+            </p>
+          )}
         </div>
         <div className="absolute origin-bottom-left inset-0 bg-gradient-to-r from-white to-secondary/50 rounded-[20px] -translate-y-6 md:translate-y-0 transition-all group-hover:md:rotate-6 group-hover:md:-translate-y-14 group-hover:md:translate-x-8 z-[0]"></div>
       </motion.div>

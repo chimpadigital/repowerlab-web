@@ -51,7 +51,7 @@ const TeamMemberCard = ({
         <div className="opacity-0 transition-all mt-3 group-hover:opacity-100 ">
           {isDesktop ? (
             <p
-              className="font-[Mulish] text-sm md:text-base cursor-default hidden md:block"
+              className="font-[Mulish] text-sm md:text-base cursor-default"
               style={{
                 transitionBehavior: "allow-discrete",
               }}
@@ -60,7 +60,7 @@ const TeamMemberCard = ({
             </p>
           ) : (
             <p
-              className="font-[Mulish] text-sm md:text-base cursor-default  md:hidden"
+              className="font-[Mulish] text-sm md:text-base cursor-default"
               style={{
                 transitionBehavior: "allow-discrete",
               }}
