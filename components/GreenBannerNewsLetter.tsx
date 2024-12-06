@@ -6,9 +6,10 @@ import { useReCaptcha } from "next-recaptcha-v3";
 import axios from "axios";
 import { IsotipoRepowerlab } from "./icons";
 import { useTranslations } from "next-intl";
+import { useWindowSize } from "@/utils/useResize";
 
 const GreenBannerNewsLetter = () => {
-  const t = useTranslations('Newsletter')
+  const t = useTranslations("Newsletter");
   const [errorSubstribe, setErrorSubscribe] = useState("");
   const [subscriptionSuccess, setSubscriptionSuccess] = useState(false);
   const [isSending, setIsSending] = useState(false);
@@ -51,6 +52,7 @@ const GreenBannerNewsLetter = () => {
     }
     setIsSending(false);
   };
+  const isDesktop = useWindowSize();
 
   return (
     <GreenBanner>
@@ -58,17 +60,22 @@ const GreenBannerNewsLetter = () => {
         <div className="flex-1 text-start flex items-center justify-between">
           <div className="flex-1">
             <h4 className={`${title()} !block md:mb-1 leading-none	`}>
-              {t('title1')}
+              {t("title1")}
             </h4>
-            <h4 className={`${title()} text-secondary leading-none !block mb-4 md:mb-10`}>
-              {t('title2')}
+            <h4
+              className={`${title()} text-secondary leading-none !block mb-4 md:mb-10`}
+            >
+              {t("title2")}
             </h4>
-            <p className="max-w-[52ch] hidden md:block font-light">
-              {t('p')}
-            </p>
-            <p className="max-w-[52ch] font-light md:hidden block">
-              {t('pM')}
-            </p>
+            {isDesktop ? (
+              <p className="max-w-[52ch] hidden md:block font-light">
+                {t("p")}
+              </p>
+            ) : (
+              <p className="max-w-[52ch] font-light md:hidden block">
+                {t("pM")}
+              </p>
+            )}
           </div>
         </div>
         <form
@@ -81,7 +88,7 @@ const GreenBannerNewsLetter = () => {
               name="email"
               aria-label="Email for subscription"
               required
-              placeholder={t.raw('placeholder')}
+              placeholder={t.raw("placeholder")}
               className="md:ml-auto rounded-full focus-within:outline-2 border-white border-2  focus:outline-none focus:border-accent  placeholder-gray-400 transition-all duration-300  bg-[#C5C5C5]/15 py-[10px] px-8 backdrop-blur-sm placeholder:text-white placeholder:font-light w-full"
             />
             {errorSubstribe && (
