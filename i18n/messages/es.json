@@ -39,8 +39,8 @@
     "i1": "Servicios",
     "i2": {
       "title": "Productos",
-      "j1": "Turbinas eólicas sin uso",
-      "j2": "Turbinas eólicas reacondicionadas",
+      "j1": "Turbinas eólicas",
+      "j2": "Repuestos para turbinas eólicas",
       "j3": "Turbinas eólicas usadas",
       "j4": "Piezas de repuesto para turbinas eólicas"
     },
