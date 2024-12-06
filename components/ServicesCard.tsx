@@ -68,7 +68,7 @@ const ServicesCard = ({
           href={`/our-services${link}`}
           className=" flex items-center gap-2 ml-auto font-semibold mt-2 lg:hidden"
         >
-          <span>Read More</span>
+          <span>{pathname.includes("en") ? "Read More" : "Leer más"}</span>
           <span className="relative top-0.5">
             <Arrow />
           </span>
@@ -77,7 +77,7 @@ const ServicesCard = ({
           href={`/our-services${linkDesktop}`}
           className="  items-center gap-2 ml-auto font-semibold mt-2 hidden lg:flex"
         >
-          <span>Read More</span>
+          <span>{pathname.includes("en") ? "Read More" : "Leer más"}</span>
           <span className="relative top-0.5">
             <Arrow />
           </span>
