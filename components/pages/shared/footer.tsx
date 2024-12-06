@@ -50,7 +50,7 @@ export default function Footer() {
 
             <div className="grid grid-cols-3 gap-12 ">
               <div className="lg:col-span-1 col-span-3 hidden lg:block">
-                <h5 className={subtitle({ colors: "primary" })}>Menu</h5>
+                <h2 className={subtitle({ colors: "primary" })}>Menu</h2>
                 <div className="pt-[30px]">
                   <div className="flex flex-col ">
                     {linksMenu.map((el, i) => (
@@ -82,7 +82,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="lg:col-span-1 col-span-3 hidden lg:block">
-                <h5 className={subtitle({ colors: "primary" })}>Products</h5>
+                <h2 className={subtitle({ colors: "primary" })}>Products</h2>
                 <div className="pt-[30px]">
                   <div className="flex flex-col">
                     {linksProducts.map((el, i) => (
@@ -99,7 +99,7 @@ export default function Footer() {
               </div>
 
               <div className="lg:col-span-1 col-span-3">
-                <h5 className={subtitle({ colors: "primary" }) + " hidden lg:block"}>Follow</h5>
+                <h2 className={subtitle({ colors: "primary" }) + " hidden lg:block"}>Follow</h2>
                 <div className="pt-[60px]">
                   <div className="flex lg:flex-col gap-[30px] justify-center lg:justify-start lg:ps-6">
                     <Link className="text-primary fill-primary" href="https://www.linkedin.com/company/repowerlab-llc/" target="_blank" rel="noopener noreferrer">

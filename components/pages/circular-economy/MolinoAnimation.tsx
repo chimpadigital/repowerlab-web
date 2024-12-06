@@ -22,12 +22,12 @@ export default function MolinoAnimation() {
     return (
         <section className="w-full flex justify-center">
             <div className="w-full relative" ref={ref} style={{ height: `${dataMolino.length * 100}vh` }}>
-                <h4 className={title({ color: "secondary", size: "md", weight: "normal" }) + " md:hidden !font-[600] px-6 absolute top-[21px]"}>
+                <h2 className={title({ color: "secondary", size: "md", weight: "normal" }) + " md:hidden !font-[600] px-6 absolute top-[21px]"}>
                     <span className='text-primary'>
                         {t("title")} {" "}
                     </span>
                     {t("title2")}
-                </h4>
+                </h2>
                 <div className="h-[100vh] items-center flex justify-center  sticky top-0">
                     <Image width={400} height={400} alt="bg" className='absolute left-0 bottom-[-100px]' src="/images/circular-economy/bg_wind.png"></Image>
                     <div className="container px-6">
@@ -38,12 +38,12 @@ export default function MolinoAnimation() {
                             </div>
                             <div className="col-span-1">
                                 <div className='w-full md:w-[420px]'>
-                                    <h4 className={title({ color: "secondary", size: "md", weight: "normal" }) + " hidden md:block"}>
+                                    <h3 className={title({ color: "secondary", size: "md", weight: "normal" }) + " hidden md:block"}>
                                         <span className='text-primary'>
                                             {t("title")} {" "}
                                         </span>
                                         {t("title2")}
-                                    </h4>
+                                    </h3>
                                     <div className="h-[45vh] w-full relative md:mt-8">
                                         {
                                             dataMolino.map((el, i) => (

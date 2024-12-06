@@ -130,11 +130,11 @@ export function metadataWindTurbines(locale: string): Metadata {
     const metadata = {
         es: {
             title: "Turbinas Eólicas y Servicios Especializados - RepowerLab",
-            description: "En RepowerLab ofrecemos turbinas eólicas nuevas y reacondicionadas, además de materiales reciclados de parques desmantelados para promover la economía circular. Contamos con Soporte de Compras para asesoría experta y asistencia regulatoria, Soporte de Instalación para asegurar una puesta en marcha sin problemas, y servicios de almacenaje y logística para un manejo eficiente de componentes.",
+            description: "En RepowerLab ofrecemos turbinas eólicas nuevas y reacondicionadas, materiales reciclados de parques desmantelados, y servicios de soporte en compras, instalación, logística y almacenaje.",
         },
         en: {
             title: "Wind Turbines & Specialized Services - RepowerLab",
-            description: "RepowerLab offers new and refurbished wind turbines, along with recycled materials from decommissioned farms to promote a circular economy. Our Purchasing Support provides expert advice and regulatory assistance, Installation Support ensures seamless setup with project management and technical aid, and we offer warehousing and logistics services for efficient component handling.",
+            description: "RepowerLab offers new and refurbished wind turbines, recycled materials from decommissioned farms, and support services in purchasing, installation, logistics, and warehousing.",
         }
     };
 

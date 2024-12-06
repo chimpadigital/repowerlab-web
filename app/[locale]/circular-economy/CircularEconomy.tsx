@@ -40,11 +40,11 @@ const CircularEconomy = () => {
               </p>
             </div>
             <div className="max-w-[500px] md:hidden">
-              <h4
+              <h2
                 className={`${title({ size: "md" })} max-w-[16ch] !inline-block`}
               >
                 {t("titleM")}
-              </h4>
+              </h2>
               <p className="mt-6 pb-10 md:pb-0">
                 {t("pM")}
               </p>
@@ -60,18 +60,18 @@ const CircularEconomy = () => {
           <div className="flex w-full flex-col lg:flex-row md:items-center ">
             <div className="flex-1 gap-10 text-start flex items-center justify-between">
               <div className="flex-1">
-                <h4 className={`${title()} md:block mb-3 hidden ${pathname.includes('/es')? "max-w-[25ch]" : "max-w-[20ch]" }  leading-[3rem]`}>
+                <h2 className={`${title()} md:block mb-3 hidden ${pathname.includes('/es')? "max-w-[25ch]" : "max-w-[20ch]" }  leading-[3rem]`}>
                 {t("banner.title")}{" "}
                   <span className={`${title()} text-secondary`}>
                   {t("banner.title2")}
                   </span>
-                </h4>
-                <h4 className={`text-[20px] font-bold block md:hidden mb-3 leading-[2rem]`}>
+                </h2>
+                <h2 className={`text-[20px] font-bold block md:hidden mb-3 leading-[2rem]`}>
                 {t("banner.titleM")}{" "}
                   <span className={` text-secondary`}>
                   {t("banner.title2M")}
                   </span>
-                </h4>
+                </h2>
                 <p className="max-w-[100ch] font-light text-[18px] mt-6 md:hidden ">
                 {t("banner.pM")}
                 </p>

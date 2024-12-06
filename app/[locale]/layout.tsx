@@ -38,8 +38,8 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <Providers>
             <div className="relative flex flex-col mt-[20px]  lg:mt-[40px]">
-              <Navbar />
               <main className="mx-auto flex-grow w-full">{children}</main>
+              <Navbar />
               <FixedMenu />
               <Footer />
 

@@ -19,8 +19,8 @@ export default function Hero() {
                     <div className="grid grid-cols-2 h-full md:ps-[2rem]">
                         <div className="col-span-2 lg:col-span-1 h-full flex flex-col justify-center">
                             <div className="max-w-[600px]">
-                                <Title  className={title({ color: "white", size: "md" }) + " hidden leading-[1.2] md:block"} title={tH.raw('title')}></Title>
                                 <Title h1 className={title({ color: "white", size: "md" }) + " md:hidden w-[80%]"} title={tH.raw('titleMob')}></Title>
+                                <Title  className={title({ color: "white", size: "md" }) + " hidden leading-[1.2] md:block"} title={tH.raw('title')}></Title>
                             </div>
                             <div className="hidden md:flex gap-[25px] pt-8">
                                 <Link href="#products" className={`${button({ whiteLine: true })} block`}>{tH('btn1')} </Link>
