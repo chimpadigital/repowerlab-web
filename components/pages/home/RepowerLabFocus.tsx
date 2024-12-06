@@ -23,7 +23,7 @@ export default function RepowerLabFocus() {
             />
           </article>
           <article className="md:hidden text-base">
-            <Paragraph textAccent="text-accent" className="text-[18px] leading-7" text={t.raw("paragraphMobile")}></Paragraph>
+            <Paragraph strongClass="!text-accent" textAccent="!text-accent"  className="text-[18px] leading-7" text={t.raw("paragraphMobile")}></Paragraph>
 
           </article>
         </div>
@@ -37,9 +37,9 @@ export default function RepowerLabFocus() {
               src={"/images/home/CircularEconomy.webp"}
             ></Image>
           </div>
-          <div className="lg:col-span-1 col-span-2 flex flex-col items-center justify-center text-primary text-[22px] font-light">
-            <Paragraph text={t.raw("paragraph1")} textAccent="!text-accent !font-normal"></Paragraph>
-            <Paragraph className="pt-2" text={t.raw("paragraph2")} textAccent="!text-accent !font-normal"></Paragraph>     
+          <div className="lg:col-span-1 col-span-2 flex flex-col items-center justify-center text-primary text-[22px] ">
+            <Paragraph text={t.raw("paragraph1")} strongClass="!text-accent"  textAccent="!text-accent !font-normal"></Paragraph>
+            <Paragraph className="pt-2" strongClass="!text-accent" text={t.raw("paragraph2")}  textAccent="!text-accent !font-normal"></Paragraph>     
           </div>
         </div>
       </div>

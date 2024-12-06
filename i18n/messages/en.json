@@ -4,6 +4,36 @@
         "no-video-support": "Your browser does not support video playback.",
         "connect": "Connect"
     },
+    "Footer":{
+        "follow":"Follow",
+        "products":"Products",
+        "menu": "Menu",
+        "menuLinks":{
+            "i1":"Services",
+            "i2":{
+                "title":"Circular Economy",
+                "j1":"Our Business Model",
+                "j2":"This is how we work"
+            },
+            "i3":"Marketplace",
+            "i4":{
+                "title":"Resources",
+                "j1":"Success Cases"
+            },
+            "i5":{
+                "title":"About us",
+                "j1":"Our Company",
+                "j2":"Contact us"
+            }
+        },
+        "productsLink":{
+            "i1":"Unused wind turbines",
+            "i2":"Refurbished wind turbines",
+            "i3":"Used wind turbine",
+            "i4":"Wind turbine spare parts"
+        }
+        
+    },
     "Navbar": {
         "paragraph":"RepowerLab is a pioneering company transforming the wind energy sector by providing innovative solutions for end-of-life.",
         "i1":"Services",
@@ -1153,5 +1183,8 @@
             "p":"RepowerLab was born as a spin-off of Repowering Solutions, a company with more than 15 years of experience in the dismantling, retrofitting, recycling, buying and selling of wind turbines in Europe. Today, with a global presence, we execute projects in 20 countries through our three international offices.",
             "pM":"RepowerLab started as a spin-off of Repowering Solutions, with over 15 years of experience in wind turbine dismantling and recycling. We now operate globally, executing projects in 20 countries through three international offices."
         }
+    },
+    "MarketPlace":{
+        "title":"Marketplace\\n under construction"
     }
 }

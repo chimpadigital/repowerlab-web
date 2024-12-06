@@ -1,8 +1,11 @@
+import Title from '@/atoms/Title'
 import HeroBreadcrumb from '@/components/HeroBreadcrumb'
 import { title } from '@/components/primitives'
+import { useTranslations } from 'next-intl'
 import React from 'react'
 
 export default function page() {
+    const t = useTranslations("Marketplace")
     return (
         <section className="px-6">
             <HeroBreadcrumb
@@ -11,10 +14,9 @@ export default function page() {
                 position="left"
             >
                 <div className="flex flex-col w-full flex  min-h-[70vh] text-white mt-10">
-                    <h1 className={`text-white  pt-[15vh] mr-auto text-left ${title()}`}>
-                        Marketplace <br />
-                        under construction
-                    </h1>
+                    <Title title={t.raw('title')} className={`text-white  pt-[15vh] mr-auto text-left ${title()}`}>
+                        
+                    </Title>
                 </div>
             </HeroBreadcrumb>
         </section>
