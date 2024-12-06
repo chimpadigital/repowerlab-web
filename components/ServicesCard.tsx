@@ -11,6 +11,7 @@ import {
 import { Link } from "@/i18n/routing";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
 
 interface ServicesCardProps {
   titulo: string;
@@ -38,12 +39,14 @@ const ServicesCard = ({
   textoMobile,
 }: ServicesCardProps) => {
   const pathname = usePathname();
+  const locale = useLocale()
   return (
     <motion.div
       variants={item}
-      className="relative overflow-hidden group shadow-[5px_5px_4px_0px_#0000001A] rounded-[10px] bg-[#F4F4F4] w-fit text-primary md:min-h-[280px] px-6 pb-6 h-full"
+      className="relative overflow-hidden group shadow-[5px_5px_4px_0px_#0000001A] rounded-[10px] bg-[#F4F4F4] w-fit text-primary px-6 pb-6 h-full"
       style={{
         width: "min(100%, 307px)",
+        minHeight: locale == "es" ? "315px" : "280px"
       }}
     >
       <div className="h-full transition-all group-hover:-translate-y-8 flex  flex-col justify-between  w-full pt-14">
