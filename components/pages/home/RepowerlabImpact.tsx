@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { Link } from "@/i18n/routing";
 import React, { useState } from "react";
 import Paragraph from "@/atoms/Paragraph";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function RepowerlabImpact() {
   const t = useTranslations("Home.Impact")
@@ -45,7 +45,7 @@ export default function RepowerlabImpact() {
                 descriptionMobile={t.raw("cards.card3.descriptionMob")}
                 description={t.raw("cards.card3.description")} />
               <Card
-                percent='85-90%'
+                percent='90%'
                 title={t.raw("cards.card4.title")}
                 descriptionMobile={t.raw("cards.card4.descriptionMob")}
                 description={t.raw("cards.card4.description")} />
@@ -138,6 +138,8 @@ interface CardI {
 const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
   const [open, setOpen] = useState<boolean>(false);
 
+  const locale = useLocale()
+
   const variants = {
     open: { opacity: 1, y: 0 },
     closed: { opacity: 0, y: 450 },
@@ -147,7 +149,7 @@ const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
       onClick={() => {
         setOpen(!open);
       }}
-      animate={{ maxHeight: open ? "600px" : "150px" }} // Usar un valor alto para maxHeight
+      animate={{ maxHeight: open ? "600px" : locale == "es" ? "170px" : "150px" }} // Usar un valor alto para maxHeight
       transition={{ duration: 0.6}} // Transición suave
       style={{height:"fit-content"}}
       className="border overflow-hidden cursor-pointer h-fit relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6"
