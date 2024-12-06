@@ -14,9 +14,9 @@ export default function FeatureProducts({ paragraph }: { paragraph: string }) {
   return (
     <div className="">
       <div className="flex gap-4 md:gap-0 justify-center items-center flex-col pt-[41px] px-4 pb-8 md:pb-[50px]">
-        <h3 className={`${title()} text-primary mr-auto md:mr-0 !block`}>
+        <h2 className={`${title()} text-primary mr-auto md:mr-0 !block`}>
           {t('title')}
-        </h3>
+        </h2>
         <p className={`text-grey-parrafo md:pt-6 max-w-[700px] md:text-center md:block ${pathname == "/es" || pathname == "/en" && " hidden"}`}>
           {t(paragraph)}
         </p>

@@ -64,9 +64,9 @@ const Card = ({ index, title, description, x, children }: any) => {
     <motion.div className="h-[300px] rounded-[10px] relative bg-[#ddd]  p-6" style={{ width }}>
       <motion.div className='absolute z-10 w-full min-w-[200px] gap-6 text-primary font-bold flex justify-center' style={{ rotate, bottom, left }}>
         <div className="w-[250px] flex justify-between items-center gap-6">
-          <h5 className="w-[190px] text-[22px] font-normal" style={{ lineHeight: 1 }}>
+          <h4 className="w-[190px] text-[22px] font-normal" style={{ lineHeight: 1 }}>
             {t(title)}
-          </h5>
+          </h4>
           <div>
             {children}
           </div>

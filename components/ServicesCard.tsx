@@ -51,11 +51,11 @@ const ServicesCard = ({
           <div className="bg-[#B3C5DF] h-[78px] aspect-square rounded-full grid place-items-center w-fit">
             {svgIcono}
           </div>
-          <h4
+          <h3
             className={`${titulo.length < 16 ? "max-w-[9ch]" : "max-w-[13ch] md:max-w-[12ch]"}  text-[22px] md:text-xl md:font-light`}
           >
             {titulo}
-          </h4>
+          </h3>
         </div>
         <div className="stroke-primary w-4 self-end md:hidden">
           <ArrowDiagonal />

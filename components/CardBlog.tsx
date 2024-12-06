@@ -64,7 +64,7 @@ export default function CardBlog({ blog, }: { blog: BlogI }) {
     <article className={`pr-2 pl-4 md:p-6  pt-0 md:pt-6`} style={{ width: "min(100%, 400px)" }}>
       <div className="flex gap-2 justify-between h-full flex-col">
 
-        <h5 className={`${subtitle({ colors: "primary", size: "md" })}`}>{blog?.title}</h5>
+        <h3 className={`${subtitle({ colors: "primary", size: "md" })}`}>{blog?.title}</h3>
         <div className="flex gap-2 flex-col">
 
           <Image width={400} height={200} alt="" className="w-full object-cover h-[200px] rounded-[10px] " src={blog?.images[0]?.url || "/images/our-services/e2.jpg"} />
