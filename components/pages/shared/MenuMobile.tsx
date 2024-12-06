@@ -9,9 +9,11 @@ import { ArrowMenu } from '../../icons'
 import { usePathname } from 'next/navigation';
 import LogoRepower from '@/atoms/Logo'
 import { CloseIcon } from './FixedIcons'
+import { useTranslations } from 'next-intl';
 export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?: any }) {
 
     const pathname = usePathname();
+    const t = useTranslations("Navbar")
 
     useEffect(() => {
         setOpen(false);
@@ -43,7 +45,7 @@ export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?:
                             >
                                 <AccordionItem
                                     indicator={<ArrowMenu />}
-                                    title={(item.title)}>
+                                    title={t.raw(item.title)}>
                                     <div className="flex flex-col">
                                         {item.child.map((item2, index) => (
                                             item2.child ? (
@@ -58,12 +60,12 @@ export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?:
                                                     <AccordionItem
                                                         indicator={<ArrowMenu />}
                                                         aria-label={`Accordion ${index}`}
-                                                        title={(item2.title)}>
+                                                        title={t.raw(item2.title)}>
                                                         <div className="flex flex-col gap-2">
                                                             {
                                                                 item2.child.map((item3, index) => (
                                                                     <Link aria-description={item3.title} key={`link-${index}`} className='block cursor-pointer py-1 select-none text-primary text-[14px]' href={`/${item3.url}`}>
-                                                                        {(item3.title)}
+                                                                        {t(item3.title)}
                                                                     </Link>
                                                                 ))}
                                                         </div>
@@ -73,7 +75,7 @@ export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?:
                                             ) : (
 
                                                 <Link aria-description={item2.title} key={`link-${index}`} className='block cursor-pointer   select-none text-primary text-[16px] pt-2' href={`/${item2.url}`}>
-                                                    {(item2.title)}
+                                                    {t(item2.title)}
                                                 </Link>
                                             )
                                         ))}
@@ -82,7 +84,7 @@ export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?:
                             </Accordion>
                         ) : (
                             <Link aria-description={item.title} key={`link-${index}`} className='block cursor-pointer inline-block	select-none text-primary  text-[20px]' href={`/${item.url}`}>
-                                {(item.title)}
+                                {t(item.title)}
                             </Link>
                         )}
                     </div>
