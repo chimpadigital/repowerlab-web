@@ -1,18 +1,16 @@
 "use client";
-import React from "react";
+import { useWindowSize } from "@/utils/useResize";
+ import React from "react";
 // Lazy load del componente ProductsSwiper
 const Hero = React.lazy(() => import("./Hero"));
 const HeroMobile = React.lazy(() => import("./HeroMobile"));
 
 export default function HeroContainer() {
-   return (
-    <>
-      <div className="hidden lg:block">
-        <Hero />
-      </div>
-      <div className="lg:hidden">
-        <HeroMobile />
-      </div>
-    </>
-  );
+  const isDesktop = useWindowSize();
+
+  if (isDesktop === null) {
+    return null;
+  }
+
+  return isDesktop ? <Hero /> : <HeroMobile />;
 }
