@@ -30,7 +30,7 @@ export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?:
             <div style={{ height: "calc(100dvh - 130px)" }} className='overflow-y-scroll'>
                 {globalRoutes.map((item, index) => (
                     <div key={`item-${index}`} className='z-10  relative mt-6 md:mt-0 px-12'> {/* Use descriptive key with 'item' */}
-                        {item.child ? (
+                        {item?.child ? (
                             <Accordion
                                 selectionMode="single"
                                 className="p-0 gap-4"

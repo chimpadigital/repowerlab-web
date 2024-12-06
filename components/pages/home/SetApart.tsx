@@ -2,22 +2,43 @@
 import React from "react";
 import { arraySetApart } from "./arraySetApart";
 import { useTranslations } from "next-intl";
+import { useWindowSize } from "@/utils/useResize";
+import { Skeleton } from "@nextui-org/react";
 
 // Lazy load del componente HorizontalScroll
 const HorizontalScroll = React.lazy(() => import("./HorizontalScroll"));
 
 export default function SetApart() {
+  const isDesktop = useWindowSize();
 
+  if (isDesktop === null) {
     return (
+      <div className="px-7 mb-6">
+        <Skeleton
+          className="rounded-[20px] bg-primary/50"
+          classNames={{
+            base: "!bg-primary/70",
+          }}
+        >
+          <div className="h-screen rounded-3xl bg-primary/80"></div>
+        </Skeleton>
+      </div>
+    );
+  }
+
+  return isDesktop ? (
     <div className="w-full flex justify-center px-4 md:px-8 md:py-[40px] rounded-[20px]">
       <div className="relative w-full flex justify-center rounded-[20px]">
         <div className="relative z-[2] w-full pt-[40px] lg:pt-[100px] rounded-[20px]">
-          <div className="hidden lg:block">
-            <HorizontalScroll />
-          </div>
-          <div className="lg:hidden">
-            <MobileContainer />
-          </div>
+          <HorizontalScroll />
+        </div>
+      </div>
+    </div>
+  ) : (
+    <div className="w-full flex justify-center px-4 md:px-8 md:py-[40px] rounded-[20px]">
+      <div className="relative w-full flex justify-center rounded-[20px]">
+        <div className="relative z-[2] w-full pt-[40px] lg:pt-[100px] rounded-[20px]">
+          <MobileContainer />
         </div>
       </div>
     </div>

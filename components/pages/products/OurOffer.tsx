@@ -6,10 +6,13 @@ import { Link } from "@/i18n/routing";
 import React, { useEffect } from "react";
 import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
+import { useWindowSize } from "@/utils/useResize";
 
 export default function OurOffer() {
-  const t = useTranslations("WindTurbines.OurOffer")
+  const t = useTranslations("WindTurbines.OurOffer");
   const params = useParams();
+  const isDesktop = useWindowSize();
+
   const itemClasses = {
     base: "py-0 w-full text-primary mt-[3px] mb-0 md:my-[20px] bg-custom-gradient shadow-none md:shadow",
     title: "font-bold text-[18px] md:text-[24px] text-primary w-[80%]",
@@ -37,10 +40,7 @@ export default function OurOffer() {
       title: t.raw("accordions.ac1.list.l4.title"),
       text: t.raw("accordions.ac1.list.l4.text"),
     },
-
   ];
-
-
 
   const listWindTurbine2 = [
     {
@@ -89,8 +89,7 @@ export default function OurOffer() {
     {
       title: t.raw("accordions.ac3.list.l6.title"),
       text: t.raw("accordions.ac3.list.l6.text"),
-    }
-
+    },
   ];
 
   const listPurchaseMobile = [
@@ -117,7 +116,7 @@ export default function OurOffer() {
     {
       title: t.raw("accordions.ac3.listM.l6.title"),
       text: t.raw("accordions.ac3.listM.l6.text"),
-    }
+    },
   ];
 
   const listSupport = [
@@ -174,23 +173,40 @@ export default function OurOffer() {
           >
             <hr className="w-full border border-grey-500" />
             <div className="py-4">
-              <article className="hidden md:block">
-                <ListComponent list={listWindTurbine1} />
-              </article>
-              <article className="md:hidden">
-                <Paragraph className="text-[#444444] mb-3" text={t.raw("accordions.ac1.list.l1.textM")}></Paragraph>
-                <br />
-                <Paragraph className="text-[#444444] mb-3" text={t.raw("accordions.ac1.list.l2.textM")}></Paragraph>
-                <br />
-                <Paragraph className="text-[#444444] mb-3" text={t.raw("accordions.ac1.list.l3.textM")}></Paragraph>
-                <br />
-                <Paragraph className="text-[#444444] mb-3" text={t.raw("accordions.ac1.list.l4.textM")} />
+              {isDesktop ? (
+                <article className="hidden md:block">
+                  <ListComponent list={listWindTurbine1} />
+                </article>
+              ) : (
+                <article className="md:hidden">
+                  <Paragraph
+                    className="text-[#444444] mb-3"
+                    text={t.raw("accordions.ac1.list.l1.textM")}
+                  ></Paragraph>
+                  <br />
+                  <Paragraph
+                    className="text-[#444444] mb-3"
+                    text={t.raw("accordions.ac1.list.l2.textM")}
+                  ></Paragraph>
+                  <br />
+                  <Paragraph
+                    className="text-[#444444] mb-3"
+                    text={t.raw("accordions.ac1.list.l3.textM")}
+                  ></Paragraph>
+                  <br />
+                  <Paragraph
+                    className="text-[#444444] mb-3"
+                    text={t.raw("accordions.ac1.list.l4.textM")}
+                  />
 
-
-                <Link href="/turbine-parts" className="underline text-sm text-end w-full justify-end">
-                  {t.raw("accordions.ac1.link")}
-                </Link>
-              </article>
+                  <Link
+                    href="/turbine-parts"
+                    className="underline text-sm text-end w-full justify-end"
+                  >
+                    {t.raw("accordions.ac1.link")}
+                  </Link>
+                </article>
+              )}
               <div className="flex flex-wrap gap-4 items-center justify-between">
                 <div className="max-w-[725px] hidden md:block">
                   <div className="py-4">
@@ -205,27 +221,33 @@ export default function OurOffer() {
                   className={`${button()}  gap-2 items-center hidden md:flex`}
                 >
                   {t("accordions.ac1.link2")}
-
                 </Link>
               </div>
             </div>
           </AccordionItem>
 
-          <AccordionItem key="2" aria-label="Materials" title={t.raw("accordions.ac2.title")}>
+          <AccordionItem
+            key="2"
+            aria-label="Materials"
+            title={t.raw("accordions.ac2.title")}
+          >
             <hr className="w-full border border-grey-500" />
             <div className="py-4">
-              <article className="hidden md:block">
-                <Paragraph
-                  text={t.raw("accordions.ac2.text")}
-                  className="text-grey-parrafo"
-                />
-              </article>
-              <article className="md:hidden">
-                <Paragraph
-                  text={t.raw("accordions.ac2.textM")}
-                  className="text-grey-parrafo"
-                />
-              </article>
+              {isDesktop ? (
+                <article className="hidden md:block">
+                  <Paragraph
+                    text={t.raw("accordions.ac2.text")}
+                    className="text-grey-parrafo"
+                  />
+                </article>
+              ) : (
+                <article className="md:hidden">
+                  <Paragraph
+                    text={t.raw("accordions.ac2.textM")}
+                    className="text-grey-parrafo"
+                  />
+                </article>
+              )}
             </div>
           </AccordionItem>
 
@@ -236,35 +258,41 @@ export default function OurOffer() {
           >
             <hr className="w-full border border-grey-500" />
             <div className="py-4">
-              <article className="md:hidden mb-3">
-                <Paragraph
-                  text={t.raw("accordions.ac3.textM")}
-                  className="text-grey-parrafo"
-                />
-              </article>
-              <article className="hidden md:block">
-                <Paragraph
-                  text={t.raw("accordions.ac3.text")}
-                  className="text-grey-parrafo"
-                />
-              </article>
-              <article className="hidden md:block">
-                <ListComponent list={listPurchase} />
-              </article>
-              <article className="md:hidden">
-                {listPurchaseMobile.map((item, index) => {
-                  return (
-                    <p
-                      key={index.toString() + item.title}
-                      className="text-[#444444]  mb-3"
-                    >
-                      <span className="font-bold">{item.title}:</span>{" "}
-                      {item.text}
-                      <br />
-                    </p>
-                  );
-                })}
-              </article>
+              {isDesktop ? (
+                <article className="hidden md:block">
+                  <Paragraph
+                    text={t.raw("accordions.ac3.text")}
+                    className="text-grey-parrafo"
+                  />
+                </article>
+              ) : (
+                <article className="md:hidden mb-3">
+                  <Paragraph
+                    text={t.raw("accordions.ac3.textM")}
+                    className="text-grey-parrafo"
+                  />
+                </article>
+              )}
+              {isDesktop ? (
+                <article className="hidden md:block">
+                  <ListComponent list={listPurchase} />
+                </article>
+              ) : (
+                <article className="md:hidden">
+                  {listPurchaseMobile.map((item, index) => {
+                    return (
+                      <p
+                        key={index.toString() + item.title}
+                        className="text-[#444444]  mb-3"
+                      >
+                        <span className="font-bold">{item.title}:</span>{" "}
+                        {item.text}
+                        <br />
+                      </p>
+                    );
+                  })}
+                </article>
+              )}
             </div>
           </AccordionItem>
 
@@ -275,35 +303,41 @@ export default function OurOffer() {
           >
             <hr className="w-full border border-grey-500" />
             <div className="py-4">
-              <article className="hidden md:block">
-                <Paragraph
-                  text={t.raw("accordions.ac4.text")}
-                  className="text-grey-parrafo"
-                />
-              </article>
-              <article className="mb-1 md:hidden mb-3">
-                <Paragraph
-                  text={t.raw("accordions.ac4.textM")}
-                  className="text-grey-parrafo"
-                />
-              </article>
-              <article className="hidden md:block">
-                <ListComponent list={listSupport} />
-              </article>
-              <article className="md:hidden">
-                {listSupportMobile.map((item, index) => {
-                  return (
-                    <p
-                      key={index.toString() + item.title}
-                      className="text-[#444444] mb-3"
-                    >
-                      <span className="font-bold">{item.title}:</span>{" "}
-                      {item.text}
-                      <br />
-                    </p>
-                  );
-                })}
-              </article>
+              {isDesktop ? (
+                <article className="hidden md:block">
+                  <Paragraph
+                    text={t.raw("accordions.ac4.text")}
+                    className="text-grey-parrafo"
+                  />
+                </article>
+              ) : (
+                <article className="md:hidden mb-3">
+                  <Paragraph
+                    text={t.raw("accordions.ac4.textM")}
+                    className="text-grey-parrafo"
+                  />
+                </article>
+              )}
+              {isDesktop ? (
+                <article className="hidden md:block">
+                  <ListComponent list={listSupport} />
+                </article>
+              ) : (
+                <article className="md:hidden">
+                  {listSupportMobile.map((item, index) => {
+                    return (
+                      <p
+                        key={index.toString() + item.title}
+                        className="text-[#444444] mb-3"
+                      >
+                        <span className="font-bold">{item.title}:</span>{" "}
+                        {item.text}
+                        <br />
+                      </p>
+                    );
+                  })}
+                </article>
+              )}
             </div>
           </AccordionItem>
         </Accordion>

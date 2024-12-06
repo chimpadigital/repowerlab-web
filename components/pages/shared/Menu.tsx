@@ -52,7 +52,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                 <ScrollShadow size={100} hideScrollBar  className='scroll-smooth max-h-[60vh] min-h-[60vh]'>
                   {globalRoutes.map((item, index) => (
                     <div key={`item-${index}`} > {/* Use descriptive key with 'item' */}
-                      {item.child ? (
+                      {item?.child ? (
                         <Accordion
                           selectionMode="single"
                           className="p-0"
