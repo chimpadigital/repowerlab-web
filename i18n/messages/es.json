@@ -2,7 +2,8 @@
   "greeting": "Hola",
   "shared": {
     "no-video-support": "Tu navegador no soporta la reproducción de videos.",
-    "connect": "Conectar"
+    "connect": "Conectar",
+    "read-more":"Ver más"
   },
   "Footer": {
     "follow": "Seguir",

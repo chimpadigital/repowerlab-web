@@ -2,6 +2,7 @@
     "greeting": "Hello",
     "shared": {
         "no-video-support": "Your browser does not support video playback.",
+        "read-more":"Read more",
         "connect": "Connect"
     },
     "Footer":{

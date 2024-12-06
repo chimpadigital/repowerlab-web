@@ -4,6 +4,7 @@ import { subtitle } from './primitives';
 import Image from 'next/image';
 import { Link } from '@/i18n/routing';
 import { Avatar, AvatarGroup, AvatarIcon } from "@nextui-org/avatar";
+import { useTranslations } from 'next-intl';
 
 export interface BlogI {
   title: string;
@@ -57,7 +58,7 @@ const TextoConResumen = ({ contenidoHtml }: any) => {
 };
 
 export default function CardBlog({ blog, }: { blog: BlogI }) {
-
+  const t= useTranslations("shared")
   const fechaCambiada = (blog && blog.published_at) ? cambiarFormatoFecha(blog?.published_at) : "";
 
   return (
@@ -81,7 +82,7 @@ export default function CardBlog({ blog, }: { blog: BlogI }) {
           </div>
           <div className="w-full flex justify-end">
             <Link href={`/success-cases/${blog?.slug || '-'}/${blog?.id}`} className='font-bold flex gap-2 items-center text-primary cursor-pointer'>
-              Read More
+              {t("read-more")}
               <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
                 <path d="M1 12L7 6.5L1 1" stroke="#1C4741" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
