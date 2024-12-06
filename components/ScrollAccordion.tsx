@@ -6,6 +6,8 @@ import { Link } from "@/i18n/routing";
 import { button } from "./primitives";
 import AccordionMob from "./AccordionMob";
 import { useTranslations } from "next-intl";
+import { useWindowSize } from "@/utils/useResize";
+import ScrollAccordionSkeleton from "./ScrollAccordionSkeleton";
 
 export interface ScrollAcordionI {
   imgPosition?: "right" | "left";
@@ -32,32 +34,55 @@ export default function ScrollAcordion({
   idDesktop,
   imgText,
 }: ScrollAcordionI) {
-  return (
-    <>
-      <section className="pt-[3px] group lg:hidden">
-        <AccordionMob
-          items={items}
-          imgPosition={imgPosition}
-          titleItems={titleItems}
-          id={id}
-          imgText={imgText}
-          idDesktop={idDesktop}
-        />
-      </section>
-      <div>
-        <div className="hidden lg:block">
-          <ScrollAccordionDesk
-            items={items}
-            imgPosition={imgPosition}
-            titleItems={titleItems}
-            id={idDesktop}
-            idDesktop={idDesktop}
-            imgText={imgText}
-          />
-        </div>
-      </div>
-    </>
+  const isDesktop = useWindowSize();
+
+  if (isDesktop === null) {
+    return <ScrollAccordionSkeleton />;
+  }
+
+  return isDesktop ? (
+    <ScrollAccordionDesk
+      items={items}
+      imgPosition={imgPosition}
+      titleItems={titleItems}
+      id={idDesktop}
+      idDesktop={idDesktop}
+      imgText={imgText}
+    />
+  ) : (
+    <AccordionMob
+      items={items}
+      imgPosition={imgPosition}
+      titleItems={titleItems}
+      id={id}
+      imgText={imgText}
+      idDesktop={idDesktop}
+    />
   );
+  // <>
+  //   <section className="pt-[3px] group lg:hidden">
+  //     <AccordionMob
+  //       items={items}
+  //       imgPosition={imgPosition}
+  //       titleItems={titleItems}
+  //       id={id}
+  //       imgText={imgText}
+  //       idDesktop={idDesktop}
+  //     />
+  //   </section>
+  //   <div>
+  //     <div className="hidden lg:block">
+  //       <ScrollAccordionDesk
+  //         items={items}
+  //         imgPosition={imgPosition}
+  //         titleItems={titleItems}
+  //         id={idDesktop}
+  //         idDesktop={idDesktop}
+  //         imgText={imgText}
+  //       />
+  //     </div>
+  //   </div>
+  // </>
 }
 
 export function ScrollAccordionDesk({
