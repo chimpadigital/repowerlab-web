@@ -1,13 +1,14 @@
 "use client";
 import { title } from "@/components/primitives";
 import React, { useState } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import { useWindowSize } from "@/utils/useResize";
 
 export default function Support() {
-  const t = useTranslations("TurbineParts.Support")
+  const t = useTranslations("TurbineParts.Support");
+  const isDesktop = useWindowSize();
+
   return (
     <section className="w-full flex flex-col md:items-center justify-center pt-5 md:py-[80px]">
       <h2
@@ -15,7 +16,7 @@ export default function Support() {
           title({ color: "primary" }) +
           " md:text-center  max-w-[12ch] md:max-w-[100%] md:w-full px-4 md:px-0 leading-7 md:leading-normal"
         }
-      > 
+      >
         {t("title")}
       </h2>
       <p className="pb-12 pt-4 md:pt-8 max-w-[600px] text-grey-parrafo md:text-center px-4 md:px-0">
@@ -24,43 +25,46 @@ export default function Support() {
         <span className="font-bold md:font-normal"> {t("include")}</span>
       </p>
 
-      <div className="w-full flex-col md:flex-row  gap-[1px] mt-6 hidden md:flex">
-        <Card
-          title={t.raw("cards.card1.title")}
-          img="/images/product/expert.png"
-          height="600px"
-          description={t.raw("cards.card1.description")}
-        />
-        <Card
-          title={t.raw("cards.card2.title")}
-          img="/images/product/logistics.png"
-          height="600px"
-          description={t.raw("cards.card2.description")}
-        />
-        <Card
-          title={t.raw("cards.card3.title")}
-          img="/images/product/support.png"
-          height="600px"
-          description={t.raw("cards.card3.description")}
-        />
-      </div>
-      <div className="px-4 w-full md:hidden">
-        <CardMobile
-          img="/images/product/expertM.webp"
-          title={t.raw("cardsM.card1.title")}
-          description={t.raw("cardsM.card1.description")}
-        />
-        <CardMobile
-          img="/images/product/logisticsM.webp"
-          title={t.raw("cardsM.card2.title")}
-          description={t.raw("cardsM.card2.description")}
-        />
-        <CardMobile
-          img="/images/product/supportM.webp"
-          title={t.raw("cardsM.card3.title")}
-          description={t.raw("cardsM.card3.description")}
-        />
-      </div>
+      {isDesktop ? (
+        <div className="w-full flex-col md:flex-row  gap-[1px] mt-6 hidden lg:flex">
+          <Card
+            title={t.raw("cards.card1.title")}
+            img="/images/product/expert.png"
+            height="600px"
+            description={t.raw("cards.card1.description")}
+          />
+          <Card
+            title={t.raw("cards.card2.title")}
+            img="/images/product/logistics.png"
+            height="600px"
+            description={t.raw("cards.card2.description")}
+          />
+          <Card
+            title={t.raw("cards.card3.title")}
+            img="/images/product/support.png"
+            height="600px"
+            description={t.raw("cards.card3.description")}
+          />
+        </div>
+      ) : (
+        <div className="px-4 w-full lg:hidden">
+          <CardMobile
+            img="/images/product/expertM.webp"
+            title={t.raw("cardsM.card1.title")}
+            description={t.raw("cardsM.card1.description")}
+          />
+          <CardMobile
+            img="/images/product/logisticsM.webp"
+            title={t.raw("cardsM.card2.title")}
+            description={t.raw("cardsM.card2.description")}
+          />
+          <CardMobile
+            img="/images/product/supportM.webp"
+            title={t.raw("cardsM.card3.title")}
+            description={t.raw("cardsM.card3.description")}
+          />
+        </div>
+      )}
     </section>
   );
 }
