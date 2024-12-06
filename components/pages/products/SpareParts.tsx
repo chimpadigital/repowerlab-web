@@ -14,112 +14,121 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { useTranslations } from "next-intl";
+import { useWindowSize } from "@/utils/useResize";
 
 export default function SpareParts() {
-  const t = useTranslations("TurbineParts.SpareParts")
+  const t = useTranslations("TurbineParts.SpareParts");
+  const isDesktop = useWindowSize();
+
   return (
     <section className="w-full flex justify-center overflow-hidden">
       <div className="pl-8">
         <div className="flex justify-center mb-4 pr-8">
-          <h2
-            className={
-              title({ color: "primary" }) +
-              " text-center w-full hidden md:block"
-            }
-          >
-            {t("title")}
-          </h2>
-          <h2 className="text-[26px] font-bold text-primary text-center max-w-[18ch] md:hidden">
-            {t("titleM")}
-          </h2>
+          {isDesktop ? (
+            <h2
+              className={
+                title({ color: "primary" }) +
+                " text-center w-full hidden lg:block"
+              }
+            >
+              {t("title")}
+            </h2>
+          ) : (
+            <h2 className="text-[26px] font-bold text-primary text-center max-w-[18ch] lg:hidden">
+              {t("titleM")}
+            </h2>
+          )}
         </div>
-        <div className="max-w-[1280px] hidden md:flex py-[80px] justify-center flex-wrap px-6 gap-[40px]">
-          <Card
-            titulo={t.raw("cards.card1.titulo")}
-            svgIcono={<BladeIcon />}
-            texto={t.raw("cards.card1.texto")}
-          />
-          <Card
-            titulo={t.raw("cards.card2.titulo")}
-            svgIcono={<GearBoxesIcon />}
-            texto={t.raw("cards.card2.texto")}
-          />
-          <Card
-            titulo={t.raw("cards.card3.titulo")}
-            svgIcono={<ComponentIcon />}
-            texto={t.raw("cards.card3.texto")}
-          />
-          <Card
-            titulo={t.raw("cards.card4.titulo")}
-            svgIcono={<GeneratorIcon />}
-            texto={t.raw("cards.card4.texto")}
-          />
-          <Card
-            titulo={t.raw("cards.card5.titulo")}
-            svgIcono={<ControlIcon />}
-            texto={t.raw("cards.card5.texto")}
-          />
-        </div>
-        <div className="md:hidden">
-          <Swiper
-            modules={[Pagination]}
-            slidesPerView={1.3}
-            spaceBetween={10}
-            grabCursor={true}
-            pagination={{
-              clickable: true,
-              el: ".swiper-pagination-spare-parts",
-            }}
-            className="slider-spare-parts"
-            breakpoints={{
-              640: {
-                slidesPerView: 2.2,
-              },
-              768: {
-                slidesPerView: 3.2,
-              },
-              1024: {
-                slidesPerView: 4.2,
-              },
-            }}
-          >
-            <SwiperSlide>
-              <Card
-                titulo={t.raw("cards.card1.titulo")}
-                svgIcono={<BladeIcon />}
-                texto={t.raw("cards.card1.texto")}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card
-                titulo={t.raw("cards.card2.titulo")}
-                svgIcono={<GearBoxesIcon />}
-                texto={t.raw("cards.card2.texto")}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card
-                titulo={t.raw("cards.card3.titulo")}
-                svgIcono={<ComponentIcon />}
-                texto={t.raw("cards.card3.texto")}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card
-                titulo={t.raw("cards.card4.titulo")}
-                svgIcono={<GeneratorIcon />}
-                texto={t.raw("cards.card4.texto")}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card
-                titulo={t.raw("cards.card5.titulo")}
-                svgIcono={<ControlIcon />}
-                texto={t.raw("cards.card5.texto")}
-              />
-            </SwiperSlide>
-          </Swiper>
-        </div>
+        {isDesktop ? (
+          <div className="max-w-[1280px] hidden lg:flex py-[80px] justify-center flex-wrap px-6 gap-[40px]">
+            <Card
+              titulo={t.raw("cards.card1.titulo")}
+              svgIcono={<BladeIcon />}
+              texto={t.raw("cards.card1.texto")}
+            />
+            <Card
+              titulo={t.raw("cards.card2.titulo")}
+              svgIcono={<GearBoxesIcon />}
+              texto={t.raw("cards.card2.texto")}
+            />
+            <Card
+              titulo={t.raw("cards.card3.titulo")}
+              svgIcono={<ComponentIcon />}
+              texto={t.raw("cards.card3.texto")}
+            />
+            <Card
+              titulo={t.raw("cards.card4.titulo")}
+              svgIcono={<GeneratorIcon />}
+              texto={t.raw("cards.card4.texto")}
+            />
+            <Card
+              titulo={t.raw("cards.card5.titulo")}
+              svgIcono={<ControlIcon />}
+              texto={t.raw("cards.card5.texto")}
+            />
+          </div>
+        ) : (
+          <div className="lg:hidden">
+            <Swiper
+              modules={[Pagination]}
+              slidesPerView={1.3}
+              spaceBetween={10}
+              grabCursor={true}
+              pagination={{
+                clickable: true,
+                el: ".swiper-pagination-spare-parts",
+              }}
+              className="slider-spare-parts"
+              breakpoints={{
+                640: {
+                  slidesPerView: 2.2,
+                },
+                768: {
+                  slidesPerView: 3.2,
+                },
+                1024: {
+                  slidesPerView: 4.2,
+                },
+              }}
+            >
+              <SwiperSlide>
+                <Card
+                  titulo={t.raw("cards.card1.titulo")}
+                  svgIcono={<BladeIcon />}
+                  texto={t.raw("cards.card1.texto")}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Card
+                  titulo={t.raw("cards.card2.titulo")}
+                  svgIcono={<GearBoxesIcon />}
+                  texto={t.raw("cards.card2.texto")}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Card
+                  titulo={t.raw("cards.card3.titulo")}
+                  svgIcono={<ComponentIcon />}
+                  texto={t.raw("cards.card3.texto")}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Card
+                  titulo={t.raw("cards.card4.titulo")}
+                  svgIcono={<GeneratorIcon />}
+                  texto={t.raw("cards.card4.texto")}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Card
+                  titulo={t.raw("cards.card5.titulo")}
+                  svgIcono={<ControlIcon />}
+                  texto={t.raw("cards.card5.texto")}
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        )}
         <div className="swiper-pagination-spare-parts w-56 h-10 flex justify-center gap-2 mt-5"></div>
       </div>
     </section>
