@@ -46,7 +46,7 @@ const ServicesCard = ({
       className="relative overflow-hidden group shadow-[5px_5px_4px_0px_#0000001A] rounded-[10px] bg-[#F4F4F4] w-fit text-primary px-6 pb-6 h-full"
       style={{
         width: "min(100%, 307px)",
-        minHeight: locale == "es" ? "315px" : "280px"
+        minHeight: locale == "es" ? "330px" : "280px"
       }}
     >
       <div className="h-full transition-all group-hover:-translate-y-8 flex  flex-col justify-between  w-full pt-14">
