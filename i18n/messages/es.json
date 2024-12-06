@@ -220,7 +220,7 @@
       "card2": {
         "title": "Repotenciación de parques eólicos",
         "d": "RepowerLab repotencia los parques eólicos mediante la modernización de las turbinas para mejorar la eficiencia, aumentar la producción de energía y reducir los costos, todo ello siguiendo prácticas sostenibles.",
-        "dM": "RepowerLab repotencia los parques eólicos mediante la modernización de las turbinas para mejorar la eficiencia, aumentar la producción de energía y reducir los costos, todo ello siguiendo prácticas sostenibles."
+        "dM": "Maximice la eficiencia y el valor con la repotenciación avanzada, lo que prolonga la vida útil de los parques eólicos y reduce los costos."
       },
       "card3": {
         "title": "Modernización y reacondicionamiento de turbinas eólicas",
@@ -287,7 +287,7 @@
         "l1": {
           "title": "Repotenciación de parques eólicos",
           "description": "RepowerLab repotencia los parques eólicos mediante la modernización de las turbinas para mejorar la eficiencia, aumentar la producción de energía y reducir los costos, todo ello siguiendo prácticas sostenibles.",
-          "descriptionMobile": "RepowerLab repotencia los parques eólicos mediante la modernización de las turbinas para mejorar la eficiencia, aumentar la producción de energía y reducir los costos, todo ello siguiendo prácticas sostenibles."
+          "descriptionMobile": "Maximice la eficiencia y el valor con la repotenciación avanzada, lo que prolonga la vida útil de los parques eólicos y reduce los costos."
         },
         "l2": {
           "title": "Evaluación de sitio y planeación",
@@ -300,7 +300,7 @@
           "descriptionMobile": "Actualice los componentes de la turbina, como los convertidores y los sistemas de control, para aumentar la energía y prolongar la vida útil, especialmente en el caso de los modelos más antiguos."
         },
         "l4": {
-          "title": "Remanufactura de palas y componentes",
+          "title": "Modernización de palas y componentes",
           "description": "Mejoramos las palas de las turbinas existentes y los componentes clave para garantizar la durabilidad y el rendimiento óptimo, evitando la necesidad de reemplazos completos.",
           "descriptionMobile": "Mejore los álabes de la turbina para una durabilidad y un rendimiento óptimo, evitando reemplazos completos."
         },
@@ -329,7 +329,7 @@
         "l3": {
           "title": "Reacondicionamiento",
           "description": "Restauración de turbinas eólicas a condiciones óptimas: Llevamos a cabo inspecciones exhaustivas y comprobaciones estructurales, incluidas revisiones de componentes, para restaurar las turbinas a su condición óptima, asegurándonos de que cumplan con las especificaciones de los fabricantes de equipos originales. Nuestro proceso de remanufactura también incluye la limpieza, reparación y actualización de los sistemas eléctricos para mantener la máxima eficiencia operativa.",
-          "descriptionMobile": "Restaure las turbinas a través de inspecciones y revisiones, cumpliendo con las especificaciones de los fabricantes de equipos originales. También limpiamos, reparamos y actualizamos los sistemas para mejorar la eficiencia"
+          "descriptionMobile": "Restaure las turbinas a través de inspecciones y revisiones, cumpliendo con las especificaciones de los fabricantes de equipos originales. También limpiamos, reparamos y actualizamos los sistemas para mejorar la eficiencia."
         },
         "l4": {
           "title": "Revisiones y actualizaciones integrales",
@@ -378,7 +378,7 @@
         "l1": {
           "title": "Inspección y recuperación de valor",
           "description": "Al proporcionar inspecciones independientes y transparentes de las turbinas eólicas en varias etapas del ciclo de vida, RepowerLab ayuda a reducir los riesgos, garantizar el cumplimiento e identificar oportunidades de mantenimiento o desmantelamiento.",
-          "descriptionMobile": "Al proporcionar inspecciones independientes y transparentes de las turbinas eólicas en varias etapas del ciclo de vida, RepowerLab ayuda a reducir los riesgos, garantizar el cumplimiento e identificar oportunidades de mantenimiento o desmantelamiento."
+          "descriptionMobile": "RepowerLab proporciona inspecciones independientes para reducir riesgos, garantizar el cumplimiento e identificar oportunidades de mantenimiento o desmantelamiento."
         },
         "l2": {
           "title": "Inspecciones exhaustivas",
@@ -608,10 +608,10 @@
         "data8": {
           "title": "Reciclaje y reutilización",
           "subtitle": "Minimizar los residuos a través de un reciclaje innovador.",
-          "sellers": "Los materiales que no se pueden reacondicionar se reciclan y se reutilizan en nuevos productos, como mobiliario urbano y otros equipos. Esto minimiza el desperdicio y maximiza la utilización de los recursos.",
+          "sellers": "Las materiales que no se pueden reacondicionar se reciclan y se reutilizan en nuevos productos, como mobiliario urbano y otros equipos. Esto minimiza el desperdicio y maximiza la utilización de los recursos.",
           "buyers": "El uso de materiales reciclados contribuye a la sostenibilidad y ofrece soluciones innovadoras para diversas aplicaciones. Nuestras tecnologías de reciclaje garantizan un mínimo de residuos e impacto ambiental.",
-          "sellersM": "Los materias primas no renovables se reciclan en nuevos productos, lo que reduce los residuos.",
-          "buyersM": "Los materias primas reciclados contribuyen a la sostenibilidad y minimizan el impacto ambiental."
+          "sellersM": "Las materias primas no renovables se reciclan en nuevos productos, lo que reduce los residuos.",
+          "buyersM": "Las materias primas reciclados contribuyen a la sostenibilidad y minimizan el impacto ambiental."
         },
         "data9": {
           "title": "Proyectos de reventa y repotenciación en el mercado",
@@ -1050,13 +1050,13 @@
           "title": "Diseño para la circularidad",
           "titleMobile": "Diseño para la circularidad",
           "description": "Desarrollo de turbinas eólicas con materiales y componentes que puedan reciclarse o reutilizarse fácilmente al final de su vida útil.",
-          "descriptionMobile": "Las turbinas están construidas con materias primas fácilmente reciclables."
+          "descriptionMobile": "Usar materias primas que se puedan reciclar o cambiar su uso fácilmente."
         },
         "a3": {
           "title": "Mantenimiento y reparación",
           "titleMobile": "Mantenimiento y reparación",
           "description": "Prolongar la vida útil de las turbinas eólicas mediante un mantenimiento regular y técnicas de reparación avanzadas.",
-          "descriptionMobile": "Los diagnósticos avanzados prolongan la vida útil de la turbina."
+          "descriptionMobile": "Prolongar la vida útil de la turbina mediante mantenimiento regular y reparaciones avanzadas."
         },
         "a4": {
           "title": "Reutilización y cambio de uso",
@@ -1112,7 +1112,7 @@
         },
         "a3": {
           "title": "Usos innovadores de palas",
-          "titleMobile": "Usos innovadores de palas",
+          "titleMobile": "Reutilización de palas",
           "description": "Transformación de palas fuera de servicio en nuevos productos, como mobiliario urbano y materiales de construcción.",
           "descriptionMobile": "Transformación de palas fuera de servicio en nuevos productos, como mobiliario urbano y materiales de construcción."
         },
