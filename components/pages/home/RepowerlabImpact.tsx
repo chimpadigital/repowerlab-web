@@ -14,7 +14,9 @@ import { useWindowSize } from "@/utils/useResize";
 
 export default function RepowerlabImpact() {
   const t = useTranslations("Home.Impact");
-
+  const isDesktop = useWindowSize({
+    customSize: 768,
+  });
   return (
     <div className="md:px-8 px-4 pt-[41px] md:pt-0 relative overflow-x-hidden">
       <div className="absolute bottom-0 hidden lg:block w-full h-[500px]">
@@ -116,6 +118,7 @@ export default function RepowerlabImpact() {
                 title={t.raw("singles.card1.title")}
                 descriptionMobile={t.raw("singles.card1.dM")}
                 description={t.raw("singles.card1.d")}
+                isDesktop={isDesktop as boolean}
               />
               <div className="pt-8">
                 <Single
@@ -124,6 +127,7 @@ export default function RepowerlabImpact() {
                   title={t.raw("singles.card2.title")}
                   descriptionMobile={t.raw("singles.card2.dM")}
                   description={t.raw("singles.card2.d")}
+                  isDesktop={isDesktop as boolean}
                 />
               </div>
               <div className="pt-8">
@@ -133,6 +137,7 @@ export default function RepowerlabImpact() {
                   title={t.raw("singles.card3.title")}
                   descriptionMobile={t.raw("singles.card3.dM")}
                   description={t.raw("singles.card3.d")}
+                  isDesktop={isDesktop as boolean}
                 />
               </div>
             </div>
@@ -239,6 +244,7 @@ interface SingleI {
   index: number;
   description: string;
   descriptionMobile: string;
+  isDesktop: boolean;
 }
 
 const Single = ({
@@ -247,6 +253,7 @@ const Single = ({
   description,
   descriptionMobile,
   index,
+  isDesktop,
 }: SingleI) => {
   return (
     <article
@@ -258,8 +265,11 @@ const Single = ({
         >
           {title}
         </h4>
-        <p className="text-white hidden md:block">{description}</p>
-        <p className="text-white md:hidden">{descriptionMobile}</p>
+        {isDesktop ? (
+          <p className="text-white">{description}</p>
+        ) : (
+          <p className="text-white">{descriptionMobile}</p>
+        )}
       </div>
       <RotateScroll>
         <IconHowWeWork className="text-accent md:text-white md:opacity-50" />
