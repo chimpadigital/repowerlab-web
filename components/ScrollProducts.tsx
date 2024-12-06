@@ -53,7 +53,7 @@ export default function ScrollProducts() {
     "/images/our-services/e3.jpg",
     "/images/our-services/e4.jpg",
   ];
-  const isDesktop = useWindowSize();
+  const isDesktop = useWindowSize({});
 
   return (
     <>

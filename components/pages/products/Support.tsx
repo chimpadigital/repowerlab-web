@@ -7,7 +7,7 @@ import { useWindowSize } from "@/utils/useResize";
 
 export default function Support() {
   const t = useTranslations("TurbineParts.Support");
-  const isDesktop = useWindowSize();
+  const isDesktop = useWindowSize({});
 
   return (
     <section className="w-full flex flex-col md:items-center justify-center pt-5 md:py-[80px]">

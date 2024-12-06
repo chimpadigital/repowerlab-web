@@ -4,35 +4,33 @@ import {
   IsotipoRepowerlab,
   TurbinaeolicaIcono,
 } from "@/components/icons";
+import { useWindowSize } from "@/utils/useResize";
 import { useTranslations } from "next-intl";
 import React from "react";
 
-
 const CasedSection = () => {
-  
-  const t = useTranslations("SuccessCases")
+  const t = useTranslations("SuccessCases");
 
   const text = [
     {
       icon: <CheckIcon />,
       text: t("card1"),
-      textMobile:
-      t("card1m")
+      textMobile: t("card1m"),
     },
     {
       icon: <TurbinaeolicaIcono />,
       text: t("card2"),
-      textMobile:
-      t("card2m")
+      textMobile: t("card2m"),
     },
     {
       icon: <GlobeIcon />,
       text: t("card3"),
-      textMobile:
-      t("card3m")
+      textMobile: t("card3m"),
     },
   ];
-
+  const isDesktop = useWindowSize({
+    customSize: 768,
+  });
   return (
     <div className="px-4 md:px-14 flex gap-[12px] md:gap-4  flex-wrap justify-center text-primary">
       {text.map((item, index) => {
@@ -49,13 +47,15 @@ const CasedSection = () => {
               <div className="mb-2 md:mb-10 group-hover:md:opacity-0 w-fit transition-all rounded-full scale-75 -translate-x-2 md:translate-x-0 md:scale-100 h-16 aspect-square bg-secondary grid place-items-center">
                 {item.icon}
               </div>
-              <p className="max-w-[25ch] hidden md:block h-full flex-1 text-xl transition-all group-hover:md:-translate-y-24 text-primary ">
-                {item.text}
-              </p>
-
-              <p className="max-w-[25ch] md:hidden h-full flex-1 text-xl transition-all group-hover:md:-translate-y-24 text-primary">
-                {item.textMobile}
-              </p>
+              {isDesktop ? (
+                <p className="max-w-[25ch]  h-full flex-1 text-xl transition-all group-hover:md:-translate-y-24 text-primary ">
+                  {item.text}
+                </p>
+              ) : (
+                <p className="max-w-[25ch] h-full flex-1 text-xl transition-all group-hover:md:-translate-y-24 text-primary">
+                  {item.textMobile}
+                </p>
+              )}
             </div>
             <div className="absolute transition-all opacity-0 group-hover:md:opacity-100 group-hover:md:rotate-45 -bottom-10 group-hover:md:bottom-14 right-14 z-30 text-4xl fill-accent">
               <IsotipoRepowerlab className="scale-[400%] " />

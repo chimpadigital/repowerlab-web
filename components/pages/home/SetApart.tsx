@@ -9,7 +9,7 @@ import { Skeleton } from "@nextui-org/react";
 const HorizontalScroll = React.lazy(() => import("./HorizontalScroll"));
 
 export default function SetApart() {
-  const isDesktop = useWindowSize();
+  const isDesktop = useWindowSize({});
 
   if (isDesktop === null) {
     return (
@@ -38,14 +38,14 @@ export default function SetApart() {
     <div className="w-full flex justify-center px-4 md:px-8 md:py-[40px] rounded-[20px]">
       <div className="relative w-full flex justify-center rounded-[20px]">
         <div className="relative z-[2] w-full pt-[40px] lg:pt-[100px] rounded-[20px]">
-          <MobileContainer />
+          <MobileContainer isDesktop />
         </div>
       </div>
     </div>
   );
 }
 
-const MobileContainer = () => {
+const MobileContainer = ({ isDesktop }: { isDesktop: boolean }) => {
   const t = useTranslations("Home.SetApart");
   return (
     <>
@@ -66,7 +66,7 @@ const MobileContainer = () => {
       </div>
       <div className="pt-4 flex flex-col gap-[11px]">
         {arraySetApart.map((el, i) => (
-          <CardMobile key={i} Icon={el.icon} {...el} />
+          <CardMobile key={i} Icon={el.icon} {...el} isDesktop={isDesktop} />
         ))}
       </div>
     </>
@@ -78,11 +78,13 @@ const CardMobile = ({
   description,
   descriptionMob,
   Icon,
+  isDesktop,
 }: {
   title: string;
   descriptionMob: string;
   description: string;
   Icon: () => JSX.Element;
+  isDesktop: boolean;
 }) => {
   const t = useTranslations("Home.SetApart.cards");
   return (
@@ -92,8 +94,11 @@ const CardMobile = ({
         <Icon />
       </div>
       <div className="pt-4">
-        <p className="text-[18px] hidden md:block">{t(description)}</p>
-        <p className="text-[18px] md:hidden">{t(descriptionMob)}</p>
+        {isDesktop ? (
+          <p className="text-[18px]">{t(description)}</p>
+        ) : (
+          <p className="text-[18px]">{t(descriptionMob)}</p>
+        )}
       </div>
     </article>
   );

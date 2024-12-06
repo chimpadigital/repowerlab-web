@@ -34,7 +34,7 @@ export default function ScrollAcordion({
   idDesktop,
   imgText,
 }: ScrollAcordionI) {
-  const isDesktop = useWindowSize();
+  const isDesktop = useWindowSize({});
 
   if (isDesktop === null) {
     return <ScrollAccordionSkeleton />;

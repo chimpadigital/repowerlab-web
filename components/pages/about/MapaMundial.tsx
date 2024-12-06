@@ -1,19 +1,17 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
-import { AdvancedMarker, Map, InfoWindow } from "@vis.gl/react-google-maps";
+import { AdvancedMarker, Map, InfoWindow, APIProvider } from "@vis.gl/react-google-maps";
 import { IsotipoRepowerlab } from "@/components/icons";
 import { locations } from "@/utils/aboutMapData";
 
-
 const MapaMundial = () => {
   const [indexLocation, setIndexLocation] = useState<number>(0);
-  const [activeI, setActiveI] = useState<null | number>(null)
+  const [activeI, setActiveI] = useState<null | number>(null);
 
   return (
-    <>
-
+    <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string}>
       <div className="h-[600px] w-full relative grid place-items-center">
         <div className="absolute h-full w-[99vw]">
           <Map
@@ -34,84 +32,64 @@ const MapaMundial = () => {
                 position={poi.location}
                 onMouseEnter={() => {
                   setIndexLocation(index + 1);
-                  setActiveI(index)
+                  setActiveI(index);
                 }}
-                onMouseLeave={() => { setActiveI(null) }}
-                // onDragStart={() => setIndexLocation(index + 1)}
+                onMouseLeave={() => {
+                  setActiveI(null);
+                }}
                 clickable
                 onClick={() => {
                   setIndexLocation(index + 1);
-                  setActiveI(index)
+                  setActiveI(index);
                 }}
               >
-                <div
-                  className="group -z-[1] my-tooltip h-10 w-10 bg-primary rounded-full grid place-items-center relative after:absolute after:bg-primary after:h-6 after:w-6 after:rotate-45 after:translate-y-[0.73rem] after:rounded-[3px] "
-                >
+                <div className="group -z-[1] my-tooltip h-10 w-10 bg-primary rounded-full grid place-items-center relative after:absolute after:bg-primary after:h-6 after:w-6 after:rotate-45 after:translate-y-[0.73rem] after:rounded-[3px] ">
                   <span
                     className={`z-30 ${poi.type === "Office" ? "fill-accent" : "fill-secondary"}`}
                   >
                     <IsotipoRepowerlab />
                   </span>
                 </div>
-                {
-                  activeI == index &&
-                  <InfoWindow headerDisabled={true} className={`shadow-[0px_4px_4px_0px_#00000040] py-[15px] px-[15px]  rounded-lg w-[270px] flex flex-col gap-2 text-start text-primary bg-pink-50 ${locations.find((item) => item.id === indexLocation)?.type === "Office" ? "bg-accent" : "bg-secondary"} `}
+                {activeI == index && (
+                  <InfoWindow
+                    headerDisabled={true}
+                    className={`shadow-[0px_4px_4px_0px_#00000040] py-[15px] px-[15px]  rounded-lg w-[270px] flex flex-col gap-2 text-start text-primary bg-pink-50 ${locations.find((item) => item.id === indexLocation)?.type === "Office" ? "bg-accent" : "bg-secondary"} `}
                     style={{
                       backgroundColor:
-                        locations.find((item) => item.id === indexLocation)?.type ===
-                          "Office"
+                        locations.find((item) => item.id === indexLocation)
+                          ?.type === "Office"
                           ? "#E8B516"
                           : "#BACCE6",
                       paddingBlock: "12px",
                       width: 270,
                       borderRadius: 8,
                       zIndex: 999999999999,
-                    }} position={{ ...poi.location, lat: poi.location.lat + 5 }}>
+                    }}
+                    position={{ ...poi.location, lat: poi.location.lat + 5 }}
+                  >
                     <h3 className="text-base text-primary font-extrabold">
-                      {locations.find((item) => item.id === indexLocation)?.projectType}
+                      {
+                        locations.find((item) => item.id === indexLocation)
+                          ?.projectType
+                      }
                     </h3>
                     <span className="text-xs text-primary font-medium uppercase">
                       {locations.find((item) => item.id === indexLocation)?.key}
                     </span>
                     <span className="text-xs text-primary">
-                      {locations.find((item) => item.id === indexLocation)?.projectDesc}
+                      {
+                        locations.find((item) => item.id === indexLocation)
+                          ?.projectDesc
+                      }
                     </span>
                   </InfoWindow>
-                }
+                )}
               </AdvancedMarker>
             ))}
           </Map>
         </div>
-        {/* <Tooltip
-          // id="my-tooltip"
-          anchorSelect=".my-tooltip"
-          arrowColor="transparent"
-          opacity={1}
-          className={`shadow-[0px_4px_4px_0px_#00000040] py-[15px] px-[15px]  rounded-lg w-[270px] flex flex-col gap-2 text-start text-primary bg-pink-50 ${locations.find((item) => item.id === indexLocation)?.type === "Office" ? "bg-accent" : "bg-secondary"} `}
-          style={{
-            backgroundColor:
-              locations.find((item) => item.id === indexLocation)?.type ===
-                "Office"
-                ? "#E8B516"
-                : "#BACCE6",
-            paddingBlock: "12px",
-            width: 270,
-            borderRadius: 8,
-            zIndex: 999999999999,
-          }}
-        >
-          <h3 className="text-base text-primary font-extrabold">
-            {locations.find((item) => item.id === indexLocation)?.projectType}
-          </h3>
-          <span className="text-xs text-primary font-medium uppercase">
-            {locations.find((item) => item.id === indexLocation)?.key}
-          </span>
-          <span className="text-xs text-primary">
-            {locations.find((item) => item.id === indexLocation)?.projectDesc}
-          </span>
-        </Tooltip> */}
       </div>
-    </>
+    </APIProvider>
   );
 };
 

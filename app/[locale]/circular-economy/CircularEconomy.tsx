@@ -19,7 +19,7 @@ const CircularEconomy = () => {
   ];
 
   const pathname = usePathname();
-  const isDesktop = useWindowSize();
+  const isDesktop = useWindowSize({});
 
   return (
     <>

@@ -52,7 +52,7 @@ const GreenBannerNewsLetter = () => {
     }
     setIsSending(false);
   };
-  const isDesktop = useWindowSize();
+  const isDesktop = useWindowSize({});
 
   return (
     <GreenBanner>
@@ -68,11 +68,11 @@ const GreenBannerNewsLetter = () => {
               {t("title2")}
             </h4>
             {isDesktop ? (
-              <p className="max-w-[52ch] hidden md:block font-light">
+              <p className="max-w-[52ch] font-light">
                 {t("p")}
               </p>
             ) : (
-              <p className="max-w-[52ch] font-light md:hidden block">
+              <p className="max-w-[52ch] font-light">
                 {t("pM")}
               </p>
             )}

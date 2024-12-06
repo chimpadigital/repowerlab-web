@@ -12,6 +12,7 @@ import { Link } from "@/i18n/routing";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useLocale } from "next-intl";
+import { useWindowSize } from "@/utils/useResize";
 
 interface ServicesCardProps {
   titulo: string;
@@ -39,14 +40,16 @@ const ServicesCard = ({
   textoMobile,
 }: ServicesCardProps) => {
   const pathname = usePathname();
-  const locale = useLocale()
+  const locale = useLocale();
+  const isDesktop = useWindowSize({});
+
   return (
     <motion.div
       variants={item}
       className="relative overflow-hidden group shadow-[5px_5px_4px_0px_#0000001A] rounded-[10px] bg-[#F4F4F4] w-fit text-primary px-6 pb-6 h-full"
       style={{
         width: "min(100%, 307px)",
-        minHeight: locale == "es" ? "330px" : "280px"
+        minHeight: locale == "es" ? "330px" : "280px",
       }}
     >
       <div className="h-full transition-all group-hover:-translate-y-8 flex  flex-col justify-between  w-full pt-14">
@@ -61,9 +64,7 @@ const ServicesCard = ({
               {titulo}
             </h4>
           ) : (
-            <h4
-              className={`max-w-[16ch] text-[22px] md:text-xl md:font-light`}
-            >
+            <h4 className={`max-w-[16ch] text-[22px] md:text-xl md:font-light`}>
               {titulo}
             </h4>
           )}
@@ -73,8 +74,11 @@ const ServicesCard = ({
         </div>
       </div>
       <div className="absolute p-[26px] inset-0 translate-y-[100%] transition-all group-hover:translate-y-0 bg-[#F4F4F4] h-full w-full flex flex-col justify-between">
-        <p className={`text-desktop text-base hidden md:block`}>{texto}</p>
-        <p className="text-mobile text-base md:hidden">{textoMobile}</p>
+        {isDesktop ? (
+          <p className={`text-desktop text-base`}>{texto}</p>
+        ) : (
+          <p className="text-mobile text-base">{textoMobile}</p>
+        )}
         <Link
           href={`/our-services${link}`}
           className=" flex items-center gap-2 ml-auto font-semibold mt-2 lg:hidden"
