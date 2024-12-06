@@ -1,3 +1,5 @@
+"use client";
+import { useWindowSize } from "@/utils/useResize";
 import React from "react";
 
 interface TeamMemberCardProps {
@@ -11,10 +13,12 @@ interface TeamMemberCardProps {
 const TeamMemberCard = ({
   name,
   position,
-  description, 
-  descriptionM, 
+  description,
+  descriptionM,
   image,
 }: TeamMemberCardProps) => {
+  const isDesktop = useWindowSize();
+
   return (
     <div
       className="card-miembro relative font-[Mulish] overflow-hidden"
@@ -45,22 +49,25 @@ const TeamMemberCard = ({
           </p>
         </div>
         <div className="opacity-0 transition-all mt-3 group-hover:opacity-100 ">
-          <p
-            className="font-[Mulish] text-sm md:text-base cursor-default hidden md:block"
-            style={{
-              transitionBehavior: "allow-discrete",
-            }}
-          >
-            {description}
-          </p>
-          <p
-            className="font-[Mulish] text-sm md:text-base cursor-default  md:hidden"
-            style={{
-              transitionBehavior: "allow-discrete",
-            }}
-          >
-            {descriptionM}
-          </p>
+          {isDesktop ? (
+            <p
+              className="font-[Mulish] text-sm md:text-base cursor-default hidden md:block"
+              style={{
+                transitionBehavior: "allow-discrete",
+              }}
+            >
+              {description}
+            </p>
+          ) : (
+            <p
+              className="font-[Mulish] text-sm md:text-base cursor-default  md:hidden"
+              style={{
+                transitionBehavior: "allow-discrete",
+              }}
+            >
+              {descriptionM}
+            </p>
+          )}
         </div>
       </div>
     </div>

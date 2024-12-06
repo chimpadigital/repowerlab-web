@@ -10,19 +10,20 @@ import Partners from "@/components/pages/about/Partners";
 import WhyChooseRepowerlab from "@/components/pages/about/WhyChooseRepowerlab";
 import { button, title } from "@/components/primitives";
 import { Link } from "@/i18n/routing";
+import { useWindowSize } from "@/utils/useResize";
 import { useTranslations } from "next-intl";
 
-
-
 export default function AboutPage() {
-  const t = useTranslations("About")
+  const t = useTranslations("About");
+  const isDesktop = useWindowSize();
+
   return (
     <section className="overflow-x-clip">
       <div className="px-4 md:px-6">
         <HeroBreadcrumb
           breadcrumbs={[
             {
-              label:  t.raw("Hero.b1"),
+              label: t.raw("Hero.b1"),
               href: "/",
             },
             {
@@ -36,13 +37,19 @@ export default function AboutPage() {
         >
           <div className="flex mt-[100px] md:mt-10">
             <h1 className={`text-white mr-auto text-left ${title()}`}>
-             {t("Hero.heading")}
+              {t("Hero.heading")}
             </h1>
           </div>
         </HeroBreadcrumb>
       </div>
-      <IntroText />
-      <IntroTextMobile />
+
+      {isDesktop === null ? (
+        ""
+      ) : isDesktop ? (
+        <IntroText />
+      ) : (
+        <IntroTextMobile />
+      )}
       <MisionVisionHistory />
       <MapaMundial />
       <WhyChooseRepowerlab />
@@ -55,7 +62,9 @@ export default function AboutPage() {
           <div className="flex w-full flex-col lg:flex-row md:items-center gap-10">
             <div className="flex-1 gap-10 text-start flex items-center justify-between">
               <div className="flex-1">
-                <h4 className={`${title()} !block mb-3 leading-none max-w-[50ch]`}>
+                <h4
+                  className={`${title()} !block mb-3 leading-none max-w-[50ch]`}
+                >
                   {t("greenBanner.title")}{" "}
                   <span className={`${title()} leading-none text-secondary`}>
                     {t("greenBanner.highlightedTitle")}
