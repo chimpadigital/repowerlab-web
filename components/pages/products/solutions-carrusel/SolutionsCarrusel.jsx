@@ -15,7 +15,7 @@ import { useWindowSize } from "@/utils/useResize";
 export default function SolutionsCarrusel({ cards }) {
   const t = useTranslations("TurbineParts.Solutions");
 
-  const isDesktop = useWindowSize();
+  const isDesktop = useWindowSize({});
 
   const [moveLeft, setMoveLeft] = useState();
   const [moveRight, setMoveRight] = useState();
@@ -76,7 +76,7 @@ export default function SolutionsCarrusel({ cards }) {
         </div>
       </div>
       {isDesktop ? (
-        <div className="hidden lg:flex flex-col w-full mt-4  xl:ml-0">
+        <div className="flex flex-col w-full mt-4  xl:ml-0">
           <div
             className={`grid mt-8 shadow-lg rounded-l-[20px] rounded-r-[20px] solutions-box h-[9rem] ${
               numCols > 5 ? "w-[1827px]" : "w-[1200px]"
@@ -99,7 +99,7 @@ export default function SolutionsCarrusel({ cards }) {
           </div>
         </div>
       ) : (
-        <div className="block lg:hidden">
+        <div className="">
           <div className="mt-7 rounded-l-lg rounded-r-lg md:rounded-r-none">
             <Swiper
               className="mySwiper-solutions"

@@ -17,6 +17,7 @@ import {
 import GreenBanner from "@/components/GreenBanner";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import { useWindowSize } from "@/utils/useResize";
 
 export default function ServicesContainer() {
   const t = useTranslations("Services");
@@ -24,7 +25,7 @@ export default function ServicesContainer() {
     { label: t.raw("Hero.b1"), href: "/" },
     { label: t.raw("Hero.b2"), href: "/our-services" },
   ];
-
+  const isDesktop = useWindowSize({});
   return (
     <>
       <section className="w-full px-4 lg:px-6">
@@ -35,10 +36,11 @@ export default function ServicesContainer() {
           <div className="flex justify-end text-white w-full">
             <div className="max-w-[500px]">
               <h1 className={title({ size: "md" })}>{t("Hero.title")}</h1>
-              <p className="mt-6 font-light hidden md:block">
-                {t("Hero.text")}
-              </p>
-              <p className="mt-6 font-light md:hidden">{t("Hero.textM")}</p>
+              {isDesktop ? (
+                <p className="mt-6 font-light">{t("Hero.text")}</p>
+              ) : (
+                <p className="mt-6 font-light">{t("Hero.textM")}</p>
+              )}
             </div>
           </div>
         </HeroBreadcrumb>

@@ -7,7 +7,7 @@ import { useWindowSize } from "@/utils/useResize";
 
 const MisionVisionHistory = () => {
   const t = useTranslations("About");
-  const isDesktop = useWindowSize();
+  const isDesktop = useWindowSize({});
 
   return (
     <div
@@ -58,9 +58,9 @@ const MisionVisionHistory = () => {
             {t("vision.title")}
           </h4>
           {isDesktop ? (
-            <p className="mt-3 md:mt-6 text-[#444444]">{t("vision.pM")}</p>
+            <p className="mt-3 md:mt-6 text-[#444444]">{t("vision.p")}</p>
           ) : (
-            <p className="mt-3 md:mt-6 text-[#444444] ">{t("vision.p")}</p>
+            <p className="mt-3 md:mt-6 text-[#444444] ">{t("vision.pM")}</p>
           )}
         </div>
         <div className="absolute inset-0 bg-gradient-to-r -translate-y-6 md:translate-y-0 from-white to-secondary/50 rounded-[20px] z-[0]"></div>

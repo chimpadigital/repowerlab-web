@@ -10,73 +10,90 @@ import { Link } from "@/i18n/routing";
 import React, { useState } from "react";
 import Paragraph from "@/atoms/Paragraph";
 import { useLocale, useTranslations } from "next-intl";
+import { useWindowSize } from "@/utils/useResize";
 
 export default function RepowerlabImpact() {
-  const t = useTranslations("Home.Impact")
-
+  const t = useTranslations("Home.Impact");
+  const isDesktop = useWindowSize({
+    customSize: 768,
+  });
   return (
-    <div className='md:px-8 px-4 pt-[41px] md:pt-0 relative overflow-x-hidden'>
+    <div className="md:px-8 px-4 pt-[41px] md:pt-0 relative overflow-x-hidden">
       <div className="absolute bottom-0 hidden lg:block w-full h-[500px]">
         <ThreeContainer />
       </div>
       <div className="rounded-[20px] bg-primary pt-9 md:py-[100px] flex justify-center">
         <div className="container px-6">
           <div className="flex flex-col lg:flex-row justify-between gap-4 md:gap-[40px] lg:gap-[100px]">
-            <h5 className={`text-secondary md:text-white font-medium text-[26px] md:text-[28px] max-w-[300px]`}>{t("title")}</h5>
+            <h5
+              className={`text-secondary md:text-white font-medium text-[26px] md:text-[28px] max-w-[300px]`}
+            >
+              {t("title")}
+            </h5>
             <p className="md:hidden text-white text-[18px]">{t("subtitle")}</p>
-            <div className="max-w-[1000px] hidden md:block text-grey-100 text-[30px]" >
-              <WordAnimated accentColor='text-secondary' text={t.raw("animatedWord")} />
+            <div className="max-w-[1000px] hidden md:block text-grey-100 text-[30px]">
+              <WordAnimated
+                accentColor="text-secondary"
+                text={t.raw("animatedWord")}
+              />
             </div>
           </div>
           <div className="pt-[61px] md:pt-[120px] relative z-10">
             <div className="flex lg:flex-row flex-col justify-center gap-8 mb-[80px] md:mb-[200px]">
-              <Card percent='85-90%'
+              <Card
+                percent="85-90%"
                 title={t.raw("cards.card1.title")}
                 descriptionMobile={t.raw("cards.card1.descriptionMob")}
-                description={t.raw("cards.card1.description")} />
+                description={t.raw("cards.card1.description")}
+              />
               <Card
-                percent='60%'
+                percent="60%"
                 title={t.raw("cards.card2.title")}
                 descriptionMobile={t.raw("cards.card2.descriptionMob")}
-                description={t.raw("cards.card2.description")} />
+                description={t.raw("cards.card2.description")}
+              />
               <Card
-                percent='25-35%'
+                percent="25-35%"
                 title={t.raw("cards.card3.title")}
                 descriptionMobile={t.raw("cards.card3.descriptionMob")}
-                description={t.raw("cards.card3.description")} />
+                description={t.raw("cards.card3.description")}
+              />
               <Card
-                percent='90%'
+                percent="90%"
                 title={t.raw("cards.card4.title")}
                 descriptionMobile={t.raw("cards.card4.descriptionMob")}
-                description={t.raw("cards.card4.description")} />
+                description={t.raw("cards.card4.description")}
+              />
             </div>
           </div>
-          <div className='grid pb-2 lg:grid-cols-2 grid-cols-1 gap-6 relative'>
+          <div className="grid pb-2 lg:grid-cols-2 grid-cols-1 gap-6 relative">
             <div className="col-span-1 relative z-10 pb-8 md:pb-0">
               <div className="max-w-[400px] text-white">
-                <h3 className={`${title({ color: "white", size: "md" })}`}>{t("howWork.title1")} <span className='text-secondary'>{t("howWork.title2")}</span></h3>
+                <h3 className={`${title({ color: "white", size: "md" })}`}>
+                  {t("howWork.title1")}{" "}
+                  <span className="text-secondary">{t("howWork.title2")}</span>
+                </h3>
                 <div className="md:hidden pt-6">
-                  <Paragraph textAccent="text-secondary" className="text-[18px]" text={t("howWork.pm1")}></Paragraph>
+                  <Paragraph
+                    textAccent="text-secondary"
+                    className="text-[18px]"
+                    text={t("howWork.pm1")}
+                  ></Paragraph>
                 </div>
                 <div className="hidden md:block">
-
-                  <p className="pt-[50px]">
-                    {t("howWork.p1")}
-                  </p>
-                  <p className="pt-[50px]">
-                    {t("howWork.p2")}
-
-                  </p>
-                  <p className="pt-[50px]">
-
-                    {t("howWork.p3")}
-                  </p>
+                  <p className="pt-[50px]">{t("howWork.p1")}</p>
+                  <p className="pt-[50px]">{t("howWork.p2")}</p>
+                  <p className="pt-[50px]">{t("howWork.p3")}</p>
                 </div>
                 <div className="md:pt-[60px] pt-[35px] flex justify-center md:justify-start">
-                  <Link href="/how-we-work" className='w-full max-w-[180px] relative overflow-hidden gap-4 items-center transition-all duration-[600] py-4 px-6 rounded-full  text-white flex justify-between hover:max-w-[200px]'>
-                    <div className="w-full absolute h-full top-0 left-0 bg-[#ffffff]/40">
-                    </div>
-                    <span className='relative text-[18px]'>{t("howWork.read")}</span>
+                  <Link
+                    href="/how-we-work"
+                    className="w-full max-w-[180px] relative overflow-hidden gap-4 items-center transition-all duration-[600] py-4 px-6 rounded-full  text-white flex justify-between hover:max-w-[200px]"
+                  >
+                    <div className="w-full absolute h-full top-0 left-0 bg-[#ffffff]/40"></div>
+                    <span className="relative text-[18px]">
+                      {t("howWork.read")}
+                    </span>
 
                     <svg
                       width="21"
@@ -101,6 +118,7 @@ export default function RepowerlabImpact() {
                 title={t.raw("singles.card1.title")}
                 descriptionMobile={t.raw("singles.card1.dM")}
                 description={t.raw("singles.card1.d")}
+                isDesktop={isDesktop as boolean}
               />
               <div className="pt-8">
                 <Single
@@ -109,6 +127,7 @@ export default function RepowerlabImpact() {
                   title={t.raw("singles.card2.title")}
                   descriptionMobile={t.raw("singles.card2.dM")}
                   description={t.raw("singles.card2.d")}
+                  isDesktop={isDesktop as boolean}
                 />
               </div>
               <div className="pt-8">
@@ -118,6 +137,7 @@ export default function RepowerlabImpact() {
                   title={t.raw("singles.card3.title")}
                   descriptionMobile={t.raw("singles.card3.dM")}
                   description={t.raw("singles.card3.d")}
+                  isDesktop={isDesktop as boolean}
                 />
               </div>
             </div>
@@ -138,55 +158,82 @@ interface CardI {
 const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
   const [open, setOpen] = useState<boolean>(false);
 
-  const locale = useLocale()
+  const locale = useLocale();
 
   const variants = {
     open: { opacity: 1, y: 0 },
     closed: { opacity: 0, y: 450 },
   };
+  const isDesktop = useWindowSize({
+    customSize: 768,
+  });
   return (
     <motion.article
       onClick={() => {
         setOpen(!open);
       }}
-      animate={{ maxHeight: open ? "600px" : locale == "es" ? "170px" : "150px" }} // Usar un valor alto para maxHeight
-      transition={{ duration: 0.6}} // Transición suave
-      style={{height:"fit-content"}}
+      animate={{
+        maxHeight: open ? "600px" : locale == "es" ? "170px" : "150px",
+      }} // Usar un valor alto para maxHeight
+      transition={{ duration: 0.6 }} // Transición suave
+      style={{ height: "fit-content" }}
       className="border overflow-hidden cursor-pointer h-fit relative text-white border-white rounded-tl-[10px] bg-[#C5C5C526] p-6"
     >
       <div className=" relative z-10">
         <h5 className="uppercase text-[20px] w-[200px]">{title}</h5>
         <h5 className="font-medium text-[32px]">{percent}</h5>
         <div className="relative h-full">
-          <p className="max-w-[250px] hidden md:block pe-2 md:pe-4  pb-2" style={{ opacity: 0, color: "transparent" }}>
-            {description}
-          </p>
-          <p className="max-w-[250px] md:hidden pe-2 md:pe-4  pb-4" style={{ opacity: 0, color: "transparent" }}>
-            {descriptionMobile}
-          </p>
-          <motion.p
-            variants={variants}
-            animate={open ? "open" : "closed"}
-            transition={{ duration: 0.6 }}
-            className={` absolute top-2 max-w-[250px] pe-2 md:pe-4  w-full hidden md:block`}
-          >
-            {description}
-          </motion.p>
-          <motion.p
-            variants={variants}
-            animate={open ? "open" : "closed"}
-            transition={{ duration: 0.6 }}
-            className={` absolute top-2 max-w-[250px] pe-4  w-full md:hidden`}
-          >
-            {descriptionMobile}
-          </motion.p>
+          {isDesktop ? (
+            <p
+              className="max-w-[250px] pe-2 md:pe-4  pb-2"
+              style={{ opacity: 0, color: "transparent" }}
+            >
+              {description}
+            </p>
+          ) : (
+            <p
+              className="max-w-[250px] pe-2 md:pe-4  pb-4"
+              style={{ opacity: 0, color: "transparent" }}
+            >
+              {descriptionMobile}
+            </p>
+          )}
+          {isDesktop ? (
+            <motion.p
+              variants={variants}
+              animate={open ? "open" : "closed"}
+              transition={{ duration: 0.6 }}
+              className={` absolute top-2 max-w-[250px] pe-2 md:pe-4  w-full`}
+            >
+              {description}
+            </motion.p>
+          ) : (
+            <motion.p
+              variants={variants}
+              animate={open ? "open" : "closed"}
+              transition={{ duration: 0.6 }}
+              className={` absolute top-2 max-w-[250px] pe-4  w-full`}
+            >
+              {descriptionMobile}
+            </motion.p>
+          )}
         </div>
       </div>
-      <svg className={`absolute bottom-2 right-2 transition-all duration-[600] ${open ? 'rotate-180' : ''}`} width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.06077 0.939331L16.5001 14.3787V4.99999H19.5001V19.5H5.00011V16.5H14.3788L0.939453 3.06065L3.06077 0.939331Z" fill="white" />
+      <svg
+        className={`absolute bottom-2 right-2 transition-all duration-[600] ${open ? "rotate-180" : ""}`}
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M3.06077 0.939331L16.5001 14.3787V4.99999H19.5001V19.5H5.00011V16.5H14.3788L0.939453 3.06065L3.06077 0.939331Z"
+          fill="white"
+        />
       </svg>
-
-
     </motion.article>
   );
 };
@@ -194,20 +241,35 @@ const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
 interface SingleI {
   title: string;
   url: string;
-  index: number
+  index: number;
   description: string;
   descriptionMobile: string;
+  isDesktop: boolean;
 }
 
-const Single = ({ title, url, description, descriptionMobile, index }: SingleI) => {
+const Single = ({
+  title,
+  url,
+  description,
+  descriptionMobile,
+  index,
+  isDesktop,
+}: SingleI) => {
   return (
-    <article className={`flex flex-col-reverse md:flex-row justify-between items-start md:items-center gap-4 pb-6 ${index == 3 ? "md:border-b" : "border-b"}  border-grey-100/50`}>
+    <article
+      className={`flex flex-col-reverse md:flex-row justify-between items-start md:items-center gap-4 pb-6 ${index == 3 ? "md:border-b" : "border-b"}  border-grey-100/50`}
+    >
       <div className="max-w-[480px]">
-        <h4 className={`md:text-white text-secondary font-bold pb-4 text-[22px] md:text-[28px]`}>
+        <h4
+          className={`md:text-white text-secondary font-bold pb-4 text-[22px] md:text-[28px]`}
+        >
           {title}
         </h4>
-        <p className="text-white hidden md:block">{description}</p>
-        <p className="text-white md:hidden">{descriptionMobile}</p>
+        {isDesktop ? (
+          <p className="text-white">{description}</p>
+        ) : (
+          <p className="text-white">{descriptionMobile}</p>
+        )}
       </div>
       <RotateScroll>
         <IconHowWeWork className="text-accent md:text-white md:opacity-50" />

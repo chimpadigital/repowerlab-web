@@ -18,7 +18,7 @@ import { useWindowSize } from "@/utils/useResize";
 
 export default function SpareParts() {
   const t = useTranslations("TurbineParts.SpareParts");
-  const isDesktop = useWindowSize();
+  const isDesktop = useWindowSize({});
 
   return (
     <section className="w-full flex justify-center overflow-hidden">

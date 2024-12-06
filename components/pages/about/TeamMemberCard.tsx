@@ -17,7 +17,7 @@ const TeamMemberCard = ({
   descriptionM,
   image,
 }: TeamMemberCardProps) => {
-  const isDesktop = useWindowSize();
+  const isDesktop = useWindowSize({});
 
   return (
     <div

@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { dataWeWork, HowWorkI } from './data'
 import { ArrowRight } from '@/components/icons'

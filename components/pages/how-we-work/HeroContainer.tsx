@@ -7,7 +7,7 @@ const Hero = React.lazy(() => import("./Hero"));
 const HeroMobile = React.lazy(() => import("./HeroMobile"));
 
 export default function HeroContainer() {
-  const isDesktop = useWindowSize();
+  const isDesktop = useWindowSize({});
 
   if (isDesktop === null) {
     return <SkeletonHero />;

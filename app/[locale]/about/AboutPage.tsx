@@ -15,7 +15,7 @@ import { useTranslations } from "next-intl";
 
 export default function AboutPage() {
   const t = useTranslations("About");
-  const isDesktop = useWindowSize();
+  const isDesktop = useWindowSize({});
 
   return (
     <section className="overflow-x-clip">
@@ -54,9 +54,11 @@ export default function AboutPage() {
       <MapaMundial />
       <WhyChooseRepowerlab />
       <MeetOurTeam />
-      <div className="mt-[22px] md:hidden">
-        <Partners />
-      </div>
+      {!isDesktop && (
+        <div className="mt-[22px]">
+          <Partners />
+        </div>
+      )}
       <div className="px-4 md:px-6 relative lg:-top-1 mt-10 md:mt-4">
         <GreenBanner>
           <div className="flex w-full flex-col lg:flex-row md:items-center gap-10">

@@ -11,7 +11,7 @@ import { useWindowSize } from "@/utils/useResize";
 export default function OurOffer() {
   const t = useTranslations("WindTurbines.OurOffer");
   const params = useParams();
-  const isDesktop = useWindowSize();
+  const isDesktop = useWindowSize({});
 
   const itemClasses = {
     base: "py-0 w-full text-primary mt-[3px] mb-0 md:my-[20px] bg-custom-gradient shadow-none md:shadow",
