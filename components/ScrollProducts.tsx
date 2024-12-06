@@ -11,6 +11,7 @@ import {
   WindIcon,
 } from "./icons";
 import { Link } from "@/i18n/routing";
+import { usePathname } from "next/navigation";
 
 const turbine = {
   title: "ECOTECNIA E44",
@@ -113,6 +114,8 @@ export default function ScrollProducts() {
 
 const Card = ({ top = 0, turbine, animation = true, y, index }: any) => {
   const opacity = useTransform(y, [index, index + 1], [1, 0]);
+  const pathname = usePathname();
+
   return (
     <article
       className="bg-[#666262]/90 w-[400px] py-8 px-6 border-white relative border rounded-[20px]"
@@ -161,7 +164,7 @@ const Card = ({ top = 0, turbine, animation = true, y, index }: any) => {
             href={"/marketplace"}
             className="flex gap-2 items-center cursor-pointer"
           >
-            Read more
+            {pathname.includes("en") ? "Read More" : "Leer más"}
             <svg
               className="transform-y-[10px]"
               xmlns="http://www.w3.org/2000/svg"
