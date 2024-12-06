@@ -9,25 +9,28 @@ import Products from "@/components/pages/home/Products";
 import Hero from "@/components/pages/home/Hero";
 import RepowerLabFocus from "@/components/pages/home/RepowerLabFocus";
 import MapHome from "@/components/pages/home/MapHome";
+import { ReCaptchaProvider } from "next-recaptcha-v3";
 
 export default function Home() {
   return (
-    <>
-      <Hero />
-      <RepowerLabFocus /> 
-      <SetApart />
-      <RepowerlabImpact />
-      <Services />
-      <Products />
-      <FeatureProducts paragraph={"pHome"}/>
-      <SuccesCases />
-      <MapHome />
-      <div className="px-5">
-        <ConnectToday />
-      </div>
-      <div className="flex w-full justify-center pt-4 px-4">
-        <GreenBannerNewsLetter />
-      </div>
-    </>
+    <ReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_CLAVE_WEB_CAPTCHA}>
+      <>
+        <Hero />
+        <RepowerLabFocus />
+        <SetApart />
+        <RepowerlabImpact />
+        <Services />
+        <Products />
+        <FeatureProducts paragraph={"pHome"} />
+        <SuccesCases />
+        <MapHome />
+        <div className="px-5">
+          <ConnectToday />
+        </div>
+        <div className="flex w-full justify-center pt-4 px-4">
+          <GreenBannerNewsLetter />
+        </div>
+      </>
+    </ReCaptchaProvider>
   );
 }

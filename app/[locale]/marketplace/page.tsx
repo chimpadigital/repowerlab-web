@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl'
 import React from 'react'
 
 export default function page() {
-    const t = useTranslations("Marketplace")
+    const t = useTranslations("MarketPlace")
     return (
         <section className="px-6">
             <HeroBreadcrumb

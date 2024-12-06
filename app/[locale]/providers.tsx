@@ -41,7 +41,7 @@ export function Providers({ children }: ProvidersProps) {
   }, []);
 
   return (
-    <ReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_CLAVE_WEB_CAPTCHA}>
+    // <ReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_CLAVE_WEB_CAPTCHA}>
       
         <APIProvider
           apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string}
@@ -58,6 +58,6 @@ export function Providers({ children }: ProvidersProps) {
           </button>
         </APIProvider>
       
-    </ReCaptchaProvider>
+    // </ReCaptchaProvider>
   );
 }

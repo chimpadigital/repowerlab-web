@@ -3,9 +3,12 @@ import { title } from "@/components/primitives";
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { useWindowSize } from "@/utils/useResize";
 
 const MisionVisionHistory = () => {
-  const t = useTranslations("About")
+  const t = useTranslations("About");
+  const isDesktop = useWindowSize();
+
   return (
     <div
       className="MisionVisionHistory flex flex-wrap gap-12 md:gap-24 mx-auto justify-center mt-16 md:mt-36 mb-20 px-4 md:px-6"
@@ -28,17 +31,19 @@ const MisionVisionHistory = () => {
           >
             {t("mission.title")}
           </h4>
-          <p className="mt-3 md:mt-6 text-[#444444] md:hidden">
-            {t("mission.pM")}
-          </p>
-          <p className="mt-3 md:mt-6 text-[#444444] hidden md:block">
-            {t("mission.p")}
-            
-          </p>
+          {isDesktop ? (
+            <p className="mt-3 md:mt-6 text-[#444444]">
+              {t("mission.p")}
+            </p>
+          ) : (
+            <p className="mt-3 md:mt-6 text-[#444444]">
+              {t("mission.pM")}
+            </p>
+          )}
         </div>
         <div className="absolute origin-bottom-right inset-0 bg-gradient-to-r from-white to-secondary/50 rounded-[20px] -translate-y-6 md:translate-y-0 transition-all group-hover:md:-rotate-6 group-hover:md:-translate-y-14 group-hover:md:translate-x-3 z-[0]"></div>
       </motion.div>
- 
+
       <motion.div
         className="relative group"
         style={{ width: "min(100%, 374px)" }}
@@ -61,7 +66,6 @@ const MisionVisionHistory = () => {
           </p>
           <p className="mt-3 md:mt-6 text-[#444444] hidden md:block">
             {t("vision.p")}
-            
           </p>
         </div>
         <div className="absolute inset-0 bg-gradient-to-r -translate-y-6 md:translate-y-0 from-white to-secondary/50 rounded-[20px] z-[0]"></div>
@@ -87,7 +91,7 @@ const MisionVisionHistory = () => {
             {t("history.pM")}
           </p>
           <p className="mt-3 md:mt-6 text-[#444444] hidden md:block">
-            {t("history.p")} 
+            {t("history.p")}
           </p>
         </div>
         <div className="absolute origin-bottom-left inset-0 bg-gradient-to-r from-white to-secondary/50 rounded-[20px] -translate-y-6 md:translate-y-0 transition-all group-hover:md:rotate-6 group-hover:md:-translate-y-14 group-hover:md:translate-x-8 z-[0]"></div>
