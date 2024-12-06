@@ -13,9 +13,9 @@ export default function RepowerLabFocus() {
     <div className="w-full flex justify-center px-4 lg:px-10">
       <div className="container">
         <div className="flex flex-col lg:flex-row text-primary gap-2 md:gap-[90px] text-[30px]">
-          <h5 className={title({ color: "primary" }) + " whitespace-nowrap"}>
+          <h2 className={title({ color: "primary" }) + " whitespace-nowrap"}>
             {t("title")}
-          </h5>
+          </h2>
           <article className="hidden md:block">
             <WordAnimated
               accentColor="!text-accent"

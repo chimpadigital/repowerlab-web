@@ -34,7 +34,7 @@ export default function MolinoAnimation() {
                         <div className="grid h-[100vh] items-center grid-cols-1 lg:grid-cols-2 pt-[171px]">
 
                             <div className="col-span-1 flex items-center justify-center w-full overflow-hidden">
-                                <RecursoSvg preserveAspectRatio="xMidYMid slice" className="lg:w-full lg:h-auto h-[57vh] md:h-[45vh]" rotate={rotate} numbers={numbers} />
+                                <RecursoSvg preserveAspectRatio="xMidYMid slice" className="lg:w-full lg:h-auto h-[50vh] sm:h-[57vh] md:h-[45vh]" rotate={rotate} numbers={numbers} />
                             </div>
                             <div className="col-span-1">
                                 <div className='w-full md:w-[420px]'>

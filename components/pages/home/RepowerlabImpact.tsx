@@ -201,9 +201,9 @@ const Single = ({ title, url, description, descriptionMobile, index }: SingleI) 
   return (
     <article className={`flex flex-col-reverse md:flex-row justify-between items-start md:items-center gap-4 pb-6 ${index == 3 ? "md:border-b" : "border-b"}  border-grey-100/50`}>
       <div className="max-w-[480px]">
-        <h5 className={`md:text-white text-secondary font-bold pb-4 text-[22px] md:text-[28px]`}>
+        <h4 className={`md:text-white text-secondary font-bold pb-4 text-[22px] md:text-[28px]`}>
           {title}
-        </h5>
+        </h4>
         <p className="text-white hidden md:block">{description}</p>
         <p className="text-white md:hidden">{descriptionMobile}</p>
       </div>

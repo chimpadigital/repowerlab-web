@@ -126,13 +126,13 @@ const Card = ({ top = 0, turbine, animation = true, y, index }: any) => {
           <WindIcon />
         </div>
 
-        <h5 className="text-white font-bold text-[18px]">Wind turbine</h5>
+        <h3 className="text-white font-bold text-[18px]">Wind turbine</h3>
         <p className="pt-2 pb-4 text-[18px]">{turbine.title}</p>
 
         <hr className="py-4 border-white w-full" />
         <div className="flex gap-4">
           <PowerIcon />
-          <h5 className="text-white font-bold text-[18px]">Power</h5>
+          <h4 className="text-white font-bold text-[18px]">Power</h4>
         </div>
         <p className="py-2 pb-4 text-[18px]">{turbine.power}</p>
 
@@ -142,7 +142,7 @@ const Card = ({ top = 0, turbine, animation = true, y, index }: any) => {
           <div className="cols-span-1">
             <div className="flex gap-4">
               <TowerIcon />
-              <h5 className="text-white font-bold text-[18px]">Tower</h5>
+              <h4 className="text-white font-bold text-[18px]">Tower</h4>
             </div>
             <p className="py-2 pb-4 text-[18px]">{turbine.tower}</p>
 
@@ -202,7 +202,7 @@ const CardMobile = ({ top = 0, turbine }: any) => {
     >
       <header className="flex justify-between items-center mb-12">
         <div>
-          <h4 className="mb-3 font-bold text-[18px]">Ecotecnia E44</h4>
+          <h3 className="mb-3 font-bold text-[18px]">Ecotecnia E44</h3>
           <span className="bg-white rounded-full text-grey-parrafo px-3 py-1 inline-block">
             Wind Turbine
           </span>
@@ -220,7 +220,7 @@ const CardMobile = ({ top = 0, turbine }: any) => {
         <div className=" border-b w-full pr-8 mb-8">
           <div className="flex gap-2 items-center">
             <PowerIcon />
-            <h5 className="text-white font-bold text-[18px]">Power</h5>
+            <h4 className="text-white font-bold text-[18px]">Power</h4>
           </div>
           <p className="py-2 pb-4 text-[18px]">{turbine.power}</p>
         </div>
@@ -228,7 +228,7 @@ const CardMobile = ({ top = 0, turbine }: any) => {
           <div className="border-b flex-1">
             <div className="flex gap-2 items-center">
               <TowerIcon />
-              <h5 className="text-white font-bold text-[18px]">Tower</h5>
+              <h4 className="text-white font-bold text-[18px]">Tower</h4>
             </div>
             <p className="py-2 pb-2 text-[18px]">{turbine.tower}</p>
           </div>

@@ -59,7 +59,7 @@ const ServicesCard = ({
             </h4>
           ) : (
             <h4
-              className={`max-w-[16ch]  text-[22px] md:text-xl md:font-light`}
+              className={`max-w-[16ch] text-[22px] md:text-xl md:font-light`}
             >
               {titulo}
             </h4>
