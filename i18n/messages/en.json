@@ -4,7 +4,30 @@
         "no-video-support": "Your browser does not support video playback.",
         "connect": "Connect"
     },
-    "Navbar": {},
+    "Navbar": {
+        "paragraph":"RepowerLab is a pioneering company transforming the wind energy sector by providing innovative solutions for end-of-life.",
+        "i1":"Services",
+        "i2":{
+            "title":"Products",
+            "j1":"Wind turbines",
+            "j2":"Wind turbines spare part"
+        },
+        "i3":{
+            "title":"Circular Economy",
+            "j1":"Our Bussines Model",
+            "j2":"This is how we work"
+        },
+        "i4":"Marketplace",
+        "i5":{
+            "title":"Resources",
+            "j1":"Success Cases"
+        },
+        "i6":{
+            "title":"About",
+            "j1":"Our Company",
+            "j2":"Contact us"
+        }
+    },
     "Home": {
         "Hero": {
             "title": "Rethinking Energy Assets: \\nLeading the Charge in Circular Economy Innovation",

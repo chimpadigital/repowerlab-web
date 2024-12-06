@@ -7,59 +7,59 @@ export interface RoutesWithChildI {
 
 export const globalRoutes: Partial<RoutesWithChildI>[] = [
     {
-        title: "Services",
+        title: "i1",
         url: "our-services"
     },
     {
-        title: "Products",
+        title: "i2.title",
         child: [
             {
-                title: "Wind turbines",
+                title: "i2.j1",
                 url: "products/wind-turbines"
             },
             {
-                title: "Wind turbines spare parts",
+                title: "i2.j2",
                 url: "products/turbine-parts"
             },
         ]
     },
     {
-        title: "Circular economy",
+        title: "i3.title",
         child: [
             {
-                title: "Our Bussines Model",
+                title: "i3.j1",
                 url: "circular-economy"
             },
             {
-                title: "This is how we work",
+                title: "i3.j2",
                 url: "how-we-work"
             },
          
         ]
     },
     {
-        title: "Marketplace",
+        title: "i4",
         url: "marketplace"
     },
     {
-        title: "Resources",
+        title: "i5.title",
         child: [
             {
-                title: "Success Cases",
+                title: "i5.j1",
                 url: "success-cases"
             },
  
         ]
     },
     {
-        title: "About",
+        title: "i6.title",
         child: [
             {
-                title: "Our Company",
+                title: "i6.j1",
                 url: "about"
             },
             {
-                title: "Contact Us",
+                title: "i6.j2",
                 url: "about/contact-us"
             },
  

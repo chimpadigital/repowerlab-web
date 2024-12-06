@@ -8,13 +8,14 @@ import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import { ArrowMenu } from '../../icons'
 import { RepowerIcon } from './navicons'
 import { usePathname } from 'next/navigation';
-import {ScrollShadow} from "@nextui-org/react";
+import { ScrollShadow } from "@nextui-org/react";
+import { useTranslations } from 'next-intl';
 
 
 export default function Menu({ active, setMenu }: { active: boolean, setMenu?: any }) {
   const [linkActve, setActive] = useState(0)
   const [isActive, setIsActive] = useState(false)
-
+  const t = useTranslations("Navbar");
   const pathname = usePathname();
 
 
@@ -35,7 +36,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
               <RepowerIcon />
             </div>
             <p className="text-[17px] font-regular w-[300px] pt-4  text-primary">
-              RepowerLab is a pioneering company transforming the wind energy sector by providing innovative solutions for end-of-life.
+              {t("paragraph")}
             </p>
           </div>
         </div>
@@ -48,8 +49,8 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
               </div>
             </div>
             <div className='col-span-1 flex flex-col gap-4 ps-8 relative z-40 relative' >
-              <div  className="px-6 pb-10" >
-                <ScrollShadow size={100} hideScrollBar  className='scroll-smooth max-h-[60vh] min-h-[60vh]'>
+              <div className="px-6 pb-10" >
+                <ScrollShadow size={100} hideScrollBar className='scroll-smooth max-h-[60vh] min-h-[60vh]'>
                   {globalRoutes.map((item, index) => (
                     <div key={`item-${index}`} > {/* Use descriptive key with 'item' */}
                       {item.child ? (
@@ -66,7 +67,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                         >
                           <AccordionItem
                             indicator={<ArrowMenu />}
-                            title={(item.title)}>
+                            title={t.raw(item.title)}>
                             <div className="flex flex-col gap-2">
                               {item.child.map((item2, index) => (
                                 item2.child ? (
@@ -81,12 +82,12 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                                     <AccordionItem
                                       indicator={<ArrowMenu />}
                                       aria-label={`Accordion ${index}`}
-                                      title={(item2.title)}>
+                                      title={t.raw(item2.title)}>
                                       <div className="flex flex-col gap-2">
                                         {
                                           item2.child.map((item3, index) => (
                                             <Link key={`link-${index}`} className='block cursor-pointer select-none text-primary text-[14px]' href={`/${item3.url}`}>
-                                              {(item3.title)}
+                                              {t(item3.title)}
                                             </Link>
                                           ))}
                                       </div>
@@ -96,7 +97,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                                 ) : (
 
                                   <Link key={`link-${index}`} className='block cursor-pointer select-none text-primary text-[20px] xl:text-[22px]' href={`/${item2.url}`}>
-                                    {(item2.title)}
+                                    {t(item2.title)}
                                   </Link>
                                 )
                               ))}
@@ -105,7 +106,7 @@ export default function Menu({ active, setMenu }: { active: boolean, setMenu?: a
                         </Accordion>
                       ) : (
                         <Link key={`link-${index}`} className='block leading-[1.2] pt-3 pb-3 cursor-pointer inline-block select-none text-primary xl:text-[36px] text-[28px]' href={`/${item.url}`}>
-                          {(item.title)}
+                          {t(item.title)}
                         </Link>
                       )}
                     </div>

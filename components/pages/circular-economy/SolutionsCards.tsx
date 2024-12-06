@@ -40,20 +40,20 @@ const SolutionsCards = () => {
 
   return (
     <section className=" px-6 md:px-8 mx-4 md:mx-6 mb-3 md:mb-0 bg-primary bg-[url(/images/circular-economy/bg-solutions-cards.webp)] bg-fixed bg-no-repeat bg-cover rounded-[20px] py-16 md:pt-32 md:pb-32 md:text-center">
-      <h4 className={`${title({ size: "md" })} text-white hidden md:block`}>
+      <h2 className={`${title({ size: "md" })} text-white hidden md:block`}>
         {t("title")}
-      </h4>
+      </h2>
       <div className=" md:hidden flex flex-col">
-        <h4
+        <h3
           className={`${title({ size: "md" })} text-white text-left text-[28px] `}
         >
           {t("sub1")}
-        </h4>
-        <h4
+        </h3>
+        <h3
           className={`${title({ size: "md" })} text-white text-left text-[28px] `}
         >
           {t("sub2")}
-        </h4>
+        </h3>
       </div>
       <div className="flex gap-[11px] justify-center mt-10 md:mt-24 flex-wrap">
         {cardLists.map((card, i) => {
@@ -72,9 +72,9 @@ const SolutionsCards = () => {
                     width={32}
                   />
                 </div>
-                <h5 className="max-w-[12ch] inline-block text-lg md:text-2xl md:mt-7">
+                <h4 className="max-w-[12ch] inline-block text-lg md:text-2xl md:mt-7">
                   {card.title}
-                </h5>
+                </h4>
               </Link>
               <Link
                 key={i}
@@ -89,9 +89,9 @@ const SolutionsCards = () => {
                     width={32}
                   />
                 </div>
-                <h5 className="max-w-[12ch] inline-block text-lg md:text-2xl md:mt-7">
+                <h4 className="max-w-[12ch] inline-block text-lg md:text-2xl md:mt-7">
                   {card.title}
-                </h5>
+                </h4>
               </Link>
             </>
           );

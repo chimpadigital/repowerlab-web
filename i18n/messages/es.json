@@ -4,7 +4,32 @@
     "no-video-support": "Tu navegador no soporta la reproducción de videos.",
     "connect": "Conectar"
   },
-  "Navbar": {},
+  "Navbar": {
+    "paragraph": "RepowerLab es una empresa pionera en la transformación del sector de la energía eólica aportando soluciones innovadoras para el final de su vida útil.",
+    "i1": "Servicios",
+    "i2": {
+      "title": "Productos",
+      "j1": "Turbinas eólicas sin uso",
+      "j2": "Turbinas eólicas reacondicionadas",
+      "j3": "Turbinas eólicas usadas",
+      "j4": "Piezas de repuesto para turbinas eólicas"
+    },
+    "i3": {
+      "title": "Economía Circular",
+      "j1": "Nuestro Modelo de Negocio",
+      "j2": "Así trabajamos"
+    },
+    "i4": "Mercado en línea",
+    "i5": {
+      "title": "Recursos",
+      "j1": "Casos de éxito"
+    },
+    "i6": {
+      "title": "Sobre nosotros",
+      "j1": "Nuestra Empresa",
+      "j2": "Contáctenos"
+    }
+  },
   "Home": {
     "Hero": {
       "title": "Repensando los activos energéticos: liderando la innovación en la economía circular",
