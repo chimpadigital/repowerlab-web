@@ -14,9 +14,7 @@ export default function page() {
                 position="left"
             >
                 <div className="flex flex-col w-full flex  min-h-[70vh] text-white mt-10">
-                    <Title title={t.raw('title')} className={`text-white  pt-[15vh] mr-auto text-left ${title()}`}>
-                        
-                    </Title>
+                    <Title title={t.raw('title')} className={`text-white  pt-[15vh] mr-auto text-left ${title()}`}/>
                 </div>
             </HeroBreadcrumb>
         </section>
