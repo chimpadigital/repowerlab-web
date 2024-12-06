@@ -154,13 +154,17 @@ export default function OurOffer() {
   }, [params]);
   return (
     <section className="w-full flex gap-3 md:gap-0 flex-col md:flex-row items-center justify-center text-[22px]">
-      <h3 className="text-center text-primary font-bold md:hidden">
-        {t("title")}
-      </h3>
-      <div className="container px-2">
-        <h3 className="text-[32px] text-primary font-bold hidden md:block">
+      {!isDesktop && (
+        <h3 className="text-center text-primary font-bold lg:hidden">
           {t("title")}
         </h3>
+      )}
+      <div className="container px-2">
+        {isDesktop && (
+          <h3 className="text-[32px] text-primary font-bold hidden lg:block">
+            {t("title")}
+          </h3>
+        )}
         <Accordion
           variant="splitted"
           itemClasses={itemClasses}
@@ -174,11 +178,11 @@ export default function OurOffer() {
             <hr className="w-full border border-grey-500" />
             <div className="py-4">
               {isDesktop ? (
-                <article className="hidden md:block">
+                <article className="hidden lg:block">
                   <ListComponent list={listWindTurbine1} />
                 </article>
               ) : (
-                <article className="md:hidden">
+                <article className="lg:hidden">
                   <Paragraph
                     className="text-[#444444] mb-3"
                     text={t.raw("accordions.ac1.list.l1.textM")}
@@ -234,14 +238,14 @@ export default function OurOffer() {
             <hr className="w-full border border-grey-500" />
             <div className="py-4">
               {isDesktop ? (
-                <article className="hidden md:block">
+                <article className="hidden lg:block">
                   <Paragraph
                     text={t.raw("accordions.ac2.text")}
                     className="text-grey-parrafo"
                   />
                 </article>
               ) : (
-                <article className="md:hidden">
+                <article className="lg:hidden">
                   <Paragraph
                     text={t.raw("accordions.ac2.textM")}
                     className="text-grey-parrafo"
@@ -259,14 +263,14 @@ export default function OurOffer() {
             <hr className="w-full border border-grey-500" />
             <div className="py-4">
               {isDesktop ? (
-                <article className="hidden md:block">
+                <article className="hidden lg:block">
                   <Paragraph
                     text={t.raw("accordions.ac3.text")}
                     className="text-grey-parrafo"
                   />
                 </article>
               ) : (
-                <article className="md:hidden mb-3">
+                <article className="lg:hidden mb-3">
                   <Paragraph
                     text={t.raw("accordions.ac3.textM")}
                     className="text-grey-parrafo"
@@ -274,11 +278,11 @@ export default function OurOffer() {
                 </article>
               )}
               {isDesktop ? (
-                <article className="hidden md:block">
+                <article className="hidden lg:block">
                   <ListComponent list={listPurchase} />
                 </article>
               ) : (
-                <article className="md:hidden">
+                <article className="lg:hidden">
                   {listPurchaseMobile.map((item, index) => {
                     return (
                       <p
@@ -304,14 +308,14 @@ export default function OurOffer() {
             <hr className="w-full border border-grey-500" />
             <div className="py-4">
               {isDesktop ? (
-                <article className="hidden md:block">
+                <article className="hidden lg:block">
                   <Paragraph
                     text={t.raw("accordions.ac4.text")}
                     className="text-grey-parrafo"
                   />
                 </article>
               ) : (
-                <article className="md:hidden mb-3">
+                <article className="lg:hidden mb-3">
                   <Paragraph
                     text={t.raw("accordions.ac4.textM")}
                     className="text-grey-parrafo"
@@ -319,11 +323,11 @@ export default function OurOffer() {
                 </article>
               )}
               {isDesktop ? (
-                <article className="hidden md:block">
+                <article className="hidden lg:block">
                   <ListComponent list={listSupport} />
                 </article>
               ) : (
-                <article className="md:hidden">
+                <article className="lg:hidden">
                   {listSupportMobile.map((item, index) => {
                     return (
                       <p
