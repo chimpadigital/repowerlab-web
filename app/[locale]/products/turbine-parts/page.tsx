@@ -3,7 +3,6 @@ import Paragraph from "@/atoms/Paragraph";
 import HeroBreadcrumb from "@/components/HeroBreadcrumb";
 import { title } from "@/components/primitives";
 
-import { ArrowButtonIcon, DownloadIcon } from "@/components/icons";
 import SpareParts from "@/components/pages/products/SpareParts";
 import Support from "@/components/pages/products/Support";
 import Solutions from "@/components/pages/products/Solutions";
@@ -23,6 +22,7 @@ export default function page() {
     { label: t.raw("Hero.b2"), href: "none" },
     { label: t.raw("Hero.b3"), href: "/" },
   ];
+  
   return (
     <>
       <section className="w-full px-4 md:px-6">
@@ -34,7 +34,7 @@ export default function page() {
           <div className="flex justify-end text-white w-full">
             <div className="max-w-[500px]">
               <h1
-                className={`${title({ size: "md" })} max-w-[12ch] md:max-w-full !inline-block`}
+                className={`${title({ size: "md" })} max-w-[16ch] md:max-w-full !inline-block`}
               >
                 {t("Hero.title")}
               </h1>
