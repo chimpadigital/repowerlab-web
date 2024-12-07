@@ -1,3 +1,4 @@
+"use client"
 import Title from "@/atoms/Title";
 import { button, title } from "@/components/primitives";
 import { Link } from "@/i18n/routing";
