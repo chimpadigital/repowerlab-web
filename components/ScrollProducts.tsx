@@ -55,6 +55,10 @@ export default function ScrollProducts() {
   ];
   const isDesktop = useWindowSize({});
 
+  if (isDesktop === null) {
+    return null;
+  }
+
   return (
     <>
       <div
