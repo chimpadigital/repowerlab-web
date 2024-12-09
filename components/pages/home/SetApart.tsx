@@ -12,18 +12,20 @@ export default function SetApart() {
   const isDesktop = useWindowSize({});
 
   if (isDesktop === null) {
-    return (
-      <div className="px-7 mb-6">
-        <Skeleton
-          className="rounded-[20px] bg-primary/50"
-          classNames={{
-            base: "!bg-primary/70",
-          }}
-        >
-          <div className="h-screen rounded-3xl bg-primary/80"></div>
-        </Skeleton>
-      </div>
-    );
+    return null
+    
+    // (
+    //   <div className="px-7 mb-6">
+    //     <Skeleton
+    //       className="rounded-[20px] bg-primary/50"
+    //       classNames={{
+    //         base: "!bg-primary/70",
+    //       }}
+    //     >
+    //       <div className="h-screen rounded-3xl bg-primary/80"></div>
+    //     </Skeleton>
+    //   </div>
+    // );
   }
 
   return isDesktop ? (
