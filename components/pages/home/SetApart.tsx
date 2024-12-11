@@ -75,10 +75,8 @@ const MobileContainer = ({ isDesktop }: { isDesktop: boolean }) => {
 
 const CardMobile = ({
   title,
-  description,
   descriptionMob,
   Icon,
-  isDesktop,
 }: {
   title: string;
   descriptionMob: string;
@@ -94,11 +92,7 @@ const CardMobile = ({
         <Icon />
       </div>
       <div className="pt-4">
-        {isDesktop ? (
-          <p className="text-[18px]">{t(description)}</p>
-        ) : (
           <p className="text-[18px]">{t(descriptionMob)}</p>
-        )}
       </div>
     </article>
   );
