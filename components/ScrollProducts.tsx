@@ -54,72 +54,134 @@ export default function ScrollProducts() {
     "/images/our-services/e4.jpg",
   ];
   const isDesktop = useWindowSize({});
-
-  return (
-    <>
-      <div
-        className="relative md:h-[300vh] pb-52"
-        ref={ref}
-        // style={{ height: "calc(100% + 28rem)" }}
-      >
-        {isDesktop ? (
-          <div className="relative  top-0 z-0 w-full">
-            <div className="sticky top-0  h-[100vh] z-[1]">
-              <div className="absolute w-full h-full">
-                {images.map((el, i) => (
-                  <ImageMotion
-                    src={el}
-                    key={i}
-                    y={y}
-                    index={i}
-                    rounded={false}
-                  />
-                ))}
-              </div>
-              <div className="relative w-full h-full z-[2] flex items-center ps-20 text-[30px] text-white">
-                <Card turbine={turbine} y={y} index={0} />
-              </div>
-            </div>
-            <div className="sticky top-0 w-full h-[100vh] z-[2]">
-              <div className="relative w-full h-full flex items-center ps-20 text-[30px] text-white">
-                <Card turbine={turbine} top={30} y={y} index={1} />
-              </div>
-            </div>
-            <div className="sticky top-0 w-full h-[100vh] z-[3]">
-              <div className="relative w-full h-full  flex items-center ps-20 text-[30px] text-white">
-                <Card
-                  turbine={turbine}
-                  top={60}
-                  y={y}
-                  index={2}
-                  animation={false}
-                />
-              </div>
-            </div>
+  
+  return isDesktop || isDesktop === null ? (
+    <div
+      className="relative md:h-[300vh] pb-52"
+      ref={ref}
+      // style={{ height: "calc(100% + 28rem)" }}
+    >
+      <div className="relative  top-0 z-0 w-full">
+        <div className="sticky top-0  h-[100vh] z-[1]">
+          <div className="absolute w-full h-full">
+            {images.map((el, i) => (
+              <ImageMotion src={el} key={i} y={y} index={i} rounded={false} />
+            ))}
           </div>
-        ) : (
-          <div className="text-white px-4  top-0 w-full h-full">
-            <div className="sticky top-28 w-full z-[1] h-fit">
-              <div className="relative w-full h-full  ">
-                <CardMobile turbine={turbine} />
-              </div>
-            </div>
-            <div className="sticky top-28 w-full z-[2] h-fit">
-              <div className="relative w-full h-full">
-                <CardMobile turbine={turbine1} top={110} />
-              </div>
-            </div>
-
-            <div className="sticky top-80 w-full z-[3] h-fit">
-              <div className="relative w-full h-full">
-                <CardMobile turbine={turbine2} top={220} />
-              </div>
-            </div>
+          <div className="relative w-full h-full z-[2] flex items-center ps-20 text-[30px] text-white">
+            <Card turbine={turbine} y={y} index={0} />
           </div>
-        )}
+        </div>
+        <div className="sticky top-0 w-full h-[100vh] z-[2]">
+          <div className="relative w-full h-full flex items-center ps-20 text-[30px] text-white">
+            <Card turbine={turbine} top={30} y={y} index={1} />
+          </div>
+        </div>
+        <div className="sticky top-0 w-full h-[100vh] z-[3]">
+          <div className="relative w-full h-full  flex items-center ps-20 text-[30px] text-white">
+            <Card
+              turbine={turbine}
+              top={60}
+              y={y}
+              index={2}
+              animation={false}
+            />
+          </div>
+        </div>
       </div>
-    </>
+    </div>
+  ) : (
+    <div
+      className="relative md:h-[300vh] pb-52"
+      ref={ref}
+      // style={{ height: "calc(100% + 28rem)" }}
+    >
+      <div className="text-white px-4  top-0 w-full h-full">
+        <div className="sticky top-28 w-full z-[1] h-fit">
+          <div className="relative w-full h-full  ">
+            <CardMobile turbine={turbine} />
+          </div>
+        </div>
+        <div className="sticky top-28 w-full z-[2] h-fit">
+          <div className="relative w-full h-full">
+            <CardMobile turbine={turbine1} top={110} />
+          </div>
+        </div>
+
+        <div className="sticky top-80 w-full z-[3] h-fit">
+          <div className="relative w-full h-full">
+            <CardMobile turbine={turbine2} top={220} />
+          </div>
+        </div>
+      </div>
+    </div>
   );
+
+  // return (
+  //   <>
+  //     <div
+  //       className="relative md:h-[300vh] pb-52"
+  //       ref={ref}
+  //       // style={{ height: "calc(100% + 28rem)" }}
+  //     >
+  //       {isDesktop ? (
+  //         <div className="relative  top-0 z-0 w-full">
+  //           <div className="sticky top-0  h-[100vh] z-[1]">
+  //             <div className="absolute w-full h-full">
+  //               {images.map((el, i) => (
+  //                 <ImageMotion
+  //                   src={el}
+  //                   key={i}
+  //                   y={y}
+  //                   index={i}
+  //                   rounded={false}
+  //                 />
+  //               ))}
+  //             </div>
+  //             <div className="relative w-full h-full z-[2] flex items-center ps-20 text-[30px] text-white">
+  //               <Card turbine={turbine} y={y} index={0} />
+  //             </div>
+  //           </div>
+  //           <div className="sticky top-0 w-full h-[100vh] z-[2]">
+  //             <div className="relative w-full h-full flex items-center ps-20 text-[30px] text-white">
+  //               <Card turbine={turbine} top={30} y={y} index={1} />
+  //             </div>
+  //           </div>
+  //           <div className="sticky top-0 w-full h-[100vh] z-[3]">
+  //             <div className="relative w-full h-full  flex items-center ps-20 text-[30px] text-white">
+  //               <Card
+  //                 turbine={turbine}
+  //                 top={60}
+  //                 y={y}
+  //                 index={2}
+  //                 animation={false}
+  //               />
+  //             </div>
+  //           </div>
+  //         </div>
+  //       ) : (
+  //         <div className="text-white px-4  top-0 w-full h-full">
+  //           <div className="sticky top-28 w-full z-[1] h-fit">
+  //             <div className="relative w-full h-full  ">
+  //               <CardMobile turbine={turbine} />
+  //             </div>
+  //           </div>
+  //           <div className="sticky top-28 w-full z-[2] h-fit">
+  //             <div className="relative w-full h-full">
+  //               <CardMobile turbine={turbine1} top={110} />
+  //             </div>
+  //           </div>
+
+  //           <div className="sticky top-80 w-full z-[3] h-fit">
+  //             <div className="relative w-full h-full">
+  //               <CardMobile turbine={turbine2} top={220} />
+  //             </div>
+  //           </div>
+  //         </div>
+  //       )}
+  //     </div>
+  //   </>
+  // );
 }
 
 const Card = ({ top = 0, turbine, animation = true, y, index }: any) => {
