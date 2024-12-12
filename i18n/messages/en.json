@@ -319,7 +319,7 @@
                 "l1": {
                     "title": "Wind turbine retrofitting & refurbishing",
                     "description": "RepowerLab enhances the performance and extends the lifespan of existing wind turbines through comprehensive retrofitting and refurbishing services, ensuring turbines operate at peak efficiency and durability.",
-                    "descriptionMobile": "We specialize in extending turbine life and boosting performance through retrofitting, maximizing efficiency, output and value"
+                    "descriptionMobile": "We specialize in extending turbine life and boosting performance through retrofitting, maximizing efficiency, output and value."
                 },
                 "l2": {
                     "title": "Retrofitting",
@@ -599,7 +599,7 @@
                 },
                 "data7": {
                     "title": "Refurbishment and Repair",
-                    "subtitle": "Extending the life of wind turbines through refurbishment",
+                    "subtitle": "Extending the life of wind turbines through refurbishment.",
                     "sellers": "At our facilities, we refurbish and repair turbine components, extending their lifecycle and enhancing their performance. Each part is meticulously inspected and restored to optimal condition.",
                     "buyers": "Our refurbishment process ensures that turbine components are restored to high standards. This extends their useful life and offers a cost-effective solution for your wind energy needs.",
                     "sellersM": "We refurbish turbine components, enhancing performance and extending their lifecycle.",
