@@ -34,7 +34,7 @@ export const Navbar = () => {
                 <div className={"gap-3 max-w-fit md:py-4 py-2 px-6 relative  transition-all duration-[600ms] rounded-full "} >
                   <div className="flex justify-between gap-1 items-center">
                     <Link className="flex justify-between md:justify-start block  items-center gap-1" href="/">
-                      <LogoRepower className={`${active ? 'text-primary' : 'text-white'} w-[80%]  md:w-[193px] transition-all duration-[600]`} />
+                      <LogoRepower className={`${active ? 'text-primary' : 'text-white'} w-[95%]  md:w-[193px] transition-all duration-[600]`} />
                     </Link>
                     <div className="md:hidden flex gap-1 items-center">
                       <LangChange />
@@ -47,7 +47,7 @@ export const Navbar = () => {
                 <div className={`gap-3 max-w-fit md:py-4 py-2 px-6 relative  transition-all duration-[600ms] ${!isAtTop && "blurRepower"} rounded-full ${isAtBottom ? "opacity-0" : ""}`} style={!isAtTop ? bgNavStyle : {}}>
                   <div className="flex justify-between gap-1 items-center">
                     <Link className="flex justify-start justify-between md:justify-start block  items-center gap-1" href="/">
-                      <LogoRepower className={`${active ? 'text-primary' : 'text-white'}  w-[80%]  md:w-[193px]  transition-all duration-[600]`} />
+                      <LogoRepower className={`${active ? 'text-primary' : 'text-white'}  w-[95%]  md:w-[193px]  transition-all duration-[600]`} />
                     </Link>
                     <div className="md:hidden flex gap-1 items-center">
                       <LangChange />
