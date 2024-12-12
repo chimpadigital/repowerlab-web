@@ -793,11 +793,11 @@
                         },
                         "l3": {
                             "title": "Logistics",
-                            "text": "Smooth delivery and installation"
+                            "text": "Smooth delivery and installation."
                         },
                         "l4": {
                             "title": "Regulatory Help",
-                            "text": "Ensure compliance with all regulations"
+                            "text": "Ensure compliance with all regulations."
                         },
                         "l5": {
                             "title": "Financial Consulting",
@@ -976,7 +976,7 @@
                 },
                 "d3": {
                     "title": "Warehousing, Transportation & Logistics",
-                    "description": "Components are efficiently warehoused, and transported to our facilities for further processing, with careful logistics management to minimize environmental impact."
+                    "description": "Components are efficiently warehoused and transported to our facilities for further processing, with careful logistics management to minimize environmental impact."
                 },
                 "d4": {
                     "title": "Recycling",
