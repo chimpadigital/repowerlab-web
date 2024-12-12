@@ -26,6 +26,20 @@ export default function ServicesContainer() {
     { label: t.raw("Hero.b2"), href: "/our-services" },
   ];
   const isDesktop = useWindowSize({});
+
+  
+  useEffect(() => {
+    if (isDesktop !== null) {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }
+  }, [isDesktop]);
+
   return (
     <>
       <section className="w-full px-4 lg:px-6">
@@ -54,45 +68,53 @@ export default function ServicesContainer() {
           items={decommissioning}
           id="decommissioning"
           idDesktop="decommissioning-desk"
+          isDesktop
         />
         <ScrollAccordion
           items={repowering}
           id="repowering"
           idDesktop="repowering-desk"
+          isDesktop
         />
         <ScrollAccordion
           items={retrofitting}
           id="retrofitting"
           imgPosition="right"
           idDesktop="retrofitting-desk"
+          isDesktop
         />
         <ScrollAccordion
           items={bladeRecycling}
           id="blade-recycling"
           imgPosition="right"
           idDesktop="blade-recycling-desk"
+          isDesktop
         />
         <ScrollAccordion
           items={inspection}
           id="inspection"
           idDesktop="inspection-desk"
+          isDesktop
         />
         <ScrollAccordion
           items={resaleParts}
           id="resale-parts"
           idDesktop="resale-parts-desk"
+          isDesktop
         />
         <ScrollAccordion
           items={resaleMaterials}
           id="resale-materials"
           imgPosition="right"
           idDesktop="resale-materials-desk"
+          isDesktop
         />
         <ScrollAccordion
           items={warehousing}
           id="warehousing"
           imgPosition="right"
           idDesktop="warehousing-desk"
+          isDesktop
         />
       </section>
 

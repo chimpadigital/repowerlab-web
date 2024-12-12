@@ -6,7 +6,6 @@ import { Link } from "@/i18n/routing";
 import { button } from "./primitives";
 import AccordionMob from "./AccordionMob";
 import { useTranslations } from "next-intl";
-import { useWindowSize } from "@/utils/useResize";
 import ScrollAccordionSkeleton from "./ScrollAccordionSkeleton";
 
 export interface ScrollAcordionI {
@@ -22,6 +21,7 @@ export interface ScrollAcordionI {
   id: string;
   idDesktop: string;
   imgText?: string;
+  isDesktop?: boolean | null;
 }
 
 const fixFirst = 0.3;
@@ -33,8 +33,9 @@ export default function ScrollAcordion({
   id,
   idDesktop,
   imgText,
+  isDesktop,
 }: ScrollAcordionI) {
-  const isDesktop = useWindowSize({});
+
 
   if (isDesktop === null) {
     return <ScrollAccordionSkeleton />;

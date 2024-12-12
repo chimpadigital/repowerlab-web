@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import {
   Arrow,
   ArrowButtonIcon,
@@ -42,17 +42,23 @@ const ServicesCard = ({
   const pathname = usePathname();
   const locale = useLocale();
   const isDesktop = useWindowSize({});
+  const [isChecked, setIsChecked] = useState(false);
 
   return (
-    <motion.div
+    <motion.label
       variants={item}
-      className="relative overflow-hidden group shadow-[5px_5px_4px_0px_#0000001A] rounded-[10px] bg-[#F4F4F4] w-fit text-primary px-6 pb-6 h-full"
+      className="relative block overflow-hidden group shadow-[5px_5px_4px_0px_#0000001A] rounded-[10px] bg-[#F4F4F4] w-fit text-primary px-6 pb-6 h-full"
       style={{
         width: "min(100%, 307px)",
         minHeight: locale == "es" ? "330px" : "280px",
       }}
     >
-      <div className="h-full transition-all group-hover:-translate-y-8 flex  flex-col justify-between  w-full pt-14">
+      <input
+        type="checkbox"
+        className="absolute top-0 hidden"
+        onChange={(e) => setIsChecked(e.target.checked)}
+      />
+      <div className="h-full transition-all lg:group-hover:-translate-y-8 flex  flex-col justify-between  w-full pt-14">
         <div className="flex gap-4 flex-col">
           <div className="bg-[#B3C5DF] h-[78px] aspect-square rounded-full grid place-items-center w-fit">
             {svgIcono}
@@ -73,7 +79,9 @@ const ServicesCard = ({
           <ArrowDiagonal />
         </div>
       </div>
-      <div className="absolute p-[26px] inset-0 translate-y-[100%] transition-all group-hover:translate-y-0 bg-[#F4F4F4] h-full w-full flex flex-col justify-between">
+      <div
+        className={`absolute p-[26px] inset-0 lg:translate-y-[100%] transition-all lg:group-hover:translate-y-0 bg-[#F4F4F4] h-full w-full flex flex-col justify-between ${isChecked ? "translate-y-0" : "translate-y-[100%]"}`}
+      >
         {isDesktop ? (
           <p className={`text-desktop text-base`}>{texto}</p>
         ) : (
@@ -98,7 +106,7 @@ const ServicesCard = ({
           </span>
         </Link>
       </div>
-    </motion.div>
+    </motion.label>
   );
 };
 
