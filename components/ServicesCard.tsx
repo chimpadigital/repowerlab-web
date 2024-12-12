@@ -43,7 +43,6 @@ const ServicesCard = ({
   const locale = useLocale();
   const isDesktop = useWindowSize({});
   const [isChecked, setIsChecked] = useState(false);
-  console.log(isChecked);
 
   return (
     <motion.label
