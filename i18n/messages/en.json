@@ -1154,12 +1154,12 @@
                 "position":"Co-Founder & Managing Director of LATAM"
             },
             "victoria":{
-                "description":"Residing in Virginia, US, Victoria has over 20 years of experience in sustainable finance. She has been instrumental in driving sustainability and decarbonization strategies for companies. Victoria's expertise includes developing ESG investment strategies, innovative climate finance products, and advising investors on renewable energy projects. She has received recognition as one of DC's Top 50 Women Leaders for two consecutive years.",
+                "description":"Residing in Virginia, US, Victoria has over 20 years of experience in sustainable finance. Victoria’s expertise includes developing ESG investment strategies, innovative climate finance products, and advising investors on renewable energy projects. She has received recognition as one of DC’s Top 50 Women Leaders for two consecutive years.",
                 "descriptionM": "Based in Virginia, US, Victoria has over 20 years of expertise in sustainable finance. She has co-founded several impact ventures and has driven investments toward the development of numerous ESG projects. Recognized among DC's Top 50 Women Leaders, she advises investors on renewable energy projects.",
                 "position":"Co-Founder & Managing Director of US"
             },
             "ivan":{
-                "description":"A seasoned business and project developer in the renewable energy sector, Iván has contributed to the successful development of over 1.5 GW. Moreover, Iván brings a vast experience within the wind energy industry, from the design of wind turbines, support structures and wind farms to the business development and project management of large-scale wind power in Latin America.", 
+                "description":"A seasoned business and project developer in the renewable energy sector, Iván has contributed to the successful development of over 1.5 GW. Moreover, Iván brings vast experience within the wind energy industry, from the design of wind turbines, support structures, and wind farms to the business development and project management of large-scale wind power in Latin America.", 
                 "descriptionM": "A seasoned business and project developer in the renewable energy sector, Iván has contributed to the successful development of over 1.5 GW. Moreover, Iván brings a vast experience within the wind energy industry, from the design of wind turbines, support structures and wind farms to the business development and project management of large-scale wind power in Latin America.",
                 "position":"Business Development Manager"
             }
@@ -1181,7 +1181,7 @@
         },
         "history":{
             "title":"History",
-            "p":"RepowerLab was born as a spin-off of Repowering Solutions, a company with more than 15 years of experience in the dismantling, retrofitting, recycling, buying and selling of wind turbines in Europe. Today, with a global presence, we execute projects in 20 countries through our three international offices.",
+            "p":"RepowerLab was born as a spin-off of Repowering Solutions, a company with more than 15 years of experience in the dismantling, retrofitting, recycling, buying, and selling of wind turbines in Europe. Today, with a global presence, we execute projects in 20 countries through our three international offices.",
             "pM":"RepowerLab started as a spin-off of Repowering Solutions, with over 15 years of experience in wind turbine dismantling and recycling. We now operate globally, executing projects in 20 countries through three international offices."
         }
     },
