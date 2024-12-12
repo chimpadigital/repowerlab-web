@@ -40,10 +40,10 @@ const TeamMemberCard = ({
         style={{
           clipPath: "url(#clip-shape)",
         }}
-        className={`absolute z-20 group text-white text-start h-full w-full inset-0 origin-center  bg-[#0e0e0e00] md:hover:bg-[#707070cc] flex flex-col px-6 pt-2 md:pt-44 transition-all md:hover:backdrop-blur-[30px] md:hover:justify-normal ${isChecked ? "bg-[#707070cc] backdrop-blur-[30px]" : "bg-[#0e0e0e00] backdrop-blur-0"}`}
+        className={`absolute z-20 group  ${isChecked ? "bg-[#707070cc] backdrop-blur-[30px]" : "bg-[#0e0e0e00] backdrop-blur-0"} text-white text-start h-full w-full inset-0 origin-center  bg-[#0e0e0e00] md:hover:bg-[#707070cc] flex flex-col px-6 pt-2 md:pt-44 transition-all md:hover:backdrop-blur-[30px] md:hover:justify-normal `}
       >
         <div
-          className={`transition-all absolute md:bottom-8 text-xl md:text-2xl md:group-hover:bottom-[70%]  md:group-hover:opacity-100 ${isChecked ? "bottom-[70%] opacity-0 " : "bottom-4 opacity-100"}`}
+          className={`transition-all absolute ${isChecked ? "bottom-[70%] opacity-0 " : "bottom-4 opacity-100"} md:bottom-8 text-xl md:text-2xl md:group-hover:bottom-[70%]  md:group-hover:opacity-100 `}
         >
           <h4 className="font-extrabold text-base md:text-2xl mb-1 md:mb-3 font-[Mulish]">
             {name}
@@ -53,7 +53,7 @@ const TeamMemberCard = ({
           </p>
         </div>
         <div
-          className={`opacity-0 transition-all mt-3 md:group-hover:opacity-100 ${isChecked ? "opacity-100" : "opacity-0"}`}
+          className={`${isChecked ? "opacity-100" : "opacity-0"} opacity-0 transition-all mt-3 md:group-hover:opacity-100 `}
         >
           {isDesktop ? (
             <p
