@@ -114,7 +114,7 @@
             "cards": {
                 "card1": {
                     "title": "Waste reduction",
-                    "descriptionMob": "Advanced recycling and repurposing reduce turbine waste by up to 90%",
+                    "descriptionMob": "Advanced recycling and repurposing reduce turbine waste by up to 90%.",
                     "description": "Through advanced recycling and repurposing, Repowerlab cuts waste from decommissioned wind turbines by up to 90%, leading the industry in sustainable practices."
                 },
                 "card2": {
@@ -124,7 +124,7 @@
                 },
                 "card3": {
                     "title": "Increased power output",
-                    "descriptionMob": "Repowering techniques boost turbine efficiency by 25-35% maximizing energy production",
+                    "descriptionMob": "Repowering techniques boost turbine efficiency by 25-35% maximizing energy production.",
                     "description": "Repowerlab’s innovative repowering techniques boost the efficiency of wind turbines by 25-35%, maximizing energy production from existing assets."
                 },
                 "card4": {
@@ -146,7 +146,7 @@
             "singles": {
                 "card1": {
                     "title": "A single point of contact",
-                    "d": "We provide a single point of contact for all services, ensuring seamless communication and coordination",
+                    "d": "We provide a single point of contact for all services, ensuring seamless communication and coordination.",
                     "dM": "One contact, all services—smooth and simple."
                 },
                 "card2": {
@@ -269,7 +269,7 @@
                 },
                 "l2": {
                     "title": "Disassembly of Wind Turbines",
-                    "description": "RepowerLab provides innovative dismantling, industrial relocation, and reassembly services, ensuring safe and efficient dismantling. Our experienced team handles all aspects of the process, from the initial assessment to the careful removal of turbine components. Utilizing state-of-the-art equipment and adhering to stringent safety standards, we minimize environmental impact and prepare turbines for either reuse or recycling.",
+                    "description": "RepowerLab has over 15 years of experience in international transport and decommissioning of onshore wind turbines. We provide innovative dismantling, industrial relocation, and reassembly services. Our operations adhere to strict safety standards, certified equipment use, and local guidelines. Post-dismantling, turbines are either reinstalled, used for spare parts, or recycled.",
                     "descriptionMobile": "We provide innovative dismantling, relocation, and reassembly, ensuring safe and efficient processes while minimizing environmental impact for reuse or recycling."
                 },
                 "l3": {
@@ -323,7 +323,7 @@
                 },
                 "l2": {
                     "title": "Retrofitting",
-                    "description": "Enhancing Wind Turbine Performance Our retrofitting services focus on upgrading power converter systems, installing advanced control systems, and retrofitting blades. These improvements boost turbine performance, extend lifespan, and reduce the need for new raw materials by overhauling critical components such as gearboxes and generators.",
+                    "description": "Enhancing Wind Turbine Performance: Our retrofitting services focus on upgrading power converter systems, installing advanced control systems, and retrofitting blades. These improvements boost turbine performance, extend lifespan, and reduce the need for new raw materials by overhauling critical components such as gearboxes and generators.",
                     "descriptionMobile": "Upgrade power systems and retrofit blades to boost efficiency, extend lifespan, and reduce new material needs."
                 },
                 "l3": {
