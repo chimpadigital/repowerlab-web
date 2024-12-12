@@ -1,5 +1,11 @@
 {
   "greeting": "Hola",
+  "products":{
+    "wind_turbine":"Turbina eólica",
+    "rotor":"Rotor",
+    "tower":"Torre",
+    "power":"Potencia nominal"
+  },
   "shared": {
     "no-video-support": "Tu navegador no soporta la reproducción de videos.",
     "connect": "Conectar",

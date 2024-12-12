@@ -5,6 +5,12 @@
         "read-more":"Read more",
         "connect": "Connect"
     },
+    "products":{
+        "wind_turbine":"Wind Turbine",
+        "rotor":"Rotor",
+        "tower":"Tower",
+        "power":"Power"
+      },
     "Footer":{
         "follow":"Follow",
         "products":"Products",
