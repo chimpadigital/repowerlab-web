@@ -30,7 +30,7 @@
     "productsLink": {
       "i1": "Turbinas eólicas sin uso",
       "i2": "Turbinas eólicas reacondicionadas",
-      "i3": "Turbina eólica usada",
+      "i3": "Turbinas eólicas usadas",
       "i4": "Piezas de repuesto para turbinas eólicas"
     }
   },
@@ -552,8 +552,8 @@
         "data1": {
           "title": "Contacto inicial y consulta",
           "subtitle": "Comience su viaje con una consulta personalizada.",
-          "sellers": "Póngase en contacto con nosotros con sus planes para vender sus turbinas eólicas. Nuestro equipo le brindará una consulta inicial para comprender sus necesidades y plazos. Comenzar temprano es clave para una transacción sin problemas",
-          "buyers": "Póngase en contacto con nosotros para analizar sus necesidades de compra de turbinas eólicas reacondicionadas. Lo guiaremos a través de los pasos iniciales y lo ayudaremos a comprender cómo podemos cumplir con sus requisitos específicos",
+          "sellers": "Póngase en contacto con nosotros con sus planes para vender sus turbinas eólicas. Nuestro equipo le brindará una consulta inicial para comprender sus necesidades y plazos. Comenzar temprano es clave para una transacción sin problemas.",
+          "buyers": "Póngase en contacto con nosotros para analizar sus necesidades de compra de turbinas eólicas reacondicionadas. Lo guiaremos a través de los pasos iniciales y lo ayudaremos a comprender cómo podemos cumplir con sus requisitos específicos.",
           "sellersM": "Comunícate con tus planes para vender turbinas eólicas. Brindamos una consulta inicial para comprender sus necesidades y cronograma.",
           "buyersM": "Póngase en contacto con nosotros para hablar sobre la compra de turbinas reacondicionadas. Le guiaremos a través de los pasos iniciales y adaptaremos las soluciones a sus necesidades."
         },
@@ -599,7 +599,7 @@
         },
         "data7": {
           "title": "Modernización y reparación",
-          "subtitle": "Prolongar la vida útil de los turbinas eólicas mediante su reacondicionamiento.",
+          "subtitle": "Prolongar la vida útil de las turbinas eólicas mediante su reacondicionamiento.",
           "sellers": "En nuestras instalaciones, reacondicionamos y reparamos los componentes de las turbinas, alargando su ciclo de vida y mejorando su rendimiento. Cada pieza se inspecciona meticulosamente y se restaura a su estado óptimo.",
           "buyers": "Nuestro proceso de reacondicionamiento garantiza que los componentes de la turbina se restauren con altos estándares. Esto prolonga su vida útil y ofrece una solución rentable para sus necesidades de energía eólica.",
           "sellersM": "Reacondicionamos los componentes de las turbinas, mejorando el rendimiento y alargando su ciclo de vida.",
@@ -649,7 +649,7 @@
           "pM": "Ofrecemos soporte completo, desde el desmontaje hasta la modernización."
         },
         "ac3": {
-          "title": "Talento apasionado por las energías renovables y la sostenibilidad?",
+          "title": "¿Talento apasionado por las energías renovables y la sostenibilidad?",
           "titleM": "¿Te apasionan las energías renovables?",
           "p": "Siempre estamos buscando personas talentosas para unirse a nuestro equipo. Si está motivado para marcar la diferencia y ansioso por contribuir a nuestra misión, queremos saber de usted.",
           "pM": "Queremos personas talentosas con ganas de marcar la diferencia."
@@ -672,7 +672,7 @@
           "title": "¿Por qué trabajar con nosotros?",
           "list1": "Forma parte de un equipo pionero en energías renovables",
           "list2": "Oportunidades de crecimiento y desarrollo profesional",
-          "list3": "Contribuir a proyectos significativos e impactante"
+          "list3": "Contribuir a proyectos significativos e impactantes"
         }
       }
     },
