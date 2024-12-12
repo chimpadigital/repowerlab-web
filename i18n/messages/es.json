@@ -115,12 +115,12 @@
       "cards": {
         "card1": {
           "title": "Reducción de residuos",
-          "descriptionMob": "El reciclaje y el cambio de uso avanzados reducen los residuos de turbinas hasta en un 90%",
+          "descriptionMob": "El reciclaje y el cambio de uso avanzados reducen los residuos de turbinas hasta en un 90%.",
           "description": "A través del reciclaje y la reutilización avanzados, Repowerlab reduce los residuos de las turbinas eólicas fuera de servicio hasta en un 90%, liderando la industria en prácticas sostenibles."
         },
         "card2": {
           "title": "Residuos evitados",
-          "descriptionMob": "Evitamos el 60% de los residuos potenciales al mantener los materias primas en uso durante más tiempo.",
+          "descriptionMob": "Evitamos el 60% de los residuos potenciales al mantener las materias primas en uso durante más tiempo.",
           "description": "Nuestras iniciativas de economía circular han desviado con éxito el 60% de los residuos potenciales de los vertederos, convirtiendo los componentes de las turbinas eólicas al final de su vida útil en recursos valiosos."
         },
         "card3": {
@@ -129,14 +129,14 @@
           "description": "Las innovadoras técnicas de repotenciación de Repowerlab aumentan la eficiencia de las turbinas eólicas en un 25-35%, maximizando la producción de energía a partir de los activos existentes."
         },
         "card4": {
-          "title": "Reducción de costos en el desmantelamiento",
+          "title": "Reducción de costes en el desmantelamiento",
           "descriptionMob": "Reducción de costos del 90% al optimizar el proceso de desmantelamiento, haciendo que las transiciones energéticas sean asequibles.",
           "description": "Al optimizar el proceso de desmantelamiento, reducimos los costos en un 90%, haciendo que las transiciones energéticas sostenibles sean más asequibles y accesibles."
         }
       },
       "howWork": {
-        "title1": "Así",
-        "title2": "trabajamos",
+        "title1": "Así es",
+        "title2": "como trabajamos",
         "p1": "En RepowerLab ofrecemos una solución integral para la gestión del ciclo de vida de los aerogeneradores.",
         "p2": "Ya sea que venda o compre turbinas eólicas, garantizamos un proceso fluido, eficiente y transparente.",
         "p3": "¿Busca ayuda experta? Póngase en contacto con nosotros para una presentación sin compromiso.",
@@ -220,7 +220,7 @@
       "card2": {
         "title": "Repotenciación de parques eólicos",
         "d": "RepowerLab repotencia los parques eólicos mediante la modernización de las turbinas para mejorar la eficiencia, aumentar la producción de energía y reducir los costos, todo ello siguiendo prácticas sostenibles.",
-        "dM": "Maximice la eficiencia y el valor con la repotenciación avanzada, lo que prolonga la vida útil de los parques eólicos y reduce los costos."
+        "dM": "RepowerLab repotencia los parques eólicos mediante la modernización de las turbinas para mejorar la eficiencia, aumentar la producción de energía y reducir los costos, todo ello siguiendo prácticas sostenibles."
       },
       "card3": {
         "title": "Modernización y reacondicionamiento de turbinas eólicas",
@@ -473,7 +473,7 @@
     "b1": "Inicio",
     "b2": "Compania",
     "b3": "Contáctenos",
-    "title": "Contáctenos",
+    "title": "Conéctese hoy",
     "sub": "No dude en utilizar el formulario de contacto para ponerse en contacto con nosotros.",
     "form": {
       "name": {
