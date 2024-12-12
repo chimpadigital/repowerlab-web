@@ -640,7 +640,7 @@
     "JoinMission": {
       "title": "Únete a nuestra misión",
       "p": "En RepowerLab, nos dedicamos a **avanzar en la economía circular en el sector de la energía eólica.** Al trabajar junto con socios, clientes y personas talentosas, podemos lograr un futuro más sostenible y eficiente. **Únase a nosotros en nuestra misión de innovar, transformar y liderar el camino en soluciones de energía renovable.**",
-      "pM": "**En RepowerLab avanzamos en la economía circular en la energía eólica.** Al colaborar con socios, clientes e individuos apasionados, buscamos un futuro sostenible. **Únete a nosotros para liderar en soluciones de energía renovable.**",
+      "pM": "**En RepowerLab avanzamos en la economía circular en la energía eólica.** Al colaborar con socios, clientes y personas apasionadas, apuntamos a un futuro sostenible. **Únase a nosotros para liderar en soluciones de energía renovable.**",
       "accordion": {
         "ac1": {
           "title": "¿Es usted una empresa que busca colaborar en soluciones de energía sostenible?",
@@ -694,7 +694,7 @@
       "title": "Turbinas eólicas",
       "b1": "Inicio",
       "b2": "Productos",
-      "b3": "Turbinas eólicas",
+      "b3": "Turbinas Eólicas",
       "p": "RepowerLab proporciona turbinas eólicas, tanto **sin uso como reacondicionadas,** junto con **materiales reciclados** de granjas desmanteladas para apoyar una economía circular. Nuestro **soporte de compras** ofrece asesoramiento experto y asistencia regulatoria, mientras que el **soporte de instalación** garantiza una configuración sin problemas con gestión de proyectos y asistencia técnica. Además, ofrecemos servicios de **almacenamiento y logística** para un manejo eficiente de los componentes.",
       "pM": "RepowerLab ofrece turbinas sin uso y reacondicionadas, además de repuestos y materias primas reciclados de granjas fuera de servicio para una economía circular. Brindamos soporte de compra e instalación, además de almacenamiento y logística para un manejo eficiente.",
       "download": "Descargar folleto"
@@ -709,7 +709,7 @@
               "title": "Turbinas eólicas sin uso:",
               "titleM": "Turbinas sin uso:",
               "text": "Procedentes de proyectos cancelados o reducidos, estas turbinas son esencialmente nuevas, pero se venden como de segunda mano, ofreciendo un excelente valor. Cada turbina se somete a rigurosas inspecciones y pruebas para garantizar que conserva los más altos estándares de rendimiento y confiabilidad.",
-              "textM": "**Turbinas sin uso:** Turbinas como nuevas de proyectos cancelados, vendidas de segunda mano por un gran valor, inspeccionadas y probadas para obtener el máximo rendimiento."
+              "textM": "**Turbinas sin usar:** Turbinas como nuevas de proyectos cancelados, vendidas de segunda mano por un gran valor, inspeccionadas y probadas para obtener el máximo rendimiento."
             },
             "l2": {
               "title": "Turbinas eólicas remanufacturadas:",
@@ -724,7 +724,7 @@
             "l4": {
               "title": "Repuestos para turbinas eólicas:",
               "text": "RepowerLab suministra una amplia gama de piezas de turbinas para respaldar las operaciones de mantenimiento y reparación. Nuestro inventario incluye componentes nuevos y reacondicionados, lo que garantiza que los clientes tengan acceso a las piezas que necesitan para mantener sus turbinas funcionando de manera eficiente.",
-              "textM": "**Repuesto:** Una amplia gama de repuestos nuevas y reacondicionadas para mantener las turbinas funcionando sin problemas. Incluye: palas, cajas de engranajes, generadores, sistemas de control y otros componentes clave."
+              "textM": "**Repuestos:** Una amplia gama de repuestos nuevas y reacondicionadas para mantener las turbinas funcionando sin problemas. Incluye: palas, cajas de engranajes, generadores, sistemas de control y otros componentes clave."
             }
           },
           "title2": " Nuestras piezas para turbinas eólicas incluyen:",
@@ -747,7 +747,7 @@
             },
             "l5": {
               "title": "Otros componentes:",
-              "text": "Incluyendo torres, bujes y más, todos procedentes de fabricantes de confianza."
+              "text": "Incluyendo torres, bujes y más, todos ellos procedentes de fabricantes de confianza."
             }
           },
           "link": "Repuestos para turbinas eólicas",
@@ -790,7 +790,7 @@
           },
           "listM": {
             "l1": {
-              "title": "Asesoramiento experto:",
+              "title": "Asesoramiento de expertos",
               "text": "Recomendaciones personalizadas para tu proyecto."
             },
             "l2": {
@@ -810,7 +810,7 @@
               "text": "Ayuda a conseguir financiación."
             },
             "l6": {
-              "title": "Soporte postventa",
+              "title": "Posventa",
               "text": "Soporte continuo para el rendimiento de la turbina."
             }
           }
@@ -835,7 +835,7 @@
           },
           "listM": {
             "l1": {
-              "title": "Gestión de proyecto",
+              "title": "Gestión de proyectos",
               "text": "De principio a fin."
             },
             "l2": {
@@ -1030,7 +1030,7 @@
         },
         "a2": {
           "title": "Evaluación y planeación",
-          "titleMobile": "Evaluación y planeación",
+          "titleMobile": "Evaluación y planificación",
           "description": "RepowerLab cuenta con más de 15 años de experiencia en el transporte internacional y el desmantelamiento de turbinas eólicas terrestres. Brindamos servicios innovadores de desmantelamiento, reubicación industrial y reensamblaje. Nuestras operaciones se adhieren a estrictos estándares de seguridad, uso certificado de equipos y pautas locales. Después del desmantelamiento, las turbinas se reinstalan, se utilizan como piezas de repuesto o se reciclan.",
           "descriptionMobile": "Evaluamos su parque eólico para determinar la mejor estrategia de repotenciación."
         },
@@ -1050,7 +1050,7 @@
       "circularEconomySolutions": {
         "a1": {
           "title": "Soluciones de economía circular",
-          "titleMobile": "Soluciones de economía circular",
+          "titleMobile": "Soluciones de Economía Circular",
           "description": "Nuestras soluciones de economía circular tienen como objetivo minimizar los residuos y maximizar la utilización de los recursos durante todo el ciclo de vida de las turbinas eólicas.",
           "descriptionMobile": "Nuestras soluciones minimizan el desperdicio y maximizan el uso de recursos durante todo el ciclo de vida de la turbina."
         },
@@ -1110,19 +1110,19 @@
           "title": "Soluciones de reciclaje",
           "titleMobile": "Soluciones de reciclaje",
           "description": "El reciclaje es un aspecto crucial de nuestro enfoque de economía circular. En RepowerLab, empleamos técnicas avanzadas de reciclaje para recuperar materiales valiosos de turbinas eólicas fuera de servicio.",
-          "descriptionMobile": "El reciclaje es un aspecto crucial de nuestro enfoque de economía circular. En RepowerLab, empleamos técnicas avanzadas de reciclaje para recuperar materiales valiosos de turbinas eólicas fuera de servicio."
+          "descriptionMobile": "El reciclaje es un aspecto crucial de nuestro enfoque de economía circular. En RepowerLab, empleamos técnicas avanzadas de reciclaje para recuperar materias primas valiosos de turbinas eólicas fuera de servicio."
         },
         "a2": {
           "title": "Recuperación de materiales",
           "titleMobile": "Recuperación de materiales",
           "description": "Uso de procesos mecánicos y químicos para extraer materiales como fibra de vidrio y metales de los componentes de las turbinas.",
-          "descriptionMobile": "Uso de procesos mecánicos y químicos para extraer materiales como fibra de vidrio y metales de los componentes de las turbinas."
+          "descriptionMobile": "Uso de procesos mecánicos y químicos para extraer materias primas como fibra de vidrio y metales de los componentes de las turbinas."
         },
         "a3": {
           "title": "Usos innovadores de palas",
           "titleMobile": "Reutilización de palas",
           "description": "Transformación de palas fuera de servicio en nuevos productos, como mobiliario urbano y materiales de construcción.",
-          "descriptionMobile": "Transformación de palas fuera de servicio en nuevos productos, como mobiliario urbano y materiales de construcción."
+          "descriptionMobile": "Transformación de palas fuera de servicio en nuevos productos, como mobiliario urbano y materias primas de construcción."
         },
         "a4": {
           "title": "Cumplimiento ambiental",
