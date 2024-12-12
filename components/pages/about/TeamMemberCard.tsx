@@ -17,17 +17,24 @@ const TeamMemberCard = ({
   descriptionM,
   image,
 }: TeamMemberCardProps) => {
-  const isDesktop = useWindowSize({});
+  const isDesktop = useWindowSize({
+    customSize: 768,
+  });
   const [isChecked, setIsChecked] = useState(false);
 
   return (
-    <div
-      className="card-miembro relative font-[Mulish] overflow-hidden"
+    <label
+      className="card-miembro block relative font-[Mulish] overflow-hidden "
       style={{
         clipPath: "url(#clip-shape)",
       }}
-      onClick={() => setIsChecked(!isChecked)}
     >
+      <input
+        type="checkbox"
+        className="absolute top-0 hidden "
+        onChange={(e) => setIsChecked(e.target.checked)}
+        disabled={isDesktop ? true : false}
+      />
       <div
         className="aspect-[265/368] md:aspect-[376/554] bg-no-repeat bg-cover bg-[#C5C5C5] after:absolute after:inset-0 py-5 px-4 "
         style={{
@@ -76,7 +83,7 @@ const TeamMemberCard = ({
           )}
         </div>
       </div>
-    </div>
+    </label>
   );
 };
 
