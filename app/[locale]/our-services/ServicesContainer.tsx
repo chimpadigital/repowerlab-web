@@ -27,7 +27,6 @@ export default function ServicesContainer() {
   ];
   const isDesktop = useWindowSize({});
 
-  
   useEffect(() => {
     if (isDesktop !== null) {
       const hash = window.location.hash;
@@ -68,53 +67,53 @@ export default function ServicesContainer() {
           items={decommissioning}
           id="decommissioning"
           idDesktop="decommissioning-desk"
-          isDesktop
+          isDesktop={isDesktop}
         />
         <ScrollAccordion
           items={repowering}
           id="repowering"
           idDesktop="repowering-desk"
-          isDesktop
+          isDesktop={isDesktop}
         />
         <ScrollAccordion
           items={retrofitting}
           id="retrofitting"
           imgPosition="right"
           idDesktop="retrofitting-desk"
-          isDesktop
+          isDesktop={isDesktop}
         />
         <ScrollAccordion
           items={bladeRecycling}
           id="blade-recycling"
           imgPosition="right"
           idDesktop="blade-recycling-desk"
-          isDesktop
+          isDesktop={isDesktop}
         />
         <ScrollAccordion
           items={inspection}
           id="inspection"
           idDesktop="inspection-desk"
-          isDesktop
+          isDesktop={isDesktop}
         />
         <ScrollAccordion
           items={resaleParts}
           id="resale-parts"
           idDesktop="resale-parts-desk"
-          isDesktop
+          isDesktop={isDesktop}
         />
         <ScrollAccordion
           items={resaleMaterials}
           id="resale-materials"
           imgPosition="right"
           idDesktop="resale-materials-desk"
-          isDesktop
+          isDesktop={isDesktop}
         />
         <ScrollAccordion
           items={warehousing}
           id="warehousing"
           imgPosition="right"
           idDesktop="warehousing-desk"
-          isDesktop
+          isDesktop={isDesktop}
         />
       </section>
 

@@ -32,7 +32,7 @@ const SolutionsAccordeon = () => {
         idDesktop="repowering-solutions-desk"
         imgPosition="right"
         imgText="CircularEconomy.SolutionsCards.imgText1"
-        isDesktop
+        isDesktop={isDesktop}
       />
       <ScrollAccordion
         items={circularEconomySolutions}
@@ -40,7 +40,7 @@ const SolutionsAccordeon = () => {
         idDesktop="circular-economy-solution-desk"
         titleItems="CircularEconomy.SolutionsCards.itemTitle2"
         imgText="CircularEconomy.SolutionsCards.imgText2"
-        isDesktop
+        isDesktop={isDesktop}
       />
       <ScrollAccordion
         items={refurbishmentSolutions}
@@ -49,7 +49,7 @@ const SolutionsAccordeon = () => {
         titleItems="CircularEconomy.SolutionsCards.itemTitle3"
         imgText="CircularEconomy.SolutionsCards.imgText3"
         imgPosition="right"
-        isDesktop
+        isDesktop={isDesktop}
       />
       <ScrollAccordion
         items={recyclingSolutions}
@@ -57,7 +57,7 @@ const SolutionsAccordeon = () => {
         idDesktop="recycling-solution-desk"
         titleItems="CircularEconomy.SolutionsCards.itemTitle4"
         imgText="CircularEconomy.SolutionsCards.imgText4"
-        isDesktop
+        isDesktop={isDesktop}
       />
     </section>
   );
