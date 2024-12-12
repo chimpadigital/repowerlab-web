@@ -263,7 +263,7 @@
     "Scroll": {
       "decomissioning": {
         "l1": {
-          "title": "Desmantelamiento de Parques Eólicos",
+          "title": "Desmantelamiento de parques eólicos",
           "description": "RepowerLab se especializa en el desmantelamiento, reubicación y reensamblaje seguro y eficiente de turbinas eólicas terrestres y marinas. La empresa garantiza el estricto cumplimiento de la protección del medio ambiente, las normas de seguridad y las directrices locales, y las turbinas se reinstalan, se utilizan como piezas de repuesto o se reciclan.",
           "descriptionMobile": "Desmantelamiento y remontaje seguro de las turbinas, garantizando el cumplimiento de las normas medioambientales."
         },
@@ -287,7 +287,7 @@
         "l1": {
           "title": "Repotenciación de parques eólicos",
           "description": "RepowerLab repotencia los parques eólicos mediante la modernización de las turbinas para mejorar la eficiencia, aumentar la producción de energía y reducir los costos, todo ello siguiendo prácticas sostenibles.",
-          "descriptionMobile": "Maximice la eficiencia y el valor con la repotenciación avanzada, lo que prolonga la vida útil de los parques eólicos y reduce los costos."
+          "descriptionMobile": "RepowerLab repotencia los parques eólicos mediante la modernización de las turbinas para mejorar la eficiencia, aumentar la producción de energía y reducir los costos, todo ello siguiendo prácticas sostenibles."
         },
         "l2": {
           "title": "Evaluación de sitio y planeación",
@@ -307,7 +307,7 @@
         "l5": {
           "title": "Integración a la Red y cumplimiento de normatividad",
           "description": "Nos aseguramos de que las turbinas reacondicionadas cumplan con todos los requisitos de la red, incluido el control de energía y el cumplimiento de los códigos de red modernos, para integrarse sin problemas con la infraestructura existente.",
-          "descriptionMobile": "Asegúrese de que las turbinas modernizadas cumplan con los requisitos de la red para una integración perfecta con los sistemas existentes"
+          "descriptionMobile": "Asegúrese de que las turbinas modernizadas cumplan con los requisitos de la red para una integración perfecta con los sistemas existentes."
         },
         "l6": {
           "title": "Recuperación del valor económico",
@@ -381,7 +381,7 @@
           "descriptionMobile": "RepowerLab proporciona inspecciones independientes para reducir riesgos, garantizar el cumplimiento e identificar oportunidades de mantenimiento o desmantelamiento."
         },
         "l2": {
-          "title": "Inspecciones exhaustivas",
+          "title": "Inspección exhaustiva",
           "description": "Ofrece inspecciones independientes de turbinas eólicas, evaluando componentes como la caja multiplicadora, el generador y las palas.",
           "descriptionMobile": "Ofreciendo inspecciones independientes de turbinas eólicas, evaluando componentes como la caja de cambios, el generador y las palas."
         },
@@ -403,7 +403,7 @@
           "descriptionMobile": "RepowerLab se especializa en el comercio global de turbinas eólicas y repuestos, conectando la oferta con la demanda para maximizar el valor."
         },
         "l2": {
-          "title": "Turbinas eólicas sin usar",
+          "title": "Turbinas eólicas sin uso",
           "description": "Procedentes de proyectos cancelados o reducidos, estas turbinas son esencialmente nuevas, pero se venden como de segunda mano, ofreciendo un excelente valor.",
           "descriptionMobile": "Procedentes de proyectos cancelados o reducidos, estas turbinas son esencialmente nuevas, pero se venden como de segunda mano, ofreciendo un excelente valor."
         },
@@ -434,7 +434,7 @@
         "l2": {
           "title": "Soluciones de almacenamiento",
           "description": "Proporcionar instalaciones de almacenamiento seguras para los componentes de la turbina, lo que garantiza que se almacenen en condiciones óptimas.",
-          "descriptionMobile": "Proporcionar instalaciones de almacenamiento seguras para los componentes de la turbina, lo que garantiza que se almacenen en condiciones óptimas."
+          "descriptionMobile": "Proporcionar instalaciones de almacenamiento seguras para los componentes de las turbinas, garantizando que se almacenen en condiciones óptimas."
         },
         "l3": {
           "title": "Transporte y logística",
