@@ -453,14 +453,14 @@
             "title1": "Join us on this journey to ",
             "title2": "transform wind energy assets and create a cleaner, greener world.",
             "p": "Together, we can achieve sustainable growth and make a lasting impact on our planet.",
-            "pM": "Get the latest on circular energy solutions—subscribe now."
+            "pM": "Get the latest in circular energy solutions—subscribe now."
         }
     },
     "Newsletter": {
         "title1": "Subscribe to",
         "title2": "Our Newsletter",
         "p": "Subscribe to our newsletter for the latest in circular economy solutions for the energy sector and stay ahead with our projects, services, and industry trends.",
-        "pM": "Get the latest on circular energy solutions—subscribe now.",
+        "pM": "Get the latest in circular energy solutions—subscribe now.",
         "success": "Successful subscription",
         "sending": "Sending...",
         "subscribe": "Subscribe",
@@ -480,7 +480,7 @@
         "b2": "Company",
         "b3": "Contact us",
         "title": "Contact us",
-        "sub": "Feel free to use the contact form to reach out to us.",
+        "sub": "Feel free to use the contact form below to reach out to us.",
         "form": {
             "name": {
                 "placeholder": "Your Name",
@@ -940,8 +940,8 @@
         "title": "Success Cases",
         "related":"Related posts",
         "may":"You may also like",
-        "subtitle": "Welcome to the RepowerLab Success Cases",
-        "subtitleM": "Welcome to the\n RepowerLab Success Cases",
+        "subtitle": "Welcome to RepowerLab Success Cases",
+        "subtitleM": "Welcome to RepowerLab Success Cases",
         "card1": "Explore RepowerLab’s success stories, where our expertise in circular economy solutions for wind energy has transformed projects worldwide.",
         "card1m": "Explore RepowerLab’s success stories, where our expertise in circular economy solutions for wind energy has transformed projects worldwide.",
         "card2": "From decommissioning and dismantling wind farms to advising on the best second-hand turbines and equipment, and repowering existing farms to extend their lifespan, we deliver innovative, sustainable outcomes.",
@@ -1151,12 +1151,12 @@
             "meet":"Meet our Team",
             "alfonso":{
                 "description":"Based in Madrid, Spain, Alfonso brings over 25 years of experience in logistics, wind farm repowering, and energy project development. His notable achievements include founding Repowering Solutions and overseeing the decommissioning of over 300 wind turbines in Europe. Alfonso has led various renewable energy projects, including onshore and offshore wind farms and solar photovoltaic power plants.",
-                "descriptionM":"Based in Madrid, Spain, Alfonso brings over 25 years of experience in logistics, wind farm repowering, and energy project development. His notable achievements include founding Repowering Solutions and overseeing the decommissioning of over 300 wind turbines in Europe. Alfonso has led various renewable energy projects, including onshore and offshore wind farms and solar photovoltaic power plants.",
+                "descriptionM":"Based in Madrid, Spain, Alfonso brings over 25 years of experience in logistics, wind farm repowering, and renewable energy project development. His achievements include overseeing the decommissioning of over 300 wind turbines in Europe. Alfonso has led the development of numerous renewable onshore and offshore wind farms.",
                 "position":"Co-Founder & Managing Director of EU"
             },
             "fernando":{
                 "description":"Operating from Cali, Colombia, Fernando has over 40 years of experience in business planning, management, and renewable energy development. As a founding partner in multiple ventures, Fernando has promoted over 4 GW of renewable energy projects. His dedication to environmental preservation and community engagement is evident in his active participation in social welfare initiatives, particularly through Rotary.",
-                "descriptionM": "Co-Founder & Managing Director of Latam Based in Cali, Colombia, Fernando brings over 40 years of experience in business planning, management, and renewable energy development. As a co-founder of several ventures, he has successfully promoted the development and execution of over 4 GW of renewable energy projects across Latin America.",
+                "descriptionM": "Based in Cali, Colombia, Fernando brings over 40 years of experience in business planning, management, and renewable energy development. As a co-founder of several ventures, he has successfully promoted the development and execution of over 4 GW of renewable energy projects across Latin America.",
                 "position":"Co-Founder & Managing Director of LATAM"
             },
             "victoria":{
