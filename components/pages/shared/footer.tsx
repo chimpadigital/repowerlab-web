@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { Fragment } from "react";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import Logo from "@/atoms/Logo";
@@ -8,7 +8,7 @@ import { FacebookIcon, LinkedInIcon, TwitterIcon } from "../../icons";
 import { useTranslations } from "next-intl";
 
 export default function Footer() {
-  const t = useTranslations("Footer")
+  const t = useTranslations("Footer");
   const linksMenu = [
     { label: "menuLinks.i1", url: "/our-services" },
     {
@@ -16,21 +16,19 @@ export default function Footer() {
       child: [
         { label: "menuLinks.i2.j1", url: "/circular-economy" },
         { label: "menuLinks.i2.j2", url: "/how-we-work" },
-      ]
+      ],
     },
     { label: "menuLinks.i3", url: "/marketplace" },
     {
       label: "menuLinks.i4.title",
-      child: [
-        { label: "menuLinks.i4.j1", url: "/success-cases" },
-      ]
+      child: [{ label: "menuLinks.i4.j1", url: "/success-cases" }],
     },
     {
       label: "menuLinks.i5.title",
       child: [
         { label: "menuLinks.i5.j1", url: "/about" },
         { label: "menuLinks.i5.j2", url: "/about/contact-us" },
-      ]
+      ],
     },
   ];
 
@@ -49,42 +47,48 @@ export default function Footer() {
             <Logo className="w-full lg:w-[300px] h-auto" />
           </div>
           <div>
-
             <div className="grid grid-cols-3 gap-12 ">
               <div className="lg:col-span-1 col-span-3 hidden lg:block">
                 <h2 className={subtitle({ colors: "primary" })}>{t("menu")}</h2>
                 <div className="pt-[30px]">
                   <div className="flex flex-col ">
                     {linksMenu.map((el, i) => (
-                      <>
-                        {
-                          el.child ?
-                            <div key={"el1" + i}>
-                              <div className="text-primary pt-[25px] text-[18px]">{t(el.label)}</div>
-                              <div className="flex flex-col pt-[10px] gap-[15px]">
-                                {
-                                  el.child.map((el2, j) => (
-                                    <Link key={"el2" + j} className="text-primary  text-[14px]" href={el2.url}>
-                                      {t(el2.label)}
-                                    </Link>
-
-                                  ))
-                                }
-                              </div>
-                            </div>
-                            :
-                            <Link key={"el1extra" + i} className="text-primary pt-[25px] text-[18px]" href={el.url}>
+                      <Fragment key={"footer" + i}>
+                        {el.child ? (
+                          <div key={"el1" + i}>
+                            <div className="text-primary pt-[25px] text-[18px]">
                               {t(el.label)}
-                            </Link>
-
-                        }
-                      </>
+                            </div>
+                            <div className="flex flex-col pt-[10px] gap-[15px]">
+                              {el.child.map((el2, j) => (
+                                <Link
+                                  key={"el2" + j}
+                                  className="text-primary  text-[14px]"
+                                  href={el2.url}
+                                >
+                                  {t(el2.label)}
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
+                        ) : (
+                          <Link
+                            key={"el1extra" + i}
+                            className="text-primary pt-[25px] text-[18px]"
+                            href={el.url}
+                          >
+                            {t(el.label)}
+                          </Link>
+                        )}
+                      </Fragment>
                     ))}
-                  </div >
+                  </div>
                 </div>
               </div>
               <div className="lg:col-span-1 col-span-3 hidden lg:block">
-                <h2 className={subtitle({ colors: "primary" })}>{t("products")}</h2>
+                <h2 className={subtitle({ colors: "primary" })}>
+                  {t("products")}
+                </h2>
                 <div className="pt-[30px]">
                   <div className="flex flex-col">
                     {linksProducts.map((el, i) => (
@@ -101,13 +105,29 @@ export default function Footer() {
               </div>
 
               <div className="lg:col-span-1 col-span-3">
-                <h2 className={subtitle({ colors: "primary" }) + " hidden lg:block"}>{t("follow")}</h2>
+                <h2
+                  className={
+                    subtitle({ colors: "primary" }) + " hidden lg:block"
+                  }
+                >
+                  {t("follow")}
+                </h2>
                 <div className="pt-[60px]">
                   <div className="flex lg:flex-col gap-[30px] justify-center lg:justify-start lg:ps-6">
-                    <Link className="text-primary fill-primary" href="https://www.linkedin.com/company/repowerlab-llc/" target="_blank" rel="noopener noreferrer">
+                    <Link
+                      className="text-primary fill-primary"
+                      href="https://www.linkedin.com/company/repowerlab-llc/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <LinkedInIcon width={22} height={22} />
                     </Link>
-                    <Link className="text-primary fill-primary" href="https://x.com/repowerlab" target="_blank" rel="noopener noreferrer">
+                    <Link
+                      className="text-primary fill-primary"
+                      href="https://x.com/repowerlab"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <TwitterIcon width={22} height={22} />
                     </Link>
                     {/* <Link className="text-primary fill-primary" href="" target="_blank" rel="noopener noreferrer">

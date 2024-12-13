@@ -28,7 +28,7 @@ export default function ProductsSwiper() {
                 <CardMobile
                     description={t.raw('cards.card1.description')}
                     title={t.raw('cards.card1.title')}
-                    href={"/products/wind-turbines#includes"}
+                    href={"/products/wind-turbines?open=wind-turbines"}
                     img='/images/home/products/1a.png' />
             </SwiperSlide>
 
@@ -36,7 +36,7 @@ export default function ProductsSwiper() {
                 <CardMobile
                     description={t.raw('cards.card2.description')}
                     title={t.raw('cards.card2.title')}
-                    href={"/products/wind-turbines#includes"}
+                    href={"/products/wind-turbines?open=wind-turbines"}
                     img='/images/home/products/2a.png' />
             </SwiperSlide>
 
@@ -44,7 +44,7 @@ export default function ProductsSwiper() {
                 <CardMobile
                     description={t.raw('cards.card3.description')}
                     title={t.raw('cards.card3.title')}
-                    href={"/products/wind-turbines#includes"}
+                    href={"/products/wind-turbines?open=wind-turbines"}
                     img='/images/home/products/3a.png' />
 
             </SwiperSlide>
