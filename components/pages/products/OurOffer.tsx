@@ -204,7 +204,7 @@ export default function OurOffer() {
                   />
 
                   <Link
-                    href="/turbine-parts"
+                    href="turbine-parts"
                     className="underline text-sm text-end w-full justify-end"
                   >
                     {t.raw("accordions.ac1.link")}
