@@ -13,6 +13,7 @@ import {
 import { Link } from "@/i18n/routing";
 import { usePathname } from "next/navigation";
 import { useWindowSize } from "@/utils/useResize";
+import { useTranslations } from "next-intl";
 
 const turbine = {
   title: "ECOTECNIA E44",
@@ -187,6 +188,7 @@ export default function ScrollProducts() {
 const Card = ({ top = 0, turbine, animation = true, y, index }: any) => {
   const opacity = useTransform(y, [index, index + 1], [1, 0]);
   const pathname = usePathname();
+  const t = useTranslations("products")
 
   return (
     <article
@@ -198,13 +200,13 @@ const Card = ({ top = 0, turbine, animation = true, y, index }: any) => {
           <WindIcon />
         </div>
 
-        <h3 className="text-white font-bold text-[18px]">Wind turbine</h3>
+        <h3 className="text-white font-bold text-[18px]">{t("wind_turbine")}</h3>
         <p className="pt-2 pb-4 text-[18px]">{turbine.title}</p>
 
         <hr className="py-4 border-white w-full" />
         <div className="flex gap-4">
           <PowerIcon />
-          <h4 className="text-white font-bold text-[18px]">Power</h4>
+          <h4 className="text-white font-bold text-[18px]">{t("power")}</h4>
         </div>
         <p className="py-2 pb-4 text-[18px]">{turbine.power}</p>
 
@@ -214,7 +216,7 @@ const Card = ({ top = 0, turbine, animation = true, y, index }: any) => {
           <div className="cols-span-1">
             <div className="flex gap-4">
               <TowerIcon />
-              <h4 className="text-white font-bold text-[18px]">Tower</h4>
+              <h4 className="text-white font-bold text-[18px]">{t("tower")}</h4>
             </div>
             <p className="py-2 pb-4 text-[18px]">{turbine.tower}</p>
 
@@ -223,7 +225,7 @@ const Card = ({ top = 0, turbine, animation = true, y, index }: any) => {
           <div className="cols-span-1">
             <div className="flex gap-4">
               <RotorIcon />
-              <h5 className="text-white font-bold text-[18px]">Rotor</h5>
+              <h5 className="text-white font-bold text-[18px]">{t("rotor")}</h5>
             </div>
             <p className="py-2 pb-4 text-[18px]">{turbine.rotor}</p>
 
@@ -261,6 +263,7 @@ const Card = ({ top = 0, turbine, animation = true, y, index }: any) => {
 };
 
 const CardMobile = ({ top = 0, turbine }: any) => {
+  const t = useTranslations("products")
   return (
     <article
       className="w-full rounded-[20px] px-5 py-6 relative"
@@ -276,7 +279,7 @@ const CardMobile = ({ top = 0, turbine }: any) => {
         <div>
           <h3 className="mb-3 font-bold text-[18px]">Ecotecnia E44</h3>
           <span className="bg-white rounded-full text-grey-parrafo px-3 py-1 inline-block">
-            Wind Turbine
+          {t("wind_turbine")}
           </span>
         </div>
         <Link
@@ -292,7 +295,7 @@ const CardMobile = ({ top = 0, turbine }: any) => {
         <div className=" border-b w-full pr-8 mb-8">
           <div className="flex gap-2 items-center">
             <PowerIcon />
-            <h4 className="text-white font-bold text-[18px]">Power</h4>
+            <h4 className="text-white font-bold text-[18px]">{t("power")}</h4>
           </div>
           <p className="py-2 pb-4 text-[18px]">{turbine.power}</p>
         </div>
@@ -300,7 +303,7 @@ const CardMobile = ({ top = 0, turbine }: any) => {
           <div className="border-b flex-1">
             <div className="flex gap-2 items-center">
               <TowerIcon />
-              <h4 className="text-white font-bold text-[18px]">Tower</h4>
+              <h4 className="text-white font-bold text-[18px]">{t("tower")}</h4>
             </div>
             <p className="py-2 pb-2 text-[18px]">{turbine.tower}</p>
           </div>
@@ -308,7 +311,7 @@ const CardMobile = ({ top = 0, turbine }: any) => {
           <div className="border-b flex-1">
             <div className="flex gap-2 items-center">
               <RotorIcon />
-              <h5 className="text-white font-bold text-[18px]">Rotor</h5>
+              <h5 className="text-white font-bold text-[18px]">{t("rotor")}</h5>
             </div>
             <p className="py-1 pb-2 text-[18px]">{turbine.rotor}</p>
           </div>

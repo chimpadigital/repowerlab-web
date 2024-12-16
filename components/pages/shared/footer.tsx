@@ -117,6 +117,9 @@ export default function Footer() {
                 <h2 className={subtitle({ colors: "primary" })}>
                   {t("products")}
                 </h2>
+                <h2 className={subtitle({ colors: "primary" })}>
+                  {t("products")}
+                </h2>
                 <div className="pt-[30px]">
                   <div className="flex flex-col">
                     {linksProducts.map((el, i) => (
@@ -133,6 +136,13 @@ export default function Footer() {
               </div>
 
               <div className="lg:col-span-1 col-span-3">
+                <h2
+                  className={
+                    subtitle({ colors: "primary" }) + " hidden lg:block"
+                  }
+                >
+                  {t("follow")}
+                </h2>
                 <h2
                   className={
                     subtitle({ colors: "primary" }) + " hidden lg:block"

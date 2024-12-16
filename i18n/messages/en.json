@@ -5,6 +5,12 @@
         "read-more":"Read more",
         "connect": "Connect"
     },
+    "products":{
+        "wind_turbine":"Wind Turbine",
+        "rotor":"Rotor",
+        "tower":"Tower",
+        "power":"Power"
+      },
     "Footer":{
         "follow":"Follow",
         "products":"Products",
@@ -30,7 +36,7 @@
         "productsLink":{
             "i1":"Unused wind turbines",
             "i2":"Refurbished wind turbines",
-            "i3":"Used wind turbine",
+            "i3":"Used wind turbines",
             "i4":"Wind turbine spare parts"
         }
         
@@ -114,7 +120,7 @@
             "cards": {
                 "card1": {
                     "title": "Waste reduction",
-                    "descriptionMob": "Advanced recycling and repurposingf reduce turbine waste by up to 90%.",
+                    "descriptionMob": "Advanced recycling and repurposing reduce turbine waste by up to 90%.",
                     "description": "Through advanced recycling and repurposing, Repowerlab cuts waste from decommissioned wind turbines by up to 90%, leading the industry in sustainable practices."
                 },
                 "card2": {
@@ -124,7 +130,7 @@
                 },
                 "card3": {
                     "title": "Increased power output",
-                    "descriptionMob": "Repowering techniques boost turbine efficiency by 25-35% maximizing energy production",
+                    "descriptionMob": "Repowering techniques boost turbine efficiency by 25-35% maximizing energy production.",
                     "description": "Repowerlab’s innovative repowering techniques boost the efficiency of wind turbines by 25-35%, maximizing energy production from existing assets."
                 },
                 "card4": {
@@ -146,7 +152,7 @@
             "singles": {
                 "card1": {
                     "title": "A single point of contact",
-                    "d": "We provide a single point of contact for all services, ensuring seamless communication and coordination",
+                    "d": "We provide a single point of contact for all services, ensuring seamless communication and coordination.",
                     "dM": "One contact, all services—smooth and simple."
                 },
                 "card2": {
@@ -269,7 +275,7 @@
                 },
                 "l2": {
                     "title": "Disassembly of Wind Turbines",
-                    "description": "RepowerLab provides innovative dismantling, industrial relocation, and reassembly services, ensuring safe and efficient dismantling. Our experienced team handles all aspects of the process, from the initial assessment to the careful removal of turbine components. Utilizing state-of-the-art equipment and adhering to stringent safety standards, we minimize environmental impact and prepare turbines for either reuse or recycling.",
+                    "description": "RepowerLab has over 15 years of experience in international transport and decommissioning of onshore wind turbines. We provide innovative dismantling, industrial relocation, and reassembly services. Our operations adhere to strict safety standards, certified equipment use, and local guidelines. Post-dismantling, turbines are either reinstalled, used for spare parts, or recycled.",
                     "descriptionMobile": "We provide innovative dismantling, relocation, and reassembly, ensuring safe and efficient processes while minimizing environmental impact for reuse or recycling."
                 },
                 "l3": {
@@ -319,16 +325,16 @@
                 "l1": {
                     "title": "Wind turbine retrofitting & refurbishing",
                     "description": "RepowerLab enhances the performance and extends the lifespan of existing wind turbines through comprehensive retrofitting and refurbishing services, ensuring turbines operate at peak efficiency and durability.",
-                    "descriptionMobile": "We specialize in extending turbine life and boosting performance through retrofitting, maximizing efficiency, output and value"
+                    "descriptionMobile": "We specialize in extending turbine life and boosting performance through retrofitting, maximizing efficiency, output and value."
                 },
                 "l2": {
                     "title": "Retrofitting",
-                    "description": "Enhancing Wind Turbine Performance Our retrofitting services focus on upgrading power converter systems, installing advanced control systems, and retrofitting blades. These improvements boost turbine performance, extend lifespan, and reduce the need for new raw materials by overhauling critical components such as gearboxes and generators.",
+                    "description": "Enhancing Wind Turbine Performance: Our retrofitting services focus on upgrading power converter systems, installing advanced control systems, and retrofitting blades. These improvements boost turbine performance, extend lifespan, and reduce the need for new raw materials by overhauling critical components such as gearboxes and generators.",
                     "descriptionMobile": "Upgrade power systems and retrofit blades to boost efficiency, extend lifespan, and reduce new material needs."
                 },
                 "l3": {
                     "title": "Refurbishing",
-                    "description": "Restoring Wind Turbines to Optimal Condition We conduct thorough inspections and structural checks, including component overhauls, to restore turbines to their optimal condition, ensuring they meet OEM specifications. Our refurbishing process also includes cleaning, repairing, and upgrading electrical systems to maintain peak operational efficiency.",
+                    "description": "Restoring Wind Turbines to Optimal Condition: We conduct thorough inspections and structural checks, including component overhauls, to restore turbines to their optimal condition, ensuring they meet OEM specifications. Our refurbishing process also includes cleaning, repairing, and upgrading electrical systems to maintain peak operational efficiency.",
                     "descriptionMobile": "Restore turbines via inspections and overhauls, meeting OEM specs. We also clean, repair, and upgrade systems for efficiency."
                 },
                 "l4": {
@@ -429,7 +435,7 @@
                 "l1": {
                     "title": "Warehousing & transportation",
                     "description": "Repowerlab offers secure warehousing solutions and specialized logistics to ensure the safe and efficient handling, storage, and transportation of wind turbine components.",
-                    "descriptionMobile": "Safe storage and specialized logistics for wind turbine components."
+                    "descriptionMobile": "Repowerlab offers secure warehousing solutions and specialized logistics to ensure the safe and efficient handling, storage, and transportation of wind turbine components."
                 },
                 "l2": {
                     "title": "Warehousing Solutions",
@@ -447,14 +453,14 @@
             "title1": "Join us on this journey to ",
             "title2": "transform wind energy assets and create a cleaner, greener world.",
             "p": "Together, we can achieve sustainable growth and make a lasting impact on our planet.",
-            "pM": "Get the latest on circular energy solutions—subscribe now."
+            "pM": "Get the latest in circular energy solutions—subscribe now."
         }
     },
     "Newsletter": {
         "title1": "Subscribe to",
         "title2": "Our Newsletter",
         "p": "Subscribe to our newsletter for the latest in circular economy solutions for the energy sector and stay ahead with our projects, services, and industry trends.",
-        "pM": "Get the latest on circular energy solutions—subscribe now.",
+        "pM": "Get the latest in circular energy solutions—subscribe now.",
         "success": "Successful subscription",
         "sending": "Sending...",
         "subscribe": "Subscribe",
@@ -474,7 +480,7 @@
         "b2": "Company",
         "b3": "Contact us",
         "title": "Contact us",
-        "sub": "Feel free to use the contact form to reach out to us.",
+        "sub": "Feel free to use the contact form below to reach out to us.",
         "form": {
             "name": {
                 "placeholder": "Your Name",
@@ -599,7 +605,7 @@
                 },
                 "data7": {
                     "title": "Refurbishment and Repair",
-                    "subtitle": "Extending the life of wind turbines through refurbishment",
+                    "subtitle": "Extending the life of wind turbines through refurbishment.",
                     "sellers": "At our facilities, we refurbish and repair turbine components, extending their lifecycle and enhancing their performance. Each part is meticulously inspected and restored to optimal condition.",
                     "buyers": "Our refurbishment process ensures that turbine components are restored to high standards. This extends their useful life and offers a cost-effective solution for your wind energy needs.",
                     "sellersM": "We refurbish turbine components, enhancing performance and extending their lifecycle.",
@@ -793,11 +799,11 @@
                         },
                         "l3": {
                             "title": "Logistics",
-                            "text": "Smooth delivery and installation"
+                            "text": "Smooth delivery and installation."
                         },
                         "l4": {
                             "title": "Regulatory Help",
-                            "text": "Ensure compliance with all regulations"
+                            "text": "Ensure compliance with all regulations."
                         },
                         "l5": {
                             "title": "Financial Consulting",
@@ -934,8 +940,8 @@
         "title": "Success Cases",
         "related":"Related posts",
         "may":"You may also like",
-        "subtitle": "Welcome to the RepowerLab Success Cases",
-        "subtitleM": "Welcome to the\n RepowerLab Success Cases",
+        "subtitle": "Welcome to RepowerLab Success Cases",
+        "subtitleM": "Welcome to RepowerLab Success Cases",
         "card1": "Explore RepowerLab’s success stories, where our expertise in circular economy solutions for wind energy has transformed projects worldwide.",
         "card1m": "Explore RepowerLab’s success stories, where our expertise in circular economy solutions for wind energy has transformed projects worldwide.",
         "card2": "From decommissioning and dismantling wind farms to advising on the best second-hand turbines and equipment, and repowering existing farms to extend their lifespan, we deliver innovative, sustainable outcomes.",
@@ -967,7 +973,7 @@
             "title2": "Circular Economy Business Model",
             "dataMolino": {
                 "d1": {
-                    "title": "Value Recovery Assesment",
+                    "title": "Value Recovery Assessment",
                     "description": "We begin with detailed inspections to assess turbine conditions and identify opportunities for value recovery, ensuring alignment with environmental and economic goals."
                 },
                 "d2": {
@@ -976,7 +982,7 @@
                 },
                 "d3": {
                     "title": "Warehousing, Transportation & Logistics",
-                    "description": "Components are efficiently warehoused, and transported to our facilities for further processing, with careful logistics management to minimize environmental impact."
+                    "description": "Components are efficiently warehoused and transported to our facilities for further processing, with careful logistics management to minimize environmental impact."
                 },
                 "d4": {
                     "title": "Recycling",
@@ -1025,19 +1031,19 @@
                 "a2": {
                     "title": "Assessment and Planning",
                     "titleMobile": "Assessment and Planning",
-                    "description": "We evaluate your wind farm’s location, existing infrastructure, and energy production capabilities to determine the best repowering strategy.",
+                    "description": "RepowerLab has over 15 years of experience in international transport and decommissioning of onshore wind turbines. We provide innovative dismantling, industrial relocation, and reassembly services. Our operations adhere to strict safety standards, certified equipment use, and local guidelines. Post-dismantling, turbines are either reinstalled, used for spare parts, or recycled.",
                     "descriptionMobile": "We evaluate your wind farm to determine the best repowering strategy."
                 },
                 "a3": {
                     "title": "Implementation",
                     "titleMobile": "Implementation",
-                    "description": "Our team manages the entire repowering process, from dismantling old turbines to installing new, more efficient models.",
+                    "description": "We support wind farm owners with tools and processes to address decommissioning challenges. Our expertise ensures adherence to environmental protection and waste disposal procedures. We maximize profitability while minimizing environmental impact through specialized deconstruction techniques.",
                     "descriptionMobile": "We manage the repowering process from dismantling old turbines to installing efficient new models."
                 },
                 "a4": {
                     "title": "Value Recovery",
                     "titleMobile": "Value Recovery",
-                    "description": "We help you recover value from decommissioned turbines through resale or recycling.",
+                    "description": "Our experts develop decommissioning plans and conduct technical studies, analyzing methods and costs to ensure compliance with regulations. We facilitate discussions with regulators and assist in procuring specialist contractors, reducing risk, cost, and time while optimizing waste management and reuse of components. Our expertise ensures that your wind farm achieves maximum efficiency and profitability while contributing to a sustainable energy future.",
                     "descriptionMobile": "We help you recover value from decommissioned turbines through resale or recycling."
                 }
             },
@@ -1057,13 +1063,13 @@
                 "a3": {
                     "title": "Maintenance and Repair",
                     "titleMobile": "Maintenance and Repair",
-                    "description": "Implementing advanced diagnostic and inspection techniques to certify older turbines for extended operation.",
+                    "description": "Extending the life of wind turbines through regular maintenance and advanced repair techniques.",
                     "descriptionMobile": "Advanced diagnostics extend turbine life."
                 },
                 "a4": {
                     "title": "Reuse and Repurpose",
                     "titleMobile": "Reuse and Repurpose",
-                    "description": "Repurposing decommissioned turbine components for new applications, reducing the need for new materials.",
+                    "description": "Repurposing decommissioned turbine components for new applications, reducing the need for new materials. By integrating these strategies, RepowerLab helps reduce environmental impact and promotes sustainable energy practices.",
                     "descriptionMobile": "Refurbished turbines are overhauled to improve performance."
                 },
                 "a5": {
@@ -1083,7 +1089,7 @@
                 "a2": {
                     "title": "Component Overhaul",
                     "titleMobile": "Design for Circularity",
-                    "description": "Detailed inspection and refurbishment of critical components such as gearboxes, generators, and blades.",
+                    "description": "RepowerLab has over 15 years of experience in international transport and decommissioning of onshore wind turbines. We provide innovative dismantling industrial relocation, and reassembly services. Our operations adhere to strict safety standards, certified equipment use, and local guidelines. Post-dismantling, turbines are either reinstalled, used for spare parts, or recycled.",
                     "descriptionMobile": "Using materials that can be easily recycled or repurposed."
                 },
                 "a3": {
@@ -1145,21 +1151,21 @@
             "meet":"Meet our Team",
             "alfonso":{
                 "description":"Based in Madrid, Spain, Alfonso brings over 25 years of experience in logistics, wind farm repowering, and energy project development. His notable achievements include founding Repowering Solutions and overseeing the decommissioning of over 300 wind turbines in Europe. Alfonso has led various renewable energy projects, including onshore and offshore wind farms and solar photovoltaic power plants.",
-                "descriptionM":"Based in Madrid, Spain, Alfonso brings over 25 years of experience in logistics, wind farm repowering, and energy project development. His notable achievements include founding Repowering Solutions and overseeing the decommissioning of over 300 wind turbines in Europe. Alfonso has led various renewable energy projects, including onshore and offshore wind farms and solar photovoltaic power plants.",
+                "descriptionM":"Based in Madrid, Spain, Alfonso brings over 25 years of experience in logistics, wind farm repowering, and renewable energy project development. His achievements include overseeing the decommissioning of over 300 wind turbines in Europe. Alfonso has led the development of numerous renewable onshore and offshore wind farms.",
                 "position":"Co-Founder & Managing Director of EU"
             },
             "fernando":{
                 "description":"Operating from Cali, Colombia, Fernando has over 40 years of experience in business planning, management, and renewable energy development. As a founding partner in multiple ventures, Fernando has promoted over 4 GW of renewable energy projects. His dedication to environmental preservation and community engagement is evident in his active participation in social welfare initiatives, particularly through Rotary.",
-                "descriptionM": "Co-Founder & Managing Director of Latam Based in Cali, Colombia, Fernando brings over 40 years of experience in business planning, management, and renewable energy development. As a co-founder of several ventures, he has successfully promoted the development and execution of over 4 GW of renewable energy projects across Latin America.",
+                "descriptionM": "Based in Cali, Colombia, Fernando brings over 40 years of experience in business planning, management, and renewable energy development. As a co-founder of several ventures, he has successfully promoted the development and execution of over 4 GW of renewable energy projects across Latin America.",
                 "position":"Co-Founder & Managing Director of LATAM"
             },
             "victoria":{
-                "description":"Residing in Virginia, US, Victoria has over 20 years of experience in sustainable finance. She has been instrumental in driving sustainability and decarbonization strategies for companies. Victoria's expertise includes developing ESG investment strategies, innovative climate finance products, and advising investors on renewable energy projects. She has received recognition as one of DC's Top 50 Women Leaders for two consecutive years.",
+                "description":"Residing in Virginia, US, Victoria has over 20 years of experience in sustainable finance. Victoria’s expertise includes developing ESG investment strategies, innovative climate finance products, and advising investors on renewable energy projects. She has received recognition as one of DC’s Top 50 Women Leaders for two consecutive years.",
                 "descriptionM": "Based in Virginia, US, Victoria has over 20 years of expertise in sustainable finance. She has co-founded several impact ventures and has driven investments toward the development of numerous ESG projects. Recognized among DC's Top 50 Women Leaders, she advises investors on renewable energy projects.",
                 "position":"Co-Founder & Managing Director of US"
             },
             "ivan":{
-                "description":"A seasoned business and project developer in the  renewable energy sector, Iván has contributed to the successful development of over 1.5 GW. Moreover, Iván brings a vast experience within the wind energy industry, from the design of wind turbines, support structures and wind farms to the business development and project management of large-scale wind power in Latin America.", 
+                "description":"A seasoned business and project developer in the renewable energy sector, Iván has contributed to the successful development of over 1.5 GW. Moreover, Iván brings vast experience within the wind energy industry, from the design of wind turbines, support structures, and wind farms to the business development and project management of large-scale wind power in Latin America.", 
                 "descriptionM": "A seasoned business and project developer in the renewable energy sector, Iván has contributed to the successful development of over 1.5 GW. Moreover, Iván brings a vast experience within the wind energy industry, from the design of wind turbines, support structures and wind farms to the business development and project management of large-scale wind power in Latin America.",
                 "position":"Business Development Manager"
             }
@@ -1181,9 +1187,10 @@
         },
         "history":{
             "title":"History",
-            "p":"RepowerLab was born as a spin-off of Repowering Solutions, a company with more than 15 years of experience in the dismantling, retrofitting, recycling, buying and selling of wind turbines in Europe. Today, with a global presence, we execute projects in 20 countries through our three international offices.",
+            "p":"RepowerLab was born as a spin-off of Repowering Solutions, a company with more than 15 years of experience in the dismantling, retrofitting, recycling, buying, and selling of wind turbines in Europe. Today, with a global presence, we execute projects in 20 countries through our three international offices.",
             "pM":"RepowerLab started as a spin-off of Repowering Solutions, with over 15 years of experience in wind turbine dismantling and recycling. We now operate globally, executing projects in 20 countries through three international offices."
-        }
+        },
+        "partners":"Partners"
     },
     "MarketPlace":{
         "title":"Marketplace\\n under construction"

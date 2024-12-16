@@ -50,7 +50,7 @@ export default function MenuMobile({ open, setOpen }: { open: boolean, setOpen?:
     }, [pathname]); 
 
     return (
-        <div className="fixed w-screen md:hidden left-0 top-0 z-[1000] block h-screen" style={{ transform: open ? 'translateX(0%)' : 'translateX(100%)', transition: "1500ms" }}>
+        <div className="fixed w-screen lg:hidden left-0 top-0 z-[1000] block h-screen" style={{ transform: open ? 'translateX(0%)' : 'translateX(100%)', transition: "1500ms" }}>
             <Image fill quality={100} src="/images/shared/menudesplegable.png" alt='menu' className='absolute object-cover top-0 bg-secondary w-full z-10'></Image>
             <div className={`relative ${simulatedDarkMode ? "text-white" : "text-primary"} flex justify-between py-8 px-6 z-10 items-center`}>
                 <Link aria-description='Home' href="/" onClick={() => { setOpen(false) }}>

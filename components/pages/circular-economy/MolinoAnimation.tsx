@@ -1,14 +1,24 @@
 "use client"
 
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState, useContext } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { dataMolino } from './dataMolino'
 import { subtitle, title } from '@/components/primitives'
 import Paragraph from '@/atoms/Paragraph'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import { MenuContext } from '@/app/[locale]/context/MenuMobileCtx'
 
 export default function MolinoAnimation() {
+    const menuContext = useContext(MenuContext);
+
+    // Verificar si el contexto es undefined
+    if (!menuContext) {
+      throw new Error('MenuContext debe ser usado dentro de un MenuProvider');
+    }
+
+    const { setShow, setHide  } = menuContext
+  
     const t = useTranslations("CircularEconomy.molino")
     const ref = useRef<any>()
 
@@ -18,6 +28,16 @@ export default function MolinoAnimation() {
 
     const rotate = useTransform(scrollYProgress, [0, 1], [0, -360])
     const numbers = useTransform(scrollYProgress, [0, 1], [0, dataMolino.length])
+
+    useEffect(()=>{
+        scrollYProgress.on('change',(val)=>{
+            if(val>0 && val <= 0.96){
+                setHide()
+            }else{
+                setShow()
+            }
+        })
+    },[])
 
     return (
         <section className="w-full flex justify-center">

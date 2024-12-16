@@ -8,10 +8,17 @@ import { BreadcrumbItem, Breadcrumbs } from "@nextui-org/react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 
+import { useEffect } from "react";
+
 
 const ContactUs = () => {
   const t = useTranslations("Contact")
   const locale = useLocale()
+
+  useEffect(() => {
+    // Desplazarse hacia arriba cuando se monta la página
+    window.scrollTo(0, 0);
+  }, []); // El arreglo vacío asegura que solo se ejecute cuando la página se carga
   return (
     <section className="contact-us w-full px-4 md:px-6">
       <div className="w-full  relative">

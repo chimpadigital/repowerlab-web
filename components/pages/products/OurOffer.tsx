@@ -4,13 +4,15 @@ import { button } from "@/components/primitives";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import { Link } from "@/i18n/routing";
 import React, { useEffect } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { useWindowSize } from "@/utils/useResize";
 
 export default function OurOffer() {
   const t = useTranslations("WindTurbines.OurOffer");
   const params = useParams();
+  const searchParams = useSearchParams();
+  const open = searchParams.get('open');
   const isDesktop = useWindowSize({});
 
   const itemClasses = {
@@ -151,6 +153,7 @@ export default function OurOffer() {
 
   useEffect(() => {
     console.log(params);
+    console.log(open);
   }, [params]);
   return (
     <section className="w-full flex gap-3 md:gap-0 flex-col md:flex-row items-center justify-center text-[22px]">
@@ -166,9 +169,10 @@ export default function OurOffer() {
           </h3>
         )}
         <Accordion
+          selectionMode={isDesktop ? "single" : "multiple"}
           variant="splitted"
           itemClasses={itemClasses}
-          defaultExpandedKeys={["wind-turbines"]}
+          defaultExpandedKeys={[`${open}`]}
         >
           <AccordionItem
             key="wind-turbines"

@@ -31,7 +31,7 @@ export default function Products() {
         <div className="grid grid-cols-4">
           <div className="col-span-1">
             <ProductCard
-              href={"/products/wind-turbines#includes"}
+              href={"/products/wind-turbines?open=wind-turbines#includes"}
               description={t.raw("cards.card1.description")}
               title={t.raw("cards.card1.title")}
               height="65vh"
@@ -40,7 +40,7 @@ export default function Products() {
           </div>
           <div className="col-span-1">
             <ProductCard
-              href={"/products/wind-turbines#includes"}
+              href={"/products/wind-turbines?open=wind-turbines#includes"}
               description={t.raw("cards.card2.description")}
               title={t.raw("cards.card2.title")}
               height="65vh"
@@ -51,7 +51,7 @@ export default function Products() {
             <ProductCard
               description={t.raw("cards.card3.description")}
               title={t.raw("cards.card3.title")}
-              href={"/products/wind-turbines#includes"}
+              href={"/products/wind-turbines?open=wind-turbines#includes"}
               height="65vh"
               img="/images/home/products/3a.png"
             />

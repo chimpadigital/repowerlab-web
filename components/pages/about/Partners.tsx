@@ -1,12 +1,14 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { title } from "@/components/primitives";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Autoplay } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { title } from "@/components/primitives";
-import Image from "next/image";
 
 const partners = [
   {
@@ -35,11 +37,13 @@ const partners = [
   },
 ];
 
+
 const Partners = () => {
+  const t = useTranslations("About")
   return (
     <div className="mt:20 md:mt-48">
       <div className="mx-auto text-start mb-10 md:mb-20 px-8 md:px-14">
-        <h4 className={`${title()} text-primary text-start`}>Partners</h4>
+        <h4 className={`${title()} text-primary text-start`}>{t("partners")}</h4>
       </div>
 
       <div>
