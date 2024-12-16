@@ -228,8 +228,8 @@ const Card = ({ title, percent, description, descriptionMobile }: CardI) => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M3.06077 0.939331L16.5001 14.3787V4.99999H19.5001V19.5H5.00011V16.5H14.3788L0.939453 3.06065L3.06077 0.939331Z"
           fill="white"
         />

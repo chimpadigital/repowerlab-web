@@ -42,14 +42,21 @@ export const CartIcon = (props: any) => (
 
 )
 
-export const CloseIcon = (props: any) => (
+interface CloseIconProps {
+    colorHex: string;
+    [key: string]: any; // Permite otras props opcionales como className, style, etc.
+  }
+  
+
+
+export const CloseIcon = ({ colorHex, ...props }: CloseIconProps) => (
     <svg {...props} width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_b_2214_6896)">
             <rect width="26.087" height="25" rx="12.5" fill="#C5C5C5" fillOpacity="0.3" />
-            <rect x="0.5" y="0.5" width="25.087" height="24" rx="12" stroke="#1C4741" />
+            <rect x="0.5" y="0.5" width="25.087" height="24" rx="12" stroke={colorHex} />
         </g>
-        <rect x="8.08447" y="6.52173" width="15.4552" height="1.4414" rx="0.720699" transform="rotate(45 8.08447 6.52173)" fill="#1C4741" />
-        <rect x="19.0129" y="7.54102" width="15.4552" height="1.4414" rx="0.720699" transform="rotate(135 19.0129 7.54102)" fill="#1C4741" />
+        <rect x="8.08447" y="6.52173" width="15.4552" height="1.4414" rx="0.720699" transform="rotate(45 8.08447 6.52173)" fill={colorHex} />
+        <rect x="19.0129" y="7.54102" width="15.4552" height="1.4414" rx="0.720699" transform="rotate(135 19.0129 7.54102)" fill={colorHex} />
         <defs>
             <filter id="filter0_b_2214_6896" x="-20" y="-20" width="66.0869" height="65" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                 <feFlood floodOpacity="0" result="BackgroundImageFix" />

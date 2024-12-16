@@ -1,10 +1,10 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { notFound } from 'next/navigation';
-import { routing } from '@/i18n/routing';
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 
 import { Providers } from "./providers";
 
@@ -12,20 +12,18 @@ import { siteConfig } from "@/config/site";
 import { Navbar } from "@/components/pages/shared/navbar";
 import Footer from "@/components/pages/shared/footer";
 import FixedMenu from "@/components/pages/shared/FixedMobMenu";
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { metadataHome } from "../getMetaData";
 
-
-
-export async function generateMetadata({ params: { locale } }: any): Promise<Metadata> {
+export async function generateMetadata({
+  params: { locale },
+}: any): Promise<Metadata> {
   return metadataHome(locale);
-  
 }
-
 
 export default async function RootLayout({
   children,
-  params: { locale }
+  params: { locale },
 }: {
   children: React.ReactNode;
   params: { locale: string };
@@ -33,7 +31,9 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html suppressHydrationWarning lang={locale}>
-      <head />
+      <head>
+        <meta name="color-scheme" content="light dark" />
+      </head>
       <body className={clsx("min-h-screen bg-background antialiased")}>
         <NextIntlClientProvider messages={messages}>
           <Providers>
@@ -42,7 +42,6 @@ export default async function RootLayout({
               <Navbar />
               <FixedMenu />
               <Footer />
-
             </div>
           </Providers>
         </NextIntlClientProvider>

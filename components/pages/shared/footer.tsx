@@ -1,5 +1,5 @@
 "use client";
-import React, { Fragment } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import Logo from "@/atoms/Logo";
@@ -38,9 +38,37 @@ export default function Footer() {
     { label: "productsLink.i3", url: "/products/wind-turbines#includes" },
     { label: "productsLink.i4", url: "/products/turbine-parts" },
   ];
+  const [simulatedDarkMode, setSimulatedDarkMode] = useState(false);
+
+  useEffect(() => {
+    const img = new (window as any).Image(0);
+
+    img.width = 1;
+    img.height = 1;
+
+    img.onload = function checkMode() {
+      const canvas = document.createElement("canvas");
+      canvas.width = 1;
+      canvas.height = 1;
+      const ctx = canvas.getContext("2d");
+
+      if (ctx) {
+        ctx.drawImage(img, 0, 0);
+        const imageData = ctx.getImageData(0, 0, 1, 1)?.data;
+
+        if (imageData) {
+          const r = imageData[0];
+          setSimulatedDarkMode(r < 200);
+        }
+      }
+    };
+
+    img.src =
+      "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IndoaXRlIi8+PC9zdmc+";
+  }, []);
 
   return (
-    <footer className="w-full flex items-center justify-center text-primary mt-4 lg:px-6 px-4 min-h-[400px]  lg:mb-8  mb-[120px]">
+    <footer className={`w-full flex items-center justify-center ${simulatedDarkMode ? "text-white" : "text-primary"} mt-4 lg:px-6 px-4 min-h-[400px]  lg:mb-8  mb-[120px]`}>
       <div className="relative flex justify-center flex-col items-center w-full h-full py-[40px] min-h-[400px] px-14">
         <div className="relative w-full grow flex flex-col lg:flex-row justify-between md:pt-6 z-10">
           <div>
@@ -53,7 +81,7 @@ export default function Footer() {
                 <div className="pt-[30px]">
                   <div className="flex flex-col ">
                     {linksMenu.map((el, i) => (
-                      <Fragment key={"footer" + i}>
+                      <>
                         {el.child ? (
                           <div key={"el1" + i}>
                             <div className="text-primary pt-[25px] text-[18px]">
@@ -80,12 +108,15 @@ export default function Footer() {
                             {t(el.label)}
                           </Link>
                         )}
-                      </Fragment>
+                      </>
                     ))}
                   </div>
                 </div>
               </div>
               <div className="lg:col-span-1 col-span-3 hidden lg:block">
+                <h2 className={subtitle({ colors: "primary" })}>
+                  {t("products")}
+                </h2>
                 <h2 className={subtitle({ colors: "primary" })}>
                   {t("products")}
                 </h2>
@@ -112,10 +143,17 @@ export default function Footer() {
                 >
                   {t("follow")}
                 </h2>
+                <h2
+                  className={
+                    subtitle({ colors: "primary" }) + " hidden lg:block"
+                  }
+                >
+                  {t("follow")}
+                </h2>
                 <div className="pt-[60px]">
-                  <div className="flex lg:flex-col gap-[30px] justify-center lg:justify-start lg:ps-6">
+                  <div className="flex lg:flex-col gap-[30px] justify-center items-center lg:items-start lg:justify-start lg:ps-6">
                     <Link
-                      className="text-primary fill-primary"
+                      className={`${simulatedDarkMode ? "text-white fill-white" : "text-primary fill-primary"} `}
                       href="https://www.linkedin.com/company/repowerlab-llc/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -123,7 +161,7 @@ export default function Footer() {
                       <LinkedInIcon width={22} height={22} />
                     </Link>
                     <Link
-                      className="text-primary fill-primary"
+                      className={`${simulatedDarkMode ? "text-white fill-white" : "text-primary fill-primary"} `}
                       href="https://x.com/repowerlab"
                       target="_blank"
                       rel="noopener noreferrer"
