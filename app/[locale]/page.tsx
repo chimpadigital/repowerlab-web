@@ -22,7 +22,7 @@ export default function Home() {
         <Services />
         <Products />
         <FeatureProducts paragraph={"pHome"} />
-        <SuccesCases />
+        {/* <SuccesCases /> */}
         <MapHome />
         <div className="px-5">
           <ConnectToday />
